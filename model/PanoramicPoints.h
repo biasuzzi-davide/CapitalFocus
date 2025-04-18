@@ -16,6 +16,9 @@ public:
                     double altitude, bool hasBinocular, bool nightLighting);
 
     QString getCategory() const override;
+
+    void acceptVisitor(PlaceVisitorInterface& visitor) const override;
+
 };
 
 #endif // PANORAMICPOINTS_H

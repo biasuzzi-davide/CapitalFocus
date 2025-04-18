@@ -34,6 +34,8 @@ public:
     QString getCategory() const override;
 
     virtual ~Restaurant() = default;
+
+    virtual void acceptVisitor(PlaceVisitorInterface& visitor) const override;
 };
 
 #endif // RESTAURANT_H
