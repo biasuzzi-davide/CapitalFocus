@@ -1,13 +1,13 @@
 #ifndef PLACEVISITORINTERFACE_H
 #define PLACEVISITORINTERFACE_H
-#include "Cafe.h"
-#include "Disco.h"
-#include "Mall.h"
-#include "LocalMarket.h"
-#include "Restaurant.h"
-#include "PanoramicPoints.h"
-#include "Museum.h"
-#include "Monument.h"
+#include "../Cafe.h"
+#include "../Disco.h"
+#include "../Mall.h"
+#include "../LocalMarket.h"
+#include "../Restaurant.h"
+#include "../PanoramicPoints.h"
+#include "../Museum.h"
+#include "../Monument.h"
 
 class PlaceVisitorInterface
 {

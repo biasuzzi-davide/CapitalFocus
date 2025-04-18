@@ -1,5 +1,5 @@
 #include "Restaurant.h"
-#include "placevisitorinterface.h"
+#include "visitor/placevisitorinterface.h"
 
 // Costruttore classe concreta
 Restaurant::Restaurant( const QString& name,

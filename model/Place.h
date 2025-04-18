@@ -21,9 +21,14 @@ public:
     virtual void acceptVisitor(PlaceVisitorInterface& visitor) const = 0;
 
 
-    bool isAlwaysOpen() const;
     virtual QString getCategory() const = 0;
     QString getCost() const;
+    QString getName() const;
+    QString getCity() const;
+    QString getDescription() const;
+    float getRating() const;
+    const weeklyOpenings& getOpen() const;
+
 };
 
 #endif // PLACE_H

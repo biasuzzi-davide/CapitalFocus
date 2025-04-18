@@ -17,6 +17,7 @@ public:
     QString getCategory() const override;
 
     virtual void acceptVisitor(PlaceVisitorInterface& visitor) const override;
+    bool hasAudioGuideAvailable() const;
 };
 
 #endif // MUSEUM_H

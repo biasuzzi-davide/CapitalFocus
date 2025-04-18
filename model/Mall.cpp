@@ -1,5 +1,5 @@
 #include "Mall.h"
-#include "placevisitorinterface.h"
+#include "visitor/placevisitorinterface.h"
 
 // Costruttore
 Mall::Mall( const QString& name, 

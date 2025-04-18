@@ -5,7 +5,7 @@
 
 class Disco : public Entertainment {
 private:
-    bool musicGenre;
+    QString musicGenre;
     bool hasPrive;
     QString dressCode;
 
@@ -13,10 +13,15 @@ public:
     Disco(const QString& name, const QString& city, const QString& description,
           float rating, const weeklyOpenings& open, double cost,
           double avgStayDuration, int minimumAge, const QString& restrictedEntry,
-          bool musicGenre, bool hasPrive, const QString& dressCode);
+          const QString& musicGenre, bool hasPrive, const QString& dressCode);
 
     QString getCategory() const override;
     void acceptVisitor(PlaceVisitorInterface& visitor) const override;
+
+    // Getters
+    QString getMusicGenre() const;
+    bool hasPriveAccess() const;
+    QString getDressCode() const;
 
 };
 

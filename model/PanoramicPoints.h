@@ -18,7 +18,9 @@ public:
     QString getCategory() const override;
 
     void acceptVisitor(PlaceVisitorInterface& visitor) const override;
-
+    double getAltitude() const;
+    bool hasBinoculars() const;
+    bool isNightLit() const;
 };
 
 #endif // PANORAMICPOINTS_H

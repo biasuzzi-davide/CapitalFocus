@@ -1,5 +1,5 @@
 #include "Cafe.h"
-#include "placevisitorinterface.h"
+#include "visitor/placevisitorinterface.h"
 
 // Costruttore
 Cafe::Cafe( const QString& name,

@@ -1,5 +1,5 @@
 #include "PanoramicPoints.h"
-#include "placevisitorinterface.h"
+#include "visitor/placevisitorinterface.h"
 
 
 PanoramicPoints::PanoramicPoints(const QString& name, const QString& city, const QString& description,
@@ -16,4 +16,15 @@ QString PanoramicPoints::getCategory() const {
 
 void PanoramicPoints::acceptVisitor(PlaceVisitorInterface& visitor) const{
     visitor.visit(*this);
+}
+double PanoramicPoints::getAltitude() const {
+    return altitude;
+}
+
+bool PanoramicPoints::hasBinoculars() const {
+    return hasBinocular;
+}
+
+bool PanoramicPoints::isNightLit() const {
+    return nightLighting;
 }

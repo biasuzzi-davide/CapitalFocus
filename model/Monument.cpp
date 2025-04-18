@@ -1,5 +1,5 @@
 #include "Monument.h"
-#include "placevisitorinterface.h"
+#include "visitor/placevisitorinterface.h"
 
 
 Monument::Monument(const QString& name, const QString& city, const QString& description,
@@ -17,4 +17,15 @@ QString Monument::getCategory() const {
 
 void Monument::acceptVisitor(PlaceVisitorInterface& visitor) const{
     visitor.visit(*this);
+}
+bool Monument::isUnesco() const {
+    return isUnescoHeritage;
+}
+
+QString Monument::getConservationStatus() const {
+    return conservationStatus;
+}
+
+bool Monument::isOpenToPublic() const {
+    return openToPublic;
 }

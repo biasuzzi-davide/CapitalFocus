@@ -1,5 +1,5 @@
 #include "LocalMarket.h"
-#include "placevisitorinterface.h"
+#include "visitor/placevisitorinterface.h"
 
 // Costruttore
 LocalMarket::LocalMarket(   const QString& name, 

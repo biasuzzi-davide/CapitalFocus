@@ -8,10 +8,12 @@ struct openingFrames {
     QTime closing;
     bool closed;
 
-    openingFrames() : closed(true) {}
-
-    openingFrames(const QTime& open, const QTime& close)
-        : opening(open), closing(close), closed(false) {}
+    openingFrames();
+    openingFrames(const QTime&, const QTime&);
+    QString getStartAsString() const;
+    QString getEndAsString() const;
+    openingFrames(const openingFrames&) = default;
+    openingFrames& operator=(const openingFrames&) = default;
 };
 
 #endif // OPENINGFRAMES_H

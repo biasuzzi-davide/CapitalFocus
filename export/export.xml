@@ -1,0 +1,10 @@
+<!DOCTYPE places>
+<places>
+    <Cafe city="Padova" cost="2.50€" description="Il miglior caffè in centro" famousDrink="Cappuccino" hasTerrace="1" name="Bar Centrale" rating="4.5">
+        <openings>
+            <day name="Monday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+        </openings>
+    </Cafe>
+</places>
