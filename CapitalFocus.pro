@@ -41,6 +41,7 @@ HEADERS += \
     model/Restaurant.h \
     model/Shopping.h \
     model/openingFrames.h \
+    model/placevisitorinterface.h \
     model/weekday.h \
     model/weeklyOpenings.h \
     mainwindow.h
