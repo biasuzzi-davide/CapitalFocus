@@ -12,3 +12,7 @@ Museum::Museum(const QString& name, const QString& city, const QString& descript
 QString Museum::getCategory() const {
     return "Museum";
 }
+
+void Museum::accept(PlaceVisitorInterface& visitor) const{
+    visitor.visit(*this)
+}

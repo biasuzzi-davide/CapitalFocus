@@ -17,6 +17,8 @@ public:
              bool isUnescoHeritage, const QString& conservationStatus, bool openToPublic);
 
     QString getCategory() const override;
+
+    virtual void acceptVisitor(PlaceVisitorInterface& visitor) const override;
 };
 
 #endif // MONUMENT_H

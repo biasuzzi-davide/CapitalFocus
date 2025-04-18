@@ -12,3 +12,7 @@ Monument::Monument(const QString& name, const QString& city, const QString& desc
 QString Monument::getCategory() const {
     return "Monument";
 }
+
+void Monument::accept(PlaceVisitorInterface& visitor) const{
+    visitor.visit(*this)
+}

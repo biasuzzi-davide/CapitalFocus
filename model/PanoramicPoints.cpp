@@ -11,3 +11,7 @@ PanoramicPoints::PanoramicPoints(const QString& name, const QString& city, const
 QString PanoramicPoints::getCategory() const {
     return "Panoramic Point";
 }
+
+void PanoramicPoints::accept(PlaceVisitorInterface& visitor) const{
+    visitor.visit(*this)
+}

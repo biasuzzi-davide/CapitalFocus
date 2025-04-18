@@ -36,3 +36,7 @@ QString Restaurant::getSpecialDish() const{
 QString Restaurant::getCategory() const{
     return "Restaurant";
 }
+
+void Restaurant::accept(PlaceVisitorInterface& visitor) const{
+    visitor.visit(*this)
+}
