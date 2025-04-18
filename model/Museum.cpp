@@ -1,4 +1,5 @@
 #include "Museum.h"
+#include "placevisitorinterface.h"
 
 Museum::Museum(const QString& name, const QString& city, const QString& description,
                float rating, const weeklyOpenings& open, double cost,
@@ -13,6 +14,6 @@ QString Museum::getCategory() const {
     return "Museum";
 }
 
-void Museum::accept(PlaceVisitorInterface& visitor) const{
-    visitor.visit(*this)
+void Museum::acceptVisitor(PlaceVisitorInterface& visitor) const{
+    visitor.visit(*this);
 }

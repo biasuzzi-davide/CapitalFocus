@@ -1,4 +1,5 @@
 #include "Restaurant.h"
+#include "placevisitorinterface.h"
 
 // Costruttore classe concreta
 Restaurant::Restaurant( const QString& name,
@@ -37,6 +38,6 @@ QString Restaurant::getCategory() const{
     return "Restaurant";
 }
 
-void Restaurant::accept(PlaceVisitorInterface& visitor) const{
-    visitor.visit(*this)
+void Restaurant::acceptVisitor(PlaceVisitorInterface& visitor) const{
+    visitor.visit(*this);
 }

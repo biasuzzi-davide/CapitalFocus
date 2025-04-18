@@ -1,4 +1,6 @@
 #include "Monument.h"
+#include "placevisitorinterface.h"
+
 
 Monument::Monument(const QString& name, const QString& city, const QString& description,
                    float rating, const weeklyOpenings& open, double cost,
@@ -13,6 +15,6 @@ QString Monument::getCategory() const {
     return "Monument";
 }
 
-void Monument::accept(PlaceVisitorInterface& visitor) const{
-    visitor.visit(*this)
+void Monument::acceptVisitor(PlaceVisitorInterface& visitor) const{
+    visitor.visit(*this);
 }

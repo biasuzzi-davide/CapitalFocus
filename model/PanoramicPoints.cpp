@@ -1,4 +1,6 @@
 #include "PanoramicPoints.h"
+#include "placevisitorinterface.h"
+
 
 PanoramicPoints::PanoramicPoints(const QString& name, const QString& city, const QString& description,
                                  float rating, const weeklyOpenings& open, double cost,
@@ -12,6 +14,6 @@ QString PanoramicPoints::getCategory() const {
     return "Panoramic Point";
 }
 
-void PanoramicPoints::accept(PlaceVisitorInterface& visitor) const{
-    visitor.visit(*this)
+void PanoramicPoints::acceptVisitor(PlaceVisitorInterface& visitor) const{
+    visitor.visit(*this);
 }
