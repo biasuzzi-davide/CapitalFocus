@@ -9,10 +9,40 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    model/Cafe.cpp \
+    model/Culture.cpp \
+    model/Disco.cpp \
+    model/Entertainment.cpp \
+    model/Food.cpp \
+    model/LocalMarket.cpp \
+    model//Mall.cpp \
+    model//Restaurant.cpp \
+    model//Shopping.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    model/Monument.cpp \
+    model/Museum.cpp \
+    model/PanoramicPoints.cpp \
+    model/Place.cpp \
+    model/weeklyOpenings.cpp
 
 HEADERS += \
+    model/Cafe.h \
+    model/Culture.h \
+    model/Disco.h \
+    model/Entertainment.h \
+    model/Food.h \
+    model/LocalMarket.h \
+    model/Mall.h \
+    model/Monument.h \
+    model/Museum.h \
+    model/PanoramicPoints.h \
+    model/Place.h \
+    model/Restaurant.h \
+    model/Shopping.h \
+    model/openingFrames.h \
+    model/weekday.h \
+    model/weeklyOpenings.h \
     mainwindow.h
 
 FORMS += \

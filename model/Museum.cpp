@@ -1,0 +1,14 @@
+#include "Museum.h"
+
+Museum::Museum(const QString& name, const QString& city, const QString& description,
+               float rating, const weeklyOpenings& open, double cost,
+               double studentDiscount, bool guidedTour,
+               const QString& culturalFocus, const QString& hasGuidedTour,
+               bool hasAudioGuide)
+    : Culture(name, city, description, rating, open, cost,
+              studentDiscount, guidedTour, culturalFocus, hasGuidedTour),
+      hasAudioGuide(hasAudioGuide) {}
+
+QString Museum::getCategory() const {
+    return "Museum";
+}

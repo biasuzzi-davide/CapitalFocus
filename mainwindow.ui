@@ -13,7 +13,47 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSlider" name="verticalSlider">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>290</y>
+      <width>22</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>190</y>
+      <width>160</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QScrollBar" name="verticalScrollBar">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>320</y>
+      <width>16</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -23,8 +63,33 @@
      <height>37</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuDC">
+    <property name="title">
+     <string>DC</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuCA">
+    <property name="title">
+     <string>CA</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionCIAO"/>
+    <addaction name="actionCIAO_2"/>
+   </widget>
+   <addaction name="menuDC"/>
+   <addaction name="menuCA"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCIAO">
+   <property name="text">
+    <string>CIAO</string>
+   </property>
+  </action>
+  <action name="actionCIAO_2">
+   <property name="text">
+    <string>CIAO</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
