@@ -8,3 +8,4 @@ Place::Place(const QString& name, const QString& city, const QString& descriptio
 QString Place::getCost() const {
     return QString::number(cost, 'f', 2) + "€";
 }
+// prova
