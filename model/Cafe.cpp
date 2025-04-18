@@ -1,5 +1,4 @@
 #include "Cafe.h"
-
 // Costruttore
 Cafe::Cafe( const QString& name,
            const QString& city,
@@ -33,4 +32,10 @@ QString Cafe::getSpecialDrink() const{
 // Override del metodo polimorfo della classe base
 QString Cafe::getCategory() const{
     return "Cafe";
+}
+
+#include "placevisitorinterface.h"
+
+void Cafe::acceptVisitor(PlaceVisitorInterface& visitor) const {
+    visitor.visit(*this);
 }
