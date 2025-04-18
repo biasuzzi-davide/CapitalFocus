@@ -34,6 +34,9 @@ public:
     QString getCategory() const override;
 
     virtual ~LocalMarket() = default;
+
+    void acceptVisitor(PlaceVisitorInterface& visitor) const override;
+
 };
 
 #endif // LOCALMARKET_H

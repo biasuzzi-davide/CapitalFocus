@@ -34,6 +34,9 @@ public:
     QString getCategory() const override;
 
     virtual ~Mall() = default;
+
+    void acceptVisitor(PlaceVisitorInterface& visitor) const override;
+
 };
 
 #endif // MALL_H

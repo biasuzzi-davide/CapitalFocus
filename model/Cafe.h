@@ -34,6 +34,7 @@ public:
     QString getCategory() const override;
 
     virtual ~Cafe() = default;
+
     void acceptVisitor(PlaceVisitorInterface& visitor) const override;
 
 };

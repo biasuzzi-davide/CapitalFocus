@@ -16,6 +16,8 @@ public:
           bool musicGenre, bool hasPrive, const QString& dressCode);
 
     QString getCategory() const override;
+    void acceptVisitor(PlaceVisitorInterface& visitor) const override;
+
 };
 
 #endif // DISCO_H

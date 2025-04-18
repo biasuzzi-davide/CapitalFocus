@@ -1,4 +1,5 @@
 #include "Mall.h"
+#include "placevisitorinterface.h"
 
 // Costruttore
 Mall::Mall( const QString& name, 
@@ -36,4 +37,8 @@ bool Mall::hasFreeParking() const {
 // Ritorna la categoria del luogo
 QString Mall::getCategory() const {
     return "Mall";
+}
+
+void Mall::acceptVisitor(PlaceVisitorInterface& visitor) const {
+    visitor.visit(*this);
 }

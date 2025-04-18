@@ -1,4 +1,6 @@
 #include "Cafe.h"
+#include "placevisitorinterface.h"
+
 // Costruttore
 Cafe::Cafe( const QString& name,
            const QString& city,
@@ -33,8 +35,6 @@ QString Cafe::getSpecialDrink() const{
 QString Cafe::getCategory() const{
     return "Cafe";
 }
-
-#include "placevisitorinterface.h"
 
 void Cafe::acceptVisitor(PlaceVisitorInterface& visitor) const {
     visitor.visit(*this);

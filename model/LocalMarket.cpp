@@ -1,4 +1,5 @@
 #include "LocalMarket.h"
+#include "placevisitorinterface.h"
 
 // Costruttore
 LocalMarket::LocalMarket(   const QString& name, 
@@ -36,4 +37,8 @@ QString LocalMarket::getPeriod() const {
 // Ritorna la categoria del luogo
 QString LocalMarket::getCategory() const {
     return "Local Market";
+}
+
+void LocalMarket::acceptVisitor(PlaceVisitorInterface& visitor) const {
+    visitor.visit(*this);
 }
