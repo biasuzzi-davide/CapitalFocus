@@ -27,6 +27,7 @@ SOURCES += \
     model/PanoramicPoints.cpp \
     model/Place.cpp \
     model/openingFrames.cpp \
+    model/visitor/placeimportfromxml.cpp \
     model/weeklyOpenings.cpp \
     model/visitor/placeexporttoxmlvisitor.cpp
 
@@ -45,6 +46,7 @@ HEADERS += \
     model/Restaurant.h \
     model/Shopping.h \
     model/openingFrames.h \
+    model/visitor/placeimportfromxml.h \
     model/visitor/visitor/placevisitorinterface.h \
     model/weekday.h \
     model/weeklyOpenings.h \
