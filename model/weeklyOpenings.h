@@ -29,6 +29,7 @@ public:
 
     const QMap<Weekday, openingFrames>& getSchedule() const;
 
+    QString weekdayToString(Weekday day) const;
 };
 
 #endif // WEEKLYOPENINGS_H

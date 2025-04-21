@@ -30,3 +30,17 @@ const QMap<Weekday, openingFrames>& weeklyOpenings::getSchedule() const {
 weeklyOpenings::weeklyOpenings(const weeklyOpenings& other)
     : schedule(other.schedule) {}
 weeklyOpenings::weeklyOpenings() = default;
+
+QString weeklyOpenings::weekdayToString(Weekday day) const {
+    switch (day) {
+    case Weekday::Monday:    return "Monday";
+    case Weekday::Tuesday:   return "Tuesday";
+    case Weekday::Wednesday: return "Wednesday";
+    case Weekday::Thursday:  return "Thursday";
+    case Weekday::Friday:    return "Friday";
+    case Weekday::Saturday:  return "Saturday";
+    case Weekday::Sunday:    return "Sunday";
+    }
+
+    return "ERROR"; // fallback
+}
