@@ -104,7 +104,7 @@ void PlaceExportToJsonVisitor::visit(const Mall& mall){
     result=obj;
 }
 
-void PlaceExportToJsonVisitor::visit(const  &){
+void PlaceExportToJsonVisitor::visit(const Museum& museum){
     QJsonObject obj=basePlaceToJson(museum, "Museum");
 
     obj["hasAudioGuide"]=museum.hasAudioGuideAvailable();

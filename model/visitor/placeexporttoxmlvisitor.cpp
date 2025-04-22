@@ -16,20 +16,6 @@ PlaceExportToXmlVisitor::PlaceExportToXmlVisitor(QDomDocument& document): doc(do
 
 QDomElement PlaceExportToXmlVisitor::getResult() const {return result;}
 
-QString PlaceExportToXmlVisitor::weekdayToString(Weekday day) const {
-    switch (day) {
-    case Weekday::Monday:    return "Monday";
-    case Weekday::Tuesday:   return "Tuesday";
-    case Weekday::Wednesday: return "Wednesday";
-    case Weekday::Thursday:  return "Thursday";
-    case Weekday::Friday:    return "Friday";
-    case Weekday::Saturday:  return "Saturday";
-    case Weekday::Sunday:    return "Sunday";
-    }
-
-    return "ERROREEE"; // fallback
-}
-
 QDomElement PlaceExportToXmlVisitor::exportWeeklyOpenings(const weeklyOpenings& w) const {
     QDomElement openingsElem = doc.createElement("openings");
     const auto& openingsMap = w.getSchedule();
@@ -39,7 +25,7 @@ QDomElement PlaceExportToXmlVisitor::exportWeeklyOpenings(const weeklyOpenings& 
         const openingFrames& f = it.value();
 
         QDomElement dayElem = doc.createElement("day");
-        dayElem.setAttribute("name", weekdayToString(day));
+        dayElem.setAttribute("name", weeklyOpenings::weekdayToString(day));
 
         QDomElement slot = doc.createElement("slot");
         slot.setAttribute("from", f.getStartAsString());

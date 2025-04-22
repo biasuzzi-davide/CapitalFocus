@@ -27,6 +27,7 @@ SOURCES += \
     model/PanoramicPoints.cpp \
     model/Place.cpp \
     model/openingFrames.cpp \
+    model/visitor/PlaceImportFromJson.cpp \
     model/visitor/placeExportToJsonVisitor.cpp \
     model/visitor/placeimportfromxml.cpp \
     model/weeklyOpenings.cpp \
@@ -47,6 +48,7 @@ HEADERS += \
     model/Restaurant.h \
     model/Shopping.h \
     model/openingFrames.h \
+    model/visitor/PlaceImportFromJson.h \
     model/visitor/placeExportToJsonVisitor.h \
     model/visitor/placeimportfromxml.h \
     model/visitor/visitor/placevisitorinterface.h \

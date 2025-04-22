@@ -31,7 +31,7 @@ weeklyOpenings::weeklyOpenings(const weeklyOpenings& other)
     : schedule(other.schedule) {}
 weeklyOpenings::weeklyOpenings() = default;
 
-QString weeklyOpenings::weekdayToString(Weekday day) const {
+QString weeklyOpenings::weekdayToString(const Weekday day) {
     switch (day) {
     case Weekday::Monday:    return "Monday";
     case Weekday::Tuesday:   return "Tuesday";
@@ -43,4 +43,18 @@ QString weeklyOpenings::weekdayToString(Weekday day) const {
     }
 
     return "ERROR"; // fallback
+}
+
+Weekday weeklyOpenings::weekdayFromString(const QString& dayStr) {
+    if (dayStr == "Monday") return Weekday::Monday;
+    else if (dayStr == "Tuesday") return Weekday::Tuesday;
+    else if (dayStr == "Wednesday") return Weekday::Wednesday;
+    else if (dayStr == "Thursday") return Weekday::Thursday;
+    else if (dayStr == "Friday") return Weekday::Friday;
+    else if (dayStr == "Saturday") return Weekday::Saturday;
+    else if (dayStr == "Sunday") return Weekday::Sunday;
+
+    // fallback
+    qWarning() << "weekdayFromString: error:" << dayStr;
+    return Weekday::Monday;
 }

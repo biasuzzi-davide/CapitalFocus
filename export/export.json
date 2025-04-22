@@ -1,0 +1,36 @@
+[
+    {
+        "city": "Roma",
+        "cost": "4.00€",
+        "description": "Descrizione",
+        "famousDrink": "Cappuccino",
+        "hasTerrace": true,
+        "name": "Cafe 1",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.5,
+        "type": "Cafe"
+    },
+    {
+        "city": "Roma",
+        "cost": "5.00€",
+        "description": "Descrizione",
+        "famousDrink": "Cappuccino",
+        "hasTerrace": true,
+        "name": "Cafe 2",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.5,
+        "type": "Cafe"
+    }
+]

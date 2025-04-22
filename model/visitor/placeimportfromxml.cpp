@@ -21,15 +21,7 @@ weeklyOpenings PlaceImportFromXml::parseOpenings(const QDomElement& parent) cons
     for (int i = 0; i < days.count(); ++i) {
         QDomElement dayElem = days.at(i).toElement();
         QString dayStr = dayElem.attribute("name");
-        Weekday day;
-
-        if (dayStr == "Monday") day = Weekday::Monday;
-        else if (dayStr == "Tuesday") day = Weekday::Tuesday;
-        else if (dayStr == "Wednesday") day = Weekday::Wednesday;
-        else if (dayStr == "Thursday") day = Weekday::Thursday;
-        else if (dayStr == "Friday") day = Weekday::Friday;
-        else if (dayStr == "Saturday") day = Weekday::Saturday;
-        else if (dayStr == "Sunday") day = Weekday::Sunday;
+        Weekday day=weeklyOpenings::weekdayFromString(dayStr);
 
         QDomElement slot = dayElem.firstChildElement("slot");
         QTime from = QTime::fromString(slot.attribute("from"), "hh:mm");
