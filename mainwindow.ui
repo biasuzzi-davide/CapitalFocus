@@ -11,86 +11,164 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Luoghi</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QSlider" name="verticalSlider">
-    <property name="geometry">
-     <rect>
-      <x>270</x>
-      <y>290</y>
-      <width>22</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="QSlider" name="horizontalSlider">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>190</y>
-      <width>160</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QScrollBar" name="verticalScrollBar">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>320</y>
-      <width>16</width>
-      <height>160</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="topSearchLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="resources.qrc">:/images/logo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditSearch">
+        <property name="placeholderText">
+         <string>es: Roma, ristorante...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBoxCity"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonSearch">
+        <property name="text">
+         <string>Cerca</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonReset">
+        <property name="text">
+         <string>Reset</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QListWidget" name="listWidgetResults"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="detailsLayout">
+      <item>
+       <widget class="QLabel" name="labelDetails">
+        <property name="text">
+         <string>Dettagli selezionato</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
-  <widget class="QMenuBar" name="menubar">
+  <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>37</height>
+     <height>24</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuDC">
+   <widget class="QMenu" name="menuImport">
     <property name="title">
-     <string>DC</string>
+     <string>Import</string>
     </property>
+    <addaction name="actionAuto_Import"/>
    </widget>
-   <widget class="QMenu" name="menuCA">
+   <widget class="QMenu" name="menuExport">
     <property name="title">
-     <string>CA</string>
+     <string>Export</string>
     </property>
-    <addaction name="separator"/>
-    <addaction name="actionCIAO"/>
-    <addaction name="actionCIAO_2"/>
+    <addaction name="actionXML"/>
+    <addaction name="actionJSON"/>
    </widget>
-   <addaction name="menuDC"/>
-   <addaction name="menuCA"/>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionEdit_this_Place"/>
+    <addaction name="actionNew_Place"/>
+    <addaction name="actionNew_Place_3"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionSettings"/>
+    <addaction name="actionStats"/>
+    <addaction name="actionCredits"/>
+   </widget>
+   <addaction name="menuEdit"/>
+   <addaction name="menuImport"/>
+   <addaction name="menuExport"/>
+   <addaction name="menuView"/>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionCIAO">
+  <action name="actionSettings">
    <property name="text">
-    <string>CIAO</string>
+    <string>Settings</string>
    </property>
   </action>
-  <action name="actionCIAO_2">
+  <action name="actionStats">
    <property name="text">
-    <string>CIAO</string>
+    <string>Stats</string>
+   </property>
+  </action>
+  <action name="actionCredits">
+   <property name="text">
+    <string>Credits</string>
+   </property>
+  </action>
+  <action name="actionXML">
+   <property name="text">
+    <string>XML</string>
+   </property>
+  </action>
+  <action name="actionJSON">
+   <property name="text">
+    <string>JSON</string>
+   </property>
+  </action>
+  <action name="actionEdit_this_Place">
+   <property name="text">
+    <string>Edit this Place</string>
+   </property>
+  </action>
+  <action name="actionNew_Place">
+   <property name="text">
+    <string>Delete this Place</string>
+   </property>
+  </action>
+  <action name="actionNew_Place_3">
+   <property name="text">
+    <string>New Place</string>
+   </property>
+  </action>
+  <action name="actionAuto_Import">
+   <property name="text">
+    <string>Import XML or JSON file</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
