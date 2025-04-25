@@ -10,6 +10,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    controller/placecontroller.cpp \
     main.cpp \
     #main_old.cpp \
     model/Cafe.cpp \
@@ -27,6 +28,7 @@ SOURCES += \
     model/PanoramicPoints.cpp \
     model/Place.cpp \
     model/openingFrames.cpp \
+    model/placerepository.cpp \
     model/visitor/PlaceImportFromJson.cpp \
     model/visitor/placeExportToJsonVisitor.cpp \
     model/visitor/placeimportfromxml.cpp \
@@ -34,6 +36,7 @@ SOURCES += \
     model/visitor/placeexporttoxmlvisitor.cpp
 
 HEADERS += \
+    controller/placecontroller.h \
     model/Cafe.h \
     model/Culture.h \
     model/Disco.h \
@@ -48,6 +51,7 @@ HEADERS += \
     model/Restaurant.h \
     model/Shopping.h \
     model/openingFrames.h \
+    model/placerepository.h \
     model/visitor/PlaceImportFromJson.h \
     model/visitor/placeExportToJsonVisitor.h \
     model/visitor/placeimportfromxml.h \

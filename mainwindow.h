@@ -9,19 +9,23 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
+class PlaceController; // fw declaration
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(PlaceController& controller, QWidget *parent = nullptr);
     ~MainWindow();
 
 
 private:
     Ui::MainWindow *ui;
+    PlaceController& controller;
 
 private slots:
     void findPlaces();
+    void importFromXml();
 };
 #endif // MAINWINDOW_H
