@@ -17,7 +17,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+
 private:
     Ui::MainWindow *ui;
+
+private slots:
+    void findPlaces();
 };
 #endif // MAINWINDOW_H
