@@ -3,39 +3,59 @@
 #include "controller/placecontroller.h"
 #include <QFileDialog>
 
-MainWindow::MainWindow(PlaceController& ctrl, QWidget *parent)
-    : QMainWindow(parent), ui(new Ui::MainWindow), controller(ctrl) {
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent), ui(new Ui::MainWindow), controller(nullptr)
+{
     ui->setupUi(this);
-    connect(ui->actionAuto_Import, &QAction::triggered, this, &MainWindow::importFromXml);
 }
+
+void MainWindow::setController(PlaceController* controller) {
+    this->controller = controller;
+
+    // Collegamento segnali → slot del controller
+    connect(ui->pushButtonSearch, &QPushButton::clicked, controller, &PlaceController::findPlaces);
+    connect(ui->pushButtonReset, &QPushButton::clicked, controller, &PlaceController::resetSearchFields);
+    connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromXml);
+
+    // ...puoi aggiungere altri connect qui
+}
+
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
-void MainWindow::importFromXml() {
-    QString filePath = QFileDialog::getOpenFileName(this, "Seleziona file XML", "", "File XML (*.xml)");
-    if (!filePath.isEmpty()) {
-        controller.importPlacesFromXml(filePath);  // chiama il tuo controller
-        findPlaces();  // aggiorna la view
-    }
+QString MainWindow::getSearchText() const {
+    return ui->lineEditSearch->text();
 }
 
-void MainWindow::findPlaces() {
-    QString keyword = ui->lineEditSearch->text();
+QString MainWindow::getSelectedCity() const {
+    return ui->comboBoxCity->currentText();
+}
 
-    //QString city = ui->comboBoxCity->currentText();
-    QString city = "Città";
-
-    auto results = controller.search(keyword, city);  // SOLO IL CONTROLLER
-    qDebug() <<"KW " << keyword << " CT" << city << " N:" << results.size();
-
-
+void MainWindow::updateResults(const std::vector<std::shared_ptr<Place>>& results) {
     ui->listWidgetResults->clear();
     for (const auto& place : results) {
         QListWidgetItem* item = new QListWidgetItem(place->getName());
-        item->setData(Qt::UserRole, QVariant::fromValue(place.get())); // bonus: accesso diretto
         ui->listWidgetResults->addItem(item);
     }
 }
+void MainWindow::clearSearchFields() {
+    ui->lineEditSearch->clear();
+    ui->comboBoxCity->setCurrentIndex(0);
+}
+#include <QSet>
 
+void MainWindow::populateCityComboBox(const std::vector<std::shared_ptr<Place>>& places) {
+    ui->comboBoxCity->clear();              // Pulisce tutto
+    ui->comboBoxCity->addItem("All");     // Prima voce = "Tutte"
+
+    QSet<QString> addedCities;
+    for (const auto& place : places) {
+        QString city = place->getCity();
+        if (!addedCities.contains(city)) {
+            ui->comboBoxCity->addItem(city);
+            addedCities.insert(city);
+        }
+    }
+}

@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
 #include <QMainWindow>
+#include "model/Place.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,16 +16,16 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(PlaceController& controller, QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
-
+    QString getSearchText() const;
+    QString getSelectedCity() const;
+    void updateResults(const std::vector<std::shared_ptr<Place>>& results);
+    void setController(PlaceController* controller);
+    void clearSearchFields();
+    void populateCityComboBox(const std::vector<std::shared_ptr<Place>>& places);
 private:
     Ui::MainWindow *ui;
-    PlaceController& controller;
-
-private slots:
-    void findPlaces();
-    void importFromXml();
+    PlaceController* controller;
 };
 #endif // MAINWINDOW_H

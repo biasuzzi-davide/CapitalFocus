@@ -170,24 +170,7 @@
  <resources>
   <include location="resources.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>pushButtonSearch</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>findPlaces()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>677</x>
-     <y>165</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>584</x>
-     <y>74</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
  <slots>
   <slot>findPlaces()</slot>
  </slots>

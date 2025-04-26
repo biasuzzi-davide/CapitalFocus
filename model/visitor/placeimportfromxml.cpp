@@ -119,6 +119,6 @@ std::vector<Place*> PlaceImportFromXml::importFromFile(const QString& filePath) 
                                             1.0, true, "Cultura", "Sì", unesco, state, openTo));
         }
     }
-
+    qDebug() << "Totale oggetti importati:" << imported.size();
     return imported;
 }

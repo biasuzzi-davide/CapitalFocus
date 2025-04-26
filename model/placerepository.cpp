@@ -19,7 +19,7 @@ std::vector<std::shared_ptr<Place>> PlaceRepository::search(const QString& nameK
     std::vector<std::shared_ptr<Place>> results;
     for (const auto& place : places) {
         bool nameMatch = nameKeyword.isEmpty() || place->getName().contains(nameKeyword, Qt::CaseInsensitive);
-        bool cityMatch = cityFilter == "Tutte" || place->getCity() == cityFilter;
+        bool cityMatch = cityFilter == "All" || place->getCity() == cityFilter;
 
         if (nameMatch && cityMatch) {
             results.push_back(place);
