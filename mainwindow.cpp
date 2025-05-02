@@ -51,8 +51,8 @@ void MainWindow::setController(PlaceController* controller) {
     connect(ui->pushButtonReset, &QPushButton::clicked, controller, &PlaceController::resetSearchFields);
     connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromFile);
     connect(ui->pushButtonBacktoMain, &QPushButton::clicked, controller, &PlaceController::setWidgetMain);
+    //connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromXml);
 
-    connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromXml);
     connect(ui->actionCredits,      &QAction::triggered,    controller,       &PlaceController::setWidgetCredits);
     connect(ui->actionStatistics, &QAction::triggered, controller, &PlaceController::showStatistics);
 
