@@ -32,6 +32,7 @@ SOURCES += \
     model/visitor/PlaceImportFromJson.cpp \
     model/visitor/placeExportToJsonVisitor.cpp \
     model/visitor/placeimportfromxml.cpp \
+    model/visitor/statisticsvisitor.cpp \
     model/weeklyOpenings.cpp \
     model/visitor/placeexporttoxmlvisitor.cpp
 
@@ -53,9 +54,11 @@ HEADERS += \
     model/import_errors.h \
     model/openingFrames.h \
     model/placerepository.h \
+    model/statisticsResult.h \
     model/visitor/PlaceImportFromJson.h \
     model/visitor/placeExportToJsonVisitor.h \
     model/visitor/placeimportfromxml.h \
+    model/visitor/statisticsvisitor.h \
     model/visitor/visitor/placevisitorinterface.h \
     model/weekday.h \
     model/weeklyOpenings.h \

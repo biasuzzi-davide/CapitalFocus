@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 #include <QMainWindow>
 #include "model/Place.h"
+#include <QStackedWidget>
+#include <model/statisticsResult.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,7 +26,11 @@ public:
     void setController(PlaceController* controller);
     void clearSearchFields();
     void populateCityComboBox(const std::vector<std::shared_ptr<Place>>& places);
+    void setWidgetCredits();
+    void setWidgetMain();
+    void showStatistics(const StatisticsResult& stats);
 private:
+    QStackedWidget* stackedWidget;
     Ui::MainWindow *ui;
     PlaceController* controller;
 };

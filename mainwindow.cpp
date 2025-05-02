@@ -2,22 +2,68 @@
 #include "ui_mainwindow.h"
 #include "controller/placecontroller.h"
 #include <QFileDialog>
-
+#include "model/statisticsResult.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), controller(nullptr)
 {
     ui->setupUi(this);
+    stackedWidget = new QStackedWidget(this);
+    ui->centralwidget->layout()->addWidget(stackedWidget);
+    // ui->menuBar->setNativeMenuBar(false); // decommentare per avere il menu dentro la finestra su mac
+
+
 }
+
+
+void MainWindow::showStatistics(const StatisticsResult& stats) {
+    ui->stackedWidget->setCurrentWidget(ui->statisticsPage);
+
+    // Popola la tabella
+    QTableWidget* table = ui->tableStatistics;
+    table->setRowCount(3);
+    table->setHorizontalHeaderLabels({ "Statistic", "Value" });
+    table->verticalHeader()->setVisible(false);
+
+    table->setItem(0, 0, new QTableWidgetItem("Total Places"));
+    table->setItem(0, 1, new QTableWidgetItem(QString::number(stats.totalPlaces)));
+
+    table->setItem(1, 0, new QTableWidgetItem("Average Rating"));
+    table->setItem(1, 1, new QTableWidgetItem(QString::number(stats.averageRating, 'f', 2)));
+
+    table->setItem(2, 0, new QTableWidgetItem("Average Cost"));
+    table->setItem(2, 1, new QTableWidgetItem(QString::number(stats.averageCost, 'f', 2)));
+
+    table->resizeColumnsToContents();
+
+    // Popola la lista della città
+    QListWidget* list = ui->listCities;
+    list->clear();
+    for (auto const& kv : stats.countByCity) {
+        list->addItem(QString("%1: %2").arg(kv.first).arg(kv.second));
+    }
+}
+
 
 void MainWindow::setController(PlaceController* controller) {
     this->controller = controller;
 
-    // Collegamento segnali → slot del controller
     connect(ui->pushButtonSearch, &QPushButton::clicked, controller, &PlaceController::findPlaces);
     connect(ui->pushButtonReset, &QPushButton::clicked, controller, &PlaceController::resetSearchFields);
     connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromFile);
+    connect(ui->pushButtonBacktoMain, &QPushButton::clicked, controller, &PlaceController::setWidgetMain);
 
-    // ...puoi aggiungere altri connect qui
+    connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromXml);
+    connect(ui->actionCredits,      &QAction::triggered,    controller,       &PlaceController::setWidgetCredits);
+    connect(ui->actionStatistics, &QAction::triggered, controller, &PlaceController::showStatistics);
+
+}
+
+
+void MainWindow::setWidgetCredits(){
+    ui->stackedWidget->setCurrentWidget(ui->creditsPage);
+}
+void MainWindow::setWidgetMain(){
+    ui->stackedWidget->setCurrentWidget(ui->mainPage);
 }
 
 

@@ -5,6 +5,8 @@
 #include <memory>
 #include <QString>
 #include "Place.h"
+#include "statisticsResult.h"
+
 
 class PlaceRepository {
 private:
@@ -25,6 +27,10 @@ public:
 
     // Pulisce tutti i Place
     void clear();
+
+    // Fa le statistiche
+    StatisticsResult computeStatistics() const;
+
 };
 
 #endif // PLACEREPOSITORY_H

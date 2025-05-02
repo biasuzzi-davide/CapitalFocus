@@ -31,3 +31,17 @@ std::vector<std::shared_ptr<Place>> PlaceRepository::search(const QString& nameK
 void PlaceRepository::clear() {
     places.clear();
 }
+
+#include "visitor/statisticsvisitor.h"
+StatisticsResult PlaceRepository::computeStatistics() const {
+    StatisticsVisitor visitor;
+    for (const auto& p : places) {
+        p->acceptVisitor(visitor);
+    }
+    StatisticsResult res;
+    res.totalPlaces   = visitor.totalPlaces();
+    res.averageRating = visitor.averageRating();
+    res.averageCost   = visitor.averageCost();
+    res.countByCity   = visitor.countByCity();
+    return res;
+}

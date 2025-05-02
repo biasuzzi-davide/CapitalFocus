@@ -40,6 +40,10 @@ public slots: // pubblici perchè devono essere visibili quando faccio il connec
     void resetSearchFields();
     void exportToFile();
 
+    void showCreditsPage();
+    void setWidgetCredits();
+    void setWidgetMain();
+    void showStatistics();
 };
 
 #endif // PLACECONTROLLER_H

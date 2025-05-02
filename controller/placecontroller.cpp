@@ -1,3 +1,4 @@
+#include "placeController.h"
 #include "PlaceController.h"
 #include "../model/visitor/placeexporttoxmlvisitor.h"
 #include "../model/visitor/placeExportToJsonVisitor.h"
@@ -184,3 +185,15 @@ void PlaceController::exportToFile()
                              tr("Unsupported format"),
                              tr("Choose a .json or .xml file"));
 }
+
+void PlaceController::setWidgetCredits() {
+    view->setWidgetCredits();
+}
+void PlaceController::setWidgetMain() {
+    view->setWidgetMain();
+}
+void PlaceController::showStatistics() {
+    StatisticsResult stats = repository.computeStatistics();
+    view->showStatistics(stats);
+}
+

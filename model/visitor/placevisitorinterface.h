@@ -22,6 +22,8 @@ public:
     virtual void visit(const PanoramicPoints& point) = 0;
     virtual void visit(const Museum& museum) = 0;
     virtual void visit(const Monument& monument) = 0;
+    virtual void visit(const Place& p) = 0;
+
 };
 
 #endif // PLACEVISITORINTERFACE_H
