@@ -4,6 +4,10 @@ void weeklyOpenings::setOpening(Weekday day, const QTime& open, const QTime& clo
     schedule[day]= openingFrames(open,close);
 }
 
+void weeklyOpenings::setClosed(Weekday day){
+    schedule[day] = openingFrames();
+}
+
 openingFrames weeklyOpenings::getOpening(Weekday day) const{
     return schedule.value(day, openingFrames());
 }

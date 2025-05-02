@@ -1,5 +1,14 @@
 #include "PlaceController.h"
+#include "../model/visitor/placeexporttoxmlvisitor.h"
+#include "../model/visitor/placeExportToJsonVisitor.h"
 #include <QFileDialog>
+#include <QMessageBox>
+#include <QFileInfo>
+#include <QDebug>
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QFile>
+#include <QDomDocument>
 
 PlaceController::PlaceController(MainWindow* v, PlaceRepository& repo)
     : view(v), repository(repo) {};
@@ -20,16 +29,113 @@ const std::vector<std::shared_ptr<Place>>& PlaceController::getAll() const {
     return repository.getAllPlaces();
 }
 
-void PlaceController::importPlacesFromXml(const QString& filePath) {
-    std::vector<Place*> rawPlaces = importer.importFromFile(filePath);
+void PlaceController::importPlacesFromXml(const QString& filePath){
+    try {
+        std::vector<std::shared_ptr<Place>> newXmlPlaces = xmlImporter.importFromFile(filePath);
 
-    for (Place* p : rawPlaces) {
-        repository.addPlace(std::shared_ptr<Place>(p));  // conversione sicura
+        repository.clear();
+        for (const auto& sp : newXmlPlaces)
+            repository.addPlace(sp);
+
+        //TODO: metodi per la view da implementare correttamente
+        // → implementare dopo TableModel
+        //view->populateCityComboBox(repository.getAllPlaces());
+        //view->updateResults(repository.getAllPlaces());
+
+    } catch (const FileOpenError& e) {
+        QMessageBox::critical(view, tr("File opening error"), e.what());
+    } catch (const XmlParseError& e) {
+        QMessageBox::critical(view, tr("XML parsing error"), e.what());
+    } catch (const std::exception& e) {
+        QMessageBox::warning(view, tr("Invalid data"), e.what());
+    }
+}
+
+void PlaceController::importPlacesFromJson(const QString& filePath){
+    try {
+        std::vector<std::shared_ptr<Place>> newJsonPlaces = jsonImporter.importFromJson(filePath);
+
+        repository.clear();
+        for (const auto& sp : newJsonPlaces)
+            repository.addPlace(sp);
+
+        //TODO: metodi per la view da implementare correttamente
+        // → implementare dopo TableModel
+        //view->populateCityComboBox(repository.getAllPlaces());
+        //view->updateResults(repository.getAllPlaces());
+
+    } catch (const FileOpenError& e) {
+        QMessageBox::critical(view, tr("File opening error"), e.what());
+    } catch (const JsonParseError& e) {
+        QMessageBox::critical(view, tr("JSON parsing error"), e.what());
+    } catch (const std::exception& e) {
+        QMessageBox::warning(view, tr("Invalid data"), e.what());
+    }
+}
+
+void PlaceController::importFromFile()
+{
+    QString path = QFileDialog::getOpenFileName(view, tr("Select file"),"", tr("JSON or XML file (*.json *.xml)"));
+
+    if (path.isEmpty()) return;
+
+    QString ext = QFileInfo(path).suffix().toLower();
+    if (ext == "json")
+        importPlacesFromJson(path);
+    else if (ext == "xml")
+        importPlacesFromXml(path);
+    else
+        QMessageBox::warning(view, tr("Unsupported format"),tr("Select a .json or .xml file"));
+}
+
+void PlaceController::exportToJson(const QString& filePath) const {
+    QJsonArray placesArray;
+
+    for (const auto& place : repository.getAllPlaces()) {
+        PlaceExportToJsonVisitor v;
+        place->acceptVisitor(v);
+        placesArray.append(v.getResult());
     }
 
-    qDebug() << "Importati" << rawPlaces.size() << "luoghi da XML.";
-    printAllPlaces();
+    QJsonDocument doc(placesArray);
+
+    QFile file(filePath);
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        QMessageBox::critical(view, tr("File writing error"),tr("Cannot open file for writing:\n%1").arg(filePath));
+        return;
+    }
+    file.write(doc.toJson(QJsonDocument::Indented));
+    file.close();
+
+    QMessageBox::information(view, tr("Export completed"),tr("Exported %1 places to\n%2").arg(placesArray.size()).arg(filePath));
 }
+
+void PlaceController::exportToXml (const QString& filePath) const {
+    QDomDocument doc("placesDoc");
+    QDomElement root = doc.createElement("places");
+    doc.appendChild(root);
+
+    for (const auto& place : repository.getAllPlaces()) {
+        PlaceExportToXmlVisitor v(doc); // passa il QDomDocument
+        place->acceptVisitor(v);
+        root.appendChild(v.getResult()); // aggiunge nodi
+    }
+
+    QFile file(filePath);
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        QMessageBox::critical(view, tr("File writing error"),
+                              tr("Cannot open file for writing:\n%1").arg(filePath));
+        return;
+    }
+    file.write(doc.toByteArray(4)); // aggiunta spazi di indentazione
+    file.close();
+
+    QMessageBox::information(view, tr("Export completed"),
+                             tr("Exported %1 places to\n%2")
+                                 .arg(root.childNodes().count())
+                                 .arg(filePath));
+}
+
 void PlaceController::printAllPlaces() const {
     const auto& all = repository.getAllPlaces();
 
@@ -43,19 +149,7 @@ void PlaceController::printAllPlaces() const {
 
     qDebug() << "Totale:" << all.size() << "luoghi.";
 }
-void PlaceController::importFromXml() {
-    QString filePath = QFileDialog::getOpenFileName(nullptr, "Seleziona file XML", "", "File XML (*.xml)");
-    if (!filePath.isEmpty()) {
-        std::vector<Place*> rawPlaces = importer.importFromFile(filePath);
 
-        for (Place* p : rawPlaces) {
-            repository.addPlace(std::shared_ptr<Place>(p));  // ✅ conversione sicura
-        }
-        view->populateCityComboBox(repository.getAllPlaces());  // 👈 chiamata qui
-        qDebug() << "Luoghi totali in repository:" << repository.getAllPlaces().size();
-        //findPlaces();  // chiama subito per aggiornare la view
-    }
-}
 void PlaceController::resetSearchFields() {
     view->clearSearchFields();  // se la view ha questo metodo
 }
@@ -68,4 +162,25 @@ void PlaceController::findPlaces() {
     qDebug() << "KW: " << keyword << " CTY: " << city << " N: " << results.size();
 
     view->updateResults(results);
+}
+
+void PlaceController::exportToFile()
+{
+    QString path = QFileDialog::getSaveFileName(
+        view,
+        tr("Save places"),
+        "",
+        tr("JSON (*.json);;XML (*.xml)"));
+
+    if (path.isEmpty()) return;
+
+    QString ext = QFileInfo(path).suffix().toLower();
+    if (ext == "json")
+        exportToJson(path);
+    else if (ext == "xml")
+        exportToXml(path);
+    else
+        QMessageBox::warning(view,
+                             tr("Unsupported format"),
+                             tr("Choose a .json or .xml file"));
 }

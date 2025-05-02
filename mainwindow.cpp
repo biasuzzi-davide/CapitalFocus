@@ -15,7 +15,7 @@ void MainWindow::setController(PlaceController* controller) {
     // Collegamento segnali → slot del controller
     connect(ui->pushButtonSearch, &QPushButton::clicked, controller, &PlaceController::findPlaces);
     connect(ui->pushButtonReset, &QPushButton::clicked, controller, &PlaceController::resetSearchFields);
-    connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromXml);
+    connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromFile);
 
     // ...puoi aggiungere altri connect qui
 }

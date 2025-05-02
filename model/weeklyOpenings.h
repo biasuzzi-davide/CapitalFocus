@@ -14,6 +14,7 @@ private:
 public:
     // Metodo per impostare una fascia oraria di un weekday
     void setOpening(Weekday day, const QTime& open, const QTime& close);
+    void setClosed(Weekday day);
     weeklyOpenings();
     weeklyOpenings(const weeklyOpenings& other);
     openingFrames getOpening(Weekday day) const;

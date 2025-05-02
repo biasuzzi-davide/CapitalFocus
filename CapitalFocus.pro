@@ -50,6 +50,7 @@ HEADERS += \
     model/Place.h \
     model/Restaurant.h \
     model/Shopping.h \
+    model/import_errors.h \
     model/openingFrames.h \
     model/placerepository.h \
     model/visitor/PlaceImportFromJson.h \

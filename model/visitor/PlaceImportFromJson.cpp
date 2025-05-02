@@ -7,6 +7,7 @@
 #include "model/Museum.h"
 #include "model/Monument.h"
 #include "model/PanoramicPoints.h"
+#include "model/import_errors.h"
 
 #include <QJsonDocument>
 #include <QJsonArray>
@@ -15,40 +16,49 @@
 
 
 weeklyOpenings PlaceImportFromJson::parseOpenings(const QJsonArray& array) const{
-    weeklyOpenings w;
+    weeklyOpenings week;
 
-    for(const QJsonValue& val : array){
-        QJsonObject obj=val.toObject();
+    for (const QJsonValue& v : array) {
+        QJsonObject o = v.toObject();
+        Weekday day   = weeklyOpenings::weekdayFromString(o["day"].toString());
 
-        QString dayStr=obj["day"].toString();
-        QString fromStr=obj["from"].toString();
-        QString toStr=obj["to"].toString();
+        // Se "closed" imposta il weekday a chiuso
+        if (o.contains("closed") && o["closed"].toBool()) {
+            week.setClosed(day);
+            continue;
+        }
 
-        Weekday day=weeklyOpenings::weekdayFromString(dayStr);
-        QTime from=QTime::fromString(fromStr, "hh:mm");
-        QTime to=QTime::fromString(toStr, "hh:mm");
+        //Altrimenti estrai gli orari
+        QString fromStr = o["from"].toString();
+        QString toStr   = o["to"].toString();
+        QTime from = QTime::fromString(fromStr,"HH:mm");
+        QTime to   = QTime::fromString(toStr,"HH:mm");
 
-        w.setOpening(day,from,to);
+        //Check sugli orari
+        if (!from.isValid() || !to.isValid() || from >= to)
+            throw std::invalid_argument("Invalid time frame");
+
+        week.setOpening(day, from, to);
     }
-    return w;
+    return week;
 }
 
-std::vector<Place*> PlaceImportFromJson::importFromJson(const QString& filePath) const{
-    std::vector<Place*> imported;
+std::vector<std::shared_ptr<Place>> PlaceImportFromJson::importFromJson(const QString& filePath) const{
+    std::vector<std::shared_ptr<Place>> imported;
 
     QFile file(filePath);
-    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        qCritical() << "Errore apertura file JSON";
-        return {};
-    }
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        throw FileOpenError(filePath);
 
-    QJsonDocument doc= QJsonDocument::fromJson(file.readAll());
+    QJsonParseError jErr;
+    QJsonDocument doc = QJsonDocument::fromJson(file.readAll(), &jErr);
     file.close();
 
-    if (!doc.isArray()) {
-        qCritical() << "Il file JSON non è un array valido.";
-        return {};
-    }
+    if (jErr.error != QJsonParseError::NoError)
+        throw JsonParseError(jErr.errorString());
+
+    if (!doc.isArray())
+        throw JsonParseError("Root must be a JSON array");
 
     QJsonArray placeArray = doc.array();
 
@@ -59,64 +69,74 @@ std::vector<Place*> PlaceImportFromJson::importFromJson(const QString& filePath)
         QString name=obj["name"].toString();
         QString city=obj["city"].toString();
         QString description=obj["description"].toString();
-        float rating=obj["rating"].toDouble();
+        double rating=obj["rating"].toDouble();
         double cost=obj["cost"].toDouble();
         QJsonArray openingsArray=obj["openings"].toArray();
         weeklyOpenings openings=parseOpenings(openingsArray);
 
+        if (type.isEmpty())
+            throw std::invalid_argument("JSON element without type");
+        if (name.isEmpty())
+            throw std::invalid_argument("JSON element without name");
+        if (city.isEmpty())
+            throw std::invalid_argument("JSON element without city");
+        if (rating < 0.0 || rating > 5.0)
+            throw std::invalid_argument("rating out of range [0‑5]");
+
         if (type == "Cafe") {
             bool terrace = obj["hasTerrace"].toBool();
             QString drink = obj["famousDrink"].toString();
-            imported.push_back(new Cafe(name, city, description, rating, openings, cost,
+            imported.push_back(std::make_shared<Cafe>(name, city, description, rating, openings, cost,
                                         true, QTime(0,5), true, terrace, drink));
         }
         else if (type == "Disco") {
             QString genre = obj["musicGenre"].toString();
             bool prive = obj["hasPrive"].toBool();
             QString dressCode = obj["dressCode"].toString();
-            imported.push_back(new Disco(name, city, description, rating, openings, cost,
+            imported.push_back(std::make_shared<Disco>(name, city, description, rating, openings, cost,
                                          2.5, 18, "VIP", genre, prive, dressCode));
         }
         else if (type == "Restaurant") {
             QString cuisine = obj["cuisineType"].toString();
             bool res = obj["reservation"].toBool();
             QString special = obj["specialDish"].toString();
-            imported.push_back(new Restaurant(name, city, description, rating, openings, cost,
+            imported.push_back(std::make_shared<Restaurant>(name, city, description, rating, openings, cost,
                                               true, QTime(0, 10), true, cuisine, res, special));
         }
         else if (type == "LocalMarket") {
             bool artisans = obj["artisans"].toBool();
             bool seasonal = obj["seasonal"].toBool();
             QString period = obj["period"].toString();
-            imported.push_back(new LocalMarket(name, city, description, rating, openings, cost,
+            imported.push_back(std::make_shared<LocalMarket>(name, city, description, rating, openings, cost,
                                                true, true, 10, artisans, seasonal, period));
         }
         else if (type == "Mall") {
             int shopCount = obj["shopCount"].toInt();
             bool cinema = obj["cinema"].toBool();
             bool parking = obj["freeParking"].toBool();
-            imported.push_back(new Mall(name, city, description, rating, openings, cost,
+            imported.push_back(std::make_shared<Mall>(name, city, description, rating, openings, cost,
                                         true, true, 20, shopCount, cinema, parking));
         }
         else if (type == "PanoramicPoints") {
             double altitude = obj["altitude"].toDouble();
             bool binocular = obj["hasBinocular"].toBool();
             bool night = obj["nightLighting"].toBool();
-            imported.push_back(new PanoramicPoints(name, city, description, rating, openings, cost,
+            imported.push_back(std::make_shared<PanoramicPoints>(name, city, description, rating, openings, cost,
                                                    1.0, 0, "nessuna", altitude, binocular, night));
         }
         else if (type == "Museum") {
             bool guide = obj["hasAudioGuide"].toBool();
-            imported.push_back(new Museum(name, city, description, rating, openings, cost,
+            imported.push_back(std::make_shared<Museum>(name, city, description, rating, openings, cost,
                                           1.0, true, "Cultura", "Sì", guide));
         }
         else if (type == "Monument") {
             bool unesco = obj["isUnesco"].toBool();
             QString state = obj["conservationStatus"].toString();
             bool openTo = obj["openToPublic"].toBool();
-            imported.push_back(new Monument(name, city, description, rating, openings, cost,
+            imported.push_back(std::make_shared<Monument>(name, city, description, rating, openings, cost,
                                             1.0, true, "Cultura", "Sì", unesco, state, openTo));
         }
+        else throw std::invalid_argument("Unknown type: " + type.toStdString());
     }
 
     return imported;

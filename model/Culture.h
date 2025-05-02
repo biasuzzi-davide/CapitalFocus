@@ -12,7 +12,7 @@ protected:
 
 public:
     Culture(const QString& name, const QString& city, const QString& description,
-            float rating, const weeklyOpenings& open, double cost,
+            double rating, const weeklyOpenings& open, double cost,
             double studentDiscount, bool guidedTour,
             const QString& culturalFocus, const QString& hasGuidedTour);
     virtual ~Culture() = default;

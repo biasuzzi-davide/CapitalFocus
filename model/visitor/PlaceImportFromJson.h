@@ -4,6 +4,7 @@
 #include<QJsonArray>
 #include<QString>
 #include<vector>
+#include <memory>
 #include "model/Place.h"
 
 class PlaceImportFromJson{
@@ -12,7 +13,7 @@ private:
 
 public:
     PlaceImportFromJson()=default;
-    std::vector<Place*> importFromJson(const QString& filePath) const;
+    std::vector<std::shared_ptr<Place>> importFromJson(const QString& filePath) const;
 };
 
 #endif // PLACEIMPORTFROMJSON_H

@@ -3,7 +3,7 @@
 Shopping::Shopping( const QString &name,
                     const QString& city, 
                     const QString& description, 
-                    float rating,
+                    double rating,
                     const weeklyOpenings& hours,
                     double cost, 
                     bool outdoor, 

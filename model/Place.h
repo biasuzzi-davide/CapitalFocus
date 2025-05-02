@@ -10,13 +10,13 @@ protected:
     QString name;
     QString city;
     QString description;
-    float rating;
+    double rating;
     weeklyOpenings open;
     double cost;
 
 public:
     Place(const QString& name, const QString& city, const QString& description,
-          float rating, const weeklyOpenings& open, double cost);
+          double rating, const weeklyOpenings& open, double cost);
     virtual ~Place() = default;
     virtual void acceptVisitor(PlaceVisitorInterface& visitor) const = 0;
 
@@ -26,7 +26,7 @@ public:
     QString getName() const;
     QString getCity() const;
     QString getDescription() const;
-    float getRating() const;
+    double getRating() const;
     const weeklyOpenings& getOpen() const;
 
 };
