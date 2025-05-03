@@ -23,22 +23,22 @@ void MainWindow::updateResults(const std::map<QString, std::vector<std::shared_p
         QString section = pair.first;  // es. "Shopping", "Food"
         const auto& places = pair.second;
 
-        // Aggiunge un item intestazione (non selezionabile)
+        // Intestazione (non selezionabile)
         QListWidgetItem* header = new QListWidgetItem(section);
         QFont font = header->font();
         font.setBold(true);
-        font.setPointSize(font.pointSize() + 2);  // aumenta la dimensione
+        font.setPointSize(font.pointSize() + 2);
         header->setFont(font);
-        header->setForeground(QBrush(QColor("#8B0000")));  // colore marrone-rosso (simile al logo)
-        header->setBackground(QBrush(QColor("#F5F5F5")));  // sfondo chiaro
-        header->setFlags(Qt::NoItemFlags);  // non selezionabile
-        ui->listWidgetResults->addItem("");  // linea vuota tra gruppi
-
+        header->setForeground(QBrush(QColor("#8B0000")));
+        header->setBackground(QBrush(QColor("#F5F5F5")));
+        header->setFlags(Qt::NoItemFlags);  // non cliccabile
+        ui->listWidgetResults->addItem("");  // linea vuota
         ui->listWidgetResults->addItem(header);
 
-        // Aggiunge i risultati sotto la sezione
+        // Aggiunge i risultati
         for (const auto& place : places) {
             QListWidgetItem* item = new QListWidgetItem(place->getName());
+            item->setData(Qt::UserRole, QVariant::fromValue<void*>(place.get()));
             ui->listWidgetResults->addItem(item);
         }
     }
@@ -82,13 +82,27 @@ void MainWindow::setController(PlaceController* controller) {
     connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromFile);
     connect(ui->pushButtonBacktoMain, &QPushButton::clicked, controller, &PlaceController::setWidgetMain);
     //connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromXml);
-
+    connect(ui->listWidgetResults, &QListWidget::itemClicked,controller, &PlaceController::onPlaceSelected);
     connect(ui->actionCredits,      &QAction::triggered,    controller,       &PlaceController::setWidgetCredits);
     connect(ui->actionStatistics, &QAction::triggered, controller, &PlaceController::showStatistics);
 
 }
 
+QListWidget* MainWindow::getListWidget() const {
+    return ui->listWidgetResults;
+}
 
+void MainWindow::setDetailsWidget(QWidget* widget) {
+    // Rimuove i precedenti widget
+    QLayoutItem* child;
+    while ((child = ui->detailsLayout->takeAt(0)) != nullptr) {
+        if (child->widget())
+            child->widget()->deleteLater();
+        delete child;
+    }
+    if (widget)
+        ui->detailsLayout->addWidget(widget);
+}
 void MainWindow::setWidgetCredits(){
     ui->stackedWidget->setCurrentWidget(ui->creditsPage);
 }

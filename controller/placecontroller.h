@@ -39,7 +39,7 @@ public slots: // pubblici perchè devono essere visibili quando faccio il connec
     void findPlaces();
     void resetSearchFields();
     void exportToFile();
-
+    void onPlaceSelected(QListWidgetItem* item);
     void showCreditsPage();
     void setWidgetCredits();
     void setWidgetMain();

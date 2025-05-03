@@ -3,6 +3,7 @@
 #include <QMainWindow>
 #include "model/Place.h"
 #include <QStackedWidget>
+#include <QListWidget>
 #include <model/statisticsResult.h>
 
 QT_BEGIN_NAMESPACE
@@ -29,7 +30,8 @@ public:
     void setWidgetMain();
     void showStatistics(const StatisticsResult& stats);
     void updateResults(const std::map<QString, std::vector<std::shared_ptr<Place>>>& groupedResults);
-
+    QListWidget* getListWidget() const;
+    void setDetailsWidget(QWidget* widget);
 private:
     QStackedWidget* stackedWidget;
     Ui::MainWindow *ui;

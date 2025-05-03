@@ -73,6 +73,30 @@ void PlaceController::importPlacesFromJson(const QString& filePath){
     }
 }
 
+void PlaceController::onPlaceSelected(QListWidgetItem* item) {
+    if (!item) return;
+
+    QVariant data = item->data(Qt::UserRole);
+    if (!data.isValid()) return;
+
+    auto* place = static_cast<Place*>(data.value<void*>());
+    if (!place) return;
+
+    QWidget* widget = nullptr;
+
+    if (auto s = dynamic_cast<Shopping*>(place))
+        qDebug() << "=== Shopping ===";
+    else if (auto f = dynamic_cast<Food*>(place))
+        qDebug() << "=== Food ===";
+    else if (auto e = dynamic_cast<Entertainment*>(place))
+        qDebug() << "=== Entertainment ===";
+    else if (auto c = dynamic_cast<Culture*>(place))
+        qDebug() << "=== Culture ===";
+
+    if (widget)
+        view->setDetailsWidget(widget);
+}
+
 void PlaceController::importFromFile()
 {
     QString path = QFileDialog::getOpenFileName(view, tr("Select file"),"", tr("JSON or XML file (*.json *.xml)"));
