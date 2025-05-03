@@ -44,6 +44,7 @@ public slots: // pubblici perchè devono essere visibili quando faccio il connec
     void setWidgetCredits();
     void setWidgetMain();
     void showStatistics();
+    std::map<QString, std::vector<std::shared_ptr<Place>>> groupedSearchResults(const QString& keyword, const QString& city) const;
 };
 
 #endif // PLACECONTROLLER_H

@@ -22,13 +22,14 @@ public:
     ~MainWindow();
     QString getSearchText() const;
     QString getSelectedCity() const;
-    void updateResults(const std::vector<std::shared_ptr<Place>>& results);
     void setController(PlaceController* controller);
     void clearSearchFields();
     void populateCityComboBox(const std::vector<std::shared_ptr<Place>>& places);
     void setWidgetCredits();
     void setWidgetMain();
     void showStatistics(const StatisticsResult& stats);
+    void updateResults(const std::map<QString, std::vector<std::shared_ptr<Place>>>& groupedResults);
+
 private:
     QStackedWidget* stackedWidget;
     Ui::MainWindow *ui;

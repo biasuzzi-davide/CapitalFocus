@@ -16,6 +16,34 @@ MainWindow::MainWindow(QWidget *parent)
 
 }
 
+void MainWindow::updateResults(const std::map<QString, std::vector<std::shared_ptr<Place>>>& groupedResults) {
+    ui->listWidgetResults->clear();
+
+    for (const auto& pair : groupedResults) {
+        QString section = pair.first;  // es. "Shopping", "Food"
+        const auto& places = pair.second;
+
+        // Aggiunge un item intestazione (non selezionabile)
+        QListWidgetItem* header = new QListWidgetItem(section);
+        QFont font = header->font();
+        font.setBold(true);
+        font.setPointSize(font.pointSize() + 2);  // aumenta la dimensione
+        header->setFont(font);
+        header->setForeground(QBrush(QColor("#8B0000")));  // colore marrone-rosso (simile al logo)
+        header->setBackground(QBrush(QColor("#F5F5F5")));  // sfondo chiaro
+        header->setFlags(Qt::NoItemFlags);  // non selezionabile
+        ui->listWidgetResults->addItem("");  // linea vuota tra gruppi
+
+        ui->listWidgetResults->addItem(header);
+
+        // Aggiunge i risultati sotto la sezione
+        for (const auto& place : places) {
+            QListWidgetItem* item = new QListWidgetItem(place->getName());
+            ui->listWidgetResults->addItem(item);
+        }
+    }
+}
+
 
 void MainWindow::showStatistics(const StatisticsResult& stats) {
     ui->stackedWidget->setCurrentWidget(ui->statisticsPage);
@@ -81,13 +109,6 @@ QString MainWindow::getSelectedCity() const {
     return ui->comboBoxCity->currentText();
 }
 
-void MainWindow::updateResults(const std::vector<std::shared_ptr<Place>>& results) {
-    ui->listWidgetResults->clear();
-    for (const auto& place : results) {
-        QListWidgetItem* item = new QListWidgetItem(place->getName());
-        ui->listWidgetResults->addItem(item);
-    }
-}
 void MainWindow::clearSearchFields() {
     ui->lineEditSearch->clear();
     ui->comboBoxCity->setCurrentIndex(0);

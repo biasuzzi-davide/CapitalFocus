@@ -38,7 +38,9 @@ void PlaceController::importPlacesFromXml(const QString& filePath){
             repository.addPlace(sp);
 
         view->populateCityComboBox(repository.getAllPlaces());
-        view->updateResults(repository.getAllPlaces());
+        auto grouped = groupedSearchResults("", "All");
+        view->updateResults(grouped);
+
 
     } catch (const FileOpenError& e) {
         QMessageBox::critical(view, tr("File opening error"), e.what());
@@ -58,7 +60,9 @@ void PlaceController::importPlacesFromJson(const QString& filePath){
             repository.addPlace(sp);
 
         view->populateCityComboBox(repository.getAllPlaces());
-        view->updateResults(repository.getAllPlaces());
+        auto grouped = groupedSearchResults("", "All");
+        view->updateResults(grouped);
+
 
     } catch (const FileOpenError& e) {
         QMessageBox::critical(view, tr("File opening error"), e.what());
@@ -151,10 +155,8 @@ void PlaceController::findPlaces() {
     QString keyword = view->getSearchText();
     QString city = view->getSelectedCity();
 
-    auto results = repository.search(keyword, city);  // qui city può essere "All"
-    qDebug() << "KW: " << keyword << " CTY: " << city << " N: " << results.size();
-
-    view->updateResults(results);
+    auto groupedResults = groupedSearchResults(keyword, city);
+    view->updateResults(groupedResults);
 }
 
 void PlaceController::exportToFile()
@@ -186,4 +188,17 @@ void PlaceController::showStatistics() {
     StatisticsResult stats = repository.computeStatistics();
     view->showStatistics(stats);
 }
+
+std::map<QString, std::vector<std::shared_ptr<Place>>> PlaceController::groupedSearchResults(const QString& keyword, const QString& city) const {
+    std::map<QString, std::vector<std::shared_ptr<Place>>> grouped;
+    auto results = repository.search(keyword, city);
+
+    for (const auto& place : results) {
+        QString category = place->getCategory();
+        grouped[category].push_back(place);
+    }
+
+    return grouped;
+}
+
 
