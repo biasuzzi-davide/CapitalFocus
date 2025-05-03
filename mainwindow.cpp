@@ -6,9 +6,14 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), controller(nullptr)
 {
+
     ui->setupUi(this);
     ui->verticalLayout->setAlignment(ui->label, Qt::AlignHCenter);
     ui->verticalLayout->setStretch(3, 1);
+
+    ui->verticalLayout->setContentsMargins(15, 15, 15, 15);
+    ui->verticalLayout->setSpacing(10);
+
 }
 
 
