@@ -92,7 +92,7 @@ void MainWindow::clearSearchFields() {
     ui->lineEditSearch->clear();
     ui->comboBoxCity->setCurrentIndex(0);
 }
-#include <QSet>
+#include <QSet> //
 
 void MainWindow::populateCityComboBox(const std::vector<std::shared_ptr<Place>>& places) {
     ui->comboBoxCity->clear();              // Pulisce tutto
