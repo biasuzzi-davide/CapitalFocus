@@ -37,10 +37,8 @@ void PlaceController::importPlacesFromXml(const QString& filePath){
         for (const auto& sp : newXmlPlaces)
             repository.addPlace(sp);
 
-        //TODO: metodi per la view da implementare correttamente
-        // → implementare dopo TableModel
-        //view->populateCityComboBox(repository.getAllPlaces());
-        //view->updateResults(repository.getAllPlaces());
+        view->populateCityComboBox(repository.getAllPlaces());
+        view->updateResults(repository.getAllPlaces());
 
     } catch (const FileOpenError& e) {
         QMessageBox::critical(view, tr("File opening error"), e.what());
@@ -59,10 +57,8 @@ void PlaceController::importPlacesFromJson(const QString& filePath){
         for (const auto& sp : newJsonPlaces)
             repository.addPlace(sp);
 
-        //TODO: metodi per la view da implementare correttamente
-        // → implementare dopo TableModel
-        //view->populateCityComboBox(repository.getAllPlaces());
-        //view->updateResults(repository.getAllPlaces());
+        view->populateCityComboBox(repository.getAllPlaces());
+        view->updateResults(repository.getAllPlaces());
 
     } catch (const FileOpenError& e) {
         QMessageBox::critical(view, tr("File opening error"), e.what());
