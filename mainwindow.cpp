@@ -7,11 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), controller(nullptr)
 {
     ui->setupUi(this);
-    stackedWidget = new QStackedWidget(this);
-    ui->centralwidget->layout()->addWidget(stackedWidget);
-    // ui->menuBar->setNativeMenuBar(false); // decommentare per avere il menu dentro la finestra su mac
-
-
+    ui->verticalLayout->setAlignment(ui->label, Qt::AlignHCenter);
+    ui->verticalLayout->setStretch(3, 1);
 }
 
 

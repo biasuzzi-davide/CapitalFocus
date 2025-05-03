@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>730</width>
     <height>600</height>
    </rect>
   </property>
@@ -60,6 +60,9 @@
           <property name="scaledContents">
            <bool>true</bool>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
          </widget>
         </item>
         <item>
@@ -91,7 +94,11 @@
          </layout>
         </item>
         <item>
-         <widget class="QListWidget" name="listWidgetResults"/>
+         <widget class="QListWidget" name="listWidgetResults">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>
@@ -185,8 +192,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>37</height>
+     <width>730</width>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuImport">
