@@ -1,6 +1,8 @@
 #include "weeklyOpenings.h"
 #include "weekday.h"
 void weeklyOpenings::setOpening(Weekday day, const QTime& open, const QTime& close){
+    if(open>=close)
+        throw std::invalid_argument("open>=close"); //Lancia eccezione per orari non validi
     schedule[day]= openingFrames(open,close);
 }
 

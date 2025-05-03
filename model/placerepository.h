@@ -23,7 +23,7 @@ public:
     const std::vector<std::shared_ptr<Place>>& getAllPlaces() const;
 
     // Ricerca Place per nome e/o città
-    std::vector<std::shared_ptr<Place>> search(const QString& nameKeyword, const QString& cityFilter = "Tutte") const;
+    std::vector<std::shared_ptr<Place>> search(const QString& nameKeyword, const QString& cityFilter = "All") const;
 
     // Pulisce tutti i Place
     void clear();

@@ -2,6 +2,7 @@
 #include "placevisitorinterface.h"
 #include <QDomDocument>
 #include <QDomElement>
+#include <stdexcept>
 #include "../Cafe.h"
 #include "../Disco.h"
 #include "../Mall.h"
@@ -51,6 +52,9 @@ QDomElement PlaceExportToXmlVisitor::basePlaceToXml(const Place& place, const QS
     return e;
 }
 
+void PlaceExportToXmlVisitor::visit(const Place& p) {
+    throw std::runtime_error("Unsupported: cannot export abstract Place to XML");
+}
 
 void PlaceExportToXmlVisitor::visit(const Cafe& cafe) {
     QDomElement e = basePlaceToXml(cafe,"Cafe");

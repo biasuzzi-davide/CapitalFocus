@@ -94,7 +94,7 @@ void MainWindow::clearSearchFields() {
 
 void MainWindow::populateCityComboBox(const std::vector<std::shared_ptr<Place>>& places) {
     ui->comboBoxCity->clear();              // Pulisce tutto
-    ui->comboBoxCity->addItem("All");     // Prima voce = "Tutte"
+    ui->comboBoxCity->addItem("All");     // Prima voce = "All"
 
     QSet<QString> addedCities;
     for (const auto& place : places) {

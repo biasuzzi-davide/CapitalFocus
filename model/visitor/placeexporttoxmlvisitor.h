@@ -15,6 +15,7 @@ public:
     QDomElement getResult() const;  // restituisce l'elemento XML creato
     QDomElement exportWeeklyOpenings(const weeklyOpenings&) const;
     QDomElement basePlaceToXml(const Place& place, const QString& type) const;     // Implementazioni per ogni tipo concreto
+    void visit(const Place& place) override;
     void visit(const Cafe& cafe) override;
     void visit(const Disco& disco) override;
     void visit(const Mall& mall) override;

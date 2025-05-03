@@ -1,5 +1,4 @@
 #include "placeController.h"
-#include "PlaceController.h"
 #include "../model/visitor/placeexporttoxmlvisitor.h"
 #include "../model/visitor/placeExportToJsonVisitor.h"
 #include <QFileDialog>
@@ -39,7 +38,7 @@ void PlaceController::importPlacesFromXml(const QString& filePath){
             repository.addPlace(sp);
 
         //TODO: metodi per la view da implementare correttamente
-        // → implementare dopo TableModel
+        // → implementare dopo TableModel
         //view->populateCityComboBox(repository.getAllPlaces());
         //view->updateResults(repository.getAllPlaces());
 
@@ -61,7 +60,7 @@ void PlaceController::importPlacesFromJson(const QString& filePath){
             repository.addPlace(sp);
 
         //TODO: metodi per la view da implementare correttamente
-        // → implementare dopo TableModel
+        // → implementare dopo TableModel
         //view->populateCityComboBox(repository.getAllPlaces());
         //view->updateResults(repository.getAllPlaces());
 
@@ -131,10 +130,7 @@ void PlaceController::exportToXml (const QString& filePath) const {
     file.write(doc.toByteArray(4)); // aggiunta spazi di indentazione
     file.close();
 
-    QMessageBox::information(view, tr("Export completed"),
-                             tr("Exported %1 places to\n%2")
-                                 .arg(root.childNodes().count())
-                                 .arg(filePath));
+    QMessageBox::information(view, tr("Export completed"),tr("Exported %1 places to\n%2").arg(root.childNodes().count()).arg(filePath));
 }
 
 void PlaceController::printAllPlaces() const {
@@ -159,7 +155,7 @@ void PlaceController::findPlaces() {
     QString keyword = view->getSearchText();
     QString city = view->getSelectedCity();
 
-    auto results = repository.search(keyword, city);  // qui city può essere "Tutte"
+    auto results = repository.search(keyword, city);  // qui city può essere "All"
     qDebug() << "KW: " << keyword << " CTY: " << city << " N: " << results.size();
 
     view->updateResults(results);
@@ -181,9 +177,7 @@ void PlaceController::exportToFile()
     else if (ext == "xml")
         exportToXml(path);
     else
-        QMessageBox::warning(view,
-                             tr("Unsupported format"),
-                             tr("Choose a .json or .xml file"));
+        QMessageBox::warning(view,tr("Unsupported format"),tr("Choose a .json or .xml file"));
 }
 
 void PlaceController::setWidgetCredits() {

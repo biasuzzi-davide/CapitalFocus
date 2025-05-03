@@ -25,7 +25,7 @@ public:
     // Interfacce logiche
     void addPlace(const std::shared_ptr<Place>& place);
     void removePlace(int index);
-    std::vector<std::shared_ptr<Place>> search(const QString& keyword, const QString& city = "Tutte") const;
+    std::vector<std::shared_ptr<Place>> search(const QString& keyword, const QString& city = "All") const;
     const std::vector<std::shared_ptr<Place>>& getAll() const;
     void importPlacesFromXml(const QString& filePath);
     void importPlacesFromJson(const QString& filePath);

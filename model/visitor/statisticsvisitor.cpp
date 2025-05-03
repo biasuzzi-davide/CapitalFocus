@@ -8,7 +8,7 @@ StatisticsVisitor::StatisticsVisitor()
 void StatisticsVisitor::visit(const Place& p) {
     ++count;
     sumRatings += p.getRating();
-    sumCost += p.getCost().toDouble();
+    sumCost += p.getCost();
     cityCounts[p.getCity()]++;
 }
 

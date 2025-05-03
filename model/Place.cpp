@@ -9,5 +9,5 @@ QString Place::getName() const{return name;}
 QString Place::getCity() const{return city;}
 QString Place::getDescription() const{return description;}
 double Place::getRating() const{return rating;}
-QString Place::getCost() const {return QString::number(cost, 'f', 2) + "€";}
+double Place::getCost() const {return cost;}
 const weeklyOpenings& Place::getOpen() const{return open;}

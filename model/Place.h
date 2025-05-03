@@ -22,7 +22,7 @@ public:
 
 
     virtual QString getCategory() const = 0;
-    QString getCost() const;
+    double getCost() const;
     QString getName() const;
     QString getCity() const;
     QString getDescription() const;
