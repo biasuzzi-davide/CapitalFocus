@@ -11,6 +11,9 @@ CONFIG += c++17
 
 SOURCES += \
     controller/placecontroller.cpp \
+    culturewidget.cpp \
+    entertainmentwidget.cpp \
+    foodwidget.cpp \
     main.cpp \
     #main_old.cpp \
     model/Cafe.cpp \
@@ -34,10 +37,14 @@ SOURCES += \
     model/visitor/placeimportfromxml.cpp \
     model/visitor/statisticsvisitor.cpp \
     model/weeklyOpenings.cpp \
-    model/visitor/placeexporttoxmlvisitor.cpp
+    model/visitor/placeexporttoxmlvisitor.cpp \
+    shoppingwidget.cpp
 
 HEADERS += \
     controller/placecontroller.h \
+    culturewidget.h \
+    entertainmentwidget.h \
+    foodwidget.h \
     model/Cafe.h \
     model/Culture.h \
     model/Disco.h \
@@ -63,10 +70,15 @@ HEADERS += \
     model/weekday.h \
     model/weeklyOpenings.h \
     mainwindow.h \
-    model/visitor/placeexporttoxmlvisitor.h
+    model/visitor/placeexporttoxmlvisitor.h \
+    shoppingwidget.h
 
 FORMS += \
-    mainwindow.ui
+    culturewidget.ui \
+    entertainmentwidget.ui \
+    foodwidget.ui \
+    mainwindow.ui \
+    shoppingwidget.ui
 
 TRANSLATIONS += \
     CapitalFocus_en_IT.ts

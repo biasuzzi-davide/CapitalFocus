@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "controller/placecontroller.h"
+#include"foodwidget.h"
 #include <QFileDialog>
 #include "model/statisticsResult.h"
 MainWindow::MainWindow(QWidget *parent)
@@ -8,6 +9,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
 
     ui->setupUi(this);
+
+    auto *fw = new foodwidget(this);
+    ui->stackedWidget->addWidget(fw);
+    ui->stackedWidget->setCurrentWidget(fw);
+
     ui->verticalLayout->setAlignment(ui->label, Qt::AlignHCenter);
     ui->verticalLayout->setStretch(3, 1);
 

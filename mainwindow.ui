@@ -11,7 +11,125 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Luoghi</string>
+   <string>Place details</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+/* Stile generale per la finestra principale */
+QMainWindow#MainWindow {
+	background-color: #f0f0f0; /* Sfondo grigio chiaro */
+	font-family: Segoe UI, Arial, sans-serif; /* Font pi\u00F9 moderno (se disponibile) */
+	font-size: 10pt;
+}
+
+/* Applica lo stile al widget centrale */
+QWidget#centralwidget {
+	background-color: #f0f0f0; /* Sfondo grigio chiaro coerente */
+}
+
+/* Stile per tutte le etichette */
+QLabel {
+	color: #333333; /* Testo grigio scuro */
+	padding-bottom: 2px; /* Piccola spaziatura sotto */
+}
+
+/* Stile per campi di testo, combo box, list widget e table widget */
+QLineEdit, QComboBox, QListWidget, QTableWidget {
+	background-color: #ffffff; /* Sfondo bianco */
+	border: 1px solid #cccccc; /* Bordo grigio chiaro */
+	border-radius: 4px; /* Angoli arrotondati */
+	padding: 5px; /* Spaziatura interna */
+	color: #333333; /* Colore del testo */
+}
+
+/* Stile specifico per QComboBox per garantire spazio per la freccia */
+QComboBox {
+	padding-right: 20px;
+}
+
+/* Stile per QTableWidget per un aspetto pi\u00F9 pulito */
+QTableWidget {
+	selection-background-color: #E53935; /* Rosso primario per la selezione */
+	selection-color: white;
+	show-grid: true; /* Mostra le linee della griglia */
+	gridline-color: #e0e0e0; /* Colore linee griglia */
+	/* alternate-background-color: #fafafa; /* Opzionale: colore alternato per le righe */
+}
+
+/* Stile per i bottoni (usando la palette rossa accesa) */
+QPushButton {
+	background-color: #E53935; /* Rosso primario (Material Design Red 600) */
+	color: white; /* Testo bianco */
+	border: none; /* Nessun bordo */
+	padding: 8px 16px; /* Pi\u00F9 padding */
+	border-radius: 4px; /* Angoli arrotondati */
+	font-weight: bold; /* Grassetto */
+	min-width: 70px; /* Larghezza minima */
+	margin: 2px; /* Piccolo margine per separare i bottoni */
+}
+
+QPushButton:hover {
+	background-color: #D32F2F; /* Rosso pi\u00F9 scuro al passaggio (MD Red 700) */
+}
+
+QPushButton:pressed {
+	background-color: #B71C1C; /* Rosso ancora pi\u00F9 scuro quando premuto (MD Red 900) */
+}
+
+/* Stile per l'etichetta dei credits (se necessario, per prevenire interferenze con HTML) */
+QLabel#label_2 {
+	/* Lo stile delle etichette generiche sopra dovrebbe applicarsi,
+	    se l'HTML non lo sovrascrive con uno style="" diretto */
+}
+
+/* Stile per gli item selezionabili nella QListWidget (nomi dei luoghi) */
+QListWidget::item:selectable {
+	color: #2E3138; /* Imposta il colore del testo degli item selezionabili a nero */
+}
+
+/* Stile per gli header delle sezioni nella QListWidget (non selezionabili) */
+QListWidget::item:!selectable {
+	color: #2E3138; /* Usa il rosso primario per gli header */
+	font-weight: bold; /* Mantenuto il grassetto */
+}
+
+/* Stile per l'item selezionato nella QListWidget */
+QListWidget::item:selected {
+    background-color: #E53935; /* Sfondo rosso primario per l'elemento selezionato */
+    color: white; /* Testo bianco per l'elemento selezionato */
+}
+
+
+/* Stile per la scrollbar verticale all'interno di QListWidget */
+QListWidget QScrollBar:vertical {
+    border: 1px solid #cccccc;
+    background: #f0f0f0; /* Sfondo della barra di scorrimento */
+    width: 10px; /* Larghezza della scrollbar */
+    margin: 0px 0px 0px 0px;
+    border-radius: 5px;
+}
+
+QListWidget QScrollBar::handle:vertical {
+    background: #E53935; /* Colore del "pulsantino" (handle) */
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QListWidget QScrollBar::add-line:vertical,
+QListWidget QScrollBar::sub-line:vertical {
+    border: none; /* Rimuovi le frecce sopra e sotto (opzionale per look moderno) */
+    background: none;
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QListWidget QScrollBar::add-page:vertical,
+QListWidget QScrollBar::sub-page:vertical {
+    background: none; /* Rendi il "tracciato" vuoto/trasparente */
+}
+
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="sizePolicy">
@@ -45,25 +163,37 @@
         </item>
         <item alignment="Qt::AlignHCenter">
          <widget class="QLabel" name="label">
-          <property name="maximumSize">
-           <size>
-            <width>186</width>
+        <!-- Forziamo una dimensione fissa pari alla risoluzione originale del logo -->
+        <property name="minimumSize">
+            <size>
+            <width>200</width>   <!-- sostituisci 200 con la larghezza reale del logo -->
+            <height>100</height> <!-- sostituisci 100 con l'altezza reale del logo -->
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+            <width>200</width>
             <height>100</height>
-           </size>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-          <property name="pixmap">
-           <pixmap resource="resources.qrc">:/images/logo.png</pixmap>
-          </property>
-          <property name="scaledContents">
-           <bool>true</bool>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
+            </size>
+        </property>
+        <!-- Impostiamo la policy a Fixed così Qt Creator non lo ridimensiona automaticamente -->
+        <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+        <property name="pixmap">
+            <pixmap resource="resources.qrc">:/images/logo.png</pixmap>
+        </property>
+        <!-- disabilitiamo lo scaling automatico -->
+        <property name="scaledContents">
+            <bool>true</bool>
+        </property>
+        <property name="alignment">
+            <set>Qt::AlignCenter</set>
+        </property>
+        </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="topSearchLayout">
@@ -155,7 +285,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;CapitalFocus ®&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Davide Biasuzzi [2111000]&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Alberto Reginato [2110450]&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-style:italic;&quot;&gt;May 2025&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;V1.0 Candidate Release&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;CapitalFocus &amp;#174;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Davide Biasuzzi [2111000]&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Alberto Reginato [2110450]&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-style:italic;&quot;&gt;May 2025&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&gt;V1.0 Candidate Release&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="textFormat">
            <enum>Qt::RichText</enum>
