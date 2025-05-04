@@ -10,9 +10,10 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->setupUi(this);
 
-    auto *fw = new foodwidget(this);
-    ui->stackedWidget->addWidget(fw);
-    ui->stackedWidget->setCurrentWidget(fw);
+    //Decommenta per visualizzare foodwidget
+    // auto *fw = new foodwidget(this);
+    // ui->stackedWidget->addWidget(fw);
+    // ui->stackedWidget->setCurrentWidget(fw);
 
     ui->verticalLayout->setAlignment(ui->label, Qt::AlignHCenter);
     ui->verticalLayout->setStretch(3, 1);
