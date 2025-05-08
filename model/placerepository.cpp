@@ -1,4 +1,4 @@
-#include "PlaceRepository.h"
+#include "placerepository.h"
 
 void PlaceRepository::addPlace(const std::shared_ptr<Place>& place) {
     places.push_back(place);
@@ -44,4 +44,15 @@ StatisticsResult PlaceRepository::computeStatistics() const {
     res.averageCost   = visitor.averageCost();
     res.countByCity   = visitor.countByCity();
     return res;
+}
+
+void PlaceRepository::replacePlace(Place* oldPtr,
+                                   const std::shared_ptr<Place>& newPlace)
+{
+    auto it = std::find_if(places.begin(), places.end(),
+                           [oldPtr](const std::shared_ptr<Place>& p){
+                               return p.get() == oldPtr;
+                           });
+    if (it != places.end())
+        *it = newPlace;           // sovrascrive in-place, indice invariato
 }

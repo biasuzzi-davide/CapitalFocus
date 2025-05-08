@@ -32,7 +32,7 @@ public:
 
     // Override del metodo polimorfo della classe base
     QString getCategory() const override;
-
+    QString getFoodSummary() const override;
     virtual ~Restaurant() = default;
 
     virtual void acceptVisitor(PlaceVisitorInterface& visitor) const override;

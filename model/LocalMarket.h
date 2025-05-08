@@ -32,7 +32,7 @@ public:
 
     // Override del metodo polimorfo della classe base
     QString getCategory() const override;
-
+    QString getShoppingSummary() const override;
     virtual ~LocalMarket() = default;
 
     void acceptVisitor(PlaceVisitorInterface& visitor) const override;

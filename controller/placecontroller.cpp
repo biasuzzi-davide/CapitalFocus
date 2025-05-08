@@ -1,4 +1,4 @@
-#include "placeController.h"
+#include "placecontroller.h"
 #include "../model/visitor/placeexporttoxmlvisitor.h"
 #include "../model/visitor/placeExportToJsonVisitor.h"
 #include <QFileDialog>
@@ -9,9 +9,17 @@
 #include <QJsonArray>
 #include <QFile>
 #include <QDomDocument>
+#include "../model/debugconfig.h"
+#include "../model/import_errors.h"
+#include "../model/uicommon.h"
+#include <foodwidget.h>
+#include <entertainmentwidget.h>
+#include <shoppingwidget.h>
+#include <culturewidget.h>
+#include <view/createplacewidget.h>
 
 PlaceController::PlaceController(MainWindow* v, PlaceRepository& repo)
-    : view(v), repository(repo) {};
+    : view(v), repository(repo), currentPlace(nullptr) {};
 
 void PlaceController::addPlace(const std::shared_ptr<Place>& place) {
     repository.addPlace(place);
@@ -19,6 +27,13 @@ void PlaceController::addPlace(const std::shared_ptr<Place>& place) {
 
 void PlaceController::removePlace(int index) {
     repository.removePlace(index);
+}
+Place* PlaceController::getCurrentPlace() const {
+    return currentPlace;
+}
+
+void PlaceController::resetCurrentPlace() {
+    currentPlace = nullptr;
 }
 
 std::vector<std::shared_ptr<Place>> PlaceController::search(const QString& keyword, const QString& city) const {
@@ -63,13 +78,13 @@ void PlaceController::importPlacesFromJson(const QString& filePath){
         auto grouped = groupedSearchResults("", "All");
         view->updateResults(grouped);
 
-
+    // Sono stati tolti
     } catch (const FileOpenError& e) {
-        QMessageBox::critical(view, tr("File opening error"), e.what());
+        view->showMessage(UiCommon::MsgIcon::Critical, tr("File opening error"), e.what());
     } catch (const JsonParseError& e) {
-        QMessageBox::critical(view, tr("JSON parsing error"), e.what());
+        view->showMessage(UiCommon::MsgIcon::Critical, tr("JSON parsing error"), e.what());
     } catch (const std::exception& e) {
-        QMessageBox::warning(view, tr("Invalid data"), e.what());
+        view->showMessage(UiCommon::MsgIcon::Critical, tr("Invalid data"), e.what());
     }
 }
 
@@ -81,17 +96,80 @@ void PlaceController::onPlaceSelected(QListWidgetItem* item) {
 
     auto* place = static_cast<Place*>(data.value<void*>());
     if (!place) return;
-
+    currentPlace = place;         // <-- aggiorna sempre il riferimento al place attuale
     QWidget* widget = nullptr;
 
-    if (auto s = dynamic_cast<Shopping*>(place))
-        qDebug() << "=== Shopping ===";
-    else if (auto f = dynamic_cast<Food*>(place))
-        qDebug() << "=== Food ===";
-    else if (auto e = dynamic_cast<Entertainment*>(place))
-        qDebug() << "=== Entertainment ===";
-    else if (auto c = dynamic_cast<Culture*>(place))
-        qDebug() << "=== Culture ===";
+    if (auto s = dynamic_cast<Shopping*>(place)) {
+        DEBUG_LOG("CONTROLLER: APERTURA WIDGET SHOPPING");
+        shoppingwidget* shopping = qobject_cast<shoppingwidget*>(view->getWidgetByName("shopping"));
+        if (shopping) {
+            shopping->setValues(
+                s->getName(),
+                s->getCity(),
+                s->getDescription(),
+                QString::number(s->getRating(), 'f', 1)+" ☆ / 5 ☆",
+                QString::number(s->getCost(), 'f', 1),
+                (s->getOpen()).toQStringMultiline(),
+                s->isOutdoor() ? "Yes" : "No",
+                s->foodAreaPresent() ? "Yes" : "No",
+                QString::number(s->getStandNumber())+" stands",
+                s->getShoppingSummary());
+            setWidgetSafe("shopping");
+        }
+
+    } else if (auto f = dynamic_cast<Food*>(place)) {
+        DEBUG_LOG("CONTROLLER: APERTURA WIDGET FOOD");
+        foodwidget* food = qobject_cast<foodwidget*>(view->getWidgetByName("food"));
+        if (food) {
+            food->setValues(
+                f->getName(),
+                f->getCity(),
+                f->getDescription(),
+                QString::number(f->getRating(), 'f', 1)+" ☆ / 5 ☆",
+                QString::number(f->getCost(), 'f', 1),
+                (f->getOpen()).toQStringMultiline(),
+                f->hasTakeAway() ? "Yes" : "No",
+                f->getAvgWaitingTime().toString("hh:mm"),
+                f->hasVeganMenu() ? "Yes" : "No",
+                f->getFoodSummary());
+            setWidgetSafe("food");
+        }
+
+    } else if (auto e = dynamic_cast<Entertainment*>(place)) {
+        DEBUG_LOG("CONTROLLER: APERTURA WIDGET ENTERTAINMENT");
+        entertainmentwidget* entertainment = qobject_cast<entertainmentwidget*>(view->getWidgetByName("entertainment"));
+        if (entertainment) {
+            entertainment->setValues(
+                e->getName(),
+                e->getCity(),
+                e->getDescription(),
+                QString::number(e->getRating(), 'f', 1)+" ☆ / 5 ☆",
+                QString::number(e->getCost(), 'f', 1),
+                (e->getOpen()).toQStringMultiline(),
+                QString::number(e->getAvgStayDuration(), 'f', 1),
+                QString::number(e->getMinAge(), 'f', 1),    e->getRestrictedEntry(),
+                e->getEntertainmentSummary());
+            setWidgetSafe("entertainment");
+        }
+    } else if (auto c = dynamic_cast<Culture*>(place)) {
+        DEBUG_LOG("CONTROLLER: APERTURA WIDGET CULTURE");
+        culturewidget* culture = qobject_cast<culturewidget*>(view->getWidgetByName("culture"));
+        if (culture) {
+            culture->setValues(
+                c->getName(),
+                c->getCity(),
+                c->getDescription(),
+                QString::number(c->getRating(), 'f', 1)+" ☆ / 5 ☆",
+                QString::number(c->getCost(), 'f', 1),
+                (c->getOpen()).toQStringMultiline(),
+                QString::number(c->getStudentDiscount(), 'f', 1),
+                c->hasGuidedTour() ? "Yes" : "No",
+                c->getCulturalFocus(),
+                c->getCultureSummary());
+            setWidgetSafe("culture");
+
+        }
+    }
 
     if (widget)
         view->setDetailsWidget(widget);
@@ -99,8 +177,8 @@ void PlaceController::onPlaceSelected(QListWidgetItem* item) {
 
 void PlaceController::importFromFile()
 {
-    QString path = QFileDialog::getOpenFileName(view, tr("Select file"),"", tr("JSON or XML file (*.json *.xml)"));
-
+    QString path = view->askOpenFile(tr("Select file"),
+                                     tr("JSON or XML file (*.json *.xml)"));
     if (path.isEmpty()) return;
 
     QString ext = QFileInfo(path).suffix().toLower();
@@ -109,7 +187,9 @@ void PlaceController::importFromFile()
     else if (ext == "xml")
         importPlacesFromXml(path);
     else
-        QMessageBox::warning(view, tr("Unsupported format"),tr("Select a .json or .xml file"));
+        view->showMessage(UiCommon::MsgIcon::Warning,
+                          tr("Unsupported format"),
+                          tr("Select a .json or .xml file"));
 }
 
 void PlaceController::exportToJson(const QString& filePath) const {
@@ -125,14 +205,18 @@ void PlaceController::exportToJson(const QString& filePath) const {
 
     QFile file(filePath);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
-        QMessageBox::critical(view, tr("File writing error"),tr("Cannot open file for writing:\n%1").arg(filePath));
-        return;
+        view->showMessage(UiCommon::MsgIcon::Critical,
+                                                   tr("File writing error"),
+                                                    tr("Cannot open file for writing:\n%1").arg(filePath));        return;
     }
     file.write(doc.toJson(QJsonDocument::Indented));
     file.close();
 
-    QMessageBox::information(view, tr("Export completed"),tr("Exported %1 places to\n%2").arg(placesArray.size()).arg(filePath));
-}
+    view->showMessage(UiCommon::MsgIcon::Info,
+                                            tr("Export completed"),
+                                            tr("Exported %1 places to\n%2")
+                                                    .arg(placesArray.size())
+                                                    .arg(filePath));}
 
 void PlaceController::exportToXml (const QString& filePath) const {
     QDomDocument doc("placesDoc");
@@ -147,15 +231,19 @@ void PlaceController::exportToXml (const QString& filePath) const {
 
     QFile file(filePath);
     if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
-        QMessageBox::critical(view, tr("File writing error"),
-                              tr("Cannot open file for writing:\n%1").arg(filePath));
+        view->showMessage(UiCommon::MsgIcon::Critical,
+                          tr("File writing error"),
+                          tr("Cannot open file for writing:\n%1").arg(filePath));
         return;
     }
     file.write(doc.toByteArray(4)); // aggiunta spazi di indentazione
     file.close();
 
-    QMessageBox::information(view, tr("Export completed"),tr("Exported %1 places to\n%2").arg(root.childNodes().count()).arg(filePath));
-}
+    view->showMessage(UiCommon::MsgIcon::Info,
+                      tr("Export completed"),
+                      tr("Exported %1 places to\n%2")
+                          .arg(root.childNodes().count())
+                          .arg(filePath));}
 
 void PlaceController::printAllPlaces() const {
     const auto& all = repository.getAllPlaces();
@@ -178,7 +266,6 @@ void PlaceController::resetSearchFields() {
 void PlaceController::findPlaces() {
     QString keyword = view->getSearchText();
     QString city = view->getSelectedCity();
-
     auto groupedResults = groupedSearchResults(keyword, city);
     view->updateResults(groupedResults);
 }
@@ -199,18 +286,24 @@ void PlaceController::exportToFile()
     else if (ext == "xml")
         exportToXml(path);
     else
-        QMessageBox::warning(view,tr("Unsupported format"),tr("Choose a .json or .xml file"));
-}
+        view->showMessage(UiCommon::MsgIcon::Warning,
+                          tr("Unsupported format"),
+                          tr("Choose a .json or .xml file"));}
 
 void PlaceController::setWidgetCredits() {
-    view->setWidgetCredits();
+    setWidgetSafe("credits");
 }
-void PlaceController::setWidgetMain() {
-    view->setWidgetMain();
+void PlaceController::setWidgetMain()
+{
+    if (setWidgetSafe("main"))          // pagina cambiata con successo?
+        resetCurrentPlace();            // allora posso azzerare
+}
+void PlaceController::setWidgetCreate() {
+    setWidgetSafe("create");
 }
 void PlaceController::showStatistics() {
     StatisticsResult stats = repository.computeStatistics();
-    view->showStatistics(stats);
+    setWidgetSafe("statistics");
 }
 
 std::map<QString, std::vector<std::shared_ptr<Place>>> PlaceController::groupedSearchResults(const QString& keyword, const QString& city) const {
@@ -224,5 +317,401 @@ std::map<QString, std::vector<std::shared_ptr<Place>>> PlaceController::groupedS
 
     return grouped;
 }
+#include <QInputDialog>
+#include "mainwindow.h"
 
+void PlaceController::promptAndSetWidget() { // ATTENZIONE, FUNZIONE DI DEBUG DI UTILITA, non rispetta pattern MVC e gestisce label autonomamente
+    bool ok;
+    QString label = QInputDialog::getText(nullptr, "Vai a pagina",
+                                          "Inserisci nome pagina (es. food, culture, main):",
+                                          QLineEdit::Normal, "", &ok);
+    if (ok && !label.isEmpty()) {
+        setWidgetSafe(label);
+    }
+}
+void PlaceController::goBack() {
+    setWidgetMain();
+}
+void PlaceController::createNewPlace() {
+    CreatePlaceWidget* create = qobject_cast<CreatePlaceWidget*>(view->getWidgetByName("create"));
+    if (!create) return;
 
+    const bool editing = create->isEditing();
+    Place*        oldRaw = editing ? currentPlace : nullptr;
+
+    // Attributi comuni
+    QString name = create->name();
+    QString city = create->city();
+    QString description = create->description();
+    double rating = create->rating();
+    double cost = create->cost();
+    weeklyOpenings openings;
+    for (int i = 0; i < 7; ++i) {
+        Weekday day = static_cast<Weekday>(i);
+        auto h = create->hours(day);
+        if (h.alwaysClosed) {
+            openings.setClosed(day);
+        } else {
+            openings.setOpening(day, h.open, h.close);
+        }
+    }
+
+    std::shared_ptr<Place> newPlace;
+
+    switch (create->getTypeIndex()) {
+    case 0:  // Disco
+        newPlace = std::make_shared<Disco>(
+            name, city, description, rating, openings, cost,
+            create->averageStay_Disco().msecsSinceStartOfDay()/60000.0,
+            create->minimumAge_Disco(),
+            create->restrictedEntry_Disco(),
+            create->musicGenre(),
+            create->prive(),
+            create->dressCode()
+            );
+        break;
+    case 1:  // PanoramicPoints
+        newPlace = std::make_shared<PanoramicPoints>(
+            name, city, description, rating, openings, cost,
+            create->averageStay_Panoramic().msecsSinceStartOfDay()/60000.0,
+            create->minimumAge_Panoramic(),
+            create->restrictedEntry_Panoramic(),
+            create->altitude(),
+            create->binoculars(),
+            create->nightLighting()
+            );
+        break;
+    case 2:  // Cafe
+        newPlace = std::make_shared<Cafe>(
+            name, city, description, rating, openings, cost,
+            create->takeAway_Cafe(),
+            create->averageWaitingTime_Cafe(),
+            create->veganMenu_Cafe(),
+            create->terrace(),
+            create->specialDrink()
+            );
+        break;
+    case 3:  // Restaurant
+        newPlace = std::make_shared<Restaurant>(
+            name, city, description, rating, openings, cost,
+            create->takeAway_Restaurant(),
+            create->averageWaitingTime_Restaurant(),
+            create->veganMenu_Restaurant(),
+            create->cuisineType(),
+            create->reservationNeeded(),
+            create->specialDish()
+            );
+        break;
+    case 4:  // Mall
+        newPlace = std::make_shared<Mall>(
+            name, city, description, rating, openings, cost,
+            create->outdoor_Mall(),
+            create->foodArea_Mall(),
+            create->standNumber_Mall(),
+            create->shopCount(),
+            create->cinema(),
+            create->freeParking()
+            );
+        break;
+    case 5:  // LocalMarket
+        newPlace = std::make_shared<LocalMarket>(
+            name, city, description, rating, openings, cost,
+            create->outdoor_Market(),
+            create->foodArea_Market(),
+            create->standNumber_Market(),
+            create->artisans(),
+            create->seasonal(),
+            create->period()
+            );
+        break;
+    case 6:  // Museum
+        newPlace = std::make_shared<Museum>(
+            name, city, description, rating, openings, cost,
+            create->studentDiscount_Museum(),
+            create->guidedTour_Museum(),
+            create->culturalFocus_Museum(),
+            create->audioGuide()
+            );
+        break;
+    case 7:  // Monument
+        newPlace = std::make_shared<Monument>(
+            name, city, description, rating, openings, cost,
+            create->studentDiscount_Monument(),
+            create->guidedTour_Monument(),
+            create->culturalFocus_Monument(),
+            create->unesco(),
+            create->conservationStatus(),
+            create->openToPublic()
+            );
+        break;
+    default:
+        QMessageBox::warning(view, "Errore", "Tipo di luogo non riconosciuto.");
+        return;
+    }
+
+    bool duplicato = false;
+    for (const auto& existing : repository.getAllPlaces()) {
+        // se siamo in editing e il duplicato è *lo stesso* elemento appena rimosso,
+        // saltiamo il controllo
+        if (editing && existing.get()==currentPlace) continue;
+
+        if (existing->getName().compare(newPlace->getName(), Qt::CaseInsensitive)==0 &&
+            existing->getCity().compare(newPlace->getCity(), Qt::CaseInsensitive)==0)
+        {
+            duplicato = true;
+            break;
+        }
+    }
+
+    if (duplicato) {
+        view->showMessage(UiCommon::MsgIcon::Critical,
+                          tr("Luogo già presente"),
+                          tr("Esiste già un luogo con lo stesso nome e città.\n"
+                             "Modifica uno dei due e riprova."));
+        return;
+    }
+    if (editing && oldRaw) {
+        repository.replacePlace(oldRaw, newPlace);   // nuovo metodo
+    } else {
+        repository.addPlace(newPlace);
+    }
+    resetCurrentPlace();
+    create->setEditing(false);
+
+    view->populateCityComboBox(repository.getAllPlaces());
+    view->updateResults(groupedSearchResults("", "All"));
+    goBack();
+    create->resetFields();
+}
+
+bool PlaceController::setWidgetSafe(const QString& name)
+{
+    if (anyWidgetIsEditing()) {
+        view->showMessage(UiCommon::MsgIcon::Warning,
+                          tr("Editing in progress"),
+                          tr("You are currently editing a place.\n"
+                             "Please save before switching."));
+        return false;                   // cambio pagina bloccato
+    }
+
+    view->showWidgetByName(name);
+    return true;                        // cambio pagina riuscito
+}
+
+bool PlaceController::anyWidgetIsEditing() const {
+    CreatePlaceWidget* create = qobject_cast<CreatePlaceWidget*>(view->getWidgetByName("create"));
+    return create->isEditing();
+}
+
+void PlaceController::deleteCurrentPlace() {
+    if (anyWidgetIsEditing()) {
+        view->showMessage(UiCommon::MsgIcon::Warning,
+                          tr("Editing in progress"),
+                          tr("You are currently editing a place.\n"
+                             "Please save before delete."));
+    }else{
+        QWidget* currentWidget = view->getCurrentPage();  // DA IMPLEMENTARE NELLA VIEW
+        if (currentWidget == view->getWidgetByName("main") ||
+            currentWidget == view->getWidgetByName("credits") ||
+            currentWidget == view->getWidgetByName("statistics")) {
+            view->showMessage(UiCommon::MsgIcon::Warning,
+                              tr("Cannot Delete"),
+                              tr("You must open a place detail before deleting it."));
+            return;
+        }
+
+        // Recupera l'item selezionato
+        QListWidget* list = view->getListWidget();
+        QListWidgetItem* item = list->currentItem();
+
+        if (!item || !item->data(Qt::UserRole).isValid()) {
+            view->showMessage(UiCommon::MsgIcon::Warning,
+                              tr("Invalid Selection"),
+                              tr("You must open a place detail before deleting it."));
+            return;
+        }
+
+        auto* place = static_cast<Place*>(item->data(Qt::UserRole).value<void*>());
+        if (!place) return;
+
+        // Conferma eliminazione
+        QMessageBox::StandardButton reply = QMessageBox::question(
+            view,
+            "Confirm Deletion",
+            "Are you sure you want to delete this place?",
+            QMessageBox::Yes | QMessageBox::No
+            );
+
+        if (reply == QMessageBox::Yes) {
+            const auto& all = repository.getAllPlaces();
+            auto it = std::find_if(all.begin(), all.end(), [place](const std::shared_ptr<Place>& p) {
+                return p.get() == place;
+            });
+
+            if (it != all.end()) {
+                repository.removePlace(std::distance(all.begin(), it));
+                findPlaces();
+                goBack();
+                view->populateCityComboBox(repository.getAllPlaces());
+            }
+        }
+    }
+}
+void PlaceController::promptExportToXml() {
+    QString path = QFileDialog::getSaveFileName(view, QObject::tr("Save as XML"), "", QObject::tr("XML files (*.xml)"));
+    if (!path.isEmpty()) exportToXml(path);
+}
+
+void PlaceController::promptExportToJson() {
+    QString path = QFileDialog::getSaveFileName(view, QObject::tr("Save as JSON"), "", QObject::tr("JSON files (*.json)"));
+    if (!path.isEmpty()) exportToJson(path);
+}
+
+void PlaceController::editCurrentPlace()
+{
+    // 1. Controlli preliminari  ----------------------------
+    QListWidget* list = view->getListWidget();
+    QListWidgetItem* item = list ? list->currentItem() : nullptr;
+
+    QWidget* currentWidget = view->getCurrentPage();
+    if (!item || !item->data(Qt::UserRole).isValid() ||
+        currentWidget == view->getWidgetByName("main") ||
+        currentWidget == view->getWidgetByName("credits") ||
+        currentWidget == view->getWidgetByName("create") ||
+        currentWidget == view->getWidgetByName("statistics"))
+    {
+        view->showMessage(UiCommon::MsgIcon::Warning,
+                          tr("Cannot Edit"),
+                          tr("You must open a place detail before editing it."));
+        return;
+    }
+
+    auto* place = static_cast<Place*>(item->data(Qt::UserRole).value<void*>());
+    if (!place) {
+        return;
+    }
+
+    // 2. Otteniamo il widget "create" ----------------------
+    CreatePlaceWidget* create = qobject_cast<CreatePlaceWidget*>(view->getWidgetByName("create"));
+    if (!create) return;
+
+    // 3. Helper per QTime da minuti ------------------------
+    auto minutesToQTime = [](double minutes) -> QTime {
+        int m = static_cast<int>(minutes + 0.5);          // arrotonda
+        return QTime(0,0).addSecs(m * 60);
+    };
+
+    // 4. Campi comuni -------------------------------------
+    create->setName(place->getName());
+    create->setCity(place->getCity());
+    create->setDescription(place->getDescription());
+    create->setRating(place->getRating());
+    create->setCost(place->getCost());
+
+    // orari settimanali
+    const weeklyOpenings& wo = place->getOpen();          // adatta se il getter è diverso
+    for (int i = 0; i < 7; ++i) {
+        Weekday d = static_cast<Weekday>(i);
+        CreatePlaceWidget::DayHours dh;
+        if (wo.isClosed(d)) {
+            dh.alwaysClosed = true;
+        } else if (wo.isAlwaysOpen(d)) {
+            dh.alwaysOpen = true;
+        } else {
+            dh.open  = wo.openTime(d);
+            dh.close = wo.closeTime(d);
+        }
+        create->setHours(d, dh);
+    }
+
+    // 5. Campi specifici per categoria --------------------
+    if (auto* d = dynamic_cast<Disco*>(place)) {
+        create->setType("Disco");
+        create->setAverageStay_Disco(minutesToQTime(d->getAvgStayDuration()));
+        create->setMinimumAge_Disco(d->getMinAge());
+        create->setRestrictedEntry_Disco(d->getRestrictedEntry());
+        create->setMusicGenre(d->getMusicGenre());
+        create->setPrive(d->hasPriveAccess());
+        create->setDressCode(d->getDressCode());
+
+    } else if (auto* p = dynamic_cast<PanoramicPoints*>(place)) {
+        create->setType("PanoramicPoints");
+        create->setAverageStay_Panoramic(minutesToQTime(p->getAvgStayDuration()));
+        create->setMinimumAge_Panoramic(p->getMinAge());
+        create->setRestrictedEntry_Panoramic(p->getRestrictedEntry());
+        create->setAltitude(p->getAltitude());
+        create->setBinoculars(p->hasBinoculars());
+        create->setNightLighting(p->isNightLit());
+
+    } else if (auto* c = dynamic_cast<Cafe*>(place)) {
+        create->setType("Cafe");
+        create->setTakeAway_Cafe(c->hasTakeAway());
+        create->setAverageWaitingTime_Cafe(c->getAvgWaitingTime());
+        create->setVeganMenu_Cafe(c->hasVeganMenu());
+        create->setTerrace(c->hasTerrace());
+        create->setSpecialDrink(c->getSpecialDrink());
+
+    } else if (auto* r = dynamic_cast<Restaurant*>(place)) {
+        create->setType("Restaurant");
+        create->setTakeAway_Restaurant(r->hasTakeAway());
+        create->setAverageWaitingTime_Restaurant(r->getAvgWaitingTime());
+        create->setVeganMenu_Restaurant(r->hasVeganMenu());
+        create->setCuisineType(r->getCuisineType());
+        create->setReservationNeeded(r->hasReservation());
+        create->setSpecialDish(r->getSpecialDish());
+
+    } else if (auto* mall = dynamic_cast<Mall*>(place)) {
+        create->setType("Mall");
+        create->setOutdoor_Mall(mall->isOutdoor());
+        create->setFoodArea_Mall(mall->foodAreaPresent());
+        create->setStandNumber_Mall(mall->getStandNumber());
+        create->setShopCount(mall->getShopCount());
+        create->setCinema(mall->hasCinema());
+        create->setFreeParking(mall->hasFreeParking());
+
+    } else if (auto* mkt = dynamic_cast<LocalMarket*>(place)) {
+        create->setType("LocalMarket");
+        create->setOutdoor_Market(mkt->isOutdoor());
+        create->setFoodArea_Market(mkt->foodAreaPresent());
+        create->setStandNumber_Market(mkt->getStandNumber());
+        create->setArtisans(mkt->hasArtisans());
+        create->setSeasonal(mkt->isSeasonal());
+        create->setPeriod(mkt->getPeriod());
+
+    } else if (auto* mus = dynamic_cast<Museum*>(place)) {
+        create->setType("Museum");
+        create->setStudentDiscount_Museum(mus->getStudentDiscount());
+        create->setGuidedTour_Museum(mus->hasGuidedTour());
+        create->setCulturalFocus_Museum(mus->getCulturalFocus());
+        create->setAudioGuide(mus->hasAudioGuideAvailable());
+
+    } else if (auto* mon = dynamic_cast<Monument*>(place)) {
+        create->setType("Monument");
+        create->setStudentDiscount_Monument(mon->getStudentDiscount());
+        create->setGuidedTour_Monument(mon->hasGuidedTour());
+        create->setCulturalFocus_Monument(mon->getCulturalFocus());
+        create->setUnesco(mon->isUnesco());
+        create->setConservationStatus(mon->getConservationStatus());
+        create->setOpenToPublic(mon->isOpenToPublic());
+    }
+
+    create->setEditing(true);
+    view->showWidgetByName("create");
+}
+
+void PlaceController::toggleDebug(){
+    bool current = DebugConfig::isEnabled();
+    DebugConfig::setEnabled(!current);
+
+    view->updateDebugActionText(!current);  // Chiama il metodo pubblico
+
+    view->showMessage(UiCommon::MsgIcon::Info,
+                      tr("Debug Mode"),
+                      current ? tr("Debug mode deactivated.")
+                              : tr("Debug mode activated."));}
+
+void PlaceController::onCreateTypeChanged(int idx)
+{
+    auto *create = qobject_cast<CreatePlaceWidget*>(view->getWidgetByName("create"));
+    if (create) create->showDetailPage(idx);
+}

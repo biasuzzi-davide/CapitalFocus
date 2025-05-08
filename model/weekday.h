@@ -1,6 +1,6 @@
 #ifndef WEEKDAY_H
 #define WEEKDAY_H
-
+#include <Qt>
 enum class Weekday {
     Monday,
     Tuesday,
@@ -21,6 +21,12 @@ struct less<Weekday> {
     }
 };
 }
-
+inline Qt::DayOfWeek toQt(Weekday d) {
+    // Qt::Monday == 1, noi abbiamo Monday==0, ecc.
+    return static_cast<Qt::DayOfWeek>(static_cast<int>(d) + 1);
+}
+inline Weekday fromQt(Qt::DayOfWeek d) {
+    return static_cast<Weekday>(static_cast<int>(d) - 1);
+}
 #endif // WEEKDAY_H
 

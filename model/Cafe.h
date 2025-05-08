@@ -36,7 +36,7 @@ public:
     virtual ~Cafe() = default;
 
     void acceptVisitor(PlaceVisitorInterface& visitor) const override;
-
+    QString getFoodSummary() const override;
 };
 
 #endif // CAFE_H

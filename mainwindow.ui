@@ -62,7 +62,7 @@ QListWidget, QTableWidget {
 
 QTableWidget {
 	gridline-color: #e0e0e0; /* Colore linee griglia sottile */
-	show-grid: true; /* Mantieni la griglia ma sottile */
+        /*show-grid: true; Mantieni la griglia ma sottile */
 }
 
 QTableWidget::item {
@@ -257,8 +257,8 @@ QTableWidget#tableStatistics {
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -346,12 +346,22 @@ QTableWidget#tableStatistics {
           </property>
          </widget>
         </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonCreate">
+          <property name="text">
+           <string>Create new place</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </widget>
       <widget class="QWidget" name="statisticsPage">
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
          <widget class="QTableWidget" name="tableStatistics">
+          <property name="showGrid">
+           <bool>true</bool>
+          </property>
           <row>
            <property name="text">
             <string>New Row</string>
@@ -401,7 +411,7 @@ QTableWidget#tableStatistics {
            </sizepolicy>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;CapitalFocus &amp;#174;&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Davide Biasuzzi [2111000]&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Alberto Reginato [2110450]&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-style:italic;&quot;&gt;May 2025&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;V1.0 Candidate Release&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;CapitalFocus ®&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Davide Biasuzzi [2111000]&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt;&quot;&gt;Alberto Reginato [2110450]&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-style:italic;&quot;&gt;May 2025&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;V1.0 Candidate Release&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;https://github.com/biasuzzi-davide/CapitalFocus&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;GITHUB&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="textFormat">
            <enum>Qt::RichText</enum>
@@ -439,7 +449,7 @@ QTableWidget#tableStatistics {
      <x>0</x>
      <y>0</y>
      <width>730</width>
-     <height>24</height>
+     <height>29</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuImport">
@@ -470,6 +480,7 @@ QTableWidget#tableStatistics {
     <addaction name="actionSettings"/>
     <addaction name="actionStatistics"/>
     <addaction name="actionCredits"/>
+    <addaction name="actionToggleDebug"/>
    </widget>
    <addaction name="menuEdit"/>
    <addaction name="menuImport"/>
@@ -519,6 +530,11 @@ QTableWidget#tableStatistics {
   <action name="actionAuto_Import">
    <property name="text">
     <string>Import XML or JSON file</string>
+   </property>
+  </action>
+  <action name="actionToggleDebug">
+   <property name="text">
+    <string>Activate Debug</string>
    </property>
   </action>
  </widget>

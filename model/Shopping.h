@@ -23,7 +23,7 @@ public:
     bool isOutdoor() const;
     bool foodAreaPresent() const;
     int getStandNumber() const;
-
+    virtual QString getShoppingSummary() const = 0;
     QString getCategory() const override;
 
     virtual ~Shopping() = default;

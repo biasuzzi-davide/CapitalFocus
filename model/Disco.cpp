@@ -12,7 +12,12 @@ Disco::Disco(const QString& name, const QString& city, const QString& descriptio
 QString Disco::getCategory() const {
     return "Disco";
 }
-
+QString Disco::getEntertainmentSummary() const {
+    return QString("Music genre: %1, %2, dress code: %3.")
+    .arg(musicGenre)
+        .arg(hasPrive ? "has private area" : "no private area")
+        .arg(dressCode.isEmpty() ? "none" : dressCode);
+}
 void Disco::acceptVisitor(PlaceVisitorInterface& visitor) const {
     visitor.visit(*this);
 }

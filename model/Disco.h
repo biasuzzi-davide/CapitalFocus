@@ -22,7 +22,7 @@ public:
     QString getMusicGenre() const;
     bool hasPriveAccess() const;
     QString getDressCode() const;
-
+    QString getEntertainmentSummary() const override;
 };
 
 #endif // DISCO_H

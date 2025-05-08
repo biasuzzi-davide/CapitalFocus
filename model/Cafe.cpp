@@ -21,6 +21,11 @@ Cafe::Cafe( const QString& name,
 bool Cafe::servesBreakfast(Weekday day) const{
     return open.opensBefore(day, QTime(10,30));
 }
+QString Cafe::getFoodSummary() const {
+    return QString("This café has %1 and its special drink is %2.")
+        .arg(terrace ? "a terrace" : "no terrace")
+        .arg(specialDrink);
+}
 
 // getter
 bool Cafe::hasTerrace() const{

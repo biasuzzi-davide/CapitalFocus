@@ -5,6 +5,8 @@
 #include <QStackedWidget>
 #include <QListWidget>
 #include <model/statisticsResult.h>
+#include <QMessageBox>
+#include "model/uicommon.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -32,8 +34,25 @@ public:
     void updateResults(const std::map<QString, std::vector<std::shared_ptr<Place>>>& groupedResults);
     QListWidget* getListWidget() const;
     void setDetailsWidget(QWidget* widget);
+    void showWidgetByName(const QString& name);
+    QWidget* getWidgetByName(const QString& name) const;
+    QWidget* getCurrentPage() const;
+    void updateDebugActionText(bool debugEnabled);
+    void showMessage(UiCommon::MsgIcon icon,
+                     const QString& title,
+                     const QString& text);
+    bool askConfirmation(const QString& title,
+                         const QString& question,
+                         QMessageBox::StandardButton defaultBtn = QMessageBox::Yes);
+    QString askOpenFile  (const QString& caption,
+                        const QString& filter,
+                        const QString& startDir = QString()) const;
+    QString askSaveFile  (const QString& caption,
+                        const QString& filter,
+                        const QString& startDir = QString()) const;
 
 private:
+    QMap<QString, QWidget*> widgetMap;
     QStackedWidget* stackedWidget;
     Ui::MainWindow *ui;
     PlaceController* controller;

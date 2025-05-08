@@ -29,7 +29,7 @@ public:
     int getShopCount() const;
     bool hasCinema() const;
     bool hasFreeParking() const;
-
+    QString getShoppingSummary() const override;
     // Override del metodo polimorfo della classe base
     QString getCategory() const override;
 

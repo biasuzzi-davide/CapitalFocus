@@ -31,6 +31,8 @@ public:
     // Fa le statistiche
     StatisticsResult computeStatistics() const;
 
+    void replacePlace(Place* oldPtr, const std::shared_ptr<Place>& newPlace);
+
 };
 
 #endif // PLACEREPOSITORY_H

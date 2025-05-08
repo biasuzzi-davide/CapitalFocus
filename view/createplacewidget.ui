@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CreatePlaceWidget</class>
+ <widget class="QWidget" name="CreatePlaceWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>476</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Create New Place</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="labelType">
+       <property name="text">
+        <string>Type:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="comboBoxType">
+       <item>
+        <property name="text">
+         <string>Disco</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>PanoramicPoints</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cafe</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Restaurant</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Mall</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LocalMarket</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Museum</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Monument</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="labelName">
+       <property name="text">
+        <string>Name:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lineEditName"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelCity">
+       <property name="text">
+        <string>City:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEditCity"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="labelDescription">
+       <property name="text">
+        <string>Description:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QTextEdit" name="textEditDescription"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="labelRating">
+       <property name="text">
+        <string>Rating:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QDoubleSpinBox" name="spinBoxRating">
+       <property name="maximum">
+        <double>5.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="labelCost">
+       <property name="text">
+        <string>Cost:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QDoubleSpinBox" name="spinBoxCost">
+       <property name="maximum">
+        <double>1000.000000000000000</double>
+       </property>
+       <property name="singleStep">
+        <double>1.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidgetDetails">
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="pageDisco">
+      <layout class="QFormLayout">
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelMG">
+         <property name="text">
+          <string>Music Genre:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEditMusicGenre"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelPrive">
+         <property name="text">
+          <string>Prive:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QCheckBox" name="checkBoxPrive"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelDC">
+         <property name="text">
+          <string>Dress Code:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEditDressCode"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="averageStayLabel">
+         <property name="text">
+          <string>Average Stay:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QTimeEdit" name="averageStayTimeEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="minimumAgeLabel">
+         <property name="text">
+          <string>Minimum Age:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="minimumAgeSpinBox"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="restrictedEntryLabel">
+         <property name="text">
+          <string>Restricted Entry:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="restrictedEntryLineEdit"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pagePanoramicPoints">
+      <layout class="QFormLayout">
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelAltitude">
+         <property name="text">
+          <string>Altitude:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="spinBoxAltitude"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelBinoculars">
+         <property name="text">
+          <string>Binoculars:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QCheckBox" name="checkBoxBinoculars"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelNightLighting">
+         <property name="text">
+          <string>Night Lighting:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QCheckBox" name="checkBoxNightLighting"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="averageStayLabel_2">
+         <property name="text">
+          <string>Average Stay</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QTimeEdit" name="averageStayTimeEdit_2"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="minimumAgeLabel_2">
+         <property name="text">
+          <string>Minimum Age:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSpinBox" name="minimumAgeSpinBox_2"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="restrictedEntryLabel_2">
+         <property name="text">
+          <string>Restricted Entry:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="restrictedEntryLineEdit_2"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pageCafe">
+      <layout class="QFormLayout">
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelTerrace">
+         <property name="text">
+          <string>Terrace:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="checkBoxTerrace"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelSpecial">
+         <property name="text">
+          <string>Special Drink:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEditSpecialDrink"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="takeAwayLabel_2">
+         <property name="text">
+          <string>Take Away:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="takeAwayCheckBox_2"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="averageWaitingTimeLabel_2">
+         <property name="text">
+          <string>Average Waiting Time:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QTimeEdit" name="averageWaitingTimeTimeEdit_2"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="veganMenuLabel_2">
+         <property name="text">
+          <string>Vegan Menu:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="veganMenuCheckBox_2"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pageRestaurant">
+      <layout class="QFormLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="takeAwayLabel">
+         <property name="text">
+          <string>Take Away:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="takeAwayCheckBox"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="veganMenuLabel">
+         <property name="text">
+          <string>Vegan Menu:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QCheckBox" name="veganMenuCheckBox"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelCuisineType">
+         <property name="text">
+          <string>Cuisine Type:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="lineEditCuisine"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelReservation">
+         <property name="text">
+          <string>Reservation:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QCheckBox" name="checkBoxReservation"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelSD_2">
+         <property name="text">
+          <string>Special Dish:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEditSpecialDish"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="averageWaitingTimeLabel">
+         <property name="text">
+          <string>Average Waiting Time:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QTimeEdit" name="averageWaitingTimeTimeEdit"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pageMall">
+      <layout class="QFormLayout">
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelShops">
+         <property name="text">
+          <string>Shops:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QSpinBox" name="spinBoxShopCount"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelCinema">
+         <property name="text">
+          <string>Cinema:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QCheckBox" name="checkBoxCinema"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelFP">
+         <property name="text">
+          <string>Free Parking:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QCheckBox" name="checkBoxParking"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="outdoorLabel_2">
+         <property name="text">
+          <string>Outdoor:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="outdoorCheckBox_2"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="foodAreaLabel_2">
+         <property name="text">
+          <string>Food Area:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="foodAreaCheckBox_2"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="standNumberLabel_2">
+         <property name="text">
+          <string>Stand Number:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="standNumberSpinBox_2"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pageLocalMarket">
+      <layout class="QFormLayout">
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelArtisans">
+         <property name="text">
+          <string>Artisans:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="checkBoxArtisans"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelSeasonal">
+         <property name="text">
+          <string>Seasonal:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QCheckBox" name="checkBoxSeasonal"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelPeriod">
+         <property name="text">
+          <string>Period:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEditPeriod"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="outdoorLabel">
+         <property name="text">
+          <string>Outdoor:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="outdoorCheckBox"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="foodAreaLabel">
+         <property name="text">
+          <string>Food Area:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="foodAreaCheckBox"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="standNumberLabel">
+         <property name="text">
+          <string>Stand Number:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSpinBox" name="standNumberSpinBox"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pageMuseum">
+      <layout class="QFormLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelSD">
+         <property name="text">
+          <string>Student Discount:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDoubleSpinBox" name="spinBoxStudentDiscount"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelGT">
+         <property name="text">
+          <string>Guided Tour:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="checkBoxGuided"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelCF">
+         <property name="text">
+          <string>Cultural Focus:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditCulturalFocus"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelAD">
+         <property name="text">
+          <string>Audio Guide:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="checkBoxAudioGuide"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pageMonument">
+      <layout class="QFormLayout">
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelUnesco">
+         <property name="text">
+          <string>UNESCO:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="checkBoxUnesco"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="labelCS">
+         <property name="text">
+          <string>Conservation Status:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="lineEditConservation"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="labelOTP">
+         <property name="text">
+          <string>Open to Public:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QCheckBox" name="checkBoxOpenToPublic"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="studentDiscountLabel">
+         <property name="text">
+          <string>Student Discount:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QDoubleSpinBox" name="spinBoxStudentDiscount_2"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="guidedTourLabel">
+         <property name="text">
+          <string>Guided Tour:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QCheckBox" name="checkBoxGuided_2"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="culturalFocusLabel">
+         <property name="text">
+          <string>Cultural Focus:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="lineEditCulturalFocus_2"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBoxHours">
+     <property name="title">
+      <string>Opening Hours</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayoutHours">
+      <item row="0" column="1">
+       <widget class="QLabel" name="labelHeaderOpen">
+        <property name="text">
+         <string>Open</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="labelHeaderClose">
+        <property name="text">
+         <string>Close</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="labelHeaderAlwaysOpen">
+        <property name="text">
+         <string>Always Open</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="labelHeaderAlwaysClosed">
+        <property name="text">
+         <string>Always Closed</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelMonday">
+        <property name="text">
+         <string>Monday:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QTimeEdit" name="timeEditMondayOpen">
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QTimeEdit" name="timeEditMondayClose"/>
+      </item>
+      <item row="1" column="3">
+       <widget class="QCheckBox" name="checkBoxMondayAlwaysOpen">
+        <property name="text">
+         <string>Always Open</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QCheckBox" name="checkBoxMondayAlwaysClosed">
+        <property name="text">
+         <string>Always Closed</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelTuesday">
+        <property name="text">
+         <string>Tuesday:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QTimeEdit" name="timeEditTuesdayOpen"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QTimeEdit" name="timeEditTuesdayClose"/>
+      </item>
+      <item row="2" column="3">
+       <widget class="QCheckBox" name="checkBoxTuesdayAlwaysOpen">
+        <property name="text">
+         <string>Always Open</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QCheckBox" name="checkBoxTuesdayAlwaysClosed">
+        <property name="text">
+         <string>Always Closed</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="labelWednesday">
+        <property name="text">
+         <string>Wednesday:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QTimeEdit" name="timeEditWednesdayOpen"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QTimeEdit" name="timeEditWednesdayClose"/>
+      </item>
+      <item row="3" column="3">
+       <widget class="QCheckBox" name="checkBoxWednesdayAlwaysOpen">
+        <property name="text">
+         <string>Always Open</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QCheckBox" name="checkBoxWednesdayAlwaysClosed">
+        <property name="text">
+         <string>Always Closed</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="labelThursday">
+        <property name="text">
+         <string>Thursday:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QTimeEdit" name="timeEditThursdayOpen"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QTimeEdit" name="timeEditThursdayClose"/>
+      </item>
+      <item row="4" column="3">
+       <widget class="QCheckBox" name="checkBoxThursdayAlwaysOpen">
+        <property name="text">
+         <string>Always Open</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QCheckBox" name="checkBoxThursdayAlwaysClosed">
+        <property name="text">
+         <string>Always Closed</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="labelFriday">
+        <property name="text">
+         <string>Friday:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QTimeEdit" name="timeEditFridayOpen"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QTimeEdit" name="timeEditFridayClose"/>
+      </item>
+      <item row="5" column="3">
+       <widget class="QCheckBox" name="checkBoxFridayAlwaysOpen">
+        <property name="text">
+         <string>Always Open</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="4">
+       <widget class="QCheckBox" name="checkBoxFridayAlwaysClosed">
+        <property name="text">
+         <string>Always Closed</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="labelSaturday">
+        <property name="text">
+         <string>Saturday:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QTimeEdit" name="timeEditSaturdayOpen"/>
+      </item>
+      <item row="6" column="2">
+       <widget class="QTimeEdit" name="timeEditSaturdayClose"/>
+      </item>
+      <item row="6" column="3">
+       <widget class="QCheckBox" name="checkBoxSaturdayAlwaysOpen">
+        <property name="text">
+         <string>Always Open</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="4">
+       <widget class="QCheckBox" name="checkBoxSaturdayAlwaysClosed">
+        <property name="text">
+         <string>Always Closed</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="labelSunday">
+        <property name="text">
+         <string>Sunday:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QTimeEdit" name="timeEditSundayOpen"/>
+      </item>
+      <item row="7" column="2">
+       <widget class="QTimeEdit" name="timeEditSundayClose"/>
+      </item>
+      <item row="7" column="3">
+       <widget class="QCheckBox" name="checkBoxSundayAlwaysOpen">
+        <property name="text">
+         <string>Always Open</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="4">
+       <widget class="QCheckBox" name="checkBoxSundayAlwaysClosed">
+        <property name="text">
+         <string>Always Closed</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <item>
+      <widget class="QPushButton" name="pushButtonCreate">
+       <property name="text">
+        <string>Create</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonCancel">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

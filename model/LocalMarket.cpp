@@ -23,6 +23,12 @@ LocalMarket::LocalMarket(   const QString& name,
 bool LocalMarket::hasArtisans() const {
     return artisans;
 }
+QString LocalMarket::getShoppingSummary() const {
+    return QString("This market is %1, %2, and takes place in %3.")
+    .arg(artisans ? "artisan-friendly" : "not artisan-friendly")
+        .arg(seasonal ? "seasonal" : "permanent")
+        .arg(period);
+}
 
 // True se organizzato in precise stagioni
 bool LocalMarket::isSeasonal() const {

@@ -14,6 +14,10 @@ public:
                   double rating, const weeklyOpenings& open, double cost,
                   double avgStayDuration, int minimumAge, const QString& restrictedEntry);
     virtual ~Entertainment() = default;
+    double getAvgStayDuration() const;
+    int getMinAge() const;
+    QString getRestrictedEntry() const;
+    virtual QString getEntertainmentSummary() const = 0;
 };
 
 #endif // ENTERTAINMENT_H

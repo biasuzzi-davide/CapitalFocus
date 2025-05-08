@@ -1,0 +1,53 @@
+<!DOCTYPE placesDoc>
+<places>
+    <Cafe city="Rome" cost="3.5" description="A cozy place for drinks" famousDrink="Aperol Spritz" hasTerrace="1" name="Sunset Bar" rating="4.5">
+        <openings>
+            <day name="Monday">
+                <slot from="08:00" to="23:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="08:00" to="23:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="08:00" to="23:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="08:00" to="23:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="08:00" to="23:59"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="23:59"/>
+            </day>
+            <day name="Sunday">
+                <slot from="" to=""/>
+            </day>
+        </openings>
+    </Cafe>
+    <Restaurant city="Rome" cost="120" cuisineType="Italian" description="Fine dining experience" name="La Pergola" rating="4.7999999999999998" reservation="1" specialDish="Truffle pasta">
+        <openings>
+            <day name="Monday">
+                <slot from="" to=""/>
+            </day>
+            <day name="Tuesday">
+                <slot from="19:00" to="23:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="19:00" to="23:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="19:00" to="23:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="19:00" to="23:59"/>
+            </day>
+            <day name="Saturday">
+                <slot from="19:00" to="23:59"/>
+            </day>
+            <day name="Sunday">
+                <slot from="12:00" to="15:00"/>
+            </day>
+        </openings>
+    </Restaurant>
+</places>

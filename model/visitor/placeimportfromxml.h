@@ -5,7 +5,7 @@
 #include <QString>
 #include <vector>
 #include <memory>
-#include "model/place.h"
+#include "model/Place.h"
 
 class PlaceImportFromXml {
 public:

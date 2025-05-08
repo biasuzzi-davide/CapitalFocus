@@ -21,6 +21,7 @@ public:
     double getAltitude() const;
     bool hasBinoculars() const;
     bool isNightLit() const;
+    QString getEntertainmentSummary() const override;
 };
 
 #endif // PANORAMICPOINTS_H

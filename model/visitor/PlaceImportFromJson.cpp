@@ -127,14 +127,14 @@ std::vector<std::shared_ptr<Place>> PlaceImportFromJson::importFromJson(const QS
         else if (type == "Museum") {
             bool guide = obj["hasAudioGuide"].toBool();
             imported.push_back(std::make_shared<Museum>(name, city, description, rating, openings, cost,
-                                          1.0, true, "Cultura", "Sì", guide));
+                                          1.0, true, "Cultura", guide));
         }
         else if (type == "Monument") {
             bool unesco = obj["isUnesco"].toBool();
             QString state = obj["conservationStatus"].toString();
             bool openTo = obj["openToPublic"].toBool();
             imported.push_back(std::make_shared<Monument>(name, city, description, rating, openings, cost,
-                                            1.0, true, "Cultura", "Sì", unesco, state, openTo));
+                                            1.0, true, "Cultura", unesco, state, openTo));
         }
         else throw std::invalid_argument("Unknown type: " + type.toStdString());
     }

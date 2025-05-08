@@ -1,5 +1,4 @@
 #include "placeExportToJsonVisitor.h"
-#include "placevisitorinterface.h"
 #include <QDomDocument>
 #include <QDomElement>
 #include <stdexcept>
@@ -44,7 +43,7 @@ QJsonObject PlaceExportToJsonVisitor::basePlaceToJson(const Place& place,const Q
 
     return obj;
 }
-void PlaceExportToJsonVisitor::visit(const Place& p) {
+void PlaceExportToJsonVisitor::visit(const Place&) {
     throw std::runtime_error("Unsupported: cannot export abstract Place to JSON");
 }
 

@@ -12,6 +12,10 @@ private:
     QMap<Weekday, openingFrames> schedule;
 
 public:
+    bool  isClosed(Weekday day)       const;
+    bool  isAlwaysOpen(Weekday day)   const;   // aperto 24 h
+    QTime openTime(Weekday day)       const;
+    QTime closeTime(Weekday day)      const;
     // Metodo per impostare una fascia oraria di un weekday
     void setOpening(Weekday day, const QTime& open, const QTime& close);
     void setClosed(Weekday day);
@@ -33,6 +37,7 @@ public:
     static QString weekdayToString(const Weekday day);
 
     static Weekday weekdayFromString(const QString& dayStr);
+    QString toQStringMultiline() const;
 };
 
 #endif // WEEKLYOPENINGS_H

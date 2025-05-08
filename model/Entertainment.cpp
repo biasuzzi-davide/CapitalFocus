@@ -5,3 +5,15 @@ Entertainment::Entertainment(const QString& name, const QString& city, const QSt
                              double avgStayDuration, int minimumAge, const QString& restrictedEntry)
     : Place(name, city, description, rating, open, cost),
       avgStayDuration(avgStayDuration), minimumAge(minimumAge), restrictedEntry(restrictedEntry) {}
+
+double Entertainment::getAvgStayDuration() const {
+    return avgStayDuration;
+}
+
+int Entertainment::getMinAge() const {
+    return minimumAge;
+}
+
+QString Entertainment::getRestrictedEntry() const {
+    return restrictedEntry;
+}

@@ -1,6 +1,5 @@
 QT       += core gui
 QT       += xml
-
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
@@ -30,6 +29,7 @@ SOURCES += \
     model/Museum.cpp \
     model/PanoramicPoints.cpp \
     model/Place.cpp \
+    model/debugconfig.cpp \
     model/openingFrames.cpp \
     model/placerepository.cpp \
     model/visitor/PlaceImportFromJson.cpp \
@@ -38,7 +38,8 @@ SOURCES += \
     model/visitor/statisticsvisitor.cpp \
     model/weeklyOpenings.cpp \
     model/visitor/placeexporttoxmlvisitor.cpp \
-    shoppingwidget.cpp
+    shoppingwidget.cpp \
+    view/createplacewidget.cpp
 
 HEADERS += \
     controller/placecontroller.h \
@@ -58,34 +59,38 @@ HEADERS += \
     model/Place.h \
     model/Restaurant.h \
     model/Shopping.h \
+    model/debugconfig.h \
     model/import_errors.h \
     model/openingFrames.h \
     model/placerepository.h \
     model/statisticsResult.h \
+    model/uicommon.h \
     model/visitor/PlaceImportFromJson.h \
     model/visitor/placeExportToJsonVisitor.h \
     model/visitor/placeimportfromxml.h \
     model/visitor/statisticsvisitor.h \
-    model/visitor/visitor/placevisitorinterface.h \
+    model/visitor/placevisitorinterface.h \
     model/weekday.h \
     model/weeklyOpenings.h \
     mainwindow.h \
     model/visitor/placeexporttoxmlvisitor.h \
-    shoppingwidget.h
+    shoppingwidget.h \
+    view/createplacewidget.h
 
 FORMS += \
     culturewidget.ui \
     entertainmentwidget.ui \
     foodwidget.ui \
     mainwindow.ui \
-    shoppingwidget.ui
+    shoppingwidget.ui \
+    view/createplacewidget.ui
 
 TRANSLATIONS += \
     CapitalFocus_en_IT.ts
+CONFIG += sdk_no_version_check
 CONFIG += lrelease
 CONFIG += embed_translations
-QMAKE_CXXFLAGS += -v
-# Default rules for deployment.
+QMAKE_CXXFLAGS += -Wall -Wextra -Wpedantic# Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target

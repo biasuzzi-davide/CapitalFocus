@@ -17,6 +17,12 @@ QString PanoramicPoints::getCategory() const {
 void PanoramicPoints::acceptVisitor(PlaceVisitorInterface& visitor) const{
     visitor.visit(*this);
 }
+QString PanoramicPoints::getEntertainmentSummary() const {
+    return QString("Altitude: %1 m | %2 | %3")
+    .arg(altitude)
+        .arg(hasBinocular ? "Binoculars available" : "No binoculars")
+        .arg(nightLighting ? "Night lighting available" : "No night lighting");
+}
 double PanoramicPoints::getAltitude() const {
     return altitude;
 }

@@ -23,6 +23,12 @@ Mall::Mall( const QString& name,
 int Mall::getShopCount() const {
     return shopCount;
 }
+QString Mall::getShoppingSummary() const {
+    return QString("This mall has %1 shops, %2, and %3.")
+    .arg(shopCount)
+        .arg(cinema ? "a cinema" : "no cinema")
+        .arg(freeParking ? "free parking" : "no free parking");
+}
 
 // True se è presente un cinema
 bool Mall::hasCinema() const {

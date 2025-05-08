@@ -23,7 +23,7 @@ class Food: public Place{
         bool hasTakeAway() const;
         QTime getAvgWaitingTime() const;
         bool hasVeganMenu() const;
-
+        virtual QString getFoodSummary() const = 0;
         QString getCategory() const override;
 
         virtual ~Food()=default;

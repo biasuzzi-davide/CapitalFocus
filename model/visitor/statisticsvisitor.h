@@ -1,8 +1,7 @@
 #ifndef STATISTICSVISITOR_H
 #define STATISTICSVISITOR_H
 
-#include "PlaceVisitorInterface.h"
-#include <vector>
+#include "placevisitorinterface.h"
 #include <map>
 
 class StatisticsVisitor : public PlaceVisitorInterface {
