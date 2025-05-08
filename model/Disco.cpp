@@ -3,7 +3,7 @@
 
 Disco::Disco(const QString& name, const QString& city, const QString& description,
              double rating, const weeklyOpenings& open, double cost,
-             double avgStayDuration, int minimumAge, const QString& restrictedEntry,
+             QTime avgStayDuration, int minimumAge, const QString& restrictedEntry,
              const QString& musicGenre, bool hasPrive, const QString& dressCode)
     : Entertainment(name, city, description, rating, open, cost,
                     avgStayDuration, minimumAge, restrictedEntry),

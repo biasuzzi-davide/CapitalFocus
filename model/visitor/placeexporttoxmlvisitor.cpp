@@ -71,9 +71,17 @@ QDomElement PlaceExportToXmlVisitor::exportShoppingData(const Shopping& s) const
 
 QDomElement PlaceExportToXmlVisitor::exportEntertainmentData(const Entertainment& ent) const {
     QDomElement e = doc.createElement("entertainmentData");
-    e.setAttribute("avgStayDuration", ent.getAvgStayDuration());
+    e.setAttribute("avgStayDuration", ent.getAvgStayDuration().toString("HH:mm"));
     e.setAttribute("minimumAge", ent.getMinAge());
     e.setAttribute("restrictedEntry", ent.getRestrictedEntry());
+    return e;
+}
+
+QDomElement PlaceExportToXmlVisitor::exportCultureData(const Culture& c) const {
+    QDomElement e = doc.createElement("cultureData");
+    e.setAttribute("studentDiscount", c.getStudentDiscount());
+    e.setAttribute("guidedTour",      c.hasGuidedTour());
+    e.setAttribute("culturalFocus",   c.getCulturalFocus());
     return e;
 }
 
@@ -83,71 +91,67 @@ void PlaceExportToXmlVisitor::visit(const Place&) {
 
 void PlaceExportToXmlVisitor::visit(const Cafe& cafe) {
     QDomElement e = basePlaceToXml(cafe, "Cafe");
+    e.appendChild(exportFoodData(cafe));
     e.setAttribute("hasTerrace", cafe.hasTerrace());
     e.setAttribute("famousDrink", cafe.getSpecialDrink());
-    e.appendChild(exportFoodData(cafe));
     result = e;
 }
 
 void PlaceExportToXmlVisitor::visit(const Restaurant& restaurant) {
     QDomElement e = basePlaceToXml(restaurant, "Restaurant");
+    e.appendChild(exportFoodData(restaurant));
     e.setAttribute("cuisineType", restaurant.getCuisineType());
     e.setAttribute("reservation", restaurant.hasReservation());
     e.setAttribute("specialDish", restaurant.getSpecialDish());
-    e.appendChild(exportFoodData(restaurant));
     result = e;
 }
 
 void PlaceExportToXmlVisitor::visit(const Disco& disco) {
     QDomElement e = basePlaceToXml(disco, "Disco");
+    e.appendChild(exportEntertainmentData(disco));
     e.setAttribute("musicGenre", disco.getMusicGenre());
     e.setAttribute("hasPrive", disco.hasPriveAccess());
     e.setAttribute("dressCode", disco.getDressCode());
-    e.appendChild(exportEntertainmentData(disco));
     result = e;
 }
 
 void PlaceExportToXmlVisitor::visit(const PanoramicPoints& point) {
     QDomElement e = basePlaceToXml(point, "PanoramicPoints");
+    e.appendChild(exportEntertainmentData(point));
     e.setAttribute("altitude", point.getAltitude());
     e.setAttribute("hasBinocular", point.hasBinoculars());
     e.setAttribute("nightLighting", point.isNightLit());
-    e.appendChild(exportEntertainmentData(point));
     result = e;
 }
 
 void PlaceExportToXmlVisitor::visit(const LocalMarket& localMarket) {
     QDomElement e = basePlaceToXml(localMarket, "LocalMarket");
+    e.appendChild(exportShoppingData(localMarket));
     e.setAttribute("artisans", localMarket.hasArtisans());
     e.setAttribute("seasonal", localMarket.isSeasonal());
     e.setAttribute("period", localMarket.getPeriod());
-    e.appendChild(exportShoppingData(localMarket));
     result = e;
 }
 
 void PlaceExportToXmlVisitor::visit(const Mall& mall) {
     QDomElement e = basePlaceToXml(mall, "Mall");
+    e.appendChild(exportShoppingData(mall));
     e.setAttribute("shopCount", mall.getShopCount());
     e.setAttribute("cinema", mall.hasCinema());
     e.setAttribute("freeParking", mall.hasFreeParking());
-    e.appendChild(exportShoppingData(mall));
     result = e;
 }
 
 void PlaceExportToXmlVisitor::visit(const Museum& museum) {
     QDomElement e = basePlaceToXml(museum, "Museum");
-    e.setAttribute("studentDiscount", museum.getStudentDiscount());
-    e.setAttribute("guidedTour", museum.hasGuidedTour());
-    e.setAttribute("culturalFocus", museum.getCulturalFocus());
+    e.appendChild(exportCultureData(museum));
     e.setAttribute("hasAudioGuide", museum.hasAudioGuideAvailable());
     result = e;
 }
 
 void PlaceExportToXmlVisitor::visit(const Monument& monument) {
     QDomElement e = basePlaceToXml(monument, "Monument");
-    e.setAttribute("studentDiscount", monument.getStudentDiscount());
-    e.setAttribute("guidedTour", monument.hasGuidedTour());
-    e.setAttribute("culturalFocus", monument.getCulturalFocus());
+    e.appendChild(exportCultureData(monument));
     e.setAttribute("isUnesco", monument.isUnesco());
     e.setAttribute("conservationStatus", monument.getConservationStatus());
     e.setAttribute("openToPublic", monument.isOpenToPublic());

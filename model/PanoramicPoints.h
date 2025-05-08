@@ -12,7 +12,7 @@ private:
 public:
     PanoramicPoints(const QString& name, const QString& city, const QString& description,
                     double rating, const weeklyOpenings& open, double cost,
-                    double avgStayDuration, int minimumAge, const QString& restrictedEntry,
+                    QTime avgStayDuration, int minimumAge, const QString& restrictedEntry,
                     double altitude, bool hasBinocular, bool nightLighting);
 
     QString getCategory() const override;

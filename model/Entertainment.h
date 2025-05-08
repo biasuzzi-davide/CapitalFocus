@@ -5,16 +5,16 @@
 
 class Entertainment : public Place {
 protected:
-    double avgStayDuration;
+    QTime avgStayDuration;
     int minimumAge;
     QString restrictedEntry;
 
 public:
     Entertainment(const QString& name, const QString& city, const QString& description,
                   double rating, const weeklyOpenings& open, double cost,
-                  double avgStayDuration, int minimumAge, const QString& restrictedEntry);
+                  QTime avgStayDuration, int minimumAge, const QString& restrictedEntry);
     virtual ~Entertainment() = default;
-    double getAvgStayDuration() const;
+    QTime getAvgStayDuration() const;
     int getMinAge() const;
     QString getRestrictedEntry() const;
     virtual QString getEntertainmentSummary() const = 0;

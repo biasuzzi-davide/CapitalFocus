@@ -2,11 +2,11 @@
 
 Entertainment::Entertainment(const QString& name, const QString& city, const QString& description,
                              double rating, const weeklyOpenings& open, double cost,
-                             double avgStayDuration, int minimumAge, const QString& restrictedEntry)
+                             QTime avgStayDuration, int minimumAge, const QString& restrictedEntry)
     : Place(name, city, description, rating, open, cost),
       avgStayDuration(avgStayDuration), minimumAge(minimumAge), restrictedEntry(restrictedEntry) {}
 
-double Entertainment::getAvgStayDuration() const {
+QTime Entertainment::getAvgStayDuration() const {
     return avgStayDuration;
 }
 

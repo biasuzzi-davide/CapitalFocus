@@ -107,7 +107,7 @@ std::vector<std::shared_ptr<Place>> PlaceImportFromXml::importFromFile(const QSt
         }
         else if (type == "Disco") {
             QDomElement ed = el.firstChildElement("entertainmentData");
-            double avgStay = ed.attribute("avgStayDuration").toDouble();
+            QTime avgStay = QTime::fromString(ed.attribute("avgWaitingTime"), "HH:mm");
             int minAge = ed.attribute("minimumAge").toInt();
             QString restrict = ed.attribute("restrictedEntry");
             QString genre = el.attribute("musicGenre");
@@ -121,7 +121,7 @@ std::vector<std::shared_ptr<Place>> PlaceImportFromXml::importFromFile(const QSt
         }
         else if (type == "PanoramicPoints") {
             QDomElement ed = el.firstChildElement("entertainmentData");
-            double avgStay = ed.attribute("avgStayDuration").toDouble();
+            QTime avgStay = QTime::fromString(ed.attribute("avgWaitingTime"), "HH:mm");
             int minAge = ed.attribute("minimumAge").toInt();
             QString restrict = ed.attribute("restrictedEntry");
             double altitude = el.attribute("altitude").toDouble();

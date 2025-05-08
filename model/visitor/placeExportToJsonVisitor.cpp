@@ -43,12 +43,17 @@ QJsonObject PlaceExportToJsonVisitor::basePlaceToJson(const Place& place,const Q
 
     return obj;
 }
+
 void PlaceExportToJsonVisitor::visit(const Place&) {
     throw std::runtime_error("Unsupported: cannot export abstract Place to JSON");
 }
 
 void PlaceExportToJsonVisitor::visit(const Cafe& cafe){
     QJsonObject obj=basePlaceToJson(cafe, "Cafe");
+
+    obj["takeAway"]        = cafe.hasTakeAway();
+    obj["avgWaitingTime"]  = cafe.getAvgWaitingTime().toString("HH:mm");
+    obj["veganMenu"]       = cafe.hasVeganMenu();
 
     obj["hasTerrace"]=cafe.hasTerrace();
     obj["famousDrink"]=cafe.getSpecialDrink();
@@ -58,6 +63,10 @@ void PlaceExportToJsonVisitor::visit(const Cafe& cafe){
 
 void PlaceExportToJsonVisitor::visit(const Restaurant& restaurant){
     QJsonObject obj=basePlaceToJson(restaurant, "Restaurant");
+
+    obj["takeAway"]        = restaurant.hasTakeAway();
+    obj["avgWaitingTime"]  = restaurant.getAvgWaitingTime().toString("HH:mm");
+    obj["veganMenu"]       = restaurant.hasVeganMenu();
 
     obj["cuisineType"]=restaurant.getCuisineType();
     obj["reservation"]=restaurant.hasReservation();
@@ -69,6 +78,10 @@ void PlaceExportToJsonVisitor::visit(const Restaurant& restaurant){
 void PlaceExportToJsonVisitor::visit(const Disco& disco){
     QJsonObject obj=basePlaceToJson(disco, "Disco");
 
+    obj["avgStayDuration"]=disco.getAvgStayDuration().toString("HH:mm");
+    obj["minimumAge"]=QString::number(disco.getMinAge());
+    obj["restrictedEntry"]=disco.getRestrictedEntry();
+
     obj["musicGenre"]=disco.getMusicGenre();
     obj["hasPrive"]=disco.hasPriveAccess();
     obj["dressCode"]=disco.getDressCode();
@@ -78,6 +91,10 @@ void PlaceExportToJsonVisitor::visit(const Disco& disco){
 
 void PlaceExportToJsonVisitor::visit(const LocalMarket& localMarket){
     QJsonObject obj=basePlaceToJson(localMarket, "LocalMarket");
+
+    obj["outdoor"] = localMarket.isOutdoor();
+    obj["foodArea"] = localMarket.foodAreaPresent();
+    obj["standNumber"] = localMarket.getStandNumber();
 
     obj["artisans"]= localMarket.hasArtisans();
     obj["seasonal"]= localMarket.isSeasonal();
@@ -90,6 +107,10 @@ void PlaceExportToJsonVisitor::visit(const LocalMarket& localMarket){
 void PlaceExportToJsonVisitor::visit(const PanoramicPoints& panoramicPoints){
     QJsonObject obj=basePlaceToJson(panoramicPoints, "PanoramicPoints");
 
+    obj["avgStayDuration"]=panoramicPoints.getAvgStayDuration().toString("HH:mm");
+    obj["minimumAge"]=QString::number(panoramicPoints.getMinAge());
+    obj["restrictedEntry"]=panoramicPoints.getRestrictedEntry();
+
     obj["altitude"]= panoramicPoints.getAltitude();
     obj["hasBinocular"]= panoramicPoints.hasBinoculars();
     obj["nightLighting"]= panoramicPoints.isNightLit();
@@ -99,6 +120,10 @@ void PlaceExportToJsonVisitor::visit(const PanoramicPoints& panoramicPoints){
 
 void PlaceExportToJsonVisitor::visit(const Mall& mall){
     QJsonObject obj=basePlaceToJson(mall, "Mall");
+
+    obj["outdoor"] = mall.isOutdoor();
+    obj["foodArea"] = mall.foodAreaPresent();
+    obj["standNumber"] = mall.getStandNumber();
 
     obj["shopCount"]= mall.getShopCount();
     obj["cinema"]= mall.hasCinema();
@@ -110,6 +135,10 @@ void PlaceExportToJsonVisitor::visit(const Mall& mall){
 void PlaceExportToJsonVisitor::visit(const Museum& museum){
     QJsonObject obj=basePlaceToJson(museum, "Museum");
 
+    obj["studentDiscount"] = museum.getStudentDiscount();
+    obj["guidedTour"]      = museum.hasGuidedTour();
+    obj["culturalFocus"]   = museum.getCulturalFocus();
+
     obj["hasAudioGuide"]=museum.hasAudioGuideAvailable();
 
     result=obj;
@@ -117,6 +146,10 @@ void PlaceExportToJsonVisitor::visit(const Museum& museum){
 
 void PlaceExportToJsonVisitor::visit(const Monument& monument){
     QJsonObject obj=basePlaceToJson(monument, "Monument");
+
+    obj["studentDiscount"] = monument.getStudentDiscount();
+    obj["guidedTour"]      = monument.hasGuidedTour();
+    obj["culturalFocus"]   = monument.getCulturalFocus();
 
     obj["isUnesco"]= monument.isUnesco();
     obj["conservationStatus"]= monument.getConservationStatus();

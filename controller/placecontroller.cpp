@@ -146,7 +146,7 @@ void PlaceController::onPlaceSelected(QListWidgetItem* item) {
                 QString::number(e->getRating(), 'f', 1)+" ☆ / 5 ☆",
                 QString::number(e->getCost(), 'f', 1),
                 (e->getOpen()).toQStringMultiline(),
-                QString::number(e->getAvgStayDuration(), 'f', 1),
+                e->getAvgStayDuration().toString("hh:mm"),
                 QString::number(e->getMinAge(), 'f', 1),    e->getRestrictedEntry(),
                 e->getEntertainmentSummary());
             setWidgetSafe("entertainment");
@@ -362,7 +362,7 @@ void PlaceController::createNewPlace() {
     case 0:  // Disco
         newPlace = std::make_shared<Disco>(
             name, city, description, rating, openings, cost,
-            create->averageStay_Disco().msecsSinceStartOfDay()/60000.0,
+            create->averageStay_Disco(),
             create->minimumAge_Disco(),
             create->restrictedEntry_Disco(),
             create->musicGenre(),
@@ -373,7 +373,7 @@ void PlaceController::createNewPlace() {
     case 1:  // PanoramicPoints
         newPlace = std::make_shared<PanoramicPoints>(
             name, city, description, rating, openings, cost,
-            create->averageStay_Panoramic().msecsSinceStartOfDay()/60000.0,
+            create->averageStay_Panoramic(),
             create->minimumAge_Panoramic(),
             create->restrictedEntry_Panoramic(),
             create->altitude(),
@@ -627,7 +627,7 @@ void PlaceController::editCurrentPlace()
     // 5. Campi specifici per categoria --------------------
     if (auto* d = dynamic_cast<Disco*>(place)) {
         create->setType("Disco");
-        create->setAverageStay_Disco(minutesToQTime(d->getAvgStayDuration()));
+        create->setAverageStay_Disco(d->getAvgStayDuration());
         create->setMinimumAge_Disco(d->getMinAge());
         create->setRestrictedEntry_Disco(d->getRestrictedEntry());
         create->setMusicGenre(d->getMusicGenre());
@@ -636,7 +636,7 @@ void PlaceController::editCurrentPlace()
 
     } else if (auto* p = dynamic_cast<PanoramicPoints*>(place)) {
         create->setType("PanoramicPoints");
-        create->setAverageStay_Panoramic(minutesToQTime(p->getAvgStayDuration()));
+        create->setAverageStay_Panoramic(p->getAvgStayDuration());
         create->setMinimumAge_Panoramic(p->getMinAge());
         create->setRestrictedEntry_Panoramic(p->getRestrictedEntry());
         create->setAltitude(p->getAltitude());
@@ -669,14 +669,14 @@ void PlaceController::editCurrentPlace()
         create->setCinema(mall->hasCinema());
         create->setFreeParking(mall->hasFreeParking());
 
-    } else if (auto* mkt = dynamic_cast<LocalMarket*>(place)) {
+    } else if (auto* localMarket = dynamic_cast<LocalMarket*>(place)) {
         create->setType("LocalMarket");
-        create->setOutdoor_Market(mkt->isOutdoor());
-        create->setFoodArea_Market(mkt->foodAreaPresent());
-        create->setStandNumber_Market(mkt->getStandNumber());
-        create->setArtisans(mkt->hasArtisans());
-        create->setSeasonal(mkt->isSeasonal());
-        create->setPeriod(mkt->getPeriod());
+        create->setOutdoor_Market(localMarket->isOutdoor());
+        create->setFoodArea_Market(localMarket->foodAreaPresent());
+        create->setStandNumber_Market(localMarket->getStandNumber());
+        create->setArtisans(localMarket->hasArtisans());
+        create->setSeasonal(localMarket->isSeasonal());
+        create->setPeriod(localMarket->getPeriod());
 
     } else if (auto* mus = dynamic_cast<Museum*>(place)) {
         create->setType("Museum");

@@ -29,6 +29,8 @@ private:
     QDomElement exportFoodData(const Food& f) const;
     QDomElement exportShoppingData(const Shopping& s) const;
     QDomElement exportEntertainmentData(const Entertainment& e) const;
+    QDomElement exportCultureData(const Culture& e) const;
+
 
 public:
     explicit PlaceExportToXmlVisitor(QDomDocument& document);

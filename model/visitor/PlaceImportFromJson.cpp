@@ -84,57 +84,89 @@ std::vector<std::shared_ptr<Place>> PlaceImportFromJson::importFromJson(const QS
             throw std::invalid_argument("rating out of range [0‑5]");
 
         if (type == "Cafe") {
+            bool takeAway = obj["takeAway"].toBool();
+            QTime avgWait = QTime::fromString(obj["avgWaitingTime"].toString(), "HH:mm");
+            bool veganMenu = obj["veganMenu"].toBool();
+
             bool terrace = obj["hasTerrace"].toBool();
             QString drink = obj["famousDrink"].toString();
             imported.push_back(std::make_shared<Cafe>(name, city, description, rating, openings, cost,
-                                        true, QTime(0,5), true, terrace, drink));
+                                        takeAway, avgWait, veganMenu, terrace, drink));
         }
         else if (type == "Disco") {
+            QTime avgStay = QTime::fromString(obj["avgStayDuration"].toString(), "HH:mm");
+            int minAge = obj["minimumAge"].toInt();
+            QString restricted = obj["restrictedEntry"].toString();
+
             QString genre = obj["musicGenre"].toString();
             bool prive = obj["hasPrive"].toBool();
             QString dressCode = obj["dressCode"].toString();
             imported.push_back(std::make_shared<Disco>(name, city, description, rating, openings, cost,
-                                         2.5, 18, "VIP", genre, prive, dressCode));
+                                         avgStay, minAge, restricted, genre, prive, dressCode));
         }
         else if (type == "Restaurant") {
+            bool takeAway = obj["takeAway"].toBool();
+            QTime avgWait = QTime::fromString(obj["avgWaitingTime"].toString(), "HH:mm");
+            bool veganMenu = obj["veganMenu"].toBool();
+
             QString cuisine = obj["cuisineType"].toString();
             bool res = obj["reservation"].toBool();
             QString special = obj["specialDish"].toString();
             imported.push_back(std::make_shared<Restaurant>(name, city, description, rating, openings, cost,
-                                              true, QTime(0, 10), true, cuisine, res, special));
+                                              takeAway, avgWait, veganMenu, cuisine, res, special));
         }
         else if (type == "LocalMarket") {
+            bool outdoor = obj["isOutdoor"].toBool();
+            bool foodArea = obj["foodAreaPresent"].toBool();
+            int stands = obj["standNumber"].toInt();
+
             bool artisans = obj["artisans"].toBool();
             bool seasonal = obj["seasonal"].toBool();
             QString period = obj["period"].toString();
             imported.push_back(std::make_shared<LocalMarket>(name, city, description, rating, openings, cost,
-                                               true, true, 10, artisans, seasonal, period));
+                                               outdoor, foodArea, stands, artisans, seasonal, period));
         }
         else if (type == "Mall") {
+            bool outdoor = obj["isOutdoor"].toBool();
+            bool foodArea = obj["foodAreaPresent"].toBool();
+            int stands = obj["standNumber"].toInt();
+
             int shopCount = obj["shopCount"].toInt();
             bool cinema = obj["cinema"].toBool();
             bool parking = obj["freeParking"].toBool();
             imported.push_back(std::make_shared<Mall>(name, city, description, rating, openings, cost,
-                                        true, true, 20, shopCount, cinema, parking));
+                                        outdoor, foodArea, stands, shopCount, cinema, parking));
         }
         else if (type == "PanoramicPoints") {
+            QTime avgStay = QTime::fromString(obj["avgStayDuration"].toString(), "HH:mm");
+            int minAge = obj["minimumAge"].toInt();
+            QString restricted = obj["restrictedEntry"].toString();
+
             double altitude = obj["altitude"].toDouble();
             bool binocular = obj["hasBinocular"].toBool();
             bool night = obj["nightLighting"].toBool();
             imported.push_back(std::make_shared<PanoramicPoints>(name, city, description, rating, openings, cost,
-                                                   1.0, 0, "nessuna", altitude, binocular, night));
+                                                   avgStay, minAge, restricted, altitude, binocular, night));
         }
         else if (type == "Museum") {
+            double studentDiscount = obj["studentDiscount"].toDouble();
+            bool guidedTour = obj["guidedTour"].toBool();
+            QString focus = obj["culturalFocus"].toString();
+
             bool guide = obj["hasAudioGuide"].toBool();
             imported.push_back(std::make_shared<Museum>(name, city, description, rating, openings, cost,
-                                          1.0, true, "Cultura", guide));
+                                          studentDiscount, guidedTour, focus, guide));
         }
         else if (type == "Monument") {
+            double studentDiscount = obj["studentDiscount"].toDouble();
+            bool guidedTour = obj["guidedTour"].toBool();
+            QString focus = obj["culturalFocus"].toString();
+
             bool unesco = obj["isUnesco"].toBool();
             QString state = obj["conservationStatus"].toString();
             bool openTo = obj["openToPublic"].toBool();
             imported.push_back(std::make_shared<Monument>(name, city, description, rating, openings, cost,
-                                            1.0, true, "Cultura", unesco, state, openTo));
+                                            studentDiscount, guidedTour, focus, unesco, state, openTo));
         }
         else throw std::invalid_argument("Unknown type: " + type.toStdString());
     }
