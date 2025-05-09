@@ -28,6 +28,11 @@ weeklyOpenings PlaceImportFromJson::parseOpenings(const QJsonArray& array) const
             continue;
         }
 
+        if (o.contains("alwaysOpen") && o["alwaysOpen"].toBool()) {
+            week.setAlwaysOpen(day);
+            continue;
+        }
+
         //Altrimenti estrai gli orari
         QString fromStr = o["from"].toString();
         QString toStr   = o["to"].toString();

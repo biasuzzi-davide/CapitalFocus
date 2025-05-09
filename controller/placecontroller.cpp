@@ -448,10 +448,18 @@ void PlaceController::createNewPlace() {
 
         weeklyOpenings openings;
         for (int i = 0; i < 7; ++i) {
-            Weekday d = static_cast<Weekday>(i);
-            auto h = create->hours(d);
-            if (h.alwaysClosed) openings.setClosed(d);
-            else                openings.setOpening(d, h.open, h.close);
+            Weekday day = static_cast<Weekday>(i);
+            auto h = create->hours(day);
+
+            if (h.alwaysClosed) {
+                openings.setClosed(day);
+
+            } else if (h.alwaysOpen) {
+                openings.setAlwaysOpen(day);
+
+            } else {
+                openings.setOpening(day, h.open, h.close);
+            }
         }
 
         // 4) Creazione del Place

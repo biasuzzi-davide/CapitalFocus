@@ -23,6 +23,8 @@ public:
     weeklyOpenings(const weeklyOpenings& other);
     openingFrames getOpening(Weekday day) const;
 
+    void setAlwaysOpen(Weekday d);
+
     // Ritorna True se il locale è aperto un determinato weekday prima di una certa ora
     bool opensBefore(Weekday day, const QTime& time) const;
 

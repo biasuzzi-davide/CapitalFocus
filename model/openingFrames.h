@@ -6,7 +6,8 @@
 struct openingFrames {
     QTime opening;
     QTime closing;
-    bool closed;
+    bool closed    = false;
+    bool alwaysOpen= false;
 
     openingFrames();
     openingFrames(const QTime&, const QTime&);

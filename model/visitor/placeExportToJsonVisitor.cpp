@@ -13,22 +13,34 @@
 
 QJsonObject PlaceExportToJsonVisitor::getResult() const{return result;}
 
-QJsonArray PlaceExportToJsonVisitor::exportWeeklyOpenings(const weeklyOpenings& w) const{
+QJsonArray PlaceExportToJsonVisitor::exportWeeklyOpenings(const weeklyOpenings& w) const {
     QJsonArray openingsArray;
-    const auto& schedule= w.getSchedule();
+    const auto& schedule = w.getSchedule();
 
-    for(auto it=schedule.cbegin(); it!=schedule.cend(); ++it){
-        const openingFrames& f=it.value();
+    for (auto it = schedule.cbegin(); it != schedule.cend(); ++it) {
+        Weekday day = it.key();
+        const openingFrames& f = it.value();
 
         QJsonObject dayObj;
-        dayObj["day"]=weeklyOpenings::weekdayToString(it.key());
-        dayObj["from"]=f.getStartAsString();
-        dayObj["to"]=f.getEndAsString();
+        dayObj["day"] = weeklyOpenings::weekdayToString(day);
+
+        if (f.closed) {
+            dayObj["closed"] = true;
+        }
+        else if (f.alwaysOpen) {
+            dayObj["alwaysOpen"] = true;
+        }
+        else {
+            dayObj["from"] = f.opening.toString("HH:mm");
+            dayObj["to"]   = f.closing.toString("HH:mm");
+        }
 
         openingsArray.append(dayObj);
     }
+
     return openingsArray;
 }
+
 
 QJsonObject PlaceExportToJsonVisitor::basePlaceToJson(const Place& place,const QString& type) const{
     QJsonObject obj;

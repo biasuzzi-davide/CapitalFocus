@@ -31,7 +31,11 @@ QDomElement PlaceExportToXmlVisitor::exportWeeklyOpenings(const weeklyOpenings& 
         dayElem.setAttribute("name", weeklyOpenings::weekdayToString(day));
         if (f.closed) {
             dayElem.setAttribute("closed", "1");
-        } else {
+        }
+        else if (f.alwaysOpen) {
+            dayElem.setAttribute("alwaysOpen", "1");
+        }
+        else {
             QDomElement slot = doc.createElement("slot");
             slot.setAttribute("from", f.opening.toString("HH:mm"));
             slot.setAttribute("to", f.closing.toString("HH:mm"));

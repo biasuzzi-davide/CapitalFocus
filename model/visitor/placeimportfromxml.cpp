@@ -30,6 +30,11 @@ weeklyOpenings PlaceImportFromXml::parseOpenings(const QDomElement& parent) cons
             continue;
         }
 
+        if (d.hasAttribute("alwaysOpen") && d.attribute("alwaysOpen").toInt()) {
+            week.setAlwaysOpen(day);
+            continue;
+        }
+
         QDomElement slot = d.firstChildElement("slot");
         QTime from = QTime::fromString(slot.attribute("from"), "HH:mm");
         QTime to   = QTime::fromString(slot.attribute("to"),   "HH:mm");
