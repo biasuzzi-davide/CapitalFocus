@@ -18,55 +18,56 @@ int main(int argc, char *argv[]) {
 
 
     QString style = R"(
-QWidget {
-    background-color: #f7f7f7;
-    font-family: 'Segoe UI';
-    font-size: 11pt;
-    color: #333333;
-}
+        QWidget {
+            background-color: #f7f7f7;
+            font-family: 'Segoe UI';
+            font-size: 11pt;
+            color: #333333;
+        }
 
-QPushButton {
-    background-color: #8B0000;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 8px 16px;
-}
+        QPushButton {
+            background-color: #8B0000;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+        }
 
-QPushButton:hover {
-    background-color: #a30000;
-}
+        QPushButton:hover {
+            background-color: #a30000;
+        }
 
-QLineEdit, QComboBox {
-    background-color: white;
-    border: 1px solid #cccccc;
-    padding: 6px;
-    border-radius: 4px;
-}
+        QLineEdit, QComboBox {
+            background-color: white;
+            border: 1px solid #cccccc;
+            padding: 6px;
+            border-radius: 4px;
+        }
 
-QListWidget {
-    background-color: white;
-    border: 1px solid #cccccc;
-}
+        QListWidget {
+            background-color: white;
+            border: 1px solid #cccccc;
+        }
 
-QListWidget::item:selected {
-    background-color: #8B0000;
-    color: white;
-}
+        QListWidget::item:selected {
+            background-color: #8B0000;
+            color: white;
+        }
 
-QMenuBar {
-    background-color: #f7f7f7;
-}
+        QMenuBar {
+            background-color: #f7f7f7;
+        }
 
-QMenuBar::item:selected {
-    background-color: #dddddd;
-}
+        QMenuBar::item:selected {
+            background-color: #dddddd;
+        }
 
-QStatusBar {
-    background-color: #f7f7f7;
-    border-top: 1px solid #cccccc;
-}
-)";
+        QStatusBar {
+            background-color: #f7f7f7;
+            border-top: 1px solid #cccccc;
+        }
+    )";
+
     qApp->setStyleSheet(style);
 
     QFont base("Arial", 11);

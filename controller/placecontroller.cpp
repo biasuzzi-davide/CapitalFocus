@@ -332,157 +332,263 @@ void PlaceController::promptAndSetWidget() { // ATTENZIONE, FUNZIONE DI DEBUG DI
 void PlaceController::goBack() {
     setWidgetMain();
 }
+
 void PlaceController::createNewPlace() {
     CreatePlaceWidget* create = qobject_cast<CreatePlaceWidget*>(view->getWidgetByName("create"));
     if (!create) return;
 
-    const bool editing = create->isEditing();
-    Place*        oldRaw = editing ? currentPlace : nullptr;
+    try {
+        // 1) Validazione campi comuni
+        if (create->name().isEmpty())
+            throw std::invalid_argument("Name cannot be empty");
+        if (create->city().isEmpty())
+            throw std::invalid_argument("City cannot be empty");
+        if (create->rating() < 0.0 || create->rating() > 5.0)
+            throw std::invalid_argument("Rating must be between 0.0 and 5.0");
+        if (create->cost() < 0.0)
+            throw std::invalid_argument("Cost cannot be negative");
 
-    // Attributi comuni
-    QString name = create->name();
-    QString city = create->city();
-    QString description = create->description();
-    double rating = create->rating();
-    double cost = create->cost();
-    weeklyOpenings openings;
-    for (int i = 0; i < 7; ++i) {
-        Weekday day = static_cast<Weekday>(i);
-        auto h = create->hours(day);
-        if (h.alwaysClosed) {
-            openings.setClosed(day);
-        } else {
-            openings.setOpening(day, h.open, h.close);
+        // 1.b) Validazione orari settimanali
+        for (int i = 0; i < 7; ++i) {
+            Weekday day = static_cast<Weekday>(i);
+            auto h = create->hours(day);
+            if (!h.alwaysClosed && !h.alwaysOpen) {
+                if (!h.open.isValid() || !h.close.isValid() || h.open >= h.close) {
+                    QString d = weeklyOpenings::weekdayToString(day);
+                    throw std::invalid_argument(
+                        QString("Invalid opening hours for %1").arg(d).toStdString()
+                        );
+                }
+            }
         }
-    }
 
-    std::shared_ptr<Place> newPlace;
-
-    switch (create->getTypeIndex()) {
-    case 0:  // Disco
-        newPlace = std::make_shared<Disco>(
-            name, city, description, rating, openings, cost,
-            create->averageStay_Disco(),
-            create->minimumAge_Disco(),
-            create->restrictedEntry_Disco(),
-            create->musicGenre(),
-            create->prive(),
-            create->dressCode()
-            );
-        break;
-    case 1:  // PanoramicPoints
-        newPlace = std::make_shared<PanoramicPoints>(
-            name, city, description, rating, openings, cost,
-            create->averageStay_Panoramic(),
-            create->minimumAge_Panoramic(),
-            create->restrictedEntry_Panoramic(),
-            create->altitude(),
-            create->binoculars(),
-            create->nightLighting()
-            );
-        break;
-    case 2:  // Cafe
-        newPlace = std::make_shared<Cafe>(
-            name, city, description, rating, openings, cost,
-            create->takeAway_Cafe(),
-            create->averageWaitingTime_Cafe(),
-            create->veganMenu_Cafe(),
-            create->terrace(),
-            create->specialDrink()
-            );
-        break;
-    case 3:  // Restaurant
-        newPlace = std::make_shared<Restaurant>(
-            name, city, description, rating, openings, cost,
-            create->takeAway_Restaurant(),
-            create->averageWaitingTime_Restaurant(),
-            create->veganMenu_Restaurant(),
-            create->cuisineType(),
-            create->reservationNeeded(),
-            create->specialDish()
-            );
-        break;
-    case 4:  // Mall
-        newPlace = std::make_shared<Mall>(
-            name, city, description, rating, openings, cost,
-            create->outdoor_Mall(),
-            create->foodArea_Mall(),
-            create->standNumber_Mall(),
-            create->shopCount(),
-            create->cinema(),
-            create->freeParking()
-            );
-        break;
-    case 5:  // LocalMarket
-        newPlace = std::make_shared<LocalMarket>(
-            name, city, description, rating, openings, cost,
-            create->outdoor_Market(),
-            create->foodArea_Market(),
-            create->standNumber_Market(),
-            create->artisans(),
-            create->seasonal(),
-            create->period()
-            );
-        break;
-    case 6:  // Museum
-        newPlace = std::make_shared<Museum>(
-            name, city, description, rating, openings, cost,
-            create->studentDiscount_Museum(),
-            create->guidedTour_Museum(),
-            create->culturalFocus_Museum(),
-            create->audioGuide()
-            );
-        break;
-    case 7:  // Monument
-        newPlace = std::make_shared<Monument>(
-            name, city, description, rating, openings, cost,
-            create->studentDiscount_Monument(),
-            create->guidedTour_Monument(),
-            create->culturalFocus_Monument(),
-            create->unesco(),
-            create->conservationStatus(),
-            create->openToPublic()
-            );
-        break;
-    default:
-        QMessageBox::warning(view, "Errore", "Tipo di luogo non riconosciuto.");
-        return;
-    }
-
-    bool duplicato = false;
-    for (const auto& existing : repository.getAllPlaces()) {
-        // se siamo in editing e il duplicato è *lo stesso* elemento appena rimosso,
-        // saltiamo il controllo
-        if (editing && existing.get()==currentPlace) continue;
-
-        if (existing->getName().compare(newPlace->getName(), Qt::CaseInsensitive)==0 &&
-            existing->getCity().compare(newPlace->getCity(), Qt::CaseInsensitive)==0)
-        {
-            duplicato = true;
+        // 2) Validazione specifica per ciascun tipo
+        switch (create->getTypeIndex()) {
+        case 0: { // Disco
+            QTime avg = create->averageStay_Disco();
+            if (!avg.isValid())
+                throw std::invalid_argument("Invalid average stay duration");
+            if (create->minimumAge_Disco() < 0)
+                throw std::invalid_argument("Minimum age cannot be negative");
+            if (create->restrictedEntry_Disco().isEmpty())
+                throw std::invalid_argument("Restricted entry must be specified");
+            if (create->musicGenre().isEmpty())
+                throw std::invalid_argument("Music genre cannot be empty");
+            if (create->dressCode().isEmpty())
+                throw std::invalid_argument("Dress code cannot be empty");
             break;
         }
-    }
+        case 1: { // PanoramicPoints
+            QTime avg = create->averageStay_Panoramic();
+            if (!avg.isValid())
+                throw std::invalid_argument("Invalid average stay duration");
+            if (create->minimumAge_Panoramic() < 0)
+                throw std::invalid_argument("Minimum age cannot be negative");
+            if (create->restrictedEntry_Panoramic().isEmpty())
+                throw std::invalid_argument("Restricted entry must be specified");
+            break;
+        }
+        case 2: { // Cafe
+            QTime wait = create->averageWaitingTime_Cafe();
+            if (!wait.isValid())
+                throw std::invalid_argument("Invalid average waiting time");
+            if (create->specialDrink().isEmpty())
+                throw std::invalid_argument("Signature drink must be specified");
+            break;
+        }
+        case 3: { // Restaurant
+            QTime wait = create->averageWaitingTime_Restaurant();
+            if (!wait.isValid())
+                throw std::invalid_argument("Invalid average waiting time");
+            if (create->cuisineType().isEmpty())
+                throw std::invalid_argument("Cuisine type cannot be empty");
+            if (create->specialDish().isEmpty())
+                throw std::invalid_argument("Special dish must be specified");
+            break;
+        }
+        case 4: { // Mall
+            if (create->standNumber_Mall() < 0)
+                throw std::invalid_argument("Stand number cannot be negative");
+            if (create->shopCount() < 0)
+                throw std::invalid_argument("Shop count cannot be negative");
+            break;
+        }
+        case 5: { // LocalMarket
+            if (create->standNumber_Market() < 0)
+                throw std::invalid_argument("Stand number cannot be negative");
+            if (create->period().isEmpty())
+                throw std::invalid_argument("Period must be specified");
+            break;
+        }
+        case 6: { // Museum
+            if (create->culturalFocus_Museum().isEmpty())
+                throw std::invalid_argument("Cultural focus cannot be empty");
+            break;
+        }
+        case 7: { // Monument
+            if (create->culturalFocus_Monument().isEmpty())
+                throw std::invalid_argument("Cultural focus cannot be empty");
+            if (create->conservationStatus().isEmpty())
+                throw std::invalid_argument("Conservation status must be specified");
+            break;
+        }
+        default:
+            throw std::invalid_argument("Unknown place type");
+        }
 
-    if (duplicato) {
+        // 3) Raccolta dati (già validati)
+        const bool editing = create->isEditing();
+        Place* oldRaw = editing ? currentPlace : nullptr;
+
+        QString name        = create->name();
+        QString city        = create->city();
+        QString description = create->description();
+        double rating       = create->rating();
+        double cost         = create->cost();
+
+        weeklyOpenings openings;
+        for (int i = 0; i < 7; ++i) {
+            Weekday d = static_cast<Weekday>(i);
+            auto h = create->hours(d);
+            if (h.alwaysClosed) openings.setClosed(d);
+            else                openings.setOpening(d, h.open, h.close);
+        }
+
+        // 4) Creazione del Place
+        std::shared_ptr<Place> newPlace;
+        switch (create->getTypeIndex()) {
+        case 0:
+            newPlace = std::make_shared<Disco>(
+                name, city, description, rating, openings, cost,
+                create->averageStay_Disco(),
+                create->minimumAge_Disco(),
+                create->restrictedEntry_Disco(),
+                create->musicGenre(),
+                create->prive(),
+                create->dressCode()
+                );
+            break;
+        case 1:
+            newPlace = std::make_shared<PanoramicPoints>(
+                name, city, description, rating, openings, cost,
+                create->averageStay_Panoramic(),
+                create->minimumAge_Panoramic(),
+                create->restrictedEntry_Panoramic(),
+                create->altitude(),
+                create->binoculars(),
+                create->nightLighting()
+                );
+            break;
+        case 2:
+            newPlace = std::make_shared<Cafe>(
+                name, city, description, rating, openings, cost,
+                create->takeAway_Cafe(),
+                create->averageWaitingTime_Cafe(),
+                create->veganMenu_Cafe(),
+                create->terrace(),
+                create->specialDrink()
+                );
+            break;
+        case 3:
+            newPlace = std::make_shared<Restaurant>(
+                name, city, description, rating, openings, cost,
+                create->takeAway_Restaurant(),
+                create->averageWaitingTime_Restaurant(),
+                create->veganMenu_Restaurant(),
+                create->cuisineType(),
+                create->reservationNeeded(),
+                create->specialDish()
+                );
+            break;
+        case 4:
+            newPlace = std::make_shared<Mall>(
+                name, city, description, rating, openings, cost,
+                create->outdoor_Mall(),
+                create->foodArea_Mall(),
+                create->standNumber_Mall(),
+                create->shopCount(),
+                create->cinema(),
+                create->freeParking()
+                );
+            break;
+        case 5:
+            newPlace = std::make_shared<LocalMarket>(
+                name, city, description, rating, openings, cost,
+                create->outdoor_Market(),
+                create->foodArea_Market(),
+                create->standNumber_Market(),
+                create->artisans(),
+                create->seasonal(),
+                create->period()
+                );
+            break;
+        case 6:
+            newPlace = std::make_shared<Museum>(
+                name, city, description, rating, openings, cost,
+                create->studentDiscount_Museum(),
+                create->guidedTour_Museum(),
+                create->culturalFocus_Museum(),
+                create->audioGuide()
+                );
+            break;
+        case 7:
+            newPlace = std::make_shared<Monument>(
+                name, city, description, rating, openings, cost,
+                create->studentDiscount_Monument(),
+                create->guidedTour_Monument(),
+                create->culturalFocus_Monument(),
+                create->unesco(),
+                create->conservationStatus(),
+                create->openToPublic()
+                );
+            break;
+        }
+
+        // 5) Controllo duplicati
+        bool duplicato = false;
+        for (const auto& existing : repository.getAllPlaces()) {
+            if (editing && existing.get() == currentPlace) continue;
+            if (existing->getName().compare(newPlace->getName(), Qt::CaseInsensitive) == 0 &&
+                existing->getCity().compare(newPlace->getCity(), Qt::CaseInsensitive) == 0)
+            {
+                duplicato = true;
+                break;
+            }
+        }
+        if (duplicato) {
+            view->showMessage(UiCommon::MsgIcon::Critical,
+                              tr("Luogo già presente"),
+                              tr("Esiste già un luogo con lo stesso nome e città.\nModifica uno dei due e riprova."));
+            return;
+        }
+
+        // 6) Salvataggio
+        if (editing && oldRaw)
+            repository.replacePlace(oldRaw, newPlace);
+        else
+            repository.addPlace(newPlace);
+
+        resetCurrentPlace();
+        create->setEditing(false);
+        view->populateCityComboBox(repository.getAllPlaces());
+        view->updateResults(groupedSearchResults("", "All"));
+        goBack();
+        create->resetFields();
+    }
+    // Cattura le invalid_argument con messaggio in Warning
+    catch (const std::invalid_argument& ex) {
+        view->showMessage(UiCommon::MsgIcon::Warning,
+                          tr("Invalid input"),
+                          QString::fromStdString(ex.what()));
+    }
+    // Cattura eventuali altre eccezioni con Critical
+    catch (const std::exception& ex) {
         view->showMessage(UiCommon::MsgIcon::Critical,
-                          tr("Luogo già presente"),
-                          tr("Esiste già un luogo con lo stesso nome e città.\n"
-                             "Modifica uno dei due e riprova."));
-        return;
+                          tr("Error"),
+                          QString::fromStdString(ex.what()));
     }
-    if (editing && oldRaw) {
-        repository.replacePlace(oldRaw, newPlace);   // nuovo metodo
-    } else {
-        repository.addPlace(newPlace);
-    }
-    resetCurrentPlace();
-    create->setEditing(false);
-
-    view->populateCityComboBox(repository.getAllPlaces());
-    view->updateResults(groupedSearchResults("", "All"));
-    goBack();
-    create->resetFields();
 }
+
 
 bool PlaceController::setWidgetSafe(const QString& name)
 {
