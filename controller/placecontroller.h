@@ -4,7 +4,7 @@
 #include "../model/placerepository.h"
 #include "../../model/visitor/placeimportfromxml.h"
 #include "../../model/visitor/PlaceImportFromJson.h"
-#include "../../mainwindow.h"
+#include "view/mainwindow.h"
 #include <memory>
 #include <QObject>
 #include <QString>

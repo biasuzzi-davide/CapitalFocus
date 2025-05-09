@@ -12,10 +12,10 @@
 #include "../model/debugconfig.h"
 #include "../model/import_errors.h"
 #include "../model/uicommon.h"
-#include <foodwidget.h>
-#include <entertainmentwidget.h>
-#include <shoppingwidget.h>
-#include <culturewidget.h>
+#include <view/foodwidget.h>
+#include <view/entertainmentwidget.h>
+#include <view/shoppingwidget.h>
+#include <view/culturewidget.h>
 #include <view/createplacewidget.h>
 
 PlaceController::PlaceController(MainWindow* v, PlaceRepository& repo)
@@ -318,7 +318,7 @@ std::map<QString, std::vector<std::shared_ptr<Place>>> PlaceController::groupedS
     return grouped;
 }
 #include <QInputDialog>
-#include "mainwindow.h"
+#include "view/mainwindow.h"
 
 void PlaceController::promptAndSetWidget() { // ATTENZIONE, FUNZIONE DI DEBUG DI UTILITA, non rispetta pattern MVC e gestisce label autonomamente
     bool ok;

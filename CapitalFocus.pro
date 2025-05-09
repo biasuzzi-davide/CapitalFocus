@@ -10,9 +10,9 @@ CONFIG += c++17
 
 SOURCES += \
     controller/placecontroller.cpp \
-    culturewidget.cpp \
-    entertainmentwidget.cpp \
-    foodwidget.cpp \
+    view/culturewidget.cpp \
+    view/entertainmentwidget.cpp \
+    view/foodwidget.cpp \
     main.cpp \
     #main_old.cpp \
     model/Cafe.cpp \
@@ -24,7 +24,7 @@ SOURCES += \
     model//Mall.cpp \
     model//Restaurant.cpp \
     model//Shopping.cpp \
-    mainwindow.cpp \
+    view/mainwindow.cpp \
     model/Monument.cpp \
     model/Museum.cpp \
     model/PanoramicPoints.cpp \
@@ -38,14 +38,14 @@ SOURCES += \
     model/visitor/statisticsvisitor.cpp \
     model/weeklyOpenings.cpp \
     model/visitor/placeexporttoxmlvisitor.cpp \
-    shoppingwidget.cpp \
+    view/shoppingwidget.cpp \
     view/createplacewidget.cpp
 
 HEADERS += \
     controller/placecontroller.h \
-    culturewidget.h \
-    entertainmentwidget.h \
-    foodwidget.h \
+    view/culturewidget.h \
+    view/entertainmentwidget.h \
+    view/foodwidget.h \
     model/Cafe.h \
     model/Culture.h \
     model/Disco.h \
@@ -72,17 +72,17 @@ HEADERS += \
     model/visitor/placevisitorinterface.h \
     model/weekday.h \
     model/weeklyOpenings.h \
-    mainwindow.h \
+    view/mainwindow.h \
     model/visitor/placeexporttoxmlvisitor.h \
-    shoppingwidget.h \
+    view/shoppingwidget.h \
     view/createplacewidget.h
 
 FORMS += \
-    culturewidget.ui \
-    entertainmentwidget.ui \
-    foodwidget.ui \
-    mainwindow.ui \
-    shoppingwidget.ui \
+    view/culturewidget.ui \
+    view/entertainmentwidget.ui \
+    view/foodwidget.ui \
+    view/mainwindow.ui \
+    view/shoppingwidget.ui \
     view/createplacewidget.ui
 
 TRANSLATIONS += \
