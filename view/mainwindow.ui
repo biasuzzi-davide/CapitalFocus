@@ -301,7 +301,7 @@ QTableWidget#tableStatistics {
            </size>
           </property>
           <property name="pixmap">
-           <pixmap resource="resources.qrc">:/images/logo.png</pixmap>
+           <pixmap resource="../resources.qrc">:/images/logo.png</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -480,6 +480,7 @@ QTableWidget#tableStatistics {
     <addaction name="actionSettings"/>
     <addaction name="actionStatistics"/>
     <addaction name="actionCredits"/>
+    <addaction name="actionDark_Mode"/>
     <addaction name="actionToggleDebug"/>
    </widget>
    <addaction name="menuEdit"/>
@@ -537,9 +538,14 @@ QTableWidget#tableStatistics {
     <string>Activate Debug</string>
    </property>
   </action>
+  <action name="actionDark_Mode">
+   <property name="text">
+    <string>Dark Mode ON</string>
+   </property>
+  </action>
  </widget>
  <resources>
-  <include location="resources.qrc"/>
+  <include location="../resources.qrc"/>
  </resources>
  <connections/>
  <slots>

@@ -146,6 +146,7 @@ void MainWindow::setController(PlaceController* controller) {
     connect(ui->actionCredits,      &QAction::triggered,    controller,       &PlaceController::setWidgetCredits);
     connect(ui->actionStatistics, &QAction::triggered, controller, &PlaceController::showStatistics);
     connect(ui->actionEdit, &QAction::triggered, controller, &PlaceController::editCurrentPlace);
+    connect(ui->actionDark_Mode, &QAction::triggered, controller, &PlaceController::toggleDarkMode);
     connect(ui->actionDelete, &QAction::triggered, controller, &PlaceController::deleteCurrentPlace);
     connect(ui->actionXML, &QAction::triggered, controller, &PlaceController::promptExportToXml);
     connect(ui->actionJSON, &QAction::triggered, controller, &PlaceController::promptExportToJson);
@@ -175,6 +176,121 @@ void MainWindow::setDetailsWidget(QWidget* widget) {
     if (widget)
         ui->detailsLayout->addWidget(widget);
 }
+
+bool MainWindow::getDarkModeEnabled(){
+    return isDarkModeEnabled;
+}
+
+void MainWindow::toggleDarkMode(bool enabled) {
+    isDarkModeEnabled = enabled;
+    if (enabled) {
+        ui->actionDark_Mode->setText("Dark Mode OFF");
+        qApp->setStyleSheet(R"(
+            QWidget {
+                background-color: #2b2b2b;
+                font-family: 'Segoe UI';
+                font-size: 11pt;
+                color: #ffffff;
+            }
+
+            QPushButton {
+                background-color: #555555;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                padding: 8px 16px;
+            }
+
+            QPushButton:hover {
+                background-color: #777777;
+            }
+
+            QLineEdit, QComboBox {
+                background-color: #3a3a3a;
+                color: white;
+                border: 1px solid #888888;
+                padding: 6px;
+                border-radius: 4px;
+            }
+
+            QListWidget {
+                background-color: #3a3a3a;
+                border: 1px solid #888888;
+            }
+
+            QListWidget::item:selected {
+                background-color: #8B0000;
+                color: white;
+            }
+
+            QMenuBar {
+                background-color: #2b2b2b;
+            }
+
+            QMenuBar::item:selected {
+                background-color: #444444;
+            }
+
+            QStatusBar {
+                background-color: #2b2b2b;
+                border-top: 1px solid #888888;
+            }
+        )");
+    } else {
+        ui->actionDark_Mode->setText("Dark Mode ON");
+        qApp->setStyleSheet(R"(
+            QWidget {
+                background-color: #f7f7f7;
+                font-family: 'Segoe UI';
+                font-size: 11pt;
+                color: #333333;
+            }
+
+            QPushButton {
+                background-color: #8B0000;
+                color: white;
+                border: none;
+                border-radius: 6px;
+                padding: 8px 16px;
+            }
+
+            QPushButton:hover {
+                background-color: #a30000;
+            }
+
+            QLineEdit, QComboBox {
+                background-color: white;
+                border: 1px solid #cccccc;
+                padding: 6px;
+                border-radius: 4px;
+            }
+
+            QListWidget {
+                background-color: white;
+                border: 1px solid #cccccc;
+            }
+
+            QListWidget::item:selected {
+                background-color: #8B0000;
+                color: white;
+            }
+
+            QMenuBar {
+                background-color: #f7f7f7;
+            }
+
+            QMenuBar::item:selected {
+                background-color: #dddddd;
+            }
+
+            QStatusBar {
+                background-color: #f7f7f7;
+                border-top: 1px solid #cccccc;
+            }
+        )");
+    }
+}
+
 void MainWindow::setWidgetCredits(){showWidgetByName("credits");}
 void MainWindow::setWidgetMain(){showWidgetByName("main");}
 

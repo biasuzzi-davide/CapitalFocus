@@ -844,3 +844,7 @@ void PlaceController::onCreateTypeChanged(int idx)
     auto *create = qobject_cast<CreatePlaceWidget*>(view->getWidgetByName("create"));
     if (create) create->showDetailPage(idx);
 }
+
+void PlaceController::toggleDarkMode(){
+    view->toggleDarkMode(!(view->getDarkModeEnabled()));
+}

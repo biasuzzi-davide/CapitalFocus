@@ -60,7 +60,7 @@ class PlaceController : public QObject{
         void findPlaces();
         void resetSearchFields();
         void onPlaceSelected(QListWidgetItem* item);
-
+        void toggleDarkMode();
         void toggleDebug();
     public slots:
         void createNewPlace();

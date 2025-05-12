@@ -21,6 +21,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    void toggleDarkMode(bool enabled);
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     QString getSearchText() const;
@@ -50,8 +51,9 @@ public:
     QString askSaveFile  (const QString& caption,
                         const QString& filter,
                         const QString& startDir = QString()) const;
-
+    bool getDarkModeEnabled();
 private:
+    bool isDarkModeEnabled = false;
     QMap<QString, QWidget*> widgetMap;
     QStackedWidget* stackedWidget;
     Ui::MainWindow *ui;
