@@ -615,12 +615,18 @@ void PlaceController::createNewPlace() {
 
 bool PlaceController::setWidgetSafe(const QString& name)
 {
-    if (anyWidgetIsEditing()) {
-        view->showMessage(UiCommon::MsgIcon::Warning,
-                          tr("Editing in progress"),
-                          tr("You are currently editing a place.\n"
-                             "Please save before switching."));
-        return false;                   // cambio pagina bloccato
+    CreatePlaceWidget* create = qobject_cast<CreatePlaceWidget*>(view->getWidgetByName("create"));
+    if (create && create->isEditing()) {
+        create->setEditing(false);     // annulla l'editing
+        create->resetFields();         // ripristina i campi
+    }else{
+        if (anyWidgetIsEditing()) {
+            view->showMessage(UiCommon::MsgIcon::Warning,
+                              tr("Editing in progress"),
+                              tr("You are currently editing a place.\n"
+                                 "Please save before switching."));
+            return false;                   // cambio pagina bloccato
+        }
     }
 
     view->showWidgetByName(name);

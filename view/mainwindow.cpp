@@ -170,6 +170,8 @@ void MainWindow::setController(PlaceController* controller) {
     connect(sh_ctrlo, &QShortcut::activated, controller, &PlaceController::importFromFile);
     QShortcut* sh_ctrle = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_E), this);
     connect(sh_ctrle, &QShortcut::activated, controller, &PlaceController::editCurrentPlace);
+    QShortcut* sh_ctrld = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_D), this);
+    connect(sh_ctrld, &QShortcut::activated, controller, &PlaceController::deleteCurrentPlace);
 }
 
 QListWidget* MainWindow::getListWidget() const {
