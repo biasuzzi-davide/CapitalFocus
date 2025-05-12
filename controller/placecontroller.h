@@ -62,7 +62,6 @@ class PlaceController : public QObject{
         void onPlaceSelected(QListWidgetItem* item);
 
         void toggleDebug();
-
     public slots:
         void createNewPlace();
         void editCurrentPlace();

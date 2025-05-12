@@ -18,6 +18,20 @@
 #include <view/culturewidget.h>
 #include <view/createplacewidget.h>
 
+QString getStarRating(double rating) {
+    const QString full = "★";
+    const QString empty = "☆";
+    QString result;
+
+    int fullStars = static_cast<int>(std::floor(rating));
+    int emptyStars = 5 - fullStars;
+
+    result += full.repeated(fullStars);
+    result += empty.repeated(emptyStars);
+
+    return result;
+}
+
 PlaceController::PlaceController(MainWindow* v, PlaceRepository& repo)
     : view(v), repository(repo), currentPlace(nullptr) {};
 
@@ -107,7 +121,7 @@ void PlaceController::onPlaceSelected(QListWidgetItem* item) {
                 s->getName(),
                 s->getCity(),
                 s->getDescription(),
-                QString::number(s->getRating(), 'f', 1)+" ☆ / 5 ☆",
+                getStarRating(s->getRating()) + " (" + QString::number(s->getRating(), 'f', 1) + " / 5)",
                 QString::number(s->getCost(), 'f', 1),
                 (s->getOpen()).toQStringMultiline(),
                 s->isOutdoor() ? "Yes" : "No",
@@ -125,7 +139,7 @@ void PlaceController::onPlaceSelected(QListWidgetItem* item) {
                 f->getName(),
                 f->getCity(),
                 f->getDescription(),
-                QString::number(f->getRating(), 'f', 1)+" ☆ / 5 ☆",
+                getStarRating(f->getRating()) + " (" + QString::number(f->getRating(), 'f', 1) + " / 5)",
                 QString::number(f->getCost(), 'f', 1),
                 (f->getOpen()).toQStringMultiline(),
                 f->hasTakeAway() ? "Yes" : "No",
@@ -143,7 +157,7 @@ void PlaceController::onPlaceSelected(QListWidgetItem* item) {
                 e->getName(),
                 e->getCity(),
                 e->getDescription(),
-                QString::number(e->getRating(), 'f', 1)+" ☆ / 5 ☆",
+                getStarRating(e->getRating()) + " (" + QString::number(e->getRating(), 'f', 1) + " / 5)",
                 QString::number(e->getCost(), 'f', 1),
                 (e->getOpen()).toQStringMultiline(),
                 e->getAvgStayDuration().toString("hh:mm"),
@@ -159,7 +173,7 @@ void PlaceController::onPlaceSelected(QListWidgetItem* item) {
                 c->getName(),
                 c->getCity(),
                 c->getDescription(),
-                QString::number(c->getRating(), 'f', 1)+" ☆ / 5 ☆",
+                getStarRating(c->getRating()) + " (" + QString::number(c->getRating(), 'f', 1) + " / 5)",
                 QString::number(c->getCost(), 'f', 1),
                 (c->getOpen()).toQStringMultiline(),
                 QString::number(c->getStudentDiscount(), 'f', 1),
@@ -332,6 +346,7 @@ void PlaceController::promptAndSetWidget() { // ATTENZIONE, FUNZIONE DI DEBUG DI
 void PlaceController::goBack() {
     setWidgetMain();
 }
+
 
 void PlaceController::createNewPlace() {
     CreatePlaceWidget* create = qobject_cast<CreatePlaceWidget*>(view->getWidgetByName("create"));
