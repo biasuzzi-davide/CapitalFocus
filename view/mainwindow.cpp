@@ -8,6 +8,8 @@
 #include <QFileDialog>
 #include "model/statisticsResult.h"
 #include "view/createplacewidget.h"
+#include <QShortcut>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), controller(nullptr)
 {
@@ -42,7 +44,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->verticalLayout->setContentsMargins(15, 15, 15, 15);
     ui->verticalLayout->setSpacing(10);
-
+    toggleDarkMode(false);
 }
 
 void MainWindow::showWidgetByName(const QString& name) {
@@ -139,6 +141,7 @@ void MainWindow::setController(PlaceController* controller) {
     this->controller = controller;
 
     connect(ui->pushButtonSearch, &QPushButton::clicked, controller, &PlaceController::findPlaces);
+    connect(ui->lineEditSearch, &QLineEdit::returnPressed, controller, &PlaceController::findPlaces);
     connect(ui->pushButtonReset, &QPushButton::clicked, controller, &PlaceController::resetSearchFields);
     connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromFile);
     connect(ui->pushButtonBacktoMain, &QPushButton::clicked, controller, &PlaceController::setWidgetMain);
@@ -159,6 +162,14 @@ void MainWindow::setController(PlaceController* controller) {
     qobject_cast<entertainmentwidget*>(widgetMap["entertainment"])->setController(controller);
     qobject_cast<CreatePlaceWidget*>(widgetMap["create"])->setController(controller);
 
+    QShortcut* sh_ctrls = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_S), this);
+    connect(sh_ctrls, &QShortcut::activated, controller, &PlaceController::promptExportToXml);
+    QShortcut* sh_ctrln = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_N), this);
+    connect(sh_ctrln, &QShortcut::activated, controller, &PlaceController::setWidgetCreate);
+    QShortcut* sh_ctrlo = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_O), this);
+    connect(sh_ctrlo, &QShortcut::activated, controller, &PlaceController::importFromFile);
+    QShortcut* sh_ctrle = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_E), this);
+    connect(sh_ctrle, &QShortcut::activated, controller, &PlaceController::editCurrentPlace);
 }
 
 QListWidget* MainWindow::getListWidget() const {
