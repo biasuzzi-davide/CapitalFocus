@@ -189,6 +189,14 @@ void PlaceController::onPlaceSelected(QListWidgetItem* item) {
         view->setDetailsWidget(widget);
 }
 
+bool PlaceController::hasUnsavedChanges() const {
+    return unsavedChanges;
+}
+
+void PlaceController::setUnsavedChanges(bool value) {
+    unsavedChanges = value;
+}
+
 void PlaceController::importFromFile()
 {
     QString path = view->askOpenFile(tr("Select file"),
@@ -586,10 +594,12 @@ void PlaceController::createNewPlace() {
         }
 
         // 6) Salvataggio
-        if (editing && oldRaw)
+        if (editing && oldRaw){
             repository.replacePlace(oldRaw, newPlace);
-        else
+        }else{
             repository.addPlace(newPlace);
+        }
+        setUnsavedChanges(true);
 
         resetCurrentPlace();
         create->setEditing(false);
@@ -853,4 +863,18 @@ void PlaceController::onCreateTypeChanged(int idx)
 
 void PlaceController::toggleDarkMode(){
     view->toggleDarkMode(!(view->getDarkModeEnabled()));
+}
+
+bool PlaceController::canClose(QWidget* parent) {
+    if (!hasUnsavedChanges())
+        return true;
+
+    QMessageBox::StandardButton reply = QMessageBox::question(
+        parent,
+        "Unsaved Changes",
+        "You have unsaved changes. Do you really want to exit without saving?",
+        QMessageBox::Yes | QMessageBox::No,
+        QMessageBox::No
+        );
+    return reply == QMessageBox::Yes;
 }

@@ -23,7 +23,7 @@ class PlaceController : public QObject{
         PlaceImportFromXml xmlImporter;
         PlaceImportFromJson jsonImporter;
         Place* currentPlace = nullptr;
-
+        bool unsavedChanges = false;
     public:
         explicit PlaceController(MainWindow* view, PlaceRepository& repo);
         Place* getCurrentPlace() const;      // restituisce il Place corrente o nullptr
@@ -62,6 +62,10 @@ class PlaceController : public QObject{
         void onPlaceSelected(QListWidgetItem* item);
         void toggleDarkMode();
         void toggleDebug();
+
+        bool canClose(QWidget* parent);
+        bool hasUnsavedChanges() const;
+        void setUnsavedChanges(bool value);
     public slots:
         void createNewPlace();
         void editCurrentPlace();

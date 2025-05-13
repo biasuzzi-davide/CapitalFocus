@@ -366,3 +366,11 @@ QString MainWindow::askSaveFile(const QString& caption,
     return QFileDialog::getSaveFileName(
         nullptr, caption, startDir, filter);
 }
+#include <QCloseEvent>
+void MainWindow::closeEvent(QCloseEvent* event) {
+    if (controller && !controller->canClose(this)) {
+        event->ignore();
+    } else {
+        event->accept();
+    }
+}

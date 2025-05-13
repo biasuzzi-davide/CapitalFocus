@@ -58,5 +58,7 @@ private:
     QStackedWidget* stackedWidget;
     Ui::MainWindow *ui;
     PlaceController* controller;
+protected:
+    void closeEvent(QCloseEvent* event) override;
 };
 #endif // MAINWINDOW_H
