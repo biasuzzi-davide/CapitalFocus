@@ -156,6 +156,9 @@ void MainWindow::setController(PlaceController* controller) {
     connect(ui->actionToggleDebug, &QAction::triggered, controller, &PlaceController::toggleDebug);
     connect(ui->actionNew, &QAction::triggered, controller, &PlaceController::setWidgetCreate);
     connect(ui->pushButtonCreate, &QPushButton::clicked, controller, &PlaceController::setWidgetCreate);
+    connect(ui->lineEditSearch, &QLineEdit::textChanged, controller, &PlaceController::findPlaces); // per ricerca automatica senza pulsante cerca
+    connect(ui->comboBoxCity, &QComboBox::currentTextChanged, controller, &PlaceController::findPlaces); // per ricerca automatica senza pulsante cerca
+
     qobject_cast<foodwidget*>(widgetMap["food"])->setController(controller);
     qobject_cast<shoppingwidget*>(widgetMap["shopping"])->setController(controller);
     qobject_cast<culturewidget*>(widgetMap["culture"])->setController(controller);

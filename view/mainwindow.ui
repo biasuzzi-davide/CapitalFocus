@@ -316,7 +316,7 @@ QTableWidget#tableStatistics {
           <item>
            <widget class="QLineEdit" name="lineEditSearch">
             <property name="placeholderText">
-             <string>es: Roma, ristorante...</string>
+             <string>eg: Rome, restaurant...</string>
             </property>
            </widget>
           </item>
@@ -326,7 +326,7 @@ QTableWidget#tableStatistics {
           <item>
            <widget class="QPushButton" name="pushButtonSearch">
             <property name="text">
-             <string>Cerca</string>
+             <string>Search</string>
             </property>
            </widget>
           </item>
