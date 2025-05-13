@@ -84,8 +84,7 @@ void MainWindow::updateResults(const std::map<QString, std::vector<std::shared_p
 }
 
 
-void MainWindow::showStatistics(const StatisticsResult& stats) {
-    showWidgetByName("statistics");
+void MainWindow::setStats(const StatisticsResult& stats) {
     // Popola la tabella
     QTableWidget* table = ui->tableStatistics;
     table->setRowCount(3);
@@ -145,6 +144,7 @@ void MainWindow::setController(PlaceController* controller) {
     connect(ui->pushButtonReset, &QPushButton::clicked, controller, &PlaceController::resetSearchFields);
     connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromFile);
     connect(ui->pushButtonBacktoMain, &QPushButton::clicked, controller, &PlaceController::setWidgetMain);
+    connect(ui->pushButtonBacktoMain_2, &QPushButton::clicked, controller, &PlaceController::setWidgetMain);
     connect(ui->listWidgetResults, &QListWidget::itemClicked,controller, &PlaceController::onPlaceSelected);
     connect(ui->actionCredits,      &QAction::triggered,    controller,       &PlaceController::setWidgetCredits);
     connect(ui->actionStatistics, &QAction::triggered, controller, &PlaceController::showStatistics);

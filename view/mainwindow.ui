@@ -356,41 +356,54 @@ QTableWidget#tableStatistics {
        </layout>
       </widget>
       <widget class="QWidget" name="statisticsPage">
-       <layout class="QVBoxLayout" name="verticalLayout_3">
-        <item>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
          <widget class="QTableWidget" name="tableStatistics">
           <property name="showGrid">
            <bool>true</bool>
           </property>
           <row>
            <property name="text">
-            <string>New Row</string>
+            <string/>
            </property>
           </row>
           <row>
            <property name="text">
-            <string>New Row</string>
+            <string/>
            </property>
           </row>
           <row>
            <property name="text">
-            <string>New Row</string>
+            <string/>
            </property>
           </row>
           <column>
            <property name="text">
-            <string>New Column</string>
+            <string/>
            </property>
           </column>
           <column>
            <property name="text">
-            <string>New Column</string>
+            <string/>
            </property>
           </column>
          </widget>
         </item>
-        <item>
+        <item row="1" column="0">
          <widget class="QListWidget" name="listCities"/>
+        </item>
+        <item row="2" column="0" alignment="Qt::AlignHCenter">
+         <widget class="QPushButton" name="pushButtonBacktoMain_2">
+          <property name="maximumSize">
+           <size>
+            <width>200</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Back</string>
+          </property>
+         </widget>
         </item>
        </layout>
       </widget>

@@ -212,6 +212,7 @@ void PlaceController::importFromFile()
         view->showMessage(UiCommon::MsgIcon::Warning,
                           tr("Unsupported format"),
                           tr("Select a .json or .xml file"));
+    view->setStats(repository.computeStatistics());
 }
 
 void PlaceController::exportToJson(const QString& filePath) const {
@@ -324,7 +325,7 @@ void PlaceController::setWidgetCreate() {
     setWidgetSafe("create");
 }
 void PlaceController::showStatistics() {
-    StatisticsResult stats = repository.computeStatistics();
+    view->setStats(repository.computeStatistics());
     setWidgetSafe("statistics");
 }
 

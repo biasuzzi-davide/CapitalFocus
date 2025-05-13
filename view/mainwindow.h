@@ -31,7 +31,7 @@ public:
     void populateCityComboBox(const std::vector<std::shared_ptr<Place>>& places);
     void setWidgetCredits();
     void setWidgetMain();
-    void showStatistics(const StatisticsResult& stats);
+    void setStats(const StatisticsResult& stats);
     void updateResults(const std::map<QString, std::vector<std::shared_ptr<Place>>>& groupedResults);
     QListWidget* getListWidget() const;
     void setDetailsWidget(QWidget* widget);
