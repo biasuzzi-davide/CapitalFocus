@@ -9,11 +9,12 @@
 #include "model/statisticsResult.h"
 #include "view/createplacewidget.h"
 #include <QShortcut>
+#include <QStatusBar>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), controller(nullptr)
 {
-
+    showStatusBarMsg("Welcome to CapitalFocus! v:1.0");
     ui->setupUi(this);
 
     culturewidget* culture = new culturewidget(this);
@@ -47,6 +48,10 @@ MainWindow::MainWindow(QWidget *parent)
     toggleDarkMode(false);
 }
 
+void MainWindow::showStatusBarMsg(const QString& message, int timeoutMs) {
+    statusBar()->showMessage(message, timeoutMs);
+}
+
 void MainWindow::showWidgetByName(const QString& name) {
     if (widgetMap.contains(name)) {
         ui->stackedWidget->setCurrentWidget(widgetMap[name]);
@@ -54,6 +59,9 @@ void MainWindow::showWidgetByName(const QString& name) {
         qWarning("ERRORE: Widget con nome '%s' non trovato", qPrintable(name));
     }
 }
+
+#include <QPropertyAnimation>
+#include <QGraphicsOpacityEffect>
 
 void MainWindow::updateResults(const std::map<QString, std::vector<std::shared_ptr<Place>>>& groupedResults) {
     ui->listWidgetResults->clear();
@@ -81,6 +89,14 @@ void MainWindow::updateResults(const std::map<QString, std::vector<std::shared_p
             ui->listWidgetResults->addItem(item);
         }
     }
+    //auto* effect = new QGraphicsOpacityEffect(ui->listWidgetResults);
+    //ui->listWidgetResults->setGraphicsEffect(effect);
+    //QPropertyAnimation* anim = new QPropertyAnimation(effect, "opacity");
+    //anim->setDuration(500);
+    //anim->setStartValue(0.0);
+    //anim->setEndValue(1.0);
+    //anim->start(QAbstractAnimation::DeleteWhenStopped);
+
 }
 
 

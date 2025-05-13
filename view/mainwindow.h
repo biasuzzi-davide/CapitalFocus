@@ -52,6 +52,7 @@ public:
                         const QString& filter,
                         const QString& startDir = QString()) const;
     bool getDarkModeEnabled();
+    void showStatusBarMsg(const QString& message, int timeoutMs = 3000);
 private:
     bool isDarkModeEnabled = false;
     QMap<QString, QWidget*> widgetMap;

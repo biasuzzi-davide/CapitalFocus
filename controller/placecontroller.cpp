@@ -234,7 +234,10 @@ void PlaceController::exportToJson(const QString& filePath) const {
     }
     file.write(doc.toJson(QJsonDocument::Indented));
     file.close();
-
+    view->showStatusBarMsg(
+        tr("Exported %1 places to %2")
+            .arg(placesArray.size())
+            .arg(filePath),8000);
     view->showMessage(UiCommon::MsgIcon::Info,
                                             tr("Export completed"),
                                             tr("Exported %1 places to\n%2")
@@ -261,13 +264,16 @@ void PlaceController::exportToXml (const QString& filePath) const {
     }
     file.write(doc.toByteArray(4)); // aggiunta spazi di indentazione
     file.close();
-
+    view->showStatusBarMsg(
+        tr("Exported %1 places to %2")
+            .arg(root.childNodes().count())
+            .arg(filePath),8000);
     view->showMessage(UiCommon::MsgIcon::Info,
                       tr("Export completed"),
                       tr("Exported %1 places to\n%2")
                           .arg(root.childNodes().count())
-                          .arg(filePath));}
-
+                          .arg(filePath));
+}
 void PlaceController::printAllPlaces() const {
     const auto& all = repository.getAllPlaces();
 
@@ -291,6 +297,13 @@ void PlaceController::findPlaces() {
     QString city = view->getSelectedCity();
     auto groupedResults = groupedSearchResults(keyword, city);
     view->updateResults(groupedResults);
+    int total = 0;
+    for (const auto& pair : groupedResults)
+        total += static_cast<int>(pair.second.size());
+
+    view->showStatusBarMsg(QString("Found %1 place%2")
+                               .arg(total)
+                               .arg(total == 1 ? "" : "s"), 2000);
 }
 
 void PlaceController::exportToFile()
