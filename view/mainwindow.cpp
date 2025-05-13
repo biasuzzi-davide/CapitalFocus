@@ -167,6 +167,10 @@ void MainWindow::setController(PlaceController* controller) {
 
     QShortcut* sh_ctrls = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_S), this);
     connect(sh_ctrls, &QShortcut::activated, controller, &PlaceController::promptExportToXml);
+    QShortcut* sh_ctrlj = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_J), this);
+    connect(sh_ctrlj, &QShortcut::activated, controller, &PlaceController::promptExportToJson);
+    QShortcut* sh_ctrlx = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_X), this);
+    connect(sh_ctrlx, &QShortcut::activated, controller, &PlaceController::promptExportToXml);
     QShortcut* sh_ctrln = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_N), this);
     connect(sh_ctrln, &QShortcut::activated, controller, &PlaceController::setWidgetCreate);
     QShortcut* sh_ctrlo = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_O), this);

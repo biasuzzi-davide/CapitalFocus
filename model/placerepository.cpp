@@ -17,14 +17,26 @@ const std::vector<std::shared_ptr<Place>>& PlaceRepository::getAllPlaces() const
 
 std::vector<std::shared_ptr<Place>> PlaceRepository::search(const QString& nameKeyword, const QString& cityFilter) const {
     std::vector<std::shared_ptr<Place>> results;
-    for (const auto& place : places) {
-        bool nameMatch = nameKeyword.isEmpty() || place->getName().contains(nameKeyword, Qt::CaseInsensitive);
-        bool cityMatch = cityFilter == "All" || place->getCity() == cityFilter;
 
-        if (nameMatch && cityMatch) {
+    for (const auto& place : places) {
+        QString name = place->getName();
+        QString city = place->getCity();
+        QString desc = place->getDescription();
+        // match se il nome o la città contengono la keyword
+        bool keywordMatch =
+            nameKeyword.isEmpty() ||
+            name.contains(nameKeyword, Qt::CaseInsensitive) ||
+            city.contains(nameKeyword, Qt::CaseInsensitive) ||
+            desc.contains(nameKeyword, Qt::CaseInsensitive);
+
+        // match se il filtro città (comboBox) è "All" o corrisponde esattamente
+        bool cityMatch = cityFilter == "All" || city == cityFilter;
+
+        if (keywordMatch && cityMatch) {
             results.push_back(place);
         }
     }
+
     return results;
 }
 
