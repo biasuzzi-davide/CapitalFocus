@@ -141,14 +141,15 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
 }
 
 bool MainWindow::askConfirmation(const QString& title,
-                                 const QString& question,
-                                 QMessageBox::StandardButton def)
+                                 const QString& question)
 {
-    auto ret = QMessageBox::question(this,
-                                     title,
-                                     question,
-                                     QMessageBox::Yes | QMessageBox::No,
-                                     def);
+    auto ret = QMessageBox::question(
+        this,
+        title,
+        question,
+        QMessageBox::Yes | QMessageBox::No,
+        QMessageBox::No     // NO come default non mi interessa ci sia il si
+        );
     return ret == QMessageBox::Yes;
 }
 

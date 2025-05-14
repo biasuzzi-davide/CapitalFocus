@@ -43,8 +43,7 @@ public:
                      const QString& title,
                      const QString& text);
     bool askConfirmation(const QString& title,
-                         const QString& question,
-                         QMessageBox::StandardButton defaultBtn = QMessageBox::Yes);
+                         const QString& question);
     QString askOpenFile  (const QString& caption,
                         const QString& filter,
                         const QString& startDir = QString()) const;

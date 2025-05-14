@@ -46,8 +46,8 @@ class PlaceController : public QObject{
         void promptExportToXml();
         void promptExportToJson();
         void exportToFile();
-        void exportToJson(const QString& filePath) const;
-        void exportToXml(const QString& filePath) const;
+        void exportToJson(const QString& filePath);
+        void exportToXml(const QString& filePath);
 
         void setWidgetCreate();
         void setWidgetMain();

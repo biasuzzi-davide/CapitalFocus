@@ -30,6 +30,10 @@ QString getStarRating(double rating) {
     return result;
 }
 
+void PlaceController::setUnsavedChanges(bool value) {
+    unsavedChanges = value;
+}
+
 PlaceController::PlaceController(MainWindow* v, PlaceRepository& repo)
     : view(v), repository(repo), currentPlace(nullptr) {};
 
@@ -82,7 +86,7 @@ void PlaceController::importPlacesFromXml(const QString& filePath){
                           tr("Invalid data"),
                           e.what());
     }
-
+    setUnsavedChanges(false);
 }
 
 void PlaceController::importPlacesFromJson(const QString& filePath){
@@ -111,6 +115,7 @@ void PlaceController::importPlacesFromJson(const QString& filePath){
                           tr("Invalid data"),
                           e.what());
     }
+    setUnsavedChanges(false);
 }
 
 void PlaceController::onPlaceSelected(QListWidgetItem* item) {
@@ -204,10 +209,6 @@ bool PlaceController::hasUnsavedChanges() const {
     return unsavedChanges;
 }
 
-void PlaceController::setUnsavedChanges(bool value) {
-    unsavedChanges = value;
-}
-
 void PlaceController::importFromFile()
 {
     QString path = view->askOpenFile(
@@ -229,7 +230,7 @@ void PlaceController::importFromFile()
     view->setStats(repository.computeStatistics());
 }
 
-void PlaceController::exportToJson(const QString& filePath) const {
+void PlaceController::exportToJson(const QString& filePath) {
     QJsonArray placesArray;
 
     for (const auto& place : repository.getAllPlaces()) {
@@ -257,10 +258,10 @@ void PlaceController::exportToJson(const QString& filePath) const {
                                             tr("Exported %1 places to\n%2")
                                                     .arg(placesArray.size())
                                                     .arg(filePath));
-
+    setUnsavedChanges(false);
 }
 
-void PlaceController::exportToXml (const QString& filePath) const {
+void PlaceController::exportToXml (const QString& filePath) {
     QDomDocument doc("placesDoc");
     QDomElement root = doc.createElement("places");
     doc.appendChild(root);
@@ -289,6 +290,7 @@ void PlaceController::exportToXml (const QString& filePath) const {
                       tr("Exported %1 places to\n%2")
                           .arg(root.childNodes().count())
                           .arg(filePath));
+    setUnsavedChanges(false);
 }
 void PlaceController::printAllPlaces() const {
     const auto& all = repository.getAllPlaces();
@@ -711,8 +713,7 @@ void PlaceController::deleteCurrentPlace() {
         // Conferma eliminazione
         bool reply = view->askConfirmation(
             tr("Confirm Deletion"),
-            tr("Are you sure you want to delete this place?"),
-            QMessageBox::No);
+            tr("Are you sure you want to delete this place?"));
 
         if (reply) {
             const auto& all = repository.getAllPlaces();
@@ -722,6 +723,7 @@ void PlaceController::deleteCurrentPlace() {
 
             if (it != all.end()) {
                 repository.removePlace(std::distance(all.begin(), it));
+                setUnsavedChanges(true);
                 findPlaces();
                 goBack();
                 view->populateCityComboBox(repository.getAllPlaces());
@@ -908,7 +910,6 @@ bool PlaceController::canClose()
     // Chiede conferma alla view (MainWindow)
     return view->askConfirmation(
         tr("Unsaved Changes"),
-        tr("You have unsaved changes. Do you really want to exit without saving?"),
-        QMessageBox::No
+        tr("You have unsaved changes. Do you really want to exit without saving?")
         );
 }
