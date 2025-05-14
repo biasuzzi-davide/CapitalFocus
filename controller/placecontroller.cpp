@@ -1,8 +1,6 @@
 #include "placecontroller.h"
 #include "../model/visitor/placeexporttoxmlvisitor.h"
 #include "../model/visitor/placeExportToJsonVisitor.h"
-#include <QFileDialog>
-#include <QMessageBox>
 #include <QFileInfo>
 #include <QDebug>
 #include <QJsonDocument>
@@ -72,12 +70,19 @@ void PlaceController::importPlacesFromXml(const QString& filePath){
 
 
     } catch (const FileOpenError& e) {
-        QMessageBox::critical(view, tr("File opening error"), e.what());
+        view->showMessage(UiCommon::MsgIcon::Critical,
+                          tr("File opening error"),
+                          e.what());
     } catch (const XmlParseError& e) {
-        QMessageBox::critical(view, tr("XML parsing error"), e.what());
+        view->showMessage(UiCommon::MsgIcon::Critical,
+                          tr("XML parsing error"),
+                          e.what());
     } catch (const std::exception& e) {
-        QMessageBox::warning(view, tr("Invalid data"), e.what());
+        view->showMessage(UiCommon::MsgIcon::Warning,
+                          tr("Invalid data"),
+                          e.what());
     }
+
 }
 
 void PlaceController::importPlacesFromJson(const QString& filePath){
@@ -94,11 +99,17 @@ void PlaceController::importPlacesFromJson(const QString& filePath){
 
     // Sono stati tolti
     } catch (const FileOpenError& e) {
-        view->showMessage(UiCommon::MsgIcon::Critical, tr("File opening error"), e.what());
+        view->showMessage(UiCommon::MsgIcon::Critical,
+                          tr("File opening error"),
+                          e.what());
     } catch (const JsonParseError& e) {
-        view->showMessage(UiCommon::MsgIcon::Critical, tr("JSON parsing error"), e.what());
+        view->showMessage(UiCommon::MsgIcon::Critical,
+                          tr("JSON parsing error"),
+                          e.what());
     } catch (const std::exception& e) {
-        view->showMessage(UiCommon::MsgIcon::Critical, tr("Invalid data"), e.what());
+        view->showMessage(UiCommon::MsgIcon::Critical,
+                          tr("Invalid data"),
+                          e.what());
     }
 }
 
@@ -199,8 +210,11 @@ void PlaceController::setUnsavedChanges(bool value) {
 
 void PlaceController::importFromFile()
 {
-    QString path = view->askOpenFile(tr("Select file"),
-                                     tr("JSON or XML file (*.json *.xml)"));
+    QString path = view->askOpenFile(
+        tr("Select file"),
+        tr("JSON or XML file (*.json *.xml)")
+        );
+
     if (path.isEmpty()) return;
 
     QString ext = QFileInfo(path).suffix().toLower();
@@ -242,7 +256,9 @@ void PlaceController::exportToJson(const QString& filePath) const {
                                             tr("Export completed"),
                                             tr("Exported %1 places to\n%2")
                                                     .arg(placesArray.size())
-                                                    .arg(filePath));}
+                                                    .arg(filePath));
+
+}
 
 void PlaceController::exportToXml (const QString& filePath) const {
     QDomDocument doc("placesDoc");
@@ -308,11 +324,10 @@ void PlaceController::findPlaces() {
 
 void PlaceController::exportToFile()
 {
-    QString path = QFileDialog::getSaveFileName(
-        view,
+    QString path = view->askSaveFile(
         tr("Save places"),
-        "",
-        tr("JSON (*.json);;XML (*.xml)"));
+        tr("JSON (*.json);;XML (*.xml)")
+        );
 
     if (path.isEmpty()) return;
 
@@ -694,14 +709,12 @@ void PlaceController::deleteCurrentPlace() {
         if (!place) return;
 
         // Conferma eliminazione
-        QMessageBox::StandardButton reply = QMessageBox::question(
-            view,
-            "Confirm Deletion",
-            "Are you sure you want to delete this place?",
-            QMessageBox::Yes | QMessageBox::No
-            );
+        bool reply = view->askConfirmation(
+            tr("Confirm Deletion"),
+            tr("Are you sure you want to delete this place?"),
+            QMessageBox::No);
 
-        if (reply == QMessageBox::Yes) {
+        if (reply) {
             const auto& all = repository.getAllPlaces();
             auto it = std::find_if(all.begin(), all.end(), [place](const std::shared_ptr<Place>& p) {
                 return p.get() == place;
@@ -717,13 +730,21 @@ void PlaceController::deleteCurrentPlace() {
     }
 }
 void PlaceController::promptExportToXml() {
-    QString path = QFileDialog::getSaveFileName(view, QObject::tr("Save as XML"), "", QObject::tr("XML files (*.xml)"));
-    if (!path.isEmpty()) exportToXml(path);
+    QString path = view->askSaveFile(
+        tr("Save as XML"),
+        tr("XML files (*.xml)")
+        );
+    if (!path.isEmpty())
+        exportToXml(path);
 }
 
 void PlaceController::promptExportToJson() {
-    QString path = QFileDialog::getSaveFileName(view, QObject::tr("Save as JSON"), "", QObject::tr("JSON files (*.json)"));
-    if (!path.isEmpty()) exportToJson(path);
+    QString path = view->askSaveFile(
+        tr("Save as JSON"),
+        tr("JSON files (*.json)")
+        );
+    if (!path.isEmpty())
+        exportToJson(path);
 }
 
 void PlaceController::editCurrentPlace()
@@ -879,16 +900,15 @@ void PlaceController::toggleDarkMode(){
     view->toggleDarkMode(!(view->getDarkModeEnabled()));
 }
 
-bool PlaceController::canClose(QWidget* parent) {
+bool PlaceController::canClose()
+{
     if (!hasUnsavedChanges())
         return true;
 
-    QMessageBox::StandardButton reply = QMessageBox::question(
-        parent,
-        "Unsaved Changes",
-        "You have unsaved changes. Do you really want to exit without saving?",
-        QMessageBox::Yes | QMessageBox::No,
+    // Chiede conferma alla view (MainWindow)
+    return view->askConfirmation(
+        tr("Unsaved Changes"),
+        tr("You have unsaved changes. Do you really want to exit without saving?"),
         QMessageBox::No
         );
-    return reply == QMessageBox::Yes;
 }

@@ -63,7 +63,7 @@ class PlaceController : public QObject{
         void toggleDarkMode();
         void toggleDebug();
 
-        bool canClose(QWidget* parent);
+        bool canClose();
         bool hasUnsavedChanges() const;
         void setUnsavedChanges(bool value);
     public slots:

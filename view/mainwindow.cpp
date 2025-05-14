@@ -387,8 +387,9 @@ QString MainWindow::askSaveFile(const QString& caption,
         nullptr, caption, startDir, filter);
 }
 #include <QCloseEvent>
-void MainWindow::closeEvent(QCloseEvent* event) {
-    if (controller && !controller->canClose(this)) {
+void MainWindow::closeEvent(QCloseEvent* event)
+{
+    if (controller && !controller->canClose()) {
         event->ignore();
     } else {
         event->accept();
