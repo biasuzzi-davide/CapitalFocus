@@ -9,13 +9,18 @@ namespace Ui {
 class culturewidget;
 }
 
+// Widget per visualizzare i dettagli di un luogo di cultura
 class culturewidget : public QWidget
 {
     Q_OBJECT
 
 public:
+    // Costruttore
     explicit culturewidget(QWidget *parent = nullptr);
+    // Distruttore
     ~culturewidget();
+
+    // Imposta i valori dei campi del widget
     void setValues(const QString& name,
                    const QString& city,
                    const QString& description,
@@ -26,12 +31,12 @@ public:
                    const QString& guidedTour,
                    const QString& culturalFocus,
                    const QString& specific);
+    // Imposta il controller associato
     void setController(PlaceController* c);
 
 private:
-    bool editingEnabled = false;
-    Ui::culturewidget *ui;
-    PlaceController* controller = nullptr;
+    Ui::culturewidget *ui; // Puntatore all'UI generata da Qt Designer
+    PlaceController* controller = nullptr; // Puntatore al Controller
 };
 
 #endif // CULTUREWIDGET_H

@@ -3,12 +3,14 @@
 #include <QGraphicsDropShadowEffect>
 #include "controller/placecontroller.h"
 
+// Costruttore
 entertainmentwidget::entertainmentwidget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::entertainmentwidget)
 {
-    ui->setupUi(this);
+    ui->setupUi(this); // Inizializza l'UI
 
+    // Applica un'ombra al frame principale
     auto *shadow = new QGraphicsDropShadowEffect(this);
     shadow->setBlurRadius(12);
     shadow->setColor(QColor(0, 0, 0, 25));
@@ -16,7 +18,7 @@ entertainmentwidget::entertainmentwidget(QWidget *parent)
     ui->cardFrame->setGraphicsEffect(shadow);
 }
 
-
+// Imposta i valori dei campi del widget con i dettagli del luogo
 void entertainmentwidget::setValues(const QString& name,
                                     const QString& city,
                                     const QString& description,
@@ -40,14 +42,16 @@ void entertainmentwidget::setValues(const QString& name,
     ui->valueSpecific->setText(specific);
 }
 
+// Distruttore
 entertainmentwidget::~entertainmentwidget()
 {
-    delete ui;
+    delete ui; // Dealloca l'UI
 }
 
-
+// Imposta il controller e connette i segnali dei pulsanti
 void entertainmentwidget::setController(PlaceController* c) {
-    controller = c;
+    controller = c; // Salva il puntatore al controller
+    // Connette i segnali clicked dei pulsanti agli slot del controller
     connect(ui->pushBack, &QPushButton::clicked, controller, &PlaceController::goBack);
     connect(ui->pushEdit, &QPushButton::clicked, controller, &PlaceController::editCurrentPlace);
     connect(ui->pushDelete, &QPushButton::clicked, controller, &PlaceController::deleteCurrentPlace);
