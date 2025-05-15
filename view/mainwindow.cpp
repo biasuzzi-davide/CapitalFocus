@@ -89,14 +89,6 @@ void MainWindow::updateResults(const std::map<QString, std::vector<std::shared_p
             ui->listWidgetResults->addItem(item);
         }
     }
-    //auto* effect = new QGraphicsOpacityEffect(ui->listWidgetResults);
-    //ui->listWidgetResults->setGraphicsEffect(effect);
-    //QPropertyAnimation* anim = new QPropertyAnimation(effect, "opacity");
-    //anim->setDuration(500);
-    //anim->setStartValue(0.0);
-    //anim->setEndValue(1.0);
-    //anim->start(QAbstractAnimation::DeleteWhenStopped);
-
 }
 
 
@@ -135,53 +127,47 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
     msgBox.setText(text);
 
     msgBox.setStyleSheet(R"(
-        QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton { /* Targetta i QPushButton dentro la buttonbox di QMessageBox */
-            background-color: #E53935; /* Nuovo colore rosso */
+        QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton {
+            background-color: #E53935;
             color: white;
             border: none;
             border-radius: 4px;
             padding: 5px 15px;
         }
         QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton:hover {
-            background-color: #D32F2F; /* Nuovo colore rosso al passaggio del mouse */
+            background-color: #D32F2F;
         }
     )");
 
     switch (icon) {
     case UiCommon::MsgIcon::Warning:
     {
-        // ** OCCORRENZA 1: Icona personalizzata per i messaggi di Warning **
-        QPixmap warningIcon(":/images/alert_icon.png"); // VERIFICA QUESTO PERCORSO!
+        QPixmap warningIcon(":/images/alert_icon.png");
         if (!warningIcon.isNull()) {
-            msgBox.setIconPixmap(warningIcon); // Imposta l'immagine personalizzata
+            msgBox.setIconPixmap(warningIcon);
         } else {
-            // Fallback: se l'immagine non viene caricata, usa l'icona standard di Qt
             msgBox.setIcon(QMessageBox::Warning);
         }
     }
     break;
     case UiCommon::MsgIcon::Critical:
     {
-        // ** OCCORRENZA 2: Icona personalizzata anche per i messaggi Critical **
-        QPixmap criticalIcon(":/images/alert_icon.png"); // VERIFICA QUESTO PERCORSO!
+        QPixmap criticalIcon(":/images/alert_icon.png");
         if (!criticalIcon.isNull()) {
-            msgBox.setIconPixmap(criticalIcon); // Imposta l'immagine personalizzata
+            msgBox.setIconPixmap(criticalIcon);
         } else {
-            // Fallback: se l'immagine non viene caricata, usa l'icona standard di Qt
-            msgBox.setIcon(QMessageBox::Critical); // Usa l'icona standard di Qt Critical come fallback
+            msgBox.setIcon(QMessageBox::Critical);
         }
     }
     break;
     case UiCommon::MsgIcon::Info:
     default:
     {
-        // ** OCCORRENZA 3: Icona personalizzata anche per i messaggi Info **
-        QPixmap infoIcon(":/images/alert_icon.png"); // VERIFICA QUESTO PERCORSO!
+        QPixmap infoIcon(":/images/alert_icon.png");
         if (!infoIcon.isNull()) {
-            msgBox.setIconPixmap(infoIcon); // Imposta l'immagine personalizzata
+            msgBox.setIconPixmap(infoIcon);
         } else {
-            // Fallback: se l'immagine non viene caricata, usa l'icona standard di Qt
-            msgBox.setIcon(QMessageBox::Information); // Usa l'icona standard di Qt Information come fallback
+            msgBox.setIcon(QMessageBox::Information);
         }
     }
     break;
@@ -196,16 +182,13 @@ bool MainWindow::askConfirmation(const QString& title,
     QMessageBox msgBox(this);
     msgBox.setWindowTitle(title);
     msgBox.setText(question);
-    // ** RIMUOVI o COMMENTA QUESTA RIGA: msgBox.setIcon(QMessageBox::Question); **
 
-    // ** OCCORRENZA 4: Icona personalizzata per le finestre di conferma (Delete, Import, ecc.) **
     {
-        QPixmap confirmationIcon(":/images/alert_icon.png"); // VERIFICA QUESTO PERCORSO!
+        QPixmap confirmationIcon(":/images/alert_icon.png");
         if (!confirmationIcon.isNull()) {
-            msgBox.setIconPixmap(confirmationIcon); // Imposta l'immagine personalizzata
+            msgBox.setIconPixmap(confirmationIcon);
         } else {
-            // Fallback: se l'immagine non viene caricata, usa l'icona di domanda standard di Qt
-            msgBox.setIcon(QMessageBox::Question); // Usa l'icona standard di Qt Question come fallback
+            msgBox.setIcon(QMessageBox::Question);
         }
     }
 
@@ -213,23 +196,16 @@ bool MainWindow::askConfirmation(const QString& title,
     msgBox.setDefaultButton(QMessageBox::No);
 
     msgBox.setStyleSheet(R"(
-        QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton { /* Targetta i QPushButton dentro la buttonbox di QMessageBox */
-            background-color: #E53935; /* Nuovo colore rosso */
+        QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton {
+            background-color: #E53935;
             color: white;
             border: none;
             border-radius: 4px;
             padding: 5px 15px;
         }
         QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton:hover {
-            background-color: #D32F2F; /* Nuovo colore rosso al passaggio del mouse */
+            background-color: #D32F2F;
         }
-        /* Potresti voler differenziare il pulsante "No" */
-        /* QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton[text="No"] {
-            background-color: #555555;
-        }
-        QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton:hover[text="No"] {
-            background-color: #777777;
-        } */
     )");
 
     return msgBox.exec() == QMessageBox::Yes;
@@ -362,7 +338,6 @@ void MainWindow::toggleDarkMode(bool enabled) {
             QPushButton:hover { background-color: #777777; }
             QPushButton:pressed { background-color: #888888; }
 
-            /* Bottoni primari - Rosso acceso */
             QPushButton#pushButtonSearch, QPushButton#pushButtonCreate,
             QPushButton#pushEdit, QPushButton#pushDelete,
             #culturewidget QPushButton:!hasFlatAppearance,
@@ -384,7 +359,6 @@ void MainWindow::toggleDarkMode(bool enabled) {
                 background-color: #B71C1C;
             }
 
-            /* Bottoni secondari */
             QPushButton#pushButtonReset, QPushButton#pushButtonBacktoMain, QPushButton#pushButtonBacktoMain_2,
             #culturewidget QPushButton#pushBack, #entertainmentwidget QPushButton#pushBack,
             #foodwidget QPushButton#pushBack, #shoppingwidget QPushButton#pushBack {
@@ -464,7 +438,6 @@ void MainWindow::toggleDarkMode(bool enabled) {
             QPushButton:hover { background-color: #f0f0f0; }
             QPushButton:pressed { background-color: #dddddd; }
 
-            /* Bottoni primari - Rosso */
             QPushButton#pushButtonSearch, QPushButton#pushButtonCreate,
             QPushButton#pushEdit, QPushButton#pushDelete,
             #culturewidget QPushButton:!hasFlatAppearance,
@@ -487,7 +460,6 @@ void MainWindow::toggleDarkMode(bool enabled) {
                 background-color: #B71C1C;
             }
 
-            /* Bottoni secondari */
             QPushButton#pushButtonReset, QPushButton#pushButtonBacktoMain, QPushButton#pushButtonBacktoMain_2,
             #culturewidget QPushButton#pushBack, #entertainmentwidget QPushButton#pushBack,
             #foodwidget QPushButton#pushBack, #shoppingwidget QPushButton#pushBack {
@@ -541,8 +513,8 @@ QWidget* MainWindow::getCurrentPage() const {
 }
 
 void MainWindow::populateCityComboBox(const std::vector<std::shared_ptr<Place>>& places) {
-    ui->comboBoxCity->clear();              // Pulisce tutto
-    ui->comboBoxCity->addItem("All");     // Prima voce = "All"
+    ui->comboBoxCity->clear();// Pulisce tutto
+    ui->comboBoxCity->addItem("All");// Prima voce = "All"
 
     QSet<QString> addedCities;
     for (const auto& place : places) {
