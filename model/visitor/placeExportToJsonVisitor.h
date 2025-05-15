@@ -9,11 +9,6 @@ class PlaceExportToJsonVisitor: public PlaceVisitorInterface{
 private:
     QJsonObject result;
 
-    QJsonObject exportFoodData(const Food& f) const;
-    QJsonObject exportShoppingData(const Food& f) const;
-    QJsonObject exportEntertainmentData(const Food& f) const;
-    QJsonObject exportCultureData(const Food& f) const;
-
 public:
     PlaceExportToJsonVisitor()=default;
     QJsonObject getResult() const;  // restituisce l'elemento Json creato
