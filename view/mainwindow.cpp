@@ -221,112 +221,214 @@ bool MainWindow::getDarkModeEnabled(){
 void MainWindow::toggleDarkMode(bool enabled) {
     isDarkModeEnabled = enabled;
     if (enabled) {
-        ui->actionDark_Mode->setText("Dark Mode OFF");
+        ui->actionDark_Mode->setText(tr("Dark Mode OFF"));
         qApp->setStyleSheet(R"(
             QWidget {
-                background-color: #2b2b2b;
-                font-family: 'Segoe UI';
+                background-color: #3a3a3a;
+                font-family: 'Segoe UI', Arial, sans-serif;
                 font-size: 11pt;
-                color: #ffffff;
+                color: #e0e0e0;
             }
 
+            QLabel { color: #e0e0e0; }
+            QFrame#cardFrame { background-color: #4f4f4f; border: 1px solid #666666; border-radius: 6px; padding: 15px; }
+            QTextEdit { background-color: #4f4f4f; color: #e0e0e0; border: 1px solid #666666; border-radius: 4px; padding: 5px; }
+            QTextEdit[readOnly="true"] { background-color: #3a3a3a; }
+
+            QLineEdit, QComboBox, QSpinBox, QDoubleSpinBox, QTimeEdit {
+                background-color: #4f4f4f;
+                color: #e0e0e0;
+                border: 1px solid #666666;
+                border-radius: 4px;
+                padding: 6px;
+            }
+
+            QListWidget, QTableWidget {
+                background-color: #4f4f4f;
+                color: #e0e0e0;
+                border: 1px solid #666666;
+            }
+
+            QListWidget::item:!selectable {
+                color: #E53935;
+                font-weight: bold;
+                border-bottom: 1px solid #666666;
+                padding: 6px;
+            }
+            QListWidget::item:selectable:!selected { color: #cccccc; }
+            QListWidget::item:selected, QTableWidget::item:selected {
+                background-color: #E53935;
+                color: white;
+            }
+
+            QMenuBar { background-color: #3a3a3a; color: #e0e0e0; border-bottom: 1px solid #666666; }
+            QMenu { background-color: #4f4f4f; color: #e0e0e0; border: 1px solid #666666; border-radius: 6px; }
+            QMenu::item:selected { background-color: #E53935; color: white; }
+
+            QStatusBar { background-color: #3a3a3a; border-top: 1px solid #666666; color: #e0e0e0; }
+
             QPushButton {
-                background-color: #555555;
+                background-color: #666666;
                 color: white;
                 border: none;
                 border-radius: 6px;
                 padding: 8px 16px;
+                font-weight: normal;
+                min-width: 70px;
             }
 
-            QPushButton:hover {
+            QPushButton:hover { background-color: #777777; }
+            QPushButton:pressed { background-color: #888888; }
+
+            /* Bottoni primari - Rosso acceso */
+            QPushButton#pushButtonSearch, QPushButton#pushButtonCreate,
+            QPushButton#pushEdit, QPushButton#pushDelete,
+            #culturewidget QPushButton:!hasFlatAppearance,
+            #entertainmentwidget QPushButton:!hasFlatAppearance,
+            #foodwidget QPushButton:!hasFlatAppearance,
+            #shoppingwidget QPushButton:!hasFlatAppearance {
+                background-color: #E53935;
+                color: white;
+                font-weight: bold;
+            }
+
+            QPushButton#pushButtonSearch:hover, QPushButton#pushButtonCreate:hover,
+            QPushButton#pushEdit:hover, QPushButton#pushDelete:hover {
+                background-color: #D32F2F;
+            }
+
+            QPushButton#pushButtonSearch:pressed, QPushButton#pushButtonCreate:pressed,
+            QPushButton#pushEdit:pressed, QPushButton#pushDelete:pressed {
+                background-color: #B71C1C;
+            }
+
+            /* Bottoni secondari */
+            QPushButton#pushButtonReset, QPushButton#pushButtonBacktoMain, QPushButton#pushButtonBacktoMain_2,
+            #culturewidget QPushButton#pushBack, #entertainmentwidget QPushButton#pushBack,
+            #foodwidget QPushButton#pushBack, #shoppingwidget QPushButton#pushBack {
+                background-color: #666666;
+                color: white;
+            }
+
+            QPushButton#pushButtonReset:hover, QPushButton#pushButtonBacktoMain:hover, QPushButton#pushButtonBacktoMain_2:hover,
+            #culturewidget QPushButton#pushBack:hover, #entertainmentwidget QPushButton#pushBack:hover,
+            #foodwidget QPushButton#pushBack:hover, #shoppingwidget QPushButton#pushBack:hover {
                 background-color: #777777;
             }
 
-            QLineEdit, QComboBox {
-                background-color: #3a3a3a;
-                color: white;
-                border: 1px solid #888888;
-                padding: 6px;
-                border-radius: 4px;
-            }
-
-            QListWidget {
-                background-color: #3a3a3a;
-                border: 1px solid #888888;
-            }
-
-            QListWidget::item:selected {
-                background-color: #8B0000;
-                color: white;
-            }
-
-            QMenuBar {
-                background-color: #2b2b2b;
-            }
-
-            QMenuBar::item:selected {
-                background-color: #444444;
-            }
-
-            QStatusBar {
-                background-color: #2b2b2b;
-                border-top: 1px solid #888888;
+            QPushButton#pushButtonReset:pressed, QPushButton#pushButtonBacktoMain:pressed, QPushButton#pushButtonBacktoMain_2:pressed,
+            #culturewidget QPushButton#pushBack:pressed, #entertainmentwidget QPushButton#pushBack:pressed,
+            #foodwidget QPushButton#pushBack:pressed, #shoppingwidget QPushButton#pushBack:pressed {
+                background-color: #888888;
             }
         )");
     } else {
-        ui->actionDark_Mode->setText("Dark Mode ON");
+        ui->actionDark_Mode->setText(tr("Dark Mode ON"));
         qApp->setStyleSheet(R"(
             QWidget {
-                background-color: #f7f7f7;
-                font-family: 'Segoe UI';
+                background-color: #f0f0f0;
+                font-family: 'Segoe UI', Arial, sans-serif;
                 font-size: 11pt;
                 color: #333333;
             }
 
-            QPushButton {
-                background-color: #8B0000;
+            QLabel { color: #333333; }
+            QFrame#cardFrame { background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 6px; padding: 15px; }
+            QTextEdit { background-color: #ffffff; color: #333333; border: 1px solid #cccccc; border-radius: 4px; padding: 5px; }
+            QTextEdit[readOnly="true"] { background-color: #f8f8f8; }
+
+            QLineEdit, QComboBox, QSpinBox, QDoubleSpinBox, QTimeEdit {
+                background-color: white;
+                color: #333333;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                padding: 6px;
+            }
+
+            QListWidget, QTableWidget {
+                background-color: white;
+                color: #333333;
+                border: 1px solid #cccccc;
+            }
+
+            QListWidget::item:!selectable {
+                color: #E53935;
+                font-weight: bold;
+                border-bottom: 1px solid #cccccc;
+                padding: 6px;
+            }
+            QListWidget::item:selectable:!selected { color: #333333; }
+            QListWidget::item:selected, QTableWidget::item:selected {
+                background-color: #E53935;
                 color: white;
-                border: none;
+            }
+
+            QMenuBar { background-color: #f0f0f0; color: #333333; border-bottom: 1px solid #cccccc; }
+            QMenu { background-color: #ffffff; color: #333333; border: 1px solid #cccccc; border-radius: 6px; }
+            QMenu::item:selected { background-color: #E53935; color: white; }
+
+            QStatusBar { background-color: #f0f0f0; border-top: 1px solid #cccccc; color: #333333; }
+
+            QPushButton {
+                background-color: #ffffff;
+                color: #333333;
+                border: 1px solid #cccccc;
                 border-radius: 6px;
                 padding: 8px 16px;
+                font-weight: normal;
+                min-width: 70px;
             }
 
-            QPushButton:hover {
-                background-color: #a30000;
-            }
+            QPushButton:hover { background-color: #f0f0f0; }
+            QPushButton:pressed { background-color: #dddddd; }
 
-            QLineEdit, QComboBox {
-                background-color: white;
-                border: 1px solid #cccccc;
-                padding: 6px;
-                border-radius: 4px;
-            }
-
-            QListWidget {
-                background-color: white;
-                border: 1px solid #cccccc;
-            }
-
-            QListWidget::item:selected {
-                background-color: #8B0000;
+            /* Bottoni primari - Rosso */
+            QPushButton#pushButtonSearch, QPushButton#pushButtonCreate,
+            QPushButton#pushEdit, QPushButton#pushDelete,
+            #culturewidget QPushButton:!hasFlatAppearance,
+            #entertainmentwidget QPushButton:!hasFlatAppearance,
+            #foodwidget QPushButton:!hasFlatAppearance,
+            #shoppingwidget QPushButton:!hasFlatAppearance {
+                background-color: #E53935;
                 color: white;
+                font-weight: bold;
+                border: none;
             }
 
-            QMenuBar {
-                background-color: #f7f7f7;
+            QPushButton#pushButtonSearch:hover, QPushButton#pushButtonCreate:hover,
+            QPushButton#pushEdit:hover, QPushButton#pushDelete:hover {
+                background-color: #D32F2F;
             }
 
-            QMenuBar::item:selected {
+            QPushButton#pushButtonSearch:pressed, QPushButton#pushButtonCreate:pressed,
+            QPushButton#pushEdit:pressed, QPushButton#pushDelete:pressed {
+                background-color: #B71C1C;
+            }
+
+            /* Bottoni secondari */
+            QPushButton#pushButtonReset, QPushButton#pushButtonBacktoMain, QPushButton#pushButtonBacktoMain_2,
+            #culturewidget QPushButton#pushBack, #entertainmentwidget QPushButton#pushBack,
+            #foodwidget QPushButton#pushBack, #shoppingwidget QPushButton#pushBack {
+                background-color: #ffffff;
+                color: #333333;
+                border: 1px solid #cccccc;
+            }
+
+            QPushButton#pushButtonReset:hover, QPushButton#pushButtonBacktoMain:hover, QPushButton#pushButtonBacktoMain_2:hover,
+            #culturewidget QPushButton#pushBack:hover, #entertainmentwidget QPushButton#pushBack:hover,
+            #foodwidget QPushButton#pushBack:hover, #shoppingwidget QPushButton#pushBack:hover {
+                background-color: #f0f0f0;
+            }
+
+            QPushButton#pushButtonReset:pressed, QPushButton#pushButtonBacktoMain:pressed, QPushButton#pushButtonBacktoMain_2:pressed,
+            #culturewidget QPushButton#pushBack:pressed, #entertainmentwidget QPushButton#pushBack:pressed,
+            #foodwidget QPushButton#pushBack:pressed, #shoppingwidget QPushButton#pushBack:pressed {
                 background-color: #dddddd;
-            }
-
-            QStatusBar {
-                background-color: #f7f7f7;
-                border-top: 1px solid #cccccc;
             }
         )");
     }
 }
+
 
 void MainWindow::setWidgetCredits(){showWidgetByName("credits");}
 void MainWindow::setWidgetMain(){showWidgetByName("main");}
