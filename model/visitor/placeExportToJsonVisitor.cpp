@@ -1,22 +1,15 @@
 #include "placeExportToJsonVisitor.h"
-#include <QDomDocument>
-#include <QDomElement>
 #include <stdexcept>
-#include "../Cafe.h"
-#include "../Disco.h"
-#include "../Mall.h"
-#include "../LocalMarket.h"
-#include "../Restaurant.h"
-#include "../PanoramicPoints.h"
-#include "../Museum.h"
-#include "../Monument.h"
 
+// Ritorna l'oggetto JSON creato
 QJsonObject PlaceExportToJsonVisitor::getResult() const{return result;}
 
+// Crea array JSON per gli orari
 QJsonArray PlaceExportToJsonVisitor::exportWeeklyOpenings(const weeklyOpenings& w) const {
     QJsonArray openingsArray;
     const auto& schedule = w.getSchedule();
 
+    // Itera su ogni giorno della schedule
     for (auto it = schedule.cbegin(); it != schedule.cend(); ++it) {
         Weekday day = it.key();
         const openingFrames& f = it.value();
@@ -24,6 +17,7 @@ QJsonArray PlaceExportToJsonVisitor::exportWeeklyOpenings(const weeklyOpenings& 
         QJsonObject dayObj;
         dayObj["day"] = weeklyOpenings::weekdayToString(day);
 
+        // Controlla se chiuso o sempre aperto, altrimenti aggiunge gli orari
         if (f.closed) {
             dayObj["closed"] = true;
         }
@@ -35,38 +29,41 @@ QJsonArray PlaceExportToJsonVisitor::exportWeeklyOpenings(const weeklyOpenings& 
             dayObj["to"]   = f.closing.toString("HH:mm");
         }
 
-        openingsArray.append(dayObj);
+        openingsArray.append(dayObj); // Aggiunge l'oggetto giorno all'array
     }
 
-    return openingsArray;
+    return openingsArray; // Ritorna l'array JSON degli orari
 }
 
-
+// Crea oggetto JSON per i dati base di Place
 QJsonObject PlaceExportToJsonVisitor::basePlaceToJson(const Place& place,const QString& type) const{
     QJsonObject obj;
 
+    // Aggiunge attributi comuni
     obj["type"]=type;
     obj["name"]=place.getName();
     obj["city"]=place.getCity();
     obj["description"]=place.getDescription();
     obj["rating"]=place.getRating();
     obj["cost"]=place.getCost();
-    obj["openings"]=exportWeeklyOpenings(place.getOpen());
+    obj["openings"]=exportWeeklyOpenings(place.getOpen()); // Aggiunge gli orari
 
-    return obj;
+    return obj; // Ritorna l'oggetto JSON base
 }
 
+// Implementazione visit per Place
 void PlaceExportToJsonVisitor::visit(const Place&) {
     throw std::runtime_error("Unsupported: cannot export abstract Place to JSON");
 }
 
+// Implementazioni dei metodi visit per le classi concrete, creano l'oggetto JSON specifico e lo salvano in 'result'
+
 void PlaceExportToJsonVisitor::visit(const Cafe& cafe){
     QJsonObject obj=basePlaceToJson(cafe, "Cafe");
 
-    obj["takeAway"]        = cafe.hasTakeAway();
+    obj["takeAway"]      = cafe.hasTakeAway();
     obj["avgWaitingTime"]  = cafe.getAvgWaitingTime().toString("HH:mm");
-    obj["veganMenu"]       = cafe.hasVeganMenu();
-
+    obj["veganMenu"]     = cafe.hasVeganMenu();
     obj["hasTerrace"]=cafe.hasTerrace();
     obj["famousDrink"]=cafe.getSpecialDrink();
 
@@ -76,10 +73,9 @@ void PlaceExportToJsonVisitor::visit(const Cafe& cafe){
 void PlaceExportToJsonVisitor::visit(const Restaurant& restaurant){
     QJsonObject obj=basePlaceToJson(restaurant, "Restaurant");
 
-    obj["takeAway"]        = restaurant.hasTakeAway();
+    obj["takeAway"]      = restaurant.hasTakeAway();
     obj["avgWaitingTime"]  = restaurant.getAvgWaitingTime().toString("HH:mm");
-    obj["veganMenu"]       = restaurant.hasVeganMenu();
-
+    obj["veganMenu"]     = restaurant.hasVeganMenu();
     obj["cuisineType"]=restaurant.getCuisineType();
     obj["reservation"]=restaurant.hasReservation();
     obj["specialDish"]=restaurant.getSpecialDish();
@@ -93,7 +89,6 @@ void PlaceExportToJsonVisitor::visit(const Disco& disco){
     obj["avgStayDuration"]=disco.getAvgStayDuration().toString("HH:mm");
     obj["minimumAge"]=QString::number(disco.getMinAge());
     obj["restrictedEntry"]=disco.getRestrictedEntry();
-
     obj["musicGenre"]=disco.getMusicGenre();
     obj["hasPrive"]=disco.hasPriveAccess();
     obj["dressCode"]=disco.getDressCode();
@@ -107,11 +102,9 @@ void PlaceExportToJsonVisitor::visit(const LocalMarket& localMarket){
     obj["outdoor"] = localMarket.isOutdoor();
     obj["foodArea"] = localMarket.foodAreaPresent();
     obj["standNumber"] = localMarket.getStandNumber();
-
     obj["artisans"]= localMarket.hasArtisans();
     obj["seasonal"]= localMarket.isSeasonal();
     obj["period"]= localMarket.getPeriod();
-
 
     result=obj;
 }
@@ -122,7 +115,6 @@ void PlaceExportToJsonVisitor::visit(const PanoramicPoints& panoramicPoints){
     obj["avgStayDuration"]=panoramicPoints.getAvgStayDuration().toString("HH:mm");
     obj["minimumAge"]=QString::number(panoramicPoints.getMinAge());
     obj["restrictedEntry"]=panoramicPoints.getRestrictedEntry();
-
     obj["altitude"]= panoramicPoints.getAltitude();
     obj["hasBinocular"]= panoramicPoints.hasBinoculars();
     obj["nightLighting"]= panoramicPoints.isNightLit();
@@ -136,7 +128,6 @@ void PlaceExportToJsonVisitor::visit(const Mall& mall){
     obj["outdoor"] = mall.isOutdoor();
     obj["foodArea"] = mall.foodAreaPresent();
     obj["standNumber"] = mall.getStandNumber();
-
     obj["shopCount"]= mall.getShopCount();
     obj["cinema"]= mall.hasCinema();
     obj["freeParking"]= mall.hasFreeParking();
@@ -150,7 +141,6 @@ void PlaceExportToJsonVisitor::visit(const Museum& museum){
     obj["studentDiscount"] = museum.getStudentDiscount();
     obj["guidedTour"]      = museum.hasGuidedTour();
     obj["culturalFocus"]   = museum.getCulturalFocus();
-
     obj["hasAudioGuide"]=museum.hasAudioGuideAvailable();
 
     result=obj;
@@ -162,7 +152,6 @@ void PlaceExportToJsonVisitor::visit(const Monument& monument){
     obj["studentDiscount"] = monument.getStudentDiscount();
     obj["guidedTour"]      = monument.hasGuidedTour();
     obj["culturalFocus"]   = monument.getCulturalFocus();
-
     obj["isUnesco"]= monument.isUnesco();
     obj["conservationStatus"]= monument.getConservationStatus();
     obj["openToPublic"]= monument.isOpenToPublic();

@@ -19,24 +19,36 @@
 #include "../Museum.h"
 #include "../Monument.h"
 
+// Visitor per esportare Place in formato XML
 class PlaceExportToXmlVisitor : public PlaceVisitorInterface {
 private:
-    QDomDocument& doc;
-    QDomElement result;
+    QDomDocument& doc; // Il documento XML su cui lavorare
+    QDomElement result; // L'elemento XML creato per il Place visitato
 
+    // Crea elemento XML per gli orari
     QDomElement exportWeeklyOpenings(const weeklyOpenings& w) const;
-    QDomElement basePlaceToXml(const Place& place, const QString& type) const;
-    QDomElement exportFoodData(const Food& f) const;
-    QDomElement exportShoppingData(const Shopping& s) const;
-    QDomElement exportEntertainmentData(const Entertainment& e) const;
-    QDomElement exportCultureData(const Culture& e) const;
 
+    // Crea elemento XML per i dati base di Place
+    QDomElement basePlaceToXml(const Place& place, const QString& type) const;
+
+    // Crea elemento XML per i dati specifici di Food
+    QDomElement exportFoodData(const Food& f) const;
+    // Crea elemento XML per i dati specifici di Shopping
+    QDomElement exportShoppingData(const Shopping& s) const;
+    // Crea elemento XML per i dati specifici di Entertainment
+    QDomElement exportEntertainmentData(const Entertainment& ent) const;
+    // Crea elemento XML per i dati specifici di Culture
+    QDomElement exportCultureData(const Culture& c) const;
 
 public:
+    // Costruttore, prende il documento XML di destinazione
     explicit PlaceExportToXmlVisitor(QDomDocument& document);
+
+    // Ritorna l'elemento XML creato dopo la visita
     QDomElement getResult() const;
 
-    void visit(const Place& place) override;
+    // Implementazioni dei metodi visit per i vari tipi di Place, creano l'elemento XML per il Place visitato
+    void visit(const Place& place) override; // Per la classe base
     void visit(const Cafe& cafe) override;
     void visit(const Disco& disco) override;
     void visit(const Mall& mall) override;
@@ -47,4 +59,4 @@ public:
     void visit(const Monument& monument) override;
 };
 
-#endif // PLACEEXPORTTOXMLVISITOR_H
+#endif // PLACEEXPORTTOXMLVISITOR_Hs

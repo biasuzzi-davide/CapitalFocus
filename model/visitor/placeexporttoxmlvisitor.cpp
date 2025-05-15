@@ -1,26 +1,16 @@
 #include "placeexporttoxmlvisitor.h"
 #include <stdexcept>
-#include "../weeklyOpenings.h"
-#include "../Place.h"
-#include "../Food.h"
-#include "../Shopping.h"
-#include "../Entertainment.h"
-#include "../Cafe.h"
-#include "../Restaurant.h"
-#include "../Disco.h"
-#include "../PanoramicPoints.h"
-#include "../LocalMarket.h"
-#include "../Mall.h"
-#include "../Museum.h"
-#include "../Monument.h"
 
+// Costruttore
 PlaceExportToXmlVisitor::PlaceExportToXmlVisitor(QDomDocument& document)
     : doc(document) {}
 
+// Ritorna l'elemento XML creato
 QDomElement PlaceExportToXmlVisitor::getResult() const {
     return result;
 }
 
+// Crea elemento XML per gli orari
 QDomElement PlaceExportToXmlVisitor::exportWeeklyOpenings(const weeklyOpenings& w) const {
     QDomElement openingsElem = doc.createElement("openings");
     const auto& schedule = w.getSchedule();
@@ -46,6 +36,7 @@ QDomElement PlaceExportToXmlVisitor::exportWeeklyOpenings(const weeklyOpenings& 
     return openingsElem;
 }
 
+// Crea elemento XML per i dati base di Place
 QDomElement PlaceExportToXmlVisitor::basePlaceToXml(const Place& place, const QString& type) const {
     QDomElement e = doc.createElement(type);
     e.setAttribute("name", place.getName());
@@ -57,6 +48,7 @@ QDomElement PlaceExportToXmlVisitor::basePlaceToXml(const Place& place, const QS
     return e;
 }
 
+// Crea elemento XML per i dati specifici di Food
 QDomElement PlaceExportToXmlVisitor::exportFoodData(const Food& f) const {
     QDomElement e = doc.createElement("foodData");
     e.setAttribute("hasTakeAway", f.hasTakeAway());
@@ -65,6 +57,7 @@ QDomElement PlaceExportToXmlVisitor::exportFoodData(const Food& f) const {
     return e;
 }
 
+// Crea elemento XML per i dati specifici di Shopping
 QDomElement PlaceExportToXmlVisitor::exportShoppingData(const Shopping& s) const {
     QDomElement e = doc.createElement("shoppingData");
     e.setAttribute("isOutdoor", s.isOutdoor());
@@ -73,6 +66,7 @@ QDomElement PlaceExportToXmlVisitor::exportShoppingData(const Shopping& s) const
     return e;
 }
 
+// Crea elemento XML per i dati specifici di Entertainment
 QDomElement PlaceExportToXmlVisitor::exportEntertainmentData(const Entertainment& ent) const {
     QDomElement e = doc.createElement("entertainmentData");
     e.setAttribute("avgStayDuration", ent.getAvgStayDuration().toString("HH:mm"));
@@ -81,6 +75,7 @@ QDomElement PlaceExportToXmlVisitor::exportEntertainmentData(const Entertainment
     return e;
 }
 
+// Crea elemento XML per i dati specifici di Culture
 QDomElement PlaceExportToXmlVisitor::exportCultureData(const Culture& c) const {
     QDomElement e = doc.createElement("cultureData");
     e.setAttribute("studentDiscount", c.getStudentDiscount());
@@ -89,10 +84,12 @@ QDomElement PlaceExportToXmlVisitor::exportCultureData(const Culture& c) const {
     return e;
 }
 
+// Implementazione visit per Place
 void PlaceExportToXmlVisitor::visit(const Place&) {
     throw std::runtime_error("Unsupported: cannot export abstract Place to XML");
 }
 
+// Implementazioni dei metodi visit per le classi concrete
 void PlaceExportToXmlVisitor::visit(const Cafe& cafe) {
     QDomElement e = basePlaceToXml(cafe, "Cafe");
     e.appendChild(exportFoodData(cafe));
