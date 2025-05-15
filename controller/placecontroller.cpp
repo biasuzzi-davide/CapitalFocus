@@ -211,6 +211,18 @@ bool PlaceController::hasUnsavedChanges() const {
 
 void PlaceController::importFromFile()
 {
+    if (!repository.getAllPlaces().empty()) {
+        bool confirmed = view->askConfirmation(
+            tr("Import Confirmation"),
+            tr("Importing a new file will overwrite all existing places. Do you want to continue?")
+            );
+        if (!confirmed) {
+            // Utente ha annullato l'importazione
+            view->showStatusBarMsg(tr("Import cancelled."), 3000);
+            return; // Esci dal metodo senza procedere
+        }
+    }
+
     QString path = view->askOpenFile(
         tr("Select file"),
         tr("JSON or XML file (*.json *.xml)")
