@@ -125,6 +125,7 @@ void MainWindow::setStats(const StatisticsResult& stats) {
         list->addItem(QString("%1: %2").arg(kv.first).arg(kv.second));
     }
 }
+
 void MainWindow::showMessage(UiCommon::MsgIcon icon,
                              const QString& title,
                              const QString& text)
@@ -133,25 +134,57 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
     msgBox.setWindowTitle(title);
     msgBox.setText(text);
 
+    msgBox.setStyleSheet(R"(
+        QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton { /* Targetta i QPushButton dentro la buttonbox di QMessageBox */
+            background-color: #E53935; /* Nuovo colore rosso */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 15px;
+        }
+        QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton:hover {
+            background-color: #D32F2F; /* Nuovo colore rosso al passaggio del mouse */
+        }
+    )");
+
     switch (icon) {
     case UiCommon::MsgIcon::Warning:
-        {
-            QPixmap warningIcon(":/images/alert_icon.png"); // Sostituisci :/icons/alert_icon.png con il percorso corretto nel tuo .qrc
-            if (!warningIcon.isNull()) {
-                msgBox.setIconPixmap(warningIcon); // Imposta l'immagine come icona
-            } else {
-                // Fallback: se l'immagine non viene caricata, usa l'icona standard di Qt
-                msgBox.setIcon(QMessageBox::Warning);
-            }
+    {
+        // ** OCCORRENZA 1: Icona personalizzata per i messaggi di Warning **
+        QPixmap warningIcon(":/images/alert_icon.png"); // VERIFICA QUESTO PERCORSO!
+        if (!warningIcon.isNull()) {
+            msgBox.setIconPixmap(warningIcon); // Imposta l'immagine personalizzata
+        } else {
+            // Fallback: se l'immagine non viene caricata, usa l'icona standard di Qt
+            msgBox.setIcon(QMessageBox::Warning);
         }
-        break;
+    }
+    break;
     case UiCommon::MsgIcon::Critical:
-        msgBox.setIcon(QMessageBox::Critical); // Usa l'icona standard di Qt
-        break;
+    {
+        // ** OCCORRENZA 2: Icona personalizzata anche per i messaggi Critical **
+        QPixmap criticalIcon(":/images/alert_icon.png"); // VERIFICA QUESTO PERCORSO!
+        if (!criticalIcon.isNull()) {
+            msgBox.setIconPixmap(criticalIcon); // Imposta l'immagine personalizzata
+        } else {
+            // Fallback: se l'immagine non viene caricata, usa l'icona standard di Qt
+            msgBox.setIcon(QMessageBox::Critical); // Usa l'icona standard di Qt Critical come fallback
+        }
+    }
+    break;
     case UiCommon::MsgIcon::Info:
     default:
-        msgBox.setIcon(QMessageBox::Information); // Usa l'icona standard di Qt
-        break;
+    {
+        // ** OCCORRENZA 3: Icona personalizzata anche per i messaggi Info **
+        QPixmap infoIcon(":/images/alert_icon.png"); // VERIFICA QUESTO PERCORSO!
+        if (!infoIcon.isNull()) {
+            msgBox.setIconPixmap(infoIcon); // Imposta l'immagine personalizzata
+        } else {
+            // Fallback: se l'immagine non viene caricata, usa l'icona standard di Qt
+            msgBox.setIcon(QMessageBox::Information); // Usa l'icona standard di Qt Information come fallback
+        }
+    }
+    break;
     }
 
     msgBox.exec();
@@ -163,9 +196,41 @@ bool MainWindow::askConfirmation(const QString& title,
     QMessageBox msgBox(this);
     msgBox.setWindowTitle(title);
     msgBox.setText(question);
-    msgBox.setIcon(QMessageBox::Question); // Imposta l'icona di domanda standard
+    // ** RIMUOVI o COMMENTA QUESTA RIGA: msgBox.setIcon(QMessageBox::Question); **
+
+    // ** OCCORRENZA 4: Icona personalizzata per le finestre di conferma (Delete, Import, ecc.) **
+    {
+        QPixmap confirmationIcon(":/images/alert_icon.png"); // VERIFICA QUESTO PERCORSO!
+        if (!confirmationIcon.isNull()) {
+            msgBox.setIconPixmap(confirmationIcon); // Imposta l'immagine personalizzata
+        } else {
+            // Fallback: se l'immagine non viene caricata, usa l'icona di domanda standard di Qt
+            msgBox.setIcon(QMessageBox::Question); // Usa l'icona standard di Qt Question come fallback
+        }
+    }
+
     msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
-    msgBox.setDefaultButton(QMessageBox::No); // Imposta NO come pulsante predefinito
+    msgBox.setDefaultButton(QMessageBox::No);
+
+    msgBox.setStyleSheet(R"(
+        QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton { /* Targetta i QPushButton dentro la buttonbox di QMessageBox */
+            background-color: #E53935; /* Nuovo colore rosso */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 15px;
+        }
+        QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton:hover {
+            background-color: #D32F2F; /* Nuovo colore rosso al passaggio del mouse */
+        }
+        /* Potresti voler differenziare il pulsante "No" */
+        /* QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton[text="No"] {
+            background-color: #555555;
+        }
+        QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton:hover[text="No"] {
+            background-color: #777777;
+        } */
+    )");
 
     return msgBox.exec() == QMessageBox::Yes;
 }
