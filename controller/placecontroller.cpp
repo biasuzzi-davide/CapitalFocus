@@ -406,6 +406,14 @@ void PlaceController::createNewPlace() {
         for (int i = 0; i < 7; ++i) {
             Weekday day = static_cast<Weekday>(i);
             auto h = create->hours(day);
+
+            if (h.alwaysClosed && h.alwaysOpen) {
+                QString dayName = weeklyOpenings::weekdayToString(day);
+                throw std::invalid_argument(
+                    QString("Invalid opening hours for %1: cannot be both 'Always Open' and 'Always Closed'").arg(dayName).toStdString()
+                    );
+            }
+
             if (!h.alwaysClosed && !h.alwaysOpen) {
                 if (!h.open.isValid() || !h.close.isValid() || h.open >= h.close) {
                     QString d = weeklyOpenings::weekdayToString(day);
