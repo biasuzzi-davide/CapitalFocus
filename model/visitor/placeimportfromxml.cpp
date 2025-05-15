@@ -188,6 +188,30 @@ std::vector<std::shared_ptr<Place>> PlaceImportFromXml::importFromFile(const QSt
                 discount, guided, focus,
                 unesco, state, openTo
                 ));
+        }        else if (type == "Museum") {
+            QDomElement cd = el.firstChildElement("cultureData");
+            double studentDiscount = cd.attribute("studentDiscount").toDouble();
+            bool guidedTour = cd.attribute("guidedTour").toInt();
+            QString focus = cd.attribute("culturalFocus");
+            bool audio = el.attribute("hasAudioGuide").toInt();
+            imported.push_back(std::make_shared<Museum>(
+                name, city, desc, rating, open, cost,
+                studentDiscount, guidedTour, focus, audio
+                ));
+        }
+        else if (type == "Monument") {
+            QDomElement cd = el.firstChildElement("cultureData");
+            double studentDiscount = cd.attribute("studentDiscount").toDouble();
+            bool guidedTour = cd.attribute("guidedTour").toInt();
+            QString focus = cd.attribute("culturalFocus");
+            bool unesco = el.attribute("isUnesco").toInt();
+            QString state = el.attribute("conservationStatus");
+            bool openTo = el.attribute("openToPublic").toInt();
+            imported.push_back(std::make_shared<Monument>(
+                name, city, desc, rating, open, cost,
+                studentDiscount, guidedTour, focus,
+                unesco, state, openTo
+                ));
         }
         else throw std::invalid_argument("Unknown type: " + type.toStdString());
     }
