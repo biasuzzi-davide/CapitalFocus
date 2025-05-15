@@ -129,28 +129,45 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
                              const QString& title,
                              const QString& text)
 {
+    QMessageBox msgBox(this);
+    msgBox.setWindowTitle(title);
+    msgBox.setText(text);
+
     switch (icon) {
     case UiCommon::MsgIcon::Warning:
-        QMessageBox::warning   (this, title, text); break;
+        {
+            QPixmap warningIcon(":/images/alert_icon.png"); // Sostituisci :/icons/alert_icon.png con il percorso corretto nel tuo .qrc
+            if (!warningIcon.isNull()) {
+                msgBox.setIconPixmap(warningIcon); // Imposta l'immagine come icona
+            } else {
+                // Fallback: se l'immagine non viene caricata, usa l'icona standard di Qt
+                msgBox.setIcon(QMessageBox::Warning);
+            }
+        }
+        break;
     case UiCommon::MsgIcon::Critical:
-        QMessageBox::critical  (this, title, text); break;
+        msgBox.setIcon(QMessageBox::Critical); // Usa l'icona standard di Qt
+        break;
     case UiCommon::MsgIcon::Info:
     default:
-        QMessageBox::information(this, title, text); break;
+        msgBox.setIcon(QMessageBox::Information); // Usa l'icona standard di Qt
+        break;
     }
+
+    msgBox.exec();
 }
 
 bool MainWindow::askConfirmation(const QString& title,
                                  const QString& question)
 {
-    auto ret = QMessageBox::question(
-        this,
-        title,
-        question,
-        QMessageBox::Yes | QMessageBox::No,
-        QMessageBox::No     // NO come default non mi interessa ci sia il si
-        );
-    return ret == QMessageBox::Yes;
+    QMessageBox msgBox(this);
+    msgBox.setWindowTitle(title);
+    msgBox.setText(question);
+    msgBox.setIcon(QMessageBox::Question); // Imposta l'icona di domanda standard
+    msgBox.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+    msgBox.setDefaultButton(QMessageBox::No); // Imposta NO come pulsante predefinito
+
+    return msgBox.exec() == QMessageBox::Yes;
 }
 
 void MainWindow::setController(PlaceController* controller) {
