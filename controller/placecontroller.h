@@ -10,67 +10,84 @@
 #include <QString>
 #include <vector>
 
+// Dichiarazioni forward
 class QListWidgetItem;
 class MainWindow;
 class Place;
 
+// Il Controller, gestisce la logica e coordina Model e View
 class PlaceController : public QObject{
     Q_OBJECT
 
-    private:
-        MainWindow* view;
-        PlaceRepository& repository;
-        PlaceImportFromXml xmlImporter;
-        PlaceImportFromJson jsonImporter;
-        Place* currentPlace = nullptr;
-        bool unsavedChanges = false;
-    public:
-        explicit PlaceController(MainWindow* view, PlaceRepository& repo);
-        Place* getCurrentPlace() const;      // restituisce il Place corrente o nullptr
-        void   resetCurrentPlace();          // azzera la variabile
-        void addPlace(const std::shared_ptr<Place>& place);
-        void removePlace(int index);
-        std::vector<std::shared_ptr<Place>> search(const QString& keyword, const QString& city = "All") const;
-        const std::vector<std::shared_ptr<Place>>& getAll() const;
+private:
+    MainWindow* view; // Puntatore alla View
+    PlaceRepository& repository; // Riferimento al Model
+    PlaceImportFromXml xmlImporter; // Importatore XML
+    PlaceImportFromJson jsonImporter; // Importatore JSON
+    Place* currentPlace = nullptr; // Il posto attualmente selezionato
+    bool unsavedChanges = false; // Flag per modifiche non salvate
 
-        void printAllPlaces() const;
-        bool setWidgetSafe(const QString& name);
-        void showCreditsPage();
-        std::map<QString, std::vector<std::shared_ptr<Place>>> groupedSearchResults(const QString& keyword, const QString& city) const;
-        bool anyWidgetIsEditing() const;
+public:
+    // Costruttore
+    explicit PlaceController(MainWindow* view, PlaceRepository& repo);
 
-        // import/export
-        void importFromFile();
-        void importPlacesFromXml(const QString& filePath);
-        void importPlacesFromJson(const QString& filePath);
-        void promptExportToXml();
-        void promptExportToJson();
-        void exportToFile();
-        void exportToJson(const QString& filePath);
-        void exportToXml(const QString& filePath);
+    // Metodi per interagire con il Model
+    void addPlace(const std::shared_ptr<Place>& place);
+    void removePlace(int index);
+    std::vector<std::shared_ptr<Place>> search(const QString& keyword, const QString& city = "All") const;
 
-        void setWidgetCreate();
-        void setWidgetMain();
-        void setWidgetCredits();
-        void showStatistics();
-        void goBack();
-        void promptAndSetWidget();
-        void onCreateTypeChanged(int index);
+    // Metodi per interagire con la View
+    bool setWidgetSafe(const QString& name); // Cambia widget in modo sicuro
+    void showCreditsPage(); // Mostra pagina credits
+    std::map<QString, std::vector<std::shared_ptr<Place>>> groupedSearchResults(const QString& keyword, const QString& city) const; // Raggruppa risultati ricerca
+    bool anyWidgetIsEditing() const; // Controlla se qualche widget è in modalità modifica
 
-        void findPlaces();
-        void resetSearchFields();
-        void onPlaceSelected(QListWidgetItem* item);
-        void toggleDarkMode();
-        void toggleDebug();
+    // Import/Export
+    void importFromFile(); // Avvia processo import da file
+    void importPlacesFromXml(const QString& filePath); // Importa da XML
+    void importPlacesFromJson(const QString& filePath); // Importa da JSON
+    void promptExportToXml(); // Chiede dove esportare in XML
+    void promptExportToJson(); // Chiede dove esportare in JSON
+    void exportToFile(); // Avvia processo export
+    void exportToJson(const QString& filePath); // Esporta in JSON
+    void exportToXml(const QString& filePath); // Esporta in XML
 
-        bool canClose();
-        bool hasUnsavedChanges() const;
-        void setUnsavedChanges(bool value);
-    public slots:
-        void createNewPlace();
-        void editCurrentPlace();
-        void deleteCurrentPlace();
+    // Navigazione e gestione widget
+    void setWidgetCreate(); // Va alla pagina creazione
+    void setWidgetMain(); // Va alla pagina principale
+    void setWidgetCredits(); // Va alla pagina credits
+    void showStatistics(); // Mostra pagina statistiche
+    void goBack(); // Torna indietro
+    void promptAndSetWidget(); // Chiede di salvare e poi cambia widget
+    void onCreateTypeChanged(int index); // Gestisce cambio tipo in pagina creazione
 
-    };
+    // Ricerca e selezione
+    void findPlaces(); // Esegue la ricerca e aggiorna la lista
+    void resetSearchFields(); // Azzera i campi di ricerca
+    void onPlaceSelected(QListWidgetItem* item); // Gestisce selezione Place nella lista
+
+    // Altre azioni GUI
+    void toggleDarkMode(); // Attiva/disattiva dark mode
+    void toggleDebug(); // Attiva/disattiva debug
+
+    // Gestione stato
+    bool canClose(); // Controlla se l'applicazione può chiudere
+    bool hasUnsavedChanges() const; // Controlla se ci sono modifiche non salvate
+    void setUnsavedChanges(bool value); // Imposta lo stato delle modifiche non salvate
+
+    // Getter
+    Place* getCurrentPlace() const; // Ritorna il Place corrente
+    void resetCurrentPlace(); // Azzera il Place corrente
+    const std::vector<std::shared_ptr<Place>>& getAll() const; // Ritorna tutti i Place dal repository
+
+    //Togliere?
+    //void printAllPlaces() const;
+
+public slots:
+    // Slot per azioni attivate dalla View
+    void createNewPlace(); // Crea un nuovo Place
+    void editCurrentPlace(); // Modifica il Place corrente
+    void deleteCurrentPlace(); // Elimina il Place corrente
+};
 
 #endif // PLACECONTROLLER_H
