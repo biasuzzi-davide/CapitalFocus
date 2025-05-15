@@ -1,10 +1,12 @@
 #include "Place.h"
 
+// Costruttore
 Place::Place(const QString& name, const QString& city, const QString& description,
              double rating, const weeklyOpenings& op, double cost)
     : name(name), city(city), description(description),
-      rating(rating), open(op), cost(cost) {}
+    rating(rating), open(op), cost(cost) {}
 
+// Getter
 QString Place::getName() const{return name;}
 QString Place::getCity() const{return city;}
 QString Place::getDescription() const{return description;}

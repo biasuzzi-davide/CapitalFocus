@@ -1,15 +1,16 @@
 #ifndef UICOMMON_H
 #define UICOMMON_H
 
-// Namespace facoltativo ma consigliato
+// Namespace per cose comuni dell'interfaccia utente
 namespace UiCommon {
 
+// Tipi di icone per i messaggi
 enum class MsgIcon {
-    Info,
-    Warning,
-    Critical
+    Info, // Informazione
+    Warning, // Avviso
+    Critical // Critico
 };
 
-} // namespace UiCommon
+}
 
 #endif // UICOMMON_H

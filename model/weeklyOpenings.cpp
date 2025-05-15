@@ -1,47 +1,83 @@
 #include "weeklyOpenings.h"
-#include "weekday.h"
+#include <QDebug>
+
+// Costruttore di default
+weeklyOpenings::weeklyOpenings() = default;
+
+// Costruttore di copia
+weeklyOpenings::weeklyOpenings(const weeklyOpenings& other)
+    : schedule(other.schedule) {}
+
+// Imposta orario per un giorno
 void weeklyOpenings::setOpening(Weekday day, const QTime& open, const QTime& close){
     schedule[day]= openingFrames(open,close);
 }
 
+// Imposta un giorno come chiuso
 void weeklyOpenings::setClosed(Weekday day){
-    schedule[day] = openingFrames();
+    schedule[day] = openingFrames(); // openingFrames() di default imposta closed = true
 }
 
-openingFrames weeklyOpenings::getOpening(Weekday day) const{
-    return schedule.value(day, openingFrames());
+// Imposta un giorno come sempre aperto
+void weeklyOpenings::setAlwaysOpen(Weekday d) {
+    auto &f = schedule[d];
+    f.closed = false; // Non è chiuso
+    f.alwaysOpen = true; // È sempre aperto
 }
 
+// Controlla se è chiuso in un giorno
+bool weeklyOpenings::isClosed(Weekday day) const {
+    return schedule.value(day).closed;
+}
+
+// Controlla se è sempre aperto in un giorno
+bool weeklyOpenings::isAlwaysOpen(Weekday day) const {
+    return schedule.value(day).alwaysOpen;
+}
+
+// Controlla se apre prima di un'ora in un giorno
 bool weeklyOpenings::opensBefore(Weekday day, const QTime& time) const{
-    if (!schedule.contains(day)) return false;
-    return !schedule[day].closed && schedule[day].opening<time;
+    if (!schedule.contains(day) || schedule.value(day).closed) return false;
+    return schedule.value(day).opening < time;
 }
 
+// Controlla se è aperto a una certa ora in un giorno
 bool weeklyOpenings::isOpenAt(Weekday day, const QTime& time) const{
     if(!schedule.contains(day)) return false;
-    return !schedule[day].closed && (schedule[day].opening<=time && schedule[day].closing>=time);
+    const openingFrames& f = schedule.value(day);
+    return !f.closed && (f.opening <= time && f.closing >= time);
 }
 
+// Formatta gli orari di un giorno come stringa
 QString weeklyOpenings::getOpeningFrameString(Weekday day) const {
     const openingFrames f = schedule.value(day);
     if (f.closed)
         return QStringLiteral("Closed");
     if (f.alwaysOpen)
         return QStringLiteral("Always open");
-    // altrimenti l’intervallo
     return QString("%1 - %2")
         .arg(f.opening.toString("HH:mm"))
         .arg(f.closing.toString("HH:mm"));
 }
 
-const QMap<Weekday, openingFrames>& weeklyOpenings::getSchedule() const {
-    return schedule;
+// Formatta tutti gli orari come stringa multilinea
+QString weeklyOpenings::toQStringMultiline() const {
+    static const QList<Weekday> giorni = {
+        Weekday::Monday, Weekday::Tuesday, Weekday::Wednesday,
+        Weekday::Thursday, Weekday::Friday, Weekday::Saturday,
+        Weekday::Sunday
+    };
+    QStringList righe;
+    for (Weekday d : giorni) {
+        QString nome = weekdayToString(d);
+        righe << QString("%1: %2")
+                     .arg(nome.left(3),
+                          getOpeningFrameString(d));
+    }
+    return righe.join('\n');
 }
 
-weeklyOpenings::weeklyOpenings(const weeklyOpenings& other)
-    : schedule(other.schedule) {}
-weeklyOpenings::weeklyOpenings() = default;
-
+// Converte da Weekday a stringa
 QString weeklyOpenings::weekdayToString(const Weekday day) {
     switch (day) {
     case Weekday::Monday:    return "Monday";
@@ -52,26 +88,10 @@ QString weeklyOpenings::weekdayToString(const Weekday day) {
     case Weekday::Saturday:  return "Saturday";
     case Weekday::Sunday:    return "Sunday";
     }
-    return "ERROR"; // fallback di errore grave
+    return "ERROR"; // Dovrebbe non succedere mai con Weekday
 }
 
-QString weeklyOpenings::toQStringMultiline() const {
-    // Elenco ordinato dei giorni
-    static const QList<Weekday> giorni = {
-        Weekday::Monday,   Weekday::Tuesday, Weekday::Wednesday,
-        Weekday::Thursday, Weekday::Friday,  Weekday::Saturday,
-        Weekday::Sunday
-    };
-    QStringList righe;
-    for (Weekday d : giorni) {
-        QString nome = weekdayToString(d);
-        righe << QString("%1: %2")
-                     .arg(nome.left(3),  // es. "Mon"
-                          getOpeningFrameString(d));
-    }
-    return righe.join('\n');
-}
-
+// Converte da stringa a Weekday
 Weekday weeklyOpenings::weekdayFromString(const QString& dayStr) {
     if (dayStr == "Monday") return Weekday::Monday;
     else if (dayStr == "Tuesday") return Weekday::Tuesday;
@@ -81,31 +101,29 @@ Weekday weeklyOpenings::weekdayFromString(const QString& dayStr) {
     else if (dayStr == "Saturday") return Weekday::Saturday;
     else if (dayStr == "Sunday") return Weekday::Sunday;
 
-    // fallback
+    // Fallback in caso di stringa non valida
     qWarning() << "weekdayFromString: error:" << dayStr;
-    return Weekday::Monday;
+    return Weekday::Monday; // Ritorna Monday come default in caso di errore
 }
 
-bool weeklyOpenings::isClosed(Weekday day) const {
-    return schedule.value(day).closed;
+// Ritorna la fascia oraria giorno per giorno se esiste, altrimenti chiuso
+openingFrames weeklyOpenings::getOpening(Weekday day) const{
+    return schedule.value(day, openingFrames());
 }
 
-bool weeklyOpenings::isAlwaysOpen(Weekday day) const {
-    return schedule.value(day).alwaysOpen;
-}
-
-void weeklyOpenings::setAlwaysOpen(Weekday d) {
-    auto &f = schedule[d];
-    f.closed = false;
-    f.alwaysOpen = true;
-}
-
+// Ritorna l'ora di apertura per un giorno
 QTime weeklyOpenings::openTime(Weekday day) const
 {
     return getOpening(day).opening;
 }
 
+// Ritorna l'ora di chiusura per un giorno
 QTime weeklyOpenings::closeTime(Weekday day) const
 {
     return getOpening(day).closing;
+}
+
+// Ritorna l'intera schedule
+const QMap<Weekday, openingFrames>& weeklyOpenings::getSchedule() const {
+    return schedule;
 }

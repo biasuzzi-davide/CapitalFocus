@@ -17,17 +17,19 @@ Cafe::Cafe( const QString& name,
     terrace(terrace),
     specialDrink(specialDrink) {}
 
-// Metodo che ritorna true se il posto apre per colazione
+//Se apre prima delle 10:30 si assume serva la colazione
 bool Cafe::servesBreakfast(Weekday day) const{
     return open.opensBefore(day, QTime(10,30));
 }
+
+// Riassunto specifico per Cafe
 QString Cafe::getFoodSummary() const {
     return QString("This café has %1 and its special drink is %2.")
-        .arg(terrace ? "a terrace" : "no terrace")
-        .arg(specialDrink);
+    .arg(terrace ? "a terrace" : "no terrace")
+    .arg(specialDrink);
 }
 
-// getter
+// Getter
 bool Cafe::hasTerrace() const{
     return terrace;
 }
@@ -36,11 +38,12 @@ QString Cafe::getSpecialDrink() const{
     return specialDrink;
 }
 
-// Override del metodo polimorfo della classe base
+// Dice la categoria
 QString Cafe::getCategory() const{
     return "Cafe";
 }
 
+// Implementazione per il Visitor
 void Cafe::acceptVisitor(PlaceVisitorInterface& visitor) const {
     visitor.visit(*this);
 }

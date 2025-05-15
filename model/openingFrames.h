@@ -2,19 +2,27 @@
 #define OPENINGFRAMES_H
 
 #include <QTime>
+#include <QString>
 
+// Struttura per gli orari di apertura/chiusura
 struct openingFrames {
-    QTime opening;
-    QTime closing;
-    bool closed    = false;
-    bool alwaysOpen= false;
+    QTime opening; // Ora apertura
+    QTime closing; // Ora chiusura
+    bool closed = false; // È chiuso tutto il giorno
+    bool alwaysOpen = false; // È sempre aperto
 
+    // Costruttore
     openingFrames();
+    // Costruttore con orari specifici
     openingFrames(const QTime&, const QTime&);
-    QString getStartAsString() const;
-    QString getEndAsString() const;
+
+    // Copy constructor e assignment operator di default
     openingFrames(const openingFrames&) = default;
     openingFrames& operator=(const openingFrames&) = default;
+
+    // Getter
+    QString getStartAsString() const;
+    QString getEndAsString() const;
 };
 
 #endif // OPENINGFRAMES_H

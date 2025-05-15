@@ -1,28 +1,34 @@
 #include "PanoramicPoints.h"
 #include "visitor/placevisitorinterface.h"
 
-
+// Costruttore
 PanoramicPoints::PanoramicPoints(const QString& name, const QString& city, const QString& description,
                                  double rating, const weeklyOpenings& open, double cost,
                                  QTime avgStayDuration, int minimumAge, const QString& restrictedEntry,
                                  double altitude, bool hasBinocular, bool nightLighting)
     : Entertainment(name, city, description, rating, open, cost,
                     avgStayDuration, minimumAge, restrictedEntry),
-      altitude(altitude), hasBinocular(hasBinocular), nightLighting(nightLighting) {}
+    altitude(altitude), hasBinocular(hasBinocular), nightLighting(nightLighting) {}
 
+// Dice la categoria
 QString PanoramicPoints::getCategory() const {
     return "Panoramic Point";
 }
 
+// Implementazione per il Visitor
 void PanoramicPoints::acceptVisitor(PlaceVisitorInterface& visitor) const{
     visitor.visit(*this);
 }
+
+// Riassunto intrattenimento
 QString PanoramicPoints::getEntertainmentSummary() const {
     return QString("Altitude: %1 m | %2 | %3")
     .arg(altitude)
-        .arg(hasBinocular ? "Binoculars available" : "No binoculars")
-        .arg(nightLighting ? "Night lighting available" : "No night lighting");
+    .arg(hasBinocular ? "Binoculars available" : "No binoculars")
+    .arg(nightLighting ? "Night lighting available" : "No night lighting");
 }
+
+// Getter
 double PanoramicPoints::getAltitude() const {
     return altitude;
 }

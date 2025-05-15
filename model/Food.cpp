@@ -1,5 +1,6 @@
 #include "Food.h"
 
+// Costruttore
 Food::Food( const QString& name,
            const QString& city,
            const QString& description,
@@ -14,6 +15,7 @@ Food::Food( const QString& name,
     avgWaitingTime(avgWaitingTime),
     veganMenu(veganMenu) {}
 
+// Getter
 bool Food::hasTakeAway() const {
     return takeAway;
 }

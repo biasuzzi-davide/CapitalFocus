@@ -1,14 +1,14 @@
 #ifndef MALL_H
 #define MALL_H
 
-#include "Shopping.h"
+#include "Shopping.h" // Eredita da Shopping
 
-// Classe concreta derivata da Shopping
+// Rappresenta un centro commerciale, un tipo di posto Shopping
 class Mall : public Shopping {
 private:
-    int shopCount;       // Numero di negozi
-    bool cinema;         // True se presente un cinema
-    bool freeParking;    // True se presente parcheggio gratuito
+    int shopCount; // Numero negozi
+    bool cinema; // Ha cinema
+    bool freeParking; // Parcheggio gratuito
 
 public:
     // Costruttore
@@ -25,18 +25,21 @@ public:
          bool cinema,
          bool freeParking);
 
+    virtual ~Mall() = default; // Distruttore
+
+    // Riassunto shopping
+    QString getShoppingSummary() const override;
+
+    // Dice la categoria
+    QString getCategory() const override;
+
+    // Per il Visitor
+    void acceptVisitor(PlaceVisitorInterface& visitor) const override;
+
     // Getter
     int getShopCount() const;
     bool hasCinema() const;
     bool hasFreeParking() const;
-    QString getShoppingSummary() const override;
-    // Override del metodo polimorfo della classe base
-    QString getCategory() const override;
-
-    virtual ~Mall() = default;
-
-    void acceptVisitor(PlaceVisitorInterface& visitor) const override;
-
 };
 
 #endif // MALL_H

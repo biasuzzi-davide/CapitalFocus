@@ -1,13 +1,14 @@
 #ifndef CAFE_H
 #define CAFE_H
 
-#include "Food.h"
+#include "Food.h" // Eredita da Food
 #include "weeklyOpenings.h"
 
+// Rappresenta un cafe, un tipo di posto Food
 class Cafe : public Food {
 private:
-    bool terrace;           // True se presente una terrazza
-    QString specialDrink;   // Stringa rappresentante il cocktail specialità
+    bool terrace; // Ha una terrazza
+    QString specialDrink; // Bevanda speciale
 
 public:
     // Costruttore
@@ -23,20 +24,23 @@ public:
          bool terrace,
          const QString& specialDrink);
 
-    // Metodo che ritorna true se il posto apre per colazione
+    virtual ~Cafe() = default; // Distruttore
+
+    // Controlla se apre per colazione in un dato giorno
     bool servesBreakfast(Weekday day) const;
+
+    // Riassunto specifico per Cafe
+    QString getFoodSummary() const override;
+
+    // Dice la categoria
+    QString getCategory() const override;
+
+    // Per il Visitor
+    void acceptVisitor(PlaceVisitorInterface& visitor) const override;
 
     // Getter
     bool hasTerrace() const;
     QString getSpecialDrink() const;
-
-    // Override del metodo polimorfo della classe base
-    QString getCategory() const override;
-
-    virtual ~Cafe() = default;
-
-    void acceptVisitor(PlaceVisitorInterface& visitor) const override;
-    QString getFoodSummary() const override;
 };
 
 #endif // CAFE_H

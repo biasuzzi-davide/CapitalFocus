@@ -1,18 +1,20 @@
 #ifndef DEBUGCONFIG_H
 #define DEBUGCONFIG_H
 
-#include <QDebug>
+#include <QDebug> // Per qDebug()
 
-// Variabile globale di configurazione
+// Flag globale per il debug
 extern bool DEBUG_MODE;
 
-// Macro per stampa condizionata
+// Macro per stampare messaggi solo in modalità debug
 #define DEBUG_LOG(x) \
 do { if (DEBUG_MODE) qDebug() << x; } while (0)
 
-    // Funzioni per modificare e leggere il flag
+    // Namespace per gestire il flag di debug
     namespace DebugConfig {
+    // Attiva/disattiva il debug
     void setEnabled(bool enabled);
+    // Controlla se il debug è attivo
     bool isEnabled();
 }
 

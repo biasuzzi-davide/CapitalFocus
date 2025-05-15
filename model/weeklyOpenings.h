@@ -3,43 +3,59 @@
 
 #include <QMap>
 #include <QTime>
+#include <QStringList>
 #include "weekday.h"
 #include "openingFrames.h"
 
-// Classe necessaria per gestire le fasce orarie d'apertura dei locali
+// Gestisce gli orari di apertura di tutta la settimana
 class weeklyOpenings {
 private:
-    QMap<Weekday, openingFrames> schedule;
+    QMap<Weekday, openingFrames> schedule; // Orari per ogni giorno
 
 public:
-    bool  isClosed(Weekday day)       const;
-    bool  isAlwaysOpen(Weekday day)   const;   // aperto 24 h
-    QTime openTime(Weekday day)       const;
-    QTime closeTime(Weekday day)      const;
-    // Metodo per impostare una fascia oraria di un weekday
-    void setOpening(Weekday day, const QTime& open, const QTime& close);
-    void setClosed(Weekday day);
+    // Costruttore di default
     weeklyOpenings();
+    // Costruttore di copia
     weeklyOpenings(const weeklyOpenings& other);
-    openingFrames getOpening(Weekday day) const;
 
+    // Imposta orario per un giorno
+    void setOpening(Weekday day, const QTime& open, const QTime& close);
+
+    // Imposta un giorno come chiuso
+    void setClosed(Weekday day);
+
+    // Imposta un giorno come sempre aperto
     void setAlwaysOpen(Weekday d);
 
-    // Ritorna True se il locale è aperto un determinato weekday prima di una certa ora
+    // Controlla se è chiuso in un giorno
+    bool isClosed(Weekday day) const;
+
+    // Controlla se è sempre aperto in un giorno
+    bool isAlwaysOpen(Weekday day) const;
+
+    // Controlla se apre prima di un'ora in un giorno
     bool opensBefore(Weekday day, const QTime& time) const;
 
-    // Ritorna True se il locale è aperto un determinato weekday ad una certa ora
+    // Controlla se è aperto a una certa ora in un giorno
     bool isOpenAt(Weekday day, const QTime& time) const;
 
-    // Metodo necessario per l'interfaccia grafica
+    // Formatta gli orari di un giorno come stringa
     QString getOpeningFrameString(Weekday day) const;
 
-    const QMap<Weekday, openingFrames>& getSchedule() const;
+    // Formatta tutti gli orari come stringa multilinea
+    QString toQStringMultiline() const;
 
+    // Converte da Weekday a stringa
     static QString weekdayToString(const Weekday day);
 
+    // Converte da stringa a Weekday
     static Weekday weekdayFromString(const QString& dayStr);
-    QString toQStringMultiline() const;
+
+    // Getter
+    openingFrames getOpening(Weekday day) const;
+    QTime openTime(Weekday day) const;
+    QTime closeTime(Weekday day) const;
+    const QMap<Weekday, openingFrames>& getSchedule() const;
 };
 
 #endif // WEEKLYOPENINGS_H

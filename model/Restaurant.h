@@ -1,14 +1,14 @@
 #ifndef RESTAURANT_H
 #define RESTAURANT_H
 
-#include "Food.h"
+#include "Food.h" // Eredita da Food
 
-// Classe concreta ristorante
+// Rappresenta un ristorante, un tipo di posto Food
 class Restaurant : public Food {
 private:
-    QString cuisineType;    // Stringa che indica il tipo di cucina
-    bool reservation;       // True se possibile prenotare
-    QString specialDish;    // Stringa che indica il piatto speciale
+    QString cuisineType; // Tipo di cucina
+    bool reservation; // Possibile prenotare
+    QString specialDish; // Piatto speciale
 
 public:
     // Costruttore
@@ -25,17 +25,21 @@ public:
                bool reservation,
                const QString& specialDish);
 
+    virtual ~Restaurant() = default; // Distruttore
+
+    // Riassunto cibo
+    QString getFoodSummary() const override;
+
+    // Dice la categoria
+    QString getCategory() const override;
+
+    // Per il Visitor
+    virtual void acceptVisitor(PlaceVisitorInterface& visitor) const override;
+
     // Getter
     QString getCuisineType() const;
     bool hasReservation() const;
     QString getSpecialDish() const;
-
-    // Override del metodo polimorfo della classe base
-    QString getCategory() const override;
-    QString getFoodSummary() const override;
-    virtual ~Restaurant() = default;
-
-    virtual void acceptVisitor(PlaceVisitorInterface& visitor) const override;
 };
 
 #endif // RESTAURANT_H
