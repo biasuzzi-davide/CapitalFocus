@@ -24,10 +24,6 @@ CapitalFocus è un'applicazione desktop sviluppata in C++ con il framework Qt pe
 
 * L'interfaccia grafica è sviluppata con Qt per garantire un'esperienza d'uso moderna, fluida e user-friendly.
 
-### 🌐 Supporto multilingua
-
-* Facilmente adattabile per supportare più lingue, permettendo un utilizzo confortevole agli utenti internazionali.
-
 ## Tecnologie utilizzate
 
 * **Linguaggio:** C++
@@ -41,7 +37,7 @@ CapitalFocus è un'applicazione desktop sviluppata in C++ con il framework Qt pe
 * Clonare il repository:
 
 ```bash
-git clone https://github.com/tuo_utente/CapitalFocus.git
+git clone https://github.com/biasuzzi-davide/CapitalFocus.git
 ```
 
 * Compilare ed eseguire il progetto:
