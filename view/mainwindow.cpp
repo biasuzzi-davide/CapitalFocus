@@ -14,6 +14,8 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), controller(nullptr)
 {
+    QApplication::setStyle("Fusion");
+    QApplication::setFont(QFont("Arial", 11));
     showStatusBarMsg("Welcome to CapitalFocus! v:1.0");
     ui->setupUi(this);
 
