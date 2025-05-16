@@ -1,0 +1,1985 @@
+[
+    {
+        "avgWaitingTime": "00:05",
+        "city": "Rome",
+        "cost": 4,
+        "description": "Rooftop bar con vista sui tetti della città",
+        "famousDrink": "Aperol Spritz",
+        "hasTerrace": true,
+        "name": "Sunset Bar",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "08:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "08:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "23:59"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.5,
+        "takeAway": true,
+        "type": "Cafe",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:05",
+        "city": "Paris",
+        "cost": 5,
+        "description": "Storico caffè Belle Époque a due passi dall’Opéra",
+        "famousDrink": "Café au lait",
+        "hasTerrace": true,
+        "name": "Café de la Paix",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "22:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.6,
+        "takeAway": true,
+        "type": "Cafe",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:05",
+        "city": "Barcelona",
+        "cost": 3.8,
+        "description": "Piccolo bistrot nel cuore del Barrio Gótico",
+        "famousDrink": "Cortado",
+        "hasTerrace": false,
+        "name": "El Rincon",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "08:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "08:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "22:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.4,
+        "takeAway": true,
+        "type": "Cafe",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "01:15",
+        "city": "New York",
+        "cost": 4.2,
+        "description": "Coffee‑house dall’atmosfera friendly ispirato alla celebre serie TV",
+        "famousDrink": "Caramel Latte",
+        "hasTerrace": false,
+        "name": "Central Perk",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "22:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.3,
+        "takeAway": false,
+        "type": "Cafe",
+        "veganMenu": false
+    },
+    {
+        "avgWaitingTime": "00:05",
+        "city": "Tokyo",
+        "cost": 4.5,
+        "description": "Minimal café con tostatrice artigianale e dolci al matcha",
+        "famousDrink": "Matcha Latte",
+        "hasTerrace": true,
+        "name": "Sakura Brew",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "22:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.5,
+        "takeAway": true,
+        "type": "Cafe",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:10",
+        "city": "Rome",
+        "cost": 150,
+        "cuisineType": "Italian fine‑dining",
+        "description": "Tre stelle Michelin panoramico su Roma",
+        "name": "La Pergola",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "19:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "19:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Sunday",
+                "from": "12:00",
+                "to": "15:00"
+            }
+        ],
+        "rating": 4.8,
+        "reservation": true,
+        "specialDish": "Truffle pasta",
+        "takeAway": true,
+        "type": "Restaurant",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:10",
+        "city": "Modena",
+        "cost": 200,
+        "cuisineType": "Avanguardia italiana",
+        "description": "Iconico ristorante di Massimo Bottura",
+        "name": "Osteria Francescana",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "19:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "19:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Sunday",
+                "from": "12:00",
+                "to": "15:00"
+            }
+        ],
+        "rating": 4.9,
+        "reservation": true,
+        "specialDish": "Five Ages of Parmigiano",
+        "takeAway": true,
+        "type": "Restaurant",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:10",
+        "city": "Copenhagen",
+        "cost": 250,
+        "cuisineType": "New Nordic",
+        "description": "Innovazione gastronomica e fermentazioni uniche",
+        "name": "Noma",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "19:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "19:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Sunday",
+                "from": "12:00",
+                "to": "15:00"
+            }
+        ],
+        "rating": 4.9,
+        "reservation": true,
+        "specialDish": "Fermented crab with pine",
+        "takeAway": true,
+        "type": "Restaurant",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:10",
+        "city": "Girona",
+        "cost": 220,
+        "cuisineType": "Catalan creativo",
+        "description": "Gestito dai tre fratelli Roca",
+        "name": "El Celler de Can Roca",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "19:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "19:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Sunday",
+                "from": "12:00",
+                "to": "15:00"
+            }
+        ],
+        "rating": 4.8,
+        "reservation": true,
+        "specialDish": "Charcoal-grilled pigeon",
+        "takeAway": true,
+        "type": "Restaurant",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:10",
+        "city": "New York",
+        "cost": 180,
+        "cuisineType": "American farm-to-table",
+        "description": "Elegante ristorante nel cuore di Greenwich Village",
+        "name": "Blue Hill",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "18:00",
+                "to": "22:30"
+            },
+            {
+                "day": "Wednesday",
+                "from": "18:00",
+                "to": "22:30"
+            },
+            {
+                "day": "Thursday",
+                "from": "18:00",
+                "to": "22:30"
+            },
+            {
+                "day": "Friday",
+                "from": "18:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "18:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "12:00",
+                "to": "15:00"
+            }
+        ],
+        "rating": 4.7,
+        "reservation": true,
+        "specialDish": "Farm-to-table tasting menu",
+        "takeAway": true,
+        "type": "Restaurant",
+        "veganMenu": true
+    },
+    {
+        "avgStayDuration": "",
+        "city": "Ibiza",
+        "cost": 20,
+        "description": "Tempio della musica elettronica sull’isola",
+        "dressCode": "Casual Chic",
+        "hasPrive": true,
+        "minimumAge": "18",
+        "musicGenre": "Electronic",
+        "name": "Amnesia",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "closed": true,
+                "day": "Tuesday"
+            },
+            {
+                "closed": true,
+                "day": "Wednesday"
+            },
+            {
+                "day": "Thursday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Friday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.4,
+        "restrictedEntry": "VIP",
+        "type": "Disco"
+    },
+    {
+        "avgStayDuration": "",
+        "city": "Berlin",
+        "cost": 18,
+        "description": "Famoso club techno con selezione all’ingresso",
+        "dressCode": "Black",
+        "hasPrive": false,
+        "minimumAge": "18",
+        "musicGenre": "Techno",
+        "name": "Berghain",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "closed": true,
+                "day": "Tuesday"
+            },
+            {
+                "closed": true,
+                "day": "Wednesday"
+            },
+            {
+                "closed": true,
+                "day": "Thursday"
+            },
+            {
+                "day": "Friday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.5,
+        "restrictedEntry": "VIP",
+        "type": "Disco"
+    },
+    {
+        "avgStayDuration": "",
+        "city": "London",
+        "cost": 22,
+        "description": "Club storico sotto i ponti di Farringdon",
+        "dressCode": "Smart Casual",
+        "hasPrive": true,
+        "minimumAge": "18",
+        "musicGenre": "Drum & Bass",
+        "name": "Fabric",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "closed": true,
+                "day": "Tuesday"
+            },
+            {
+                "closed": true,
+                "day": "Wednesday"
+            },
+            {
+                "closed": true,
+                "day": "Thursday"
+            },
+            {
+                "day": "Friday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.3,
+        "restrictedEntry": "VIP",
+        "type": "Disco"
+    },
+    {
+        "avgStayDuration": "",
+        "city": "Florence",
+        "cost": 15,
+        "description": "Punto di riferimento della scena house toscana",
+        "dressCode": "Trendy",
+        "hasPrive": false,
+        "minimumAge": "18",
+        "musicGenre": "House",
+        "name": "Tenax",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "closed": true,
+                "day": "Tuesday"
+            },
+            {
+                "closed": true,
+                "day": "Wednesday"
+            },
+            {
+                "closed": true,
+                "day": "Thursday"
+            },
+            {
+                "day": "Friday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.2,
+        "restrictedEntry": "VIP",
+        "type": "Disco"
+    },
+    {
+        "avgStayDuration": "",
+        "city": "Paris",
+        "cost": 17,
+        "description": "Club sotterraneo famoso per i set techno",
+        "dressCode": "Casual",
+        "hasPrive": true,
+        "minimumAge": "18",
+        "musicGenre": "Techno",
+        "name": "Rex Club",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "closed": true,
+                "day": "Tuesday"
+            },
+            {
+                "closed": true,
+                "day": "Wednesday"
+            },
+            {
+                "closed": true,
+                "day": "Thursday"
+            },
+            {
+                "day": "Friday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "22:00",
+                "to": "23:59"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.1,
+        "restrictedEntry": "VIP",
+        "type": "Disco"
+    },
+    {
+        "artisans": true,
+        "city": "Rome",
+        "cost": 0,
+        "description": "Storico mercato all’aperto in piazza",
+        "foodArea": true,
+        "name": "Campo de' Fiori Market",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:00",
+                "to": "15:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:00",
+                "to": "15:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:00",
+                "to": "15:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:00",
+                "to": "15:00"
+            },
+            {
+                "day": "Friday",
+                "from": "07:00",
+                "to": "15:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "07:00",
+                "to": "15:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "outdoor": true,
+        "period": "Open all year round",
+        "rating": 4.2,
+        "seasonal": false,
+        "standNumber": 10,
+        "type": "LocalMarket"
+    },
+    {
+        "artisans": true,
+        "city": "London",
+        "cost": 0,
+        "description": "Mercato gourmet lungo il Tamigi",
+        "foodArea": true,
+        "name": "Borough Market",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "16:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "17:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "outdoor": true,
+        "period": "Open all year round",
+        "rating": 4.4,
+        "seasonal": false,
+        "standNumber": 10,
+        "type": "LocalMarket"
+    },
+    {
+        "artisans": true,
+        "city": "Barcelona",
+        "cost": 0,
+        "description": "Colorato mercato coperto su La Rambla",
+        "foodArea": true,
+        "name": "La Boqueria",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "08:00",
+                "to": "20:30"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:00",
+                "to": "20:30"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:00",
+                "to": "20:30"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:00",
+                "to": "20:30"
+            },
+            {
+                "day": "Friday",
+                "from": "08:00",
+                "to": "20:30"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "20:30"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "outdoor": true,
+        "period": "Open all year round",
+        "rating": 4.6,
+        "seasonal": false,
+        "standNumber": 10,
+        "type": "LocalMarket"
+    },
+    {
+        "artisans": true,
+        "city": "Seattle",
+        "cost": 0,
+        "description": "Storico mercato vista oceano",
+        "foodArea": true,
+        "name": "Pike Place Market",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "17:00"
+            }
+        ],
+        "outdoor": true,
+        "period": "Open all year round",
+        "rating": 4.5,
+        "seasonal": false,
+        "standNumber": 10,
+        "type": "LocalMarket"
+    },
+    {
+        "artisans": true,
+        "city": "Tokyo",
+        "cost": 0,
+        "description": "Mercato ittico e street‑food famoso",
+        "foodArea": true,
+        "name": "Tsukiji Outer Market",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "05:00",
+                "to": "14:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "05:00",
+                "to": "14:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "05:00",
+                "to": "14:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "05:00",
+                "to": "14:00"
+            },
+            {
+                "day": "Friday",
+                "from": "05:00",
+                "to": "14:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "05:00",
+                "to": "14:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "outdoor": true,
+        "period": "Open all year round",
+        "rating": 4.6,
+        "seasonal": false,
+        "standNumber": 10,
+        "type": "LocalMarket"
+    },
+    {
+        "cinema": false,
+        "city": "Milan",
+        "cost": 0,
+        "description": "Storica galleria del XIX secolo con boutique di lusso",
+        "foodArea": true,
+        "freeParking": false,
+        "name": "Galleria Vittorio Emanuele II",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "22:00"
+            }
+        ],
+        "outdoor": true,
+        "rating": 4.7,
+        "shopCount": 330,
+        "standNumber": 20,
+        "type": "Mall"
+    },
+    {
+        "cinema": true,
+        "city": "London",
+        "cost": 0,
+        "description": "Huge shopping centre in White City",
+        "foodArea": true,
+        "freeParking": false,
+        "name": "Westfield London",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "12:00",
+                "to": "18:00"
+            }
+        ],
+        "outdoor": true,
+        "rating": 4.5,
+        "shopCount": 350,
+        "standNumber": 20,
+        "type": "Mall"
+    },
+    {
+        "cinema": true,
+        "city": "Bloomington",
+        "cost": 0,
+        "description": "Uno dei centri commerciali più grandi al mondo",
+        "foodArea": true,
+        "freeParking": true,
+        "name": "Mall of America",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "11:00",
+                "to": "19:00"
+            }
+        ],
+        "outdoor": true,
+        "rating": 4.6,
+        "shopCount": 520,
+        "standNumber": 20,
+        "type": "Mall"
+    },
+    {
+        "cinema": true,
+        "city": "Dubai",
+        "cost": 0,
+        "description": "Il più grande mall con acquario e pista da ghiaccio",
+        "foodArea": true,
+        "freeParking": true,
+        "name": "Dubai Mall",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "23:59"
+            }
+        ],
+        "outdoor": true,
+        "rating": 4.7,
+        "shopCount": 1200,
+        "standNumber": 20,
+        "type": "Mall"
+    },
+    {
+        "cinema": true,
+        "city": "Melbourne",
+        "cost": 0,
+        "description": "Fashion capital con oltre 500 negozi",
+        "foodArea": true,
+        "freeParking": true,
+        "name": "Chadstone",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "19:00"
+            }
+        ],
+        "outdoor": true,
+        "rating": 4.4,
+        "shopCount": 550,
+        "standNumber": 20,
+        "type": "Mall"
+    },
+    {
+        "altitude": 104,
+        "avgStayDuration": "",
+        "city": "Florence",
+        "cost": 0,
+        "description": "Terrazza panoramica sul fiume Arno",
+        "hasBinocular": true,
+        "minimumAge": "0",
+        "name": "Piazzale Michelangelo",
+        "nightLighting": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "23:00"
+            }
+        ],
+        "rating": 4.8,
+        "restrictedEntry": "nessuna",
+        "type": "PanoramicPoints"
+    },
+    {
+        "altitude": 1086,
+        "avgStayDuration": "",
+        "city": "Cape Town",
+        "cost": 12,
+        "description": "Belvedere sulla Table Bay raggiungibile in funivia",
+        "hasBinocular": false,
+        "minimumAge": "0",
+        "name": "Table Mountain Cableway",
+        "nightLighting": false,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "08:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.9,
+        "restrictedEntry": "nessuna",
+        "type": "PanoramicPoints"
+    },
+    {
+        "altitude": 260,
+        "avgStayDuration": "",
+        "city": "New York",
+        "cost": 38,
+        "description": "Osservatorio al 70° piano del Rockefeller Center",
+        "hasBinocular": true,
+        "minimumAge": "0",
+        "name": "Top of the Rock",
+        "nightLighting": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "23:00"
+            }
+        ],
+        "rating": 4.7,
+        "restrictedEntry": "nessuna",
+        "type": "PanoramicPoints"
+    },
+    {
+        "altitude": 396,
+        "avgStayDuration": "",
+        "city": "Hong Kong",
+        "cost": 11,
+        "description": "Punto più alto dell'isola con vista skyline",
+        "hasBinocular": true,
+        "minimumAge": "0",
+        "name": "Victoria Peak",
+        "nightLighting": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "07:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "07:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "07:00",
+                "to": "23:00"
+            }
+        ],
+        "rating": 4.8,
+        "restrictedEntry": "nessuna",
+        "type": "PanoramicPoints"
+    },
+    {
+        "altitude": 130,
+        "avgStayDuration": "",
+        "city": "Paris",
+        "cost": 0,
+        "description": "Colle di Montmartre con vista sulla città e Sacré‑Cœur",
+        "hasBinocular": false,
+        "minimumAge": "0",
+        "name": "Montmartre Hill",
+        "nightLighting": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "22:00"
+            }
+        ],
+        "rating": 4.6,
+        "restrictedEntry": "nessuna",
+        "type": "PanoramicPoints"
+    },
+    {
+        "city": "Florence",
+        "cost": 20,
+        "culturalFocus": "",
+        "description": "Collezione di capolavori rinascimentali",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "Uffizi Gallery",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.8,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "Paris",
+        "cost": 17,
+        "culturalFocus": "",
+        "description": "Il museo più visitato al mondo, casa della Gioconda",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "Louvre",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.9,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "New York",
+        "cost": 25,
+        "culturalFocus": "",
+        "description": "Collezioni d’arte moderna e contemporanea",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "MoMA",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.7,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "London",
+        "cost": 0,
+        "culturalFocus": "",
+        "description": "Mondo di reperti storici e culturali, ingresso gratuito",
+        "guidedTour": false,
+        "hasAudioGuide": false,
+        "name": "British Museum",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "20:30"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "17:00"
+            }
+        ],
+        "rating": 4.8,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "Amsterdam",
+        "cost": 20,
+        "culturalFocus": "",
+        "description": "Capolavori di Rembrandt e Vermeer in un palazzo neorinascimentale",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "Rijksmuseum",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "17:00"
+            }
+        ],
+        "rating": 4.7,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "Rome",
+        "conservationStatus": "Restored",
+        "cost": 16,
+        "culturalFocus": "",
+        "description": "Anfiteatro romano simbolo della città",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Colosseum",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "08:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.7,
+        "studentDiscount": 0,
+        "type": "Monument"
+    },
+    {
+        "city": "Paris",
+        "conservationStatus": "Maintained",
+        "cost": 25,
+        "culturalFocus": "",
+        "description": "Iconica torre in ferro battuto",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Eiffel Tower",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:30",
+                "to": "23:45"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:30",
+                "to": "23:45"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:30",
+                "to": "23:45"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:30",
+                "to": "23:45"
+            },
+            {
+                "day": "Friday",
+                "from": "09:30",
+                "to": "23:45"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:30",
+                "to": "23:45"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:30",
+                "to": "23:45"
+            }
+        ],
+        "rating": 4.8,
+        "studentDiscount": 0,
+        "type": "Monument"
+    },
+    {
+        "city": "New York",
+        "conservationStatus": "Preserved",
+        "cost": 23,
+        "culturalFocus": "",
+        "description": "Simbolo di libertà su Liberty Island",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Statue of Liberty",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "17:00"
+            }
+        ],
+        "rating": 4.6,
+        "studentDiscount": 0,
+        "type": "Monument"
+    },
+    {
+        "city": "Athens",
+        "conservationStatus": "Protected",
+        "cost": 20,
+        "culturalFocus": "",
+        "description": "Antica cittadella con il Partenone",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Acropolis",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "08:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.7,
+        "studentDiscount": 0,
+        "type": "Monument"
+    },
+    {
+        "city": "Beijing",
+        "conservationStatus": "Conserved",
+        "cost": 6,
+        "culturalFocus": "",
+        "description": "Tratto Badaling della Grande Muraglia",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Great Wall (Badaling)",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "07:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "07:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "07:30",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.8,
+        "studentDiscount": 0,
+        "type": "Monument"
+    }
+]
