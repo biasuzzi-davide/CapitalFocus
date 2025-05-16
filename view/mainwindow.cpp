@@ -142,7 +142,7 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
     switch (icon) {
     case UiCommon::MsgIcon::Warning:
     {
-        QPixmap warningIcon(":/images/alert_icon.png");
+        QPixmap warningIcon(":/images/images/alert_icon.png");
         if (!warningIcon.isNull()) {
             msgBox.setIconPixmap(warningIcon);
         } else {
@@ -152,7 +152,7 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
     break;
     case UiCommon::MsgIcon::Critical:
     {
-        QPixmap criticalIcon(":/images/alert_icon.png");
+        QPixmap criticalIcon(":/images/images/alert_icon.png");
         if (!criticalIcon.isNull()) {
             msgBox.setIconPixmap(criticalIcon);
         } else {
@@ -163,7 +163,7 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
     case UiCommon::MsgIcon::Info:
     default:
     {
-        QPixmap infoIcon(":/images/alert_icon.png");
+        QPixmap infoIcon(":/images/images/alert_icon.png");
         if (!infoIcon.isNull()) {
             msgBox.setIconPixmap(infoIcon);
         } else {
@@ -184,7 +184,7 @@ bool MainWindow::askConfirmation(const QString& title,
     msgBox.setText(question);
 
     {
-        QPixmap confirmationIcon(":/images/alert_icon.png");
+        QPixmap confirmationIcon(":/images/images/alert_icon.png");
         if (!confirmationIcon.isNull()) {
             msgBox.setIconPixmap(confirmationIcon);
         } else {

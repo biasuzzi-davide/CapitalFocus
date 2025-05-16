@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/images">
-        <file>logo.png</file>
-        <file>alert_icon.png</file>
+        <file>images/logo.png</file>
+        <file>images/alert_icon.png</file>
     </qresource>
 </RCC>
