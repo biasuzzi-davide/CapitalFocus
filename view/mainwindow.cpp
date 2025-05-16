@@ -128,7 +128,7 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
 
     msgBox.setStyleSheet(R"(
         QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton {
-            background-color: #E53935;
+            background-color: #fe2b43;
             color: white;
             border: none;
             border-radius: 4px;
@@ -197,7 +197,7 @@ bool MainWindow::askConfirmation(const QString& title,
 
     msgBox.setStyleSheet(R"(
         QMessageBox QPushButton#qt_msgbox_buttonbox QPushButton {
-            background-color: #E53935;
+            background-color: #fe2b43;
             color: white;
             border: none;
             border-radius: 4px;
@@ -308,20 +308,20 @@ void MainWindow::toggleDarkMode(bool enabled) {
             }
 
             QListWidget::item:!selectable {
-                color: #E53935;
+                color: #fe2b43;
                 font-weight: bold;
                 border-bottom: 1px solid #666666;
                 padding: 6px;
             }
             QListWidget::item:selectable:!selected { color: #cccccc; }
             QListWidget::item:selected, QTableWidget::item:selected {
-                background-color: #E53935;
+                background-color: #fe2b43;
                 color: white;
             }
 
             QMenuBar { background-color: #3a3a3a; color: #e0e0e0; border-bottom: 1px solid #666666; }
             QMenu { background-color: #4f4f4f; color: #e0e0e0; border: 1px solid #666666; border-radius: 6px; }
-            QMenu::item:selected { background-color: #E53935; color: white; }
+            QMenu::item:selected { background-color: #fe2b43; color: white; }
 
             QStatusBar { background-color: #3a3a3a; border-top: 1px solid #666666; color: #e0e0e0; }
 
@@ -344,7 +344,7 @@ void MainWindow::toggleDarkMode(bool enabled) {
             #entertainmentwidget QPushButton:!hasFlatAppearance,
             #foodwidget QPushButton:!hasFlatAppearance,
             #shoppingwidget QPushButton:!hasFlatAppearance {
-                background-color: #E53935;
+                background-color: #fe2b43;
                 color: white;
                 font-weight: bold;
             }
@@ -408,20 +408,20 @@ void MainWindow::toggleDarkMode(bool enabled) {
             }
 
             QListWidget::item:!selectable {
-                color: #E53935;
+                color: #fe2b43;
                 font-weight: bold;
                 border-bottom: 1px solid #cccccc;
                 padding: 6px;
             }
             QListWidget::item:selectable:!selected { color: #333333; }
             QListWidget::item:selected, QTableWidget::item:selected {
-                background-color: #E53935;
+                background-color: #fe2b43;
                 color: white;
             }
 
             QMenuBar { background-color: #f0f0f0; color: #333333; border-bottom: 1px solid #cccccc; }
             QMenu { background-color: #ffffff; color: #333333; border: 1px solid #cccccc; border-radius: 6px; }
-            QMenu::item:selected { background-color: #E53935; color: white; }
+            QMenu::item:selected { background-color: #fe2b43; color: white; }
 
             QStatusBar { background-color: #f0f0f0; border-top: 1px solid #cccccc; color: #333333; }
 
@@ -444,7 +444,7 @@ void MainWindow::toggleDarkMode(bool enabled) {
             #entertainmentwidget QPushButton:!hasFlatAppearance,
             #foodwidget QPushButton:!hasFlatAppearance,
             #shoppingwidget QPushButton:!hasFlatAppearance {
-                background-color: #E53935;
+                background-color: #fe2b43;
                 color: white;
                 font-weight: bold;
                 border: none;
