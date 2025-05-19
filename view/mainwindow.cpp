@@ -446,7 +446,7 @@ void MainWindow::toggleDarkMode(bool enabled) {
             QPushButton:hover { background-color: #f0f0f0; }
             QPushButton:pressed { background-color: #dddddd; }
 
-            QPushButton#pushButtonSearch, QPushButton#pushButtonCreate,
+            QPushButton#pushButtonReset, QPushButton#pushButtonSearch, QPushButton#pushButtonCreate,
             QPushButton#pushEdit, QPushButton#pushDelete,
             #culturewidget QPushButton:!hasFlatAppearance,
             #entertainmentwidget QPushButton:!hasFlatAppearance,
@@ -458,7 +458,7 @@ void MainWindow::toggleDarkMode(bool enabled) {
                 border: none;
             }
 
-            QPushButton#pushButtonSearch:hover, QPushButton#pushButtonCreate:hover,
+            QPushButton#pushButtonReset:hover, QPushButton#pushButtonSearch:hover, QPushButton#pushButtonCreate:hover,
             QPushButton#pushEdit:hover, QPushButton#pushDelete:hover {
                 background-color: #D32F2F;
             }
@@ -468,7 +468,7 @@ void MainWindow::toggleDarkMode(bool enabled) {
                 background-color: #B71C1C;
             }
 
-            QPushButton#pushButtonReset, QPushButton#pushButtonBacktoMain, QPushButton#pushButtonBacktoMain_2,
+            QPushButton#pushButtonBacktoMain, QPushButton#pushButtonBacktoMain_2,
             #culturewidget QPushButton#pushBack, #entertainmentwidget QPushButton#pushBack,
             #foodwidget QPushButton#pushBack, #shoppingwidget QPushButton#pushBack {
                 background-color: #ffffff;
@@ -476,7 +476,7 @@ void MainWindow::toggleDarkMode(bool enabled) {
                 border: 1px solid #cccccc;
             }
 
-            QPushButton#pushButtonReset:hover, QPushButton#pushButtonBacktoMain:hover, QPushButton#pushButtonBacktoMain_2:hover,
+            QPushButton#pushButtonBacktoMain:hover, QPushButton#pushButtonBacktoMain_2:hover,
             #culturewidget QPushButton#pushBack:hover, #entertainmentwidget QPushButton#pushBack:hover,
             #foodwidget QPushButton#pushBack:hover, #shoppingwidget QPushButton#pushBack:hover {
                 background-color: #f0f0f0;
