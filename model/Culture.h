@@ -5,9 +5,11 @@
 
 // Base per luoghi culturali
 class Culture : public Place {
+private:
+    bool guidedTour; // Tour guidato
+
 protected:
     double studentDiscount; // Sconto studenti
-    bool guidedTour; // Tour guidato
     QString culturalFocus; // Focus culturale
 
 public:

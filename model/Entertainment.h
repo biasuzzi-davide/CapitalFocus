@@ -6,7 +6,7 @@
 
 // Base per posti legati all'intrattenimento
 class Entertainment : public Place {
-protected:
+private:
     QTime avgStayDuration; // Durata media della visita
     int minimumAge; // Età minima
     QString restrictedEntry; // Restrizioni ingresso

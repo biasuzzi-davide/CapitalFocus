@@ -8,13 +8,15 @@ class PlaceVisitorInterface; // Serve per acceptVisitor
 
 // Base per tutti i luoghi
 class Place {
-protected:
+private:
     QString name; // Nome
     QString city; // Città
     QString description; // Descrizione
     double rating; // Valutazione
-    weeklyOpenings open; // Orari
     double cost; // Costo
+
+protected:
+    weeklyOpenings open; // Orari
 
 public:
     // Costruttore

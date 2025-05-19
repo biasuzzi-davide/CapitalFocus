@@ -6,7 +6,7 @@ Culture::Culture(const QString& name, const QString& city, const QString& descri
                  double studentDiscount, bool guidedTour,
                  const QString& culturalFocus)
     : Place(name, city, description, rating, open, cost),
-    studentDiscount(studentDiscount), guidedTour(guidedTour),
+    guidedTour(guidedTour), studentDiscount(studentDiscount),
     culturalFocus(culturalFocus){}
 
 // Getter sconto studenti
