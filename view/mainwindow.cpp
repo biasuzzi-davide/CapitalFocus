@@ -59,6 +59,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->verticalLayout->setContentsMargins(15, 15, 15, 15);
     ui->verticalLayout->setSpacing(10);
     toggleDarkMode(false);
+    setWindowIcon(QIcon(":/images/images/icon.png"));
 
     setMinimumHeight(950);
 }
