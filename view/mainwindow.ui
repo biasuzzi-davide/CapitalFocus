@@ -30,7 +30,7 @@
        </sizepolicy>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="mainPage">
        <property name="sizePolicy">
@@ -85,13 +85,6 @@
           </item>
           <item>
            <widget class="QComboBox" name="comboBoxCity"/>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButtonSearch">
-            <property name="text">
-             <string>Search</string>
-            </property>
-           </widget>
           </item>
           <item>
            <widget class="QPushButton" name="pushButtonReset">

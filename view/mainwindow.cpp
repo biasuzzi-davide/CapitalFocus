@@ -237,7 +237,6 @@ bool MainWindow::askConfirmation(const QString& title,
 void MainWindow::setController(PlaceController* controller) {
     this->controller = controller;
 
-    connect(ui->pushButtonSearch, &QPushButton::clicked, controller, &PlaceController::findPlaces);
     connect(ui->lineEditSearch, &QLineEdit::returnPressed, controller, &PlaceController::findPlaces);
     connect(ui->pushButtonReset, &QPushButton::clicked, controller, &PlaceController::resetSearchFields);
     connect(ui->actionAuto_Import, &QAction::triggered, controller, &PlaceController::importFromFile);
