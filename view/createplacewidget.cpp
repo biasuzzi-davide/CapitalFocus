@@ -1,6 +1,6 @@
 // CreatePlaceWidget.cpp
 #include "view/createplacewidget.h"
-#include "../ui_CreatePlaceWidget.h"
+#include "ui_createplacewidget.h"
 #include "controller/placecontroller.h"
 #include <QComboBox>
 #include <QPushButton>
