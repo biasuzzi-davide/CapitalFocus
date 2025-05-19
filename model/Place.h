@@ -13,11 +13,10 @@ private:
     QString city; // Città
     QString description; // Descrizione
     double rating; // Valutazione
-    double cost; // Costo
-
 protected:
     weeklyOpenings open; // Orari
-
+private:
+    double cost; // Costo
 public:
     // Costruttore
     Place(const QString& name, const QString& city, const QString& description,
