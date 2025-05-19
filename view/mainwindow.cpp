@@ -10,6 +10,10 @@
 #include "view/createplacewidget.h"
 #include <QShortcut>
 #include <QStatusBar>
+#include <QSizePolicy>
+#include <QPropertyAnimation>
+#include <QGraphicsOpacityEffect>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow), controller(nullptr)
@@ -42,12 +46,19 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
+    if(ui->listWidgetResults){
+        ui->listWidgetResults->setMaximumHeight(400);
+        QSizePolicy sp = ui->listWidgetResults->sizePolicy();
+        sp.setVerticalPolicy(QSizePolicy::MinimumExpanding);
+        ui->listWidgetResults->setSizePolicy(sp);
+    }
     ui->verticalLayout->setAlignment(ui->label, Qt::AlignHCenter);
-    ui->verticalLayout->setStretch(3, 1);
-
+    ui->verticalLayout->setStretch(3, 0);
     ui->verticalLayout->setContentsMargins(15, 15, 15, 15);
     ui->verticalLayout->setSpacing(10);
     toggleDarkMode(false);
+
+    setMinimumHeight(850);
 }
 
 void MainWindow::showStatusBarMsg(const QString& message, int timeoutMs) {
@@ -61,9 +72,6 @@ void MainWindow::showWidgetByName(const QString& name) {
         qWarning("ERRORE: Widget con nome '%s' non trovato", qPrintable(name));
     }
 }
-
-#include <QPropertyAnimation>
-#include <QGraphicsOpacityEffect>
 
 void MainWindow::updateResults(const std::map<QString, std::vector<std::shared_ptr<Place>>>& groupedResults) {
     ui->listWidgetResults->clear();
