@@ -241,21 +241,6 @@ void MainWindow::setController(PlaceController* controller) {
     qobject_cast<culturewidget*>(widgetMap["culture"])->setController(controller);
     qobject_cast<entertainmentwidget*>(widgetMap["entertainment"])->setController(controller);
     qobject_cast<CreatePlaceWidget*>(widgetMap["create"])->setController(controller);
-
-    QShortcut* sh_ctrls = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_S), this);
-    connect(sh_ctrls, &QShortcut::activated, controller, &PlaceController::promptExportToXml);
-    QShortcut* sh_ctrlj = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_J), this);
-    connect(sh_ctrlj, &QShortcut::activated, controller, &PlaceController::promptExportToJson);
-    QShortcut* sh_ctrlx = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_X), this);
-    connect(sh_ctrlx, &QShortcut::activated, controller, &PlaceController::promptExportToXml);
-    QShortcut* sh_ctrln = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_N), this);
-    connect(sh_ctrln, &QShortcut::activated, controller, &PlaceController::setWidgetCreate);
-    QShortcut* sh_ctrlo = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_O), this);
-    connect(sh_ctrlo, &QShortcut::activated, controller, &PlaceController::importFromFile);
-    QShortcut* sh_ctrle = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_E), this);
-    connect(sh_ctrle, &QShortcut::activated, controller, &PlaceController::editCurrentPlace);
-    QShortcut* sh_ctrld = new QShortcut(QKeySequence(Qt::CTRL | Qt::Key_D), this);
-    connect(sh_ctrld, &QShortcut::activated, controller, &PlaceController::deleteCurrentPlace);
 }
 
 QListWidget* MainWindow::getListWidget() const {
