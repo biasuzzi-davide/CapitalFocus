@@ -9,6 +9,8 @@
 #include "model/statisticsResult.h"
 #include "view/createplacewidget.h"
 #include <QShortcut>
+#include <QSize>
+#include <QStyle>
 #include <QStatusBar>
 #include <QSizePolicy>
 #include <QPropertyAnimation>
@@ -149,12 +151,15 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
         }
     )");
 
+    QSize iconSize(style()->pixelMetric(QStyle::PM_MessageBoxIconSize), style()->pixelMetric(QStyle::PM_MessageBoxIconSize));
+
     switch (icon) {
     case UiCommon::MsgIcon::Warning:
     {
         QPixmap warningIcon(":/images/images/alert_icon.png");
         if (!warningIcon.isNull()) {
             msgBox.setIconPixmap(warningIcon);
+            msgBox.setIconPixmap(warningIcon.scaled(iconSize, Qt::KeepAspectRatio, Qt::SmoothTransformation));
         } else {
             msgBox.setIcon(QMessageBox::Warning);
         }
@@ -165,6 +170,7 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
         QPixmap criticalIcon(":/images/images/alert_icon.png");
         if (!criticalIcon.isNull()) {
             msgBox.setIconPixmap(criticalIcon);
+            msgBox.setIconPixmap(criticalIcon.scaled(iconSize, Qt::KeepAspectRatio, Qt::SmoothTransformation));
         } else {
             msgBox.setIcon(QMessageBox::Critical);
         }
@@ -176,6 +182,8 @@ void MainWindow::showMessage(UiCommon::MsgIcon icon,
         QPixmap infoIcon(":/images/images/alert_icon.png");
         if (!infoIcon.isNull()) {
             msgBox.setIconPixmap(infoIcon);
+            msgBox.setIconPixmap(infoIcon.scaled(iconSize, Qt::KeepAspectRatio, Qt::FastTransformation));
+
         } else {
             msgBox.setIcon(QMessageBox::Information);
         }
@@ -193,10 +201,15 @@ bool MainWindow::askConfirmation(const QString& title,
     msgBox.setWindowTitle(title);
     msgBox.setText(question);
 
+    QSize iconSize(style()->pixelMetric(QStyle::PM_MessageBoxIconSize), style()->pixelMetric(QStyle::PM_MessageBoxIconSize));
+
+
     {
         QPixmap confirmationIcon(":/images/images/alert_icon.png");
         if (!confirmationIcon.isNull()) {
             msgBox.setIconPixmap(confirmationIcon);
+            msgBox.setIconPixmap(confirmationIcon.scaled(iconSize, Qt::KeepAspectRatio, Qt::FastTransformation));
+
         } else {
             msgBox.setIcon(QMessageBox::Question);
         }
