@@ -60,7 +60,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->verticalLayout->setSpacing(10);
     toggleDarkMode(false);
 
-    setMinimumHeight(850);
+    setMinimumHeight(950);
 }
 
 void MainWindow::showStatusBarMsg(const QString& message, int timeoutMs) {
