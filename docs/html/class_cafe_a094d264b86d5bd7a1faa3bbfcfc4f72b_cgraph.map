@@ -1,0 +1,7 @@
+<map id="Cafe::Cafe" name="Cafe::Cafe">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,91,31"/>
+<area shape="rect" id="Node000002" href="$class_food.html#a2f64b372c9a465f7bcab4ab41d81ae8d" title=" " alt="" coords="139,5,226,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,16,123,16,123,21,91,21"/>
+<area shape="rect" id="Node000003" href="$class_place.html#a06c16ea1806695908623c43f803c3a13" title=" " alt="" coords="274,5,369,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="227,16,258,16,258,21,227,21"/>
+</map>

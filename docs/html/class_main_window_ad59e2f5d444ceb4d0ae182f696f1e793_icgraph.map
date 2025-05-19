@@ -1,0 +1,7 @@
+<map id="MainWindow::showWidgetByName" name="MainWindow::showWidgetByName">
+<area shape="rect" id="Node000001" title=" " alt="" coords="259,31,486,56"/>
+<area shape="rect" id="Node000002" href="$class_main_window.html#a80831c581b10a444f0966b5360efd3d7" title=" " alt="" coords="5,5,211,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,34,211,31,211,25,243,28"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#a65ee7823aa184c87a5836e23b4c52eec" title=" " alt="" coords="12,55,204,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,58,204,61,204,56,243,53"/>
+</map>

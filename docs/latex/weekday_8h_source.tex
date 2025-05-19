@@ -1,0 +1,44 @@
+\doxysection{weekday.\+h}
+\hypertarget{weekday_8h_source}{}\label{weekday_8h_source}\index{model/weekday.h@{model/weekday.h}}
+\mbox{\hyperlink{weekday_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WEEKDAY\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WEEKDAY\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <Qt>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ Giorni\ della\ settimana}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3aa6f8522e0610541f1ef215a22ffa66ff6}{Monday}},}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3aa5792315f09a5d54fb7e3d066672b507f}{Tuesday}},}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3aa796c163589f295373e171842f37265d5}{Wednesday}},}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3aa78ae6f0cd191d25147e252dc54768238}{Thursday}},}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3aac33b138a163847cdb6caeeb7c9a126b4}{Friday}},}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3aa8b7051187b9191cdcdae6ed5a10e5adc}{Saturday}},}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3aa9d1a0949c39e66a0cd65240bc0ac9177}{Sunday}}}
+\DoxyCodeLine{00016\ \};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ Specializza\ std::less\ per\ Weekday}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacestd}{std}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{template}<>}
+\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }less<\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}>\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structstd_1_1less_3_01_weekday_01_4_a6f26626a5d10c3aa5ede0d9336cd54d9}{operator()}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\&\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\&\ b)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(a)\ <\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(b);}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ Converte\ da\ Weekday\ nostro\ a\ Qt::DayOfWeek}}
+\DoxyCodeLine{00029\ \textcolor{keyword}{inline}\ Qt::DayOfWeek\ \mbox{\hyperlink{weekday_8h_aeae4c1f894cc1d2af9edbbee0ad29e6d}{toQt}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ d)\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}Qt::DayOfWeek\textcolor{keyword}{>}(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(d)\ +\ 1);}
+\DoxyCodeLine{00031\ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{comment}{//\ Converte\ da\ Qt::DayOfWeek\ a\ Weekday\ nostro}}
+\DoxyCodeLine{00034\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ \mbox{\hyperlink{weekday_8h_ae74f74b6bf592d6273fbfb959187f328}{fromQt}}(Qt::DayOfWeek\ d)\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\textcolor{keyword}{>}(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(d)\ -\/\ 1);}
+\DoxyCodeLine{00036\ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WEEKDAY\_H}}
+
+\end{DoxyCode}

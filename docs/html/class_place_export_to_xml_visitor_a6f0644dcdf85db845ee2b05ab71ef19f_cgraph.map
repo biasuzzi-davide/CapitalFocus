@@ -1,0 +1,9 @@
+<map id="PlaceExportToXmlVisitor::visit" name="PlaceExportToXmlVisitor::visit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,172,88"/>
+<area shape="rect" id="Node000002" href="$class_panoramic_points.html#a0e87ce08879805fbd3bac40be72fcfa4" title=" " alt="" coords="230,5,420,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,47,244,32,245,37,173,53"/>
+<area shape="rect" id="Node000003" href="$class_panoramic_points.html#adbc46b4e7ae6a12544db28bf1163dfad" title=" " alt="" coords="220,55,430,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,65,204,65,204,70,172,70"/>
+<area shape="rect" id="Node000004" href="$class_panoramic_points.html#a95a59c6d6d727a85bc69048e2728a9f8" title=" " alt="" coords="233,104,416,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,82,245,98,244,103,172,88"/>
+</map>

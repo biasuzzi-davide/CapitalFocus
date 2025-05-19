@@ -1,0 +1,40 @@
+<map id="view/mainwindow.h" name="view/mainwindow.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="446,5,580,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,112,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="446,32,128,81,127,76,446,27"/>
+<area shape="rect" id="Node000003" href="$_place_8h.html" title=" " alt="" coords="584,79,688,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="535,29,604,69,601,73,533,34"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="322,79,443,105"/>
+<area shape="poly" id="edge14_Node000001_Node000013" title=" " alt="" coords="492,34,419,74,416,69,490,29"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="466,79,560,105"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="516,31,516,63,510,63,510,31"/>
+<area shape="rect" id="Node000015" href="$statistics_result_8h.html" title=" " alt="" coords="136,79,298,105"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="463,34,283,77,282,72,462,29"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="712,79,819,105"/>
+<area shape="poly" id="edge19_Node000001_Node000017" title=" " alt="" coords="557,29,709,72,707,77,555,34"/>
+<area shape="rect" id="Node000018" href="$uicommon_8h.html" title=" " alt="" coords="844,79,975,105"/>
+<area shape="poly" id="edge20_Node000001_Node000018" title=" " alt="" coords="581,29,828,73,827,79,580,34"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="314,300,379,326"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="587,108,537,124,479,149,422,184,397,204,374,228,359,256,351,285,346,284,354,254,370,225,393,201,419,179,477,145,535,119,586,103"/>
+<area shape="rect" id="Node000005" href="$weekly_openings_8h.html" title=" " alt="" coords="572,153,700,178"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="638,105,638,137,633,137,633,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="494,226,551,252"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="618,181,556,220,553,215,615,177"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="616,300,677,326"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="661,177,689,196,712,225,715,244,708,263,695,279,680,293,676,289,692,275,703,260,709,244,707,227,685,200,658,181"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="383,226,470,252"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="601,181,477,223,476,218,599,176"/>
+<area shape="rect" id="Node000009" href="$weekday_8h.html" title=" " alt="" coords="772,226,854,252"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="667,176,770,218,768,223,665,181"/>
+<area shape="rect" id="Node000012" href="$opening_frames_8h.html" title=" " alt="" coords="575,226,696,252"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="638,179,638,211,633,211,633,179"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="753,300,791,326"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="809,254,789,288,784,285,804,251"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="814,300,892,326"/>
+<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="822,251,841,285,837,288,817,254"/>
+<area shape="poly" id="edge13_Node000012_Node000004" title=" " alt="" coords="587,255,395,302,394,297,586,250"/>
+<area shape="poly" id="edge12_Node000012_Node000007" title=" " alt="" coords="640,252,645,284,640,285,635,253"/>
+<area shape="poly" id="edge18_Node000015_Node000004" title=" " alt="" coords="222,105,230,138,245,177,285,238,326,287,322,290,281,242,240,180,225,140,217,106"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="254,153,300,178"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="229,103,259,139,255,142,225,107"/>
+</map>

@@ -1,0 +1,99 @@
+\doxysection{placecontroller.\+h}
+\hypertarget{placecontroller_8h_source}{}\label{placecontroller_8h_source}\index{controller/placecontroller.h@{controller/placecontroller.h}}
+\mbox{\hyperlink{placecontroller_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLACECONTROLLER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLACECONTROLLER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{placerepository_8h}{../model/placerepository.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{placeimportfromxml_8h}{../model/visitor/placeimportfromxml.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_place_import_from_json_8h}{../model/visitor/PlaceImportFromJson.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mainwindow_8h}{view/mainwindow.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ Dichiarazioni\ forward}}
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }QListWidgetItem;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_place}{Place}};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ Il\ Controller,\ gestisce\ la\ logica\ e\ coordina\ Model\ e\ View}}
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_place_controller_abd3ec6854f0c5e5d57d49715e756f502}{PlaceController}}\ :\ \textcolor{keyword}{public}\ QObject\{}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}*\ view;\ \textcolor{comment}{//\ Puntatore\ alla\ View}}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_place_repository}{PlaceRepository}}\&\ repository;\ \textcolor{comment}{//\ Riferimento\ al\ Model}}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_place_import_from_xml}{PlaceImportFromXml}}\ xmlImporter;\ \textcolor{comment}{//\ Importatore\ XML}}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_place_import_from_json}{PlaceImportFromJson}}\ jsonImporter;\ \textcolor{comment}{//\ Importatore\ JSON}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_place}{Place}}*\ currentPlace\ =\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ Il\ posto\ attualmente\ selezionato}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ unsavedChanges\ =\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Flag\ per\ modifiche\ non\ salvate}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_place_controller_abd3ec6854f0c5e5d57d49715e756f502}{PlaceController}}(\mbox{\hyperlink{class_main_window}{MainWindow}}*\ view,\ \mbox{\hyperlink{class_place_repository}{PlaceRepository}}\&\ repo);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Metodi\ per\ interagire\ con\ il\ Model}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a3caac76937b82478b306ac0cc0729e47}{addPlace}}(\textcolor{keyword}{const}\ std::shared\_ptr<Place>\&\ place);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a7aac46ba867a68807d1ba15a61421979}{removePlace}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00037\ \ \ \ \ std::vector<std::shared\_ptr<Place>>\ \mbox{\hyperlink{class_place_controller_af610de5def22e86c14e5f0c45c1577bd}{search}}(\textcolor{keyword}{const}\ QString\&\ keyword,\ \textcolor{keyword}{const}\ QString\&\ city\ =\ \textcolor{stringliteral}{"{}All"{}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Metodi\ per\ interagire\ con\ la\ View}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_place_controller_a480c14d56580bf1053751976d2299a90}{setWidgetSafe}}(\textcolor{keyword}{const}\ QString\&\ name);\ \textcolor{comment}{//\ Cambia\ widget\ in\ modo\ sicuro}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a209739f5a76200933c8b046133687712}{showCreditsPage}}();\ \textcolor{comment}{//\ Mostra\ pagina\ credits}}
+\DoxyCodeLine{00042\ \ \ \ \ std::map<QString,\ std::vector<std::shared\_ptr<Place>>>\ \mbox{\hyperlink{class_place_controller_abc297fa24d2306015dac2c0770636925}{groupedSearchResults}}(\textcolor{keyword}{const}\ QString\&\ keyword,\ \textcolor{keyword}{const}\ QString\&\ city)\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Raggruppa\ risultati\ ricerca}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_place_controller_ad663ce4cce88753c4efa8ab242c5248e}{anyWidgetIsEditing}}()\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Controlla\ se\ qualche\ widget\ è\ in\ modalità\ modifica}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ Import/Export}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a8a7993cbcb4a72d612743a4c918fad4a}{importFromFile}}();\ \textcolor{comment}{//\ Avvia\ processo\ import\ da\ file}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a16cdf64afdbb24840d889d3148961097}{importPlacesFromXml}}(\textcolor{keyword}{const}\ QString\&\ filePath);\ \textcolor{comment}{//\ Importa\ da\ XML}}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_abb45bf61e5bd1ae9f437acc05e2c257f}{importPlacesFromJson}}(\textcolor{keyword}{const}\ QString\&\ filePath);\ \textcolor{comment}{//\ Importa\ da\ JSON}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_aea88e297dc7e4ad5c30150f63f920ae9}{promptExportToXml}}();\ \textcolor{comment}{//\ Chiede\ dove\ esportare\ in\ XML}}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a86918fbfdd5e1561eff184f97735c4fe}{promptExportToJson}}();\ \textcolor{comment}{//\ Chiede\ dove\ esportare\ in\ JSON}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a26bd60f2be79c0133dc95c2e75ec612c}{exportToFile}}();\ \textcolor{comment}{//\ Avvia\ processo\ export}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a6d927001e935c7a7f95b4668ef1d01d5}{exportToJson}}(\textcolor{keyword}{const}\ QString\&\ filePath);\ \textcolor{comment}{//\ Esporta\ in\ JSON}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a5960fa51152def2ff7540c30c29aa84f}{exportToXml}}(\textcolor{keyword}{const}\ QString\&\ filePath);\ \textcolor{comment}{//\ Esporta\ in\ XML}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ Navigazione\ e\ gestione\ widget}}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a77ec5d0f415efae0ca1084d3a81a49fe}{setWidgetCreate}}();\ \textcolor{comment}{//\ Va\ alla\ pagina\ creazione}}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a94afccb89b4531c5d4ebe801c8b9bf79}{setWidgetMain}}();\ \textcolor{comment}{//\ Va\ alla\ pagina\ principale}}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a53f1dc7a52ae959cfff956a7d76c3f95}{setWidgetCredits}}();\ \textcolor{comment}{//\ Va\ alla\ pagina\ credits}}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a7863466e18883d4570f4d9628a650e8a}{showStatistics}}();\ \textcolor{comment}{//\ Mostra\ pagina\ statistiche}}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_adddd14d7dcb549a6bd0c0a8a599a407a}{goBack}}();\ \textcolor{comment}{//\ Torna\ indietro}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_ae898ac659e64ffc72b3b03b1c80e4f16}{promptAndSetWidget}}();\ \textcolor{comment}{//\ Chiede\ di\ salvare\ e\ poi\ cambia\ widget}}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a93a639b026307c36bdfdde55766ad6ed}{onCreateTypeChanged}}(\textcolor{keywordtype}{int}\ index);\ \textcolor{comment}{//\ Gestisce\ cambio\ tipo\ in\ pagina\ creazione}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{comment}{//\ Ricerca\ e\ selezione}}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a15458581989214ceaa09bb8f42cc5d2c}{findPlaces}}();\ \textcolor{comment}{//\ Esegue\ la\ ricerca\ e\ aggiorna\ la\ lista}}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a50a03496ec8609b91be308b9fe4fba37}{resetSearchFields}}();\ \textcolor{comment}{//\ Azzera\ i\ campi\ di\ ricerca}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_af6ec6fa43f4fac622e34a286c15604f4}{onPlaceSelected}}(QListWidgetItem*\ item);\ \textcolor{comment}{//\ Gestisce\ selezione\ Place\ nella\ lista}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{//\ Altre\ azioni\ GUI}}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a3a339db873d8ae8cc04f4bb531e62efc}{toggleDarkMode}}();\ \textcolor{comment}{//\ Attiva/disattiva\ dark\ mode}}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_af362a022ee583a8ca5794d91808bb80b}{toggleDebug}}();\ \textcolor{comment}{//\ Attiva/disattiva\ debug}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{//\ Gestione\ stato}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_place_controller_ae83bc1fc7a3fdf435944b449fbee72c7}{canClose}}();\ \textcolor{comment}{//\ Controlla\ se\ l'applicazione\ può\ chiudere}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_place_controller_abb8e9b11d4cd66f99d983cd29be11d71}{hasUnsavedChanges}}()\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Controlla\ se\ ci\ sono\ modifiche\ non\ salvate}}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_ae6e3e283a053e024eaf7c9d3c256f19b}{setUnsavedChanges}}(\textcolor{keywordtype}{bool}\ value);\ \textcolor{comment}{//\ Imposta\ lo\ stato\ delle\ modifiche\ non\ salvate}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{//\ Getter}}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{class_place}{Place}}*\ \mbox{\hyperlink{class_place_controller_a622b45c8cd0c74196541400ecab54ad7}{getCurrentPlace}}()\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Ritorna\ il\ Place\ corrente}}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_afa22be5f0acda607b63532b1df24e127}{resetCurrentPlace}}();\ \textcolor{comment}{//\ Azzera\ il\ Place\ corrente}}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::shared\_ptr<Place>>\&\ \mbox{\hyperlink{class_place_controller_aae3ca5bb72d677d2fdf2841b2a7bd43c}{getAll}}()\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ Ritorna\ tutti\ i\ Place\ dal\ repository}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{comment}{//Togliere?}}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//void\ printAllPlaces()\ const;}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{comment}{//\ Slot\ per\ azioni\ attivate\ dalla\ View}}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a391452f53d435c9ccaa1df408e4f5a1f}{createNewPlace}}();\ \textcolor{comment}{//\ Crea\ un\ nuovo\ Place}}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_aba794db187b1957a4482400ae5fb99de}{editCurrentPlace}}();\ \textcolor{comment}{//\ Modifica\ il\ Place\ corrente}}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a53f9020b8a0d03e31cedec01fc90849d}{deleteCurrentPlace}}();\ \textcolor{comment}{//\ Elimina\ il\ Place\ corrente}}
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PLACECONTROLLER\_H}}
+
+\end{DoxyCode}

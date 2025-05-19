@@ -1,0 +1,1115 @@
+\doxysection{ui\+\_\+createplacewidget.\+h}
+\hypertarget{ui__createplacewidget_8h_source}{}\label{ui__createplacewidget_8h_source}\index{build/Desktop-\/Debug/ui\_createplacewidget.h@{build/Desktop-\/Debug/ui\_createplacewidget.h}}
+\mbox{\hyperlink{ui__createplacewidget_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'createplacewidget.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 6.5.3}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_CREATEPLACEWIDGET\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_CREATEPLACEWIDGET\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QCheckBox>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QComboBox>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QDoubleSpinBox>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QFormLayout>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QGridLayout>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QGroupBox>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLineEdit>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QtWidgets/QSpinBox>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QtWidgets/QStackedWidget>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QtWidgets/QTextEdit>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <QtWidgets/QTimeEdit>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <QtWidgets/QVBoxLayout>}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ <QtWidgets/QWidget>}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui___create_place_widget}{Ui\_CreatePlaceWidget}}}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ QVBoxLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_a904cc9958b7b98770ea4bf19bacdcf57}{mainLayout}};}
+\DoxyCodeLine{00037\ \ \ \ \ QFormLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}};}
+\DoxyCodeLine{00038\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_ad3634aed4d796d1097d4f44cf4b16989}{labelType}};}
+\DoxyCodeLine{00039\ \ \ \ \ QComboBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}};}
+\DoxyCodeLine{00040\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_ad7f5d6e1526199a844de5587a58f2b10}{labelName}};}
+\DoxyCodeLine{00041\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_aea86996ab30fa7ce361d2a9d1c488d4c}{lineEditName}};}
+\DoxyCodeLine{00042\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a5a3a946efc8bbb53085229ec05dad342}{labelCity}};}
+\DoxyCodeLine{00043\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a99cb8e57e327c71b4c1f3543490492d5}{lineEditCity}};}
+\DoxyCodeLine{00044\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a5a9b7f953a9067b32aa0e21d40582bca}{labelDescription}};}
+\DoxyCodeLine{00045\ \ \ \ \ QTextEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a0c4f0139e218e8314a7eefb234ef1ea8}{textEditDescription}};}
+\DoxyCodeLine{00046\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a69a33404eb7733a5cc96ce7e4e9d71b4}{labelRating}};}
+\DoxyCodeLine{00047\ \ \ \ \ QDoubleSpinBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ae37e48be1df624b0e64cced7391bfdb2}{spinBoxRating}};}
+\DoxyCodeLine{00048\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_aebfe76ea2ef39f6387ab06a4407ce3c9}{labelCost}};}
+\DoxyCodeLine{00049\ \ \ \ \ QDoubleSpinBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a1e96e49d1aff4aa077ef57062b52504a}{spinBoxCost}};}
+\DoxyCodeLine{00050\ \ \ \ \ QStackedWidget\ *\mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}};}
+\DoxyCodeLine{00051\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}};}
+\DoxyCodeLine{00052\ \ \ \ \ QFormLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}};}
+\DoxyCodeLine{00053\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a7859e7c5dae684cffcf4b63e3886f21b}{labelMG}};}
+\DoxyCodeLine{00054\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_adc0941733cf9f67c6ff2cd8853d0cfd9}{lineEditMusicGenre}};}
+\DoxyCodeLine{00055\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a8bc52c90c2109219291219deef44b34d}{labelPrive}};}
+\DoxyCodeLine{00056\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a39b6d8babefbc6ae1b27163fe16b4e1b}{checkBoxPrive}};}
+\DoxyCodeLine{00057\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a3a5dfca7432ff491466a273e4d2ac6c9}{labelDC}};}
+\DoxyCodeLine{00058\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a3cff34156f95a226b021fa93475a9137}{lineEditDressCode}};}
+\DoxyCodeLine{00059\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_ac85d0cb2a62cd58f19fb054bce97825b}{averageStayLabel}};}
+\DoxyCodeLine{00060\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_aef9bdbb631c1ebf059dedbaca512ebb1}{averageStayTimeEdit}};}
+\DoxyCodeLine{00061\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a7d90c6f55094e3a574f01c494e15a5d7}{minimumAgeLabel}};}
+\DoxyCodeLine{00062\ \ \ \ \ QSpinBox\ *\mbox{\hyperlink{class_ui___create_place_widget_aadd663ba327659d87dace607e3213c4c}{minimumAgeSpinBox}};}
+\DoxyCodeLine{00063\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_aadbd61f96162e8081678c69c70a1186f}{restrictedEntryLabel}};}
+\DoxyCodeLine{00064\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a10b1f7728ae73bf2d80c8c6c859c09fb}{restrictedEntryLineEdit}};}
+\DoxyCodeLine{00065\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}};}
+\DoxyCodeLine{00066\ \ \ \ \ QFormLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}};}
+\DoxyCodeLine{00067\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_aeeaae1fd0bfbdd5783e667f9a34188d5}{labelAltitude}};}
+\DoxyCodeLine{00068\ \ \ \ \ QDoubleSpinBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a645a8c885d349bc4fe3e47d6327382ae}{spinBoxAltitude}};}
+\DoxyCodeLine{00069\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a0b3b87be6ae51f90cd22e7657c3699b5}{labelBinoculars}};}
+\DoxyCodeLine{00070\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_afd44194e92bd7ad32f29478e9b4eeda2}{checkBoxBinoculars}};}
+\DoxyCodeLine{00071\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a847cab99a2483306cd37363b12372157}{labelNightLighting}};}
+\DoxyCodeLine{00072\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ac151ce46e0a58d264bcb7da347ee8d58}{checkBoxNightLighting}};}
+\DoxyCodeLine{00073\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a3dc0fd97fbc38dc5862cc1039dfd9286}{averageStayLabel\_2}};}
+\DoxyCodeLine{00074\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_ab9a1df4c415f7202ececbb5fe418eb9f}{averageStayTimeEdit\_2}};}
+\DoxyCodeLine{00075\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a0b7198b67a2c6bc2bb86cdc946eb5dcf}{minimumAgeLabel\_2}};}
+\DoxyCodeLine{00076\ \ \ \ \ QSpinBox\ *\mbox{\hyperlink{class_ui___create_place_widget_adb66e4803bfc39aa0af319ca9f161956}{minimumAgeSpinBox\_2}};}
+\DoxyCodeLine{00077\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a8d42279fcb752f41e9d22e801cd5446a}{restrictedEntryLabel\_2}};}
+\DoxyCodeLine{00078\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a3cab66bdd577c6ab49ff806f5a8dbbef}{restrictedEntryLineEdit\_2}};}
+\DoxyCodeLine{00079\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}};}
+\DoxyCodeLine{00080\ \ \ \ \ QFormLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}};}
+\DoxyCodeLine{00081\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a4c610c74e804ae24430152dabd860b6d}{labelTerrace}};}
+\DoxyCodeLine{00082\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ad33320ac4e53868d232ce7a85aa95dca}{checkBoxTerrace}};}
+\DoxyCodeLine{00083\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a430795baffbfeba49b678eb93c8f8f83}{labelSpecial}};}
+\DoxyCodeLine{00084\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a6bd46f825911a942370e38629d63eeec}{lineEditSpecialDrink}};}
+\DoxyCodeLine{00085\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_aa7a008e3a24946b8aba02ffa618ef0ce}{takeAwayLabel\_2}};}
+\DoxyCodeLine{00086\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a0f209e10b3b5c33c2b6b6d99fb8c5ddd}{takeAwayCheckBox\_2}};}
+\DoxyCodeLine{00087\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_ac11f99cc87505b1c70e526d75b1502e5}{averageWaitingTimeLabel\_2}};}
+\DoxyCodeLine{00088\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a21a09d5c9794bf195db7775117a04ddc}{averageWaitingTimeTimeEdit\_2}};}
+\DoxyCodeLine{00089\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a5c44725eee4b393ee6442cb7fbe2cf78}{veganMenuLabel\_2}};}
+\DoxyCodeLine{00090\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a48b0c57d7318e1893dba87084fffb7cb}{veganMenuCheckBox\_2}};}
+\DoxyCodeLine{00091\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}};}
+\DoxyCodeLine{00092\ \ \ \ \ QFormLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}};}
+\DoxyCodeLine{00093\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a2593366fac2f3b9561b20a6054c34e85}{takeAwayLabel}};}
+\DoxyCodeLine{00094\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a6567d3374cb89a3bcfa2ad6a86f20546}{takeAwayCheckBox}};}
+\DoxyCodeLine{00095\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a17f05576362a870738688c7d9341136f}{veganMenuLabel}};}
+\DoxyCodeLine{00096\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a5ba00bac1b74d33f45266bae6bd021a8}{veganMenuCheckBox}};}
+\DoxyCodeLine{00097\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a9d023ed3f8df72bf7c4bf865ea57ee37}{labelCuisineType}};}
+\DoxyCodeLine{00098\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a2981a17d2340d755a84f684d206e5240}{lineEditCuisine}};}
+\DoxyCodeLine{00099\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a3f4d9a195b54ab028036f7eea45ed4e1}{labelReservation}};}
+\DoxyCodeLine{00100\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a0b044dcc97e8356b8382e8697e01e085}{checkBoxReservation}};}
+\DoxyCodeLine{00101\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a00540c386209a1496f674256fd53041d}{labelSD\_2}};}
+\DoxyCodeLine{00102\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a168a5ba52fb9a702398265e7f933f83e}{lineEditSpecialDish}};}
+\DoxyCodeLine{00103\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_ae5d80ebedbb736743c80926e1d432d56}{averageWaitingTimeLabel}};}
+\DoxyCodeLine{00104\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a4093b0ada7999d2e39a3bc892837fa0b}{averageWaitingTimeTimeEdit}};}
+\DoxyCodeLine{00105\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}};}
+\DoxyCodeLine{00106\ \ \ \ \ QFormLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}};}
+\DoxyCodeLine{00107\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_af00e6059f2800ac518a55babaa4d28d2}{labelShops}};}
+\DoxyCodeLine{00108\ \ \ \ \ QSpinBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ad00e0b57cbc73200fdbb64329485fd09}{spinBoxShopCount}};}
+\DoxyCodeLine{00109\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a7959b5355d35f0991ffa385333ae9a77}{labelCinema}};}
+\DoxyCodeLine{00110\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a42ef3a3971c37e99a597b571f678c4d7}{checkBoxCinema}};}
+\DoxyCodeLine{00111\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a385a5e4a19da83e25cbebc35ce7fb062}{labelFP}};}
+\DoxyCodeLine{00112\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ad811b933fefb42a5fac1388b1fdc2db8}{checkBoxParking}};}
+\DoxyCodeLine{00113\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a9ed5c0e65fd820189a4e6318d7f9443a}{outdoorLabel\_2}};}
+\DoxyCodeLine{00114\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a42f8b5d31a6148af5ac8ca2d3fa487bf}{outdoorCheckBox\_2}};}
+\DoxyCodeLine{00115\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a6b81fa5b44d80cc7f44076cce943ce26}{foodAreaLabel\_2}};}
+\DoxyCodeLine{00116\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_addb55edc5c9ba8e7f2d78cc0f84f1b6c}{foodAreaCheckBox\_2}};}
+\DoxyCodeLine{00117\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_ad4a89fb2545fff047b01edf66ae3231a}{standNumberLabel\_2}};}
+\DoxyCodeLine{00118\ \ \ \ \ QSpinBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ac832470bd611c58a9539045189bbe5c4}{standNumberSpinBox\_2}};}
+\DoxyCodeLine{00119\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}};}
+\DoxyCodeLine{00120\ \ \ \ \ QFormLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}};}
+\DoxyCodeLine{00121\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a8be36f65b8b3fcc17614ff18a07426b1}{labelArtisans}};}
+\DoxyCodeLine{00122\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a470ba12dba1e754899d8bf64738fe24f}{checkBoxArtisans}};}
+\DoxyCodeLine{00123\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a4d20b3ab8553a59b49d2c98f883b1762}{labelSeasonal}};}
+\DoxyCodeLine{00124\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a4d98422078b75d89c68a4b06f0dc123d}{checkBoxSeasonal}};}
+\DoxyCodeLine{00125\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a2f1acd1faf8e2ca5c4fa2b34f8287263}{labelPeriod}};}
+\DoxyCodeLine{00126\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a84e47d3ac21a8368bfbfd4882a1efbac}{lineEditPeriod}};}
+\DoxyCodeLine{00127\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_ab1c2f8360bca0a8f7f34a675ff1af810}{outdoorLabel}};}
+\DoxyCodeLine{00128\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a3c6b03480ef4bcd66854e6d766cf6a1a}{outdoorCheckBox}};}
+\DoxyCodeLine{00129\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a897d9978bab85959bb9c412f405af0f4}{foodAreaLabel}};}
+\DoxyCodeLine{00130\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ab58b13480820e1c3f5a3f90e441dae2c}{foodAreaCheckBox}};}
+\DoxyCodeLine{00131\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a4d22cbbc4ddaf6be360153c74e31ecd3}{standNumberLabel}};}
+\DoxyCodeLine{00132\ \ \ \ \ QSpinBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ac49ba5180177b0659f43ca2f76e99013}{standNumberSpinBox}};}
+\DoxyCodeLine{00133\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}};}
+\DoxyCodeLine{00134\ \ \ \ \ QFormLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}};}
+\DoxyCodeLine{00135\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_adfc340a9fae9ef02e73fe4c52ec3714c}{labelSD}};}
+\DoxyCodeLine{00136\ \ \ \ \ QDoubleSpinBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a4be5999980e5b7cfe541bfc8f7fcfe32}{spinBoxStudentDiscount}};}
+\DoxyCodeLine{00137\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a52c56a153541fb3593fda77698840a66}{labelGT}};}
+\DoxyCodeLine{00138\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ae9d63d6a6098797b82e692b063f312b7}{checkBoxGuided}};}
+\DoxyCodeLine{00139\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a6d25af695c767ab60aaa98a3ce1aad3d}{labelCF}};}
+\DoxyCodeLine{00140\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a8c90d74361654bebef2412a1598bed3d}{lineEditCulturalFocus}};}
+\DoxyCodeLine{00141\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_acaa35492c5d634e317633d12136e6121}{labelAD}};}
+\DoxyCodeLine{00142\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a3f5891417b401bb40b4ac169140a3007}{checkBoxAudioGuide}};}
+\DoxyCodeLine{00143\ \ \ \ \ QWidget\ *\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}};}
+\DoxyCodeLine{00144\ \ \ \ \ QFormLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}};}
+\DoxyCodeLine{00145\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a7e117fe94e621efab9b56d4ad5f608e9}{labelUnesco}};}
+\DoxyCodeLine{00146\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_aebd6624592cf6a6374661c481dc85107}{checkBoxUnesco}};}
+\DoxyCodeLine{00147\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_aab8b44eac4357093ccba4fdcc4f05a80}{labelCS}};}
+\DoxyCodeLine{00148\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_ac4bb092e44caf306faa9d73bca3fb3ee}{lineEditConservation}};}
+\DoxyCodeLine{00149\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a42abe26fa932ac66f975e4da5a125a84}{labelOTP}};}
+\DoxyCodeLine{00150\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a15d783430b1f5d52fda7f0fd786bb5d8}{checkBoxOpenToPublic}};}
+\DoxyCodeLine{00151\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_adc87ba2c3a2ba2e577e7b6f66c661fef}{studentDiscountLabel}};}
+\DoxyCodeLine{00152\ \ \ \ \ QDoubleSpinBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a8a1feec89497a16d63fa7b0a03357fa0}{spinBoxStudentDiscount\_2}};}
+\DoxyCodeLine{00153\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a5d9ee96a585c16a5f55bc0842628f941}{guidedTourLabel}};}
+\DoxyCodeLine{00154\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ae7df0ef6cb530fdcfd8d68ad90c22a8c}{checkBoxGuided\_2}};}
+\DoxyCodeLine{00155\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_ac817e52eba990e2679d25df1f805d70c}{culturalFocusLabel}};}
+\DoxyCodeLine{00156\ \ \ \ \ QLineEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a6bc4f2cb08020fdca2f2edf743305eac}{lineEditCulturalFocus\_2}};}
+\DoxyCodeLine{00157\ \ \ \ \ QGroupBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}};}
+\DoxyCodeLine{00158\ \ \ \ \ QGridLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}};}
+\DoxyCodeLine{00159\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a36b71ddeb456fbb2056d027f51047563}{labelHeaderOpen}};}
+\DoxyCodeLine{00160\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a2d762537057bae4a194ae158d8692b39}{labelHeaderClose}};}
+\DoxyCodeLine{00161\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a323573aaa8416dda00762d97717ff8fc}{labelHeaderAlwaysOpen}};}
+\DoxyCodeLine{00162\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a099672a5eb2d18d898ebb7799b58f644}{labelHeaderAlwaysClosed}};}
+\DoxyCodeLine{00163\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_ac15b6a62abdc099919967666d2d470c0}{labelMonday}};}
+\DoxyCodeLine{00164\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a3496918ae1855e2c9ea0c8403b708133}{timeEditMondayOpen}};}
+\DoxyCodeLine{00165\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a80f9c768f1df0bd78951741197a718f2}{timeEditMondayClose}};}
+\DoxyCodeLine{00166\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a732637c6204586627449978a06251927}{checkBoxMondayAlwaysOpen}};}
+\DoxyCodeLine{00167\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ae35e2f084a1edfa4b5ea8bc2f4420b22}{checkBoxMondayAlwaysClosed}};}
+\DoxyCodeLine{00168\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a78fafde160bd74d38c4889ae30f8ddbb}{labelTuesday}};}
+\DoxyCodeLine{00169\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a0065d29a158a2c2118fa9f3bc223be20}{timeEditTuesdayOpen}};}
+\DoxyCodeLine{00170\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_af888afd3007cc205cac04290c5a329bf}{timeEditTuesdayClose}};}
+\DoxyCodeLine{00171\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a340e42d1586bb62bfd1cc341295f6af1}{checkBoxTuesdayAlwaysOpen}};}
+\DoxyCodeLine{00172\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ad8fe71c178a33b148752f4a7cee0686a}{checkBoxTuesdayAlwaysClosed}};}
+\DoxyCodeLine{00173\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_af401a52ac393c5033a7d4002e61c64e7}{labelWednesday}};}
+\DoxyCodeLine{00174\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a44a6bd63b03ac9b406b293e71fc91baa}{timeEditWednesdayOpen}};}
+\DoxyCodeLine{00175\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a728a1a59afc9e5c17d62c910b85ddbad}{timeEditWednesdayClose}};}
+\DoxyCodeLine{00176\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_afe7a09d6fc204f487461b74d336e1f69}{checkBoxWednesdayAlwaysOpen}};}
+\DoxyCodeLine{00177\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a50fd9cf4e7d7a825dbda90545091f4c6}{checkBoxWednesdayAlwaysClosed}};}
+\DoxyCodeLine{00178\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a3124ba00679183791b3ae36d86f83bfe}{labelThursday}};}
+\DoxyCodeLine{00179\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_abceb2535595e92092e370f06ada77b6a}{timeEditThursdayOpen}};}
+\DoxyCodeLine{00180\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a87bfecaab9c1ef0b85b306651529c293}{timeEditThursdayClose}};}
+\DoxyCodeLine{00181\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a60be8c7b6b7eeaf4d0a8346ca1f7fee2}{checkBoxThursdayAlwaysOpen}};}
+\DoxyCodeLine{00182\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a978124f4001303e78c39608d7c05bbd9}{checkBoxThursdayAlwaysClosed}};}
+\DoxyCodeLine{00183\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a2c2db007089eb3fe3266e5d6c31dca22}{labelFriday}};}
+\DoxyCodeLine{00184\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_aa8f5ebf0e52d368cbdc124ef8799bf75}{timeEditFridayOpen}};}
+\DoxyCodeLine{00185\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a6e9404da268bb6e71726f14954acc705}{timeEditFridayClose}};}
+\DoxyCodeLine{00186\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a38be31c9be3333cb623db9ca0036c01f}{checkBoxFridayAlwaysOpen}};}
+\DoxyCodeLine{00187\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a0ea302eebf97b7ebeb3a0105d38809af}{checkBoxFridayAlwaysClosed}};}
+\DoxyCodeLine{00188\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a0550a59c82535e15a8c9a519570fe34d}{labelSaturday}};}
+\DoxyCodeLine{00189\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_abfb883805d2980c2f9c623d3c778c862}{timeEditSaturdayOpen}};}
+\DoxyCodeLine{00190\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a515133e8dfe0d114df473c54a831bf2f}{timeEditSaturdayClose}};}
+\DoxyCodeLine{00191\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ac419d90e289695ed8847fb51354889ff}{checkBoxSaturdayAlwaysOpen}};}
+\DoxyCodeLine{00192\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_ae099fdf90c9fefa257148f44c5896486}{checkBoxSaturdayAlwaysClosed}};}
+\DoxyCodeLine{00193\ \ \ \ \ QLabel\ *\mbox{\hyperlink{class_ui___create_place_widget_a79af477308413874a4a659a12160e4b5}{labelSunday}};}
+\DoxyCodeLine{00194\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a522000649cca5df12f19fc6bbcb1f61e}{timeEditSundayOpen}};}
+\DoxyCodeLine{00195\ \ \ \ \ QTimeEdit\ *\mbox{\hyperlink{class_ui___create_place_widget_a8967de88d6ba89c852d9c45d6720ea68}{timeEditSundayClose}};}
+\DoxyCodeLine{00196\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a6999253790b06f6f31e3bb272b9e808d}{checkBoxSundayAlwaysOpen}};}
+\DoxyCodeLine{00197\ \ \ \ \ QCheckBox\ *\mbox{\hyperlink{class_ui___create_place_widget_a08ed72120c3d58a5b1ced29cd8f99263}{checkBoxSundayAlwaysClosed}};}
+\DoxyCodeLine{00198\ \ \ \ \ QHBoxLayout\ *\mbox{\hyperlink{class_ui___create_place_widget_ab0213ffb8df1deddd18ca742c537dfdc}{hboxLayout}};}
+\DoxyCodeLine{00199\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_ui___create_place_widget_a947bf1285691fd13b6478372646470d8}{pushButtonCreate}};}
+\DoxyCodeLine{00200\ \ \ \ \ QPushButton\ *\mbox{\hyperlink{class_ui___create_place_widget_a8da058041ec857e2b6b6bc3916e5efbd}{pushButtonCancel}};}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ui___create_place_widget_a70a8506d21894e7d410c32a4482ca506}{setupUi}}(QWidget\ *\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}})}
+\DoxyCodeLine{00203\ \ \ \ \ \{}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}}-\/>objectName().isEmpty())}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}}-\/>setObjectName(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}});}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}}-\/>resize(476,\ 728);}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a904cc9958b7b98770ea4bf19bacdcf57}{mainLayout}}\ =\ \textcolor{keyword}{new}\ QVBoxLayout(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a904cc9958b7b98770ea4bf19bacdcf57}{mainLayout}}-\/>setObjectName(\textcolor{stringliteral}{"{}mainLayout"{}});}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}\ =\ \textcolor{keyword}{new}\ QFormLayout();}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout"{}});}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad3634aed4d796d1097d4f44cf4b16989}{labelType}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad3634aed4d796d1097d4f44cf4b16989}{labelType}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelType"{}});}
+\DoxyCodeLine{00213\ }
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(0,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ad3634aed4d796d1097d4f44cf4b16989}{labelType}});}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}\ =\ \textcolor{keyword}{new}\ QComboBox(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>addItem(QString());}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>addItem(QString());}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>addItem(QString());}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>addItem(QString());}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>addItem(QString());}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>addItem(QString());}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>addItem(QString());}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>addItem(QString());}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>setObjectName(\textcolor{stringliteral}{"{}comboBoxType"{}});}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(0,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}});}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad7f5d6e1526199a844de5587a58f2b10}{labelName}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad7f5d6e1526199a844de5587a58f2b10}{labelName}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelName"{}});}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(1,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ad7f5d6e1526199a844de5587a58f2b10}{labelName}});}
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aea86996ab30fa7ce361d2a9d1c488d4c}{lineEditName}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aea86996ab30fa7ce361d2a9d1c488d4c}{lineEditName}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditName"{}});}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(1,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_aea86996ab30fa7ce361d2a9d1c488d4c}{lineEditName}});}
+\DoxyCodeLine{00238\ }
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5a3a946efc8bbb53085229ec05dad342}{labelCity}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00240\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5a3a946efc8bbb53085229ec05dad342}{labelCity}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelCity"{}});}
+\DoxyCodeLine{00241\ }
+\DoxyCodeLine{00242\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(2,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a5a3a946efc8bbb53085229ec05dad342}{labelCity}});}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a99cb8e57e327c71b4c1f3543490492d5}{lineEditCity}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a99cb8e57e327c71b4c1f3543490492d5}{lineEditCity}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditCity"{}});}
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00247\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(2,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a99cb8e57e327c71b4c1f3543490492d5}{lineEditCity}});}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5a9b7f953a9067b32aa0e21d40582bca}{labelDescription}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5a9b7f953a9067b32aa0e21d40582bca}{labelDescription}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelDescription"{}});}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(3,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a5a9b7f953a9067b32aa0e21d40582bca}{labelDescription}});}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0c4f0139e218e8314a7eefb234ef1ea8}{textEditDescription}}\ =\ \textcolor{keyword}{new}\ QTextEdit(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0c4f0139e218e8314a7eefb234ef1ea8}{textEditDescription}}-\/>setObjectName(\textcolor{stringliteral}{"{}textEditDescription"{}});}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(3,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a0c4f0139e218e8314a7eefb234ef1ea8}{textEditDescription}});}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a69a33404eb7733a5cc96ce7e4e9d71b4}{labelRating}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a69a33404eb7733a5cc96ce7e4e9d71b4}{labelRating}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelRating"{}});}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(4,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a69a33404eb7733a5cc96ce7e4e9d71b4}{labelRating}});}
+\DoxyCodeLine{00263\ }
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae37e48be1df624b0e64cced7391bfdb2}{spinBoxRating}}\ =\ \textcolor{keyword}{new}\ QDoubleSpinBox(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae37e48be1df624b0e64cced7391bfdb2}{spinBoxRating}}-\/>setObjectName(\textcolor{stringliteral}{"{}spinBoxRating"{}});}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae37e48be1df624b0e64cced7391bfdb2}{spinBoxRating}}-\/>setMaximum(5.000000000000000);}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae37e48be1df624b0e64cced7391bfdb2}{spinBoxRating}}-\/>setSingleStep(0.100000000000000);}
+\DoxyCodeLine{00268\ }
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(4,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ae37e48be1df624b0e64cced7391bfdb2}{spinBoxRating}});}
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aebfe76ea2ef39f6387ab06a4407ce3c9}{labelCost}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aebfe76ea2ef39f6387ab06a4407ce3c9}{labelCost}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelCost"{}});}
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(5,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_aebfe76ea2ef39f6387ab06a4407ce3c9}{labelCost}});}
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a1e96e49d1aff4aa077ef57062b52504a}{spinBoxCost}}\ =\ \textcolor{keyword}{new}\ QDoubleSpinBox(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a1e96e49d1aff4aa077ef57062b52504a}{spinBoxCost}}-\/>setObjectName(\textcolor{stringliteral}{"{}spinBoxCost"{}});}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a1e96e49d1aff4aa077ef57062b52504a}{spinBoxCost}}-\/>setMaximum(1000.000000000000000);}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a1e96e49d1aff4aa077ef57062b52504a}{spinBoxCost}}-\/>setSingleStep(1.000000000000000);}
+\DoxyCodeLine{00280\ }
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}}-\/>setWidget(5,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a1e96e49d1aff4aa077ef57062b52504a}{spinBoxCost}});}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ }
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a904cc9958b7b98770ea4bf19bacdcf57}{mainLayout}}-\/>addLayout(\mbox{\hyperlink{class_ui___create_place_widget_adf6622ea7ec0ba1ce5fe63f1246d73f9}{formLayout}});}
+\DoxyCodeLine{00285\ }
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}\ =\ \textcolor{keyword}{new}\ QStackedWidget(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}-\/>setObjectName(\textcolor{stringliteral}{"{}stackedWidgetDetails"{}});}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}}\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}}-\/>setObjectName(\textcolor{stringliteral}{"{}pageDisco"{}});}
+\DoxyCodeLine{00290\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}\ =\ \textcolor{keyword}{new}\ QFormLayout(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout1"{}});}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7859e7c5dae684cffcf4b63e3886f21b}{labelMG}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7859e7c5dae684cffcf4b63e3886f21b}{labelMG}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelMG"{}});}
+\DoxyCodeLine{00294\ }
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(3,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a7859e7c5dae684cffcf4b63e3886f21b}{labelMG}});}
+\DoxyCodeLine{00296\ }
+\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adc0941733cf9f67c6ff2cd8853d0cfd9}{lineEditMusicGenre}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adc0941733cf9f67c6ff2cd8853d0cfd9}{lineEditMusicGenre}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditMusicGenre"{}});}
+\DoxyCodeLine{00299\ }
+\DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(3,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_adc0941733cf9f67c6ff2cd8853d0cfd9}{lineEditMusicGenre}});}
+\DoxyCodeLine{00301\ }
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8bc52c90c2109219291219deef44b34d}{labelPrive}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8bc52c90c2109219291219deef44b34d}{labelPrive}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelPrive"{}});}
+\DoxyCodeLine{00304\ }
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(4,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a8bc52c90c2109219291219deef44b34d}{labelPrive}});}
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a39b6d8babefbc6ae1b27163fe16b4e1b}{checkBoxPrive}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a39b6d8babefbc6ae1b27163fe16b4e1b}{checkBoxPrive}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxPrive"{}});}
+\DoxyCodeLine{00309\ }
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(4,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a39b6d8babefbc6ae1b27163fe16b4e1b}{checkBoxPrive}});}
+\DoxyCodeLine{00311\ }
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3a5dfca7432ff491466a273e4d2ac6c9}{labelDC}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00313\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3a5dfca7432ff491466a273e4d2ac6c9}{labelDC}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelDC"{}});}
+\DoxyCodeLine{00314\ }
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(5,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a3a5dfca7432ff491466a273e4d2ac6c9}{labelDC}});}
+\DoxyCodeLine{00316\ }
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cff34156f95a226b021fa93475a9137}{lineEditDressCode}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cff34156f95a226b021fa93475a9137}{lineEditDressCode}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditDressCode"{}});}
+\DoxyCodeLine{00319\ }
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(5,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a3cff34156f95a226b021fa93475a9137}{lineEditDressCode}});}
+\DoxyCodeLine{00321\ }
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac85d0cb2a62cd58f19fb054bce97825b}{averageStayLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00323\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac85d0cb2a62cd58f19fb054bce97825b}{averageStayLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}averageStayLabel"{}});}
+\DoxyCodeLine{00324\ }
+\DoxyCodeLine{00325\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(0,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ac85d0cb2a62cd58f19fb054bce97825b}{averageStayLabel}});}
+\DoxyCodeLine{00326\ }
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aef9bdbb631c1ebf059dedbaca512ebb1}{averageStayTimeEdit}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aef9bdbb631c1ebf059dedbaca512ebb1}{averageStayTimeEdit}}-\/>setObjectName(\textcolor{stringliteral}{"{}averageStayTimeEdit"{}});}
+\DoxyCodeLine{00329\ }
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(0,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_aef9bdbb631c1ebf059dedbaca512ebb1}{averageStayTimeEdit}});}
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7d90c6f55094e3a574f01c494e15a5d7}{minimumAgeLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00333\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7d90c6f55094e3a574f01c494e15a5d7}{minimumAgeLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}minimumAgeLabel"{}});}
+\DoxyCodeLine{00334\ }
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(1,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a7d90c6f55094e3a574f01c494e15a5d7}{minimumAgeLabel}});}
+\DoxyCodeLine{00336\ }
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadd663ba327659d87dace607e3213c4c}{minimumAgeSpinBox}}\ =\ \textcolor{keyword}{new}\ QSpinBox(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00338\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadd663ba327659d87dace607e3213c4c}{minimumAgeSpinBox}}-\/>setObjectName(\textcolor{stringliteral}{"{}minimumAgeSpinBox"{}});}
+\DoxyCodeLine{00339\ }
+\DoxyCodeLine{00340\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(1,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_aadd663ba327659d87dace607e3213c4c}{minimumAgeSpinBox}});}
+\DoxyCodeLine{00341\ }
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadbd61f96162e8081678c69c70a1186f}{restrictedEntryLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00343\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadbd61f96162e8081678c69c70a1186f}{restrictedEntryLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}restrictedEntryLabel"{}});}
+\DoxyCodeLine{00344\ }
+\DoxyCodeLine{00345\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(2,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_aadbd61f96162e8081678c69c70a1186f}{restrictedEntryLabel}});}
+\DoxyCodeLine{00346\ }
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a10b1f7728ae73bf2d80c8c6c859c09fb}{restrictedEntryLineEdit}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a10b1f7728ae73bf2d80c8c6c859c09fb}{restrictedEntryLineEdit}}-\/>setObjectName(\textcolor{stringliteral}{"{}restrictedEntryLineEdit"{}});}
+\DoxyCodeLine{00349\ }
+\DoxyCodeLine{00350\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4de4217a633d55f6d25968dd31f996ee}{formLayout1}}-\/>setWidget(2,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a10b1f7728ae73bf2d80c8c6c859c09fb}{restrictedEntryLineEdit}});}
+\DoxyCodeLine{00351\ }
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a06d152b225193879fe1a0007c17bd17b}{pageDisco}});}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}}\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}}-\/>setObjectName(\textcolor{stringliteral}{"{}pagePanoramicPoints"{}});}
+\DoxyCodeLine{00355\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}\ =\ \textcolor{keyword}{new}\ QFormLayout(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout2"{}});}
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aeeaae1fd0bfbdd5783e667f9a34188d5}{labelAltitude}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aeeaae1fd0bfbdd5783e667f9a34188d5}{labelAltitude}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelAltitude"{}});}
+\DoxyCodeLine{00359\ }
+\DoxyCodeLine{00360\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(3,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_aeeaae1fd0bfbdd5783e667f9a34188d5}{labelAltitude}});}
+\DoxyCodeLine{00361\ }
+\DoxyCodeLine{00362\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a645a8c885d349bc4fe3e47d6327382ae}{spinBoxAltitude}}\ =\ \textcolor{keyword}{new}\ QDoubleSpinBox(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00363\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a645a8c885d349bc4fe3e47d6327382ae}{spinBoxAltitude}}-\/>setObjectName(\textcolor{stringliteral}{"{}spinBoxAltitude"{}});}
+\DoxyCodeLine{00364\ }
+\DoxyCodeLine{00365\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(3,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a645a8c885d349bc4fe3e47d6327382ae}{spinBoxAltitude}});}
+\DoxyCodeLine{00366\ }
+\DoxyCodeLine{00367\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0b3b87be6ae51f90cd22e7657c3699b5}{labelBinoculars}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00368\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0b3b87be6ae51f90cd22e7657c3699b5}{labelBinoculars}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelBinoculars"{}});}
+\DoxyCodeLine{00369\ }
+\DoxyCodeLine{00370\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(4,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a0b3b87be6ae51f90cd22e7657c3699b5}{labelBinoculars}});}
+\DoxyCodeLine{00371\ }
+\DoxyCodeLine{00372\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_afd44194e92bd7ad32f29478e9b4eeda2}{checkBoxBinoculars}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00373\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_afd44194e92bd7ad32f29478e9b4eeda2}{checkBoxBinoculars}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxBinoculars"{}});}
+\DoxyCodeLine{00374\ }
+\DoxyCodeLine{00375\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(4,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_afd44194e92bd7ad32f29478e9b4eeda2}{checkBoxBinoculars}});}
+\DoxyCodeLine{00376\ }
+\DoxyCodeLine{00377\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a847cab99a2483306cd37363b12372157}{labelNightLighting}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00378\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a847cab99a2483306cd37363b12372157}{labelNightLighting}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelNightLighting"{}});}
+\DoxyCodeLine{00379\ }
+\DoxyCodeLine{00380\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(5,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a847cab99a2483306cd37363b12372157}{labelNightLighting}});}
+\DoxyCodeLine{00381\ }
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac151ce46e0a58d264bcb7da347ee8d58}{checkBoxNightLighting}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00383\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac151ce46e0a58d264bcb7da347ee8d58}{checkBoxNightLighting}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxNightLighting"{}});}
+\DoxyCodeLine{00384\ }
+\DoxyCodeLine{00385\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(5,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ac151ce46e0a58d264bcb7da347ee8d58}{checkBoxNightLighting}});}
+\DoxyCodeLine{00386\ }
+\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3dc0fd97fbc38dc5862cc1039dfd9286}{averageStayLabel\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3dc0fd97fbc38dc5862cc1039dfd9286}{averageStayLabel\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}averageStayLabel\_2"{}});}
+\DoxyCodeLine{00389\ }
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(0,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a3dc0fd97fbc38dc5862cc1039dfd9286}{averageStayLabel\_2}});}
+\DoxyCodeLine{00391\ }
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab9a1df4c415f7202ececbb5fe418eb9f}{averageStayTimeEdit\_2}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00393\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab9a1df4c415f7202ececbb5fe418eb9f}{averageStayTimeEdit\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}averageStayTimeEdit\_2"{}});}
+\DoxyCodeLine{00394\ }
+\DoxyCodeLine{00395\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(0,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ab9a1df4c415f7202ececbb5fe418eb9f}{averageStayTimeEdit\_2}});}
+\DoxyCodeLine{00396\ }
+\DoxyCodeLine{00397\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0b7198b67a2c6bc2bb86cdc946eb5dcf}{minimumAgeLabel\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0b7198b67a2c6bc2bb86cdc946eb5dcf}{minimumAgeLabel\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}minimumAgeLabel\_2"{}});}
+\DoxyCodeLine{00399\ }
+\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(1,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a0b7198b67a2c6bc2bb86cdc946eb5dcf}{minimumAgeLabel\_2}});}
+\DoxyCodeLine{00401\ }
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adb66e4803bfc39aa0af319ca9f161956}{minimumAgeSpinBox\_2}}\ =\ \textcolor{keyword}{new}\ QSpinBox(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00403\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adb66e4803bfc39aa0af319ca9f161956}{minimumAgeSpinBox\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}minimumAgeSpinBox\_2"{}});}
+\DoxyCodeLine{00404\ }
+\DoxyCodeLine{00405\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(1,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_adb66e4803bfc39aa0af319ca9f161956}{minimumAgeSpinBox\_2}});}
+\DoxyCodeLine{00406\ }
+\DoxyCodeLine{00407\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8d42279fcb752f41e9d22e801cd5446a}{restrictedEntryLabel\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00408\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8d42279fcb752f41e9d22e801cd5446a}{restrictedEntryLabel\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}restrictedEntryLabel\_2"{}});}
+\DoxyCodeLine{00409\ }
+\DoxyCodeLine{00410\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(2,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a8d42279fcb752f41e9d22e801cd5446a}{restrictedEntryLabel\_2}});}
+\DoxyCodeLine{00411\ }
+\DoxyCodeLine{00412\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cab66bdd577c6ab49ff806f5a8dbbef}{restrictedEntryLineEdit\_2}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00413\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cab66bdd577c6ab49ff806f5a8dbbef}{restrictedEntryLineEdit\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}restrictedEntryLineEdit\_2"{}});}
+\DoxyCodeLine{00414\ }
+\DoxyCodeLine{00415\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0e92fd747335afad239f9969713068c3}{formLayout2}}-\/>setWidget(2,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a3cab66bdd577c6ab49ff806f5a8dbbef}{restrictedEntryLineEdit\_2}});}
+\DoxyCodeLine{00416\ }
+\DoxyCodeLine{00417\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a3580b95121258cfd4c3438931f967a53}{pagePanoramicPoints}});}
+\DoxyCodeLine{00418\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}}\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00419\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}}-\/>setObjectName(\textcolor{stringliteral}{"{}pageCafe"{}});}
+\DoxyCodeLine{00420\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}\ =\ \textcolor{keyword}{new}\ QFormLayout(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00421\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout3"{}});}
+\DoxyCodeLine{00422\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4c610c74e804ae24430152dabd860b6d}{labelTerrace}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00423\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4c610c74e804ae24430152dabd860b6d}{labelTerrace}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelTerrace"{}});}
+\DoxyCodeLine{00424\ }
+\DoxyCodeLine{00425\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setWidget(3,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a4c610c74e804ae24430152dabd860b6d}{labelTerrace}});}
+\DoxyCodeLine{00426\ }
+\DoxyCodeLine{00427\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad33320ac4e53868d232ce7a85aa95dca}{checkBoxTerrace}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00428\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad33320ac4e53868d232ce7a85aa95dca}{checkBoxTerrace}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxTerrace"{}});}
+\DoxyCodeLine{00429\ }
+\DoxyCodeLine{00430\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setWidget(3,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ad33320ac4e53868d232ce7a85aa95dca}{checkBoxTerrace}});}
+\DoxyCodeLine{00431\ }
+\DoxyCodeLine{00432\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a430795baffbfeba49b678eb93c8f8f83}{labelSpecial}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00433\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a430795baffbfeba49b678eb93c8f8f83}{labelSpecial}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelSpecial"{}});}
+\DoxyCodeLine{00434\ }
+\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setWidget(4,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a430795baffbfeba49b678eb93c8f8f83}{labelSpecial}});}
+\DoxyCodeLine{00436\ }
+\DoxyCodeLine{00437\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6bd46f825911a942370e38629d63eeec}{lineEditSpecialDrink}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6bd46f825911a942370e38629d63eeec}{lineEditSpecialDrink}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditSpecialDrink"{}});}
+\DoxyCodeLine{00439\ }
+\DoxyCodeLine{00440\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setWidget(4,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a6bd46f825911a942370e38629d63eeec}{lineEditSpecialDrink}});}
+\DoxyCodeLine{00441\ }
+\DoxyCodeLine{00442\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa7a008e3a24946b8aba02ffa618ef0ce}{takeAwayLabel\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa7a008e3a24946b8aba02ffa618ef0ce}{takeAwayLabel\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}takeAwayLabel\_2"{}});}
+\DoxyCodeLine{00444\ }
+\DoxyCodeLine{00445\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setWidget(0,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_aa7a008e3a24946b8aba02ffa618ef0ce}{takeAwayLabel\_2}});}
+\DoxyCodeLine{00446\ }
+\DoxyCodeLine{00447\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0f209e10b3b5c33c2b6b6d99fb8c5ddd}{takeAwayCheckBox\_2}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00448\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0f209e10b3b5c33c2b6b6d99fb8c5ddd}{takeAwayCheckBox\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}takeAwayCheckBox\_2"{}});}
+\DoxyCodeLine{00449\ }
+\DoxyCodeLine{00450\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setWidget(0,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a0f209e10b3b5c33c2b6b6d99fb8c5ddd}{takeAwayCheckBox\_2}});}
+\DoxyCodeLine{00451\ }
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac11f99cc87505b1c70e526d75b1502e5}{averageWaitingTimeLabel\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac11f99cc87505b1c70e526d75b1502e5}{averageWaitingTimeLabel\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}averageWaitingTimeLabel\_2"{}});}
+\DoxyCodeLine{00454\ }
+\DoxyCodeLine{00455\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setWidget(1,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ac11f99cc87505b1c70e526d75b1502e5}{averageWaitingTimeLabel\_2}});}
+\DoxyCodeLine{00456\ }
+\DoxyCodeLine{00457\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a21a09d5c9794bf195db7775117a04ddc}{averageWaitingTimeTimeEdit\_2}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00458\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a21a09d5c9794bf195db7775117a04ddc}{averageWaitingTimeTimeEdit\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}averageWaitingTimeTimeEdit\_2"{}});}
+\DoxyCodeLine{00459\ }
+\DoxyCodeLine{00460\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setWidget(1,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a21a09d5c9794bf195db7775117a04ddc}{averageWaitingTimeTimeEdit\_2}});}
+\DoxyCodeLine{00461\ }
+\DoxyCodeLine{00462\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5c44725eee4b393ee6442cb7fbe2cf78}{veganMenuLabel\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00463\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5c44725eee4b393ee6442cb7fbe2cf78}{veganMenuLabel\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}veganMenuLabel\_2"{}});}
+\DoxyCodeLine{00464\ }
+\DoxyCodeLine{00465\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setWidget(2,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a5c44725eee4b393ee6442cb7fbe2cf78}{veganMenuLabel\_2}});}
+\DoxyCodeLine{00466\ }
+\DoxyCodeLine{00467\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a48b0c57d7318e1893dba87084fffb7cb}{veganMenuCheckBox\_2}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00468\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a48b0c57d7318e1893dba87084fffb7cb}{veganMenuCheckBox\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}veganMenuCheckBox\_2"{}});}
+\DoxyCodeLine{00469\ }
+\DoxyCodeLine{00470\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3e67382f985719cdd9f9f43195954cb9}{formLayout3}}-\/>setWidget(2,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a48b0c57d7318e1893dba87084fffb7cb}{veganMenuCheckBox\_2}});}
+\DoxyCodeLine{00471\ }
+\DoxyCodeLine{00472\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_ab9f0042954147c85922f7f435c430fbf}{pageCafe}});}
+\DoxyCodeLine{00473\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}}\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00474\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}}-\/>setObjectName(\textcolor{stringliteral}{"{}pageRestaurant"{}});}
+\DoxyCodeLine{00475\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}\ =\ \textcolor{keyword}{new}\ QFormLayout(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00476\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout4"{}});}
+\DoxyCodeLine{00477\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2593366fac2f3b9561b20a6054c34e85}{takeAwayLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00478\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2593366fac2f3b9561b20a6054c34e85}{takeAwayLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}takeAwayLabel"{}});}
+\DoxyCodeLine{00479\ }
+\DoxyCodeLine{00480\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(0,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a2593366fac2f3b9561b20a6054c34e85}{takeAwayLabel}});}
+\DoxyCodeLine{00481\ }
+\DoxyCodeLine{00482\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6567d3374cb89a3bcfa2ad6a86f20546}{takeAwayCheckBox}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00483\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6567d3374cb89a3bcfa2ad6a86f20546}{takeAwayCheckBox}}-\/>setObjectName(\textcolor{stringliteral}{"{}takeAwayCheckBox"{}});}
+\DoxyCodeLine{00484\ }
+\DoxyCodeLine{00485\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(0,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a6567d3374cb89a3bcfa2ad6a86f20546}{takeAwayCheckBox}});}
+\DoxyCodeLine{00486\ }
+\DoxyCodeLine{00487\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a17f05576362a870738688c7d9341136f}{veganMenuLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00488\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a17f05576362a870738688c7d9341136f}{veganMenuLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}veganMenuLabel"{}});}
+\DoxyCodeLine{00489\ }
+\DoxyCodeLine{00490\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(2,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a17f05576362a870738688c7d9341136f}{veganMenuLabel}});}
+\DoxyCodeLine{00491\ }
+\DoxyCodeLine{00492\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5ba00bac1b74d33f45266bae6bd021a8}{veganMenuCheckBox}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00493\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5ba00bac1b74d33f45266bae6bd021a8}{veganMenuCheckBox}}-\/>setObjectName(\textcolor{stringliteral}{"{}veganMenuCheckBox"{}});}
+\DoxyCodeLine{00494\ }
+\DoxyCodeLine{00495\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(2,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a5ba00bac1b74d33f45266bae6bd021a8}{veganMenuCheckBox}});}
+\DoxyCodeLine{00496\ }
+\DoxyCodeLine{00497\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a9d023ed3f8df72bf7c4bf865ea57ee37}{labelCuisineType}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00498\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a9d023ed3f8df72bf7c4bf865ea57ee37}{labelCuisineType}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelCuisineType"{}});}
+\DoxyCodeLine{00499\ }
+\DoxyCodeLine{00500\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(3,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a9d023ed3f8df72bf7c4bf865ea57ee37}{labelCuisineType}});}
+\DoxyCodeLine{00501\ }
+\DoxyCodeLine{00502\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2981a17d2340d755a84f684d206e5240}{lineEditCuisine}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00503\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2981a17d2340d755a84f684d206e5240}{lineEditCuisine}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditCuisine"{}});}
+\DoxyCodeLine{00504\ }
+\DoxyCodeLine{00505\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(3,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a2981a17d2340d755a84f684d206e5240}{lineEditCuisine}});}
+\DoxyCodeLine{00506\ }
+\DoxyCodeLine{00507\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3f4d9a195b54ab028036f7eea45ed4e1}{labelReservation}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00508\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3f4d9a195b54ab028036f7eea45ed4e1}{labelReservation}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelReservation"{}});}
+\DoxyCodeLine{00509\ }
+\DoxyCodeLine{00510\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(4,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a3f4d9a195b54ab028036f7eea45ed4e1}{labelReservation}});}
+\DoxyCodeLine{00511\ }
+\DoxyCodeLine{00512\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0b044dcc97e8356b8382e8697e01e085}{checkBoxReservation}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00513\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0b044dcc97e8356b8382e8697e01e085}{checkBoxReservation}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxReservation"{}});}
+\DoxyCodeLine{00514\ }
+\DoxyCodeLine{00515\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(4,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a0b044dcc97e8356b8382e8697e01e085}{checkBoxReservation}});}
+\DoxyCodeLine{00516\ }
+\DoxyCodeLine{00517\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a00540c386209a1496f674256fd53041d}{labelSD\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00518\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a00540c386209a1496f674256fd53041d}{labelSD\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelSD\_2"{}});}
+\DoxyCodeLine{00519\ }
+\DoxyCodeLine{00520\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(5,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a00540c386209a1496f674256fd53041d}{labelSD\_2}});}
+\DoxyCodeLine{00521\ }
+\DoxyCodeLine{00522\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a168a5ba52fb9a702398265e7f933f83e}{lineEditSpecialDish}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00523\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a168a5ba52fb9a702398265e7f933f83e}{lineEditSpecialDish}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditSpecialDish"{}});}
+\DoxyCodeLine{00524\ }
+\DoxyCodeLine{00525\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(5,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a168a5ba52fb9a702398265e7f933f83e}{lineEditSpecialDish}});}
+\DoxyCodeLine{00526\ }
+\DoxyCodeLine{00527\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae5d80ebedbb736743c80926e1d432d56}{averageWaitingTimeLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00528\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae5d80ebedbb736743c80926e1d432d56}{averageWaitingTimeLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}averageWaitingTimeLabel"{}});}
+\DoxyCodeLine{00529\ }
+\DoxyCodeLine{00530\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(1,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ae5d80ebedbb736743c80926e1d432d56}{averageWaitingTimeLabel}});}
+\DoxyCodeLine{00531\ }
+\DoxyCodeLine{00532\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4093b0ada7999d2e39a3bc892837fa0b}{averageWaitingTimeTimeEdit}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00533\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4093b0ada7999d2e39a3bc892837fa0b}{averageWaitingTimeTimeEdit}}-\/>setObjectName(\textcolor{stringliteral}{"{}averageWaitingTimeTimeEdit"{}});}
+\DoxyCodeLine{00534\ }
+\DoxyCodeLine{00535\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa778bada43954b840161e2c387ad5eac}{formLayout4}}-\/>setWidget(1,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a4093b0ada7999d2e39a3bc892837fa0b}{averageWaitingTimeTimeEdit}});}
+\DoxyCodeLine{00536\ }
+\DoxyCodeLine{00537\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a0abd926ebee75d0dbebc311e7ad8dd39}{pageRestaurant}});}
+\DoxyCodeLine{00538\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}}\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00539\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}}-\/>setObjectName(\textcolor{stringliteral}{"{}pageMall"{}});}
+\DoxyCodeLine{00540\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}\ =\ \textcolor{keyword}{new}\ QFormLayout(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00541\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout5"{}});}
+\DoxyCodeLine{00542\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af00e6059f2800ac518a55babaa4d28d2}{labelShops}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00543\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af00e6059f2800ac518a55babaa4d28d2}{labelShops}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelShops"{}});}
+\DoxyCodeLine{00544\ }
+\DoxyCodeLine{00545\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(3,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_af00e6059f2800ac518a55babaa4d28d2}{labelShops}});}
+\DoxyCodeLine{00546\ }
+\DoxyCodeLine{00547\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad00e0b57cbc73200fdbb64329485fd09}{spinBoxShopCount}}\ =\ \textcolor{keyword}{new}\ QSpinBox(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00548\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad00e0b57cbc73200fdbb64329485fd09}{spinBoxShopCount}}-\/>setObjectName(\textcolor{stringliteral}{"{}spinBoxShopCount"{}});}
+\DoxyCodeLine{00549\ }
+\DoxyCodeLine{00550\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(3,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ad00e0b57cbc73200fdbb64329485fd09}{spinBoxShopCount}});}
+\DoxyCodeLine{00551\ }
+\DoxyCodeLine{00552\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7959b5355d35f0991ffa385333ae9a77}{labelCinema}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00553\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7959b5355d35f0991ffa385333ae9a77}{labelCinema}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelCinema"{}});}
+\DoxyCodeLine{00554\ }
+\DoxyCodeLine{00555\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(4,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a7959b5355d35f0991ffa385333ae9a77}{labelCinema}});}
+\DoxyCodeLine{00556\ }
+\DoxyCodeLine{00557\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a42ef3a3971c37e99a597b571f678c4d7}{checkBoxCinema}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00558\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a42ef3a3971c37e99a597b571f678c4d7}{checkBoxCinema}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxCinema"{}});}
+\DoxyCodeLine{00559\ }
+\DoxyCodeLine{00560\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(4,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a42ef3a3971c37e99a597b571f678c4d7}{checkBoxCinema}});}
+\DoxyCodeLine{00561\ }
+\DoxyCodeLine{00562\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a385a5e4a19da83e25cbebc35ce7fb062}{labelFP}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00563\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a385a5e4a19da83e25cbebc35ce7fb062}{labelFP}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelFP"{}});}
+\DoxyCodeLine{00564\ }
+\DoxyCodeLine{00565\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(5,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a385a5e4a19da83e25cbebc35ce7fb062}{labelFP}});}
+\DoxyCodeLine{00566\ }
+\DoxyCodeLine{00567\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad811b933fefb42a5fac1388b1fdc2db8}{checkBoxParking}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00568\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad811b933fefb42a5fac1388b1fdc2db8}{checkBoxParking}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxParking"{}});}
+\DoxyCodeLine{00569\ }
+\DoxyCodeLine{00570\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(5,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ad811b933fefb42a5fac1388b1fdc2db8}{checkBoxParking}});}
+\DoxyCodeLine{00571\ }
+\DoxyCodeLine{00572\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a9ed5c0e65fd820189a4e6318d7f9443a}{outdoorLabel\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00573\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a9ed5c0e65fd820189a4e6318d7f9443a}{outdoorLabel\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}outdoorLabel\_2"{}});}
+\DoxyCodeLine{00574\ }
+\DoxyCodeLine{00575\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(0,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a9ed5c0e65fd820189a4e6318d7f9443a}{outdoorLabel\_2}});}
+\DoxyCodeLine{00576\ }
+\DoxyCodeLine{00577\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a42f8b5d31a6148af5ac8ca2d3fa487bf}{outdoorCheckBox\_2}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00578\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a42f8b5d31a6148af5ac8ca2d3fa487bf}{outdoorCheckBox\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}outdoorCheckBox\_2"{}});}
+\DoxyCodeLine{00579\ }
+\DoxyCodeLine{00580\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(0,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a42f8b5d31a6148af5ac8ca2d3fa487bf}{outdoorCheckBox\_2}});}
+\DoxyCodeLine{00581\ }
+\DoxyCodeLine{00582\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6b81fa5b44d80cc7f44076cce943ce26}{foodAreaLabel\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00583\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6b81fa5b44d80cc7f44076cce943ce26}{foodAreaLabel\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}foodAreaLabel\_2"{}});}
+\DoxyCodeLine{00584\ }
+\DoxyCodeLine{00585\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(1,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a6b81fa5b44d80cc7f44076cce943ce26}{foodAreaLabel\_2}});}
+\DoxyCodeLine{00586\ }
+\DoxyCodeLine{00587\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_addb55edc5c9ba8e7f2d78cc0f84f1b6c}{foodAreaCheckBox\_2}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00588\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_addb55edc5c9ba8e7f2d78cc0f84f1b6c}{foodAreaCheckBox\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}foodAreaCheckBox\_2"{}});}
+\DoxyCodeLine{00589\ }
+\DoxyCodeLine{00590\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(1,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_addb55edc5c9ba8e7f2d78cc0f84f1b6c}{foodAreaCheckBox\_2}});}
+\DoxyCodeLine{00591\ }
+\DoxyCodeLine{00592\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad4a89fb2545fff047b01edf66ae3231a}{standNumberLabel\_2}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00593\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad4a89fb2545fff047b01edf66ae3231a}{standNumberLabel\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}standNumberLabel\_2"{}});}
+\DoxyCodeLine{00594\ }
+\DoxyCodeLine{00595\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(2,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ad4a89fb2545fff047b01edf66ae3231a}{standNumberLabel\_2}});}
+\DoxyCodeLine{00596\ }
+\DoxyCodeLine{00597\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac832470bd611c58a9539045189bbe5c4}{standNumberSpinBox\_2}}\ =\ \textcolor{keyword}{new}\ QSpinBox(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00598\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac832470bd611c58a9539045189bbe5c4}{standNumberSpinBox\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}standNumberSpinBox\_2"{}});}
+\DoxyCodeLine{00599\ }
+\DoxyCodeLine{00600\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af5fc84b6883a440332d238ccddac0364}{formLayout5}}-\/>setWidget(2,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ac832470bd611c58a9539045189bbe5c4}{standNumberSpinBox\_2}});}
+\DoxyCodeLine{00601\ }
+\DoxyCodeLine{00602\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a2021300baa340ef0afd5fd73be8775ee}{pageMall}});}
+\DoxyCodeLine{00603\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}}\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00604\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}}-\/>setObjectName(\textcolor{stringliteral}{"{}pageLocalMarket"{}});}
+\DoxyCodeLine{00605\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}\ =\ \textcolor{keyword}{new}\ QFormLayout(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00606\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout6"{}});}
+\DoxyCodeLine{00607\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8be36f65b8b3fcc17614ff18a07426b1}{labelArtisans}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00608\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8be36f65b8b3fcc17614ff18a07426b1}{labelArtisans}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelArtisans"{}});}
+\DoxyCodeLine{00609\ }
+\DoxyCodeLine{00610\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(3,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a8be36f65b8b3fcc17614ff18a07426b1}{labelArtisans}});}
+\DoxyCodeLine{00611\ }
+\DoxyCodeLine{00612\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a470ba12dba1e754899d8bf64738fe24f}{checkBoxArtisans}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00613\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a470ba12dba1e754899d8bf64738fe24f}{checkBoxArtisans}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxArtisans"{}});}
+\DoxyCodeLine{00614\ }
+\DoxyCodeLine{00615\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(3,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a470ba12dba1e754899d8bf64738fe24f}{checkBoxArtisans}});}
+\DoxyCodeLine{00616\ }
+\DoxyCodeLine{00617\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4d20b3ab8553a59b49d2c98f883b1762}{labelSeasonal}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00618\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4d20b3ab8553a59b49d2c98f883b1762}{labelSeasonal}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelSeasonal"{}});}
+\DoxyCodeLine{00619\ }
+\DoxyCodeLine{00620\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(4,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a4d20b3ab8553a59b49d2c98f883b1762}{labelSeasonal}});}
+\DoxyCodeLine{00621\ }
+\DoxyCodeLine{00622\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4d98422078b75d89c68a4b06f0dc123d}{checkBoxSeasonal}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00623\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4d98422078b75d89c68a4b06f0dc123d}{checkBoxSeasonal}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxSeasonal"{}});}
+\DoxyCodeLine{00624\ }
+\DoxyCodeLine{00625\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(4,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a4d98422078b75d89c68a4b06f0dc123d}{checkBoxSeasonal}});}
+\DoxyCodeLine{00626\ }
+\DoxyCodeLine{00627\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2f1acd1faf8e2ca5c4fa2b34f8287263}{labelPeriod}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00628\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2f1acd1faf8e2ca5c4fa2b34f8287263}{labelPeriod}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelPeriod"{}});}
+\DoxyCodeLine{00629\ }
+\DoxyCodeLine{00630\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(5,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a2f1acd1faf8e2ca5c4fa2b34f8287263}{labelPeriod}});}
+\DoxyCodeLine{00631\ }
+\DoxyCodeLine{00632\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a84e47d3ac21a8368bfbfd4882a1efbac}{lineEditPeriod}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00633\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a84e47d3ac21a8368bfbfd4882a1efbac}{lineEditPeriod}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditPeriod"{}});}
+\DoxyCodeLine{00634\ }
+\DoxyCodeLine{00635\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(5,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a84e47d3ac21a8368bfbfd4882a1efbac}{lineEditPeriod}});}
+\DoxyCodeLine{00636\ }
+\DoxyCodeLine{00637\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab1c2f8360bca0a8f7f34a675ff1af810}{outdoorLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00638\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab1c2f8360bca0a8f7f34a675ff1af810}{outdoorLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}outdoorLabel"{}});}
+\DoxyCodeLine{00639\ }
+\DoxyCodeLine{00640\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(0,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ab1c2f8360bca0a8f7f34a675ff1af810}{outdoorLabel}});}
+\DoxyCodeLine{00641\ }
+\DoxyCodeLine{00642\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6b03480ef4bcd66854e6d766cf6a1a}{outdoorCheckBox}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00643\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6b03480ef4bcd66854e6d766cf6a1a}{outdoorCheckBox}}-\/>setObjectName(\textcolor{stringliteral}{"{}outdoorCheckBox"{}});}
+\DoxyCodeLine{00644\ }
+\DoxyCodeLine{00645\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(0,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a3c6b03480ef4bcd66854e6d766cf6a1a}{outdoorCheckBox}});}
+\DoxyCodeLine{00646\ }
+\DoxyCodeLine{00647\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a897d9978bab85959bb9c412f405af0f4}{foodAreaLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00648\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a897d9978bab85959bb9c412f405af0f4}{foodAreaLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}foodAreaLabel"{}});}
+\DoxyCodeLine{00649\ }
+\DoxyCodeLine{00650\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(1,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a897d9978bab85959bb9c412f405af0f4}{foodAreaLabel}});}
+\DoxyCodeLine{00651\ }
+\DoxyCodeLine{00652\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab58b13480820e1c3f5a3f90e441dae2c}{foodAreaCheckBox}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00653\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab58b13480820e1c3f5a3f90e441dae2c}{foodAreaCheckBox}}-\/>setObjectName(\textcolor{stringliteral}{"{}foodAreaCheckBox"{}});}
+\DoxyCodeLine{00654\ }
+\DoxyCodeLine{00655\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(1,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ab58b13480820e1c3f5a3f90e441dae2c}{foodAreaCheckBox}});}
+\DoxyCodeLine{00656\ }
+\DoxyCodeLine{00657\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4d22cbbc4ddaf6be360153c74e31ecd3}{standNumberLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00658\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4d22cbbc4ddaf6be360153c74e31ecd3}{standNumberLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}standNumberLabel"{}});}
+\DoxyCodeLine{00659\ }
+\DoxyCodeLine{00660\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(2,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a4d22cbbc4ddaf6be360153c74e31ecd3}{standNumberLabel}});}
+\DoxyCodeLine{00661\ }
+\DoxyCodeLine{00662\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac49ba5180177b0659f43ca2f76e99013}{standNumberSpinBox}}\ =\ \textcolor{keyword}{new}\ QSpinBox(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00663\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac49ba5180177b0659f43ca2f76e99013}{standNumberSpinBox}}-\/>setObjectName(\textcolor{stringliteral}{"{}standNumberSpinBox"{}});}
+\DoxyCodeLine{00664\ }
+\DoxyCodeLine{00665\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ade305a28b175cbb26289bf3f1800580d}{formLayout6}}-\/>setWidget(2,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ac49ba5180177b0659f43ca2f76e99013}{standNumberSpinBox}});}
+\DoxyCodeLine{00666\ }
+\DoxyCodeLine{00667\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_add674129412252ac8d9f1dd582ed10e5}{pageLocalMarket}});}
+\DoxyCodeLine{00668\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}}\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00669\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}}-\/>setObjectName(\textcolor{stringliteral}{"{}pageMuseum"{}});}
+\DoxyCodeLine{00670\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}}\ =\ \textcolor{keyword}{new}\ QFormLayout(\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}});}
+\DoxyCodeLine{00671\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}}-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout7"{}});}
+\DoxyCodeLine{00672\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adfc340a9fae9ef02e73fe4c52ec3714c}{labelSD}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}});}
+\DoxyCodeLine{00673\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adfc340a9fae9ef02e73fe4c52ec3714c}{labelSD}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelSD"{}});}
+\DoxyCodeLine{00674\ }
+\DoxyCodeLine{00675\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}}-\/>setWidget(0,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_adfc340a9fae9ef02e73fe4c52ec3714c}{labelSD}});}
+\DoxyCodeLine{00676\ }
+\DoxyCodeLine{00677\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4be5999980e5b7cfe541bfc8f7fcfe32}{spinBoxStudentDiscount}}\ =\ \textcolor{keyword}{new}\ QDoubleSpinBox(\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}});}
+\DoxyCodeLine{00678\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4be5999980e5b7cfe541bfc8f7fcfe32}{spinBoxStudentDiscount}}-\/>setObjectName(\textcolor{stringliteral}{"{}spinBoxStudentDiscount"{}});}
+\DoxyCodeLine{00679\ }
+\DoxyCodeLine{00680\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}}-\/>setWidget(0,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a4be5999980e5b7cfe541bfc8f7fcfe32}{spinBoxStudentDiscount}});}
+\DoxyCodeLine{00681\ }
+\DoxyCodeLine{00682\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a52c56a153541fb3593fda77698840a66}{labelGT}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}});}
+\DoxyCodeLine{00683\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a52c56a153541fb3593fda77698840a66}{labelGT}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelGT"{}});}
+\DoxyCodeLine{00684\ }
+\DoxyCodeLine{00685\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}}-\/>setWidget(1,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a52c56a153541fb3593fda77698840a66}{labelGT}});}
+\DoxyCodeLine{00686\ }
+\DoxyCodeLine{00687\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae9d63d6a6098797b82e692b063f312b7}{checkBoxGuided}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}});}
+\DoxyCodeLine{00688\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae9d63d6a6098797b82e692b063f312b7}{checkBoxGuided}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxGuided"{}});}
+\DoxyCodeLine{00689\ }
+\DoxyCodeLine{00690\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}}-\/>setWidget(1,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ae9d63d6a6098797b82e692b063f312b7}{checkBoxGuided}});}
+\DoxyCodeLine{00691\ }
+\DoxyCodeLine{00692\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6d25af695c767ab60aaa98a3ce1aad3d}{labelCF}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}});}
+\DoxyCodeLine{00693\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6d25af695c767ab60aaa98a3ce1aad3d}{labelCF}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelCF"{}});}
+\DoxyCodeLine{00694\ }
+\DoxyCodeLine{00695\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}}-\/>setWidget(2,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a6d25af695c767ab60aaa98a3ce1aad3d}{labelCF}});}
+\DoxyCodeLine{00696\ }
+\DoxyCodeLine{00697\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8c90d74361654bebef2412a1598bed3d}{lineEditCulturalFocus}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}});}
+\DoxyCodeLine{00698\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8c90d74361654bebef2412a1598bed3d}{lineEditCulturalFocus}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditCulturalFocus"{}});}
+\DoxyCodeLine{00699\ }
+\DoxyCodeLine{00700\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}}-\/>setWidget(2,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a8c90d74361654bebef2412a1598bed3d}{lineEditCulturalFocus}});}
+\DoxyCodeLine{00701\ }
+\DoxyCodeLine{00702\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_acaa35492c5d634e317633d12136e6121}{labelAD}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}});}
+\DoxyCodeLine{00703\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_acaa35492c5d634e317633d12136e6121}{labelAD}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelAD"{}});}
+\DoxyCodeLine{00704\ }
+\DoxyCodeLine{00705\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}}-\/>setWidget(3,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_acaa35492c5d634e317633d12136e6121}{labelAD}});}
+\DoxyCodeLine{00706\ }
+\DoxyCodeLine{00707\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3f5891417b401bb40b4ac169140a3007}{checkBoxAudioGuide}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}});}
+\DoxyCodeLine{00708\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3f5891417b401bb40b4ac169140a3007}{checkBoxAudioGuide}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxAudioGuide"{}});}
+\DoxyCodeLine{00709\ }
+\DoxyCodeLine{00710\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3c6d26f431c15fb75aca2118f16f88f0}{formLayout7}}-\/>setWidget(3,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a3f5891417b401bb40b4ac169140a3007}{checkBoxAudioGuide}});}
+\DoxyCodeLine{00711\ }
+\DoxyCodeLine{00712\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a1ea641cbf066243be222d178c30cb6ec}{pageMuseum}});}
+\DoxyCodeLine{00713\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}}\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00714\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}}-\/>setObjectName(\textcolor{stringliteral}{"{}pageMonument"{}});}
+\DoxyCodeLine{00715\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}\ =\ \textcolor{keyword}{new}\ QFormLayout(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00716\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setObjectName(\textcolor{stringliteral}{"{}formLayout8"{}});}
+\DoxyCodeLine{00717\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7e117fe94e621efab9b56d4ad5f608e9}{labelUnesco}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00718\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7e117fe94e621efab9b56d4ad5f608e9}{labelUnesco}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelUnesco"{}});}
+\DoxyCodeLine{00719\ }
+\DoxyCodeLine{00720\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(3,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a7e117fe94e621efab9b56d4ad5f608e9}{labelUnesco}});}
+\DoxyCodeLine{00721\ }
+\DoxyCodeLine{00722\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aebd6624592cf6a6374661c481dc85107}{checkBoxUnesco}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00723\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aebd6624592cf6a6374661c481dc85107}{checkBoxUnesco}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxUnesco"{}});}
+\DoxyCodeLine{00724\ }
+\DoxyCodeLine{00725\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(3,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_aebd6624592cf6a6374661c481dc85107}{checkBoxUnesco}});}
+\DoxyCodeLine{00726\ }
+\DoxyCodeLine{00727\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aab8b44eac4357093ccba4fdcc4f05a80}{labelCS}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00728\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aab8b44eac4357093ccba4fdcc4f05a80}{labelCS}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelCS"{}});}
+\DoxyCodeLine{00729\ }
+\DoxyCodeLine{00730\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(4,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_aab8b44eac4357093ccba4fdcc4f05a80}{labelCS}});}
+\DoxyCodeLine{00731\ }
+\DoxyCodeLine{00732\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac4bb092e44caf306faa9d73bca3fb3ee}{lineEditConservation}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00733\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac4bb092e44caf306faa9d73bca3fb3ee}{lineEditConservation}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditConservation"{}});}
+\DoxyCodeLine{00734\ }
+\DoxyCodeLine{00735\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(4,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ac4bb092e44caf306faa9d73bca3fb3ee}{lineEditConservation}});}
+\DoxyCodeLine{00736\ }
+\DoxyCodeLine{00737\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a42abe26fa932ac66f975e4da5a125a84}{labelOTP}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00738\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a42abe26fa932ac66f975e4da5a125a84}{labelOTP}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelOTP"{}});}
+\DoxyCodeLine{00739\ }
+\DoxyCodeLine{00740\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(5,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a42abe26fa932ac66f975e4da5a125a84}{labelOTP}});}
+\DoxyCodeLine{00741\ }
+\DoxyCodeLine{00742\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a15d783430b1f5d52fda7f0fd786bb5d8}{checkBoxOpenToPublic}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00743\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a15d783430b1f5d52fda7f0fd786bb5d8}{checkBoxOpenToPublic}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxOpenToPublic"{}});}
+\DoxyCodeLine{00744\ }
+\DoxyCodeLine{00745\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(5,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a15d783430b1f5d52fda7f0fd786bb5d8}{checkBoxOpenToPublic}});}
+\DoxyCodeLine{00746\ }
+\DoxyCodeLine{00747\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adc87ba2c3a2ba2e577e7b6f66c661fef}{studentDiscountLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00748\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adc87ba2c3a2ba2e577e7b6f66c661fef}{studentDiscountLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}studentDiscountLabel"{}});}
+\DoxyCodeLine{00749\ }
+\DoxyCodeLine{00750\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(0,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_adc87ba2c3a2ba2e577e7b6f66c661fef}{studentDiscountLabel}});}
+\DoxyCodeLine{00751\ }
+\DoxyCodeLine{00752\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8a1feec89497a16d63fa7b0a03357fa0}{spinBoxStudentDiscount\_2}}\ =\ \textcolor{keyword}{new}\ QDoubleSpinBox(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00753\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8a1feec89497a16d63fa7b0a03357fa0}{spinBoxStudentDiscount\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}spinBoxStudentDiscount\_2"{}});}
+\DoxyCodeLine{00754\ }
+\DoxyCodeLine{00755\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(0,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a8a1feec89497a16d63fa7b0a03357fa0}{spinBoxStudentDiscount\_2}});}
+\DoxyCodeLine{00756\ }
+\DoxyCodeLine{00757\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5d9ee96a585c16a5f55bc0842628f941}{guidedTourLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00758\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5d9ee96a585c16a5f55bc0842628f941}{guidedTourLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}guidedTourLabel"{}});}
+\DoxyCodeLine{00759\ }
+\DoxyCodeLine{00760\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(1,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a5d9ee96a585c16a5f55bc0842628f941}{guidedTourLabel}});}
+\DoxyCodeLine{00761\ }
+\DoxyCodeLine{00762\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae7df0ef6cb530fdcfd8d68ad90c22a8c}{checkBoxGuided\_2}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00763\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae7df0ef6cb530fdcfd8d68ad90c22a8c}{checkBoxGuided\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxGuided\_2"{}});}
+\DoxyCodeLine{00764\ }
+\DoxyCodeLine{00765\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(1,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ae7df0ef6cb530fdcfd8d68ad90c22a8c}{checkBoxGuided\_2}});}
+\DoxyCodeLine{00766\ }
+\DoxyCodeLine{00767\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac817e52eba990e2679d25df1f805d70c}{culturalFocusLabel}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00768\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac817e52eba990e2679d25df1f805d70c}{culturalFocusLabel}}-\/>setObjectName(\textcolor{stringliteral}{"{}culturalFocusLabel"{}});}
+\DoxyCodeLine{00769\ }
+\DoxyCodeLine{00770\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(2,\ QFormLayout::LabelRole,\ \mbox{\hyperlink{class_ui___create_place_widget_ac817e52eba990e2679d25df1f805d70c}{culturalFocusLabel}});}
+\DoxyCodeLine{00771\ }
+\DoxyCodeLine{00772\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6bc4f2cb08020fdca2f2edf743305eac}{lineEditCulturalFocus\_2}}\ =\ \textcolor{keyword}{new}\ QLineEdit(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00773\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6bc4f2cb08020fdca2f2edf743305eac}{lineEditCulturalFocus\_2}}-\/>setObjectName(\textcolor{stringliteral}{"{}lineEditCulturalFocus\_2"{}});}
+\DoxyCodeLine{00774\ }
+\DoxyCodeLine{00775\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3cb20323c89965ff6329f84e7b60fff6}{formLayout8}}-\/>setWidget(2,\ QFormLayout::FieldRole,\ \mbox{\hyperlink{class_ui___create_place_widget_a6bc4f2cb08020fdca2f2edf743305eac}{lineEditCulturalFocus\_2}});}
+\DoxyCodeLine{00776\ }
+\DoxyCodeLine{00777\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_ac64bd985ce74af1e8909c78233c39d64}{pageMonument}});}
+\DoxyCodeLine{00778\ }
+\DoxyCodeLine{00779\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a904cc9958b7b98770ea4bf19bacdcf57}{mainLayout}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}});}
+\DoxyCodeLine{00780\ }
+\DoxyCodeLine{00781\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}}\ =\ \textcolor{keyword}{new}\ QGroupBox(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00782\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}}-\/>setObjectName(\textcolor{stringliteral}{"{}groupBoxHours"{}});}
+\DoxyCodeLine{00783\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}\ =\ \textcolor{keyword}{new}\ QGridLayout(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00784\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>setObjectName(\textcolor{stringliteral}{"{}gridLayoutHours"{}});}
+\DoxyCodeLine{00785\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a36b71ddeb456fbb2056d027f51047563}{labelHeaderOpen}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00786\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a36b71ddeb456fbb2056d027f51047563}{labelHeaderOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelHeaderOpen"{}});}
+\DoxyCodeLine{00787\ }
+\DoxyCodeLine{00788\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a36b71ddeb456fbb2056d027f51047563}{labelHeaderOpen}},\ 0,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00789\ }
+\DoxyCodeLine{00790\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2d762537057bae4a194ae158d8692b39}{labelHeaderClose}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00791\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2d762537057bae4a194ae158d8692b39}{labelHeaderClose}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelHeaderClose"{}});}
+\DoxyCodeLine{00792\ }
+\DoxyCodeLine{00793\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a2d762537057bae4a194ae158d8692b39}{labelHeaderClose}},\ 0,\ 2,\ 1,\ 1);}
+\DoxyCodeLine{00794\ }
+\DoxyCodeLine{00795\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a323573aaa8416dda00762d97717ff8fc}{labelHeaderAlwaysOpen}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00796\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a323573aaa8416dda00762d97717ff8fc}{labelHeaderAlwaysOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelHeaderAlwaysOpen"{}});}
+\DoxyCodeLine{00797\ }
+\DoxyCodeLine{00798\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a323573aaa8416dda00762d97717ff8fc}{labelHeaderAlwaysOpen}},\ 0,\ 3,\ 1,\ 1);}
+\DoxyCodeLine{00799\ }
+\DoxyCodeLine{00800\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a099672a5eb2d18d898ebb7799b58f644}{labelHeaderAlwaysClosed}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00801\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a099672a5eb2d18d898ebb7799b58f644}{labelHeaderAlwaysClosed}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelHeaderAlwaysClosed"{}});}
+\DoxyCodeLine{00802\ }
+\DoxyCodeLine{00803\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a099672a5eb2d18d898ebb7799b58f644}{labelHeaderAlwaysClosed}},\ 0,\ 4,\ 1,\ 1);}
+\DoxyCodeLine{00804\ }
+\DoxyCodeLine{00805\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac15b6a62abdc099919967666d2d470c0}{labelMonday}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00806\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac15b6a62abdc099919967666d2d470c0}{labelMonday}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelMonday"{}});}
+\DoxyCodeLine{00807\ }
+\DoxyCodeLine{00808\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_ac15b6a62abdc099919967666d2d470c0}{labelMonday}},\ 1,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00809\ }
+\DoxyCodeLine{00810\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3496918ae1855e2c9ea0c8403b708133}{timeEditMondayOpen}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00811\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3496918ae1855e2c9ea0c8403b708133}{timeEditMondayOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditMondayOpen"{}});}
+\DoxyCodeLine{00812\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3496918ae1855e2c9ea0c8403b708133}{timeEditMondayOpen}}-\/>setReadOnly(\textcolor{keyword}{false});}
+\DoxyCodeLine{00813\ }
+\DoxyCodeLine{00814\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a3496918ae1855e2c9ea0c8403b708133}{timeEditMondayOpen}},\ 1,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00815\ }
+\DoxyCodeLine{00816\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a80f9c768f1df0bd78951741197a718f2}{timeEditMondayClose}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00817\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a80f9c768f1df0bd78951741197a718f2}{timeEditMondayClose}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditMondayClose"{}});}
+\DoxyCodeLine{00818\ }
+\DoxyCodeLine{00819\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a80f9c768f1df0bd78951741197a718f2}{timeEditMondayClose}},\ 1,\ 2,\ 1,\ 1);}
+\DoxyCodeLine{00820\ }
+\DoxyCodeLine{00821\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a732637c6204586627449978a06251927}{checkBoxMondayAlwaysOpen}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00822\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a732637c6204586627449978a06251927}{checkBoxMondayAlwaysOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxMondayAlwaysOpen"{}});}
+\DoxyCodeLine{00823\ }
+\DoxyCodeLine{00824\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a732637c6204586627449978a06251927}{checkBoxMondayAlwaysOpen}},\ 1,\ 3,\ 1,\ 1);}
+\DoxyCodeLine{00825\ }
+\DoxyCodeLine{00826\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae35e2f084a1edfa4b5ea8bc2f4420b22}{checkBoxMondayAlwaysClosed}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00827\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae35e2f084a1edfa4b5ea8bc2f4420b22}{checkBoxMondayAlwaysClosed}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxMondayAlwaysClosed"{}});}
+\DoxyCodeLine{00828\ }
+\DoxyCodeLine{00829\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_ae35e2f084a1edfa4b5ea8bc2f4420b22}{checkBoxMondayAlwaysClosed}},\ 1,\ 4,\ 1,\ 1);}
+\DoxyCodeLine{00830\ }
+\DoxyCodeLine{00831\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a78fafde160bd74d38c4889ae30f8ddbb}{labelTuesday}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00832\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a78fafde160bd74d38c4889ae30f8ddbb}{labelTuesday}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelTuesday"{}});}
+\DoxyCodeLine{00833\ }
+\DoxyCodeLine{00834\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a78fafde160bd74d38c4889ae30f8ddbb}{labelTuesday}},\ 2,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00835\ }
+\DoxyCodeLine{00836\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0065d29a158a2c2118fa9f3bc223be20}{timeEditTuesdayOpen}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00837\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0065d29a158a2c2118fa9f3bc223be20}{timeEditTuesdayOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditTuesdayOpen"{}});}
+\DoxyCodeLine{00838\ }
+\DoxyCodeLine{00839\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a0065d29a158a2c2118fa9f3bc223be20}{timeEditTuesdayOpen}},\ 2,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00840\ }
+\DoxyCodeLine{00841\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af888afd3007cc205cac04290c5a329bf}{timeEditTuesdayClose}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00842\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af888afd3007cc205cac04290c5a329bf}{timeEditTuesdayClose}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditTuesdayClose"{}});}
+\DoxyCodeLine{00843\ }
+\DoxyCodeLine{00844\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_af888afd3007cc205cac04290c5a329bf}{timeEditTuesdayClose}},\ 2,\ 2,\ 1,\ 1);}
+\DoxyCodeLine{00845\ }
+\DoxyCodeLine{00846\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a340e42d1586bb62bfd1cc341295f6af1}{checkBoxTuesdayAlwaysOpen}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00847\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a340e42d1586bb62bfd1cc341295f6af1}{checkBoxTuesdayAlwaysOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxTuesdayAlwaysOpen"{}});}
+\DoxyCodeLine{00848\ }
+\DoxyCodeLine{00849\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a340e42d1586bb62bfd1cc341295f6af1}{checkBoxTuesdayAlwaysOpen}},\ 2,\ 3,\ 1,\ 1);}
+\DoxyCodeLine{00850\ }
+\DoxyCodeLine{00851\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad8fe71c178a33b148752f4a7cee0686a}{checkBoxTuesdayAlwaysClosed}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00852\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad8fe71c178a33b148752f4a7cee0686a}{checkBoxTuesdayAlwaysClosed}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxTuesdayAlwaysClosed"{}});}
+\DoxyCodeLine{00853\ }
+\DoxyCodeLine{00854\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_ad8fe71c178a33b148752f4a7cee0686a}{checkBoxTuesdayAlwaysClosed}},\ 2,\ 4,\ 1,\ 1);}
+\DoxyCodeLine{00855\ }
+\DoxyCodeLine{00856\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af401a52ac393c5033a7d4002e61c64e7}{labelWednesday}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00857\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af401a52ac393c5033a7d4002e61c64e7}{labelWednesday}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelWednesday"{}});}
+\DoxyCodeLine{00858\ }
+\DoxyCodeLine{00859\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_af401a52ac393c5033a7d4002e61c64e7}{labelWednesday}},\ 3,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00860\ }
+\DoxyCodeLine{00861\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a44a6bd63b03ac9b406b293e71fc91baa}{timeEditWednesdayOpen}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00862\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a44a6bd63b03ac9b406b293e71fc91baa}{timeEditWednesdayOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditWednesdayOpen"{}});}
+\DoxyCodeLine{00863\ }
+\DoxyCodeLine{00864\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a44a6bd63b03ac9b406b293e71fc91baa}{timeEditWednesdayOpen}},\ 3,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00865\ }
+\DoxyCodeLine{00866\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a728a1a59afc9e5c17d62c910b85ddbad}{timeEditWednesdayClose}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00867\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a728a1a59afc9e5c17d62c910b85ddbad}{timeEditWednesdayClose}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditWednesdayClose"{}});}
+\DoxyCodeLine{00868\ }
+\DoxyCodeLine{00869\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a728a1a59afc9e5c17d62c910b85ddbad}{timeEditWednesdayClose}},\ 3,\ 2,\ 1,\ 1);}
+\DoxyCodeLine{00870\ }
+\DoxyCodeLine{00871\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_afe7a09d6fc204f487461b74d336e1f69}{checkBoxWednesdayAlwaysOpen}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00872\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_afe7a09d6fc204f487461b74d336e1f69}{checkBoxWednesdayAlwaysOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxWednesdayAlwaysOpen"{}});}
+\DoxyCodeLine{00873\ }
+\DoxyCodeLine{00874\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_afe7a09d6fc204f487461b74d336e1f69}{checkBoxWednesdayAlwaysOpen}},\ 3,\ 3,\ 1,\ 1);}
+\DoxyCodeLine{00875\ }
+\DoxyCodeLine{00876\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a50fd9cf4e7d7a825dbda90545091f4c6}{checkBoxWednesdayAlwaysClosed}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00877\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a50fd9cf4e7d7a825dbda90545091f4c6}{checkBoxWednesdayAlwaysClosed}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxWednesdayAlwaysClosed"{}});}
+\DoxyCodeLine{00878\ }
+\DoxyCodeLine{00879\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a50fd9cf4e7d7a825dbda90545091f4c6}{checkBoxWednesdayAlwaysClosed}},\ 3,\ 4,\ 1,\ 1);}
+\DoxyCodeLine{00880\ }
+\DoxyCodeLine{00881\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3124ba00679183791b3ae36d86f83bfe}{labelThursday}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00882\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3124ba00679183791b3ae36d86f83bfe}{labelThursday}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelThursday"{}});}
+\DoxyCodeLine{00883\ }
+\DoxyCodeLine{00884\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a3124ba00679183791b3ae36d86f83bfe}{labelThursday}},\ 4,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00885\ }
+\DoxyCodeLine{00886\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_abceb2535595e92092e370f06ada77b6a}{timeEditThursdayOpen}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00887\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_abceb2535595e92092e370f06ada77b6a}{timeEditThursdayOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditThursdayOpen"{}});}
+\DoxyCodeLine{00888\ }
+\DoxyCodeLine{00889\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_abceb2535595e92092e370f06ada77b6a}{timeEditThursdayOpen}},\ 4,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00890\ }
+\DoxyCodeLine{00891\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a87bfecaab9c1ef0b85b306651529c293}{timeEditThursdayClose}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00892\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a87bfecaab9c1ef0b85b306651529c293}{timeEditThursdayClose}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditThursdayClose"{}});}
+\DoxyCodeLine{00893\ }
+\DoxyCodeLine{00894\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a87bfecaab9c1ef0b85b306651529c293}{timeEditThursdayClose}},\ 4,\ 2,\ 1,\ 1);}
+\DoxyCodeLine{00895\ }
+\DoxyCodeLine{00896\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a60be8c7b6b7eeaf4d0a8346ca1f7fee2}{checkBoxThursdayAlwaysOpen}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00897\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a60be8c7b6b7eeaf4d0a8346ca1f7fee2}{checkBoxThursdayAlwaysOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxThursdayAlwaysOpen"{}});}
+\DoxyCodeLine{00898\ }
+\DoxyCodeLine{00899\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a60be8c7b6b7eeaf4d0a8346ca1f7fee2}{checkBoxThursdayAlwaysOpen}},\ 4,\ 3,\ 1,\ 1);}
+\DoxyCodeLine{00900\ }
+\DoxyCodeLine{00901\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a978124f4001303e78c39608d7c05bbd9}{checkBoxThursdayAlwaysClosed}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00902\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a978124f4001303e78c39608d7c05bbd9}{checkBoxThursdayAlwaysClosed}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxThursdayAlwaysClosed"{}});}
+\DoxyCodeLine{00903\ }
+\DoxyCodeLine{00904\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a978124f4001303e78c39608d7c05bbd9}{checkBoxThursdayAlwaysClosed}},\ 4,\ 4,\ 1,\ 1);}
+\DoxyCodeLine{00905\ }
+\DoxyCodeLine{00906\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2c2db007089eb3fe3266e5d6c31dca22}{labelFriday}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00907\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2c2db007089eb3fe3266e5d6c31dca22}{labelFriday}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelFriday"{}});}
+\DoxyCodeLine{00908\ }
+\DoxyCodeLine{00909\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a2c2db007089eb3fe3266e5d6c31dca22}{labelFriday}},\ 5,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00910\ }
+\DoxyCodeLine{00911\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa8f5ebf0e52d368cbdc124ef8799bf75}{timeEditFridayOpen}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00912\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa8f5ebf0e52d368cbdc124ef8799bf75}{timeEditFridayOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditFridayOpen"{}});}
+\DoxyCodeLine{00913\ }
+\DoxyCodeLine{00914\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_aa8f5ebf0e52d368cbdc124ef8799bf75}{timeEditFridayOpen}},\ 5,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00915\ }
+\DoxyCodeLine{00916\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6e9404da268bb6e71726f14954acc705}{timeEditFridayClose}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00917\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6e9404da268bb6e71726f14954acc705}{timeEditFridayClose}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditFridayClose"{}});}
+\DoxyCodeLine{00918\ }
+\DoxyCodeLine{00919\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a6e9404da268bb6e71726f14954acc705}{timeEditFridayClose}},\ 5,\ 2,\ 1,\ 1);}
+\DoxyCodeLine{00920\ }
+\DoxyCodeLine{00921\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a38be31c9be3333cb623db9ca0036c01f}{checkBoxFridayAlwaysOpen}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00922\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a38be31c9be3333cb623db9ca0036c01f}{checkBoxFridayAlwaysOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxFridayAlwaysOpen"{}});}
+\DoxyCodeLine{00923\ }
+\DoxyCodeLine{00924\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a38be31c9be3333cb623db9ca0036c01f}{checkBoxFridayAlwaysOpen}},\ 5,\ 3,\ 1,\ 1);}
+\DoxyCodeLine{00925\ }
+\DoxyCodeLine{00926\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0ea302eebf97b7ebeb3a0105d38809af}{checkBoxFridayAlwaysClosed}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00927\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0ea302eebf97b7ebeb3a0105d38809af}{checkBoxFridayAlwaysClosed}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxFridayAlwaysClosed"{}});}
+\DoxyCodeLine{00928\ }
+\DoxyCodeLine{00929\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a0ea302eebf97b7ebeb3a0105d38809af}{checkBoxFridayAlwaysClosed}},\ 5,\ 4,\ 1,\ 1);}
+\DoxyCodeLine{00930\ }
+\DoxyCodeLine{00931\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0550a59c82535e15a8c9a519570fe34d}{labelSaturday}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00932\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0550a59c82535e15a8c9a519570fe34d}{labelSaturday}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelSaturday"{}});}
+\DoxyCodeLine{00933\ }
+\DoxyCodeLine{00934\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a0550a59c82535e15a8c9a519570fe34d}{labelSaturday}},\ 6,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00935\ }
+\DoxyCodeLine{00936\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_abfb883805d2980c2f9c623d3c778c862}{timeEditSaturdayOpen}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00937\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_abfb883805d2980c2f9c623d3c778c862}{timeEditSaturdayOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditSaturdayOpen"{}});}
+\DoxyCodeLine{00938\ }
+\DoxyCodeLine{00939\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_abfb883805d2980c2f9c623d3c778c862}{timeEditSaturdayOpen}},\ 6,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00940\ }
+\DoxyCodeLine{00941\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a515133e8dfe0d114df473c54a831bf2f}{timeEditSaturdayClose}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00942\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a515133e8dfe0d114df473c54a831bf2f}{timeEditSaturdayClose}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditSaturdayClose"{}});}
+\DoxyCodeLine{00943\ }
+\DoxyCodeLine{00944\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a515133e8dfe0d114df473c54a831bf2f}{timeEditSaturdayClose}},\ 6,\ 2,\ 1,\ 1);}
+\DoxyCodeLine{00945\ }
+\DoxyCodeLine{00946\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac419d90e289695ed8847fb51354889ff}{checkBoxSaturdayAlwaysOpen}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00947\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac419d90e289695ed8847fb51354889ff}{checkBoxSaturdayAlwaysOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxSaturdayAlwaysOpen"{}});}
+\DoxyCodeLine{00948\ }
+\DoxyCodeLine{00949\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_ac419d90e289695ed8847fb51354889ff}{checkBoxSaturdayAlwaysOpen}},\ 6,\ 3,\ 1,\ 1);}
+\DoxyCodeLine{00950\ }
+\DoxyCodeLine{00951\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae099fdf90c9fefa257148f44c5896486}{checkBoxSaturdayAlwaysClosed}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00952\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae099fdf90c9fefa257148f44c5896486}{checkBoxSaturdayAlwaysClosed}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxSaturdayAlwaysClosed"{}});}
+\DoxyCodeLine{00953\ }
+\DoxyCodeLine{00954\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_ae099fdf90c9fefa257148f44c5896486}{checkBoxSaturdayAlwaysClosed}},\ 6,\ 4,\ 1,\ 1);}
+\DoxyCodeLine{00955\ }
+\DoxyCodeLine{00956\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a79af477308413874a4a659a12160e4b5}{labelSunday}}\ =\ \textcolor{keyword}{new}\ QLabel(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00957\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a79af477308413874a4a659a12160e4b5}{labelSunday}}-\/>setObjectName(\textcolor{stringliteral}{"{}labelSunday"{}});}
+\DoxyCodeLine{00958\ }
+\DoxyCodeLine{00959\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a79af477308413874a4a659a12160e4b5}{labelSunday}},\ 7,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00960\ }
+\DoxyCodeLine{00961\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a522000649cca5df12f19fc6bbcb1f61e}{timeEditSundayOpen}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00962\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a522000649cca5df12f19fc6bbcb1f61e}{timeEditSundayOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditSundayOpen"{}});}
+\DoxyCodeLine{00963\ }
+\DoxyCodeLine{00964\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a522000649cca5df12f19fc6bbcb1f61e}{timeEditSundayOpen}},\ 7,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00965\ }
+\DoxyCodeLine{00966\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8967de88d6ba89c852d9c45d6720ea68}{timeEditSundayClose}}\ =\ \textcolor{keyword}{new}\ QTimeEdit(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00967\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8967de88d6ba89c852d9c45d6720ea68}{timeEditSundayClose}}-\/>setObjectName(\textcolor{stringliteral}{"{}timeEditSundayClose"{}});}
+\DoxyCodeLine{00968\ }
+\DoxyCodeLine{00969\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a8967de88d6ba89c852d9c45d6720ea68}{timeEditSundayClose}},\ 7,\ 2,\ 1,\ 1);}
+\DoxyCodeLine{00970\ }
+\DoxyCodeLine{00971\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6999253790b06f6f31e3bb272b9e808d}{checkBoxSundayAlwaysOpen}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00972\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6999253790b06f6f31e3bb272b9e808d}{checkBoxSundayAlwaysOpen}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxSundayAlwaysOpen"{}});}
+\DoxyCodeLine{00973\ }
+\DoxyCodeLine{00974\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a6999253790b06f6f31e3bb272b9e808d}{checkBoxSundayAlwaysOpen}},\ 7,\ 3,\ 1,\ 1);}
+\DoxyCodeLine{00975\ }
+\DoxyCodeLine{00976\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a08ed72120c3d58a5b1ced29cd8f99263}{checkBoxSundayAlwaysClosed}}\ =\ \textcolor{keyword}{new}\ QCheckBox(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00977\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a08ed72120c3d58a5b1ced29cd8f99263}{checkBoxSundayAlwaysClosed}}-\/>setObjectName(\textcolor{stringliteral}{"{}checkBoxSundayAlwaysClosed"{}});}
+\DoxyCodeLine{00978\ }
+\DoxyCodeLine{00979\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae6e6959a4f044f912c2d873aa655beef}{gridLayoutHours}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a08ed72120c3d58a5b1ced29cd8f99263}{checkBoxSundayAlwaysClosed}},\ 7,\ 4,\ 1,\ 1);}
+\DoxyCodeLine{00980\ }
+\DoxyCodeLine{00981\ }
+\DoxyCodeLine{00982\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a904cc9958b7b98770ea4bf19bacdcf57}{mainLayout}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}});}
+\DoxyCodeLine{00983\ }
+\DoxyCodeLine{00984\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab0213ffb8df1deddd18ca742c537dfdc}{hboxLayout}}\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00985\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab0213ffb8df1deddd18ca742c537dfdc}{hboxLayout}}-\/>setObjectName(\textcolor{stringliteral}{"{}hboxLayout"{}});}
+\DoxyCodeLine{00986\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a947bf1285691fd13b6478372646470d8}{pushButtonCreate}}\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00987\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a947bf1285691fd13b6478372646470d8}{pushButtonCreate}}-\/>setObjectName(\textcolor{stringliteral}{"{}pushButtonCreate"{}});}
+\DoxyCodeLine{00988\ }
+\DoxyCodeLine{00989\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab0213ffb8df1deddd18ca742c537dfdc}{hboxLayout}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a947bf1285691fd13b6478372646470d8}{pushButtonCreate}});}
+\DoxyCodeLine{00990\ }
+\DoxyCodeLine{00991\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8da058041ec857e2b6b6bc3916e5efbd}{pushButtonCancel}}\ =\ \textcolor{keyword}{new}\ QPushButton(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{00992\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8da058041ec857e2b6b6bc3916e5efbd}{pushButtonCancel}}-\/>setObjectName(\textcolor{stringliteral}{"{}pushButtonCancel"{}});}
+\DoxyCodeLine{00993\ }
+\DoxyCodeLine{00994\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab0213ffb8df1deddd18ca742c537dfdc}{hboxLayout}}-\/>addWidget(\mbox{\hyperlink{class_ui___create_place_widget_a8da058041ec857e2b6b6bc3916e5efbd}{pushButtonCancel}});}
+\DoxyCodeLine{00995\ }
+\DoxyCodeLine{00996\ }
+\DoxyCodeLine{00997\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a904cc9958b7b98770ea4bf19bacdcf57}{mainLayout}}-\/>addLayout(\mbox{\hyperlink{class_ui___create_place_widget_ab0213ffb8df1deddd18ca742c537dfdc}{hboxLayout}});}
+\DoxyCodeLine{00998\ }
+\DoxyCodeLine{00999\ }
+\DoxyCodeLine{01000\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a700a3a1ad01c4e7b343d7be3f543ba07}{retranslateUi}}(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{01001\ }
+\DoxyCodeLine{01002\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadee8ac2a1dbc9fa9379c64666de7744}{stackedWidgetDetails}}-\/>setCurrentIndex(2);}
+\DoxyCodeLine{01003\ }
+\DoxyCodeLine{01004\ }
+\DoxyCodeLine{01005\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}});}
+\DoxyCodeLine{01006\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{01007\ }
+\DoxyCodeLine{01008\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ui___create_place_widget_a700a3a1ad01c4e7b343d7be3f543ba07}{retranslateUi}}(QWidget\ *\mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}})}
+\DoxyCodeLine{01009\ \ \ \ \ \{}
+\DoxyCodeLine{01010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_create_place_widget}{CreatePlaceWidget}}-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Create\ New\ Place"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad3634aed4d796d1097d4f44cf4b16989}{labelType}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Type:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>setItemText(0,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Disco"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>setItemText(1,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}PanoramicPoints"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>setItemText(2,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Cafe"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01015\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>setItemText(3,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Restaurant"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>setItemText(4,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Mall"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>setItemText(5,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}LocalMarket"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>setItemText(6,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Museum"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae0b6ed7870070075a6e2991fc3912581}{comboBoxType}}-\/>setItemText(7,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Monument"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01020\ }
+\DoxyCodeLine{01021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad7f5d6e1526199a844de5587a58f2b10}{labelName}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Name:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5a3a946efc8bbb53085229ec05dad342}{labelCity}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}City:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5a9b7f953a9067b32aa0e21d40582bca}{labelDescription}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Description:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a69a33404eb7733a5cc96ce7e4e9d71b4}{labelRating}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Rating:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aebfe76ea2ef39f6387ab06a4407ce3c9}{labelCost}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Cost:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7859e7c5dae684cffcf4b63e3886f21b}{labelMG}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Music\ Genre:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8bc52c90c2109219291219deef44b34d}{labelPrive}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Prive:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3a5dfca7432ff491466a273e4d2ac6c9}{labelDC}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Dress\ Code:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac85d0cb2a62cd58f19fb054bce97825b}{averageStayLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Average\ Stay:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7d90c6f55094e3a574f01c494e15a5d7}{minimumAgeLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Minimum\ Age:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aadbd61f96162e8081678c69c70a1186f}{restrictedEntryLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Restricted\ Entry:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aeeaae1fd0bfbdd5783e667f9a34188d5}{labelAltitude}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Altitude:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0b3b87be6ae51f90cd22e7657c3699b5}{labelBinoculars}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Binoculars:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a847cab99a2483306cd37363b12372157}{labelNightLighting}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Night\ Lighting:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3dc0fd97fbc38dc5862cc1039dfd9286}{averageStayLabel\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Average\ Stay"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0b7198b67a2c6bc2bb86cdc946eb5dcf}{minimumAgeLabel\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Minimum\ Age:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8d42279fcb752f41e9d22e801cd5446a}{restrictedEntryLabel\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Restricted\ Entry:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4c610c74e804ae24430152dabd860b6d}{labelTerrace}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Terrace:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a430795baffbfeba49b678eb93c8f8f83}{labelSpecial}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Special\ Drink:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aa7a008e3a24946b8aba02ffa618ef0ce}{takeAwayLabel\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Take\ Away:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac11f99cc87505b1c70e526d75b1502e5}{averageWaitingTimeLabel\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Average\ Waiting\ Time:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5c44725eee4b393ee6442cb7fbe2cf78}{veganMenuLabel\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Vegan\ Menu:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2593366fac2f3b9561b20a6054c34e85}{takeAwayLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Take\ Away:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a17f05576362a870738688c7d9341136f}{veganMenuLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Vegan\ Menu:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a9d023ed3f8df72bf7c4bf865ea57ee37}{labelCuisineType}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Cuisine\ Type:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3f4d9a195b54ab028036f7eea45ed4e1}{labelReservation}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Reservation:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a00540c386209a1496f674256fd53041d}{labelSD\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Special\ Dish:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01048\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae5d80ebedbb736743c80926e1d432d56}{averageWaitingTimeLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Average\ Waiting\ Time:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af00e6059f2800ac518a55babaa4d28d2}{labelShops}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Shops:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7959b5355d35f0991ffa385333ae9a77}{labelCinema}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Cinema:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a385a5e4a19da83e25cbebc35ce7fb062}{labelFP}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Free\ Parking:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a9ed5c0e65fd820189a4e6318d7f9443a}{outdoorLabel\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Outdoor:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6b81fa5b44d80cc7f44076cce943ce26}{foodAreaLabel\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Food\ Area:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad4a89fb2545fff047b01edf66ae3231a}{standNumberLabel\_2}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Stand\ Number:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01055\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8be36f65b8b3fcc17614ff18a07426b1}{labelArtisans}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Artisans:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4d20b3ab8553a59b49d2c98f883b1762}{labelSeasonal}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Seasonal:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01057\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2f1acd1faf8e2ca5c4fa2b34f8287263}{labelPeriod}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Period:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01058\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ab1c2f8360bca0a8f7f34a675ff1af810}{outdoorLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Outdoor:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01059\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a897d9978bab85959bb9c412f405af0f4}{foodAreaLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Food\ Area:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01060\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a4d22cbbc4ddaf6be360153c74e31ecd3}{standNumberLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Stand\ Number:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adfc340a9fae9ef02e73fe4c52ec3714c}{labelSD}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Student\ Discount:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a52c56a153541fb3593fda77698840a66}{labelGT}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Guided\ Tour:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01063\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6d25af695c767ab60aaa98a3ce1aad3d}{labelCF}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Cultural\ Focus:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01064\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_acaa35492c5d634e317633d12136e6121}{labelAD}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Audio\ Guide:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01065\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a7e117fe94e621efab9b56d4ad5f608e9}{labelUnesco}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}UNESCO:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01066\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_aab8b44eac4357093ccba4fdcc4f05a80}{labelCS}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Conservation\ Status:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01067\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a42abe26fa932ac66f975e4da5a125a84}{labelOTP}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Open\ to\ Public:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01068\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_adc87ba2c3a2ba2e577e7b6f66c661fef}{studentDiscountLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Student\ Discount:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01069\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a5d9ee96a585c16a5f55bc0842628f941}{guidedTourLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Guided\ Tour:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac817e52eba990e2679d25df1f805d70c}{culturalFocusLabel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Cultural\ Focus:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01071\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a1f93538fa133e1af63c76fe153a9dfde}{groupBoxHours}}-\/>setTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Opening\ Hours"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a36b71ddeb456fbb2056d027f51047563}{labelHeaderOpen}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Open"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2d762537057bae4a194ae158d8692b39}{labelHeaderClose}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Close"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01074\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a323573aaa8416dda00762d97717ff8fc}{labelHeaderAlwaysOpen}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Open"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a099672a5eb2d18d898ebb7799b58f644}{labelHeaderAlwaysClosed}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Closed"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac15b6a62abdc099919967666d2d470c0}{labelMonday}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Monday:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01077\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a732637c6204586627449978a06251927}{checkBoxMondayAlwaysOpen}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Open"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01078\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae35e2f084a1edfa4b5ea8bc2f4420b22}{checkBoxMondayAlwaysClosed}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Closed"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01079\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a78fafde160bd74d38c4889ae30f8ddbb}{labelTuesday}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Tuesday:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01080\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a340e42d1586bb62bfd1cc341295f6af1}{checkBoxTuesdayAlwaysOpen}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Open"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01081\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ad8fe71c178a33b148752f4a7cee0686a}{checkBoxTuesdayAlwaysClosed}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Closed"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01082\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_af401a52ac393c5033a7d4002e61c64e7}{labelWednesday}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Wednesday:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_afe7a09d6fc204f487461b74d336e1f69}{checkBoxWednesdayAlwaysOpen}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Open"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01084\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a50fd9cf4e7d7a825dbda90545091f4c6}{checkBoxWednesdayAlwaysClosed}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Closed"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01085\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a3124ba00679183791b3ae36d86f83bfe}{labelThursday}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Thursday:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01086\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a60be8c7b6b7eeaf4d0a8346ca1f7fee2}{checkBoxThursdayAlwaysOpen}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Open"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01087\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a978124f4001303e78c39608d7c05bbd9}{checkBoxThursdayAlwaysClosed}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Closed"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01088\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a2c2db007089eb3fe3266e5d6c31dca22}{labelFriday}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Friday:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a38be31c9be3333cb623db9ca0036c01f}{checkBoxFridayAlwaysOpen}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Open"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0ea302eebf97b7ebeb3a0105d38809af}{checkBoxFridayAlwaysClosed}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Closed"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01091\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a0550a59c82535e15a8c9a519570fe34d}{labelSaturday}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Saturday:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ac419d90e289695ed8847fb51354889ff}{checkBoxSaturdayAlwaysOpen}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Open"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_ae099fdf90c9fefa257148f44c5896486}{checkBoxSaturdayAlwaysClosed}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Closed"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01094\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a79af477308413874a4a659a12160e4b5}{labelSunday}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Sunday:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a6999253790b06f6f31e3bb272b9e808d}{checkBoxSundayAlwaysOpen}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Open"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01096\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a08ed72120c3d58a5b1ced29cd8f99263}{checkBoxSundayAlwaysClosed}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Always\ Closed"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a947bf1285691fd13b6478372646470d8}{pushButtonCreate}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Create"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui___create_place_widget_a8da058041ec857e2b6b6bc3916e5efbd}{pushButtonCancel}}-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}CreatePlaceWidget"{}},\ \textcolor{stringliteral}{"{}Cancel"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{01099\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{01100\ }
+\DoxyCodeLine{01101\ \};}
+\DoxyCodeLine{01102\ }
+\DoxyCodeLine{01103\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{01104\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_create_place_widget}{CreatePlaceWidget}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui___create_place_widget}{Ui\_CreatePlaceWidget}}\ \{\};}
+\DoxyCodeLine{01105\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{01106\ }
+\DoxyCodeLine{01107\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{01108\ }
+\DoxyCodeLine{01109\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_CREATEPLACEWIDGET\_H}}
+
+\end{DoxyCode}

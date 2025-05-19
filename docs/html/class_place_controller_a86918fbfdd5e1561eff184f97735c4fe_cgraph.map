@@ -1,0 +1,9 @@
+<map id="PlaceController::promptExportToJson" name="PlaceController::promptExportToJson">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,202,79"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#a6d927001e935c7a7f95b4668ef1d01d5" title=" " alt="" coords="250,46,446,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,56,234,56,234,62,202,62"/>
+<area shape="rect" id="Node000003" href="$class_place_export_to_json_visitor.html#a71f78070d67225a5a357370cdaed4d37" title=" " alt="" coords="502,5,674,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="445,43,487,37,487,42,446,48"/>
+<area shape="rect" id="Node000004" href="$class_place_controller.html#ae6e3e283a053e024eaf7c9d3c256f19b" title=" " alt="" coords="494,71,682,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="447,69,479,74,478,79,446,75"/>
+</map>

@@ -1,0 +1,43 @@
+\doxysection{Disco.\+h}
+\hypertarget{_disco_8h_source}{}\label{_disco_8h_source}\index{model/Disco.h@{model/Disco.h}}
+\mbox{\hyperlink{_disco_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DISCO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DISCO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_entertainment_8h}{Entertainment.h}}"{}}\ \textcolor{comment}{//\ Eredita\ da\ Entertainment}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Rappresenta\ una\ disco,\ un\ tipo\ di\ posto\ Entertainment}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_disco_a5b23c0422592f330a35df6ed9db63472}{Disco}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_entertainment_a11101aa74948bb6bddb443cec3baba81}{Entertainment}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ QString\ musicGenre;\ \textcolor{comment}{//\ Genere\ musicale}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ hasPrive;\ \textcolor{comment}{//\ Ha\ area\ privé}}
+\DoxyCodeLine{00011\ \ \ \ \ QString\ dressCode;\ \textcolor{comment}{//\ Dress\ code\ richiesto}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_disco_a5b23c0422592f330a35df6ed9db63472}{Disco}}(\textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}},\ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}},\ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&\ \mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ QTime\ \mbox{\hyperlink{class_entertainment_a56fe4333ea68e5107f8d841cb09a57d0}{avgStayDuration}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_entertainment_ab2fcd327737cae014a12225c0dc90b02}{minimumAge}},\ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_entertainment_a9f4914c70cad0c82431a269efedf1c5f}{restrictedEntry}},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ musicGenre,\ \textcolor{keywordtype}{bool}\ hasPrive,\ \textcolor{keyword}{const}\ QString\&\ dressCode);}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_disco_a5aacb9991934f93d34bfc3d73fcc536e}{\string~Disco}}()\ =\ \textcolor{keywordflow}{default};\ \textcolor{comment}{//\ Distruttore}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ Dice\ la\ categoria}}
+\DoxyCodeLine{00023\ \ \ \ \ QString\ \mbox{\hyperlink{class_disco_a35fcc02fe54a447d644387c75773df3e}{getCategory}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Per\ il\ Visitor}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_disco_ab0b449d35f2c0878d1d7969ef5fe4b4d}{acceptVisitor}}(\mbox{\hyperlink{class_place_visitor_interface}{PlaceVisitorInterface}}\&\ visitor)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Riassunto\ specifico\ per\ Disco}}
+\DoxyCodeLine{00029\ \ \ \ \ QString\ \mbox{\hyperlink{class_disco_a6030f59a474d8885e734c651cb4283fc}{getEntertainmentSummary}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Getter}}
+\DoxyCodeLine{00032\ \ \ \ \ QString\ \mbox{\hyperlink{class_disco_ab94775d64784429468a72cb802a06a4b}{getMusicGenre}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_disco_a7b808ae615ceb94423a1268bbe8c5931}{hasPriveAccess}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ QString\ \mbox{\hyperlink{class_disco_a7b8c4cf8d70336c314a3391b3a9cfa6d}{getDressCode}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DISCO\_H}}
+
+\end{DoxyCode}

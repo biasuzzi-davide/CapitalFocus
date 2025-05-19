@@ -1,0 +1,316 @@
+\doxysection{Main\+Window Class Reference}
+\hypertarget{class_main_window}{}\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Inheritance diagram for Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_main_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_main_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a4f1e820b66e9d9f1c5ae17a67c3f1939}{toggle\+Dark\+Mode}} (bool enabled)
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\texorpdfstring{$\sim$}{\string~}\+Main\+Window}} ()
+\item 
+QString \mbox{\hyperlink{class_main_window_a1f9c4da42785847a6160bb7a7eacf3d9}{get\+Search\+Text}} () const
+\item 
+QString \mbox{\hyperlink{class_main_window_a100bb83ff514185d298f6817f680b7e8}{get\+Selected\+City}} () const
+\item 
+void \mbox{\hyperlink{class_main_window_adc1ed341279a8fb00175c7f62e0ca60a}{set\+Controller}} (\mbox{\hyperlink{class_place_controller}{Place\+Controller}} \texorpdfstring{$\ast$}{*}controller)
+\item 
+void \mbox{\hyperlink{class_main_window_a0de59dff2d11bf6f7df043879173c1a6}{clear\+Search\+Fields}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a379642249231298bbe7b44d5d628abf2}{populate\+City\+Combo\+Box}} (const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ \&places)
+\item 
+void \mbox{\hyperlink{class_main_window_a80831c581b10a444f0966b5360efd3d7}{set\+Widget\+Credits}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a65ee7823aa184c87a5836e23b4c52eec}{set\+Widget\+Main}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a1a5c27a16e80c8c5e540f0344504b5fa}{set\+Stats}} (const \mbox{\hyperlink{struct_statistics_result}{Statistics\+Result}} \&stats)
+\item 
+void \mbox{\hyperlink{class_main_window_a0bbd92af40c21f9f29c449da3059e36f}{update\+Results}} (const std\+::map$<$ QString, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ $>$ \&grouped\+Results)
+\item 
+QList\+Widget \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a479e2ffa7a72d191f302b91f155692d4}{get\+List\+Widget}} () const
+\item 
+void \mbox{\hyperlink{class_main_window_a4e660bf0a9663fde8571063f4f17e3af}{set\+Details\+Widget}} (QWidget \texorpdfstring{$\ast$}{*}widget)
+\item 
+void \mbox{\hyperlink{class_main_window_ad59e2f5d444ceb4d0ae182f696f1e793}{show\+Widget\+By\+Name}} (const QString \&name)
+\item 
+QWidget \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a7fdfdac3e1531666f47b096aca9b71b3}{get\+Widget\+By\+Name}} (const QString \&name) const
+\item 
+QWidget \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_aa3e9d542d2b1543cb6c7b7e61216b573}{get\+Current\+Page}} () const
+\item 
+void \mbox{\hyperlink{class_main_window_aa9f911bdb2a6697f737980699db70697}{update\+Debug\+Action\+Text}} (bool debug\+Enabled)
+\item 
+void \mbox{\hyperlink{class_main_window_aa4db045fbaef61cef55e169c09da6f54}{show\+Message}} (\mbox{\hyperlink{namespace_ui_common_aa3de9e60ade9eefc8c1b8ed5ea365236}{Ui\+Common\+::\+Msg\+Icon}} icon, const QString \&title, const QString \&text)
+\item 
+bool \mbox{\hyperlink{class_main_window_a6d1e7cddbdb70dd17dc296d83fe32085}{ask\+Confirmation}} (const QString \&title, const QString \&question)
+\item 
+QString \mbox{\hyperlink{class_main_window_a93cb25c615ab14286864b056f1ab2d14}{ask\+Open\+File}} (const QString \&caption, const QString \&filter, const QString \&start\+Dir=QString()) const
+\item 
+QString \mbox{\hyperlink{class_main_window_aa0ae5247f414ea62d3bdb04edf2d29fe}{ask\+Save\+File}} (const QString \&caption, const QString \&filter, const QString \&start\+Dir=QString()) const
+\item 
+bool \mbox{\hyperlink{class_main_window_a44b22e4132ac3fdbcf78836c1d36bc1f}{get\+Dark\+Mode\+Enabled}} ()
+\item 
+void \mbox{\hyperlink{class_main_window_a591070a7d3d972e72708ebbd816179e2}{show\+Status\+Bar\+Msg}} (const QString \&message, int timeout\+Ms=3000)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_a05fb9d72c044aa3bb7d187b994704e2f}{close\+Event}} (QClose\+Event \texorpdfstring{$\ast$}{*}event) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily \label{class_main_window_a996c5a2b6f77944776856f08ec30858d} 
+Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_main_window_a996c5a2b6f77944776856f08ec30858d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\index{MainWindow@{MainWindow}!````~MainWindow@{\texorpdfstring{$\sim$}{\string~}MainWindow}}
+\index{````~MainWindow@{\texorpdfstring{$\sim$}{\string~}MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MainWindow()}{\string~MainWindow()}}
+{\footnotesize\ttfamily \label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7} 
+Main\+Window\+::\texorpdfstring{$\sim$}{\string~}\+Main\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_main_window_a6d1e7cddbdb70dd17dc296d83fe32085}\index{MainWindow@{MainWindow}!askConfirmation@{askConfirmation}}
+\index{askConfirmation@{askConfirmation}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{askConfirmation()}{askConfirmation()}}
+{\footnotesize\ttfamily \label{class_main_window_a6d1e7cddbdb70dd17dc296d83fe32085} 
+bool Main\+Window\+::ask\+Confirmation (\begin{DoxyParamCaption}\item[{const QString \&}]{title}{, }\item[{const QString \&}]{question}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_window_a93cb25c615ab14286864b056f1ab2d14}\index{MainWindow@{MainWindow}!askOpenFile@{askOpenFile}}
+\index{askOpenFile@{askOpenFile}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{askOpenFile()}{askOpenFile()}}
+{\footnotesize\ttfamily \label{class_main_window_a93cb25c615ab14286864b056f1ab2d14} 
+QString Main\+Window\+::ask\+Open\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{caption}{, }\item[{const QString \&}]{filter}{, }\item[{const QString \&}]{start\+Dir}{ = {\ttfamily QString()}}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_main_window_aa0ae5247f414ea62d3bdb04edf2d29fe}\index{MainWindow@{MainWindow}!askSaveFile@{askSaveFile}}
+\index{askSaveFile@{askSaveFile}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{askSaveFile()}{askSaveFile()}}
+{\footnotesize\ttfamily \label{class_main_window_aa0ae5247f414ea62d3bdb04edf2d29fe} 
+QString Main\+Window\+::ask\+Save\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{caption}{, }\item[{const QString \&}]{filter}{, }\item[{const QString \&}]{start\+Dir}{ = {\ttfamily QString()}}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_main_window_a0de59dff2d11bf6f7df043879173c1a6}\index{MainWindow@{MainWindow}!clearSearchFields@{clearSearchFields}}
+\index{clearSearchFields@{clearSearchFields}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{clearSearchFields()}{clearSearchFields()}}
+{\footnotesize\ttfamily \label{class_main_window_a0de59dff2d11bf6f7df043879173c1a6} 
+void Main\+Window\+::clear\+Search\+Fields (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_window_a05fb9d72c044aa3bb7d187b994704e2f}\index{MainWindow@{MainWindow}!closeEvent@{closeEvent}}
+\index{closeEvent@{closeEvent}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{closeEvent()}{closeEvent()}}
+{\footnotesize\ttfamily \label{class_main_window_a05fb9d72c044aa3bb7d187b994704e2f} 
+void Main\+Window\+::close\+Event (\begin{DoxyParamCaption}\item[{QClose\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_main_window_aa3e9d542d2b1543cb6c7b7e61216b573}\index{MainWindow@{MainWindow}!getCurrentPage@{getCurrentPage}}
+\index{getCurrentPage@{getCurrentPage}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{getCurrentPage()}{getCurrentPage()}}
+{\footnotesize\ttfamily \label{class_main_window_aa3e9d542d2b1543cb6c7b7e61216b573} 
+QWidget \texorpdfstring{$\ast$}{*} Main\+Window\+::get\+Current\+Page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_main_window_a44b22e4132ac3fdbcf78836c1d36bc1f}\index{MainWindow@{MainWindow}!getDarkModeEnabled@{getDarkModeEnabled}}
+\index{getDarkModeEnabled@{getDarkModeEnabled}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{getDarkModeEnabled()}{getDarkModeEnabled()}}
+{\footnotesize\ttfamily \label{class_main_window_a44b22e4132ac3fdbcf78836c1d36bc1f} 
+bool Main\+Window\+::get\+Dark\+Mode\+Enabled (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_window_a479e2ffa7a72d191f302b91f155692d4}\index{MainWindow@{MainWindow}!getListWidget@{getListWidget}}
+\index{getListWidget@{getListWidget}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{getListWidget()}{getListWidget()}}
+{\footnotesize\ttfamily \label{class_main_window_a479e2ffa7a72d191f302b91f155692d4} 
+QList\+Widget \texorpdfstring{$\ast$}{*} Main\+Window\+::get\+List\+Widget (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_main_window_a1f9c4da42785847a6160bb7a7eacf3d9}\index{MainWindow@{MainWindow}!getSearchText@{getSearchText}}
+\index{getSearchText@{getSearchText}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{getSearchText()}{getSearchText()}}
+{\footnotesize\ttfamily \label{class_main_window_a1f9c4da42785847a6160bb7a7eacf3d9} 
+QString Main\+Window\+::get\+Search\+Text (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_main_window_a100bb83ff514185d298f6817f680b7e8}\index{MainWindow@{MainWindow}!getSelectedCity@{getSelectedCity}}
+\index{getSelectedCity@{getSelectedCity}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{getSelectedCity()}{getSelectedCity()}}
+{\footnotesize\ttfamily \label{class_main_window_a100bb83ff514185d298f6817f680b7e8} 
+QString Main\+Window\+::get\+Selected\+City (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_main_window_a7fdfdac3e1531666f47b096aca9b71b3}\index{MainWindow@{MainWindow}!getWidgetByName@{getWidgetByName}}
+\index{getWidgetByName@{getWidgetByName}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{getWidgetByName()}{getWidgetByName()}}
+{\footnotesize\ttfamily \label{class_main_window_a7fdfdac3e1531666f47b096aca9b71b3} 
+QWidget \texorpdfstring{$\ast$}{*} Main\+Window\+::get\+Widget\+By\+Name (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_main_window_a379642249231298bbe7b44d5d628abf2}\index{MainWindow@{MainWindow}!populateCityComboBox@{populateCityComboBox}}
+\index{populateCityComboBox@{populateCityComboBox}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{populateCityComboBox()}{populateCityComboBox()}}
+{\footnotesize\ttfamily \label{class_main_window_a379642249231298bbe7b44d5d628abf2} 
+void Main\+Window\+::populate\+City\+Combo\+Box (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ \&}]{places}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_window_adc1ed341279a8fb00175c7f62e0ca60a}\index{MainWindow@{MainWindow}!setController@{setController}}
+\index{setController@{setController}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setController()}{setController()}}
+{\footnotesize\ttfamily \label{class_main_window_adc1ed341279a8fb00175c7f62e0ca60a} 
+void Main\+Window\+::set\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_place_controller}{Place\+Controller}} \texorpdfstring{$\ast$}{*}}]{controller}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_main_window_adc1ed341279a8fb00175c7f62e0ca60a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_main_window_adc1ed341279a8fb00175c7f62e0ca60a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_window_a4e660bf0a9663fde8571063f4f17e3af}\index{MainWindow@{MainWindow}!setDetailsWidget@{setDetailsWidget}}
+\index{setDetailsWidget@{setDetailsWidget}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setDetailsWidget()}{setDetailsWidget()}}
+{\footnotesize\ttfamily \label{class_main_window_a4e660bf0a9663fde8571063f4f17e3af} 
+void Main\+Window\+::set\+Details\+Widget (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{widget}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_window_a1a5c27a16e80c8c5e540f0344504b5fa}\index{MainWindow@{MainWindow}!setStats@{setStats}}
+\index{setStats@{setStats}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setStats()}{setStats()}}
+{\footnotesize\ttfamily \label{class_main_window_a1a5c27a16e80c8c5e540f0344504b5fa} 
+void Main\+Window\+::set\+Stats (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_statistics_result}{Statistics\+Result}} \&}]{stats}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_window_a80831c581b10a444f0966b5360efd3d7}\index{MainWindow@{MainWindow}!setWidgetCredits@{setWidgetCredits}}
+\index{setWidgetCredits@{setWidgetCredits}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setWidgetCredits()}{setWidgetCredits()}}
+{\footnotesize\ttfamily \label{class_main_window_a80831c581b10a444f0966b5360efd3d7} 
+void Main\+Window\+::set\+Widget\+Credits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a80831c581b10a444f0966b5360efd3d7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_window_a65ee7823aa184c87a5836e23b4c52eec}\index{MainWindow@{MainWindow}!setWidgetMain@{setWidgetMain}}
+\index{setWidgetMain@{setWidgetMain}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setWidgetMain()}{setWidgetMain()}}
+{\footnotesize\ttfamily \label{class_main_window_a65ee7823aa184c87a5836e23b4c52eec} 
+void Main\+Window\+::set\+Widget\+Main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a65ee7823aa184c87a5836e23b4c52eec_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_window_aa4db045fbaef61cef55e169c09da6f54}\index{MainWindow@{MainWindow}!showMessage@{showMessage}}
+\index{showMessage@{showMessage}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showMessage()}{showMessage()}}
+{\footnotesize\ttfamily \label{class_main_window_aa4db045fbaef61cef55e169c09da6f54} 
+void Main\+Window\+::show\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_ui_common_aa3de9e60ade9eefc8c1b8ed5ea365236}{Ui\+Common\+::\+Msg\+Icon}}}]{icon}{, }\item[{const QString \&}]{title}{, }\item[{const QString \&}]{text}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_window_a591070a7d3d972e72708ebbd816179e2}\index{MainWindow@{MainWindow}!showStatusBarMsg@{showStatusBarMsg}}
+\index{showStatusBarMsg@{showStatusBarMsg}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showStatusBarMsg()}{showStatusBarMsg()}}
+{\footnotesize\ttfamily \label{class_main_window_a591070a7d3d972e72708ebbd816179e2} 
+void Main\+Window\+::show\+Status\+Bar\+Msg (\begin{DoxyParamCaption}\item[{const QString \&}]{message}{, }\item[{int}]{timeout\+Ms}{ = {\ttfamily 3000}}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a591070a7d3d972e72708ebbd816179e2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_window_ad59e2f5d444ceb4d0ae182f696f1e793}\index{MainWindow@{MainWindow}!showWidgetByName@{showWidgetByName}}
+\index{showWidgetByName@{showWidgetByName}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{showWidgetByName()}{showWidgetByName()}}
+{\footnotesize\ttfamily \label{class_main_window_ad59e2f5d444ceb4d0ae182f696f1e793} 
+void Main\+Window\+::show\+Widget\+By\+Name (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_ad59e2f5d444ceb4d0ae182f696f1e793_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_window_a4f1e820b66e9d9f1c5ae17a67c3f1939}\index{MainWindow@{MainWindow}!toggleDarkMode@{toggleDarkMode}}
+\index{toggleDarkMode@{toggleDarkMode}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{toggleDarkMode()}{toggleDarkMode()}}
+{\footnotesize\ttfamily \label{class_main_window_a4f1e820b66e9d9f1c5ae17a67c3f1939} 
+void Main\+Window\+::toggle\+Dark\+Mode (\begin{DoxyParamCaption}\item[{bool}]{enabled}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a4f1e820b66e9d9f1c5ae17a67c3f1939_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_main_window_aa9f911bdb2a6697f737980699db70697}\index{MainWindow@{MainWindow}!updateDebugActionText@{updateDebugActionText}}
+\index{updateDebugActionText@{updateDebugActionText}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateDebugActionText()}{updateDebugActionText()}}
+{\footnotesize\ttfamily \label{class_main_window_aa9f911bdb2a6697f737980699db70697} 
+void Main\+Window\+::update\+Debug\+Action\+Text (\begin{DoxyParamCaption}\item[{bool}]{debug\+Enabled}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_main_window_a0bbd92af40c21f9f29c449da3059e36f}\index{MainWindow@{MainWindow}!updateResults@{updateResults}}
+\index{updateResults@{updateResults}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateResults()}{updateResults()}}
+{\footnotesize\ttfamily \label{class_main_window_a0bbd92af40c21f9f29c449da3059e36f} 
+void Main\+Window\+::update\+Results (\begin{DoxyParamCaption}\item[{const std\+::map$<$ QString, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ $>$ \&}]{grouped\+Results}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+view/\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+view/\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}

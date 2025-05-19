@@ -1,0 +1,44 @@
+<map id="model/Monument.h" name="model/Monument.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="842,5,974,31"/>
+<area shape="rect" id="Node000002" href="$_monument_8cpp.html" title=" " alt="" coords="5,175,152,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="827,34,694,55,543,82,309,133,126,177,125,172,307,128,542,76,693,49,826,29"/>
+<area shape="rect" id="Node000003" href="$_place_import_from_json_8cpp.html" title=" " alt="" coords="1044,79,1214,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="957,34,1075,76,1073,81,955,39"/>
+<area shape="rect" id="Node000004" href="$placeexporttoxmlvisitor_8h.html" title=" " alt="" coords="176,175,419,201"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="849,38,342,177,341,172,848,33"/>
+<area shape="rect" id="Node000007" href="$placeimportfromxml_8cpp.html" title=" " alt="" coords="1238,86,1476,112"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="990,31,1288,83,1287,89,989,36"/>
+<area shape="rect" id="Node000008" href="$placevisitorinterface_8h.html" title=" " alt="" coords="795,86,1021,112"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="910,47,910,86,905,86,905,47"/>
+<area shape="rect" id="Node000005" href="$placecontroller_8cpp.html" title=" " alt="" coords="532,264,718,290"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="359,203,580,261,578,266,357,208"/>
+<area shape="rect" id="Node000006" href="$placeexporttoxmlvisitor_8cpp.html" title=" " alt="" coords="168,264,426,290"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="300,217,300,263,294,263,294,217"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="780,110,497,131,330,148,164,170,128,177,127,172,163,165,329,143,496,125,779,105"/>
+<area shape="poly" id="edge19_Node000008_Node000004" title=" " alt="" coords="806,118,431,170,383,177,382,172,430,165,806,112"/>
+<area shape="rect" id="Node000009" href="$_cafe_8cpp.html" title=" " alt="" coords="1238,175,1351,201"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="986,113,1226,165,1252,172,1251,177,1225,170,985,118"/>
+<area shape="rect" id="Node000010" href="$_disco_8cpp.html" title=" " alt="" coords="1375,175,1494,201"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="1003,112,1034,117,1199,138,1272,148,1364,165,1393,172,1392,177,1363,170,1271,153,1199,143,1033,122,1002,118"/>
+<area shape="rect" id="Node000011" href="$_local_market_8cpp.html" title=" " alt="" coords="1518,175,1674,201"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="999,112,1033,117,1166,131,1270,139,1374,147,1507,165,1544,172,1543,177,1506,170,1374,153,1270,144,1166,136,1033,122,999,118"/>
+<area shape="rect" id="Node000012" href="$_mall_8cpp.html" title=" " alt="" coords="1698,175,1808,201"/>
+<area shape="poly" id="edge11_Node000008_Node000012" title=" " alt="" coords="997,112,1033,117,1217,131,1361,134,1504,141,1588,150,1687,165,1716,172,1715,177,1686,170,1588,155,1504,146,1361,139,1217,136,1033,122,996,118"/>
+<area shape="rect" id="Node000013" href="$_museum_8cpp.html" title=" " alt="" coords="1832,175,1968,201"/>
+<area shape="poly" id="edge13_Node000008_Node000013" title=" " alt="" coords="996,112,1033,117,1153,128,1254,133,1427,136,1600,141,1701,150,1820,165,1855,172,1854,177,1819,170,1701,155,1600,146,1427,141,1254,138,1153,133,1033,122,995,118"/>
+<area shape="rect" id="Node000014" href="$_panoramic_points_8cpp.html" title=" " alt="" coords="442,175,627,201"/>
+<area shape="poly" id="edge14_Node000008_Node000014" title=" " alt="" coords="841,119,588,177,586,172,840,114"/>
+<area shape="rect" id="Node000015" href="$_restaurant_8cpp.html" title=" " alt="" coords="650,175,800,201"/>
+<area shape="poly" id="edge15_Node000008_Node000015" title=" " alt="" coords="869,122,752,177,750,172,867,117"/>
+<area shape="rect" id="Node000016" href="$place_export_to_json_visitor_8h.html" title=" " alt="" coords="824,168,992,208"/>
+<area shape="poly" id="edge16_Node000008_Node000016" title=" " alt="" coords="910,128,910,168,905,168,905,128"/>
+<area shape="rect" id="Node000018" href="$statisticsvisitor_8h.html" title=" " alt="" coords="1016,175,1213,201"/>
+<area shape="poly" id="edge20_Node000008_Node000018" title=" " alt="" coords="952,116,1087,172,1084,177,950,121"/>
+<area shape="poly" id="edge17_Node000016_Node000005" title=" " alt="" coords="829,216,666,266,664,261,828,211"/>
+<area shape="rect" id="Node000017" href="$place_export_to_json_visitor_8cpp.html" title=" " alt="" coords="824,256,992,297"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="910,224,910,256,905,256,905,224"/>
+<area shape="rect" id="Node000019" href="$placerepository_8cpp.html" title=" " alt="" coords="1022,264,1194,290"/>
+<area shape="poly" id="edge21_Node000018_Node000019" title=" " alt="" coords="1115,216,1111,264,1106,263,1110,216"/>
+<area shape="rect" id="Node000020" href="$statisticsvisitor_8cpp.html" title=" " alt="" coords="1218,264,1430,290"/>
+<area shape="poly" id="edge22_Node000018_Node000020" title=" " alt="" coords="1159,205,1295,261,1293,266,1157,210"/>
+</map>

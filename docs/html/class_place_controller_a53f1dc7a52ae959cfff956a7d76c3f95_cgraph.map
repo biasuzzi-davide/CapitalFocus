@@ -1,0 +1,15 @@
+<map id="PlaceController::setWidgetCredits" name="PlaceController::setWidgetCredits">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,92,183,133"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#a480c14d56580bf1053751976d2299a90" title=" " alt="" coords="231,100,435,125"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,110,215,110,215,115,183,115"/>
+<area shape="rect" id="Node000003" href="$class_place_controller.html#ad663ce4cce88753c4efa8ab242c5248e" title=" " alt="" coords="483,5,663,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="370,96,499,49,501,54,372,101"/>
+<area shape="rect" id="Node000004" href="$class_create_place_widget.html#ad04de17a01dccabf6adf89dbe7dff9c3" title=" " alt="" coords="711,47,854,87"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="435,99,696,73,696,78,436,105"/>
+<area shape="rect" id="Node000005" href="$class_create_place_widget.html#a261fdbad31856f9c1280b26ca9feccd4" title=" " alt="" coords="502,120,644,161"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="436,122,487,128,486,133,435,127"/>
+<area shape="rect" id="Node000006" href="$class_create_place_widget.html#a19cc0e82b8368994048ca03ee0d3efcc" title=" " alt="" coords="711,136,854,177"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="360,123,415,149,484,170,538,177,594,178,696,169,696,174,594,183,538,182,482,175,413,154,357,128"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="664,41,697,47,696,53,663,46"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="645,143,696,147,696,152,644,148"/>
+</map>

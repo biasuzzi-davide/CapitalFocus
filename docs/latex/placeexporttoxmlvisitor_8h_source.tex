@@ -1,0 +1,68 @@
+\doxysection{placeexporttoxmlvisitor.\+h}
+\hypertarget{placeexporttoxmlvisitor_8h_source}{}\label{placeexporttoxmlvisitor_8h_source}\index{model/visitor/placeexporttoxmlvisitor.h@{model/visitor/placeexporttoxmlvisitor.h}}
+\mbox{\hyperlink{placeexporttoxmlvisitor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLACEEXPORTTOXMLVISITOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLACEEXPORTTOXMLVISITOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{placevisitorinterface_8h}{placevisitorinterface.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QDomDocument>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QDomElement>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{weekly_openings_8h}{../weeklyOpenings.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_place_8h}{../Place.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_food_8h}{../Food.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shopping_8h}{../Shopping.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_entertainment_8h}{../Entertainment.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_cafe_8h}{../Cafe.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_restaurant_8h}{../Restaurant.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_disco_8h}{../Disco.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_panoramic_points_8h}{../PanoramicPoints.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_local_market_8h}{../LocalMarket.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_mall_8h}{../Mall.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_museum_8h}{../Museum.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_monument_8h}{../Monument.h}}"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{comment}{//\ Visitor\ per\ esportare\ Place\ in\ formato\ XML}}
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_place_export_to_xml_visitor_aa01b988c1b191e28b1ac181f197b39ac}{PlaceExportToXmlVisitor}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_place_visitor_interface}{PlaceVisitorInterface}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ QDomDocument\&\ doc;\ \textcolor{comment}{//\ Il\ documento\ XML\ su\ cui\ lavorare}}
+\DoxyCodeLine{00026\ \ \ \ \ QDomElement\ result;\ \textcolor{comment}{//\ L'elemento\ XML\ creato\ per\ il\ Place\ visitato}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ gli\ orari}}
+\DoxyCodeLine{00029\ \ \ \ \ QDomElement\ exportWeeklyOpenings(\textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&\ w)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ i\ dati\ base\ di\ Place}}
+\DoxyCodeLine{00032\ \ \ \ \ QDomElement\ basePlaceToXml(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_place}{Place}}\&\ place,\ \textcolor{keyword}{const}\ QString\&\ type)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ i\ dati\ specifici\ di\ Food}}
+\DoxyCodeLine{00035\ \ \ \ \ QDomElement\ exportFoodData(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_food}{Food}}\&\ f)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ i\ dati\ specifici\ di\ Shopping}}
+\DoxyCodeLine{00037\ \ \ \ \ QDomElement\ exportShoppingData(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_shopping}{Shopping}}\&\ s)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ i\ dati\ specifici\ di\ Entertainment}}
+\DoxyCodeLine{00039\ \ \ \ \ QDomElement\ exportEntertainmentData(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_entertainment}{Entertainment}}\&\ ent)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ i\ dati\ specifici\ di\ Culture}}
+\DoxyCodeLine{00041\ \ \ \ \ QDomElement\ exportCultureData(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_culture}{Culture}}\&\ c)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ Costruttore,\ prende\ il\ documento\ XML\ di\ destinazione}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_place_export_to_xml_visitor_aa01b988c1b191e28b1ac181f197b39ac}{PlaceExportToXmlVisitor}}(QDomDocument\&\ document);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{comment}{//\ Ritorna\ l'elemento\ XML\ creato\ dopo\ la\ visita}}
+\DoxyCodeLine{00048\ \ \ \ \ QDomElement\ \mbox{\hyperlink{class_place_export_to_xml_visitor_a93284795a78b2c2806bb2d0fea6d4db8}{getResult}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//\ Implementazioni\ dei\ metodi\ visit\ per\ i\ vari\ tipi\ di\ Place,\ creano\ l'elemento\ XML\ per\ il\ Place\ visitato}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ae6239232c4f02b381e17eb748b6e5afa}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_place}{Place}}\&\ place)\ \textcolor{keyword}{override};\ \textcolor{comment}{//\ Per\ la\ classe\ base}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ae6239232c4f02b381e17eb748b6e5afa}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cafe}{Cafe}}\&\ cafe)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ae6239232c4f02b381e17eb748b6e5afa}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_disco}{Disco}}\&\ disco)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ae6239232c4f02b381e17eb748b6e5afa}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_mall}{Mall}}\&\ mall)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ae6239232c4f02b381e17eb748b6e5afa}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_local_market}{LocalMarket}}\&\ market)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ae6239232c4f02b381e17eb748b6e5afa}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_restaurant}{Restaurant}}\&\ restaurant)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ae6239232c4f02b381e17eb748b6e5afa}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_panoramic_points}{PanoramicPoints}}\&\ point)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ae6239232c4f02b381e17eb748b6e5afa}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_museum}{Museum}}\&\ museum)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ae6239232c4f02b381e17eb748b6e5afa}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_monument}{Monument}}\&\ monument)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PLACEEXPORTTOXMLVISITOR\_Hs}}
+
+\end{DoxyCode}

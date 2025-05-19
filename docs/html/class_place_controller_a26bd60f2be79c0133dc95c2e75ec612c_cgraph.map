@@ -1,0 +1,14 @@
+<map id="PlaceController::exportToFile" name="PlaceController::exportToFile">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,195,105"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#a6d927001e935c7a7f95b4668ef1d01d5" title=" " alt="" coords="243,54,439,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,80,227,76,227,82,195,85"/>
+<area shape="rect" id="Node000005" href="$class_place_controller.html#a5960fa51152def2ff7540c30c29aa84f" title=" " alt="" coords="245,104,436,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="195,99,230,103,229,108,195,104"/>
+<area shape="rect" id="Node000003" href="$class_place_export_to_json_visitor.html#a71f78070d67225a5a357370cdaed4d37" title=" " alt="" coords="496,5,667,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="419,51,480,40,481,46,420,56"/>
+<area shape="rect" id="Node000004" href="$class_place_controller.html#ae6e3e283a053e024eaf7c9d3c256f19b" title=" " alt="" coords="487,71,675,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="440,74,472,77,471,83,439,79"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="437,104,471,100,472,105,437,109"/>
+<area shape="rect" id="Node000006" href="$class_place_export_to_xml_visitor.html#a93284795a78b2c2806bb2d0fea6d4db8" title=" " alt="" coords="498,136,664,177"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="422,127,483,137,482,143,422,132"/>
+</map>

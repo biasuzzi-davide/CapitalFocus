@@ -1,0 +1,186 @@
+\doxysection{Food Class Reference}
+\hypertarget{class_food}{}\label{class_food}\index{Food@{Food}}
+
+
+{\ttfamily \#include $<$Food.\+h$>$}
+
+
+
+Inheritance diagram for Food\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_food__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Food\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_food__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_a2f64b372c9a465f7bcab4ab41d81ae8d}{Food}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&hours, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}, bool take\+Away, const QTime \&avg\+Waiting\+Time, bool vegan\+Menu)
+\item 
+virtual \mbox{\hyperlink{class_food_ae2a4e53388ef5377a6eb366dcdde3dd7}{\texorpdfstring{$\sim$}{\string~}\+Food}} ()=default
+\item 
+virtual QString \mbox{\hyperlink{class_food_a702051aaf0425a1aae08c38c53c090f0}{get\+Food\+Summary}} () const =0
+\item 
+QString \mbox{\hyperlink{class_food_a3ac763c9aa558947145dac0ff1d44f02}{get\+Category}} () const override
+\item 
+bool \mbox{\hyperlink{class_food_aa5eeb1fecbac1c664c529286261fe6ce}{has\+Take\+Away}} () const
+\item 
+QTime \mbox{\hyperlink{class_food_aef0ab2f24e1084812e3cbe4025a966ea}{get\+Avg\+Waiting\+Time}} () const
+\item 
+bool \mbox{\hyperlink{class_food_a040929464715c929699fabaa79756e8d}{has\+Vegan\+Menu}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_place}{Place}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_place_a06c16ea1806695908623c43f803c3a13}{Place}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}})
+\item 
+virtual \mbox{\hyperlink{class_place_a5dedf984133a4a33a95419da61b54157}{\texorpdfstring{$\sim$}{\string~}\+Place}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_place_ad01a28ff7cc0080579d084606b1d6e17}{accept\+Visitor}} (\mbox{\hyperlink{class_place_visitor_interface}{Place\+Visitor\+Interface}} \&visitor) const =0
+\item 
+double \mbox{\hyperlink{class_place_a95a5121627c6f6a0ab5ecfcfbffe8e4d}{get\+Cost}} () const
+\item 
+QString \mbox{\hyperlink{class_place_ac92292afedae475500f31361b8163acf}{get\+Name}} () const
+\item 
+QString \mbox{\hyperlink{class_place_a27ccfedddb14f83bc62b12b79ce6a29f}{get\+City}} () const
+\item 
+QString \mbox{\hyperlink{class_place_a6baa6314ad59d069f86ffcd81484211b}{get\+Description}} () const
+\item 
+double \mbox{\hyperlink{class_place_af4f1cbcde42f665d72b090e77852f75e}{get\+Rating}} () const
+\item 
+const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \& \mbox{\hyperlink{class_place_a16b0f469896907c173a3a747de31da5f}{get\+Open}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_place}{Place}}}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}
+\item 
+QString \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}
+\item 
+QString \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}
+\item 
+double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}
+\item 
+\mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}
+\item 
+double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_food_a2f64b372c9a465f7bcab4ab41d81ae8d}\index{Food@{Food}!Food@{Food}}
+\index{Food@{Food}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{Food()}{Food()}}
+{\footnotesize\ttfamily \label{class_food_a2f64b372c9a465f7bcab4ab41d81ae8d} 
+Food\+::\+Food (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{, }\item[{const QString \&}]{city}{, }\item[{const QString \&}]{description}{, }\item[{double}]{rating}{, }\item[{const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&}]{hours}{, }\item[{double}]{cost}{, }\item[{bool}]{take\+Away}{, }\item[{const QTime \&}]{avg\+Waiting\+Time}{, }\item[{bool}]{vegan\+Menu}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{class_food_a2f64b372c9a465f7bcab4ab41d81ae8d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_food_a2f64b372c9a465f7bcab4ab41d81ae8d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_food_ae2a4e53388ef5377a6eb366dcdde3dd7}\index{Food@{Food}!````~Food@{\texorpdfstring{$\sim$}{\string~}Food}}
+\index{````~Food@{\texorpdfstring{$\sim$}{\string~}Food}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Food()}{\string~Food()}}
+{\footnotesize\ttfamily \label{class_food_ae2a4e53388ef5377a6eb366dcdde3dd7} 
+virtual Food\+::\texorpdfstring{$\sim$}{\string~}\+Food (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_food_aef0ab2f24e1084812e3cbe4025a966ea}\index{Food@{Food}!getAvgWaitingTime@{getAvgWaitingTime}}
+\index{getAvgWaitingTime@{getAvgWaitingTime}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{getAvgWaitingTime()}{getAvgWaitingTime()}}
+{\footnotesize\ttfamily \label{class_food_aef0ab2f24e1084812e3cbe4025a966ea} 
+QTime Food\+::get\+Avg\+Waiting\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_food_aef0ab2f24e1084812e3cbe4025a966ea_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_food_a3ac763c9aa558947145dac0ff1d44f02}\index{Food@{Food}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily \label{class_food_a3ac763c9aa558947145dac0ff1d44f02} 
+QString Food\+::get\+Category (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_a43620368e8374fe90c96c2d00f39831a}{Place}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_restaurant_af646340e4486b56390c49f2feff8eb70}{Restaurant}}.
+
+\Hypertarget{class_food_a702051aaf0425a1aae08c38c53c090f0}\index{Food@{Food}!getFoodSummary@{getFoodSummary}}
+\index{getFoodSummary@{getFoodSummary}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{getFoodSummary()}{getFoodSummary()}}
+{\footnotesize\ttfamily \label{class_food_a702051aaf0425a1aae08c38c53c090f0} 
+virtual QString Food\+::get\+Food\+Summary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_cafe_a377bf66a4f293f178015fac6bad0b92d}{Cafe}}, and \mbox{\hyperlink{class_restaurant_a1f6325dd06f037927ef50ae41d87e9b5}{Restaurant}}.
+
+\Hypertarget{class_food_aa5eeb1fecbac1c664c529286261fe6ce}\index{Food@{Food}!hasTakeAway@{hasTakeAway}}
+\index{hasTakeAway@{hasTakeAway}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{hasTakeAway()}{hasTakeAway()}}
+{\footnotesize\ttfamily \label{class_food_aa5eeb1fecbac1c664c529286261fe6ce} 
+bool Food\+::has\+Take\+Away (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_food_aa5eeb1fecbac1c664c529286261fe6ce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_food_a040929464715c929699fabaa79756e8d}\index{Food@{Food}!hasVeganMenu@{hasVeganMenu}}
+\index{hasVeganMenu@{hasVeganMenu}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{hasVeganMenu()}{hasVeganMenu()}}
+{\footnotesize\ttfamily \label{class_food_a040929464715c929699fabaa79756e8d} 
+bool Food\+::has\+Vegan\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_food_a040929464715c929699fabaa79756e8d_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/\mbox{\hyperlink{_food_8h}{Food.\+h}}\item 
+model/\mbox{\hyperlink{_food_8cpp}{Food.\+cpp}}\end{DoxyCompactItemize}

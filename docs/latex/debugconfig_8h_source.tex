@@ -1,0 +1,27 @@
+\doxysection{debugconfig.\+h}
+\hypertarget{debugconfig_8h_source}{}\label{debugconfig_8h_source}\index{model/debugconfig.h@{model/debugconfig.h}}
+\mbox{\hyperlink{debugconfig_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DEBUGCONFIG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DEBUGCONFIG\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDebug>}\ \textcolor{comment}{//\ Per\ qDebug()}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Flag\ globale\ per\ il\ debug}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{debugconfig_8cpp_af45d890adeeb7d0fee9c277eb84c1d3c}{DEBUG\_MODE}};}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{comment}{//\ Macro\ per\ stampare\ messaggi\ solo\ in\ modalità\ debug}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ DEBUG\_LOG(x)\ \(\backslash\)}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{do\ \{\ if\ (DEBUG\_MODE)\ qDebug()\ <<\ x;\ \}\ while\ (0)}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ Namespace\ per\ gestire\ il\ flag\ di\ debug}}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_debug_config}{DebugConfig}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ Attiva/disattiva\ il\ debug}}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{namespace_debug_config_a443de79440b74b7454237d95e7cfcebf}{setEnabled}}(\textcolor{keywordtype}{bool}\ enabled);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{comment}{//\ Controlla\ se\ il\ debug\ è\ attivo}}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{namespace_debug_config_ac1866de56c034219ae9716f41aacf24b}{isEnabled}}();}
+\DoxyCodeLine{00019\ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DEBUGCONFIG\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,9 @@
+<map id="Entertainment" name="Entertainment">
+<area shape="rect" id="Node000001" title=" " alt="" coords="111,404,298,613"/>
+<area shape="rect" id="Node000003" href="$class_disco.html" title=" " alt="" coords="5,661,192,870"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="158,628,144,662,139,660,153,626"/>
+<area shape="rect" id="Node000004" href="$class_panoramic_points.html" title=" " alt="" coords="216,661,403,870"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="255,626,269,660,264,662,250,628"/>
+<area shape="rect" id="Node000002" href="$class_place.html" title=" " alt="" coords="146,5,262,356"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,371,207,404,202,404,202,371"/>
+</map>

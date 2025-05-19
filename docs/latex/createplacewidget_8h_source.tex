@@ -1,0 +1,186 @@
+\doxysection{createplacewidget.\+h}
+\hypertarget{createplacewidget_8h_source}{}\label{createplacewidget_8h_source}\index{view/createplacewidget.h@{view/createplacewidget.h}}
+\mbox{\hyperlink{createplacewidget_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{weekday_8h}{model/weekday.h}}"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ CREATEPLACEWIDGET\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ CREATEPLACEWIDGET\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Dichiarazione\ forward\ per\ evitare\ include\ completo}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_create_place_widget}{CreatePlaceWidget}};\ \}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_place_controller}{PlaceController}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Widget\ per\ la\ creazione\ e\ modifica\ di\ un\ Place}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_create_place_widget_a85449e152499fbc8152f38921edb1117}{CreatePlaceWidget}}\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_editing\ \{\ \textcolor{keyword}{false}\ \};\ \textcolor{comment}{//\ Stato\ editing}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_create_place_widget}{Ui::CreatePlaceWidget}}\ *ui\ \{\ \textcolor{keyword}{nullptr}\ \};\ \textcolor{comment}{//\ Puntatore\ all'UI\ generata\ da\ Qt\ Designer}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_place_controller}{PlaceController}}\ *controller\ \{\ \textcolor{keyword}{nullptr}\ \};\ \textcolor{comment}{//\ Puntatore\ al\ Controller}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_create_place_widget_a85449e152499fbc8152f38921edb1117}{CreatePlaceWidget}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Distruttore}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_create_place_widget_afd63f6f564cafc302213975916a52b51}{\string~CreatePlaceWidget}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Imposta\ il\ Controller\ associato}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a7e7cb5f60538cbd52752a4b5d37fd63e}{setController}}(\mbox{\hyperlink{class_place_controller}{PlaceController}}\ *c);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_a8f154814c34b996521200e4219c97335}{type}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_ad327b1dd816123b375560e990f06822d}{name}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_a08e8b4b886228c8a975b83d9171745e3}{city}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_a8721e192a9e8aaddded062dcb9caac08}{description}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \ \mbox{\hyperlink{class_create_place_widget_ab9e7e0a2a373a3c148a8eb2695790a32}{rating}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \ \mbox{\hyperlink{class_create_place_widget_ae76218ea15f68caf6ee8bd8581caae36}{cost}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a243613d53ddfea221236817383131459}{setType}}(\textcolor{keyword}{const}\ QString\ \&\mbox{\hyperlink{class_create_place_widget_a8f154814c34b996521200e4219c97335}{type}});}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a621369ed2c32efcf2fb6edf27646ff1a}{setName}}(\textcolor{keyword}{const}\ QString\ \&\mbox{\hyperlink{class_create_place_widget_ad327b1dd816123b375560e990f06822d}{name}});}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a9d936d06919df5dfa9798e6808d93cd7}{setCity}}(\textcolor{keyword}{const}\ QString\ \&\mbox{\hyperlink{class_create_place_widget_a08e8b4b886228c8a975b83d9171745e3}{city}});}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_ab69b058ffe95134efbaeb9c2f9aad930}{setDescription}}(\textcolor{keyword}{const}\ QString\ \&\mbox{\hyperlink{class_create_place_widget_a8721e192a9e8aaddded062dcb9caac08}{description}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a6a5300829c641b50718c780ebcbcd6e6}{setRating}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_create_place_widget_ab9e7e0a2a373a3c148a8eb2695790a32}{rating}});}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a523437bbdb0e02c20d457637d38b36b7}{setCost}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_create_place_widget_ae76218ea15f68caf6ee8bd8581caae36}{cost}});}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_a74971a5ffa23371e1c0f73945afe0216}{musicGenre}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a6e1966ad8c2fbce2349c25a53dc6c433}{prive}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_aec79a2c39a8171c4c022572f1ef53187}{dressCode}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_af8cf8f1dcb0fb9e0e097897f9d2329dd}{setMusicGenre}}(\textcolor{keyword}{const}\ QString\ \&genre);}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a9d82c2ffbc5a81517c255e93dd6a9900}{setPrive}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a6e1966ad8c2fbce2349c25a53dc6c433}{prive}});}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a39650364031a1d78c1f9f3a919ffe3f9}{setDressCode}}(\textcolor{keyword}{const}\ QString\ \&code);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_create_place_widget_ac091889bf35fbfcc528a1034f6c91073}{altitude}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a120a9f37d4e92c15a45fe6e3c2f9a039}{binoculars}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a6ffa27274e63fcc03b937f8f9a69913e}{nightLighting}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a6d304e502bb920b222ac5ad8d4b3f63e}{setAltitude}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_create_place_widget_ac091889bf35fbfcc528a1034f6c91073}{altitude}});}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_aa6f16ebdd6a38526693455c61d7bc080}{setBinoculars}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a120a9f37d4e92c15a45fe6e3c2f9a039}{binoculars}});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a31d2403a334a82a2d6968f04c9badcf8}{setNightLighting}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a6ffa27274e63fcc03b937f8f9a69913e}{nightLighting}});}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a1ea357fe305e3e714ce191446d26237a}{terrace}}()\ \ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_a1c49f0b1dad36ec919ff8e9f9963dea4}{specialDrink}}()\ \ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a1ba32064c16102566fedaca600a8267a}{setTerrace}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a1ea357fe305e3e714ce191446d26237a}{terrace}});}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_af122e439f7635486b365aa595e8662db}{setSpecialDrink}}(\textcolor{keyword}{const}\ QString\ \&drink);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_a337f45062a8d4f281e18c9ec9505e891}{cuisineType}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a3e6b135500706eaddbcaa8922d0500c2}{reservationNeeded}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_ad576d6bcebc07a621ad2672c69c23f58}{specialDish}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a6c8b135e303c3428e7797e4b3878583f}{setCuisineType}}(\textcolor{keyword}{const}\ QString\ \&cuisine);}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a622067960f92ea68e3f14516612fa047}{setReservationNeeded}}(\textcolor{keywordtype}{bool}\ needed);}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a2bf7db96ea2406d29b91dfe58cda0935}{setSpecialDish}}(\textcolor{keyword}{const}\ QString\ \&dish);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_create_place_widget_a2189d8913f98872301d5ad33ebde3c44}{shopCount}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a5d9831b554a8b6c5d2d13081df4680d1}{cinema}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a469916b2992091ca7229e46229afea97}{freeParking}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_ae2bb6aa567ada4030d3be86cefcce12a}{setShopCount}}(\textcolor{keywordtype}{int}\ count);}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a21958e6afd71dcaba6e92f9286b6ab8d}{setCinema}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a5d9831b554a8b6c5d2d13081df4680d1}{cinema}});}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a15987cf7b3ede9585b2027a3b451d15e}{setFreeParking}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a469916b2992091ca7229e46229afea97}{freeParking}});}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_aae214167ca6ca10e84116b4636e2c790}{artisans}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a38e65c2a10bf4598d682c9100666b5f4}{seasonal}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_a2ca96ee9b03564c0e604c053ebfc5662}{period}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a6e27c94d0314d3bc11d50878b31841b7}{setArtisans}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_aae214167ca6ca10e84116b4636e2c790}{artisans}});}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a3cbb4687d06d8dbcb805276455572604}{setSeasonal}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a38e65c2a10bf4598d682c9100666b5f4}{seasonal}});}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a697370353544a74e0351c6bba7328cfd}{setPeriod}}(\textcolor{keyword}{const}\ QString\ \&\mbox{\hyperlink{class_create_place_widget_a2ca96ee9b03564c0e604c053ebfc5662}{period}});}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a41bf606a228b633850e5478d8ad2123c}{audioGuide}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a77a2c42dab143695786fcaa83683d901}{setAudioGuide}}(\textcolor{keywordtype}{bool}\ audio);}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_afeacbf6f76be9fc489edab268b724773}{unesco}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_a06b2f9a612b34f549a9eafe293735804}{conservationStatus}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a22146bef9152fcb9023a97d2f98ff419}{openToPublic}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a16c14de46388e1d58d8b391cacf79053}{setUnesco}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_afeacbf6f76be9fc489edab268b724773}{unesco}});}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a25a1906878986fc589bc48934f936bd2}{setConservationStatus}}(\textcolor{keyword}{const}\ QString\ \&status);}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a703578208502c74c874678f97344546c}{setOpenToPublic}}(\textcolor{keywordtype}{bool}\ open);}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ QTime\ \mbox{\hyperlink{class_create_place_widget_aef438fcaf4a47971bf9fd87a499fc0a3}{averageStay\_Disco}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_create_place_widget_ac3f81aacd3e87a4d16fbe776ad5f7339}{minimumAge\_Disco}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_ab0f811cf88a2cc509b1553e881165370}{restrictedEntry\_Disco}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_ad9efda6ec3dac9ffafdd7659f425442e}{setAverageStay\_Disco}}(\textcolor{keyword}{const}\ QTime\ \&time);}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a97265f308d041255ed2d635fb48e8b15}{setMinimumAge\_Disco}}(\textcolor{keywordtype}{int}\ age);}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_ac8af7c7f1f44f0c9574034d3c4d39719}{setRestrictedEntry\_Disco}}(\textcolor{keyword}{const}\ QString\ \&entry);}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ QTime\ \mbox{\hyperlink{class_create_place_widget_a0e95f9439e20001c9c6c629672dcbdb6}{averageStay\_Panoramic}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_create_place_widget_a346e0108a7f02124637082c1db6ab419}{minimumAge\_Panoramic}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_ae5dbe72386ea964c03ddebbacbd650b7}{restrictedEntry\_Panoramic}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a01682d91f8563a7b686fa84c928e5995}{setAverageStay\_Panoramic}}(\textcolor{keyword}{const}\ QTime\ \&time);}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a881b72563ce5ba391310e995a20ca07c}{setMinimumAge\_Panoramic}}(\textcolor{keywordtype}{int}\ age);}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_ad8993830b3984943b54e445f2a8bea23}{setRestrictedEntry\_Panoramic}}(\textcolor{keyword}{const}\ QString\ \&entry);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a3a124c3ea8097b2d3b28cdbaa2187c14}{takeAway\_Restaurant}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ QTime\ \mbox{\hyperlink{class_create_place_widget_ad67c995bc090540ab3d31d40226c17a8}{averageWaitingTime\_Restaurant}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_abb6450fa5a13bb5835611d1670e432a8}{veganMenu\_Restaurant}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a60a8d6cfe1e7aea8215e7f8dfda45857}{setTakeAway\_Restaurant}}(\textcolor{keywordtype}{bool}\ takeAway);}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a271bf3dba2e8ae00db839ddb29649b28}{setAverageWaitingTime\_Restaurant}}(\textcolor{keyword}{const}\ QTime\ \&time);}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_ab7839eb83dce8cbde1d895bb2926cce9}{setVeganMenu\_Restaurant}}(\textcolor{keywordtype}{bool}\ vegan);}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a188ae6eebe5cc0c59eabd79273805870}{takeAway\_Cafe}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ QTime\ \mbox{\hyperlink{class_create_place_widget_a5f2db6f29d3555938a6b9e312e00c1d5}{averageWaitingTime\_Cafe}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a4ea62d5a83a590d4ba3a581ee32d7a47}{veganMenu\_Cafe}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_ab60aa98557e8d11c3bdba5d5ea34282f}{setTakeAway\_Cafe}}(\textcolor{keywordtype}{bool}\ takeAway);}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a00857076afa6e0f0f64329d2fe3ffba0}{setAverageWaitingTime\_Cafe}}(\textcolor{keyword}{const}\ QTime\ \&time);}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a20c8af4c84614512d6d023a5e2427d3d}{setVeganMenu\_Cafe}}(\textcolor{keywordtype}{bool}\ vegan);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \ \mbox{\hyperlink{class_create_place_widget_a6a21feafb381e6ee3a2804acdd64b011}{studentDiscount\_Museum}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a69cf07b7c63f754e581b87a7c78d9a08}{guidedTour\_Museum}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_acce0468c38a31c2b541e97a57387dc56}{culturalFocus\_Museum}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a9ea21c010c1e59c141fc05b6ad72426a}{setStudentDiscount\_Museum}}(\textcolor{keywordtype}{double}\ discount);}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a4318760fe12169063c9a322dd6f12521}{setGuidedTour\_Museum}}(\textcolor{keywordtype}{bool}\ guided);}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a4b14d03177f7a8e936c226099ed77f3a}{setCulturalFocus\_Museum}}(\textcolor{keyword}{const}\ QString\ \&focus);}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \ \mbox{\hyperlink{class_create_place_widget_af4dd7535dd7bc925863788a27370acf4}{studentDiscount\_Monument}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a4399a05271cebac046f81b56c55d23b7}{guidedTour\_Monument}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_create_place_widget_af00c6a1aa0ac81e1b9580a965330e819}{culturalFocus\_Monument}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_aa91ecc20278f2acf15871a406642c660}{setStudentDiscount\_Monument}}(\textcolor{keywordtype}{double}\ discount);}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a81ce80b409da39515f8ba732700b703e}{setGuidedTour\_Monument}}(\textcolor{keywordtype}{bool}\ guided);}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a19a69a46257e85e1cb753c7aa8b9e120}{setCulturalFocus\_Monument}}(\textcolor{keyword}{const}\ QString\ \&focus);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_ae86ddb26368f1142b2fc9938c74b800c}{outdoor\_Mall}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_ae8a5e0c80370dec1f844ab024daf1d28}{foodArea\_Mall}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_create_place_widget_a7235a781c222c2c1e7d0987485f6fbbf}{standNumber\_Mall}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a396d5711fecc9975565ee6ce21f980c2}{setOutdoor\_Mall}}(\textcolor{keywordtype}{bool}\ outdoor);}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a05e1ef67007026f03c3a37f7a329a420}{setFoodArea\_Mall}}(\textcolor{keywordtype}{bool}\ hasFoodArea);}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a09c22e9731c8f3058988d40fd3cbf541}{setStandNumber\_Mall}}(\textcolor{keywordtype}{int}\ num);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_a6b9360bccfe1328bcff7569468284b85}{outdoor\_Market}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_af27f3202ce75e04d2248fe6a8e8abf12}{foodArea\_Market}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_create_place_widget_aa03fba3d56b4b9ffe0848520e877a281}{standNumber\_Market}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_aaedff23d08f91730a2699b7b52f2bf6b}{setOutdoor\_Market}}(\textcolor{keywordtype}{bool}\ outdoor);}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_aa7f363a5c66fc443a2e50ac238aead4d}{setFoodArea\_Market}}(\textcolor{keywordtype}{bool}\ hasFoodArea);}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a7059e02609ca2bee87afd47b6f459489}{setStandNumber\_Market}}(\textcolor{keywordtype}{int}\ num);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Struttura\ per\ gli\ orari\ di\ un\ singolo\ giorno}}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_create_place_widget_1_1_day_hours}{DayHours}}\ \{}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ QTime\ \mbox{\hyperlink{struct_create_place_widget_1_1_day_hours_a632fbda5ad1688f6e39bdc8010492f86}{open}};}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ QTime\ \mbox{\hyperlink{struct_create_place_widget_1_1_day_hours_af9aa2d9de8a59cdbd861673d6ed39b8a}{close}};}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \mbox{\hyperlink{struct_create_place_widget_1_1_day_hours_ac71267528bc1322531892c8b043ac09d}{alwaysOpen}}\ \ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \ \mbox{\hyperlink{struct_create_place_widget_1_1_day_hours_a4e75dcfe2844b2601c16d1fdefad69b0}{alwaysClosed}}=\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Getter\ orari\ per\ un\ giorno}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_create_place_widget_1_1_day_hours}{DayHours}}\ \mbox{\hyperlink{class_create_place_widget_a861a93c60c091573bd956a84a1a8ad4e}{hours}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Setter\ orari\ per\ un\ giorno}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a61953a04fe40fe7909e3181b5f234919}{setHours}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_create_place_widget_1_1_day_hours}{DayHours}}\ \&\mbox{\hyperlink{class_create_place_widget_a861a93c60c091573bd956a84a1a8ad4e}{hours}});}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Ritorna\ l'indice\ del\ tipo\ selezionato\ nel\ combobox}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_create_place_widget_a8ab2febb4eb770313eca671e4e48ff65}{getTypeIndex}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Imposta\ lo\ stato\ di\ editing\ modifica\ o\ creazione}}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a19cc0e82b8368994048ca03ee0d3efcc}{setEditing}}(\textcolor{keywordtype}{bool}\ enabled);}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Controlla\ se\ il\ widget\ è\ in\ modalità\ editing}}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_create_place_widget_ad04de17a01dccabf6adf89dbe7dff9c3}{isEditing}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Resetta\ tutti\ i\ campi\ del\ form\ ai\ valori\ di\ default}}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a261fdbad31856f9c1280b26ca9feccd4}{resetFields}}();}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Mostra\ la\ pagina\ di\ dettaglio\ specifica\ in\ base\ all'indice\ del\ tipo}}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_create_place_widget_a4d497d8c3f5c9565eaa5c77e7583846a}{showDetailPage}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00178\ \};}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00180\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CREATEPLACEWIDGET\_H}}
+
+\end{DoxyCode}

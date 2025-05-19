@@ -1,0 +1,7 @@
+<map id="Mall::hasFreeParking" name="Mall::hasFreeParking">
+<area shape="rect" id="Node000001" title=" " alt="" coords="225,46,369,72"/>
+<area shape="rect" id="Node000002" href="$class_place_export_to_json_visitor.html#afdab6b5c5b8c2ffd219c3d363bd66a8d" title=" " alt="" coords="5,5,177,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,48,177,42,178,37,210,42"/>
+<area shape="rect" id="Node000003" href="$class_place_export_to_xml_visitor.html#accb14d019ae4d074c610c4d04c5e9049" title=" " alt="" coords="8,71,174,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,75,175,81,174,75,209,70"/>
+</map>

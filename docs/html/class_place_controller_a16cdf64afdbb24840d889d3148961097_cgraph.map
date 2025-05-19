@@ -1,0 +1,7 @@
+<map id="PlaceController::importPlacesFromXml" name="PlaceController::importPlacesFromXml">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,200,79"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#abc297fa24d2306015dac2c0770636925" title=" " alt="" coords="260,5,424,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,43,244,37,245,42,200,48"/>
+<area shape="rect" id="Node000003" href="$class_place_controller.html#ae6e3e283a053e024eaf7c9d3c256f19b" title=" " alt="" coords="248,71,436,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="200,69,232,74,232,79,200,75"/>
+</map>

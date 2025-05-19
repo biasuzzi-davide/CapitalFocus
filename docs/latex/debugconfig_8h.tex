@@ -1,0 +1,64 @@
+\doxysection{model/debugconfig.h File Reference}
+\hypertarget{debugconfig_8h}{}\label{debugconfig_8h}\index{model/debugconfig.h@{model/debugconfig.h}}
+{\ttfamily \#include $<$QDebug$>$}\newline
+Include dependency graph for debugconfig.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{debugconfig_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{debugconfig_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_debug_config}{Debug\+Config}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{debugconfig_8h_a25b8a453708635ba2eea065d25d7a199}{DEBUG\+\_\+\+LOG}}(x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{namespace_debug_config_a443de79440b74b7454237d95e7cfcebf}{Debug\+Config\+::set\+Enabled}} (bool enabled)
+\item 
+bool \mbox{\hyperlink{namespace_debug_config_ac1866de56c034219ae9716f41aacf24b}{Debug\+Config\+::is\+Enabled}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{debugconfig_8h_af45d890adeeb7d0fee9c277eb84c1d3c}{DEBUG\+\_\+\+MODE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{debugconfig_8h_a25b8a453708635ba2eea065d25d7a199}\index{debugconfig.h@{debugconfig.h}!DEBUG\_LOG@{DEBUG\_LOG}}
+\index{DEBUG\_LOG@{DEBUG\_LOG}!debugconfig.h@{debugconfig.h}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_LOG}{DEBUG\_LOG}}
+{\footnotesize\ttfamily \label{debugconfig_8h_a25b8a453708635ba2eea065d25d7a199} 
+\#define DEBUG\+\_\+\+LOG(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\ \{\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{debugconfig_8cpp_af45d890adeeb7d0fee9c277eb84c1d3c}{DEBUG\_MODE}})\ qDebug()\ <<\ x;\ \}\ \textcolor{keywordflow}{while}\ (0)}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{debugconfig_8h_af45d890adeeb7d0fee9c277eb84c1d3c}\index{debugconfig.h@{debugconfig.h}!DEBUG\_MODE@{DEBUG\_MODE}}
+\index{DEBUG\_MODE@{DEBUG\_MODE}!debugconfig.h@{debugconfig.h}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_MODE}{DEBUG\_MODE}}
+{\footnotesize\ttfamily \label{debugconfig_8h_af45d890adeeb7d0fee9c277eb84c1d3c} 
+bool DEBUG\+\_\+\+MODE\hspace{0.3cm}{\ttfamily [extern]}}
+

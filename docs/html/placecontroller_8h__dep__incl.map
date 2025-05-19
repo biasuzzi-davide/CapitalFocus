@@ -1,0 +1,21 @@
+<map id="controller/placecontroller.h" name="controller/placecontroller.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="700,5,873,31"/>
+<area shape="rect" id="Node000002" href="$moc__placecontroller_8cpp.html" title=" " alt="" coords="5,79,171,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="686,29,455,49,183,82,171,83,171,78,182,76,455,44,685,24"/>
+<area shape="rect" id="Node000003" href="$placecontroller_8cpp.html" title=" " alt="" coords="195,86,381,112"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="687,36,394,82,354,88,353,83,393,76,686,31"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="406,86,480,112"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="694,37,596,56,493,82,472,88,471,83,491,76,595,51,693,32"/>
+<area shape="rect" id="Node000005" href="$createplacewidget_8cpp.html" title=" " alt="" coords="504,86,686,112"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="744,40,625,88,623,84,742,35"/>
+<area shape="rect" id="Node000006" href="$culturewidget_8cpp.html" title=" " alt="" coords="710,86,864,112"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="789,47,789,86,784,86,784,47"/>
+<area shape="rect" id="Node000007" href="$entertainmentwidget_8cpp.html" title=" " alt="" coords="888,86,1082,112"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="832,35,956,84,954,89,830,40"/>
+<area shape="rect" id="Node000008" href="$foodwidget_8cpp.html" title=" " alt="" coords="1107,86,1248,112"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="868,32,1095,76,1126,83,1125,88,1094,82,867,37"/>
+<area shape="rect" id="Node000009" href="$mainwindow_8cpp.html" title=" " alt="" coords="1272,86,1419,112"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="889,27,1063,47,1260,76,1295,83,1294,88,1260,82,1062,52,888,32"/>
+<area shape="rect" id="Node000010" href="$shoppingwidget_8cpp.html" title=" " alt="" coords="1443,86,1610,112"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="889,23,1136,42,1284,58,1431,76,1471,83,1470,88,1430,82,1283,63,1136,48,888,28"/>
+</map>

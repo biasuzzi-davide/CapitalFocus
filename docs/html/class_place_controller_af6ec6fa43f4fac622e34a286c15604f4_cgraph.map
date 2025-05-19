@@ -1,0 +1,25 @@
+<map id="PlaceController::onPlaceSelected" name="PlaceController::onPlaceSelected">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,134,171,175"/>
+<area shape="rect" id="Node000002" href="$placecontroller_8cpp.html#a801272f06c6a4d23bcde24d3eea7d491" title=" " alt="" coords="270,5,372,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,132,153,85,184,61,217,40,254,26,256,31,220,45,187,65,156,89,109,135"/>
+<area shape="rect" id="Node000003" href="$classculturewidget.html#ae35a2f142e6668b2805a233fd48d07b5" title=" " alt="" coords="239,55,402,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,131,218,90,243,82,245,87,220,95,129,136"/>
+<area shape="rect" id="Node000004" href="$classentertainmentwidget.html#aa666b51408867715985f362976475b4e" title=" " alt="" coords="252,105,390,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,141,236,133,236,138,171,146"/>
+<area shape="rect" id="Node000005" href="$classfoodwidget.html#a86ded7271fe61cb81d0e24177bae684f" title=" " alt="" coords="246,169,396,195"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="171,161,231,169,231,174,171,167"/>
+<area shape="rect" id="Node000006" href="$classshoppingwidget.html#ab1029524e8b5331acee6beb794029dff" title=" " alt="" coords="233,219,409,244"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="136,172,220,205,242,212,241,217,218,210,134,177"/>
+<area shape="rect" id="Node000007" href="$class_place_controller.html#a480c14d56580bf1053751976d2299a90" title=" " alt="" coords="219,268,423,294"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="111,173,158,215,188,236,220,254,233,260,231,265,217,259,185,241,155,219,108,177"/>
+<area shape="rect" id="Node000008" href="$class_place_controller.html#ad663ce4cce88753c4efa8ab242c5248e" title=" " alt="" coords="471,174,651,215"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="388,265,422,254,446,243,470,230,496,219,498,223,472,235,448,248,424,259,389,270"/>
+<area shape="rect" id="Node000009" href="$class_create_place_widget.html#ad04de17a01dccabf6adf89dbe7dff9c3" title=" " alt="" coords="699,215,842,256"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="423,268,684,241,684,247,424,273"/>
+<area shape="rect" id="Node000010" href="$class_create_place_widget.html#a261fdbad31856f9c1280b26ca9feccd4" title=" " alt="" coords="490,288,632,329"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="424,290,475,296,474,301,423,295"/>
+<area shape="rect" id="Node000011" href="$class_create_place_widget.html#a19cc0e82b8368994048ca03ee0d3efcc" title=" " alt="" coords="699,304,842,345"/>
+<area shape="poly" id="edge12_Node000007_Node000011" title=" " alt="" coords="348,292,403,317,472,338,526,345,582,346,684,338,684,343,582,352,526,350,470,343,401,322,345,296"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="652,209,685,216,684,221,651,215"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="633,312,684,316,684,321,632,317"/>
+</map>

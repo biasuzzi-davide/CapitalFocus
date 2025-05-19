@@ -1,0 +1,9 @@
+<map id="Shopping" name="Shopping">
+<area shape="rect" id="Node000001" title=" " alt="" coords="97,404,257,593"/>
+<area shape="rect" id="Node000003" href="$class_local_market.html" title=" " alt="" coords="5,641,165,849"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,608,127,642,122,640,135,606"/>
+<area shape="rect" id="Node000004" href="$class_mall.html" title=" " alt="" coords="189,641,349,849"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="220,606,233,640,228,642,215,608"/>
+<area shape="rect" id="Node000002" href="$class_place.html" title=" " alt="" coords="119,5,235,356"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,371,180,405,175,405,175,371"/>
+</map>

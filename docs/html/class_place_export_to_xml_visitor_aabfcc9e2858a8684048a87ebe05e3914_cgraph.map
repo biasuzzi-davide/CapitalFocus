@@ -1,0 +1,9 @@
+<map id="PlaceExportToXmlVisitor::visit" name="PlaceExportToXmlVisitor::visit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,172,88"/>
+<area shape="rect" id="Node000002" href="$class_restaurant.html#a81c08afa1468bfdd990d3ad0ac1da630" title=" " alt="" coords="220,5,404,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,47,235,32,236,37,173,52"/>
+<area shape="rect" id="Node000003" href="$class_restaurant.html#a84652ef714cbb6759f1b8124590a54c8" title=" " alt="" coords="221,55,402,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,65,206,65,206,70,172,70"/>
+<area shape="rect" id="Node000004" href="$class_restaurant.html#ab56010f914f4e5e2b59472efe185dd22" title=" " alt="" coords="220,104,404,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,83,236,98,235,103,171,88"/>
+</map>

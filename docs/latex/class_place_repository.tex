@@ -1,0 +1,92 @@
+\doxysection{Place\+Repository Class Reference}
+\hypertarget{class_place_repository}{}\label{class_place_repository}\index{PlaceRepository@{PlaceRepository}}
+
+
+{\ttfamily \#include $<$placerepository.\+h$>$}
+
+
+
+Collaboration diagram for Place\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{class_place_repository__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_place_repository_a5f34b8ac863a27f0c88b59631c438d94}{add\+Place}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ \&place)
+\item 
+void \mbox{\hyperlink{class_place_repository_a3f9a7fd91f41eccad22ce107c417df6c}{remove\+Place}} (int index)
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ \mbox{\hyperlink{class_place_repository_a9f0f078c7c0b04837b7536fbf0502fd6}{search}} (const QString \&name\+Keyword, const QString \&city\+Filter="{}All"{}) const
+\item 
+void \mbox{\hyperlink{class_place_repository_a4a47d9418d0ca76387b5d947858969bb}{clear}} ()
+\item 
+\mbox{\hyperlink{struct_statistics_result}{Statistics\+Result}} \mbox{\hyperlink{class_place_repository_a8336e340f606bac04ea178c499cd9f1e}{compute\+Statistics}} () const
+\item 
+void \mbox{\hyperlink{class_place_repository_a9a521b2b3fac25453c00bdb494405894}{replace\+Place}} (\mbox{\hyperlink{class_place}{Place}} \texorpdfstring{$\ast$}{*}old\+Ptr, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ \&new\+Place)
+\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ \& \mbox{\hyperlink{class_place_repository_a44775cb340def2c505ef11465b1cf6d7}{get\+All\+Places}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_place_repository_a5f34b8ac863a27f0c88b59631c438d94}\index{PlaceRepository@{PlaceRepository}!addPlace@{addPlace}}
+\index{addPlace@{addPlace}!PlaceRepository@{PlaceRepository}}
+\doxysubsubsection{\texorpdfstring{addPlace()}{addPlace()}}
+{\footnotesize\ttfamily \label{class_place_repository_a5f34b8ac863a27f0c88b59631c438d94} 
+void Place\+Repository\+::add\+Place (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ \&}]{place}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_place_repository_a4a47d9418d0ca76387b5d947858969bb}\index{PlaceRepository@{PlaceRepository}!clear@{clear}}
+\index{clear@{clear}!PlaceRepository@{PlaceRepository}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_place_repository_a4a47d9418d0ca76387b5d947858969bb} 
+void Place\+Repository\+::clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_place_repository_a8336e340f606bac04ea178c499cd9f1e}\index{PlaceRepository@{PlaceRepository}!computeStatistics@{computeStatistics}}
+\index{computeStatistics@{computeStatistics}!PlaceRepository@{PlaceRepository}}
+\doxysubsubsection{\texorpdfstring{computeStatistics()}{computeStatistics()}}
+{\footnotesize\ttfamily \label{class_place_repository_a8336e340f606bac04ea178c499cd9f1e} 
+\mbox{\hyperlink{struct_statistics_result}{Statistics\+Result}} Place\+Repository\+::compute\+Statistics (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_place_repository_a8336e340f606bac04ea178c499cd9f1e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_repository_a44775cb340def2c505ef11465b1cf6d7}\index{PlaceRepository@{PlaceRepository}!getAllPlaces@{getAllPlaces}}
+\index{getAllPlaces@{getAllPlaces}!PlaceRepository@{PlaceRepository}}
+\doxysubsubsection{\texorpdfstring{getAllPlaces()}{getAllPlaces()}}
+{\footnotesize\ttfamily \label{class_place_repository_a44775cb340def2c505ef11465b1cf6d7} 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ \& Place\+Repository\+::get\+All\+Places (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_place_repository_a3f9a7fd91f41eccad22ce107c417df6c}\index{PlaceRepository@{PlaceRepository}!removePlace@{removePlace}}
+\index{removePlace@{removePlace}!PlaceRepository@{PlaceRepository}}
+\doxysubsubsection{\texorpdfstring{removePlace()}{removePlace()}}
+{\footnotesize\ttfamily \label{class_place_repository_a3f9a7fd91f41eccad22ce107c417df6c} 
+void Place\+Repository\+::remove\+Place (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_place_repository_a9a521b2b3fac25453c00bdb494405894}\index{PlaceRepository@{PlaceRepository}!replacePlace@{replacePlace}}
+\index{replacePlace@{replacePlace}!PlaceRepository@{PlaceRepository}}
+\doxysubsubsection{\texorpdfstring{replacePlace()}{replacePlace()}}
+{\footnotesize\ttfamily \label{class_place_repository_a9a521b2b3fac25453c00bdb494405894} 
+void Place\+Repository\+::replace\+Place (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_place}{Place}} \texorpdfstring{$\ast$}{*}}]{old\+Ptr}{, }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ \&}]{new\+Place}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_place_repository_a9f0f078c7c0b04837b7536fbf0502fd6}\index{PlaceRepository@{PlaceRepository}!search@{search}}
+\index{search@{search}!PlaceRepository@{PlaceRepository}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{class_place_repository_a9f0f078c7c0b04837b7536fbf0502fd6} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ Place\+Repository\+::search (\begin{DoxyParamCaption}\item[{const QString \&}]{name\+Keyword}{, }\item[{const QString \&}]{city\+Filter}{ = {\ttfamily "{}All"{}}}\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/\mbox{\hyperlink{placerepository_8h}{placerepository.\+h}}\item 
+model/\mbox{\hyperlink{placerepository_8cpp}{placerepository.\+cpp}}\end{DoxyCompactItemize}

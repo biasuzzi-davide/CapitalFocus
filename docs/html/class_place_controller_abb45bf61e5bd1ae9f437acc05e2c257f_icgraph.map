@@ -1,0 +1,9 @@
+<map id="PlaceController::importPlacesFromJson" name="PlaceController::importPlacesFromJson">
+<area shape="rect" id="Node000001" title=" " alt="" coords="582,5,777,46"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#a8a7993cbcb4a72d612743a4c918fad4a" title=" " alt="" coords="329,13,534,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="567,28,535,28,535,23,567,23"/>
+<area shape="rect" id="Node000003" href="$class_main_window.html#adc1ed341279a8fb00175c7f62e0ca60a" title=" " alt="" coords="103,13,281,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="313,28,282,28,282,23,313,23"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,13,55,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,28,55,28,55,23,87,23"/>
+</map>

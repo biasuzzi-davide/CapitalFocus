@@ -1,0 +1,9 @@
+<map id="Museum" name="Museum">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1098,178,1266"/>
+<area shape="rect" id="Node000002" href="$class_culture.html" title=" " alt="" coords="18,840,166,1049"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,1064,94,1098,89,1098,89,1064"/>
+<area shape="rect" id="Node000003" href="$class_place.html" title=" " alt="" coords="34,460,150,791"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,805,94,840,89,840,89,805"/>
+<area shape="rect" id="Node000004" href="$classweekly_openings.html" title=" " alt="" coords="7,5,176,397"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,397,94,443,89,443,89,397"/>
+</map>

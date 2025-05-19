@@ -1,0 +1,13 @@
+<map id="PlaceController::importFromFile" name="PlaceController::importFromFile">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,46,211,72"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#abb45bf61e5bd1ae9f437acc05e2c257f" title=" " alt="" coords="259,5,453,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,43,243,38,244,43,209,48"/>
+<area shape="rect" id="Node000005" href="$class_place_controller.html#a16cdf64afdbb24840d889d3148961097" title=" " alt="" coords="259,71,453,111"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="212,70,243,74,243,79,211,75"/>
+<area shape="rect" id="Node000003" href="$class_place_controller.html#abc297fa24d2306015dac2c0770636925" title=" " alt="" coords="513,5,677,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="453,23,497,23,497,28,453,28"/>
+<area shape="rect" id="Node000004" href="$class_place_controller.html#ae6e3e283a053e024eaf7c9d3c256f19b" title=" " alt="" coords="501,71,689,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="433,44,504,63,503,69,432,49"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="432,68,503,48,504,53,433,73"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="453,88,485,88,485,94,453,94"/>
+</map>

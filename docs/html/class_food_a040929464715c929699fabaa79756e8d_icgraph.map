@@ -1,0 +1,7 @@
+<map id="Food::hasVeganMenu" name="Food::hasVeganMenu">
+<area shape="rect" id="Node000001" title=" " alt="" coords="225,46,373,72"/>
+<area shape="rect" id="Node000002" href="$class_place_export_to_json_visitor.html#ae96658896bc7ae63c70734ef15f0255d" title=" " alt="" coords="5,5,177,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,47,177,42,178,37,210,42"/>
+<area shape="rect" id="Node000003" href="$class_place_export_to_json_visitor.html#aa53baa6cdeab8f17536c6ea38ad0fb32" title=" " alt="" coords="5,71,177,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,75,178,80,177,75,209,70"/>
+</map>

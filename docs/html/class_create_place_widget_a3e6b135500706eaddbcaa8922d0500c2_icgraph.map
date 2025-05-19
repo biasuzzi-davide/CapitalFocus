@@ -1,0 +1,7 @@
+<map id="CreatePlaceWidget::reservationNeeded" name="CreatePlaceWidget::reservationNeeded">
+<area shape="rect" id="Node000001" title=" " alt="" coords="425,5,567,46"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#a391452f53d435c9ccaa1df408e4f5a1f" title=" " alt="" coords="196,5,377,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="409,28,378,28,378,23,409,23"/>
+<area shape="rect" id="Node000003" href="$class_create_place_widget.html#a7e7cb5f60538cbd52752a4b5d37fd63e" title=" " alt="" coords="5,5,148,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="180,28,148,28,148,23,180,23"/>
+</map>

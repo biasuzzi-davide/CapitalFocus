@@ -1,0 +1,37 @@
+\doxysection{import\+\_\+errors.\+h}
+\hypertarget{import__errors_8h_source}{}\label{import__errors_8h_source}\index{model/import\_errors.h@{model/import\_errors.h}}
+\mbox{\hyperlink{import__errors_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ IMPORT\_ERRORS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ IMPORT\_ERRORS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ Eccezione\ per\ errori\ nell'apertura\ del\ file}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_file_open_error_aa1b653223e9fafe89bb5e279af3aeb45}{FileOpenError}}\ :\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ Costruttore,\ prende\ il\ percorso\ del\ file}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_file_open_error_aa1b653223e9fafe89bb5e279af3aeb45}{FileOpenError}}(\textcolor{keyword}{const}\ QString\&\ path)}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{namespacestd}{std}}::runtime\_error((\textcolor{stringliteral}{"{}Unable\ to\ open:\ "{}}\ +\ path).toStdString())\ \{\}}
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ Eccezione\ per\ errori\ nel\ parsing\ JSON}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_json_parse_error_a85e1b691322a6681dbfa194db63f9c26}{JsonParseError}}\ :\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ Costruttore,\ prende\ il\ messaggio\ di\ errore}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_json_parse_error_a85e1b691322a6681dbfa194db63f9c26}{JsonParseError}}(\textcolor{keyword}{const}\ QString\&\ msg)}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{namespacestd}{std}}::runtime\_error((\textcolor{stringliteral}{"{}JSON\ error:\ "{}}\ +\ msg).toStdString())\ \{\}}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{comment}{//\ Eccezione\ per\ errori\ nel\ parsing\ XML}}
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_xml_parse_error_ac1268956423b6a1d50b0d760779fc917}{XmlParseError}}\ :\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Costruttore,\ prende\ il\ messaggio\ di\ errore}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_xml_parse_error_ac1268956423b6a1d50b0d760779fc917}{XmlParseError}}(\textcolor{keyword}{const}\ QString\&\ msg)}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{namespacestd}{std}}::runtime\_error((\textcolor{stringliteral}{"{}XML\ error:"{}}\ +\ msg).toStdString())\ \{\}}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ IMPORT\_ERRORS\_H}}
+
+\end{DoxyCode}

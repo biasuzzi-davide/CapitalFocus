@@ -1,0 +1,51 @@
+\doxysection{Restaurant.\+h}
+\hypertarget{_restaurant_8h_source}{}\label{_restaurant_8h_source}\index{model/Restaurant.h@{model/Restaurant.h}}
+\mbox{\hyperlink{_restaurant_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RESTAURANT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RESTAURANT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_food_8h}{Food.h}}"{}}\ \textcolor{comment}{//\ Eredita\ da\ Food}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Rappresenta\ un\ ristorante,\ un\ tipo\ di\ posto\ Food}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_restaurant_a8dc66688ad566cf11f7dd2064c42726c}{Restaurant}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_food_a2f64b372c9a465f7bcab4ab41d81ae8d}{Food}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ QString\ cuisineType;\ \textcolor{comment}{//\ Tipo\ di\ cucina}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ reservation;\ \textcolor{comment}{//\ Possibile\ prenotare}}
+\DoxyCodeLine{00011\ \ \ \ \ QString\ specialDish;\ \textcolor{comment}{//\ Piatto\ speciale}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_restaurant_a8dc66688ad566cf11f7dd2064c42726c}{Restaurant}}(\textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}},}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&\ hours,}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}},}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ takeAway,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QTime\&\ avgWaitingTime,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ veganMenu,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ cuisineType,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ reservation,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ specialDish);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_restaurant_a3b6434337f394c48f131f65cc01d40a7}{\string~Restaurant}}()\ =\ \textcolor{keywordflow}{default};\ \textcolor{comment}{//\ Distruttore}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Riassunto\ cibo}}
+\DoxyCodeLine{00031\ \ \ \ \ QString\ \mbox{\hyperlink{class_restaurant_a1f6325dd06f037927ef50ae41d87e9b5}{getFoodSummary}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Dice\ la\ categoria}}
+\DoxyCodeLine{00034\ \ \ \ \ QString\ \mbox{\hyperlink{class_restaurant_af646340e4486b56390c49f2feff8eb70}{getCategory}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Per\ il\ Visitor}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_restaurant_ae97af814d6524aefeb8fcef04601a4f0}{acceptVisitor}}(\mbox{\hyperlink{class_place_visitor_interface}{PlaceVisitorInterface}}\&\ visitor)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Getter}}
+\DoxyCodeLine{00040\ \ \ \ \ QString\ \mbox{\hyperlink{class_restaurant_a81c08afa1468bfdd990d3ad0ac1da630}{getCuisineType}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_restaurant_ab56010f914f4e5e2b59472efe185dd22}{hasReservation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ QString\ \mbox{\hyperlink{class_restaurant_a84652ef714cbb6759f1b8124590a54c8}{getSpecialDish}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ RESTAURANT\_H}}
+
+\end{DoxyCode}

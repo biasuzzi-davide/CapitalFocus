@@ -1,0 +1,13 @@
+<map id="PlaceExportToJsonVisitor::visit" name="PlaceExportToJsonVisitor::visit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,177,137"/>
+<area shape="rect" id="Node000002" href="$class_food.html#aef0ab2f24e1084812e3cbe4025a966ea" title=" " alt="" coords="225,5,396,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,94,170,66,224,40,240,34,241,39,226,45,172,71,126,98"/>
+<area shape="rect" id="Node000003" href="$class_cafe.html#a9b71486c8fdd08e30e6cdd4d4bf8a8cd" title=" " alt="" coords="236,55,385,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,95,235,82,236,87,177,100"/>
+<area shape="rect" id="Node000004" href="$class_food.html#aa5eeb1fecbac1c664c529286261fe6ce" title=" " alt="" coords="240,104,380,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,114,224,114,224,120,177,120"/>
+<area shape="rect" id="Node000005" href="$class_cafe.html#ac645be385801c85c3dff3e55f686ce1d" title=" " alt="" coords="250,153,371,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="177,133,236,147,235,152,176,139"/>
+<area shape="rect" id="Node000006" href="$class_food.html#a040929464715c929699fabaa79756e8d" title=" " alt="" coords="236,203,384,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="126,135,172,163,226,189,241,195,240,200,224,194,170,168,123,140"/>
+</map>

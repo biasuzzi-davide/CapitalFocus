@@ -1,0 +1,102 @@
+\doxysection{mainwindow.\+h}
+\hypertarget{mainwindow_8h_source}{}\label{mainwindow_8h_source}\index{view/mainwindow.h@{view/mainwindow.h}}
+\mbox{\hyperlink{mainwindow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_place_8h}{model/Place.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QStackedWidget>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QListWidget>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{statistics_result_8h}{model/statisticsResult.h}}>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QMessageBox>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{uicommon_8h}{model/uicommon.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_main_window}{MainWindow}};}
+\DoxyCodeLine{00014\ \}}
+\DoxyCodeLine{00015\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{comment}{//\ controller\ forward\ declaration}}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_place_controller}{PlaceController}};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{comment}{//\ classe\ MainWindow}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ abilita\ disabilita\ dark\ mode}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a4f1e820b66e9d9f1c5ae17a67c3f1939}{toggleDarkMode}}(\textcolor{keywordtype}{bool}\ enabled);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ costruttore}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{MainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ distruttore}}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ prendi\ testo\ ricerca}}
+\DoxyCodeLine{00033\ \ \ \ \ QString\ \mbox{\hyperlink{class_main_window_a1f9c4da42785847a6160bb7a7eacf3d9}{getSearchText}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ prendi\ citta\ selezionata}}
+\DoxyCodeLine{00035\ \ \ \ \ QString\ \mbox{\hyperlink{class_main_window_a100bb83ff514185d298f6817f680b7e8}{getSelectedCity}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ setta\ il\ controller}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_adc1ed341279a8fb00175c7f62e0ca60a}{setController}}(\mbox{\hyperlink{class_place_controller}{PlaceController}}*\ controller);}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ pulisci\ campi\ ricerca}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a0de59dff2d11bf6f7df043879173c1a6}{clearSearchFields}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ riempi\ combo\ box\ citta}}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a379642249231298bbe7b44d5d628abf2}{populateCityComboBox}}(\textcolor{keyword}{const}\ std::vector<std::shared\_ptr<Place>>\&\ places);}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ vai\ su\ widget\ crediti}}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a80831c581b10a444f0966b5360efd3d7}{setWidgetCredits}}();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ vai\ su\ widget\ principale}}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a65ee7823aa184c87a5836e23b4c52eec}{setWidgetMain}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{comment}{//\ setta\ statistiche}}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a1a5c27a16e80c8c5e540f0344504b5fa}{setStats}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_statistics_result}{StatisticsResult}}\&\ stats);}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ aggiorna\ risultati}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a0bbd92af40c21f9f29c449da3059e36f}{updateResults}}(\textcolor{keyword}{const}\ std::map<QString,\ std::vector<std::shared\_ptr<Place>>>\&\ groupedResults);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{comment}{//\ prendi\ list\ widget}}
+\DoxyCodeLine{00051\ \ \ \ \ QListWidget*\ \mbox{\hyperlink{class_main_window_a479e2ffa7a72d191f302b91f155692d4}{getListWidget}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ setta\ widget\ dettagli}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a4e660bf0a9663fde8571063f4f17e3af}{setDetailsWidget}}(QWidget*\ widget);}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ mostra\ widget\ per\ nome}}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_ad59e2f5d444ceb4d0ae182f696f1e793}{showWidgetByName}}(\textcolor{keyword}{const}\ QString\&\ name);}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{comment}{//\ prendi\ widget\ per\ nome}}
+\DoxyCodeLine{00057\ \ \ \ \ QWidget*\ \mbox{\hyperlink{class_main_window_a7fdfdac3e1531666f47b096aca9b71b3}{getWidgetByName}}(\textcolor{keyword}{const}\ QString\&\ name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//\ prendi\ pagina\ corrente}}
+\DoxyCodeLine{00059\ \ \ \ \ QWidget*\ \mbox{\hyperlink{class_main_window_aa3e9d542d2b1543cb6c7b7e61216b573}{getCurrentPage}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{comment}{//\ aggiorna\ testo\ azione\ debug}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aa9f911bdb2a6697f737980699db70697}{updateDebugActionText}}(\textcolor{keywordtype}{bool}\ debugEnabled);}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{comment}{//\ mostra\ messaggio}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aa4db045fbaef61cef55e169c09da6f54}{showMessage}}(\mbox{\hyperlink{namespace_ui_common_aa3de9e60ade9eefc8c1b8ed5ea365236}{UiCommon::MsgIcon}}\ icon,}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ title,}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ text);}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{comment}{//\ chiedi\ conferma}}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_a6d1e7cddbdb70dd17dc296d83fe32085}{askConfirmation}}(\textcolor{keyword}{const}\ QString\&\ title,}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ question);}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{comment}{//\ chiedi\ apri\ file}}
+\DoxyCodeLine{00070\ \ \ \ \ QString\ \mbox{\hyperlink{class_main_window_a93cb25c615ab14286864b056f1ab2d14}{askOpenFile}}\ \ (\textcolor{keyword}{const}\ QString\&\ caption,}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ filter,}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ startDir\ =\ QString())\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{//\ chiedi\ salva\ file}}
+\DoxyCodeLine{00074\ \ \ \ \ QString\ \mbox{\hyperlink{class_main_window_aa0ae5247f414ea62d3bdb04edf2d29fe}{askSaveFile}}\ \ (\textcolor{keyword}{const}\ QString\&\ caption,}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ filter,}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ startDir\ =\ QString())\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{comment}{//\ e\ dark\ mode\ attiva}}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_a44b22e4132ac3fdbcf78836c1d36bc1f}{getDarkModeEnabled}}();}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{comment}{//\ mostra\ messaggio\ status\ bar}}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a591070a7d3d972e72708ebbd816179e2}{showStatusBarMsg}}(\textcolor{keyword}{const}\ QString\&\ message,\ \textcolor{keywordtype}{int}\ timeoutMs\ =\ 3000);}
+\DoxyCodeLine{00081\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{comment}{//\ stato\ dark\ mode}}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{bool}\ isDarkModeEnabled\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//\ mappa\ widget}}
+\DoxyCodeLine{00085\ \ \ \ \ QMap<QString,\ QWidget*>\ widgetMap;}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{comment}{//\ widget\ impilato}}
+\DoxyCodeLine{00087\ \ \ \ \ QStackedWidget*\ stackedWidget;}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{comment}{//\ ui\ design}}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_main_window}{Ui::MainWindow}}\ *ui;}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{comment}{//\ puntatore\ controller}}
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{class_place_controller}{PlaceController}}*\ controller;}
+\DoxyCodeLine{00092\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{comment}{//\ evento\ chiusura}}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a05fb9d72c044aa3bb7d187b994704e2f}{closeEvent}}(QCloseEvent*\ event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00095\ \};}
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

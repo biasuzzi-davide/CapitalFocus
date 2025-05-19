@@ -1,0 +1,21 @@
+\doxysection{statistics\+Result.\+h}
+\hypertarget{statistics_result_8h_source}{}\label{statistics_result_8h_source}\index{model/statisticsResult.h@{model/statisticsResult.h}}
+\mbox{\hyperlink{statistics_result_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ STATISTICSRESULT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ STATISTICSRESULT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ Struttura\ per\ i\ risultati\ delle\ statistiche}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_statistics_result}{StatisticsResult}}\ \{}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{int}\ \ \ \ \ \mbox{\hyperlink{struct_statistics_result_ac3d4ae65d067d605ad8406deeb2ded0d}{totalPlaces}}\ =\ 0;\ \textcolor{comment}{//\ Totale\ posti}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{double}\ \ \mbox{\hyperlink{struct_statistics_result_a2af8fbafea2444fba2fb63dce59e1f0f}{averageRating}}\ =\ 0.0;\ \textcolor{comment}{//\ Rating\ medio}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ \ \mbox{\hyperlink{struct_statistics_result_ac10692e9d49d7d0191c7002386fbe080}{averageCost}}\ =\ 0.0;\ \textcolor{comment}{//\ Costo\ medio}}
+\DoxyCodeLine{00012\ \ \ \ \ std::map<QString,int>\ \mbox{\hyperlink{struct_statistics_result_abaed29d1a840f1d10e1483a658bbab85}{countByCity}};\ \textcolor{comment}{//\ Conteggio\ per\ città}}
+\DoxyCodeLine{00013\ \};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ STATISTICSRESULT\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,44 @@
+\doxysection{place\+Export\+To\+Json\+Visitor.\+h}
+\hypertarget{place_export_to_json_visitor_8h_source}{}\label{place_export_to_json_visitor_8h_source}\index{model/visitor/placeExportToJsonVisitor.h@{model/visitor/placeExportToJsonVisitor.h}}
+\mbox{\hyperlink{place_export_to_json_visitor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLACEEXPORTTOJSONVISITOR\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLACEEXPORTTOJSONVISITOR\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{placevisitorinterface_8h}{placevisitorinterface.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QJsonObject>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QJsonArray>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Un\ Visitor\ per\ esportare\ Place\ in\ formato\ JSON}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_place_export_to_json_visitor_a1dd2b42d0ba7b57197ffd07dbe105640}{PlaceExportToJsonVisitor}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_place_visitor_interface}{PlaceVisitorInterface}}\{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ QJsonObject\ result;\ \textcolor{comment}{//\ L'oggetto\ JSON\ creato\ per\ il\ Place\ visitato}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ Crea\ array\ JSON\ per\ gli\ orari}}
+\DoxyCodeLine{00014\ \ \ \ \ QJsonArray\ exportWeeklyOpenings(\textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ Crea\ oggetto\ JSON\ per\ i\ dati\ base\ di\ Place}}
+\DoxyCodeLine{00017\ \ \ \ \ QJsonObject\ basePlaceToJson(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_place}{Place}}\&\ place,\ \textcolor{keyword}{const}\ QString\&\ type)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Costruttore\ di\ default}}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_place_export_to_json_visitor_a1dd2b42d0ba7b57197ffd07dbe105640}{PlaceExportToJsonVisitor}}()=\textcolor{keywordflow}{default};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Ritorna\ l'oggetto\ JSON\ creato\ dopo\ la\ visita}}
+\DoxyCodeLine{00024\ \ \ \ \ QJsonObject\ \mbox{\hyperlink{class_place_export_to_json_visitor_a71f78070d67225a5a357370cdaed4d37}{getResult}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Implementazioni\ dei\ metodi\ visit\ per\ i\ vari\ tipi\ di\ Place,\ creano\ l'oggetto\ JSON\ per\ il\ Place\ visitato}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_json_visitor_a8e28203a1db31c4e019a0267f7c48c58}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_place}{Place}}\&\ p)\ \textcolor{keyword}{override};\ \textcolor{comment}{//\ Per\ la\ classe\ base}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_json_visitor_a8e28203a1db31c4e019a0267f7c48c58}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_cafe}{Cafe}}\&\ cafe)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_json_visitor_a8e28203a1db31c4e019a0267f7c48c58}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_disco}{Disco}}\&\ disco)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_json_visitor_a8e28203a1db31c4e019a0267f7c48c58}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_mall}{Mall}}\&\ mall)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_json_visitor_a8e28203a1db31c4e019a0267f7c48c58}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_local_market}{LocalMarket}}\&\ market)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_json_visitor_a8e28203a1db31c4e019a0267f7c48c58}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_restaurant}{Restaurant}}\&\ restaurant)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_json_visitor_a8e28203a1db31c4e019a0267f7c48c58}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_panoramic_points}{PanoramicPoints}}\&\ point)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_json_visitor_a8e28203a1db31c4e019a0267f7c48c58}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_museum}{Museum}}\&\ museum)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_export_to_json_visitor_a8e28203a1db31c4e019a0267f7c48c58}{visit}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_monument}{Monument}}\&\ monument)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PLACEEXPORTTOJSONVISITOR\_H}}
+
+\end{DoxyCode}

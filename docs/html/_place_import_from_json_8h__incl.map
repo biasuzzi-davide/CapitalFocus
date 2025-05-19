@@ -1,0 +1,33 @@
+<map id="model/visitor/PlaceImportFromJson.h" name="model/visitor/PlaceImportFromJson.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="182,5,351,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,94,96,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,49,99,91,97,86,212,44"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="151,315,216,341"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,49,184,68,161,95,150,121,145,148,147,205,159,258,174,300,169,302,154,260,141,206,140,148,145,119,156,93,181,64,212,44"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="350,94,407,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="296,44,350,82,347,87,293,49"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="431,94,499,120"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="317,44,422,85,420,90,315,49"/>
+<area shape="rect" id="Node000006" href="$_place_8h.html" title=" " alt="" coords="170,94,275,120"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="258,48,239,82,234,79,253,45"/>
+<area shape="rect" id="Node000007" href="$weekly_openings_8h.html" title=" " alt="" coords="332,168,460,193"/>
+<area shape="poly" id="edge17_Node000001_Node000007" title=" " alt="" coords="283,45,341,118,375,155,371,158,336,121,279,48"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="223,120,191,301,186,300,218,119"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="253,118,353,159,351,164,251,123"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="368,241,424,267"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="398,194,398,226,393,226,393,194"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="342,315,402,341"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="411,192,435,226,441,247,438,268,424,290,406,308,402,304,420,287,433,266,436,247,430,228,406,195"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="498,241,584,267"/>
+<area shape="poly" id="edge10_Node000007_Node000010" title=" " alt="" coords="422,191,504,232,502,236,419,196"/>
+<area shape="rect" id="Node000011" href="$weekday_8h.html" title=" " alt="" coords="608,241,690,267"/>
+<area shape="poly" id="edge11_Node000007_Node000011" title=" " alt="" coords="440,191,594,235,593,240,438,196"/>
+<area shape="rect" id="Node000014" href="$opening_frames_8h.html" title=" " alt="" coords="222,241,343,267"/>
+<area shape="poly" id="edge14_Node000007_Node000014" title=" " alt="" coords="378,196,316,235,313,230,375,192"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="589,315,627,341"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="645,269,625,303,620,300,640,266"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="650,315,728,341"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="658,266,677,300,673,303,653,269"/>
+<area shape="poly" id="edge16_Node000014_Node000003" title=" " alt="" coords="267,270,214,308,211,304,264,265"/>
+<area shape="poly" id="edge15_Node000014_Node000009" title=" " alt="" coords="299,265,347,303,343,307,296,270"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Monument::getConservationStatus" name="Monument::getConservationStatus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="225,39,410,79"/>
+<area shape="rect" id="Node000002" href="$class_place_export_to_json_visitor.html#a0b5f35e1f208515e3498b0093cc0e092" title=" " alt="" coords="5,5,177,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,46,177,41,178,36,210,40"/>
+<area shape="rect" id="Node000003" href="$class_place_export_to_xml_visitor.html#a21e7104c6104a5892e6a38cca7fff4c0" title=" " alt="" coords="8,71,174,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,77,175,82,174,77,209,72"/>
+</map>

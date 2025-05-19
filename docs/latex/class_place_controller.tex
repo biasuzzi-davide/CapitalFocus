@@ -1,0 +1,724 @@
+\doxysection{Place\+Controller Class Reference}
+\hypertarget{class_place_controller}{}\label{class_place_controller}\index{PlaceController@{PlaceController}}
+
+
+{\ttfamily \#include $<$placecontroller.\+h$>$}
+
+
+
+Inheritance diagram for Place\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{class_place_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Place\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{class_place_controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_place_controller_a391452f53d435c9ccaa1df408e4f5a1f}{create\+New\+Place}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_aba794db187b1957a4482400ae5fb99de}{edit\+Current\+Place}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_a53f9020b8a0d03e31cedec01fc90849d}{delete\+Current\+Place}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_place_controller_abd3ec6854f0c5e5d57d49715e756f502}{Place\+Controller}} (\mbox{\hyperlink{class_main_window}{Main\+Window}} \texorpdfstring{$\ast$}{*}view, \mbox{\hyperlink{class_place_repository}{Place\+Repository}} \&repo)
+\item 
+void \mbox{\hyperlink{class_place_controller_a3caac76937b82478b306ac0cc0729e47}{add\+Place}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ \&place)
+\item 
+void \mbox{\hyperlink{class_place_controller_a7aac46ba867a68807d1ba15a61421979}{remove\+Place}} (int index)
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ \mbox{\hyperlink{class_place_controller_af610de5def22e86c14e5f0c45c1577bd}{search}} (const QString \&keyword, const QString \&city="{}All"{}) const
+\item 
+bool \mbox{\hyperlink{class_place_controller_a480c14d56580bf1053751976d2299a90}{set\+Widget\+Safe}} (const QString \&name)
+\item 
+void \mbox{\hyperlink{class_place_controller_a209739f5a76200933c8b046133687712}{show\+Credits\+Page}} ()
+\item 
+std\+::map$<$ QString, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ $>$ \mbox{\hyperlink{class_place_controller_abc297fa24d2306015dac2c0770636925}{grouped\+Search\+Results}} (const QString \&keyword, const QString \&city) const
+\item 
+bool \mbox{\hyperlink{class_place_controller_ad663ce4cce88753c4efa8ab242c5248e}{any\+Widget\+Is\+Editing}} () const
+\item 
+void \mbox{\hyperlink{class_place_controller_a8a7993cbcb4a72d612743a4c918fad4a}{import\+From\+File}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_a16cdf64afdbb24840d889d3148961097}{import\+Places\+From\+Xml}} (const QString \&file\+Path)
+\item 
+void \mbox{\hyperlink{class_place_controller_abb45bf61e5bd1ae9f437acc05e2c257f}{import\+Places\+From\+Json}} (const QString \&file\+Path)
+\item 
+void \mbox{\hyperlink{class_place_controller_aea88e297dc7e4ad5c30150f63f920ae9}{prompt\+Export\+To\+Xml}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_a86918fbfdd5e1561eff184f97735c4fe}{prompt\+Export\+To\+Json}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_a26bd60f2be79c0133dc95c2e75ec612c}{export\+To\+File}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_a6d927001e935c7a7f95b4668ef1d01d5}{export\+To\+Json}} (const QString \&file\+Path)
+\item 
+void \mbox{\hyperlink{class_place_controller_a5960fa51152def2ff7540c30c29aa84f}{export\+To\+Xml}} (const QString \&file\+Path)
+\item 
+void \mbox{\hyperlink{class_place_controller_a77ec5d0f415efae0ca1084d3a81a49fe}{set\+Widget\+Create}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_a94afccb89b4531c5d4ebe801c8b9bf79}{set\+Widget\+Main}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_a53f1dc7a52ae959cfff956a7d76c3f95}{set\+Widget\+Credits}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_a7863466e18883d4570f4d9628a650e8a}{show\+Statistics}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_adddd14d7dcb549a6bd0c0a8a599a407a}{go\+Back}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_ae898ac659e64ffc72b3b03b1c80e4f16}{prompt\+And\+Set\+Widget}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_a93a639b026307c36bdfdde55766ad6ed}{on\+Create\+Type\+Changed}} (int index)
+\item 
+void \mbox{\hyperlink{class_place_controller_a15458581989214ceaa09bb8f42cc5d2c}{find\+Places}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_a50a03496ec8609b91be308b9fe4fba37}{reset\+Search\+Fields}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_af6ec6fa43f4fac622e34a286c15604f4}{on\+Place\+Selected}} (QList\+Widget\+Item \texorpdfstring{$\ast$}{*}item)
+\item 
+void \mbox{\hyperlink{class_place_controller_a3a339db873d8ae8cc04f4bb531e62efc}{toggle\+Dark\+Mode}} ()
+\item 
+void \mbox{\hyperlink{class_place_controller_af362a022ee583a8ca5794d91808bb80b}{toggle\+Debug}} ()
+\item 
+bool \mbox{\hyperlink{class_place_controller_ae83bc1fc7a3fdf435944b449fbee72c7}{can\+Close}} ()
+\item 
+bool \mbox{\hyperlink{class_place_controller_abb8e9b11d4cd66f99d983cd29be11d71}{has\+Unsaved\+Changes}} () const
+\item 
+void \mbox{\hyperlink{class_place_controller_ae6e3e283a053e024eaf7c9d3c256f19b}{set\+Unsaved\+Changes}} (bool value)
+\item 
+\mbox{\hyperlink{class_place}{Place}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_place_controller_a622b45c8cd0c74196541400ecab54ad7}{get\+Current\+Place}} () const
+\item 
+void \mbox{\hyperlink{class_place_controller_afa22be5f0acda607b63532b1df24e127}{reset\+Current\+Place}} ()
+\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ \& \mbox{\hyperlink{class_place_controller_aae3ca5bb72d677d2fdf2841b2a7bd43c}{get\+All}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_place_controller_abd3ec6854f0c5e5d57d49715e756f502}\index{PlaceController@{PlaceController}!PlaceController@{PlaceController}}
+\index{PlaceController@{PlaceController}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{PlaceController()}{PlaceController()}}
+{\footnotesize\ttfamily \label{class_place_controller_abd3ec6854f0c5e5d57d49715e756f502} 
+Place\+Controller\+::\+Place\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_main_window}{Main\+Window}} \texorpdfstring{$\ast$}{*}}]{view}{, }\item[{\mbox{\hyperlink{class_place_repository}{Place\+Repository}} \&}]{repo}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_place_controller_a3caac76937b82478b306ac0cc0729e47}\index{PlaceController@{PlaceController}!addPlace@{addPlace}}
+\index{addPlace@{addPlace}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{addPlace()}{addPlace()}}
+{\footnotesize\ttfamily \label{class_place_controller_a3caac76937b82478b306ac0cc0729e47} 
+void Place\+Controller\+::add\+Place (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ \&}]{place}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_place_controller_ad663ce4cce88753c4efa8ab242c5248e}\index{PlaceController@{PlaceController}!anyWidgetIsEditing@{anyWidgetIsEditing}}
+\index{anyWidgetIsEditing@{anyWidgetIsEditing}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{anyWidgetIsEditing()}{anyWidgetIsEditing()}}
+{\footnotesize\ttfamily \label{class_place_controller_ad663ce4cce88753c4efa8ab242c5248e} 
+bool Place\+Controller\+::any\+Widget\+Is\+Editing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_ad663ce4cce88753c4efa8ab242c5248e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_ad663ce4cce88753c4efa8ab242c5248e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_ae83bc1fc7a3fdf435944b449fbee72c7}\index{PlaceController@{PlaceController}!canClose@{canClose}}
+\index{canClose@{canClose}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{canClose()}{canClose()}}
+{\footnotesize\ttfamily \label{class_place_controller_ae83bc1fc7a3fdf435944b449fbee72c7} 
+bool Place\+Controller\+::can\+Close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_ae83bc1fc7a3fdf435944b449fbee72c7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a391452f53d435c9ccaa1df408e4f5a1f}\index{PlaceController@{PlaceController}!createNewPlace@{createNewPlace}}
+\index{createNewPlace@{createNewPlace}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{createNewPlace}{createNewPlace}}
+{\footnotesize\ttfamily \label{class_place_controller_a391452f53d435c9ccaa1df408e4f5a1f} 
+void Place\+Controller\+::create\+New\+Place (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a391452f53d435c9ccaa1df408e4f5a1f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a53f9020b8a0d03e31cedec01fc90849d}\index{PlaceController@{PlaceController}!deleteCurrentPlace@{deleteCurrentPlace}}
+\index{deleteCurrentPlace@{deleteCurrentPlace}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{deleteCurrentPlace}{deleteCurrentPlace}}
+{\footnotesize\ttfamily \label{class_place_controller_a53f9020b8a0d03e31cedec01fc90849d} 
+void Place\+Controller\+::delete\+Current\+Place (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a53f9020b8a0d03e31cedec01fc90849d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a53f9020b8a0d03e31cedec01fc90849d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_aba794db187b1957a4482400ae5fb99de}\index{PlaceController@{PlaceController}!editCurrentPlace@{editCurrentPlace}}
+\index{editCurrentPlace@{editCurrentPlace}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{editCurrentPlace}{editCurrentPlace}}
+{\footnotesize\ttfamily \label{class_place_controller_aba794db187b1957a4482400ae5fb99de} 
+void Place\+Controller\+::edit\+Current\+Place (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_aba794db187b1957a4482400ae5fb99de_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a26bd60f2be79c0133dc95c2e75ec612c}\index{PlaceController@{PlaceController}!exportToFile@{exportToFile}}
+\index{exportToFile@{exportToFile}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{exportToFile()}{exportToFile()}}
+{\footnotesize\ttfamily \label{class_place_controller_a26bd60f2be79c0133dc95c2e75ec612c} 
+void Place\+Controller\+::export\+To\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a26bd60f2be79c0133dc95c2e75ec612c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a6d927001e935c7a7f95b4668ef1d01d5}\index{PlaceController@{PlaceController}!exportToJson@{exportToJson}}
+\index{exportToJson@{exportToJson}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{exportToJson()}{exportToJson()}}
+{\footnotesize\ttfamily \label{class_place_controller_a6d927001e935c7a7f95b4668ef1d01d5} 
+void Place\+Controller\+::export\+To\+Json (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Path}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a6d927001e935c7a7f95b4668ef1d01d5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a6d927001e935c7a7f95b4668ef1d01d5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a5960fa51152def2ff7540c30c29aa84f}\index{PlaceController@{PlaceController}!exportToXml@{exportToXml}}
+\index{exportToXml@{exportToXml}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{exportToXml()}{exportToXml()}}
+{\footnotesize\ttfamily \label{class_place_controller_a5960fa51152def2ff7540c30c29aa84f} 
+void Place\+Controller\+::export\+To\+Xml (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Path}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a5960fa51152def2ff7540c30c29aa84f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a5960fa51152def2ff7540c30c29aa84f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a15458581989214ceaa09bb8f42cc5d2c}\index{PlaceController@{PlaceController}!findPlaces@{findPlaces}}
+\index{findPlaces@{findPlaces}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{findPlaces()}{findPlaces()}}
+{\footnotesize\ttfamily \label{class_place_controller_a15458581989214ceaa09bb8f42cc5d2c} 
+void Place\+Controller\+::find\+Places (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a15458581989214ceaa09bb8f42cc5d2c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a15458581989214ceaa09bb8f42cc5d2c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_aae3ca5bb72d677d2fdf2841b2a7bd43c}\index{PlaceController@{PlaceController}!getAll@{getAll}}
+\index{getAll@{getAll}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{getAll()}{getAll()}}
+{\footnotesize\ttfamily \label{class_place_controller_aae3ca5bb72d677d2fdf2841b2a7bd43c} 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ \& Place\+Controller\+::get\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_place_controller_a622b45c8cd0c74196541400ecab54ad7}\index{PlaceController@{PlaceController}!getCurrentPlace@{getCurrentPlace}}
+\index{getCurrentPlace@{getCurrentPlace}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{getCurrentPlace()}{getCurrentPlace()}}
+{\footnotesize\ttfamily \label{class_place_controller_a622b45c8cd0c74196541400ecab54ad7} 
+\mbox{\hyperlink{class_place}{Place}} \texorpdfstring{$\ast$}{*} Place\+Controller\+::get\+Current\+Place (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_place_controller_adddd14d7dcb549a6bd0c0a8a599a407a}\index{PlaceController@{PlaceController}!goBack@{goBack}}
+\index{goBack@{goBack}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{goBack()}{goBack()}}
+{\footnotesize\ttfamily \label{class_place_controller_adddd14d7dcb549a6bd0c0a8a599a407a} 
+void Place\+Controller\+::go\+Back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_adddd14d7dcb549a6bd0c0a8a599a407a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_adddd14d7dcb549a6bd0c0a8a599a407a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_abc297fa24d2306015dac2c0770636925}\index{PlaceController@{PlaceController}!groupedSearchResults@{groupedSearchResults}}
+\index{groupedSearchResults@{groupedSearchResults}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{groupedSearchResults()}{groupedSearchResults()}}
+{\footnotesize\ttfamily \label{class_place_controller_abc297fa24d2306015dac2c0770636925} 
+std\+::map$<$ QString, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ $>$ Place\+Controller\+::grouped\+Search\+Results (\begin{DoxyParamCaption}\item[{const QString \&}]{keyword}{, }\item[{const QString \&}]{city}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_abc297fa24d2306015dac2c0770636925_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_abb8e9b11d4cd66f99d983cd29be11d71}\index{PlaceController@{PlaceController}!hasUnsavedChanges@{hasUnsavedChanges}}
+\index{hasUnsavedChanges@{hasUnsavedChanges}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{hasUnsavedChanges()}{hasUnsavedChanges()}}
+{\footnotesize\ttfamily \label{class_place_controller_abb8e9b11d4cd66f99d983cd29be11d71} 
+bool Place\+Controller\+::has\+Unsaved\+Changes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_abb8e9b11d4cd66f99d983cd29be11d71_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a8a7993cbcb4a72d612743a4c918fad4a}\index{PlaceController@{PlaceController}!importFromFile@{importFromFile}}
+\index{importFromFile@{importFromFile}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{importFromFile()}{importFromFile()}}
+{\footnotesize\ttfamily \label{class_place_controller_a8a7993cbcb4a72d612743a4c918fad4a} 
+void Place\+Controller\+::import\+From\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a8a7993cbcb4a72d612743a4c918fad4a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a8a7993cbcb4a72d612743a4c918fad4a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_abb45bf61e5bd1ae9f437acc05e2c257f}\index{PlaceController@{PlaceController}!importPlacesFromJson@{importPlacesFromJson}}
+\index{importPlacesFromJson@{importPlacesFromJson}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{importPlacesFromJson()}{importPlacesFromJson()}}
+{\footnotesize\ttfamily \label{class_place_controller_abb45bf61e5bd1ae9f437acc05e2c257f} 
+void Place\+Controller\+::import\+Places\+From\+Json (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Path}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_abb45bf61e5bd1ae9f437acc05e2c257f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_abb45bf61e5bd1ae9f437acc05e2c257f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a16cdf64afdbb24840d889d3148961097}\index{PlaceController@{PlaceController}!importPlacesFromXml@{importPlacesFromXml}}
+\index{importPlacesFromXml@{importPlacesFromXml}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{importPlacesFromXml()}{importPlacesFromXml()}}
+{\footnotesize\ttfamily \label{class_place_controller_a16cdf64afdbb24840d889d3148961097} 
+void Place\+Controller\+::import\+Places\+From\+Xml (\begin{DoxyParamCaption}\item[{const QString \&}]{file\+Path}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a16cdf64afdbb24840d889d3148961097_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a16cdf64afdbb24840d889d3148961097_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a93a639b026307c36bdfdde55766ad6ed}\index{PlaceController@{PlaceController}!onCreateTypeChanged@{onCreateTypeChanged}}
+\index{onCreateTypeChanged@{onCreateTypeChanged}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{onCreateTypeChanged()}{onCreateTypeChanged()}}
+{\footnotesize\ttfamily \label{class_place_controller_a93a639b026307c36bdfdde55766ad6ed} 
+void Place\+Controller\+::on\+Create\+Type\+Changed (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a93a639b026307c36bdfdde55766ad6ed_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_af6ec6fa43f4fac622e34a286c15604f4}\index{PlaceController@{PlaceController}!onPlaceSelected@{onPlaceSelected}}
+\index{onPlaceSelected@{onPlaceSelected}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{onPlaceSelected()}{onPlaceSelected()}}
+{\footnotesize\ttfamily \label{class_place_controller_af6ec6fa43f4fac622e34a286c15604f4} 
+void Place\+Controller\+::on\+Place\+Selected (\begin{DoxyParamCaption}\item[{QList\+Widget\+Item \texorpdfstring{$\ast$}{*}}]{item}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_af6ec6fa43f4fac622e34a286c15604f4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_af6ec6fa43f4fac622e34a286c15604f4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_ae898ac659e64ffc72b3b03b1c80e4f16}\index{PlaceController@{PlaceController}!promptAndSetWidget@{promptAndSetWidget}}
+\index{promptAndSetWidget@{promptAndSetWidget}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{promptAndSetWidget()}{promptAndSetWidget()}}
+{\footnotesize\ttfamily \label{class_place_controller_ae898ac659e64ffc72b3b03b1c80e4f16} 
+void Place\+Controller\+::prompt\+And\+Set\+Widget (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_ae898ac659e64ffc72b3b03b1c80e4f16_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a86918fbfdd5e1561eff184f97735c4fe}\index{PlaceController@{PlaceController}!promptExportToJson@{promptExportToJson}}
+\index{promptExportToJson@{promptExportToJson}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{promptExportToJson()}{promptExportToJson()}}
+{\footnotesize\ttfamily \label{class_place_controller_a86918fbfdd5e1561eff184f97735c4fe} 
+void Place\+Controller\+::prompt\+Export\+To\+Json (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a86918fbfdd5e1561eff184f97735c4fe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a86918fbfdd5e1561eff184f97735c4fe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_aea88e297dc7e4ad5c30150f63f920ae9}\index{PlaceController@{PlaceController}!promptExportToXml@{promptExportToXml}}
+\index{promptExportToXml@{promptExportToXml}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{promptExportToXml()}{promptExportToXml()}}
+{\footnotesize\ttfamily \label{class_place_controller_aea88e297dc7e4ad5c30150f63f920ae9} 
+void Place\+Controller\+::prompt\+Export\+To\+Xml (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_aea88e297dc7e4ad5c30150f63f920ae9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_aea88e297dc7e4ad5c30150f63f920ae9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a7aac46ba867a68807d1ba15a61421979}\index{PlaceController@{PlaceController}!removePlace@{removePlace}}
+\index{removePlace@{removePlace}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{removePlace()}{removePlace()}}
+{\footnotesize\ttfamily \label{class_place_controller_a7aac46ba867a68807d1ba15a61421979} 
+void Place\+Controller\+::remove\+Place (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_place_controller_afa22be5f0acda607b63532b1df24e127}\index{PlaceController@{PlaceController}!resetCurrentPlace@{resetCurrentPlace}}
+\index{resetCurrentPlace@{resetCurrentPlace}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{resetCurrentPlace()}{resetCurrentPlace()}}
+{\footnotesize\ttfamily \label{class_place_controller_afa22be5f0acda607b63532b1df24e127} 
+void Place\+Controller\+::reset\+Current\+Place (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_afa22be5f0acda607b63532b1df24e127_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a50a03496ec8609b91be308b9fe4fba37}\index{PlaceController@{PlaceController}!resetSearchFields@{resetSearchFields}}
+\index{resetSearchFields@{resetSearchFields}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{resetSearchFields()}{resetSearchFields()}}
+{\footnotesize\ttfamily \label{class_place_controller_a50a03496ec8609b91be308b9fe4fba37} 
+void Place\+Controller\+::reset\+Search\+Fields (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a50a03496ec8609b91be308b9fe4fba37_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_af610de5def22e86c14e5f0c45c1577bd}\index{PlaceController@{PlaceController}!search@{search}}
+\index{search@{search}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{class_place_controller_af610de5def22e86c14e5f0c45c1577bd} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ Place\+Controller\+::search (\begin{DoxyParamCaption}\item[{const QString \&}]{keyword}{, }\item[{const QString \&}]{city}{ = {\ttfamily "{}All"{}}}\end{DoxyParamCaption}) const}
+
+\Hypertarget{class_place_controller_ae6e3e283a053e024eaf7c9d3c256f19b}\index{PlaceController@{PlaceController}!setUnsavedChanges@{setUnsavedChanges}}
+\index{setUnsavedChanges@{setUnsavedChanges}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{setUnsavedChanges()}{setUnsavedChanges()}}
+{\footnotesize\ttfamily \label{class_place_controller_ae6e3e283a053e024eaf7c9d3c256f19b} 
+void Place\+Controller\+::set\+Unsaved\+Changes (\begin{DoxyParamCaption}\item[{bool}]{value}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_ae6e3e283a053e024eaf7c9d3c256f19b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a77ec5d0f415efae0ca1084d3a81a49fe}\index{PlaceController@{PlaceController}!setWidgetCreate@{setWidgetCreate}}
+\index{setWidgetCreate@{setWidgetCreate}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{setWidgetCreate()}{setWidgetCreate()}}
+{\footnotesize\ttfamily \label{class_place_controller_a77ec5d0f415efae0ca1084d3a81a49fe} 
+void Place\+Controller\+::set\+Widget\+Create (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a77ec5d0f415efae0ca1084d3a81a49fe_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a77ec5d0f415efae0ca1084d3a81a49fe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a53f1dc7a52ae959cfff956a7d76c3f95}\index{PlaceController@{PlaceController}!setWidgetCredits@{setWidgetCredits}}
+\index{setWidgetCredits@{setWidgetCredits}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{setWidgetCredits()}{setWidgetCredits()}}
+{\footnotesize\ttfamily \label{class_place_controller_a53f1dc7a52ae959cfff956a7d76c3f95} 
+void Place\+Controller\+::set\+Widget\+Credits (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a53f1dc7a52ae959cfff956a7d76c3f95_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a53f1dc7a52ae959cfff956a7d76c3f95_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a94afccb89b4531c5d4ebe801c8b9bf79}\index{PlaceController@{PlaceController}!setWidgetMain@{setWidgetMain}}
+\index{setWidgetMain@{setWidgetMain}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{setWidgetMain()}{setWidgetMain()}}
+{\footnotesize\ttfamily \label{class_place_controller_a94afccb89b4531c5d4ebe801c8b9bf79} 
+void Place\+Controller\+::set\+Widget\+Main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a94afccb89b4531c5d4ebe801c8b9bf79_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a94afccb89b4531c5d4ebe801c8b9bf79_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a480c14d56580bf1053751976d2299a90}\index{PlaceController@{PlaceController}!setWidgetSafe@{setWidgetSafe}}
+\index{setWidgetSafe@{setWidgetSafe}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{setWidgetSafe()}{setWidgetSafe()}}
+{\footnotesize\ttfamily \label{class_place_controller_a480c14d56580bf1053751976d2299a90} 
+bool Place\+Controller\+::set\+Widget\+Safe (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a480c14d56580bf1053751976d2299a90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a480c14d56580bf1053751976d2299a90_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a209739f5a76200933c8b046133687712}\index{PlaceController@{PlaceController}!showCreditsPage@{showCreditsPage}}
+\index{showCreditsPage@{showCreditsPage}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{showCreditsPage()}{showCreditsPage()}}
+{\footnotesize\ttfamily \label{class_place_controller_a209739f5a76200933c8b046133687712} 
+void Place\+Controller\+::show\+Credits\+Page (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_place_controller_a7863466e18883d4570f4d9628a650e8a}\index{PlaceController@{PlaceController}!showStatistics@{showStatistics}}
+\index{showStatistics@{showStatistics}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{showStatistics()}{showStatistics()}}
+{\footnotesize\ttfamily \label{class_place_controller_a7863466e18883d4570f4d9628a650e8a} 
+void Place\+Controller\+::show\+Statistics (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a7863466e18883d4570f4d9628a650e8a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a7863466e18883d4570f4d9628a650e8a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_a3a339db873d8ae8cc04f4bb531e62efc}\index{PlaceController@{PlaceController}!toggleDarkMode@{toggleDarkMode}}
+\index{toggleDarkMode@{toggleDarkMode}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{toggleDarkMode()}{toggleDarkMode()}}
+{\footnotesize\ttfamily \label{class_place_controller_a3a339db873d8ae8cc04f4bb531e62efc} 
+void Place\+Controller\+::toggle\+Dark\+Mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_a3a339db873d8ae8cc04f4bb531e62efc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_controller_af362a022ee583a8ca5794d91808bb80b}\index{PlaceController@{PlaceController}!toggleDebug@{toggleDebug}}
+\index{toggleDebug@{toggleDebug}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{toggleDebug()}{toggleDebug()}}
+{\footnotesize\ttfamily \label{class_place_controller_af362a022ee583a8ca5794d91808bb80b} 
+void Place\+Controller\+::toggle\+Debug (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_af362a022ee583a8ca5794d91808bb80b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_controller_af362a022ee583a8ca5794d91808bb80b_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+controller/\mbox{\hyperlink{placecontroller_8h}{placecontroller.\+h}}\item 
+controller/\mbox{\hyperlink{placecontroller_8cpp}{placecontroller.\+cpp}}\end{DoxyCompactItemize}

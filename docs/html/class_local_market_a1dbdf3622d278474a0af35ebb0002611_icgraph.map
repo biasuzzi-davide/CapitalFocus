@@ -1,0 +1,7 @@
+<map id="LocalMarket::getPeriod" name="LocalMarket::getPeriod">
+<area shape="rect" id="Node000001" title=" " alt="" coords="225,46,380,72"/>
+<area shape="rect" id="Node000002" href="$class_place_export_to_json_visitor.html#ab5196016daf6564a2c4dc30585f4efc4" title=" " alt="" coords="5,5,177,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,47,177,42,178,37,210,42"/>
+<area shape="rect" id="Node000003" href="$class_place_export_to_xml_visitor.html#a41999cb84b44f4d3b1753965947d2dea" title=" " alt="" coords="8,71,174,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,76,175,81,174,76,209,70"/>
+</map>

@@ -1,0 +1,314 @@
+\doxysection{Statistics\+Visitor Class Reference}
+\hypertarget{class_statistics_visitor}{}\label{class_statistics_visitor}\index{StatisticsVisitor@{StatisticsVisitor}}
+
+
+{\ttfamily \#include $<$statisticsvisitor.\+h$>$}
+
+
+
+Inheritance diagram for Statistics\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_statistics_visitor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Statistics\+Visitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_statistics_visitor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_statistics_visitor_ace0ec106e683dc4861affae8fcddbb2c}{Statistics\+Visitor}} ()
+\item 
+void \mbox{\hyperlink{class_statistics_visitor_aa38eb4a458fec3bb5ba43b29d78f1e26}{visit}} (const \mbox{\hyperlink{class_place}{Place}} \&p) override
+\item 
+void \mbox{\hyperlink{class_statistics_visitor_a909a11c9097bf142c454e91cbbd65cd3}{visit}} (const \mbox{\hyperlink{class_cafe}{Cafe}} \&cafe) override
+\item 
+void \mbox{\hyperlink{class_statistics_visitor_a18c7a77fc7a2179586f9c2d983018258}{visit}} (const \mbox{\hyperlink{class_disco}{Disco}} \&disco) override
+\item 
+void \mbox{\hyperlink{class_statistics_visitor_ac7e5d165e37f82111fc0f0e1876e42d7}{visit}} (const \mbox{\hyperlink{class_mall}{Mall}} \&mall) override
+\item 
+void \mbox{\hyperlink{class_statistics_visitor_a0cb96eafa30760c23f2485ea3b2e9f69}{visit}} (const \mbox{\hyperlink{class_local_market}{Local\+Market}} \&market) override
+\item 
+void \mbox{\hyperlink{class_statistics_visitor_abd1a150d273ec28dcbba4e97af9a8a6b}{visit}} (const \mbox{\hyperlink{class_restaurant}{Restaurant}} \&restaurant) override
+\item 
+void \mbox{\hyperlink{class_statistics_visitor_a8b2f457097e445a0d86677b071d5fd52}{visit}} (const \mbox{\hyperlink{class_panoramic_points}{Panoramic\+Points}} \&point) override
+\item 
+void \mbox{\hyperlink{class_statistics_visitor_a6b17e96b47c58c6459d7d77ad6d52886}{visit}} (const \mbox{\hyperlink{class_museum}{Museum}} \&museum) override
+\item 
+void \mbox{\hyperlink{class_statistics_visitor_ad145f6bdf3838a7b1ba980240c124ba3}{visit}} (const \mbox{\hyperlink{class_monument}{Monument}} \&monument) override
+\item 
+int \mbox{\hyperlink{class_statistics_visitor_a5f4afbdc298c220227c60c8409ce6cc7}{total\+Places}} () const
+\item 
+double \mbox{\hyperlink{class_statistics_visitor_aa59b009a41c9a8ecd2b1859e11b31a3b}{average\+Rating}} () const
+\item 
+double \mbox{\hyperlink{class_statistics_visitor_a7ad330ab61dd1ccd678f172b6da67f2f}{average\+Cost}} () const
+\item 
+const std\+::map$<$ QString, int $>$ \& \mbox{\hyperlink{class_statistics_visitor_a3a59ab8a9be827a71dcb435d97b593b7}{count\+By\+City}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_place_visitor_interface}{Place\+Visitor\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_place_visitor_interface_a0ee9393508706e70d211038757e9d239}{\texorpdfstring{$\sim$}{\string~}\+Place\+Visitor\+Interface}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_statistics_visitor_ace0ec106e683dc4861affae8fcddbb2c}\index{StatisticsVisitor@{StatisticsVisitor}!StatisticsVisitor@{StatisticsVisitor}}
+\index{StatisticsVisitor@{StatisticsVisitor}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{StatisticsVisitor()}{StatisticsVisitor()}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_ace0ec106e683dc4861affae8fcddbb2c} 
+Statistics\+Visitor\+::\+Statistics\+Visitor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_statistics_visitor_a7ad330ab61dd1ccd678f172b6da67f2f}\index{StatisticsVisitor@{StatisticsVisitor}!averageCost@{averageCost}}
+\index{averageCost@{averageCost}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{averageCost()}{averageCost()}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_a7ad330ab61dd1ccd678f172b6da67f2f} 
+double Statistics\+Visitor\+::average\+Cost (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_statistics_visitor_a7ad330ab61dd1ccd678f172b6da67f2f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_aa59b009a41c9a8ecd2b1859e11b31a3b}\index{StatisticsVisitor@{StatisticsVisitor}!averageRating@{averageRating}}
+\index{averageRating@{averageRating}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{averageRating()}{averageRating()}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_aa59b009a41c9a8ecd2b1859e11b31a3b} 
+double Statistics\+Visitor\+::average\+Rating (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_statistics_visitor_aa59b009a41c9a8ecd2b1859e11b31a3b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_a3a59ab8a9be827a71dcb435d97b593b7}\index{StatisticsVisitor@{StatisticsVisitor}!countByCity@{countByCity}}
+\index{countByCity@{countByCity}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{countByCity()}{countByCity()}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_a3a59ab8a9be827a71dcb435d97b593b7} 
+const std\+::map$<$ QString, int $>$ \& Statistics\+Visitor\+::count\+By\+City (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_statistics_visitor_a3a59ab8a9be827a71dcb435d97b593b7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_a5f4afbdc298c220227c60c8409ce6cc7}\index{StatisticsVisitor@{StatisticsVisitor}!totalPlaces@{totalPlaces}}
+\index{totalPlaces@{totalPlaces}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{totalPlaces()}{totalPlaces()}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_a5f4afbdc298c220227c60c8409ce6cc7} 
+int Statistics\+Visitor\+::total\+Places (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_statistics_visitor_a5f4afbdc298c220227c60c8409ce6cc7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_a909a11c9097bf142c454e91cbbd65cd3}\index{StatisticsVisitor@{StatisticsVisitor}!visit@{visit}}
+\index{visit@{visit}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_a909a11c9097bf142c454e91cbbd65cd3} 
+void Statistics\+Visitor\+::visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cafe}{Cafe}} \&}]{cafe}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_visitor_interface_ad24bc95feb91a5bfd065643e003820cb}{Place\+Visitor\+Interface}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistics_visitor_a909a11c9097bf142c454e91cbbd65cd3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_a18c7a77fc7a2179586f9c2d983018258}\index{StatisticsVisitor@{StatisticsVisitor}!visit@{visit}}
+\index{visit@{visit}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_a18c7a77fc7a2179586f9c2d983018258} 
+void Statistics\+Visitor\+::visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_disco}{Disco}} \&}]{disco}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_visitor_interface_af11a3ed65db8e5ec1250c39d8df6590e}{Place\+Visitor\+Interface}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistics_visitor_a18c7a77fc7a2179586f9c2d983018258_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_a0cb96eafa30760c23f2485ea3b2e9f69}\index{StatisticsVisitor@{StatisticsVisitor}!visit@{visit}}
+\index{visit@{visit}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_a0cb96eafa30760c23f2485ea3b2e9f69} 
+void Statistics\+Visitor\+::visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_local_market}{Local\+Market}} \&}]{market}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_visitor_interface_a3e1aa0fdd6f1a72b12c090d25abb6fdd}{Place\+Visitor\+Interface}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistics_visitor_a0cb96eafa30760c23f2485ea3b2e9f69_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_ac7e5d165e37f82111fc0f0e1876e42d7}\index{StatisticsVisitor@{StatisticsVisitor}!visit@{visit}}
+\index{visit@{visit}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_ac7e5d165e37f82111fc0f0e1876e42d7} 
+void Statistics\+Visitor\+::visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_mall}{Mall}} \&}]{mall}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_visitor_interface_ad5b06f283d0cc9f02ebe7d56c2aa1508}{Place\+Visitor\+Interface}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_statistics_visitor_ac7e5d165e37f82111fc0f0e1876e42d7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_statistics_visitor_ac7e5d165e37f82111fc0f0e1876e42d7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_ad145f6bdf3838a7b1ba980240c124ba3}\index{StatisticsVisitor@{StatisticsVisitor}!visit@{visit}}
+\index{visit@{visit}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_ad145f6bdf3838a7b1ba980240c124ba3} 
+void Statistics\+Visitor\+::visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_monument}{Monument}} \&}]{monument}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_visitor_interface_afd3c955aa357a38871cd33b9c2539abe}{Place\+Visitor\+Interface}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistics_visitor_ad145f6bdf3838a7b1ba980240c124ba3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_a6b17e96b47c58c6459d7d77ad6d52886}\index{StatisticsVisitor@{StatisticsVisitor}!visit@{visit}}
+\index{visit@{visit}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_a6b17e96b47c58c6459d7d77ad6d52886} 
+void Statistics\+Visitor\+::visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_museum}{Museum}} \&}]{museum}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_visitor_interface_a629be444354bd7e6d4ecf8d6cf3db0bb}{Place\+Visitor\+Interface}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistics_visitor_a6b17e96b47c58c6459d7d77ad6d52886_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_a8b2f457097e445a0d86677b071d5fd52}\index{StatisticsVisitor@{StatisticsVisitor}!visit@{visit}}
+\index{visit@{visit}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_a8b2f457097e445a0d86677b071d5fd52} 
+void Statistics\+Visitor\+::visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_panoramic_points}{Panoramic\+Points}} \&}]{point}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_visitor_interface_ae99d11290e976810c8541e54668b8fc7}{Place\+Visitor\+Interface}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistics_visitor_a8b2f457097e445a0d86677b071d5fd52_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_aa38eb4a458fec3bb5ba43b29d78f1e26}\index{StatisticsVisitor@{StatisticsVisitor}!visit@{visit}}
+\index{visit@{visit}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_aa38eb4a458fec3bb5ba43b29d78f1e26} 
+void Statistics\+Visitor\+::visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_place}{Place}} \&}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_visitor_interface_a5f201d3b77ae0bb129691e3db2c7a98e}{Place\+Visitor\+Interface}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_statistics_visitor_aa38eb4a458fec3bb5ba43b29d78f1e26_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_statistics_visitor_aa38eb4a458fec3bb5ba43b29d78f1e26_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_statistics_visitor_abd1a150d273ec28dcbba4e97af9a8a6b}\index{StatisticsVisitor@{StatisticsVisitor}!visit@{visit}}
+\index{visit@{visit}!StatisticsVisitor@{StatisticsVisitor}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}\hspace{0.1cm}{\footnotesize\ttfamily [9/9]}}
+{\footnotesize\ttfamily \label{class_statistics_visitor_abd1a150d273ec28dcbba4e97af9a8a6b} 
+void Statistics\+Visitor\+::visit (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_restaurant}{Restaurant}} \&}]{restaurant}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_visitor_interface_a026092b80718d4d40c4ce9232e918304}{Place\+Visitor\+Interface}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_statistics_visitor_abd1a150d273ec28dcbba4e97af9a8a6b_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/visitor/\mbox{\hyperlink{statisticsvisitor_8h}{statisticsvisitor.\+h}}\item 
+model/visitor/\mbox{\hyperlink{statisticsvisitor_8cpp}{statisticsvisitor.\+cpp}}\end{DoxyCompactItemize}

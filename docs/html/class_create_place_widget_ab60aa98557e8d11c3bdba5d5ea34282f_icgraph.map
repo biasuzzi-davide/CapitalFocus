@@ -1,0 +1,17 @@
+<map id="CreatePlaceWidget::setTakeAway_Cafe" name="CreatePlaceWidget::setTakeAway_Cafe">
+<area shape="rect" id="Node000001" title=" " alt="" coords="574,112,717,153"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#aba794db187b1957a4482400ae5fb99de" title=" " alt="" coords="344,112,526,153"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="559,136,527,136,527,130,559,130"/>
+<area shape="rect" id="Node000003" href="$classculturewidget.html#ae73dad22bbc1127877a2ee2b38989076" title=" " alt="" coords="109,5,290,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="394,105,348,74,295,46,262,34,264,29,297,41,350,70,397,101"/>
+<area shape="rect" id="Node000004" href="$classentertainmentwidget.html#a66e21cddb02349b889060550a86bb413" title=" " alt="" coords="130,55,268,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="334,111,268,95,270,90,335,106"/>
+<area shape="rect" id="Node000005" href="$classfoodwidget.html#a5d5bc061040d2c21774d52a587d85c8e" title=" " alt="" coords="116,120,282,146"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="328,136,283,136,283,130,328,130"/>
+<area shape="rect" id="Node000006" href="$class_main_window.html#adc1ed341279a8fb00175c7f62e0ca60a" title=" " alt="" coords="110,169,288,195"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="329,158,265,171,264,166,328,153"/>
+<area shape="rect" id="Node000008" href="$classshoppingwidget.html#af79700c38254d0210cafb340ece02bbd" title=" " alt="" coords="103,219,296,244"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="389,164,345,188,297,210,264,221,263,216,295,205,343,183,387,159"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,169,55,195"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="95,185,55,185,55,180,95,180"/>
+</map>

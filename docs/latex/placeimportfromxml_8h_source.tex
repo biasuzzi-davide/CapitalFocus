@@ -1,0 +1,31 @@
+\doxysection{placeimportfromxml.\+h}
+\hypertarget{placeimportfromxml_8h_source}{}\label{placeimportfromxml_8h_source}\index{model/visitor/placeimportfromxml.h@{model/visitor/placeimportfromxml.h}}
+\mbox{\hyperlink{placeimportfromxml_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLACEIMPORTFROMXML\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLACEIMPORTFROMXML\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDomDocument>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_place_8h}{model/Place.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{weekly_openings_8h}{model/weeklyOpenings.h}}"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{//\ Classe\ per\ importare\ dati\ Place\ da\ un\ file\ XML}}
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_place_import_from_xml_a2b2e80d839e0cc2db700107677bc53fd}{PlaceImportFromXml}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ Parsa\ gli\ orari\ di\ apertura\ da\ un\ elemento\ XML}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\ parseOpenings(\textcolor{keyword}{const}\ QDomElement\&\ parent)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ Costruttore\ di\ default}}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_place_import_from_xml_a2b2e80d839e0cc2db700107677bc53fd}{PlaceImportFromXml}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Legge\ i\ Place\ da\ un\ file\ XML}}
+\DoxyCodeLine{00022\ \ \ \ \ std::vector<std::shared\_ptr<Place>>\ \mbox{\hyperlink{class_place_import_from_xml_af009dbdd67d4ba42c43432b8e8bc0684}{importFromFile}}(\textcolor{keyword}{const}\ QString\&\ filePath)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PLACEIMPORTFROMXML\_H}}
+
+\end{DoxyCode}

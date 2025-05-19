@@ -1,0 +1,11 @@
+<map id="PlaceExportToJsonVisitor::visit" name="PlaceExportToJsonVisitor::visit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,177,113"/>
+<area shape="rect" id="Node000002" href="$class_culture.html#a0dc21918e7f30cf2f9d77799ac06a266" title=" " alt="" coords="250,5,420,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,70,224,40,250,33,251,38,225,45,142,75"/>
+<area shape="rect" id="Node000003" href="$class_culture.html#ad1ae165297c171c7c39fc8359b9951d8" title=" " alt="" coords="242,55,428,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,81,226,76,226,81,177,87"/>
+<area shape="rect" id="Node000004" href="$class_museum.html#a86b4264e66df17e1c8d2209af76bdfb6" title=" " alt="" coords="225,104,445,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,99,209,102,209,107,177,104"/>
+<area shape="rect" id="Node000005" href="$class_culture.html#a8254e7d5a2fc57709f20efc0c000e176" title=" " alt="" coords="256,153,414,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="144,111,225,140,252,147,250,152,224,145,142,116"/>
+</map>

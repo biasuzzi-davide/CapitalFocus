@@ -1,0 +1,67 @@
+\doxysection{weekly\+Openings.\+h}
+\hypertarget{weekly_openings_8h_source}{}\label{weekly_openings_8h_source}\index{model/weeklyOpenings.h@{model/weeklyOpenings.h}}
+\mbox{\hyperlink{weekly_openings_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ WEEKLYOPENINGS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ WEEKLYOPENINGS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMap>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QStringList>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{weekday_8h}{weekday.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{opening_frames_8h}{openingFrames.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{comment}{//\ Gestisce\ gli\ orari\ di\ apertura\ di\ tutta\ la\ settimana}}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classweekly_openings_a0cad4ff746c33a775fbe86765eb218ab}{weeklyOpenings}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ QMap<Weekday,\ openingFrames>\ schedule;\ \textcolor{comment}{//\ Orari\ per\ ogni\ giorno}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ Costruttore\ di\ default}}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classweekly_openings_a0cad4ff746c33a775fbe86765eb218ab}{weeklyOpenings}}();}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ Costruttore\ di\ copia}}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classweekly_openings_a0cad4ff746c33a775fbe86765eb218ab}{weeklyOpenings}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings_a0cad4ff746c33a775fbe86765eb218ab}{weeklyOpenings}}\&\ other);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{comment}{//\ Imposta\ orario\ per\ un\ giorno}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classweekly_openings_a97cb89825c8afd2dda509b335b0ab59a}{setOpening}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day,\ \textcolor{keyword}{const}\ QTime\&\ open,\ \textcolor{keyword}{const}\ QTime\&\ close);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{comment}{//\ Imposta\ un\ giorno\ come\ chiuso}}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classweekly_openings_abf47bd71427cbd385e863f6212fce4d6}{setClosed}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//\ Imposta\ un\ giorno\ come\ sempre\ aperto}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classweekly_openings_a8db9d2819a7673a0d75c329c6bc0d3ce}{setAlwaysOpen}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ d);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Controlla\ se\ è\ chiuso\ in\ un\ giorno}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classweekly_openings_a46f87a654039cfa5c18fd75efb9ed043}{isClosed}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Controlla\ se\ è\ sempre\ aperto\ in\ un\ giorno}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classweekly_openings_a0895523c64b9d9686d647a2d8363efa8}{isAlwaysOpen}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Controlla\ se\ apre\ prima\ di\ un'ora\ in\ un\ giorno}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classweekly_openings_aaaf00916f33ebbe898c4537b92c87280}{opensBefore}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day,\ \textcolor{keyword}{const}\ QTime\&\ time)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Controlla\ se\ è\ aperto\ a\ una\ certa\ ora\ in\ un\ giorno}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classweekly_openings_a8fe80780b30f136545486ade9f47cf82}{isOpenAt}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day,\ \textcolor{keyword}{const}\ QTime\&\ time)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ Formatta\ gli\ orari\ di\ un\ giorno\ come\ stringa}}
+\DoxyCodeLine{00043\ \ \ \ \ QString\ \mbox{\hyperlink{classweekly_openings_ab36ca199debf1271f5500d95c20c1b4b}{getOpeningFrameString}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ Formatta\ tutti\ gli\ orari\ come\ stringa\ multilinea}}
+\DoxyCodeLine{00046\ \ \ \ \ QString\ \mbox{\hyperlink{classweekly_openings_adb8c0c8af984239132e860fe947e1d61}{toQStringMultiline}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//\ Converte\ da\ Weekday\ a\ stringa}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ QString\ \mbox{\hyperlink{classweekly_openings_af09d1bf5ea919f7d5cca1e2d2ded54df}{weekdayToString}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ Converte\ da\ stringa\ a\ Weekday}}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ \mbox{\hyperlink{classweekly_openings_ae2d6fd5bd52c5290a48493d8698a14d4}{weekdayFromString}}(\textcolor{keyword}{const}\ QString\&\ dayStr);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{comment}{//\ Getter}}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{structopening_frames}{openingFrames}}\ \mbox{\hyperlink{classweekly_openings_a6768461a08f00cb60d05e3956a9d9598}{getOpening}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ \ \ \ \ QTime\ \mbox{\hyperlink{classweekly_openings_a33461ea38435ee6012775ba9cb77cada}{openTime}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ \ \ \ \ QTime\ \mbox{\hyperlink{classweekly_openings_a28067562948f149f6f000d58fae9254a}{closeTime}}(\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}\ day)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keyword}{const}\ QMap<Weekday,\ openingFrames>\&\ \mbox{\hyperlink{classweekly_openings_a295c9add7edbaaead3255be75e605806}{getSchedule}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ WEEKLYOPENINGS\_H}}
+
+\end{DoxyCode}

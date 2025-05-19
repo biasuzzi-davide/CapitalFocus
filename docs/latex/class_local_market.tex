@@ -1,0 +1,207 @@
+\doxysection{Local\+Market Class Reference}
+\hypertarget{class_local_market}{}\label{class_local_market}\index{LocalMarket@{LocalMarket}}
+
+
+{\ttfamily \#include $<$Local\+Market.\+h$>$}
+
+
+
+Inheritance diagram for Local\+Market\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_local_market__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Local\+Market\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_local_market__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_local_market_aceef8459fbc2ff30f722f521a26a1154}{Local\+Market}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&hours, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}, bool outdoor, bool food\+Area, int stand\+Number, bool artisans, bool seasonal, const QString \&period)
+\item 
+virtual \mbox{\hyperlink{class_local_market_a9ed11aef6866fc4bb01abedba55ca906}{\texorpdfstring{$\sim$}{\string~}\+Local\+Market}} ()=default
+\item 
+QString \mbox{\hyperlink{class_local_market_a5ddc4d07b56f8cdd98db6b92c8fa3d4d}{get\+Shopping\+Summary}} () const override
+\item 
+QString \mbox{\hyperlink{class_local_market_ac8b2591a029c662adc4b766473a87482}{get\+Category}} () const override
+\item 
+void \mbox{\hyperlink{class_local_market_a6c0d1f008ce6c37c44eeeffb771f9ae6}{accept\+Visitor}} (\mbox{\hyperlink{class_place_visitor_interface}{Place\+Visitor\+Interface}} \&visitor) const override
+\item 
+bool \mbox{\hyperlink{class_local_market_a3abf09f20994ff21a5d55404a4747818}{has\+Artisans}} () const
+\item 
+bool \mbox{\hyperlink{class_local_market_a6c6272dd023d92bf2697b19401e999d1}{is\+Seasonal}} () const
+\item 
+QString \mbox{\hyperlink{class_local_market_a1dbdf3622d278474a0af35ebb0002611}{get\+Period}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_shopping}{Shopping}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_shopping_a9de3492e36771072e41fdb13036f5a7c}{Shopping}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&hours, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}, bool outdoor, bool food\+Area, int stand\+Number)
+\item 
+virtual \mbox{\hyperlink{class_shopping_a7f41f42e180ef343a64332ac93b907d5}{\texorpdfstring{$\sim$}{\string~}\+Shopping}} ()=default
+\item 
+QString \mbox{\hyperlink{class_shopping_a2df956b6ca5d4ca876f6833f267f33a7}{get\+Category}} () const override
+\item 
+bool \mbox{\hyperlink{class_shopping_acd03a7791869732ff9b062c922c73060}{is\+Outdoor}} () const
+\item 
+bool \mbox{\hyperlink{class_shopping_a0d4f39dc3bff192fd354180b29a4499b}{food\+Area\+Present}} () const
+\item 
+int \mbox{\hyperlink{class_shopping_a21b7b072b5aea019f3901d332b2d645f}{get\+Stand\+Number}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_place}{Place}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_place_a06c16ea1806695908623c43f803c3a13}{Place}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}})
+\item 
+virtual \mbox{\hyperlink{class_place_a5dedf984133a4a33a95419da61b54157}{\texorpdfstring{$\sim$}{\string~}\+Place}} ()=default
+\item 
+double \mbox{\hyperlink{class_place_a95a5121627c6f6a0ab5ecfcfbffe8e4d}{get\+Cost}} () const
+\item 
+QString \mbox{\hyperlink{class_place_ac92292afedae475500f31361b8163acf}{get\+Name}} () const
+\item 
+QString \mbox{\hyperlink{class_place_a27ccfedddb14f83bc62b12b79ce6a29f}{get\+City}} () const
+\item 
+QString \mbox{\hyperlink{class_place_a6baa6314ad59d069f86ffcd81484211b}{get\+Description}} () const
+\item 
+double \mbox{\hyperlink{class_place_af4f1cbcde42f665d72b090e77852f75e}{get\+Rating}} () const
+\item 
+const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \& \mbox{\hyperlink{class_place_a16b0f469896907c173a3a747de31da5f}{get\+Open}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_place}{Place}}}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}
+\item 
+QString \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}
+\item 
+QString \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}
+\item 
+double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}
+\item 
+\mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}
+\item 
+double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_local_market_aceef8459fbc2ff30f722f521a26a1154}\index{LocalMarket@{LocalMarket}!LocalMarket@{LocalMarket}}
+\index{LocalMarket@{LocalMarket}!LocalMarket@{LocalMarket}}
+\doxysubsubsection{\texorpdfstring{LocalMarket()}{LocalMarket()}}
+{\footnotesize\ttfamily \label{class_local_market_aceef8459fbc2ff30f722f521a26a1154} 
+Local\+Market\+::\+Local\+Market (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{, }\item[{const QString \&}]{city}{, }\item[{const QString \&}]{description}{, }\item[{double}]{rating}{, }\item[{const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&}]{hours}{, }\item[{double}]{cost}{, }\item[{bool}]{outdoor}{, }\item[{bool}]{food\+Area}{, }\item[{int}]{stand\+Number}{, }\item[{bool}]{artisans}{, }\item[{bool}]{seasonal}{, }\item[{const QString \&}]{period}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_local_market_aceef8459fbc2ff30f722f521a26a1154_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_local_market_a9ed11aef6866fc4bb01abedba55ca906}\index{LocalMarket@{LocalMarket}!````~LocalMarket@{\texorpdfstring{$\sim$}{\string~}LocalMarket}}
+\index{````~LocalMarket@{\texorpdfstring{$\sim$}{\string~}LocalMarket}!LocalMarket@{LocalMarket}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LocalMarket()}{\string~LocalMarket()}}
+{\footnotesize\ttfamily \label{class_local_market_a9ed11aef6866fc4bb01abedba55ca906} 
+virtual Local\+Market\+::\texorpdfstring{$\sim$}{\string~}\+Local\+Market (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_local_market_a6c0d1f008ce6c37c44eeeffb771f9ae6}\index{LocalMarket@{LocalMarket}!acceptVisitor@{acceptVisitor}}
+\index{acceptVisitor@{acceptVisitor}!LocalMarket@{LocalMarket}}
+\doxysubsubsection{\texorpdfstring{acceptVisitor()}{acceptVisitor()}}
+{\footnotesize\ttfamily \label{class_local_market_a6c0d1f008ce6c37c44eeeffb771f9ae6} 
+void Local\+Market\+::accept\+Visitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_place_visitor_interface}{Place\+Visitor\+Interface}} \&}]{visitor}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_ad01a28ff7cc0080579d084606b1d6e17}{Place}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_local_market_a6c0d1f008ce6c37c44eeeffb771f9ae6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_local_market_ac8b2591a029c662adc4b766473a87482}\index{LocalMarket@{LocalMarket}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!LocalMarket@{LocalMarket}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily \label{class_local_market_ac8b2591a029c662adc4b766473a87482} 
+QString Local\+Market\+::get\+Category (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_a43620368e8374fe90c96c2d00f39831a}{Place}}.
+
+\Hypertarget{class_local_market_a1dbdf3622d278474a0af35ebb0002611}\index{LocalMarket@{LocalMarket}!getPeriod@{getPeriod}}
+\index{getPeriod@{getPeriod}!LocalMarket@{LocalMarket}}
+\doxysubsubsection{\texorpdfstring{getPeriod()}{getPeriod()}}
+{\footnotesize\ttfamily \label{class_local_market_a1dbdf3622d278474a0af35ebb0002611} 
+QString Local\+Market\+::get\+Period (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_local_market_a1dbdf3622d278474a0af35ebb0002611_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_local_market_a5ddc4d07b56f8cdd98db6b92c8fa3d4d}\index{LocalMarket@{LocalMarket}!getShoppingSummary@{getShoppingSummary}}
+\index{getShoppingSummary@{getShoppingSummary}!LocalMarket@{LocalMarket}}
+\doxysubsubsection{\texorpdfstring{getShoppingSummary()}{getShoppingSummary()}}
+{\footnotesize\ttfamily \label{class_local_market_a5ddc4d07b56f8cdd98db6b92c8fa3d4d} 
+QString Local\+Market\+::get\+Shopping\+Summary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_shopping_a5b22ec6325f4b5158481e2feb4ac0da1}{Shopping}}.
+
+\Hypertarget{class_local_market_a3abf09f20994ff21a5d55404a4747818}\index{LocalMarket@{LocalMarket}!hasArtisans@{hasArtisans}}
+\index{hasArtisans@{hasArtisans}!LocalMarket@{LocalMarket}}
+\doxysubsubsection{\texorpdfstring{hasArtisans()}{hasArtisans()}}
+{\footnotesize\ttfamily \label{class_local_market_a3abf09f20994ff21a5d55404a4747818} 
+bool Local\+Market\+::has\+Artisans (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_local_market_a3abf09f20994ff21a5d55404a4747818_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_local_market_a6c6272dd023d92bf2697b19401e999d1}\index{LocalMarket@{LocalMarket}!isSeasonal@{isSeasonal}}
+\index{isSeasonal@{isSeasonal}!LocalMarket@{LocalMarket}}
+\doxysubsubsection{\texorpdfstring{isSeasonal()}{isSeasonal()}}
+{\footnotesize\ttfamily \label{class_local_market_a6c6272dd023d92bf2697b19401e999d1} 
+bool Local\+Market\+::is\+Seasonal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_local_market_a6c6272dd023d92bf2697b19401e999d1_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/\mbox{\hyperlink{_local_market_8h}{Local\+Market.\+h}}\item 
+model/\mbox{\hyperlink{_local_market_8cpp}{Local\+Market.\+cpp}}\end{DoxyCompactItemize}

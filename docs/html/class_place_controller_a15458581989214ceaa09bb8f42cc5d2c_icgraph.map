@@ -1,0 +1,18 @@
+<map id="PlaceController::findPlaces" name="PlaceController::findPlaces">
+<area shape="rect" id="Node000001" title=" " alt="" coords="588,171,768,196"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#a53f9020b8a0d03e31cedec01fc90849d" title=" " alt="" coords="344,123,540,164"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="583,170,540,163,541,158,584,165"/>
+<area shape="rect" id="Node000006" href="$class_main_window.html#adc1ed341279a8fb00175c7f62e0ca60a" title=" " alt="" coords="110,219,288,244"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="573,197,289,225,289,220,573,191"/>
+<area shape="rect" id="Node000003" href="$classculturewidget.html#ae73dad22bbc1127877a2ee2b38989076" title=" " alt="" coords="109,5,290,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="403,115,353,79,295,46,263,34,265,29,297,41,356,75,406,111"/>
+<area shape="rect" id="Node000004" href="$classentertainmentwidget.html#a66e21cddb02349b889060550a86bb413" title=" " alt="" coords="130,55,268,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="352,121,268,97,270,92,353,116"/>
+<area shape="rect" id="Node000005" href="$classfoodwidget.html#a5d5bc061040d2c21774d52a587d85c8e" title=" " alt="" coords="116,120,282,146"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="328,141,283,139,283,134,328,136"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="386,173,297,210,261,221,260,216,295,205,384,168"/>
+<area shape="rect" id="Node000008" href="$classshoppingwidget.html#af79700c38254d0210cafb340ece02bbd" title=" " alt="" coords="103,169,296,195"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="329,164,285,171,284,166,328,159"/>
+<area shape="rect" id="Node000007" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,219,55,244"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="95,234,55,234,55,229,95,229"/>
+</map>

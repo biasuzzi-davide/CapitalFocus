@@ -1,0 +1,13 @@
+<map id="PlaceExportToJsonVisitor::getResult" name="PlaceExportToJsonVisitor::getResult">
+<area shape="rect" id="Node000001" title=" " alt="" coords="818,27,989,68"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#a6d927001e935c7a7f95b4668ef1d01d5" title=" " alt="" coords="573,35,770,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="802,50,770,50,770,45,802,45"/>
+<area shape="rect" id="Node000003" href="$class_place_controller.html#a26bd60f2be79c0133dc95c2e75ec612c" title=" " alt="" coords="332,5,522,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="558,37,522,32,523,27,558,31"/>
+<area shape="rect" id="Node000004" href="$class_place_controller.html#a86918fbfdd5e1561eff184f97735c4fe" title=" " alt="" coords="329,55,525,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="558,63,526,67,526,62,558,58"/>
+<area shape="rect" id="Node000005" href="$class_main_window.html#adc1ed341279a8fb00175c7f62e0ca60a" title=" " alt="" coords="103,63,281,88"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="313,78,282,78,282,73,313,73"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,63,55,88"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="87,78,55,78,55,73,87,73"/>
+</map>

@@ -1,0 +1,22 @@
+<map id="weeklyOpenings::getOpening" name="weeklyOpenings::getOpening">
+<area shape="rect" id="Node000001" title=" " alt="" coords="808,120,999,146"/>
+<area shape="rect" id="Node000002" href="$classweekly_openings.html#a28067562948f149f6f000d58fae9254a" title=" " alt="" coords="574,95,760,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="792,124,760,120,760,115,793,118"/>
+<area shape="rect" id="Node000010" href="$classweekly_openings.html#a33461ea38435ee6012775ba9cb77cada" title=" " alt="" coords="576,144,758,170"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="792,147,759,150,758,145,792,141"/>
+<area shape="rect" id="Node000003" href="$class_place_controller.html#aba794db187b1957a4482400ae5fb99de" title=" " alt="" coords="344,112,526,153"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="559,122,527,125,527,120,559,117"/>
+<area shape="rect" id="Node000004" href="$classculturewidget.html#ae73dad22bbc1127877a2ee2b38989076" title=" " alt="" coords="109,5,290,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="394,105,348,74,295,46,262,34,264,29,297,41,350,70,397,101"/>
+<area shape="rect" id="Node000005" href="$classentertainmentwidget.html#a66e21cddb02349b889060550a86bb413" title=" " alt="" coords="130,55,268,96"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="334,111,268,95,270,90,335,106"/>
+<area shape="rect" id="Node000006" href="$classfoodwidget.html#a5d5bc061040d2c21774d52a587d85c8e" title=" " alt="" coords="116,120,282,146"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="328,136,283,136,283,130,328,130"/>
+<area shape="rect" id="Node000007" href="$class_main_window.html#adc1ed341279a8fb00175c7f62e0ca60a" title=" " alt="" coords="110,169,288,195"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="329,158,265,171,264,166,328,153"/>
+<area shape="rect" id="Node000009" href="$classshoppingwidget.html#af79700c38254d0210cafb340ece02bbd" title=" " alt="" coords="103,219,296,244"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="389,164,345,188,297,210,264,221,263,216,295,205,343,183,387,159"/>
+<area shape="rect" id="Node000008" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,169,55,195"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="95,185,55,185,55,180,95,180"/>
+<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="560,148,527,145,527,140,561,143"/>
+</map>

@@ -1,0 +1,214 @@
+\doxysection{Monument Class Reference}
+\hypertarget{class_monument}{}\label{class_monument}\index{Monument@{Monument}}
+
+
+{\ttfamily \#include $<$Monument.\+h$>$}
+
+
+
+Inheritance diagram for Monument\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_monument__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Monument\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_monument__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monument_a846aae05b37f2dba984c8d388eae05f3}{Monument}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}, double \mbox{\hyperlink{class_culture_ade65998528d27011ecea3af96a61fc17}{student\+Discount}}, bool \mbox{\hyperlink{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}{guided\+Tour}}, const QString \&\mbox{\hyperlink{class_culture_aa3d4aee81aab7aa65d03a998d23d0793}{cultural\+Focus}}, bool is\+Unesco\+Heritage, const QString \&conservation\+Status, bool open\+To\+Public)
+\item 
+virtual \mbox{\hyperlink{class_monument_aabf6c776aebd0a809050cba56defb75a}{\texorpdfstring{$\sim$}{\string~}\+Monument}} ()=default
+\item 
+QString \mbox{\hyperlink{class_monument_a572f9b0bf0c8b3f4dfa85845861d3413}{get\+Category}} () const override
+\item 
+virtual void \mbox{\hyperlink{class_monument_a3768dfd1abcbc9073558ce9bb6f5b2bf}{accept\+Visitor}} (\mbox{\hyperlink{class_place_visitor_interface}{Place\+Visitor\+Interface}} \&visitor) const override
+\item 
+QString \mbox{\hyperlink{class_monument_adc41366da13c1b0612717dc268c1e003}{get\+Culture\+Summary}} () const override
+\item 
+bool \mbox{\hyperlink{class_monument_a8320f3de77478092e925110692d77069}{is\+Unesco}} () const
+\item 
+QString \mbox{\hyperlink{class_monument_ac332cfa44cb47a8510210d4e3babae68}{get\+Conservation\+Status}} () const
+\item 
+bool \mbox{\hyperlink{class_monument_af15c0990ca89376df3bc8f295c7e048f}{is\+Open\+To\+Public}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_culture}{Culture}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_culture_ae84116457d2f30fb26a04ec3753fe14b}{Culture}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}, double \mbox{\hyperlink{class_culture_ade65998528d27011ecea3af96a61fc17}{student\+Discount}}, bool \mbox{\hyperlink{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}{guided\+Tour}}, const QString \&\mbox{\hyperlink{class_culture_aa3d4aee81aab7aa65d03a998d23d0793}{cultural\+Focus}})
+\item 
+virtual \mbox{\hyperlink{class_culture_a6b3f1b9843d367914827a20a386ae9fb}{\texorpdfstring{$\sim$}{\string~}\+Culture}} ()=default
+\item 
+double \mbox{\hyperlink{class_culture_ad1ae165297c171c7c39fc8359b9951d8}{get\+Student\+Discount}} () const
+\item 
+bool \mbox{\hyperlink{class_culture_a8254e7d5a2fc57709f20efc0c000e176}{has\+Guided\+Tour}} () const
+\item 
+QString \mbox{\hyperlink{class_culture_a0dc21918e7f30cf2f9d77799ac06a266}{get\+Cultural\+Focus}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_place}{Place}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_place_a06c16ea1806695908623c43f803c3a13}{Place}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}})
+\item 
+virtual \mbox{\hyperlink{class_place_a5dedf984133a4a33a95419da61b54157}{\texorpdfstring{$\sim$}{\string~}\+Place}} ()=default
+\item 
+double \mbox{\hyperlink{class_place_a95a5121627c6f6a0ab5ecfcfbffe8e4d}{get\+Cost}} () const
+\item 
+QString \mbox{\hyperlink{class_place_ac92292afedae475500f31361b8163acf}{get\+Name}} () const
+\item 
+QString \mbox{\hyperlink{class_place_a27ccfedddb14f83bc62b12b79ce6a29f}{get\+City}} () const
+\item 
+QString \mbox{\hyperlink{class_place_a6baa6314ad59d069f86ffcd81484211b}{get\+Description}} () const
+\item 
+double \mbox{\hyperlink{class_place_af4f1cbcde42f665d72b090e77852f75e}{get\+Rating}} () const
+\item 
+const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \& \mbox{\hyperlink{class_place_a16b0f469896907c173a3a747de31da5f}{get\+Open}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_culture}{Culture}}}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_culture_ade65998528d27011ecea3af96a61fc17}{student\+Discount}}
+\item 
+bool \mbox{\hyperlink{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}{guided\+Tour}}
+\item 
+QString \mbox{\hyperlink{class_culture_aa3d4aee81aab7aa65d03a998d23d0793}{cultural\+Focus}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_place}{Place}}}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}
+\item 
+QString \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}
+\item 
+QString \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}
+\item 
+double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}
+\item 
+\mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}
+\item 
+double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_monument_a846aae05b37f2dba984c8d388eae05f3}\index{Monument@{Monument}!Monument@{Monument}}
+\index{Monument@{Monument}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{Monument()}{Monument()}}
+{\footnotesize\ttfamily \label{class_monument_a846aae05b37f2dba984c8d388eae05f3} 
+Monument\+::\+Monument (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{, }\item[{const QString \&}]{city}{, }\item[{const QString \&}]{description}{, }\item[{double}]{rating}{, }\item[{const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&}]{open}{, }\item[{double}]{cost}{, }\item[{double}]{student\+Discount}{, }\item[{bool}]{guided\+Tour}{, }\item[{const QString \&}]{cultural\+Focus}{, }\item[{bool}]{is\+Unesco\+Heritage}{, }\item[{const QString \&}]{conservation\+Status}{, }\item[{bool}]{open\+To\+Public}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monument_a846aae05b37f2dba984c8d388eae05f3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_monument_aabf6c776aebd0a809050cba56defb75a}\index{Monument@{Monument}!````~Monument@{\texorpdfstring{$\sim$}{\string~}Monument}}
+\index{````~Monument@{\texorpdfstring{$\sim$}{\string~}Monument}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Monument()}{\string~Monument()}}
+{\footnotesize\ttfamily \label{class_monument_aabf6c776aebd0a809050cba56defb75a} 
+virtual Monument\+::\texorpdfstring{$\sim$}{\string~}\+Monument (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_monument_a3768dfd1abcbc9073558ce9bb6f5b2bf}\index{Monument@{Monument}!acceptVisitor@{acceptVisitor}}
+\index{acceptVisitor@{acceptVisitor}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{acceptVisitor()}{acceptVisitor()}}
+{\footnotesize\ttfamily \label{class_monument_a3768dfd1abcbc9073558ce9bb6f5b2bf} 
+void Monument\+::accept\+Visitor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_place_visitor_interface}{Place\+Visitor\+Interface}} \&}]{visitor}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_ad01a28ff7cc0080579d084606b1d6e17}{Place}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_monument_a3768dfd1abcbc9073558ce9bb6f5b2bf_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_monument_a572f9b0bf0c8b3f4dfa85845861d3413}\index{Monument@{Monument}!getCategory@{getCategory}}
+\index{getCategory@{getCategory}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getCategory()}{getCategory()}}
+{\footnotesize\ttfamily \label{class_monument_a572f9b0bf0c8b3f4dfa85845861d3413} 
+QString Monument\+::get\+Category (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_place_a43620368e8374fe90c96c2d00f39831a}{Place}}.
+
+\Hypertarget{class_monument_ac332cfa44cb47a8510210d4e3babae68}\index{Monument@{Monument}!getConservationStatus@{getConservationStatus}}
+\index{getConservationStatus@{getConservationStatus}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getConservationStatus()}{getConservationStatus()}}
+{\footnotesize\ttfamily \label{class_monument_ac332cfa44cb47a8510210d4e3babae68} 
+QString Monument\+::get\+Conservation\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monument_ac332cfa44cb47a8510210d4e3babae68_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_monument_adc41366da13c1b0612717dc268c1e003}\index{Monument@{Monument}!getCultureSummary@{getCultureSummary}}
+\index{getCultureSummary@{getCultureSummary}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{getCultureSummary()}{getCultureSummary()}}
+{\footnotesize\ttfamily \label{class_monument_adc41366da13c1b0612717dc268c1e003} 
+QString Monument\+::get\+Culture\+Summary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_culture_a89deed53b2db354440b8488e6f2b32a9}{Culture}}.
+
+\Hypertarget{class_monument_af15c0990ca89376df3bc8f295c7e048f}\index{Monument@{Monument}!isOpenToPublic@{isOpenToPublic}}
+\index{isOpenToPublic@{isOpenToPublic}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{isOpenToPublic()}{isOpenToPublic()}}
+{\footnotesize\ttfamily \label{class_monument_af15c0990ca89376df3bc8f295c7e048f} 
+bool Monument\+::is\+Open\+To\+Public (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monument_af15c0990ca89376df3bc8f295c7e048f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_monument_a8320f3de77478092e925110692d77069}\index{Monument@{Monument}!isUnesco@{isUnesco}}
+\index{isUnesco@{isUnesco}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{isUnesco()}{isUnesco()}}
+{\footnotesize\ttfamily \label{class_monument_a8320f3de77478092e925110692d77069} 
+bool Monument\+::is\+Unesco (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_monument_a8320f3de77478092e925110692d77069_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/\mbox{\hyperlink{_monument_8h}{Monument.\+h}}\item 
+model/\mbox{\hyperlink{_monument_8cpp}{Monument.\+cpp}}\end{DoxyCompactItemize}

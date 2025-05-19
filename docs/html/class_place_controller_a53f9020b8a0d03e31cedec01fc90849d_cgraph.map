@@ -1,0 +1,28 @@
+<map id="PlaceController::deleteCurrentPlace" name="PlaceController::deleteCurrentPlace">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,202,129"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#ad663ce4cce88753c4efa8ab242c5248e" title=" " alt="" coords="992,5,1172,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,85,198,68,249,55,348,39,449,28,650,15,832,13,976,17,976,22,832,19,650,21,450,33,349,44,250,60,200,73,154,90"/>
+<area shape="rect" id="Node000004" href="$class_place_controller.html#a15458581989214ceaa09bb8f42cc5d2c" title=" " alt="" coords="254,70,434,96"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="202,95,238,91,239,97,202,101"/>
+<area shape="rect" id="Node000006" href="$class_place_controller.html#adddd14d7dcb549a6bd0c0a8a599a407a" title=" " alt="" coords="263,120,425,145"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="202,116,247,120,247,125,202,121"/>
+<area shape="rect" id="Node000012" href="$class_place_controller.html#ae6e3e283a053e024eaf7c9d3c256f19b" title=" " alt="" coords="250,169,438,210"/>
+<area shape="poly" id="edge14_Node000001_Node000012" title=" " alt="" coords="167,127,268,161,267,166,165,132"/>
+<area shape="rect" id="Node000003" href="$class_create_place_widget.html#ad04de17a01dccabf6adf89dbe7dff9c3" title=" " alt="" coords="1220,47,1362,87"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1173,41,1205,47,1204,53,1172,46"/>
+<area shape="rect" id="Node000005" href="$class_place_controller.html#abc297fa24d2306015dac2c0770636925" title=" " alt="" coords="506,63,671,103"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="434,80,491,80,491,86,434,86"/>
+<area shape="rect" id="Node000007" href="$class_place_controller.html#a94afccb89b4531c5d4ebe801c8b9bf79" title=" " alt="" coords="486,128,691,153"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="426,132,471,134,470,139,425,138"/>
+<area shape="rect" id="Node000008" href="$class_place_controller.html#afa22be5f0acda607b63532b1df24e127" title=" " alt="" coords="746,63,937,103"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="648,124,733,105,735,110,649,129"/>
+<area shape="rect" id="Node000009" href="$class_place_controller.html#a480c14d56580bf1053751976d2299a90" title=" " alt="" coords="739,128,944,153"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="692,138,724,138,724,143,692,143"/>
+<area shape="poly" id="edge9_Node000009_Node000002" title=" " alt="" coords="916,124,942,113,957,101,966,89,975,76,990,62,1009,51,1011,55,993,66,979,79,970,92,961,105,945,117,918,129"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="900,124,991,106,1204,74,1205,80,992,111,901,129"/>
+<area shape="rect" id="Node000010" href="$class_create_place_widget.html#a261fdbad31856f9c1280b26ca9feccd4" title=" " alt="" coords="1011,120,1153,161"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="944,138,995,138,995,143,944,143"/>
+<area shape="rect" id="Node000011" href="$class_create_place_widget.html#a19cc0e82b8368994048ca03ee0d3efcc" title=" " alt="" coords="1220,136,1362,177"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="893,151,992,170,1082,175,1172,170,1204,167,1205,172,1172,175,1082,180,991,175,892,156"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="1153,143,1205,147,1205,152,1153,148"/>
+</map>

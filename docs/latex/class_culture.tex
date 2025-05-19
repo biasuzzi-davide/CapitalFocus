@@ -1,0 +1,201 @@
+\doxysection{Culture Class Reference}
+\hypertarget{class_culture}{}\label{class_culture}\index{Culture@{Culture}}
+
+
+{\ttfamily \#include $<$Culture.\+h$>$}
+
+
+
+Inheritance diagram for Culture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_culture__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Culture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_culture__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_culture_ae84116457d2f30fb26a04ec3753fe14b}{Culture}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}, double \mbox{\hyperlink{class_culture_ade65998528d27011ecea3af96a61fc17}{student\+Discount}}, bool \mbox{\hyperlink{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}{guided\+Tour}}, const QString \&\mbox{\hyperlink{class_culture_aa3d4aee81aab7aa65d03a998d23d0793}{cultural\+Focus}})
+\item 
+virtual \mbox{\hyperlink{class_culture_a6b3f1b9843d367914827a20a386ae9fb}{\texorpdfstring{$\sim$}{\string~}\+Culture}} ()=default
+\item 
+virtual QString \mbox{\hyperlink{class_culture_a89deed53b2db354440b8488e6f2b32a9}{get\+Culture\+Summary}} () const =0
+\item 
+double \mbox{\hyperlink{class_culture_ad1ae165297c171c7c39fc8359b9951d8}{get\+Student\+Discount}} () const
+\item 
+bool \mbox{\hyperlink{class_culture_a8254e7d5a2fc57709f20efc0c000e176}{has\+Guided\+Tour}} () const
+\item 
+QString \mbox{\hyperlink{class_culture_a0dc21918e7f30cf2f9d77799ac06a266}{get\+Cultural\+Focus}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_place}{Place}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_place_a06c16ea1806695908623c43f803c3a13}{Place}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}})
+\item 
+virtual \mbox{\hyperlink{class_place_a5dedf984133a4a33a95419da61b54157}{\texorpdfstring{$\sim$}{\string~}\+Place}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_place_ad01a28ff7cc0080579d084606b1d6e17}{accept\+Visitor}} (\mbox{\hyperlink{class_place_visitor_interface}{Place\+Visitor\+Interface}} \&visitor) const =0
+\item 
+virtual QString \mbox{\hyperlink{class_place_a43620368e8374fe90c96c2d00f39831a}{get\+Category}} () const =0
+\item 
+double \mbox{\hyperlink{class_place_a95a5121627c6f6a0ab5ecfcfbffe8e4d}{get\+Cost}} () const
+\item 
+QString \mbox{\hyperlink{class_place_ac92292afedae475500f31361b8163acf}{get\+Name}} () const
+\item 
+QString \mbox{\hyperlink{class_place_a27ccfedddb14f83bc62b12b79ce6a29f}{get\+City}} () const
+\item 
+QString \mbox{\hyperlink{class_place_a6baa6314ad59d069f86ffcd81484211b}{get\+Description}} () const
+\item 
+double \mbox{\hyperlink{class_place_af4f1cbcde42f665d72b090e77852f75e}{get\+Rating}} () const
+\item 
+const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \& \mbox{\hyperlink{class_place_a16b0f469896907c173a3a747de31da5f}{get\+Open}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_culture_ade65998528d27011ecea3af96a61fc17}{student\+Discount}}
+\item 
+bool \mbox{\hyperlink{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}{guided\+Tour}}
+\item 
+QString \mbox{\hyperlink{class_culture_aa3d4aee81aab7aa65d03a998d23d0793}{cultural\+Focus}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_place}{Place}}}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}
+\item 
+QString \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}
+\item 
+QString \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}
+\item 
+double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}
+\item 
+\mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}
+\item 
+double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_culture_ae84116457d2f30fb26a04ec3753fe14b}\index{Culture@{Culture}!Culture@{Culture}}
+\index{Culture@{Culture}!Culture@{Culture}}
+\doxysubsubsection{\texorpdfstring{Culture()}{Culture()}}
+{\footnotesize\ttfamily \label{class_culture_ae84116457d2f30fb26a04ec3753fe14b} 
+Culture\+::\+Culture (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{, }\item[{const QString \&}]{city}{, }\item[{const QString \&}]{description}{, }\item[{double}]{rating}{, }\item[{const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&}]{open}{, }\item[{double}]{cost}{, }\item[{double}]{student\+Discount}{, }\item[{bool}]{guided\+Tour}{, }\item[{const QString \&}]{cultural\+Focus}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_culture_ae84116457d2f30fb26a04ec3753fe14b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_culture_ae84116457d2f30fb26a04ec3753fe14b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_culture_a6b3f1b9843d367914827a20a386ae9fb}\index{Culture@{Culture}!````~Culture@{\texorpdfstring{$\sim$}{\string~}Culture}}
+\index{````~Culture@{\texorpdfstring{$\sim$}{\string~}Culture}!Culture@{Culture}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Culture()}{\string~Culture()}}
+{\footnotesize\ttfamily \label{class_culture_a6b3f1b9843d367914827a20a386ae9fb} 
+virtual Culture\+::\texorpdfstring{$\sim$}{\string~}\+Culture (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_culture_a0dc21918e7f30cf2f9d77799ac06a266}\index{Culture@{Culture}!getCulturalFocus@{getCulturalFocus}}
+\index{getCulturalFocus@{getCulturalFocus}!Culture@{Culture}}
+\doxysubsubsection{\texorpdfstring{getCulturalFocus()}{getCulturalFocus()}}
+{\footnotesize\ttfamily \label{class_culture_a0dc21918e7f30cf2f9d77799ac06a266} 
+QString Culture\+::get\+Cultural\+Focus (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_culture_a0dc21918e7f30cf2f9d77799ac06a266_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_culture_a89deed53b2db354440b8488e6f2b32a9}\index{Culture@{Culture}!getCultureSummary@{getCultureSummary}}
+\index{getCultureSummary@{getCultureSummary}!Culture@{Culture}}
+\doxysubsubsection{\texorpdfstring{getCultureSummary()}{getCultureSummary()}}
+{\footnotesize\ttfamily \label{class_culture_a89deed53b2db354440b8488e6f2b32a9} 
+virtual QString Culture\+::get\+Culture\+Summary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_monument_adc41366da13c1b0612717dc268c1e003}{Monument}}, and \mbox{\hyperlink{class_museum_a531bf437dfc35eb223e592babebe29b7}{Museum}}.
+
+\Hypertarget{class_culture_ad1ae165297c171c7c39fc8359b9951d8}\index{Culture@{Culture}!getStudentDiscount@{getStudentDiscount}}
+\index{getStudentDiscount@{getStudentDiscount}!Culture@{Culture}}
+\doxysubsubsection{\texorpdfstring{getStudentDiscount()}{getStudentDiscount()}}
+{\footnotesize\ttfamily \label{class_culture_ad1ae165297c171c7c39fc8359b9951d8} 
+double Culture\+::get\+Student\+Discount (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_culture_ad1ae165297c171c7c39fc8359b9951d8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_culture_a8254e7d5a2fc57709f20efc0c000e176}\index{Culture@{Culture}!hasGuidedTour@{hasGuidedTour}}
+\index{hasGuidedTour@{hasGuidedTour}!Culture@{Culture}}
+\doxysubsubsection{\texorpdfstring{hasGuidedTour()}{hasGuidedTour()}}
+{\footnotesize\ttfamily \label{class_culture_a8254e7d5a2fc57709f20efc0c000e176} 
+bool Culture\+::has\+Guided\+Tour (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_culture_a8254e7d5a2fc57709f20efc0c000e176_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_culture_aa3d4aee81aab7aa65d03a998d23d0793}\index{Culture@{Culture}!culturalFocus@{culturalFocus}}
+\index{culturalFocus@{culturalFocus}!Culture@{Culture}}
+\doxysubsubsection{\texorpdfstring{culturalFocus}{culturalFocus}}
+{\footnotesize\ttfamily \label{class_culture_aa3d4aee81aab7aa65d03a998d23d0793} 
+QString Culture\+::cultural\+Focus\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}\index{Culture@{Culture}!guidedTour@{guidedTour}}
+\index{guidedTour@{guidedTour}!Culture@{Culture}}
+\doxysubsubsection{\texorpdfstring{guidedTour}{guidedTour}}
+{\footnotesize\ttfamily \label{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e} 
+bool Culture\+::guided\+Tour\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_culture_ade65998528d27011ecea3af96a61fc17}\index{Culture@{Culture}!studentDiscount@{studentDiscount}}
+\index{studentDiscount@{studentDiscount}!Culture@{Culture}}
+\doxysubsubsection{\texorpdfstring{studentDiscount}{studentDiscount}}
+{\footnotesize\ttfamily \label{class_culture_ade65998528d27011ecea3af96a61fc17} 
+double Culture\+::student\+Discount\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/\mbox{\hyperlink{_culture_8h}{Culture.\+h}}\item 
+model/\mbox{\hyperlink{_culture_8cpp}{Culture.\+cpp}}\end{DoxyCompactItemize}

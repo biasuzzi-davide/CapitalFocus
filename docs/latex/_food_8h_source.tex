@@ -1,0 +1,45 @@
+\doxysection{Food.\+h}
+\hypertarget{_food_8h_source}{}\label{_food_8h_source}\index{model/Food.h@{model/Food.h}}
+\mbox{\hyperlink{_food_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FOOD\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FOOD\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_place_8h}{Place.h}}"{}}\ \textcolor{comment}{//\ Eredita\ da\ Place}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ Base\ per\ posti\ legati\ al\ cibo}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_food_a2f64b372c9a465f7bcab4ab41d81ae8d}{Food}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_place_a06c16ea1806695908623c43f803c3a13}{Place}}\{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ takeAway;\ \textcolor{comment}{//\ Possibilità\ di\ take\ away}}
+\DoxyCodeLine{00011\ \ \ \ \ QTime\ avgWaitingTime;\ \textcolor{comment}{//\ Tempo\ medio\ di\ attesa}}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{bool}\ veganMenu;\ \textcolor{comment}{//\ Opzioni\ vegane}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_food_a2f64b372c9a465f7bcab4ab41d81ae8d}{Food}}(\textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}},}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}},}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&\ hours,}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}},}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ takeAway,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QTime\&\ avgWaitingTime,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ veganMenu);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_food_ae2a4e53388ef5377a6eb366dcdde3dd7}{\string~Food}}()=\textcolor{keywordflow}{default};\ \textcolor{comment}{//\ Distruttore}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Riassunto\ cibo}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ \mbox{\hyperlink{class_food_a702051aaf0425a1aae08c38c53c090f0}{getFoodSummary}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Dice\ la\ categoria}}
+\DoxyCodeLine{00032\ \ \ \ \ QString\ \mbox{\hyperlink{class_food_a3ac763c9aa558947145dac0ff1d44f02}{getCategory}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Getter}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_food_aa5eeb1fecbac1c664c529286261fe6ce}{hasTakeAway}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ QTime\ \mbox{\hyperlink{class_food_aef0ab2f24e1084812e3cbe4025a966ea}{getAvgWaitingTime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_food_a040929464715c929699fabaa79756e8d}{hasVeganMenu}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FOOD\_H}}
+
+\end{DoxyCode}

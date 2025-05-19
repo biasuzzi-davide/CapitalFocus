@@ -1,0 +1,298 @@
+\doxysection{weekly\+Openings Class Reference}
+\hypertarget{classweekly_openings}{}\label{classweekly_openings}\index{weeklyOpenings@{weeklyOpenings}}
+
+
+{\ttfamily \#include $<$weekly\+Openings.\+h$>$}
+
+
+
+Collaboration diagram for weekly\+Openings\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classweekly_openings__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classweekly_openings_a0cad4ff746c33a775fbe86765eb218ab}{weekly\+Openings}} ()
+\item 
+\mbox{\hyperlink{classweekly_openings_ab0e87488bc1ae76705c9fa7394111bb4}{weekly\+Openings}} (const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&other)
+\item 
+void \mbox{\hyperlink{classweekly_openings_a97cb89825c8afd2dda509b335b0ab59a}{set\+Opening}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day, const QTime \&open, const QTime \&close)
+\item 
+void \mbox{\hyperlink{classweekly_openings_abf47bd71427cbd385e863f6212fce4d6}{set\+Closed}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day)
+\item 
+void \mbox{\hyperlink{classweekly_openings_a8db9d2819a7673a0d75c329c6bc0d3ce}{set\+Always\+Open}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} d)
+\item 
+bool \mbox{\hyperlink{classweekly_openings_a46f87a654039cfa5c18fd75efb9ed043}{is\+Closed}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day) const
+\item 
+bool \mbox{\hyperlink{classweekly_openings_a0895523c64b9d9686d647a2d8363efa8}{is\+Always\+Open}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day) const
+\item 
+bool \mbox{\hyperlink{classweekly_openings_aaaf00916f33ebbe898c4537b92c87280}{opens\+Before}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day, const QTime \&time) const
+\item 
+bool \mbox{\hyperlink{classweekly_openings_a8fe80780b30f136545486ade9f47cf82}{is\+Open\+At}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day, const QTime \&time) const
+\item 
+QString \mbox{\hyperlink{classweekly_openings_ab36ca199debf1271f5500d95c20c1b4b}{get\+Opening\+Frame\+String}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day) const
+\item 
+QString \mbox{\hyperlink{classweekly_openings_adb8c0c8af984239132e860fe947e1d61}{to\+QString\+Multiline}} () const
+\item 
+\mbox{\hyperlink{structopening_frames}{opening\+Frames}} \mbox{\hyperlink{classweekly_openings_a6768461a08f00cb60d05e3956a9d9598}{get\+Opening}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day) const
+\item 
+QTime \mbox{\hyperlink{classweekly_openings_a33461ea38435ee6012775ba9cb77cada}{open\+Time}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day) const
+\item 
+QTime \mbox{\hyperlink{classweekly_openings_a28067562948f149f6f000d58fae9254a}{close\+Time}} (\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day) const
+\item 
+const QMap$<$ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}, \mbox{\hyperlink{structopening_frames}{opening\+Frames}} $>$ \& \mbox{\hyperlink{classweekly_openings_a295c9add7edbaaead3255be75e605806}{get\+Schedule}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static QString \mbox{\hyperlink{classweekly_openings_af09d1bf5ea919f7d5cca1e2d2ded54df}{weekday\+To\+String}} (const \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} day)
+\item 
+static \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} \mbox{\hyperlink{classweekly_openings_ae2d6fd5bd52c5290a48493d8698a14d4}{weekday\+From\+String}} (const QString \&day\+Str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classweekly_openings_a0cad4ff746c33a775fbe86765eb218ab}\index{weeklyOpenings@{weeklyOpenings}!weeklyOpenings@{weeklyOpenings}}
+\index{weeklyOpenings@{weeklyOpenings}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{weeklyOpenings()}{weeklyOpenings()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classweekly_openings_a0cad4ff746c33a775fbe86765eb218ab} 
+weekly\+Openings\+::weekly\+Openings (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classweekly_openings_a0cad4ff746c33a775fbe86765eb218ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_a0cad4ff746c33a775fbe86765eb218ab_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_ab0e87488bc1ae76705c9fa7394111bb4}\index{weeklyOpenings@{weeklyOpenings}!weeklyOpenings@{weeklyOpenings}}
+\index{weeklyOpenings@{weeklyOpenings}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{weeklyOpenings()}{weeklyOpenings()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classweekly_openings_ab0e87488bc1ae76705c9fa7394111bb4} 
+weekly\+Openings\+::weekly\+Openings (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&}]{other}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_ab0e87488bc1ae76705c9fa7394111bb4_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classweekly_openings_a28067562948f149f6f000d58fae9254a}\index{weeklyOpenings@{weeklyOpenings}!closeTime@{closeTime}}
+\index{closeTime@{closeTime}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{closeTime()}{closeTime()}}
+{\footnotesize\ttfamily \label{classweekly_openings_a28067562948f149f6f000d58fae9254a} 
+QTime weekly\+Openings\+::close\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{}\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_a28067562948f149f6f000d58fae9254a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_a28067562948f149f6f000d58fae9254a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_a6768461a08f00cb60d05e3956a9d9598}\index{weeklyOpenings@{weeklyOpenings}!getOpening@{getOpening}}
+\index{getOpening@{getOpening}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{getOpening()}{getOpening()}}
+{\footnotesize\ttfamily \label{classweekly_openings_a6768461a08f00cb60d05e3956a9d9598} 
+\mbox{\hyperlink{structopening_frames}{opening\+Frames}} weekly\+Openings\+::get\+Opening (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_a6768461a08f00cb60d05e3956a9d9598_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_ab36ca199debf1271f5500d95c20c1b4b}\index{weeklyOpenings@{weeklyOpenings}!getOpeningFrameString@{getOpeningFrameString}}
+\index{getOpeningFrameString@{getOpeningFrameString}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{getOpeningFrameString()}{getOpeningFrameString()}}
+{\footnotesize\ttfamily \label{classweekly_openings_ab36ca199debf1271f5500d95c20c1b4b} 
+QString weekly\+Openings\+::get\+Opening\+Frame\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_ab36ca199debf1271f5500d95c20c1b4b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_a295c9add7edbaaead3255be75e605806}\index{weeklyOpenings@{weeklyOpenings}!getSchedule@{getSchedule}}
+\index{getSchedule@{getSchedule}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{getSchedule()}{getSchedule()}}
+{\footnotesize\ttfamily \label{classweekly_openings_a295c9add7edbaaead3255be75e605806} 
+const QMap$<$ \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}, \mbox{\hyperlink{structopening_frames}{opening\+Frames}} $>$ \& weekly\+Openings\+::get\+Schedule (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classweekly_openings_a0895523c64b9d9686d647a2d8363efa8}\index{weeklyOpenings@{weeklyOpenings}!isAlwaysOpen@{isAlwaysOpen}}
+\index{isAlwaysOpen@{isAlwaysOpen}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{isAlwaysOpen()}{isAlwaysOpen()}}
+{\footnotesize\ttfamily \label{classweekly_openings_a0895523c64b9d9686d647a2d8363efa8} 
+bool weekly\+Openings\+::is\+Always\+Open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_a0895523c64b9d9686d647a2d8363efa8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_a46f87a654039cfa5c18fd75efb9ed043}\index{weeklyOpenings@{weeklyOpenings}!isClosed@{isClosed}}
+\index{isClosed@{isClosed}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{isClosed()}{isClosed()}}
+{\footnotesize\ttfamily \label{classweekly_openings_a46f87a654039cfa5c18fd75efb9ed043} 
+bool weekly\+Openings\+::is\+Closed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{}\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_a46f87a654039cfa5c18fd75efb9ed043_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_a8fe80780b30f136545486ade9f47cf82}\index{weeklyOpenings@{weeklyOpenings}!isOpenAt@{isOpenAt}}
+\index{isOpenAt@{isOpenAt}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{isOpenAt()}{isOpenAt()}}
+{\footnotesize\ttfamily \label{classweekly_openings_a8fe80780b30f136545486ade9f47cf82} 
+bool weekly\+Openings\+::is\+Open\+At (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{, }\item[{const QTime \&}]{time}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classweekly_openings_aaaf00916f33ebbe898c4537b92c87280}\index{weeklyOpenings@{weeklyOpenings}!opensBefore@{opensBefore}}
+\index{opensBefore@{opensBefore}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{opensBefore()}{opensBefore()}}
+{\footnotesize\ttfamily \label{classweekly_openings_aaaf00916f33ebbe898c4537b92c87280} 
+bool weekly\+Openings\+::opens\+Before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{, }\item[{const QTime \&}]{time}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{classweekly_openings_a33461ea38435ee6012775ba9cb77cada}\index{weeklyOpenings@{weeklyOpenings}!openTime@{openTime}}
+\index{openTime@{openTime}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{openTime()}{openTime()}}
+{\footnotesize\ttfamily \label{classweekly_openings_a33461ea38435ee6012775ba9cb77cada} 
+QTime weekly\+Openings\+::open\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{}\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_a33461ea38435ee6012775ba9cb77cada_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_a33461ea38435ee6012775ba9cb77cada_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_a8db9d2819a7673a0d75c329c6bc0d3ce}\index{weeklyOpenings@{weeklyOpenings}!setAlwaysOpen@{setAlwaysOpen}}
+\index{setAlwaysOpen@{setAlwaysOpen}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{setAlwaysOpen()}{setAlwaysOpen()}}
+{\footnotesize\ttfamily \label{classweekly_openings_a8db9d2819a7673a0d75c329c6bc0d3ce} 
+void weekly\+Openings\+::set\+Always\+Open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{d}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_a8db9d2819a7673a0d75c329c6bc0d3ce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_abf47bd71427cbd385e863f6212fce4d6}\index{weeklyOpenings@{weeklyOpenings}!setClosed@{setClosed}}
+\index{setClosed@{setClosed}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{setClosed()}{setClosed()}}
+{\footnotesize\ttfamily \label{classweekly_openings_abf47bd71427cbd385e863f6212fce4d6} 
+void weekly\+Openings\+::set\+Closed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_abf47bd71427cbd385e863f6212fce4d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_a97cb89825c8afd2dda509b335b0ab59a}\index{weeklyOpenings@{weeklyOpenings}!setOpening@{setOpening}}
+\index{setOpening@{setOpening}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{setOpening()}{setOpening()}}
+{\footnotesize\ttfamily \label{classweekly_openings_a97cb89825c8afd2dda509b335b0ab59a} 
+void weekly\+Openings\+::set\+Opening (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{, }\item[{const QTime \&}]{open}{, }\item[{const QTime \&}]{close}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_a97cb89825c8afd2dda509b335b0ab59a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_adb8c0c8af984239132e860fe947e1d61}\index{weeklyOpenings@{weeklyOpenings}!toQStringMultiline@{toQStringMultiline}}
+\index{toQStringMultiline@{toQStringMultiline}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{toQStringMultiline()}{toQStringMultiline()}}
+{\footnotesize\ttfamily \label{classweekly_openings_adb8c0c8af984239132e860fe947e1d61} 
+QString weekly\+Openings\+::to\+QString\+Multiline (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_adb8c0c8af984239132e860fe947e1d61_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classweekly_openings_ae2d6fd5bd52c5290a48493d8698a14d4}\index{weeklyOpenings@{weeklyOpenings}!weekdayFromString@{weekdayFromString}}
+\index{weekdayFromString@{weekdayFromString}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{weekdayFromString()}{weekdayFromString()}}
+{\footnotesize\ttfamily \label{classweekly_openings_ae2d6fd5bd52c5290a48493d8698a14d4} 
+\mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}} weekly\+Openings\+::weekday\+From\+String (\begin{DoxyParamCaption}\item[{const QString \&}]{day\+Str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classweekly_openings_af09d1bf5ea919f7d5cca1e2d2ded54df}\index{weeklyOpenings@{weeklyOpenings}!weekdayToString@{weekdayToString}}
+\index{weekdayToString@{weekdayToString}!weeklyOpenings@{weeklyOpenings}}
+\doxysubsubsection{\texorpdfstring{weekdayToString()}{weekdayToString()}}
+{\footnotesize\ttfamily \label{classweekly_openings_af09d1bf5ea919f7d5cca1e2d2ded54df} 
+QString weekly\+Openings\+::weekday\+To\+String (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{weekday_8h_aec3d5ec6653b2c392d449500b8f5cb3a}{Weekday}}}]{day}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classweekly_openings_af09d1bf5ea919f7d5cca1e2d2ded54df_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+model/\mbox{\hyperlink{weekly_openings_8h}{weekly\+Openings.\+h}}\item 
+model/\mbox{\hyperlink{weekly_openings_8cpp}{weekly\+Openings.\+cpp}}\end{DoxyCompactItemize}

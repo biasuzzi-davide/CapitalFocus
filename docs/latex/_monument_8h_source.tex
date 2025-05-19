@@ -1,0 +1,44 @@
+\doxysection{Monument.\+h}
+\hypertarget{_monument_8h_source}{}\label{_monument_8h_source}\index{model/Monument.h@{model/Monument.h}}
+\mbox{\hyperlink{_monument_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MONUMENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MONUMENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_culture_8h}{Culture.h}}"{}}\ \textcolor{comment}{//\ Eredita\ da\ Culture}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Rappresenta\ un\ monumento,\ un\ tipo\ di\ posto\ Culture}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_monument_a846aae05b37f2dba984c8d388eae05f3}{Monument}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_culture_ae84116457d2f30fb26a04ec3753fe14b}{Culture}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{bool}\ isUnescoHeritage;\ \textcolor{comment}{//\ Patrimonio\ UNESCO}}
+\DoxyCodeLine{00010\ \ \ \ \ QString\ conservationStatus;\ \textcolor{comment}{//\ Stato\ conservazione}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{bool}\ openToPublic;\ \textcolor{comment}{//\ Aperto\ al\ pubblico}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_monument_a846aae05b37f2dba984c8d388eae05f3}{Monument}}(\textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}},\ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}},\ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&\ \mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_culture_ade65998528d27011ecea3af96a61fc17}{studentDiscount}},\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}{guidedTour}},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_culture_aa3d4aee81aab7aa65d03a998d23d0793}{culturalFocus}},}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isUnescoHeritage,\ \textcolor{keyword}{const}\ QString\&\ conservationStatus,\ \textcolor{keywordtype}{bool}\ openToPublic);}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_monument_aabf6c776aebd0a809050cba56defb75a}{\string~Monument}}()\ =\ \textcolor{keywordflow}{default};\ \textcolor{comment}{//\ Distruttore}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Dice\ la\ categoria}}
+\DoxyCodeLine{00024\ \ \ \ \ QString\ \mbox{\hyperlink{class_monument_a572f9b0bf0c8b3f4dfa85845861d3413}{getCategory}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ Per\ il\ Visitor}}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_monument_a3768dfd1abcbc9073558ce9bb6f5b2bf}{acceptVisitor}}(\mbox{\hyperlink{class_place_visitor_interface}{PlaceVisitorInterface}}\&\ visitor)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//\ Riassunto\ culturale}}
+\DoxyCodeLine{00030\ \ \ \ \ QString\ \mbox{\hyperlink{class_monument_adc41366da13c1b0612717dc268c1e003}{getCultureSummary}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Getter}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_monument_a8320f3de77478092e925110692d77069}{isUnesco}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ QString\ \mbox{\hyperlink{class_monument_ac332cfa44cb47a8510210d4e3babae68}{getConservationStatus}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_monument_af15c0990ca89376df3bc8f295c7e048f}{isOpenToPublic}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MONUMENT\_H}}
+
+\end{DoxyCode}

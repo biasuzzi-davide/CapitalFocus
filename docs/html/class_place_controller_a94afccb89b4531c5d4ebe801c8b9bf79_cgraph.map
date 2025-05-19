@@ -1,0 +1,17 @@
+<map id="PlaceController::setWidgetMain" name="PlaceController::setWidgetMain">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,211,97"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#afa22be5f0acda607b63532b1df24e127" title=" " alt="" coords="266,35,456,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,70,250,65,250,70,211,75"/>
+<area shape="rect" id="Node000003" href="$class_place_controller.html#a480c14d56580bf1053751976d2299a90" title=" " alt="" coords="259,100,463,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,93,243,97,243,102,211,98"/>
+<area shape="rect" id="Node000004" href="$class_place_controller.html#ad663ce4cce88753c4efa8ab242c5248e" title=" " alt="" coords="511,5,691,46"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="423,96,462,85,510,62,536,50,539,55,512,67,464,89,424,102"/>
+<area shape="rect" id="Node000005" href="$class_create_place_widget.html#ad04de17a01dccabf6adf89dbe7dff9c3" title=" " alt="" coords="739,47,882,87"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="463,99,724,73,724,78,464,105"/>
+<area shape="rect" id="Node000006" href="$class_create_place_widget.html#a261fdbad31856f9c1280b26ca9feccd4" title=" " alt="" coords="530,120,672,161"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="464,122,515,128,514,133,463,127"/>
+<area shape="rect" id="Node000007" href="$class_create_place_widget.html#a19cc0e82b8368994048ca03ee0d3efcc" title=" " alt="" coords="739,136,882,177"/>
+<area shape="poly" id="edge8_Node000003_Node000007" title=" " alt="" coords="388,123,443,149,512,170,566,177,622,178,724,169,724,174,622,183,566,182,510,175,441,154,385,128"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="692,41,725,47,724,53,691,46"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="673,143,724,147,724,152,672,148"/>
+</map>

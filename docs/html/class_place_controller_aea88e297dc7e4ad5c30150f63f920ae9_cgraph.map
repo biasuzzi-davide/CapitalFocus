@@ -1,0 +1,9 @@
+<map id="PlaceController::promptExportToXml" name="PlaceController::promptExportToXml">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,202,79"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#a5960fa51152def2ff7540c30c29aa84f" title=" " alt="" coords="250,46,441,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,56,234,56,234,62,202,62"/>
+<area shape="rect" id="Node000003" href="$class_place_export_to_xml_visitor.html#a93284795a78b2c2806bb2d0fea6d4db8" title=" " alt="" coords="500,5,666,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="441,43,484,37,485,42,442,48"/>
+<area shape="rect" id="Node000004" href="$class_place_controller.html#ae6e3e283a053e024eaf7c9d3c256f19b" title=" " alt="" coords="489,71,677,111"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="442,69,474,74,473,79,441,75"/>
+</map>

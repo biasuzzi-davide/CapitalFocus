@@ -1,0 +1,7 @@
+<map id="PlaceController::toggleDebug" name="PlaceController::toggleDebug">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,197,56"/>
+<area shape="rect" id="Node000002" href="$namespace_debug_config.html#ac1866de56c034219ae9716f41aacf24b" title=" " alt="" coords="249,5,411,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,30,233,26,234,31,197,36"/>
+<area shape="rect" id="Node000003" href="$namespace_debug_config.html#a443de79440b74b7454237d95e7cfcebf" title=" " alt="" coords="245,55,415,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,51,230,54,229,60,197,56"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="PlaceController::setWidgetSafe" name="PlaceController::setWidgetSafe">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,100,210,125"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#ad663ce4cce88753c4efa8ab242c5248e" title=" " alt="" coords="258,5,438,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,96,274,49,276,54,146,101"/>
+<area shape="rect" id="Node000003" href="$class_create_place_widget.html#ad04de17a01dccabf6adf89dbe7dff9c3" title=" " alt="" coords="486,47,628,87"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="210,99,470,73,471,78,211,105"/>
+<area shape="rect" id="Node000004" href="$class_create_place_widget.html#a261fdbad31856f9c1280b26ca9feccd4" title=" " alt="" coords="277,120,419,161"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="211,122,262,128,261,133,210,127"/>
+<area shape="rect" id="Node000005" href="$class_create_place_widget.html#a19cc0e82b8368994048ca03ee0d3efcc" title=" " alt="" coords="486,136,628,177"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="134,123,190,149,258,170,313,177,368,178,471,169,471,174,368,183,312,182,257,175,188,154,132,128"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="439,41,471,47,470,53,438,46"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="419,143,471,147,471,152,419,148"/>
+</map>

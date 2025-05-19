@@ -1,0 +1,28 @@
+var class_main_window =
+[
+    [ "MainWindow", "class_main_window.html#a996c5a2b6f77944776856f08ec30858d", null ],
+    [ "~MainWindow", "class_main_window.html#ae98d00a93bc118200eeef9f9bba1dba7", null ],
+    [ "askConfirmation", "class_main_window.html#a6d1e7cddbdb70dd17dc296d83fe32085", null ],
+    [ "askOpenFile", "class_main_window.html#a93cb25c615ab14286864b056f1ab2d14", null ],
+    [ "askSaveFile", "class_main_window.html#aa0ae5247f414ea62d3bdb04edf2d29fe", null ],
+    [ "clearSearchFields", "class_main_window.html#a0de59dff2d11bf6f7df043879173c1a6", null ],
+    [ "closeEvent", "class_main_window.html#a05fb9d72c044aa3bb7d187b994704e2f", null ],
+    [ "getCurrentPage", "class_main_window.html#aa3e9d542d2b1543cb6c7b7e61216b573", null ],
+    [ "getDarkModeEnabled", "class_main_window.html#a44b22e4132ac3fdbcf78836c1d36bc1f", null ],
+    [ "getListWidget", "class_main_window.html#a479e2ffa7a72d191f302b91f155692d4", null ],
+    [ "getSearchText", "class_main_window.html#a1f9c4da42785847a6160bb7a7eacf3d9", null ],
+    [ "getSelectedCity", "class_main_window.html#a100bb83ff514185d298f6817f680b7e8", null ],
+    [ "getWidgetByName", "class_main_window.html#a7fdfdac3e1531666f47b096aca9b71b3", null ],
+    [ "populateCityComboBox", "class_main_window.html#a379642249231298bbe7b44d5d628abf2", null ],
+    [ "setController", "class_main_window.html#adc1ed341279a8fb00175c7f62e0ca60a", null ],
+    [ "setDetailsWidget", "class_main_window.html#a4e660bf0a9663fde8571063f4f17e3af", null ],
+    [ "setStats", "class_main_window.html#a1a5c27a16e80c8c5e540f0344504b5fa", null ],
+    [ "setWidgetCredits", "class_main_window.html#a80831c581b10a444f0966b5360efd3d7", null ],
+    [ "setWidgetMain", "class_main_window.html#a65ee7823aa184c87a5836e23b4c52eec", null ],
+    [ "showMessage", "class_main_window.html#aa4db045fbaef61cef55e169c09da6f54", null ],
+    [ "showStatusBarMsg", "class_main_window.html#a591070a7d3d972e72708ebbd816179e2", null ],
+    [ "showWidgetByName", "class_main_window.html#ad59e2f5d444ceb4d0ae182f696f1e793", null ],
+    [ "toggleDarkMode", "class_main_window.html#a4f1e820b66e9d9f1c5ae17a67c3f1939", null ],
+    [ "updateDebugActionText", "class_main_window.html#aa9f911bdb2a6697f737980699db70697", null ],
+    [ "updateResults", "class_main_window.html#a0bbd92af40c21f9f29c449da3059e36f", null ]
+];

@@ -1,0 +1,7 @@
+<map id="Culture::Culture" name="Culture::Culture">
+<area shape="rect" id="Node000001" title=" " alt="" coords="205,31,318,56"/>
+<area shape="rect" id="Node000002" href="$class_monument.html#a846aae05b37f2dba984c8d388eae05f3" title=" " alt="" coords="5,5,157,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,36,156,31,157,26,190,31"/>
+<area shape="rect" id="Node000003" href="$class_museum.html#a67587d65191def4fa96f8cfea78df6e2" title=" " alt="" coords="16,55,146,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,56,146,62,146,56,189,50"/>
+</map>

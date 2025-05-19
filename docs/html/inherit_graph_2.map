@@ -1,0 +1,27 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_place.html" title=" " alt="" coords="5,179,60,204"/>
+<area shape="rect" id="Node000001" href="$class_culture.html" title=" " alt="" coords="127,55,190,80"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="56,166,142,79,146,83,60,169"/>
+<area shape="rect" id="Node000004" href="$class_entertainment.html" title=" " alt="" coords="108,153,210,179"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="74,180,107,174,108,179,75,186"/>
+<area shape="rect" id="Node000007" href="$class_food.html" title=" " alt="" coords="134,203,184,228"/>
+<area shape="poly" id="edge7_Node000000_Node000007" title=" " alt="" coords="75,197,134,208,133,213,74,202"/>
+<area shape="rect" id="Node000010" href="$class_shopping.html" title=" " alt="" coords="121,301,196,327"/>
+<area shape="poly" id="edge10_Node000000_Node000010" title=" " alt="" coords="60,213,146,299,142,303,56,217"/>
+<area shape="rect" id="Node000002" href="$class_monument.html" title=" " alt="" coords="277,5,359,31"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="204,51,276,28,277,33,206,56"/>
+<area shape="rect" id="Node000003" href="$class_museum.html" title=" " alt="" coords="282,55,354,80"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="206,65,282,65,282,70,206,70"/>
+<area shape="rect" id="Node000005" href="$class_disco.html" title=" " alt="" coords="290,104,346,130"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="217,146,289,123,291,128,218,151"/>
+<area shape="rect" id="Node000006" href="$class_panoramic_points.html" title=" " alt="" coords="258,153,378,179"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="226,164,258,164,258,169,226,169"/>
+<area shape="rect" id="Node000008" href="$class_cafe.html" title=" " alt="" coords="294,203,343,228"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="200,213,293,213,293,218,200,218"/>
+<area shape="rect" id="Node000009" href="$class_restaurant.html" title=" " alt="" coords="276,252,361,278"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="200,225,276,249,274,254,198,230"/>
+<area shape="rect" id="Node000011" href="$class_local_market.html" title=" " alt="" coords="272,301,364,327"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="212,312,271,312,271,317,212,317"/>
+<area shape="rect" id="Node000012" href="$class_mall.html" title=" " alt="" coords="296,351,341,376"/>
+<area shape="poly" id="edge12_Node000010_Node000012" title=" " alt="" coords="212,328,296,354,294,359,210,333"/>
+</map>

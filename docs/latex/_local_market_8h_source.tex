@@ -1,0 +1,51 @@
+\doxysection{Local\+Market.\+h}
+\hypertarget{_local_market_8h_source}{}\label{_local_market_8h_source}\index{model/LocalMarket.h@{model/LocalMarket.h}}
+\mbox{\hyperlink{_local_market_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LOCALMARKET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ LOCALMARKET\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shopping_8h}{Shopping.h}}"{}}\ \textcolor{comment}{//\ Eredita\ da\ Shopping}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Rappresenta\ un\ mercato\ locale,\ un\ tipo\ di\ posto\ Shopping}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_local_market_aceef8459fbc2ff30f722f521a26a1154}{LocalMarket}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_shopping_a9de3492e36771072e41fdb13036f5a7c}{Shopping}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{bool}\ artisans;\ \textcolor{comment}{//\ Artigiani\ presenti}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ seasonal;\ \textcolor{comment}{//\ È\ stagionale}}
+\DoxyCodeLine{00011\ \ \ \ \ QString\ period;\ \textcolor{comment}{//\ Periodo\ di\ apertura}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_local_market_aceef8459fbc2ff30f722f521a26a1154}{LocalMarket}}(\textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}},}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&\ hours,}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}},}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ outdoor,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ foodArea,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ standNumber,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ artisans,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ seasonal,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ period);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_local_market_a9ed11aef6866fc4bb01abedba55ca906}{\string~LocalMarket}}()\ =\ \textcolor{keywordflow}{default};\ \textcolor{comment}{//\ Distruttore}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Riassunto\ specifico\ per\ LocalMarket}}
+\DoxyCodeLine{00031\ \ \ \ \ QString\ \mbox{\hyperlink{class_local_market_a5ddc4d07b56f8cdd98db6b92c8fa3d4d}{getShoppingSummary}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Dice\ la\ categoria}}
+\DoxyCodeLine{00034\ \ \ \ \ QString\ \mbox{\hyperlink{class_local_market_ac8b2591a029c662adc4b766473a87482}{getCategory}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Per\ il\ Visitor}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_local_market_a6c0d1f008ce6c37c44eeeffb771f9ae6}{acceptVisitor}}(\mbox{\hyperlink{class_place_visitor_interface}{PlaceVisitorInterface}}\&\ visitor)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Getter}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_local_market_a3abf09f20994ff21a5d55404a4747818}{hasArtisans}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_local_market_a6c6272dd023d92bf2697b19401e999d1}{isSeasonal}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ QString\ \mbox{\hyperlink{class_local_market_a1dbdf3622d278474a0af35ebb0002611}{getPeriod}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ LOCALMARKET\_H}}
+
+\end{DoxyCode}

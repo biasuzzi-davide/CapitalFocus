@@ -1,0 +1,15 @@
+<map id="PlaceController::showStatistics" name="PlaceController::showStatistics">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,100,210,125"/>
+<area shape="rect" id="Node000002" href="$class_place_controller.html#a480c14d56580bf1053751976d2299a90" title=" " alt="" coords="258,100,462,125"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,110,242,110,242,115,210,115"/>
+<area shape="rect" id="Node000003" href="$class_place_controller.html#ad663ce4cce88753c4efa8ab242c5248e" title=" " alt="" coords="510,5,690,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="397,96,526,49,528,54,399,101"/>
+<area shape="rect" id="Node000004" href="$class_create_place_widget.html#ad04de17a01dccabf6adf89dbe7dff9c3" title=" " alt="" coords="738,47,881,87"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="462,99,723,73,723,78,463,105"/>
+<area shape="rect" id="Node000005" href="$class_create_place_widget.html#a261fdbad31856f9c1280b26ca9feccd4" title=" " alt="" coords="529,120,671,161"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="463,122,514,128,513,133,462,127"/>
+<area shape="rect" id="Node000006" href="$class_create_place_widget.html#a19cc0e82b8368994048ca03ee0d3efcc" title=" " alt="" coords="738,136,881,177"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="387,123,442,149,511,170,565,177,621,178,723,169,723,174,621,183,565,182,509,175,440,154,384,128"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="691,41,724,47,723,53,690,46"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="672,143,723,147,723,152,671,148"/>
+</map>

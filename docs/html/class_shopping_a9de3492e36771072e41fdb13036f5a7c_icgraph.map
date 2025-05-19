@@ -1,0 +1,7 @@
+<map id="Shopping::Shopping" name="Shopping::Shopping">
+<area shape="rect" id="Node000001" title=" " alt="" coords="225,31,362,56"/>
+<area shape="rect" id="Node000002" href="$class_local_market.html#aceef8459fbc2ff30f722f521a26a1154" title=" " alt="" coords="5,5,177,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,36,177,32,178,26,210,30"/>
+<area shape="rect" id="Node000003" href="$class_mall.html#a951eb6c80f5a435cd0fe2143136afe4a" title=" " alt="" coords="52,55,130,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,56,130,66,130,60,209,51"/>
+</map>

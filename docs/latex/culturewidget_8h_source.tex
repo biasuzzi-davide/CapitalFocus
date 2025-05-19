@@ -1,0 +1,48 @@
+\doxysection{culturewidget.\+h}
+\hypertarget{culturewidget_8h_source}{}\label{culturewidget_8h_source}\index{view/culturewidget.h@{view/culturewidget.h}}
+\mbox{\hyperlink{culturewidget_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CULTUREWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CULTUREWIDGET\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_place_controller}{PlaceController}};\ \ \textcolor{comment}{//\ forward\ declaration}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1culturewidget}{culturewidget}};}
+\DoxyCodeLine{00010\ \}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Widget\ per\ visualizzare\ i\ dettagli\ di\ un\ luogo\ di\ cultura}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classculturewidget_a0beb56d357c42a4639751a04c45d021a}{culturewidget}}\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classculturewidget_a0beb56d357c42a4639751a04c45d021a}{culturewidget}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Distruttore}}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classculturewidget_a1259a5c2a20fb04f8fa76a8a396289ab}{\string~culturewidget}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Imposta\ i\ valori\ dei\ campi\ del\ widget}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classculturewidget_ae35a2f142e6668b2805a233fd48d07b5}{setValues}}(\textcolor{keyword}{const}\ QString\&\ name,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ city,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ description,}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ rating,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ cost,}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ openings,}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ studentDiscount,}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ guidedTour,}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ culturalFocus,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ specific);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Imposta\ il\ controller\ associato}}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classculturewidget_ae73dad22bbc1127877a2ee2b38989076}{setController}}(\mbox{\hyperlink{class_place_controller}{PlaceController}}*\ c);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1culturewidget}{Ui::culturewidget}}\ *ui;\ \textcolor{comment}{//\ Puntatore\ all'UI\ generata\ da\ Qt\ Designer}}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_place_controller}{PlaceController}}*\ controller\ =\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ Puntatore\ al\ Controller}}
+\DoxyCodeLine{00040\ \};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CULTUREWIDGET\_H}}
+
+\end{DoxyCode}

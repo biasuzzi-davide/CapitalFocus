@@ -1,0 +1,37 @@
+\doxysection{Entertainment.\+h}
+\hypertarget{_entertainment_8h_source}{}\label{_entertainment_8h_source}\index{model/Entertainment.h@{model/Entertainment.h}}
+\mbox{\hyperlink{_entertainment_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ENTERTAINMENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ENTERTAINMENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_place_8h}{Place.h}}"{}}\ \textcolor{comment}{//\ Eredita\ da\ Place}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{comment}{//\ Base\ per\ posti\ legati\ all'intrattenimento}}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_entertainment_a11101aa74948bb6bddb443cec3baba81}{Entertainment}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_place_a06c16ea1806695908623c43f803c3a13}{Place}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00010\ \ \ \ \ QTime\ \mbox{\hyperlink{class_entertainment_a56fe4333ea68e5107f8d841cb09a57d0}{avgStayDuration}};\ \textcolor{comment}{//\ Durata\ media\ della\ visita}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_entertainment_ab2fcd327737cae014a12225c0dc90b02}{minimumAge}};\ \textcolor{comment}{//\ Età\ minima}}
+\DoxyCodeLine{00012\ \ \ \ \ QString\ \mbox{\hyperlink{class_entertainment_a9f4914c70cad0c82431a269efedf1c5f}{restrictedEntry}};\ \textcolor{comment}{//\ Restrizioni\ ingresso}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_entertainment_a11101aa74948bb6bddb443cec3baba81}{Entertainment}}(\textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}},\ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}},\ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&\ \mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ QTime\ \mbox{\hyperlink{class_entertainment_a56fe4333ea68e5107f8d841cb09a57d0}{avgStayDuration}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_entertainment_ab2fcd327737cae014a12225c0dc90b02}{minimumAge}},\ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_entertainment_a9f4914c70cad0c82431a269efedf1c5f}{restrictedEntry}});}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_entertainment_a8deff449f18095295d30b2a061145145}{\string~Entertainment}}()\ =\ \textcolor{keywordflow}{default};\ \textcolor{comment}{//\ Distruttore}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//\ Riassunto\ intrattenimento}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ QString\ \mbox{\hyperlink{class_entertainment_a26b7e6d30e880396a180829c297cc0a6}{getEntertainmentSummary}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ Getter}}
+\DoxyCodeLine{00026\ \ \ \ \ QTime\ \mbox{\hyperlink{class_entertainment_a68c95640484a8a3c1e990c982b97348b}{getAvgStayDuration}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_entertainment_aa5151a609ab6a2748b78ea59a2e002f9}{getMinAge}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ \ \ \ \ QString\ \mbox{\hyperlink{class_entertainment_a5c2d0418a2222666548481e451bff344}{getRestrictedEntry}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ENTERTAINMENT\_H}}
+
+\end{DoxyCode}

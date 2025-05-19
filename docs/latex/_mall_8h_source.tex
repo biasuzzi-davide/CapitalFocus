@@ -1,0 +1,51 @@
+\doxysection{Mall.\+h}
+\hypertarget{_mall_8h_source}{}\label{_mall_8h_source}\index{model/Mall.h@{model/Mall.h}}
+\mbox{\hyperlink{_mall_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MALL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MALL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shopping_8h}{Shopping.h}}"{}}\ \textcolor{comment}{//\ Eredita\ da\ Shopping}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Rappresenta\ un\ centro\ commerciale,\ un\ tipo\ di\ posto\ Shopping}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_mall_a951eb6c80f5a435cd0fe2143136afe4a}{Mall}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_shopping_a9de3492e36771072e41fdb13036f5a7c}{Shopping}}\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{int}\ shopCount;\ \textcolor{comment}{//\ Numero\ negozi}}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keywordtype}{bool}\ cinema;\ \textcolor{comment}{//\ Ha\ cinema}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{bool}\ freeParking;\ \textcolor{comment}{//\ Parcheggio\ gratuito}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_mall_a951eb6c80f5a435cd0fe2143136afe4a}{Mall}}(\textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ QString\&\ \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}},}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&\ hours,}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}},}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ outdoor,}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ foodArea,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ standNumber,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ shopCount,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ cinema,}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ freeParking);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_mall_ab4a6b4f2696b41d2a83a35b834e23687}{\string~Mall}}()\ =\ \textcolor{keywordflow}{default};\ \textcolor{comment}{//\ Distruttore}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Riassunto\ shopping}}
+\DoxyCodeLine{00031\ \ \ \ \ QString\ \mbox{\hyperlink{class_mall_ae56b1073ed174f59d067aeefe23251fe}{getShoppingSummary}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{comment}{//\ Dice\ la\ categoria}}
+\DoxyCodeLine{00034\ \ \ \ \ QString\ \mbox{\hyperlink{class_mall_adc60ad492524fd03f423fa835575a12f}{getCategory}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Per\ il\ Visitor}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_mall_a55ad76559d093584c23827b2689618d1}{acceptVisitor}}(\mbox{\hyperlink{class_place_visitor_interface}{PlaceVisitorInterface}}\&\ visitor)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{comment}{//\ Getter}}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_mall_aa2a5f3860d32f2d7cbc6c1f5225b9677}{getShopCount}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_mall_a31cd34e8ad8a22678e39d4d6d2b64c4e}{hasCinema}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_mall_ac2137833b0bac11922b00ab4642dca26}{hasFreeParking}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MALL\_H}}
+
+\end{DoxyCode}
