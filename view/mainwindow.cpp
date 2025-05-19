@@ -208,7 +208,7 @@ bool MainWindow::askConfirmation(const QString& title,
         QPixmap confirmationIcon(":/images/images/alert_icon.png");
         if (!confirmationIcon.isNull()) {
             msgBox.setIconPixmap(confirmationIcon);
-            msgBox.setIconPixmap(confirmationIcon.scaled(iconSize, Qt::KeepAspectRatio, Qt::FastTransformation));
+            msgBox.setIconPixmap(confirmationIcon.scaled(iconSize, Qt::KeepAspectRatio, Qt::FastTransformation));
 
         } else {
             msgBox.setIcon(QMessageBox::Question);
