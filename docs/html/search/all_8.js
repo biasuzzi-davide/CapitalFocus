@@ -10,12 +10,14 @@ var searchData=
   ['intuitiva_7',['🖥️ Interfaccia utente intuitiva',['../md__r_e_a_d_m_e.html#autotoc_md6',1,'']]],
   ['isalwaysopen_8',['isAlwaysOpen',['../classweekly_openings.html#a0895523c64b9d9686d647a2d8363efa8',1,'weeklyOpenings']]],
   ['isclosed_9',['isClosed',['../classweekly_openings.html#a46f87a654039cfa5c18fd75efb9ed043',1,'weeklyOpenings']]],
-  ['isediting_10',['isEditing',['../class_create_place_widget.html#ad04de17a01dccabf6adf89dbe7dff9c3',1,'CreatePlaceWidget']]],
-  ['isenabled_11',['isEnabled',['../namespace_debug_config.html#ac1866de56c034219ae9716f41aacf24b',1,'DebugConfig']]],
-  ['isnightlit_12',['isNightLit',['../class_panoramic_points.html#a95a59c6d6d727a85bc69048e2728a9f8',1,'PanoramicPoints']]],
-  ['isopenat_13',['isOpenAt',['../classweekly_openings.html#a8fe80780b30f136545486ade9f47cf82',1,'weeklyOpenings']]],
-  ['isopentopublic_14',['isOpenToPublic',['../class_monument.html#af15c0990ca89376df3bc8f295c7e048f',1,'Monument']]],
-  ['isoutdoor_15',['isOutdoor',['../class_shopping.html#acd03a7791869732ff9b062c922c73060',1,'Shopping']]],
-  ['isseasonal_16',['isSeasonal',['../class_local_market.html#a6c6272dd023d92bf2697b19401e999d1',1,'LocalMarket']]],
-  ['isunesco_17',['isUnesco',['../class_monument.html#a8320f3de77478092e925110692d77069',1,'Monument']]]
+  ['isdarkmodeenabled_10',['isDarkModeEnabled',['../class_main_window.html#aa1d1d6305789456b1cb880167f928a80',1,'MainWindow']]],
+  ['isediting_11',['isEditing',['../class_create_place_widget.html#ad04de17a01dccabf6adf89dbe7dff9c3',1,'CreatePlaceWidget']]],
+  ['isenabled_12',['isEnabled',['../namespace_debug_config.html#ac1866de56c034219ae9716f41aacf24b',1,'DebugConfig']]],
+  ['isnightlit_13',['isNightLit',['../class_panoramic_points.html#a95a59c6d6d727a85bc69048e2728a9f8',1,'PanoramicPoints']]],
+  ['isopenat_14',['isOpenAt',['../classweekly_openings.html#a8fe80780b30f136545486ade9f47cf82',1,'weeklyOpenings']]],
+  ['isopentopublic_15',['isOpenToPublic',['../class_monument.html#af15c0990ca89376df3bc8f295c7e048f',1,'Monument']]],
+  ['isoutdoor_16',['isOutdoor',['../class_shopping.html#acd03a7791869732ff9b062c922c73060',1,'Shopping']]],
+  ['isseasonal_17',['isSeasonal',['../class_local_market.html#a6c6272dd023d92bf2697b19401e999d1',1,'LocalMarket']]],
+  ['isunesco_18',['isUnesco',['../class_monument.html#a8320f3de77478092e925110692d77069',1,'Monument']]],
+  ['isunescoheritage_19',['isUnescoHeritage',['../class_monument.html#a68cb8ab155e047568055f6badb3d1575',1,'Monument']]]
 ];

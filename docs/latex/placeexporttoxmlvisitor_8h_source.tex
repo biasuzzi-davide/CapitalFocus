@@ -26,23 +26,23 @@
 \DoxyCodeLine{00022\ \textcolor{comment}{//\ Visitor\ per\ esportare\ Place\ in\ formato\ XML}}
 \DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_place_export_to_xml_visitor_aa01b988c1b191e28b1ac181f197b39ac}{PlaceExportToXmlVisitor}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_place_visitor_interface}{PlaceVisitorInterface}}\ \{}
 \DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00025\ \ \ \ \ QDomDocument\&\ doc;\ \textcolor{comment}{//\ Il\ documento\ XML\ su\ cui\ lavorare}}
-\DoxyCodeLine{00026\ \ \ \ \ QDomElement\ result;\ \textcolor{comment}{//\ L'elemento\ XML\ creato\ per\ il\ Place\ visitato}}
+\DoxyCodeLine{00025\ \ \ \ \ QDomDocument\&\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ab170c367b33dfd2d2fafb5eb2c5bac54}{doc}};\ \textcolor{comment}{//\ Il\ documento\ XML\ su\ cui\ lavorare}}
+\DoxyCodeLine{00026\ \ \ \ \ QDomElement\ \mbox{\hyperlink{class_place_export_to_xml_visitor_af70ff069aa443d96433d67631cc3a0b6}{result}};\ \textcolor{comment}{//\ L'elemento\ XML\ creato\ per\ il\ Place\ visitato}}
 \DoxyCodeLine{00027\ }
 \DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ gli\ orari}}
-\DoxyCodeLine{00029\ \ \ \ \ QDomElement\ exportWeeklyOpenings(\textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&\ w)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ QDomElement\ \mbox{\hyperlink{class_place_export_to_xml_visitor_ac9b187e15f5e564e6203b736be69edf0}{exportWeeklyOpenings}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&\ w)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00030\ }
 \DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ i\ dati\ base\ di\ Place}}
-\DoxyCodeLine{00032\ \ \ \ \ QDomElement\ basePlaceToXml(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_place}{Place}}\&\ place,\ \textcolor{keyword}{const}\ QString\&\ type)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ QDomElement\ \mbox{\hyperlink{class_place_export_to_xml_visitor_a92f0abb375cea7952abf3f9e0d578ac1}{basePlaceToXml}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_place}{Place}}\&\ place,\ \textcolor{keyword}{const}\ QString\&\ type)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00033\ }
 \DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ i\ dati\ specifici\ di\ Food}}
-\DoxyCodeLine{00035\ \ \ \ \ QDomElement\ exportFoodData(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_food}{Food}}\&\ f)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ QDomElement\ \mbox{\hyperlink{class_place_export_to_xml_visitor_af58962e3eac070e8073c2148838d573f}{exportFoodData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_food}{Food}}\&\ f)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ i\ dati\ specifici\ di\ Shopping}}
-\DoxyCodeLine{00037\ \ \ \ \ QDomElement\ exportShoppingData(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_shopping}{Shopping}}\&\ s)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ QDomElement\ \mbox{\hyperlink{class_place_export_to_xml_visitor_a9fd839cbe0c5a0623c90565519e413c5}{exportShoppingData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_shopping}{Shopping}}\&\ s)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ i\ dati\ specifici\ di\ Entertainment}}
-\DoxyCodeLine{00039\ \ \ \ \ QDomElement\ exportEntertainmentData(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_entertainment}{Entertainment}}\&\ ent)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ QDomElement\ \mbox{\hyperlink{class_place_export_to_xml_visitor_aa9dc54704dd3dda6ff79db70a3d1bb0b}{exportEntertainmentData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_entertainment}{Entertainment}}\&\ ent)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ Crea\ elemento\ XML\ per\ i\ dati\ specifici\ di\ Culture}}
-\DoxyCodeLine{00041\ \ \ \ \ QDomElement\ exportCultureData(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_culture}{Culture}}\&\ c)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ QDomElement\ \mbox{\hyperlink{class_place_export_to_xml_visitor_a34268904b871455fbf63013c4b299c55}{exportCultureData}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_culture}{Culture}}\&\ c)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00042\ }
 \DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{//\ Costruttore,\ prende\ il\ documento\ XML\ di\ destinazione}}

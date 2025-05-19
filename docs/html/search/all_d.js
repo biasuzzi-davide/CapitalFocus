@@ -10,14 +10,15 @@ var searchData=
   ['openingframes_2eh_7',['openingFrames.h',['../opening_frames_8h.html',1,'']]],
   ['opensbefore_8',['opensBefore',['../classweekly_openings.html#aaaf00916f33ebbe898c4537b92c87280',1,'weeklyOpenings']]],
   ['opentime_9',['openTime',['../classweekly_openings.html#a33461ea38435ee6012775ba9cb77cada',1,'weeklyOpenings']]],
-  ['opentopublic_10',['openToPublic',['../class_create_place_widget.html#a22146bef9152fcb9023a97d2f98ff419',1,'CreatePlaceWidget']]],
+  ['opentopublic_10',['openToPublic',['../class_monument.html#af063359e470ea659b6fccc1f75a109f7',1,'Monument::openToPublic'],['../class_create_place_widget.html#a22146bef9152fcb9023a97d2f98ff419',1,'CreatePlaceWidget::openToPublic()']]],
   ['operator_28_29_11',['operator()',['../structstd_1_1less_3_01_weekday_01_4.html#a6f26626a5d10c3aa5ede0d9336cd54d9',1,'std::less&lt; Weekday &gt;']]],
   ['operator_3d_12',['operator=',['../structopening_frames.html#a7d664fd654b9bea6519b29fdccd54358',1,'openingFrames']]],
   ['organizzazione_20per_20categorie_13',['🎯 Organizzazione per categorie',['../md__r_e_a_d_m_e.html#autotoc_md2',1,'']]],
-  ['outdoor_5fmall_14',['outdoor_Mall',['../class_create_place_widget.html#ae86ddb26368f1142b2fc9938c74b800c',1,'CreatePlaceWidget']]],
-  ['outdoor_5fmarket_15',['outdoor_Market',['../class_create_place_widget.html#a6b9360bccfe1328bcff7569468284b85',1,'CreatePlaceWidget']]],
-  ['outdoorcheckbox_16',['outdoorCheckBox',['../class_ui___create_place_widget.html#a3c6b03480ef4bcd66854e6d766cf6a1a',1,'Ui_CreatePlaceWidget']]],
-  ['outdoorcheckbox_5f2_17',['outdoorCheckBox_2',['../class_ui___create_place_widget.html#a42f8b5d31a6148af5ac8ca2d3fa487bf',1,'Ui_CreatePlaceWidget']]],
-  ['outdoorlabel_18',['outdoorLabel',['../class_ui___create_place_widget.html#ab1c2f8360bca0a8f7f34a675ff1af810',1,'Ui_CreatePlaceWidget']]],
-  ['outdoorlabel_5f2_19',['outdoorLabel_2',['../class_ui___create_place_widget.html#a9ed5c0e65fd820189a4e6318d7f9443a',1,'Ui_CreatePlaceWidget']]]
+  ['outdoor_14',['outdoor',['../class_shopping.html#a8d43c2ac97147966c73bd1d4c0552266',1,'Shopping']]],
+  ['outdoor_5fmall_15',['outdoor_Mall',['../class_create_place_widget.html#ae86ddb26368f1142b2fc9938c74b800c',1,'CreatePlaceWidget']]],
+  ['outdoor_5fmarket_16',['outdoor_Market',['../class_create_place_widget.html#a6b9360bccfe1328bcff7569468284b85',1,'CreatePlaceWidget']]],
+  ['outdoorcheckbox_17',['outdoorCheckBox',['../class_ui___create_place_widget.html#a3c6b03480ef4bcd66854e6d766cf6a1a',1,'Ui_CreatePlaceWidget']]],
+  ['outdoorcheckbox_5f2_18',['outdoorCheckBox_2',['../class_ui___create_place_widget.html#a42f8b5d31a6148af5ac8ca2d3fa487bf',1,'Ui_CreatePlaceWidget']]],
+  ['outdoorlabel_19',['outdoorLabel',['../class_ui___create_place_widget.html#ab1c2f8360bca0a8f7f34a675ff1af810',1,'Ui_CreatePlaceWidget']]],
+  ['outdoorlabel_5f2_20',['outdoorLabel_2',['../class_ui___create_place_widget.html#a9ed5c0e65fd820189a4e6318d7f9443a',1,'Ui_CreatePlaceWidget']]]
 ];

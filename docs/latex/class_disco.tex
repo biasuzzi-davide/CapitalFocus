@@ -27,7 +27,7 @@ Collaboration diagram for Disco\+:
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_disco_a5b23c0422592f330a35df6ed9db63472}{Disco}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}, QTime \mbox{\hyperlink{class_entertainment_a56fe4333ea68e5107f8d841cb09a57d0}{avg\+Stay\+Duration}}, int \mbox{\hyperlink{class_entertainment_ab2fcd327737cae014a12225c0dc90b02}{minimum\+Age}}, const QString \&\mbox{\hyperlink{class_entertainment_a9f4914c70cad0c82431a269efedf1c5f}{restricted\+Entry}}, const QString \&music\+Genre, bool has\+Prive, const QString \&dress\+Code)
+\mbox{\hyperlink{class_disco_a5b23c0422592f330a35df6ed9db63472}{Disco}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}, QTime \mbox{\hyperlink{class_entertainment_a56fe4333ea68e5107f8d841cb09a57d0}{avg\+Stay\+Duration}}, int \mbox{\hyperlink{class_entertainment_ab2fcd327737cae014a12225c0dc90b02}{minimum\+Age}}, const QString \&\mbox{\hyperlink{class_entertainment_a9f4914c70cad0c82431a269efedf1c5f}{restricted\+Entry}}, const QString \&\mbox{\hyperlink{class_disco_ad1e16ce6bfeac25a285fef1200eabb62}{music\+Genre}}, bool \mbox{\hyperlink{class_disco_a46d9d84aff38dedf543b2facb3227613}{has\+Prive}}, const QString \&\mbox{\hyperlink{class_disco_a27f152cd5af84aee8cb5de9f224c6daa}{dress\+Code}})
 \item 
 virtual \mbox{\hyperlink{class_disco_a5aacb9991934f93d34bfc3d73fcc536e}{\texorpdfstring{$\sim$}{\string~}\+Disco}} ()=default
 \item 
@@ -74,6 +74,15 @@ QString \mbox{\hyperlink{class_place_a6baa6314ad59d069f86ffcd81484211b}{get\+Des
 double \mbox{\hyperlink{class_place_af4f1cbcde42f665d72b090e77852f75e}{get\+Rating}} () const
 \item 
 const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \& \mbox{\hyperlink{class_place_a16b0f469896907c173a3a747de31da5f}{get\+Open}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_disco_ad1e16ce6bfeac25a285fef1200eabb62}{music\+Genre}}
+\item 
+bool \mbox{\hyperlink{class_disco_a46d9d84aff38dedf543b2facb3227613}{has\+Prive}}
+\item 
+QString \mbox{\hyperlink{class_disco_a27f152cd5af84aee8cb5de9f224c6daa}{dress\+Code}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_entertainment}{Entertainment}}}
@@ -206,6 +215,27 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{class_disco_a7b808ae615ceb94423a1268bbe8c5931_icgraph}
 \end{center}
 \end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_disco_a27f152cd5af84aee8cb5de9f224c6daa}\index{Disco@{Disco}!dressCode@{dressCode}}
+\index{dressCode@{dressCode}!Disco@{Disco}}
+\doxysubsubsection{\texorpdfstring{dressCode}{dressCode}}
+{\footnotesize\ttfamily \label{class_disco_a27f152cd5af84aee8cb5de9f224c6daa} 
+QString Disco\+::dress\+Code\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_disco_a46d9d84aff38dedf543b2facb3227613}\index{Disco@{Disco}!hasPrive@{hasPrive}}
+\index{hasPrive@{hasPrive}!Disco@{Disco}}
+\doxysubsubsection{\texorpdfstring{hasPrive}{hasPrive}}
+{\footnotesize\ttfamily \label{class_disco_a46d9d84aff38dedf543b2facb3227613} 
+bool Disco\+::has\+Prive\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_disco_ad1e16ce6bfeac25a285fef1200eabb62}\index{Disco@{Disco}!musicGenre@{musicGenre}}
+\index{musicGenre@{musicGenre}!Disco@{Disco}}
+\doxysubsubsection{\texorpdfstring{musicGenre}{musicGenre}}
+{\footnotesize\ttfamily \label{class_disco_ad1e16ce6bfeac25a285fef1200eabb62} 
+QString Disco\+::music\+Genre\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

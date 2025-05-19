@@ -1,5 +1,32 @@
 <map id="culturewidget" name="culturewidget">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,120,122,247"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="33,5,95,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,86,66,120,61,120,61,86"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="178,1349,295,1476"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="97,986,158,1052"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,1066,173,1184,221,1349,215,1350,168,1185,137,1067"/>
+<area shape="rect" id="Node000003" href="$class_ui_1_1culturewidget.html" title=" " alt="" coords="182,986,291,1052"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,1052,240,1332,234,1332,234,1052"/>
+<area shape="rect" id="Node000004" href="$class_ui__culturewidget.html" title=" " alt="" coords="5,480,124,770"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="133,776,139,789,173,853,228,985,223,987,168,855,134,792,128,779"/>
+<area shape="rect" id="Node000005" href="$class_place_controller.html" title=" " alt="" coords="487,854,651,1184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="489,1118,303,1338,299,1335,485,1115"/>
+<area shape="rect" id="Node000007" href="$class_main_window.html" title=" " alt="" coords="594,1247,764,1578"/>
+<area shape="poly" id="edge10_Node000007_Node000005" title=" " alt="" coords="618,1183,631,1231,626,1232,613,1185"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="814,592,873,658"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="843,674,831,733,820,764,804,792,792,808,779,817,746,832,722,840,702,842,684,845,664,856,652,866,649,862,661,851,682,840,701,836,721,834,744,827,776,812,788,804,800,789,815,762,826,731,838,673"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="592,1280,571,1224,566,1202,571,1200,576,1223,597,1278"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="674,986,770,1052"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="721,1068,706,1224,703,1248,698,1248,701,1223,716,1067"/>
+<area shape="rect" id="Node000009" href="$class_ui_1_1_main_window.html" title=" " alt="" coords="862,986,969,1052"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="899,1053,775,1258,771,1255,894,1050"/>
+<area shape="rect" id="Node000010" href="$class_ui___main_window.html" title=" " alt="" coords="897,480,1032,770"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="948,785,922,986,917,986,942,785"/>
+<area shape="rect" id="Node000011" href="$class_place_repository.html" title=" " alt="" coords="148,531,285,720"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="257,718,277,755,300,789,340,835,385,878,475,951,471,955,381,882,337,839,296,792,272,757,252,720"/>
+<area shape="rect" id="Node000012" href="$class_place_import_from_xml.html" title=" " alt="" coords="310,572,465,679"/>
+<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="414,677,488,837,483,839,409,680"/>
+<area shape="rect" id="Node000013" href="$class_place_import_from_json.html" title=" " alt="" coords="489,572,649,679"/>
+<area shape="poly" id="edge13_Node000005_Node000013" title=" " alt="" coords="572,679,572,837,566,837,566,679"/>
+<area shape="rect" id="Node000014" href="$class_place.html" title=" " alt="" coords="674,460,790,791"/>
+<area shape="poly" id="edge14_Node000005_Node000014" title=" " alt="" coords="676,783,657,831,653,839,648,837,652,829,671,781"/>
+<area shape="rect" id="Node000015" href="$classweekly_openings.html" title=" " alt="" coords="647,5,816,397"/>
+<area shape="poly" id="edge15_Node000014_Node000015" title=" " alt="" coords="734,397,734,443,729,443,729,397"/>
 </map>

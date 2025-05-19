@@ -14,5 +14,6 @@ var classweekly_openings =
     [ "setAlwaysOpen", "classweekly_openings.html#a8db9d2819a7673a0d75c329c6bc0d3ce", null ],
     [ "setClosed", "classweekly_openings.html#abf47bd71427cbd385e863f6212fce4d6", null ],
     [ "setOpening", "classweekly_openings.html#a97cb89825c8afd2dda509b335b0ab59a", null ],
-    [ "toQStringMultiline", "classweekly_openings.html#adb8c0c8af984239132e860fe947e1d61", null ]
+    [ "toQStringMultiline", "classweekly_openings.html#adb8c0c8af984239132e860fe947e1d61", null ],
+    [ "schedule", "classweekly_openings.html#a29824287c4776b12285da7fdfb6def86", null ]
 ];

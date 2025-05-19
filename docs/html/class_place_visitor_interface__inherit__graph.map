@@ -1,9 +1,9 @@
 <map id="PlaceVisitorInterface" name="PlaceVisitorInterface">
 <area shape="rect" id="Node000001" title=" " alt="" coords="220,5,381,255"/>
-<area shape="rect" id="Node000002" href="$class_place_export_to_json_visitor.html" title=" " alt="" coords="5,333,187,603"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,268,180,335,175,332,215,266"/>
-<area shape="rect" id="Node000003" href="$class_place_export_to_xml_visitor.html" title=" " alt="" coords="212,333,389,603"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="303,270,303,334,298,334,298,270"/>
-<area shape="rect" id="Node000004" href="$class_statistics_visitor.html" title=" " alt="" coords="413,303,537,633"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="384,266,403,301,415,327,411,329,398,304,379,269"/>
+<area shape="rect" id="Node000002" href="$class_place_export_to_json_visitor.html" title=" " alt="" coords="5,354,187,664"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,269,203,304,176,355,171,352,198,301,217,266"/>
+<area shape="rect" id="Node000003" href="$class_place_export_to_xml_visitor.html" title=" " alt="" coords="212,303,389,715"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="303,270,303,303,298,303,298,270"/>
+<area shape="rect" id="Node000004" href="$class_statistics_visitor.html" title=" " alt="" coords="413,313,537,704"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="385,266,403,302,416,330,411,332,398,304,380,269"/>
 </map>

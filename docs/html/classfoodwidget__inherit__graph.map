@@ -1,5 +1,5 @@
 <map id="foodwidget" name="foodwidget">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,120,111,247"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,120,111,267"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="28,5,89,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,86,61,120,56,120,56,86"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,87,61,120,56,120,56,87"/>
 </map>

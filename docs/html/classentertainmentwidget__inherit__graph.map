@@ -1,5 +1,5 @@
 <map id="entertainmentwidget" name="entertainmentwidget">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,120,162,247"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,120,162,267"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="53,5,115,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,86,86,120,81,120,81,86"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,87,86,120,81,120,81,87"/>
 </map>

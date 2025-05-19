@@ -1,0 +1,21 @@
+<map id="PlaceExportToJsonVisitor::basePlaceToJson" name="PlaceExportToJsonVisitor::basePlaceToJson">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,182,177,222"/>
+<area shape="rect" id="Node000002" href="$class_place_export_to_json_visitor.html#a4048a6e72596ebde088b4d9b05e12ba0" title=" " alt="" coords="225,26,396,66"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,180,157,129,189,101,223,76,231,71,234,76,226,80,192,105,160,133,112,183"/>
+<area shape="rect" id="Node000005" href="$class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="258,91,362,116"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="123,179,170,151,224,125,243,118,245,123,226,130,172,156,126,184"/>
+<area shape="rect" id="Node000006" href="$class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="256,140,364,166"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="176,180,241,166,242,171,177,186"/>
+<area shape="rect" id="Node000007" href="$class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="237,189,384,215"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="177,200,222,200,222,205,177,205"/>
+<area shape="rect" id="Node000008" href="$class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="253,239,368,264"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="177,219,239,233,237,238,176,224"/>
+<area shape="rect" id="Node000009" href="$class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="255,288,366,314"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="126,221,172,248,226,274,241,280,240,285,224,279,170,253,123,225"/>
+<area shape="rect" id="Node000010" href="$class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="251,337,370,363"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="111,221,159,273,191,300,226,324,238,330,235,334,223,328,188,305,156,277,107,225"/>
+<area shape="rect" id="Node000003" href="$classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="444,5,641,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="396,33,428,29,429,35,397,38"/>
+<area shape="rect" id="Node000004" href="$classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="447,55,638,96"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="397,54,431,59,431,64,396,60"/>
+</map>

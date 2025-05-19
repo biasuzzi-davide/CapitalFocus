@@ -36,5 +36,11 @@ var class_place_controller =
     [ "showCreditsPage", "class_place_controller.html#a209739f5a76200933c8b046133687712", null ],
     [ "showStatistics", "class_place_controller.html#a7863466e18883d4570f4d9628a650e8a", null ],
     [ "toggleDarkMode", "class_place_controller.html#a3a339db873d8ae8cc04f4bb531e62efc", null ],
-    [ "toggleDebug", "class_place_controller.html#af362a022ee583a8ca5794d91808bb80b", null ]
+    [ "toggleDebug", "class_place_controller.html#af362a022ee583a8ca5794d91808bb80b", null ],
+    [ "currentPlace", "class_place_controller.html#a2e730245e2bbe15fc28cfcecf1c75583", null ],
+    [ "jsonImporter", "class_place_controller.html#a03483bda1cd0bf9959415fbe4c645ba7", null ],
+    [ "repository", "class_place_controller.html#a48033f7cf017958cf1325e83c3e6f676", null ],
+    [ "unsavedChanges", "class_place_controller.html#a5f8b0457f0a47fc05966184864c082dc", null ],
+    [ "view", "class_place_controller.html#adbd2fd3b47ee04fbd799894af22a7eb1", null ],
+    [ "xmlImporter", "class_place_controller.html#a081b9bb417b86a07a1125d9e5aa1f7eb", null ]
 ];

@@ -1,0 +1,9 @@
+<map id="PlaceExportToXmlVisitor::exportEntertainmentData" name="PlaceExportToXmlVisitor::exportEntertainmentData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,63,180,103"/>
+<area shape="rect" id="Node000002" href="$class_entertainment.html#a68c95640484a8a3c1e990c982b97348b" title=" " alt="" coords="233,5,411,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,60,222,48,224,53,177,65"/>
+<area shape="rect" id="Node000003" href="$class_entertainment.html#aa5151a609ab6a2748b78ea59a2e002f9" title=" " alt="" coords="236,70,408,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,80,220,80,220,86,180,86"/>
+<area shape="rect" id="Node000004" href="$class_entertainment.html#a5c2d0418a2222666548481e451bff344" title=" " alt="" coords="228,120,416,161"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,101,224,113,222,118,176,106"/>
+</map>

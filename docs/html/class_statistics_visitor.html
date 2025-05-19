@@ -104,6 +104,7 @@ $(function(){initNavTree('class_statistics_visitor.html',''); initResizable(true
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_statistics_visitor-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">StatisticsVisitor Class Reference</div></div>
 </div><!--header-->
@@ -115,9 +116,9 @@ Inheritance diagram for StatisticsVisitor:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_statistics_visitor__inherit__graph.png" border="0" usemap="#a_statistics_visitor_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_statistics_visitor_inherit__map" id="a_statistics_visitor_inherit__map">
-<area shape="rect" title=" " alt="" coords="24,303,148,633"/>
+<area shape="rect" title=" " alt="" coords="24,303,148,694"/>
 <area shape="rect" href="class_place_visitor_interface.html" title=" " alt="" coords="5,5,166,255"/>
-<area shape="poly" title=" " alt="" coords="88,269,88,303,83,303,83,269"/>
+<area shape="poly" title=" " alt="" coords="88,270,88,303,83,303,83,270"/>
 </map>
 </div>
 <div class="dynheader">
@@ -125,9 +126,9 @@ Collaboration diagram for StatisticsVisitor:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_statistics_visitor__coll__graph.png" border="0" usemap="#a_statistics_visitor_coll__map" alt="Collaboration graph"/></div>
 <map name="a_statistics_visitor_coll__map" id="a_statistics_visitor_coll__map">
-<area shape="rect" title=" " alt="" coords="24,303,148,633"/>
+<area shape="rect" title=" " alt="" coords="24,303,148,694"/>
 <area shape="rect" href="class_place_visitor_interface.html" title=" " alt="" coords="5,5,166,255"/>
-<area shape="poly" title=" " alt="" coords="88,269,88,303,83,303,83,269"/>
+<area shape="poly" title=" " alt="" coords="88,270,88,303,83,303,83,270"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -164,6 +165,17 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_class_place_visitor_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_place_visitor_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_place_visitor_interface.html">PlaceVisitorInterface</a></td></tr>
 <tr class="memitem:a0ee9393508706e70d211038757e9d239 inherit pub_methods_class_place_visitor_interface" id="r_a0ee9393508706e70d211038757e9d239"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_place_visitor_interface.html#a0ee9393508706e70d211038757e9d239">~PlaceVisitorInterface</a> ()=default</td></tr>
 <tr class="separator:a0ee9393508706e70d211038757e9d239 inherit pub_methods_class_place_visitor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:aacbb52867c73a46576e34b72448c5f00" id="r_aacbb52867c73a46576e34b72448c5f00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacbb52867c73a46576e34b72448c5f00">count</a></td></tr>
+<tr class="separator:aacbb52867c73a46576e34b72448c5f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c140601341b45ac2ba228a4f80d1970" id="r_a1c140601341b45ac2ba228a4f80d1970"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c140601341b45ac2ba228a4f80d1970">sumRatings</a></td></tr>
+<tr class="separator:a1c140601341b45ac2ba228a4f80d1970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9396c4780e78103d1497d25a16ed7d" id="r_a6a9396c4780e78103d1497d25a16ed7d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a9396c4780e78103d1497d25a16ed7d">sumCost</a></td></tr>
+<tr class="separator:a6a9396c4780e78103d1497d25a16ed7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b4c20fbca244bf72c99699473b3878" id="r_a51b4c20fbca244bf72c99699473b3878"><td class="memItemLeft" align="right" valign="top">std::map&lt; QString, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51b4c20fbca244bf72c99699473b3878">cityCounts</a></td></tr>
+<tr class="separator:a51b4c20fbca244bf72c99699473b3878"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ace0ec106e683dc4861affae8fcddbb2c" name="ace0ec106e683dc4861affae8fcddbb2c"></a>
@@ -698,6 +710,95 @@ Here is the call graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="297,83,343,96,342,102,296,88"/>
 </map>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a51b4c20fbca244bf72c99699473b3878" name="a51b4c20fbca244bf72c99699473b3878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b4c20fbca244bf72c99699473b3878">&#9670;&#160;</a></span>cityCounts</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;QString,int&gt; StatisticsVisitor::cityCounts</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacbb52867c73a46576e34b72448c5f00" name="aacbb52867c73a46576e34b72448c5f00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacbb52867c73a46576e34b72448c5f00">&#9670;&#160;</a></span>count</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int StatisticsVisitor::count</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a9396c4780e78103d1497d25a16ed7d" name="a6a9396c4780e78103d1497d25a16ed7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9396c4780e78103d1497d25a16ed7d">&#9670;&#160;</a></span>sumCost</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double StatisticsVisitor::sumCost</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c140601341b45ac2ba228a4f80d1970" name="a1c140601341b45ac2ba228a4f80d1970"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c140601341b45ac2ba228a4f80d1970">&#9670;&#160;</a></span>sumRatings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double StatisticsVisitor::sumRatings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

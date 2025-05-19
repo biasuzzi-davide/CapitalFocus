@@ -1,0 +1,9 @@
+<map id="PlaceExportToXmlVisitor::exportFoodData" name="PlaceExportToXmlVisitor::exportFoodData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,172,88"/>
+<area shape="rect" id="Node000002" href="$class_food.html#aef0ab2f24e1084812e3cbe4025a966ea" title=" " alt="" coords="220,5,391,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,46,230,32,231,38,173,51"/>
+<area shape="rect" id="Node000003" href="$class_food.html#aa5eeb1fecbac1c664c529286261fe6ce" title=" " alt="" coords="235,55,376,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,65,219,65,219,70,172,70"/>
+<area shape="rect" id="Node000004" href="$class_food.html#a040929464715c929699fabaa79756e8d" title=" " alt="" coords="231,104,380,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,84,231,97,230,103,171,89"/>
+</map>

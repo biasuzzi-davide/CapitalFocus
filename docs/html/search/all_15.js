@@ -8,5 +8,6 @@ var searchData=
   ['weekdaytostring_5',['weekdayToString',['../classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df',1,'weeklyOpenings']]],
   ['weeklyopenings_6',['weeklyOpenings',['../classweekly_openings.html',1,'weeklyOpenings'],['../classweekly_openings.html#a0cad4ff746c33a775fbe86765eb218ab',1,'weeklyOpenings::weeklyOpenings()'],['../classweekly_openings.html#ab0e87488bc1ae76705c9fa7394111bb4',1,'weeklyOpenings::weeklyOpenings(const weeklyOpenings &amp;other)']]],
   ['weeklyopenings_2ecpp_7',['weeklyOpenings.cpp',['../weekly_openings_8cpp.html',1,'']]],
-  ['weeklyopenings_2eh_8',['weeklyOpenings.h',['../weekly_openings_8h.html',1,'']]]
+  ['weeklyopenings_2eh_8',['weeklyOpenings.h',['../weekly_openings_8h.html',1,'']]],
+  ['widgetmap_9',['widgetMap',['../class_main_window.html#a62ed4b0e269d4f98c78837c151fd7903',1,'MainWindow']]]
 ];

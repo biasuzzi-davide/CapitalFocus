@@ -112,5 +112,8 @@ var class_create_place_widget =
     [ "type", "class_create_place_widget.html#a8f154814c34b996521200e4219c97335", null ],
     [ "unesco", "class_create_place_widget.html#afeacbf6f76be9fc489edab268b724773", null ],
     [ "veganMenu_Cafe", "class_create_place_widget.html#a4ea62d5a83a590d4ba3a581ee32d7a47", null ],
-    [ "veganMenu_Restaurant", "class_create_place_widget.html#abb6450fa5a13bb5835611d1670e432a8", null ]
+    [ "veganMenu_Restaurant", "class_create_place_widget.html#abb6450fa5a13bb5835611d1670e432a8", null ],
+    [ "controller", "class_create_place_widget.html#ac3253345d13d53d1e843923020e6c11c", null ],
+    [ "m_editing", "class_create_place_widget.html#a0aa3e112d6de3e1d12ebeb73853d2885", null ],
+    [ "ui", "class_create_place_widget.html#a09e530bad3dc4ede0292cfe89fbe856d", null ]
 ];

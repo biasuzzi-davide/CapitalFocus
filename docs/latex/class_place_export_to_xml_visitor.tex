@@ -11,7 +11,7 @@ Inheritance diagram for Place\+Export\+To\+Xml\+Visitor\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=213pt]{class_place_export_to_xml_visitor__inherit__graph}
+\includegraphics[height=550pt]{class_place_export_to_xml_visitor__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -21,7 +21,7 @@ Collaboration diagram for Place\+Export\+To\+Xml\+Visitor\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=213pt]{class_place_export_to_xml_visitor__coll__graph}
+\includegraphics[height=550pt]{class_place_export_to_xml_visitor__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -54,6 +54,28 @@ void \mbox{\hyperlink{class_place_export_to_xml_visitor_a21e7104c6104a5892e6a38c
 \item 
 virtual \mbox{\hyperlink{class_place_visitor_interface_a0ee9393508706e70d211038757e9d239}{\texorpdfstring{$\sim$}{\string~}\+Place\+Visitor\+Interface}} ()=default
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QDom\+Element \mbox{\hyperlink{class_place_export_to_xml_visitor_ac9b187e15f5e564e6203b736be69edf0}{export\+Weekly\+Openings}} (const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&w) const
+\item 
+QDom\+Element \mbox{\hyperlink{class_place_export_to_xml_visitor_a92f0abb375cea7952abf3f9e0d578ac1}{base\+Place\+To\+Xml}} (const \mbox{\hyperlink{class_place}{Place}} \&place, const QString \&type) const
+\item 
+QDom\+Element \mbox{\hyperlink{class_place_export_to_xml_visitor_af58962e3eac070e8073c2148838d573f}{export\+Food\+Data}} (const \mbox{\hyperlink{class_food}{Food}} \&f) const
+\item 
+QDom\+Element \mbox{\hyperlink{class_place_export_to_xml_visitor_a9fd839cbe0c5a0623c90565519e413c5}{export\+Shopping\+Data}} (const \mbox{\hyperlink{class_shopping}{Shopping}} \&s) const
+\item 
+QDom\+Element \mbox{\hyperlink{class_place_export_to_xml_visitor_aa9dc54704dd3dda6ff79db70a3d1bb0b}{export\+Entertainment\+Data}} (const \mbox{\hyperlink{class_entertainment}{Entertainment}} \&ent) const
+\item 
+QDom\+Element \mbox{\hyperlink{class_place_export_to_xml_visitor_a34268904b871455fbf63013c4b299c55}{export\+Culture\+Data}} (const \mbox{\hyperlink{class_culture}{Culture}} \&c) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QDom\+Document \& \mbox{\hyperlink{class_place_export_to_xml_visitor_ab170c367b33dfd2d2fafb5eb2c5bac54}{doc}}
+\item 
+QDom\+Element \mbox{\hyperlink{class_place_export_to_xml_visitor_af70ff069aa443d96433d67631cc3a0b6}{result}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -66,6 +88,138 @@ Place\+Export\+To\+Xml\+Visitor\+::\+Place\+Export\+To\+Xml\+Visitor (\begin{Dox
 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_place_export_to_xml_visitor_a92f0abb375cea7952abf3f9e0d578ac1}\index{PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}!basePlaceToXml@{basePlaceToXml}}
+\index{basePlaceToXml@{basePlaceToXml}!PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}}
+\doxysubsubsection{\texorpdfstring{basePlaceToXml()}{basePlaceToXml()}}
+{\footnotesize\ttfamily \label{class_place_export_to_xml_visitor_a92f0abb375cea7952abf3f9e0d578ac1} 
+QDom\+Element Place\+Export\+To\+Xml\+Visitor\+::base\+Place\+To\+Xml (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_place}{Place}} \&}]{place}{, }\item[{const QString \&}]{type}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_a92f0abb375cea7952abf3f9e0d578ac1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_a92f0abb375cea7952abf3f9e0d578ac1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_export_to_xml_visitor_a34268904b871455fbf63013c4b299c55}\index{PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}!exportCultureData@{exportCultureData}}
+\index{exportCultureData@{exportCultureData}!PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}}
+\doxysubsubsection{\texorpdfstring{exportCultureData()}{exportCultureData()}}
+{\footnotesize\ttfamily \label{class_place_export_to_xml_visitor_a34268904b871455fbf63013c4b299c55} 
+QDom\+Element Place\+Export\+To\+Xml\+Visitor\+::export\+Culture\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_culture}{Culture}} \&}]{c}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_a34268904b871455fbf63013c4b299c55_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_a34268904b871455fbf63013c4b299c55_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_export_to_xml_visitor_aa9dc54704dd3dda6ff79db70a3d1bb0b}\index{PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}!exportEntertainmentData@{exportEntertainmentData}}
+\index{exportEntertainmentData@{exportEntertainmentData}!PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}}
+\doxysubsubsection{\texorpdfstring{exportEntertainmentData()}{exportEntertainmentData()}}
+{\footnotesize\ttfamily \label{class_place_export_to_xml_visitor_aa9dc54704dd3dda6ff79db70a3d1bb0b} 
+QDom\+Element Place\+Export\+To\+Xml\+Visitor\+::export\+Entertainment\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_entertainment}{Entertainment}} \&}]{ent}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_aa9dc54704dd3dda6ff79db70a3d1bb0b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_aa9dc54704dd3dda6ff79db70a3d1bb0b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_export_to_xml_visitor_af58962e3eac070e8073c2148838d573f}\index{PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}!exportFoodData@{exportFoodData}}
+\index{exportFoodData@{exportFoodData}!PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}}
+\doxysubsubsection{\texorpdfstring{exportFoodData()}{exportFoodData()}}
+{\footnotesize\ttfamily \label{class_place_export_to_xml_visitor_af58962e3eac070e8073c2148838d573f} 
+QDom\+Element Place\+Export\+To\+Xml\+Visitor\+::export\+Food\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_food}{Food}} \&}]{f}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_af58962e3eac070e8073c2148838d573f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_af58962e3eac070e8073c2148838d573f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_export_to_xml_visitor_a9fd839cbe0c5a0623c90565519e413c5}\index{PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}!exportShoppingData@{exportShoppingData}}
+\index{exportShoppingData@{exportShoppingData}!PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}}
+\doxysubsubsection{\texorpdfstring{exportShoppingData()}{exportShoppingData()}}
+{\footnotesize\ttfamily \label{class_place_export_to_xml_visitor_a9fd839cbe0c5a0623c90565519e413c5} 
+QDom\+Element Place\+Export\+To\+Xml\+Visitor\+::export\+Shopping\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_shopping}{Shopping}} \&}]{s}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_a9fd839cbe0c5a0623c90565519e413c5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_a9fd839cbe0c5a0623c90565519e413c5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_export_to_xml_visitor_ac9b187e15f5e564e6203b736be69edf0}\index{PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}!exportWeeklyOpenings@{exportWeeklyOpenings}}
+\index{exportWeeklyOpenings@{exportWeeklyOpenings}!PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}}
+\doxysubsubsection{\texorpdfstring{exportWeeklyOpenings()}{exportWeeklyOpenings()}}
+{\footnotesize\ttfamily \label{class_place_export_to_xml_visitor_ac9b187e15f5e564e6203b736be69edf0} 
+QDom\+Element Place\+Export\+To\+Xml\+Visitor\+::export\+Weekly\+Openings (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&}]{w}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_ac9b187e15f5e564e6203b736be69edf0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_ac9b187e15f5e564e6203b736be69edf0_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_place_export_to_xml_visitor_a93284795a78b2c2806bb2d0fea6d4db8}\index{PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}!getResult@{getResult}}
 \index{getResult@{getResult}!PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}}
 \doxysubsubsection{\texorpdfstring{getResult()}{getResult()}}
@@ -149,7 +303,7 @@ Here is the call graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=349pt]{class_place_export_to_xml_visitor_accb14d019ae4d074c610c4d04c5e9049_cgraph}
+\includegraphics[width=350pt]{class_place_export_to_xml_visitor_accb14d019ae4d074c610c4d04c5e9049_cgraph}
 \end{center}
 \end{figure}
 \Hypertarget{class_place_export_to_xml_visitor_a21e7104c6104a5892e6a38cca7fff4c0}\index{PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}!visit@{visit}}
@@ -234,6 +388,21 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{class_place_export_to_xml_visitor_aabfcc9e2858a8684048a87ebe05e3914_cgraph}
 \end{center}
 \end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_place_export_to_xml_visitor_ab170c367b33dfd2d2fafb5eb2c5bac54}\index{PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}!doc@{doc}}
+\index{doc@{doc}!PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}}
+\doxysubsubsection{\texorpdfstring{doc}{doc}}
+{\footnotesize\ttfamily \label{class_place_export_to_xml_visitor_ab170c367b33dfd2d2fafb5eb2c5bac54} 
+QDom\+Document\& Place\+Export\+To\+Xml\+Visitor\+::doc\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_place_export_to_xml_visitor_af70ff069aa443d96433d67631cc3a0b6}\index{PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}!result@{result}}
+\index{result@{result}!PlaceExportToXmlVisitor@{PlaceExportToXmlVisitor}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily \label{class_place_export_to_xml_visitor_af70ff069aa443d96433d67631cc3a0b6} 
+QDom\+Element Place\+Export\+To\+Xml\+Visitor\+::result\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

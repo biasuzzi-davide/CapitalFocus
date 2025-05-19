@@ -1,9 +1,9 @@
 <map id="Food" name="Food">
-<area shape="rect" id="Node000001" title=" " alt="" coords="79,404,224,593"/>
-<area shape="rect" id="Node000003" href="$class_cafe.html" title=" " alt="" coords="5,641,140,849"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,607,108,642,103,640,114,606"/>
-<area shape="rect" id="Node000004" href="$class_restaurant.html" title=" " alt="" coords="164,641,299,849"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="189,606,200,640,195,642,184,608"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="79,404,224,633"/>
+<area shape="rect" id="Node000003" href="$class_cafe.html" title=" " alt="" coords="5,692,140,920"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,648,107,693,101,691,114,647"/>
+<area shape="rect" id="Node000004" href="$class_restaurant.html" title=" " alt="" coords="164,681,299,931"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="190,647,199,681,194,682,185,648"/>
 <area shape="rect" id="Node000002" href="$class_place.html" title=" " alt="" coords="94,5,210,356"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,371,154,405,149,405,149,371"/>
 </map>

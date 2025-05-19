@@ -6,5 +6,6 @@ var class_place_repository =
     [ "getAllPlaces", "class_place_repository.html#a44775cb340def2c505ef11465b1cf6d7", null ],
     [ "removePlace", "class_place_repository.html#a3f9a7fd91f41eccad22ce107c417df6c", null ],
     [ "replacePlace", "class_place_repository.html#a9a521b2b3fac25453c00bdb494405894", null ],
-    [ "search", "class_place_repository.html#a9f0f078c7c0b04837b7536fbf0502fd6", null ]
+    [ "search", "class_place_repository.html#a9f0f078c7c0b04837b7536fbf0502fd6", null ],
+    [ "places", "class_place_repository.html#a6343a442b60d026ab930a6a58fd9d130", null ]
 ];

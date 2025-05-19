@@ -104,6 +104,8 @@ $(function(){initNavTree('class_place_export_to_json_visitor.html',''); initResi
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_place_export_to_json_visitor-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PlaceExportToJsonVisitor Class Reference</div></div>
 </div><!--header-->
@@ -115,7 +117,7 @@ Inheritance diagram for PlaceExportToJsonVisitor:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_export_to_json_visitor__inherit__graph.png" border="0" usemap="#a_place_export_to_json_visitor_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_place_export_to_json_visitor_inherit__map" id="a_place_export_to_json_visitor_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,303,187,572"/>
+<area shape="rect" title=" " alt="" coords="5,303,187,613"/>
 <area shape="rect" href="class_place_visitor_interface.html" title=" " alt="" coords="16,5,177,255"/>
 <area shape="poly" title=" " alt="" coords="99,270,99,303,94,303,94,270"/>
 </map>
@@ -125,7 +127,7 @@ Collaboration diagram for PlaceExportToJsonVisitor:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_export_to_json_visitor__coll__graph.png" border="0" usemap="#a_place_export_to_json_visitor_coll__map" alt="Collaboration graph"/></div>
 <map name="a_place_export_to_json_visitor_coll__map" id="a_place_export_to_json_visitor_coll__map">
-<area shape="rect" title=" " alt="" coords="5,303,187,572"/>
+<area shape="rect" title=" " alt="" coords="5,303,187,613"/>
 <area shape="rect" href="class_place_visitor_interface.html" title=" " alt="" coords="16,5,177,255"/>
 <area shape="poly" title=" " alt="" coords="99,270,99,303,94,303,94,270"/>
 </map>
@@ -158,6 +160,18 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_class_place_visitor_interface"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_place_visitor_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_place_visitor_interface.html">PlaceVisitorInterface</a></td></tr>
 <tr class="memitem:a0ee9393508706e70d211038757e9d239 inherit pub_methods_class_place_visitor_interface" id="r_a0ee9393508706e70d211038757e9d239"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_place_visitor_interface.html#a0ee9393508706e70d211038757e9d239">~PlaceVisitorInterface</a> ()=default</td></tr>
 <tr class="separator:a0ee9393508706e70d211038757e9d239 inherit pub_methods_class_place_visitor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4048a6e72596ebde088b4d9b05e12ba0" id="r_a4048a6e72596ebde088b4d9b05e12ba0"><td class="memItemLeft" align="right" valign="top">QJsonArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4048a6e72596ebde088b4d9b05e12ba0">exportWeeklyOpenings</a> (const <a class="el" href="classweekly_openings.html">weeklyOpenings</a> &amp;) const</td></tr>
+<tr class="separator:a4048a6e72596ebde088b4d9b05e12ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377e68d748c679ccc22b275504fcdde0" id="r_a377e68d748c679ccc22b275504fcdde0"><td class="memItemLeft" align="right" valign="top">QJsonObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a377e68d748c679ccc22b275504fcdde0">basePlaceToJson</a> (const <a class="el" href="class_place.html">Place</a> &amp;place, const QString &amp;type) const</td></tr>
+<tr class="separator:a377e68d748c679ccc22b275504fcdde0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae68df8a5211c6d408b85353f806aee49" id="r_ae68df8a5211c6d408b85353f806aee49"><td class="memItemLeft" align="right" valign="top">QJsonObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae68df8a5211c6d408b85353f806aee49">result</a></td></tr>
+<tr class="separator:ae68df8a5211c6d408b85353f806aee49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1dd2b42d0ba7b57197ffd07dbe105640" name="a1dd2b42d0ba7b57197ffd07dbe105640"></a>
@@ -186,6 +200,148 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a377e68d748c679ccc22b275504fcdde0" name="a377e68d748c679ccc22b275504fcdde0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a377e68d748c679ccc22b275504fcdde0">&#9670;&#160;</a></span>basePlaceToJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QJsonObject PlaceExportToJsonVisitor::basePlaceToJson </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_place.html">Place</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>place</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0_cgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0_cgraph" alt=""/></div>
+<map name="aclass_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0_cgraph" id="aclass_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,182,177,222"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a4048a6e72596ebde088b4d9b05e12ba0" title=" " alt="" coords="225,26,396,66"/>
+<area shape="poly" title=" " alt="" coords="108,180,157,129,189,101,223,76,231,71,234,76,226,80,192,105,160,133,112,183"/>
+<area shape="rect" href="class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="258,91,362,116"/>
+<area shape="poly" title=" " alt="" coords="123,179,170,151,224,125,243,118,245,123,226,130,172,156,126,184"/>
+<area shape="rect" href="class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="256,140,364,166"/>
+<area shape="poly" title=" " alt="" coords="176,180,241,166,242,171,177,186"/>
+<area shape="rect" href="class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="237,189,384,215"/>
+<area shape="poly" title=" " alt="" coords="177,200,222,200,222,205,177,205"/>
+<area shape="rect" href="class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="253,239,368,264"/>
+<area shape="poly" title=" " alt="" coords="177,219,239,233,237,238,176,224"/>
+<area shape="rect" href="class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="255,288,366,314"/>
+<area shape="poly" title=" " alt="" coords="126,221,172,248,226,274,241,280,240,285,224,279,170,253,123,225"/>
+<area shape="rect" href="class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="251,337,370,363"/>
+<area shape="poly" title=" " alt="" coords="111,221,159,273,191,300,226,324,238,330,235,334,223,328,188,305,156,277,107,225"/>
+<area shape="rect" href="classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="444,5,641,31"/>
+<area shape="poly" title=" " alt="" coords="396,33,428,29,429,35,397,38"/>
+<area shape="rect" href="classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="447,55,638,96"/>
+<area shape="poly" title=" " alt="" coords="397,54,431,59,431,64,396,60"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0_icgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0_icgraph" alt=""/></div>
+<map name="aclass_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0_icgraph" id="aclass_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0_icgraph">
+<area shape="rect" title=" " alt="" coords="225,235,396,275"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#ae96658896bc7ae63c70734ef15f0255d" title=" " alt="" coords="5,5,177,46"/>
+<area shape="poly" title=" " alt="" coords="292,222,272,185,246,142,213,99,175,61,156,49,159,44,178,57,217,95,251,139,277,182,296,220"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#ac48164fc597aeecae42a20b109bd2e16" title=" " alt="" coords="5,71,177,111"/>
+<area shape="poly" title=" " alt="" coords="281,225,234,175,175,127,152,114,155,109,178,122,238,171,285,221"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#ab5196016daf6564a2c4dc30585f4efc4" title=" " alt="" coords="5,136,177,177"/>
+<area shape="poly" title=" " alt="" coords="254,230,176,192,146,180,148,175,178,187,257,225"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#afdab6b5c5b8c2ffd219c3d363bd66a8d" title=" " alt="" coords="5,201,177,242"/>
+<area shape="poly" title=" " alt="" coords="209,242,177,237,178,232,210,237"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a0b5f35e1f208515e3498b0093cc0e092" title=" " alt="" coords="5,267,177,307"/>
+<area shape="poly" title=" " alt="" coords="210,272,178,277,177,272,209,267"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#adc8f389a6b43814e70b1daf2b3db400d" title=" " alt="" coords="5,332,177,373"/>
+<area shape="poly" title=" " alt="" coords="255,285,178,321,148,334,146,329,176,317,253,280"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a67b3000aa8af0733c716157164486b45" title=" " alt="" coords="5,397,177,438"/>
+<area shape="poly" title=" " alt="" coords="284,289,238,338,178,387,155,399,152,394,175,382,234,335,281,286"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#aa53baa6cdeab8f17536c6ea38ad0fb32" title=" " alt="" coords="5,463,177,503"/>
+<area shape="poly" title=" " alt="" coords="296,291,250,371,217,414,178,452,159,464,156,460,175,448,213,410,246,368,291,288"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4048a6e72596ebde088b4d9b05e12ba0" name="a4048a6e72596ebde088b4d9b05e12ba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4048a6e72596ebde088b4d9b05e12ba0">&#9670;&#160;</a></span>exportWeeklyOpenings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QJsonArray PlaceExportToJsonVisitor::exportWeeklyOpenings </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classweekly_openings.html">weeklyOpenings</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>w</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0_cgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0_cgraph" alt=""/></div>
+<map name="aclass_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0_cgraph" id="aclass_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,177,68"/>
+<area shape="rect" href="classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="225,5,422,31"/>
+<area shape="poly" title=" " alt="" coords="177,34,209,30,209,35,178,39"/>
+<area shape="rect" href="classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="228,55,419,96"/>
+<area shape="poly" title=" " alt="" coords="178,55,212,59,211,65,177,60"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0_icgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0_icgraph" alt=""/></div>
+<map name="aclass_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0_icgraph" id="aclass_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0_icgraph">
+<area shape="rect" title=" " alt="" coords="444,235,615,275"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a377e68d748c679ccc22b275504fcdde0" title=" " alt="" coords="225,235,396,275"/>
+<area shape="poly" title=" " alt="" coords="429,258,397,258,397,252,429,252"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#ae96658896bc7ae63c70734ef15f0255d" title=" " alt="" coords="5,5,177,46"/>
+<area shape="poly" title=" " alt="" coords="292,222,272,185,246,142,213,99,175,61,156,49,159,44,178,57,217,95,251,139,277,182,296,220"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#ac48164fc597aeecae42a20b109bd2e16" title=" " alt="" coords="5,71,177,111"/>
+<area shape="poly" title=" " alt="" coords="281,225,234,175,175,127,152,114,155,109,178,122,238,171,285,221"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#ab5196016daf6564a2c4dc30585f4efc4" title=" " alt="" coords="5,136,177,177"/>
+<area shape="poly" title=" " alt="" coords="254,230,176,192,146,180,148,175,178,187,257,225"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#afdab6b5c5b8c2ffd219c3d363bd66a8d" title=" " alt="" coords="5,201,177,242"/>
+<area shape="poly" title=" " alt="" coords="209,242,177,237,178,232,210,237"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a0b5f35e1f208515e3498b0093cc0e092" title=" " alt="" coords="5,267,177,307"/>
+<area shape="poly" title=" " alt="" coords="210,272,178,277,177,272,209,267"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#adc8f389a6b43814e70b1daf2b3db400d" title=" " alt="" coords="5,332,177,373"/>
+<area shape="poly" title=" " alt="" coords="255,285,178,321,148,334,146,329,176,317,253,280"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a67b3000aa8af0733c716157164486b45" title=" " alt="" coords="5,397,177,438"/>
+<area shape="poly" title=" " alt="" coords="284,289,238,338,178,387,155,399,152,394,175,382,234,335,281,286"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#aa53baa6cdeab8f17536c6ea38ad0fb32" title=" " alt="" coords="5,463,177,503"/>
+<area shape="poly" title=" " alt="" coords="296,291,250,371,217,414,178,452,159,464,156,460,175,448,213,410,246,368,291,288"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a71f78070d67225a5a357370cdaed4d37" name="a71f78070d67225a5a357370cdaed4d37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71f78070d67225a5a357370cdaed4d37">&#9670;&#160;</a></span>getResult()</h2>
 
@@ -250,17 +406,37 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_export_to_json_visitor_ae96658896bc7ae63c70734ef15f0255d_cgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_ae96658896bc7ae63c70734ef15f0255d_cgraph" alt=""/></div>
 <map name="aclass_place_export_to_json_visitor_ae96658896bc7ae63c70734ef15f0255d_cgraph" id="aclass_place_export_to_json_visitor_ae96658896bc7ae63c70734ef15f0255d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,96,177,137"/>
-<area shape="rect" href="class_food.html#aef0ab2f24e1084812e3cbe4025a966ea" title=" " alt="" coords="225,5,396,31"/>
-<area shape="poly" title=" " alt="" coords="123,94,170,66,224,40,240,34,241,39,226,45,172,71,126,98"/>
-<area shape="rect" href="class_cafe.html#a9b71486c8fdd08e30e6cdd4d4bf8a8cd" title=" " alt="" coords="236,55,385,80"/>
-<area shape="poly" title=" " alt="" coords="176,95,235,82,236,87,177,100"/>
-<area shape="rect" href="class_food.html#aa5eeb1fecbac1c664c529286261fe6ce" title=" " alt="" coords="240,104,380,130"/>
-<area shape="poly" title=" " alt="" coords="177,114,224,114,224,120,177,120"/>
-<area shape="rect" href="class_cafe.html#ac645be385801c85c3dff3e55f686ce1d" title=" " alt="" coords="250,153,371,179"/>
-<area shape="poly" title=" " alt="" coords="177,133,236,147,235,152,176,139"/>
-<area shape="rect" href="class_food.html#a040929464715c929699fabaa79756e8d" title=" " alt="" coords="236,203,384,228"/>
-<area shape="poly" title=" " alt="" coords="126,135,172,163,226,189,241,195,240,200,224,194,170,168,123,140"/>
+<area shape="rect" title=" " alt="" coords="5,314,177,354"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a377e68d748c679ccc22b275504fcdde0" title=" " alt="" coords="225,182,396,222"/>
+<area shape="poly" title=" " alt="" coords="114,311,162,272,223,232,233,227,235,232,226,236,166,276,117,316"/>
+<area shape="rect" href="class_food.html#aef0ab2f24e1084812e3cbe4025a966ea" title=" " alt="" coords="225,247,396,272"/>
+<area shape="poly" title=" " alt="" coords="143,311,224,281,244,275,245,280,226,286,144,316"/>
+<area shape="rect" href="class_cafe.html#a9b71486c8fdd08e30e6cdd4d4bf8a8cd" title=" " alt="" coords="236,296,385,322"/>
+<area shape="poly" title=" " alt="" coords="176,322,220,317,220,322,177,327"/>
+<area shape="rect" href="class_food.html#aa5eeb1fecbac1c664c529286261fe6ce" title=" " alt="" coords="240,345,380,371"/>
+<area shape="poly" title=" " alt="" coords="177,341,225,346,224,351,176,346"/>
+<area shape="rect" href="class_cafe.html#ac645be385801c85c3dff3e55f686ce1d" title=" " alt="" coords="250,395,371,420"/>
+<area shape="poly" title=" " alt="" coords="146,353,226,381,245,387,244,392,224,386,145,358"/>
+<area shape="rect" href="class_food.html#a040929464715c929699fabaa79756e8d" title=" " alt="" coords="236,444,384,470"/>
+<area shape="poly" title=" " alt="" coords="116,353,165,392,226,430,238,436,236,441,223,435,162,396,113,357"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a4048a6e72596ebde088b4d9b05e12ba0" title=" " alt="" coords="444,26,615,66"/>
+<area shape="poly" title=" " alt="" coords="327,180,376,129,408,101,443,76,450,71,453,76,445,80,411,105,380,133,331,183"/>
+<area shape="rect" href="class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="478,91,582,116"/>
+<area shape="poly" title=" " alt="" coords="342,179,389,151,443,125,462,118,464,123,445,130,392,156,345,184"/>
+<area shape="rect" href="class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="476,140,584,166"/>
+<area shape="poly" title=" " alt="" coords="395,180,460,166,461,171,397,186"/>
+<area shape="rect" href="class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="456,189,603,215"/>
+<area shape="poly" title=" " alt="" coords="396,200,441,200,441,205,396,205"/>
+<area shape="rect" href="class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="472,239,587,264"/>
+<area shape="poly" title=" " alt="" coords="397,219,458,233,457,238,395,224"/>
+<area shape="rect" href="class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="474,288,585,314"/>
+<area shape="poly" title=" " alt="" coords="376,221,397,232,412,243,422,254,431,264,445,275,460,282,458,286,443,279,428,268,418,258,408,247,395,236,373,225"/>
+<area shape="rect" href="class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="470,337,589,363"/>
+<area shape="poly" title=" " alt="" coords="382,221,398,232,415,256,422,280,429,303,446,324,458,332,455,336,442,328,424,305,417,281,411,259,394,236,379,225"/>
+<area shape="rect" href="classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="663,5,861,31"/>
+<area shape="poly" title=" " alt="" coords="616,33,647,29,648,35,616,38"/>
+<area shape="rect" href="classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="666,55,858,96"/>
+<area shape="poly" title=" " alt="" coords="616,54,651,59,650,64,616,60"/>
 </map>
 </div>
 
@@ -295,19 +471,39 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_export_to_json_visitor_ac48164fc597aeecae42a20b109bd2e16_cgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_ac48164fc597aeecae42a20b109bd2e16_cgraph" alt=""/></div>
 <map name="aclass_place_export_to_json_visitor_ac48164fc597aeecae42a20b109bd2e16_cgraph" id="aclass_place_export_to_json_visitor_ac48164fc597aeecae42a20b109bd2e16_cgraph">
-<area shape="rect" title=" " alt="" coords="5,137,177,178"/>
-<area shape="rect" href="class_entertainment.html#a68c95640484a8a3c1e990c982b97348b" title=" " alt="" coords="230,5,408,46"/>
-<area shape="poly" title=" " alt="" coords="113,135,162,95,223,55,234,50,236,55,226,60,165,99,117,139"/>
-<area shape="rect" href="class_disco.html#a7b8c4cf8d70336c314a3391b3a9cfa6d" title=" " alt="" coords="245,70,392,96"/>
-<area shape="poly" title=" " alt="" coords="142,134,224,104,246,98,248,103,226,110,144,139"/>
-<area shape="rect" href="class_entertainment.html#aa5151a609ab6a2748b78ea59a2e002f9" title=" " alt="" coords="233,120,405,145"/>
-<area shape="poly" title=" " alt="" coords="177,146,217,141,217,146,177,151"/>
-<area shape="rect" href="class_disco.html#ab94775d64784429468a72cb802a06a4b" title=" " alt="" coords="243,169,394,194"/>
-<area shape="poly" title=" " alt="" coords="177,164,228,169,227,175,177,169"/>
-<area shape="rect" href="class_entertainment.html#a5c2d0418a2222666548481e451bff344" title=" " alt="" coords="225,219,413,259"/>
-<area shape="poly" title=" " alt="" coords="149,176,226,204,243,211,241,216,224,210,147,181"/>
-<area shape="rect" href="class_disco.html#a7b808ae615ceb94423a1268bbe8c5931" title=" " alt="" coords="240,284,398,309"/>
-<area shape="poly" title=" " alt="" coords="113,176,161,223,192,248,226,269,240,275,238,280,223,273,189,252,158,227,109,180"/>
+<area shape="rect" title=" " alt="" coords="5,354,177,394"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a377e68d748c679ccc22b275504fcdde0" title=" " alt="" coords="233,182,404,222"/>
+<area shape="poly" title=" " alt="" coords="105,352,153,294,187,261,223,233,233,228,235,232,226,238,190,266,157,297,109,355"/>
+<area shape="rect" href="class_entertainment.html#a68c95640484a8a3c1e990c982b97348b" title=" " alt="" coords="230,247,408,288"/>
+<area shape="poly" title=" " alt="" coords="124,351,170,324,224,297,237,291,239,296,226,302,173,329,127,356"/>
+<area shape="rect" href="class_disco.html#a7b8c4cf8d70336c314a3391b3a9cfa6d" title=" " alt="" coords="245,312,392,338"/>
+<area shape="poly" title=" " alt="" coords="176,353,241,339,242,344,177,358"/>
+<area shape="rect" href="class_entertainment.html#aa5151a609ab6a2748b78ea59a2e002f9" title=" " alt="" coords="233,361,405,387"/>
+<area shape="poly" title=" " alt="" coords="177,372,217,372,217,377,177,377"/>
+<area shape="rect" href="class_disco.html#ab94775d64784429468a72cb802a06a4b" title=" " alt="" coords="243,411,394,436"/>
+<area shape="poly" title=" " alt="" coords="177,390,242,404,241,409,176,395"/>
+<area shape="rect" href="class_entertainment.html#a5c2d0418a2222666548481e451bff344" title=" " alt="" coords="225,460,413,501"/>
+<area shape="poly" title=" " alt="" coords="127,393,173,420,226,446,239,452,237,457,224,451,170,424,124,397"/>
+<area shape="rect" href="class_disco.html#a7b808ae615ceb94423a1268bbe8c5931" title=" " alt="" coords="240,525,398,551"/>
+<area shape="poly" title=" " alt="" coords="108,393,156,452,189,484,226,511,238,517,236,522,223,515,186,488,152,456,104,397"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a4048a6e72596ebde088b4d9b05e12ba0" title=" " alt="" coords="461,26,632,66"/>
+<area shape="poly" title=" " alt="" coords="337,180,389,129,423,101,460,76,467,71,470,76,462,80,426,105,393,133,341,184"/>
+<area shape="rect" href="class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="494,91,599,116"/>
+<area shape="poly" title=" " alt="" coords="353,179,403,152,460,125,478,118,480,123,462,130,405,156,356,184"/>
+<area shape="rect" href="class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="492,140,601,166"/>
+<area shape="poly" title=" " alt="" coords="404,181,477,165,478,170,405,186"/>
+<area shape="rect" href="class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="474,189,620,215"/>
+<area shape="poly" title=" " alt="" coords="405,200,458,200,458,205,405,205"/>
+<area shape="rect" href="class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="489,239,604,264"/>
+<area shape="poly" title=" " alt="" coords="405,218,474,233,473,238,404,223"/>
+<area shape="rect" href="class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="491,288,602,314"/>
+<area shape="poly" title=" " alt="" coords="389,221,414,233,429,244,439,255,448,265,462,275,477,281,475,286,460,279,445,269,435,258,425,248,412,238,386,225"/>
+<area shape="rect" href="class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="488,337,606,363"/>
+<area shape="poly" title=" " alt="" coords="396,221,415,234,432,257,439,281,446,303,463,324,475,332,472,336,459,328,441,305,434,282,428,259,411,237,393,225"/>
+<area shape="rect" href="classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="680,5,878,31"/>
+<area shape="poly" title=" " alt="" coords="633,33,664,29,665,35,633,38"/>
+<area shape="rect" href="classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="683,55,875,96"/>
+<area shape="poly" title=" " alt="" coords="633,54,668,59,667,64,633,60"/>
 </map>
 </div>
 
@@ -342,19 +538,39 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_export_to_json_visitor_ab5196016daf6564a2c4dc30585f4efc4_cgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_ab5196016daf6564a2c4dc30585f4efc4_cgraph" alt=""/></div>
 <map name="aclass_place_export_to_json_visitor_ab5196016daf6564a2c4dc30585f4efc4_cgraph" id="aclass_place_export_to_json_visitor_ab5196016daf6564a2c4dc30585f4efc4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,122,177,162"/>
-<area shape="rect" href="class_shopping.html#a0d4f39dc3bff192fd354180b29a4499b" title=" " alt="" coords="225,5,406,31"/>
-<area shape="poly" title=" " alt="" coords="112,120,161,79,223,40,236,34,239,39,226,45,164,83,116,124"/>
-<area shape="rect" href="class_local_market.html#a1dbdf3622d278474a0af35ebb0002611" title=" " alt="" coords="238,55,393,80"/>
-<area shape="poly" title=" " alt="" coords="143,119,224,89,245,83,247,88,226,94,144,124"/>
-<area shape="rect" href="class_shopping.html#a21b7b072b5aea019f3901d332b2d645f" title=" " alt="" coords="225,104,406,130"/>
-<area shape="poly" title=" " alt="" coords="176,130,209,126,209,131,177,135"/>
-<area shape="rect" href="class_local_market.html#a3abf09f20994ff21a5d55404a4747818" title=" " alt="" coords="231,153,400,179"/>
-<area shape="poly" title=" " alt="" coords="177,149,216,153,215,158,176,154"/>
-<area shape="rect" href="class_shopping.html#acd03a7791869732ff9b062c922c73060" title=" " alt="" coords="246,203,385,228"/>
-<area shape="poly" title=" " alt="" coords="146,160,226,189,247,196,246,201,224,194,144,166"/>
-<area shape="rect" href="class_local_market.html#a6c6272dd023d92bf2697b19401e999d1" title=" " alt="" coords="233,252,398,278"/>
-<area shape="poly" title=" " alt="" coords="116,161,165,200,226,238,239,244,236,249,223,243,161,205,113,165"/>
+<area shape="rect" title=" " alt="" coords="5,338,177,378"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a377e68d748c679ccc22b275504fcdde0" title=" " alt="" coords="230,182,401,222"/>
+<area shape="poly" title=" " alt="" coords="108,336,156,284,189,257,223,232,231,227,234,232,226,236,192,261,160,288,112,339"/>
+<area shape="rect" href="class_shopping.html#a0d4f39dc3bff192fd354180b29a4499b" title=" " alt="" coords="225,247,406,272"/>
+<area shape="poly" title=" " alt="" coords="122,335,169,307,224,281,240,275,242,280,226,286,172,312,125,340"/>
+<area shape="rect" href="class_local_market.html#a1dbdf3622d278474a0af35ebb0002611" title=" " alt="" coords="238,296,393,322"/>
+<area shape="poly" title=" " alt="" coords="176,337,238,323,239,328,177,342"/>
+<area shape="rect" href="class_shopping.html#a21b7b072b5aea019f3901d332b2d645f" title=" " alt="" coords="225,345,406,371"/>
+<area shape="poly" title=" " alt="" coords="177,356,209,356,209,361,177,361"/>
+<area shape="rect" href="class_local_market.html#a3abf09f20994ff21a5d55404a4747818" title=" " alt="" coords="231,395,400,420"/>
+<area shape="poly" title=" " alt="" coords="177,374,239,388,238,393,176,380"/>
+<area shape="rect" href="class_shopping.html#acd03a7791869732ff9b062c922c73060" title=" " alt="" coords="246,444,385,470"/>
+<area shape="poly" title=" " alt="" coords="125,377,172,404,226,430,242,436,240,441,224,435,169,409,122,381"/>
+<area shape="rect" href="class_local_market.html#a6c6272dd023d92bf2697b19401e999d1" title=" " alt="" coords="233,493,398,519"/>
+<area shape="poly" title=" " alt="" coords="111,377,159,429,191,456,226,480,236,485,234,490,223,484,188,461,155,433,107,381"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a4048a6e72596ebde088b4d9b05e12ba0" title=" " alt="" coords="454,26,625,66"/>
+<area shape="poly" title=" " alt="" coords="333,180,384,129,417,101,453,76,460,71,463,76,455,80,420,105,387,133,337,183"/>
+<area shape="rect" href="class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="488,91,592,116"/>
+<area shape="poly" title=" " alt="" coords="349,179,397,152,453,125,471,118,473,123,455,130,400,156,351,184"/>
+<area shape="rect" href="class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="486,140,594,166"/>
+<area shape="poly" title=" " alt="" coords="401,181,470,165,471,171,402,186"/>
+<area shape="rect" href="class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="466,189,613,215"/>
+<area shape="poly" title=" " alt="" coords="401,200,451,200,451,205,401,205"/>
+<area shape="rect" href="class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="482,239,597,264"/>
+<area shape="poly" title=" " alt="" coords="402,218,467,233,466,238,401,224"/>
+<area shape="rect" href="class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="484,288,595,314"/>
+<area shape="poly" title=" " alt="" coords="385,221,407,232,422,243,432,254,441,264,455,275,470,282,468,286,453,279,438,268,428,258,419,247,405,236,383,225"/>
+<area shape="rect" href="class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="480,337,599,363"/>
+<area shape="poly" title=" " alt="" coords="391,221,408,232,426,256,432,280,439,303,456,324,468,332,465,336,452,328,434,305,427,281,421,258,404,236,388,225"/>
+<area shape="rect" href="classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="673,5,871,31"/>
+<area shape="poly" title=" " alt="" coords="626,33,657,29,658,35,626,38"/>
+<area shape="rect" href="classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="676,55,868,96"/>
+<area shape="poly" title=" " alt="" coords="626,54,661,59,660,64,626,60"/>
 </map>
 </div>
 
@@ -389,19 +605,39 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_export_to_json_visitor_afdab6b5c5b8c2ffd219c3d363bd66a8d_cgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_afdab6b5c5b8c2ffd219c3d363bd66a8d_cgraph" alt=""/></div>
 <map name="aclass_place_export_to_json_visitor_afdab6b5c5b8c2ffd219c3d363bd66a8d_cgraph" id="aclass_place_export_to_json_visitor_afdab6b5c5b8c2ffd219c3d363bd66a8d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,122,177,162"/>
-<area shape="rect" href="class_shopping.html#a0d4f39dc3bff192fd354180b29a4499b" title=" " alt="" coords="225,5,406,31"/>
-<area shape="poly" title=" " alt="" coords="112,120,161,79,223,40,236,34,239,39,226,45,164,83,116,124"/>
-<area shape="rect" href="class_mall.html#aa2a5f3860d32f2d7cbc6c1f5225b9677" title=" " alt="" coords="247,55,384,80"/>
-<area shape="poly" title=" " alt="" coords="143,119,224,89,245,83,247,88,226,94,144,124"/>
-<area shape="rect" href="class_shopping.html#a21b7b072b5aea019f3901d332b2d645f" title=" " alt="" coords="225,104,406,130"/>
-<area shape="poly" title=" " alt="" coords="176,130,209,126,209,131,177,135"/>
-<area shape="rect" href="class_mall.html#a31cd34e8ad8a22678e39d4d6d2b64c4e" title=" " alt="" coords="256,153,375,179"/>
-<area shape="poly" title=" " alt="" coords="177,149,240,156,240,161,176,154"/>
-<area shape="rect" href="class_mall.html#ac2137833b0bac11922b00ab4642dca26" title=" " alt="" coords="243,203,388,228"/>
-<area shape="poly" title=" " alt="" coords="146,160,226,189,247,196,246,201,224,194,144,166"/>
-<area shape="rect" href="class_shopping.html#acd03a7791869732ff9b062c922c73060" title=" " alt="" coords="246,252,385,278"/>
-<area shape="poly" title=" " alt="" coords="116,161,165,200,226,238,239,244,236,249,223,243,161,205,113,165"/>
+<area shape="rect" title=" " alt="" coords="5,338,177,378"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a377e68d748c679ccc22b275504fcdde0" title=" " alt="" coords="230,182,401,222"/>
+<area shape="poly" title=" " alt="" coords="108,336,156,284,189,257,223,232,231,227,234,232,226,236,192,261,160,288,112,339"/>
+<area shape="rect" href="class_shopping.html#a0d4f39dc3bff192fd354180b29a4499b" title=" " alt="" coords="225,247,406,272"/>
+<area shape="poly" title=" " alt="" coords="122,335,169,307,224,281,240,275,242,280,226,286,172,312,125,340"/>
+<area shape="rect" href="class_mall.html#aa2a5f3860d32f2d7cbc6c1f5225b9677" title=" " alt="" coords="247,296,384,322"/>
+<area shape="poly" title=" " alt="" coords="176,337,238,323,239,328,177,342"/>
+<area shape="rect" href="class_shopping.html#a21b7b072b5aea019f3901d332b2d645f" title=" " alt="" coords="225,345,406,371"/>
+<area shape="poly" title=" " alt="" coords="177,356,209,356,209,361,177,361"/>
+<area shape="rect" href="class_mall.html#a31cd34e8ad8a22678e39d4d6d2b64c4e" title=" " alt="" coords="256,395,375,420"/>
+<area shape="poly" title=" " alt="" coords="177,374,241,389,240,394,176,380"/>
+<area shape="rect" href="class_mall.html#ac2137833b0bac11922b00ab4642dca26" title=" " alt="" coords="243,444,388,470"/>
+<area shape="poly" title=" " alt="" coords="125,377,172,404,226,430,242,436,240,441,224,435,169,409,122,381"/>
+<area shape="rect" href="class_shopping.html#acd03a7791869732ff9b062c922c73060" title=" " alt="" coords="246,493,385,519"/>
+<area shape="poly" title=" " alt="" coords="111,377,159,429,191,456,226,480,236,485,234,490,223,484,188,461,155,433,107,381"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a4048a6e72596ebde088b4d9b05e12ba0" title=" " alt="" coords="454,26,625,66"/>
+<area shape="poly" title=" " alt="" coords="333,180,384,129,417,101,453,76,460,71,463,76,455,80,420,105,387,133,337,183"/>
+<area shape="rect" href="class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="488,91,592,116"/>
+<area shape="poly" title=" " alt="" coords="349,179,397,152,453,125,471,118,473,123,455,130,400,156,351,184"/>
+<area shape="rect" href="class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="486,140,594,166"/>
+<area shape="poly" title=" " alt="" coords="401,181,470,165,471,171,402,186"/>
+<area shape="rect" href="class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="466,189,613,215"/>
+<area shape="poly" title=" " alt="" coords="401,200,451,200,451,205,401,205"/>
+<area shape="rect" href="class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="482,239,597,264"/>
+<area shape="poly" title=" " alt="" coords="402,218,467,233,466,238,401,224"/>
+<area shape="rect" href="class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="484,288,595,314"/>
+<area shape="poly" title=" " alt="" coords="385,221,407,232,422,243,432,254,441,264,455,275,470,282,468,286,453,279,438,268,428,258,419,247,405,236,383,225"/>
+<area shape="rect" href="class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="480,337,599,363"/>
+<area shape="poly" title=" " alt="" coords="391,221,408,232,426,256,432,280,439,303,456,324,468,332,465,336,452,328,434,305,427,281,421,258,404,236,388,225"/>
+<area shape="rect" href="classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="673,5,871,31"/>
+<area shape="poly" title=" " alt="" coords="626,33,657,29,658,35,626,38"/>
+<area shape="rect" href="classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="676,55,868,96"/>
+<area shape="poly" title=" " alt="" coords="626,54,661,59,660,64,626,60"/>
 </map>
 </div>
 
@@ -436,19 +672,39 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_export_to_json_visitor_a0b5f35e1f208515e3498b0093cc0e092_cgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_a0b5f35e1f208515e3498b0093cc0e092_cgraph" alt=""/></div>
 <map name="aclass_place_export_to_json_visitor_a0b5f35e1f208515e3498b0093cc0e092_cgraph" id="aclass_place_export_to_json_visitor_a0b5f35e1f208515e3498b0093cc0e092_cgraph">
-<area shape="rect" title=" " alt="" coords="5,137,177,178"/>
-<area shape="rect" href="class_monument.html#ac332cfa44cb47a8510210d4e3babae68" title=" " alt="" coords="225,5,410,46"/>
-<area shape="poly" title=" " alt="" coords="114,135,162,95,223,55,234,50,236,55,226,60,165,99,117,139"/>
-<area shape="rect" href="class_culture.html#a0dc21918e7f30cf2f9d77799ac06a266" title=" " alt="" coords="233,70,403,96"/>
-<area shape="poly" title=" " alt="" coords="142,134,224,104,246,98,247,103,226,110,144,139"/>
-<area shape="rect" href="class_culture.html#ad1ae165297c171c7c39fc8359b9951d8" title=" " alt="" coords="225,120,411,145"/>
-<area shape="poly" title=" " alt="" coords="177,145,209,142,209,147,177,151"/>
-<area shape="rect" href="class_culture.html#a8254e7d5a2fc57709f20efc0c000e176" title=" " alt="" coords="239,169,397,194"/>
-<area shape="poly" title=" " alt="" coords="177,164,223,169,223,174,177,169"/>
-<area shape="rect" href="class_monument.html#af15c0990ca89376df3bc8f295c7e048f" title=" " alt="" coords="227,218,408,244"/>
-<area shape="poly" title=" " alt="" coords="146,176,225,204,248,211,246,216,224,210,144,181"/>
-<area shape="rect" href="class_monument.html#a8320f3de77478092e925110692d77069" title=" " alt="" coords="245,268,390,293"/>
-<area shape="poly" title=" " alt="" coords="116,176,164,216,226,254,239,259,237,264,223,259,161,220,113,181"/>
+<area shape="rect" title=" " alt="" coords="5,354,177,394"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a377e68d748c679ccc22b275504fcdde0" title=" " alt="" coords="232,182,404,222"/>
+<area shape="poly" title=" " alt="" coords="105,352,154,294,187,262,223,233,233,227,236,232,226,238,190,266,157,297,109,355"/>
+<area shape="rect" href="class_monument.html#ac332cfa44cb47a8510210d4e3babae68" title=" " alt="" coords="225,247,410,288"/>
+<area shape="poly" title=" " alt="" coords="124,351,170,324,224,297,236,292,239,296,226,302,173,329,127,356"/>
+<area shape="rect" href="class_culture.html#a0dc21918e7f30cf2f9d77799ac06a266" title=" " alt="" coords="233,312,403,338"/>
+<area shape="poly" title=" " alt="" coords="177,353,240,339,241,344,178,358"/>
+<area shape="rect" href="class_culture.html#ad1ae165297c171c7c39fc8359b9951d8" title=" " alt="" coords="225,361,411,387"/>
+<area shape="poly" title=" " alt="" coords="177,372,209,372,209,377,177,377"/>
+<area shape="rect" href="class_culture.html#a8254e7d5a2fc57709f20efc0c000e176" title=" " alt="" coords="239,411,397,436"/>
+<area shape="poly" title=" " alt="" coords="178,390,241,404,240,409,177,395"/>
+<area shape="rect" href="class_monument.html#af15c0990ca89376df3bc8f295c7e048f" title=" " alt="" coords="227,460,408,486"/>
+<area shape="poly" title=" " alt="" coords="125,393,172,420,226,446,242,452,241,457,224,451,169,425,122,397"/>
+<area shape="rect" href="class_monument.html#a8320f3de77478092e925110692d77069" title=" " alt="" coords="245,509,390,535"/>
+<area shape="poly" title=" " alt="" coords="111,393,159,445,191,473,226,496,236,501,234,506,223,500,188,477,155,449,107,397"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a4048a6e72596ebde088b4d9b05e12ba0" title=" " alt="" coords="459,26,630,66"/>
+<area shape="poly" title=" " alt="" coords="336,180,388,129,421,101,458,76,465,71,468,76,460,80,425,105,391,133,340,184"/>
+<area shape="rect" href="class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="492,91,597,116"/>
+<area shape="poly" title=" " alt="" coords="352,179,401,152,458,125,476,118,478,123,460,130,404,156,355,184"/>
+<area shape="rect" href="class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="490,140,599,166"/>
+<area shape="poly" title=" " alt="" coords="403,181,475,165,476,170,404,186"/>
+<area shape="rect" href="class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="472,189,618,215"/>
+<area shape="poly" title=" " alt="" coords="404,200,456,200,456,205,404,205"/>
+<area shape="rect" href="class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="487,239,602,264"/>
+<area shape="poly" title=" " alt="" coords="404,218,473,233,471,238,403,223"/>
+<area shape="rect" href="class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="489,288,600,314"/>
+<area shape="poly" title=" " alt="" coords="387,221,412,233,427,244,437,255,446,265,460,275,475,281,473,286,458,279,443,269,433,258,423,248,410,238,385,225"/>
+<area shape="rect" href="class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="486,337,604,363"/>
+<area shape="poly" title=" " alt="" coords="394,221,413,234,430,257,437,281,444,303,461,324,473,332,470,336,457,328,439,305,432,282,426,259,409,237,391,225"/>
+<area shape="rect" href="classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="678,5,876,31"/>
+<area shape="poly" title=" " alt="" coords="631,33,662,29,663,35,631,38"/>
+<area shape="rect" href="classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="681,55,873,96"/>
+<area shape="poly" title=" " alt="" coords="631,54,666,59,665,64,631,60"/>
 </map>
 </div>
 
@@ -483,15 +739,35 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_export_to_json_visitor_adc8f389a6b43814e70b1daf2b3db400d_cgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_adc8f389a6b43814e70b1daf2b3db400d_cgraph" alt=""/></div>
 <map name="aclass_place_export_to_json_visitor_adc8f389a6b43814e70b1daf2b3db400d_cgraph" id="aclass_place_export_to_json_visitor_adc8f389a6b43814e70b1daf2b3db400d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,72,177,113"/>
-<area shape="rect" href="class_culture.html#a0dc21918e7f30cf2f9d77799ac06a266" title=" " alt="" coords="250,5,420,31"/>
-<area shape="poly" title=" " alt="" coords="140,70,224,40,250,33,251,38,225,45,142,75"/>
-<area shape="rect" href="class_culture.html#ad1ae165297c171c7c39fc8359b9951d8" title=" " alt="" coords="242,55,428,80"/>
-<area shape="poly" title=" " alt="" coords="177,81,226,76,226,81,177,87"/>
-<area shape="rect" href="class_museum.html#a86b4264e66df17e1c8d2209af76bdfb6" title=" " alt="" coords="225,104,445,130"/>
-<area shape="poly" title=" " alt="" coords="177,99,209,102,209,107,177,104"/>
-<area shape="rect" href="class_culture.html#a8254e7d5a2fc57709f20efc0c000e176" title=" " alt="" coords="256,153,414,179"/>
-<area shape="poly" title=" " alt="" coords="144,111,225,140,252,147,250,152,224,145,142,116"/>
+<area shape="rect" title=" " alt="" coords="5,288,177,329"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a377e68d748c679ccc22b275504fcdde0" title=" " alt="" coords="249,182,420,222"/>
+<area shape="poly" title=" " alt="" coords="123,286,170,258,224,232,239,226,241,231,226,237,172,263,126,290"/>
+<area shape="rect" href="class_culture.html#a0dc21918e7f30cf2f9d77799ac06a266" title=" " alt="" coords="250,247,420,272"/>
+<area shape="poly" title=" " alt="" coords="176,289,252,273,253,279,178,294"/>
+<area shape="rect" href="class_culture.html#ad1ae165297c171c7c39fc8359b9951d8" title=" " alt="" coords="242,296,428,322"/>
+<area shape="poly" title=" " alt="" coords="177,306,226,306,226,312,177,312"/>
+<area shape="rect" href="class_museum.html#a86b4264e66df17e1c8d2209af76bdfb6" title=" " alt="" coords="225,345,445,371"/>
+<area shape="poly" title=" " alt="" coords="178,324,253,339,252,344,176,329"/>
+<area shape="rect" href="class_culture.html#a8254e7d5a2fc57709f20efc0c000e176" title=" " alt="" coords="256,395,414,420"/>
+<area shape="poly" title=" " alt="" coords="124,327,171,355,226,381,245,388,243,393,224,386,169,360,122,332"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a4048a6e72596ebde088b4d9b05e12ba0" title=" " alt="" coords="493,26,664,66"/>
+<area shape="poly" title=" " alt="" coords="356,179,415,129,492,76,501,71,503,76,494,80,418,133,360,183"/>
+<area shape="rect" href="class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="526,91,631,116"/>
+<area shape="poly" title=" " alt="" coords="374,179,429,152,492,125,511,119,512,124,494,130,432,157,377,184"/>
+<area shape="rect" href="class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="524,140,633,166"/>
+<area shape="poly" title=" " alt="" coords="420,182,509,164,510,169,421,187"/>
+<area shape="rect" href="class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="506,189,652,215"/>
+<area shape="poly" title=" " alt="" coords="421,200,490,200,490,205,421,205"/>
+<area shape="rect" href="class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="521,239,636,264"/>
+<area shape="poly" title=" " alt="" coords="421,217,506,234,505,239,420,222"/>
+<area shape="rect" href="class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="523,288,634,314"/>
+<area shape="poly" title=" " alt="" coords="422,221,446,232,461,243,471,254,480,264,494,275,509,282,507,286,492,279,477,268,467,257,458,247,444,236,420,225"/>
+<area shape="rect" href="class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="520,337,638,363"/>
+<area shape="poly" title=" " alt="" coords="422,217,447,232,465,256,472,280,478,302,495,324,507,332,504,336,491,328,473,305,466,281,460,258,443,236,420,222"/>
+<area shape="rect" href="classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="712,5,910,31"/>
+<area shape="poly" title=" " alt="" coords="665,33,696,29,697,35,665,38"/>
+<area shape="rect" href="classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="715,55,907,96"/>
+<area shape="poly" title=" " alt="" coords="665,54,700,59,699,64,665,60"/>
 </map>
 </div>
 
@@ -526,19 +802,39 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_export_to_json_visitor_a67b3000aa8af0733c716157164486b45_cgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_a67b3000aa8af0733c716157164486b45_cgraph" alt=""/></div>
 <map name="aclass_place_export_to_json_visitor_a67b3000aa8af0733c716157164486b45_cgraph" id="aclass_place_export_to_json_visitor_a67b3000aa8af0733c716157164486b45_cgraph">
-<area shape="rect" title=" " alt="" coords="5,142,177,182"/>
-<area shape="rect" href="class_panoramic_points.html#a0e87ce08879805fbd3bac40be72fcfa4" title=" " alt="" coords="235,5,425,31"/>
-<area shape="poly" title=" " alt="" coords="107,140,156,90,188,64,223,41,239,34,241,39,226,46,191,68,160,94,111,143"/>
-<area shape="rect" href="class_entertainment.html#a68c95640484a8a3c1e990c982b97348b" title=" " alt="" coords="241,55,419,96"/>
-<area shape="poly" title=" " alt="" coords="139,139,224,105,242,99,244,104,226,110,141,144"/>
-<area shape="rect" href="class_entertainment.html#aa5151a609ab6a2748b78ea59a2e002f9" title=" " alt="" coords="244,120,416,146"/>
-<area shape="poly" title=" " alt="" coords="177,149,228,143,229,148,177,154"/>
-<area shape="rect" href="class_entertainment.html#a5c2d0418a2222666548481e451bff344" title=" " alt="" coords="236,170,424,210"/>
-<area shape="poly" title=" " alt="" coords="177,170,221,175,220,180,177,175"/>
-<area shape="rect" href="class_panoramic_points.html#adbc46b4e7ae6a12544db28bf1163dfad" title=" " alt="" coords="225,235,435,260"/>
-<area shape="poly" title=" " alt="" coords="134,181,226,220,251,228,250,233,224,225,132,186"/>
-<area shape="rect" href="class_panoramic_points.html#a95a59c6d6d727a85bc69048e2728a9f8" title=" " alt="" coords="238,284,422,310"/>
-<area shape="poly" title=" " alt="" coords="113,181,161,227,192,251,226,270,238,276,236,281,223,275,189,255,158,231,109,185"/>
+<area shape="rect" title=" " alt="" coords="5,354,177,394"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a377e68d748c679ccc22b275504fcdde0" title=" " alt="" coords="244,182,416,222"/>
+<area shape="poly" title=" " alt="" coords="104,352,153,293,186,260,223,232,231,227,234,232,226,236,189,264,156,296,109,355"/>
+<area shape="rect" href="class_panoramic_points.html#a0e87ce08879805fbd3bac40be72fcfa4" title=" " alt="" coords="235,247,425,272"/>
+<area shape="poly" title=" " alt="" coords="116,351,164,316,224,282,243,275,245,280,226,287,167,321,119,356"/>
+<area shape="rect" href="class_entertainment.html#a68c95640484a8a3c1e990c982b97348b" title=" " alt="" coords="241,296,419,337"/>
+<area shape="poly" title=" " alt="" coords="176,351,227,339,228,344,178,356"/>
+<area shape="rect" href="class_entertainment.html#aa5151a609ab6a2748b78ea59a2e002f9" title=" " alt="" coords="244,361,416,387"/>
+<area shape="poly" title=" " alt="" coords="177,372,228,372,228,377,177,377"/>
+<area shape="rect" href="class_entertainment.html#a5c2d0418a2222666548481e451bff344" title=" " alt="" coords="236,411,424,452"/>
+<area shape="poly" title=" " alt="" coords="178,392,228,404,227,410,176,397"/>
+<area shape="rect" href="class_panoramic_points.html#adbc46b4e7ae6a12544db28bf1163dfad" title=" " alt="" coords="225,476,435,502"/>
+<area shape="poly" title=" " alt="" coords="119,393,167,428,226,461,245,468,243,473,224,466,164,432,116,397"/>
+<area shape="rect" href="class_panoramic_points.html#a95a59c6d6d727a85bc69048e2728a9f8" title=" " alt="" coords="238,525,422,551"/>
+<area shape="poly" title=" " alt="" coords="108,393,155,453,189,485,226,512,236,517,233,522,223,516,185,489,152,457,104,397"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a4048a6e72596ebde088b4d9b05e12ba0" title=" " alt="" coords="483,26,654,66"/>
+<area shape="poly" title=" " alt="" coords="350,179,407,129,443,101,482,76,491,71,493,76,484,80,446,105,410,133,354,183"/>
+<area shape="rect" href="class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="516,91,621,116"/>
+<area shape="poly" title=" " alt="" coords="368,179,421,152,482,125,501,119,502,124,484,130,423,156,370,184"/>
+<area shape="rect" href="class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="514,140,623,166"/>
+<area shape="poly" title=" " alt="" coords="415,182,499,164,500,170,416,187"/>
+<area shape="rect" href="class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="496,189,642,215"/>
+<area shape="poly" title=" " alt="" coords="416,200,480,200,480,205,416,205"/>
+<area shape="rect" href="class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="511,239,626,264"/>
+<area shape="poly" title=" " alt="" coords="416,217,496,234,495,239,415,222"/>
+<area shape="rect" href="class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="513,288,624,314"/>
+<area shape="poly" title=" " alt="" coords="413,221,436,232,451,243,461,254,470,264,484,275,499,282,497,286,482,279,467,268,457,257,448,247,434,236,410,225"/>
+<area shape="rect" href="class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="510,337,628,363"/>
+<area shape="poly" title=" " alt="" coords="417,220,437,232,455,256,461,280,468,302,485,324,497,332,494,336,481,328,463,305,456,281,450,258,433,236,414,224"/>
+<area shape="rect" href="classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="702,5,900,31"/>
+<area shape="poly" title=" " alt="" coords="655,33,686,29,687,35,655,38"/>
+<area shape="rect" href="classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="705,55,897,96"/>
+<area shape="poly" title=" " alt="" coords="655,54,690,59,689,64,655,60"/>
 </map>
 </div>
 
@@ -600,21 +896,64 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_export_to_json_visitor_aa53baa6cdeab8f17536c6ea38ad0fb32_cgraph.png" border="0" usemap="#aclass_place_export_to_json_visitor_aa53baa6cdeab8f17536c6ea38ad0fb32_cgraph" alt=""/></div>
 <map name="aclass_place_export_to_json_visitor_aa53baa6cdeab8f17536c6ea38ad0fb32_cgraph" id="aclass_place_export_to_json_visitor_aa53baa6cdeab8f17536c6ea38ad0fb32_cgraph">
-<area shape="rect" title=" " alt="" coords="5,122,177,162"/>
-<area shape="rect" href="class_food.html#aef0ab2f24e1084812e3cbe4025a966ea" title=" " alt="" coords="231,5,402,31"/>
-<area shape="poly" title=" " alt="" coords="112,119,161,79,223,40,236,34,239,39,226,45,164,83,116,124"/>
-<area shape="rect" href="class_restaurant.html#a81c08afa1468bfdd990d3ad0ac1da630" title=" " alt="" coords="225,55,408,80"/>
-<area shape="poly" title=" " alt="" coords="142,119,224,89,246,82,247,87,226,94,144,124"/>
-<area shape="rect" href="class_restaurant.html#a84652ef714cbb6759f1b8124590a54c8" title=" " alt="" coords="226,104,408,130"/>
-<area shape="poly" title=" " alt="" coords="176,130,211,126,211,131,177,135"/>
-<area shape="rect" href="class_restaurant.html#ab56010f914f4e5e2b59472efe185dd22" title=" " alt="" coords="225,153,409,179"/>
-<area shape="poly" title=" " alt="" coords="177,149,209,152,209,157,176,154"/>
-<area shape="rect" href="class_food.html#aa5eeb1fecbac1c664c529286261fe6ce" title=" " alt="" coords="247,203,387,228"/>
-<area shape="poly" title=" " alt="" coords="146,161,225,189,247,196,246,201,224,194,144,166"/>
-<area shape="rect" href="class_food.html#a040929464715c929699fabaa79756e8d" title=" " alt="" coords="243,252,391,278"/>
-<area shape="poly" title=" " alt="" coords="116,161,165,200,226,238,239,244,236,249,223,243,161,205,113,165"/>
+<area shape="rect" title=" " alt="" coords="5,338,177,378"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a377e68d748c679ccc22b275504fcdde0" title=" " alt="" coords="231,182,402,222"/>
+<area shape="poly" title=" " alt="" coords="108,336,156,284,188,256,223,232,232,227,234,232,226,236,192,261,160,288,111,339"/>
+<area shape="rect" href="class_food.html#aef0ab2f24e1084812e3cbe4025a966ea" title=" " alt="" coords="231,247,402,272"/>
+<area shape="poly" title=" " alt="" coords="122,335,169,307,224,281,240,275,242,280,226,286,172,312,125,340"/>
+<area shape="rect" href="class_restaurant.html#a81c08afa1468bfdd990d3ad0ac1da630" title=" " alt="" coords="225,296,408,322"/>
+<area shape="poly" title=" " alt="" coords="176,337,240,323,241,328,177,342"/>
+<area shape="rect" href="class_restaurant.html#a84652ef714cbb6759f1b8124590a54c8" title=" " alt="" coords="226,345,408,371"/>
+<area shape="poly" title=" " alt="" coords="177,356,210,356,210,361,177,361"/>
+<area shape="rect" href="class_restaurant.html#ab56010f914f4e5e2b59472efe185dd22" title=" " alt="" coords="225,395,409,420"/>
+<area shape="poly" title=" " alt="" coords="177,374,241,388,240,393,176,379"/>
+<area shape="rect" href="class_food.html#aa5eeb1fecbac1c664c529286261fe6ce" title=" " alt="" coords="247,444,387,470"/>
+<area shape="poly" title=" " alt="" coords="125,377,172,404,226,430,242,436,240,441,224,435,169,409,122,381"/>
+<area shape="rect" href="class_food.html#a040929464715c929699fabaa79756e8d" title=" " alt="" coords="243,493,391,519"/>
+<area shape="poly" title=" " alt="" coords="111,377,159,429,191,457,226,480,236,485,234,490,223,484,188,461,155,433,107,381"/>
+<area shape="rect" href="class_place_export_to_json_visitor.html#a4048a6e72596ebde088b4d9b05e12ba0" title=" " alt="" coords="457,26,628,66"/>
+<area shape="poly" title=" " alt="" coords="335,180,386,129,420,101,456,76,463,71,466,76,458,80,423,105,390,133,338,183"/>
+<area shape="rect" href="class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="490,91,595,116"/>
+<area shape="poly" title=" " alt="" coords="351,179,400,152,456,125,474,118,476,123,458,130,402,156,353,184"/>
+<area shape="rect" href="class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="488,140,597,166"/>
+<area shape="poly" title=" " alt="" coords="402,181,472,165,474,171,403,186"/>
+<area shape="rect" href="class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="470,189,616,215"/>
+<area shape="poly" title=" " alt="" coords="403,200,454,200,454,205,403,205"/>
+<area shape="rect" href="class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="485,239,600,264"/>
+<area shape="poly" title=" " alt="" coords="403,218,471,233,470,238,402,223"/>
+<area shape="rect" href="class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="487,288,598,314"/>
+<area shape="poly" title=" " alt="" coords="388,221,410,232,425,243,435,254,444,264,458,275,473,282,471,286,456,279,441,268,431,258,422,247,408,236,386,226"/>
+<area shape="rect" href="class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="484,337,602,363"/>
+<area shape="poly" title=" " alt="" coords="394,221,411,232,429,256,435,280,442,303,459,324,471,332,468,336,455,328,437,305,430,281,424,258,407,236,391,225"/>
+<area shape="rect" href="classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="676,5,874,31"/>
+<area shape="poly" title=" " alt="" coords="629,33,660,29,661,35,629,38"/>
+<area shape="rect" href="classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="679,55,871,96"/>
+<area shape="poly" title=" " alt="" coords="629,54,664,59,663,64,629,60"/>
 </map>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae68df8a5211c6d408b85353f806aee49" name="ae68df8a5211c6d408b85353f806aee49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae68df8a5211c6d408b85353f806aee49">&#9670;&#160;</a></span>result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QJsonObject PlaceExportToJsonVisitor::result</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

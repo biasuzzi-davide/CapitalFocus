@@ -21,7 +21,7 @@ Collaboration diagram for Main\+Window\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=208pt]{class_main_window__coll__graph}
+\includegraphics[width=350pt]{class_main_window__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -37,7 +37,7 @@ QString \mbox{\hyperlink{class_main_window_a1f9c4da42785847a6160bb7a7eacf3d9}{ge
 \item 
 QString \mbox{\hyperlink{class_main_window_a100bb83ff514185d298f6817f680b7e8}{get\+Selected\+City}} () const
 \item 
-void \mbox{\hyperlink{class_main_window_adc1ed341279a8fb00175c7f62e0ca60a}{set\+Controller}} (\mbox{\hyperlink{class_place_controller}{Place\+Controller}} \texorpdfstring{$\ast$}{*}controller)
+void \mbox{\hyperlink{class_main_window_adc1ed341279a8fb00175c7f62e0ca60a}{set\+Controller}} (\mbox{\hyperlink{class_place_controller}{Place\+Controller}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_main_window_a172b93a11cdbac477b1bbdba1995f8e7}{controller}})
 \item 
 void \mbox{\hyperlink{class_main_window_a0de59dff2d11bf6f7df043879173c1a6}{clear\+Search\+Fields}} ()
 \item 
@@ -79,6 +79,19 @@ void \mbox{\hyperlink{class_main_window_a591070a7d3d972e72708ebbd816179e2}{show\
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{class_main_window_a05fb9d72c044aa3bb7d187b994704e2f}{close\+Event}} (QClose\+Event \texorpdfstring{$\ast$}{*}event) override
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_main_window_aa1d1d6305789456b1cb880167f928a80}{is\+Dark\+Mode\+Enabled}} = false
+\item 
+QMap$<$ QString, QWidget \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_main_window_a62ed4b0e269d4f98c78837c151fd7903}{widget\+Map}}
+\item 
+QStacked\+Widget \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_aa86720a51d3246a6dc316d51488dcb15}{stacked\+Widget}}
+\item 
+\mbox{\hyperlink{class_ui_1_1_main_window}{Ui\+::\+Main\+Window}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}
+\item 
+\mbox{\hyperlink{class_place_controller}{Place\+Controller}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_main_window_a172b93a11cdbac477b1bbdba1995f8e7}{controller}}
 \end{DoxyCompactItemize}
 
 
@@ -307,6 +320,39 @@ void Main\+Window\+::update\+Debug\+Action\+Text (\begin{DoxyParamCaption}\item[
 \doxysubsubsection{\texorpdfstring{updateResults()}{updateResults()}}
 {\footnotesize\ttfamily \label{class_main_window_a0bbd92af40c21f9f29c449da3059e36f} 
 void Main\+Window\+::update\+Results (\begin{DoxyParamCaption}\item[{const std\+::map$<$ QString, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ $>$ \&}]{grouped\+Results}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_main_window_a172b93a11cdbac477b1bbdba1995f8e7}\index{MainWindow@{MainWindow}!controller@{controller}}
+\index{controller@{controller}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily \label{class_main_window_a172b93a11cdbac477b1bbdba1995f8e7} 
+\mbox{\hyperlink{class_place_controller}{Place\+Controller}}\texorpdfstring{$\ast$}{*} Main\+Window\+::controller\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_window_aa1d1d6305789456b1cb880167f928a80}\index{MainWindow@{MainWindow}!isDarkModeEnabled@{isDarkModeEnabled}}
+\index{isDarkModeEnabled@{isDarkModeEnabled}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{isDarkModeEnabled}{isDarkModeEnabled}}
+{\footnotesize\ttfamily \label{class_main_window_aa1d1d6305789456b1cb880167f928a80} 
+bool Main\+Window\+::is\+Dark\+Mode\+Enabled = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_window_aa86720a51d3246a6dc316d51488dcb15}\index{MainWindow@{MainWindow}!stackedWidget@{stackedWidget}}
+\index{stackedWidget@{stackedWidget}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{stackedWidget}{stackedWidget}}
+{\footnotesize\ttfamily \label{class_main_window_aa86720a51d3246a6dc316d51488dcb15} 
+QStacked\+Widget\texorpdfstring{$\ast$}{*} Main\+Window\+::stacked\+Widget\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}\index{MainWindow@{MainWindow}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily \label{class_main_window_a35466a70ed47252a0191168126a352a5} 
+\mbox{\hyperlink{class_ui_1_1_main_window}{Ui\+::\+Main\+Window}}\texorpdfstring{$\ast$}{*} Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_main_window_a62ed4b0e269d4f98c78837c151fd7903}\index{MainWindow@{MainWindow}!widgetMap@{widgetMap}}
+\index{widgetMap@{widgetMap}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{widgetMap}{widgetMap}}
+{\footnotesize\ttfamily \label{class_main_window_a62ed4b0e269d4f98c78837c151fd7903} 
+QMap$<$QString, QWidget\texorpdfstring{$\ast$}{*}$>$ Main\+Window\+::widget\+Map\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

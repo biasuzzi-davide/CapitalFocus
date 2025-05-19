@@ -104,6 +104,7 @@ $(function(){initNavTree('class_place_import_from_json.html',''); initResizable(
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_place_import_from_json-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PlaceImportFromJson Class Reference</div></div>
 </div><!--header-->
@@ -115,7 +116,7 @@ Collaboration diagram for PlaceImportFromJson:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_place_import_from_json__coll__graph.png" border="0" usemap="#a_place_import_from_json_coll__map" alt="Collaboration graph"/></div>
 <map name="a_place_import_from_json_coll__map" id="a_place_import_from_json_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,165,92"/>
+<area shape="rect" title=" " alt="" coords="5,5,165,112"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -125,6 +126,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aad31c85d141cc86aa408be1d22eba339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38b3efbdbb7e89392e6bfdcb7f096e47" id="r_a38b3efbdbb7e89392e6bfdcb7f096e47"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="class_place.html">Place</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38b3efbdbb7e89392e6bfdcb7f096e47">importFromJson</a> (const QString &amp;filePath) const</td></tr>
 <tr class="separator:a38b3efbdbb7e89392e6bfdcb7f096e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:af01234a9c73cb66dd8a9a24b9edfa422" id="r_af01234a9c73cb66dd8a9a24b9edfa422"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classweekly_openings.html">weeklyOpenings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af01234a9c73cb66dd8a9a24b9edfa422">parseOpenings</a> (const QJsonArray &amp;parent) const</td></tr>
+<tr class="separator:af01234a9c73cb66dd8a9a24b9edfa422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aad31c85d141cc86aa408be1d22eba339" name="aad31c85d141cc86aa408be1d22eba339"></a>
@@ -167,6 +173,75 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_place_import_from_json_a38b3efbdbb7e89392e6bfdcb7f096e47_cgraph.png" border="0" usemap="#aclass_place_import_from_json_a38b3efbdbb7e89392e6bfdcb7f096e47_cgraph" alt=""/></div>
+<map name="aclass_place_import_from_json_a38b3efbdbb7e89392e6bfdcb7f096e47_cgraph" id="aclass_place_import_from_json_a38b3efbdbb7e89392e6bfdcb7f096e47_cgraph">
+<area shape="rect" title=" " alt="" coords="5,72,155,113"/>
+<area shape="rect" href="class_place_import_from_json.html#af01234a9c73cb66dd8a9a24b9edfa422" title=" " alt="" coords="203,72,352,113"/>
+<area shape="poly" title=" " alt="" coords="155,90,187,90,187,96,155,96"/>
+<area shape="rect" href="classweekly_openings.html#a8db9d2819a7673a0d75c329c6bc0d3ce" title=" " alt="" coords="400,5,617,31"/>
+<area shape="poly" title=" " alt="" coords="323,69,399,40,423,33,425,38,401,45,324,74"/>
+<area shape="rect" href="classweekly_openings.html#abf47bd71427cbd385e863f6212fce4d6" title=" " alt="" coords="416,55,601,80"/>
+<area shape="poly" title=" " alt="" coords="352,82,401,77,401,82,353,87"/>
+<area shape="rect" href="classweekly_openings.html#a97cb89825c8afd2dda509b335b0ab59a" title=" " alt="" coords="413,104,604,130"/>
+<area shape="poly" title=" " alt="" coords="353,98,398,103,397,108,352,103"/>
+<area shape="rect" href="classweekly_openings.html#ae2d6fd5bd52c5290a48493d8698a14d4" title=" " alt="" coords="405,154,612,194"/>
+<area shape="poly" title=" " alt="" coords="328,111,401,140,420,146,418,151,399,145,326,116"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af01234a9c73cb66dd8a9a24b9edfa422" name="af01234a9c73cb66dd8a9a24b9edfa422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af01234a9c73cb66dd8a9a24b9edfa422">&#9670;&#160;</a></span>parseOpenings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classweekly_openings.html">weeklyOpenings</a> PlaceImportFromJson::parseOpenings </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>parent</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_place_import_from_json_af01234a9c73cb66dd8a9a24b9edfa422_cgraph.png" border="0" usemap="#aclass_place_import_from_json_af01234a9c73cb66dd8a9a24b9edfa422_cgraph" alt=""/></div>
+<map name="aclass_place_import_from_json_af01234a9c73cb66dd8a9a24b9edfa422_cgraph" id="aclass_place_import_from_json_af01234a9c73cb66dd8a9a24b9edfa422_cgraph">
+<area shape="rect" title=" " alt="" coords="5,72,155,113"/>
+<area shape="rect" href="classweekly_openings.html#a8db9d2819a7673a0d75c329c6bc0d3ce" title=" " alt="" coords="203,5,420,31"/>
+<area shape="poly" title=" " alt="" coords="125,69,202,40,226,33,227,38,204,45,127,74"/>
+<area shape="rect" href="classweekly_openings.html#abf47bd71427cbd385e863f6212fce4d6" title=" " alt="" coords="219,55,404,80"/>
+<area shape="poly" title=" " alt="" coords="155,82,204,77,204,82,155,87"/>
+<area shape="rect" href="classweekly_openings.html#a97cb89825c8afd2dda509b335b0ab59a" title=" " alt="" coords="216,104,407,130"/>
+<area shape="poly" title=" " alt="" coords="155,98,200,103,200,108,155,103"/>
+<area shape="rect" href="classweekly_openings.html#ae2d6fd5bd52c5290a48493d8698a14d4" title=" " alt="" coords="208,154,415,194"/>
+<area shape="poly" title=" " alt="" coords="130,111,204,140,223,146,221,151,202,145,128,116"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_place_import_from_json_af01234a9c73cb66dd8a9a24b9edfa422_icgraph.png" border="0" usemap="#aclass_place_import_from_json_af01234a9c73cb66dd8a9a24b9edfa422_icgraph" alt=""/></div>
+<map name="aclass_place_import_from_json_af01234a9c73cb66dd8a9a24b9edfa422_icgraph" id="aclass_place_import_from_json_af01234a9c73cb66dd8a9a24b9edfa422_icgraph">
+<area shape="rect" title=" " alt="" coords="203,5,352,46"/>
+<area shape="rect" href="class_place_import_from_json.html#a38b3efbdbb7e89392e6bfdcb7f096e47" title=" " alt="" coords="5,5,155,46"/>
+<area shape="poly" title=" " alt="" coords="187,28,155,28,155,23,187,23"/>
+</map>
+</div>
 
 </div>
 </div>

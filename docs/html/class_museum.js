@@ -5,5 +5,6 @@ var class_museum =
     [ "acceptVisitor", "class_museum.html#a040394aebdcc9e4e0f39963232862b40", null ],
     [ "getCategory", "class_museum.html#a3f876362590b3b71988dd6c7db159dcf", null ],
     [ "getCultureSummary", "class_museum.html#a531bf437dfc35eb223e592babebe29b7", null ],
-    [ "hasAudioGuideAvailable", "class_museum.html#a86b4264e66df17e1c8d2209af76bdfb6", null ]
+    [ "hasAudioGuideAvailable", "class_museum.html#a86b4264e66df17e1c8d2209af76bdfb6", null ],
+    [ "hasAudioGuide", "class_museum.html#a4871b4eedc9125ef4359220cd8673628", null ]
 ];

@@ -54,6 +54,18 @@ void \mbox{\hyperlink{class_place_export_to_json_visitor_a0b5f35e1f208515e3498b0
 \item 
 virtual \mbox{\hyperlink{class_place_visitor_interface_a0ee9393508706e70d211038757e9d239}{\texorpdfstring{$\sim$}{\string~}\+Place\+Visitor\+Interface}} ()=default
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+QJson\+Array \mbox{\hyperlink{class_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0}{export\+Weekly\+Openings}} (const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&) const
+\item 
+QJson\+Object \mbox{\hyperlink{class_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0}{base\+Place\+To\+Json}} (const \mbox{\hyperlink{class_place}{Place}} \&place, const QString \&type) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QJson\+Object \mbox{\hyperlink{class_place_export_to_json_visitor_ae68df8a5211c6d408b85353f806aee49}{result}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -66,6 +78,50 @@ Place\+Export\+To\+Json\+Visitor\+::\+Place\+Export\+To\+Json\+Visitor (\begin{D
 
 
 \doxysubsection{Member Function Documentation}
+\Hypertarget{class_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0}\index{PlaceExportToJsonVisitor@{PlaceExportToJsonVisitor}!basePlaceToJson@{basePlaceToJson}}
+\index{basePlaceToJson@{basePlaceToJson}!PlaceExportToJsonVisitor@{PlaceExportToJsonVisitor}}
+\doxysubsubsection{\texorpdfstring{basePlaceToJson()}{basePlaceToJson()}}
+{\footnotesize\ttfamily \label{class_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0} 
+QJson\+Object Place\+Export\+To\+Json\+Visitor\+::base\+Place\+To\+Json (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_place}{Place}} \&}]{place}{, }\item[{const QString \&}]{type}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0}\index{PlaceExportToJsonVisitor@{PlaceExportToJsonVisitor}!exportWeeklyOpenings@{exportWeeklyOpenings}}
+\index{exportWeeklyOpenings@{exportWeeklyOpenings}!PlaceExportToJsonVisitor@{PlaceExportToJsonVisitor}}
+\doxysubsubsection{\texorpdfstring{exportWeeklyOpenings()}{exportWeeklyOpenings()}}
+{\footnotesize\ttfamily \label{class_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0} 
+QJson\+Array Place\+Export\+To\+Json\+Visitor\+::export\+Weekly\+Openings (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&}]{w}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0_icgraph}
+\end{center}
+\end{figure}
 \Hypertarget{class_place_export_to_json_visitor_a71f78070d67225a5a357370cdaed4d37}\index{PlaceExportToJsonVisitor@{PlaceExportToJsonVisitor}!getResult@{getResult}}
 \index{getResult@{getResult}!PlaceExportToJsonVisitor@{PlaceExportToJsonVisitor}}
 \doxysubsubsection{\texorpdfstring{getResult()}{getResult()}}
@@ -234,6 +290,15 @@ Here is the call graph for this function\+:
 \includegraphics[width=350pt]{class_place_export_to_json_visitor_aa53baa6cdeab8f17536c6ea38ad0fb32_cgraph}
 \end{center}
 \end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_place_export_to_json_visitor_ae68df8a5211c6d408b85353f806aee49}\index{PlaceExportToJsonVisitor@{PlaceExportToJsonVisitor}!result@{result}}
+\index{result@{result}!PlaceExportToJsonVisitor@{PlaceExportToJsonVisitor}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily \label{class_place_export_to_json_visitor_ae68df8a5211c6d408b85353f806aee49} 
+QJson\+Object Place\+Export\+To\+Json\+Visitor\+::result\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

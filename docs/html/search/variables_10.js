@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['tablestatistics_0',['tableStatistics',['../class_ui___main_window.html#a5ab82e685bc4797d2dbdf986e1fec15d',1,'Ui_MainWindow']]],
+  ['takeaway_1',['takeAway',['../class_food.html#a8e6f5932541064b43faa9989c702aba8',1,'Food']]],
+  ['takeawaycheckbox_2',['takeAwayCheckBox',['../class_ui___create_place_widget.html#a6567d3374cb89a3bcfa2ad6a86f20546',1,'Ui_CreatePlaceWidget']]],
+  ['takeawaycheckbox_5f2_3',['takeAwayCheckBox_2',['../class_ui___create_place_widget.html#a0f209e10b3b5c33c2b6b6d99fb8c5ddd',1,'Ui_CreatePlaceWidget']]],
+  ['takeawaylabel_4',['takeAwayLabel',['../class_ui___create_place_widget.html#a2593366fac2f3b9561b20a6054c34e85',1,'Ui_CreatePlaceWidget']]],
+  ['takeawaylabel_5f2_5',['takeAwayLabel_2',['../class_ui___create_place_widget.html#aa7a008e3a24946b8aba02ffa618ef0ce',1,'Ui_CreatePlaceWidget']]],
+  ['terrace_6',['terrace',['../class_cafe.html#a0d808128061427f4cac3afab7e37fdbe',1,'Cafe']]],
+  ['texteditdescription_7',['textEditDescription',['../class_ui___create_place_widget.html#a0c4f0139e218e8314a7eefb234ef1ea8',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditfridayclose_8',['timeEditFridayClose',['../class_ui___create_place_widget.html#a6e9404da268bb6e71726f14954acc705',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditfridayopen_9',['timeEditFridayOpen',['../class_ui___create_place_widget.html#aa8f5ebf0e52d368cbdc124ef8799bf75',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditmondayclose_10',['timeEditMondayClose',['../class_ui___create_place_widget.html#a80f9c768f1df0bd78951741197a718f2',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditmondayopen_11',['timeEditMondayOpen',['../class_ui___create_place_widget.html#a3496918ae1855e2c9ea0c8403b708133',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditsaturdayclose_12',['timeEditSaturdayClose',['../class_ui___create_place_widget.html#a515133e8dfe0d114df473c54a831bf2f',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditsaturdayopen_13',['timeEditSaturdayOpen',['../class_ui___create_place_widget.html#abfb883805d2980c2f9c623d3c778c862',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditsundayclose_14',['timeEditSundayClose',['../class_ui___create_place_widget.html#a8967de88d6ba89c852d9c45d6720ea68',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditsundayopen_15',['timeEditSundayOpen',['../class_ui___create_place_widget.html#a522000649cca5df12f19fc6bbcb1f61e',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditthursdayclose_16',['timeEditThursdayClose',['../class_ui___create_place_widget.html#a87bfecaab9c1ef0b85b306651529c293',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditthursdayopen_17',['timeEditThursdayOpen',['../class_ui___create_place_widget.html#abceb2535595e92092e370f06ada77b6a',1,'Ui_CreatePlaceWidget']]],
+  ['timeedittuesdayclose_18',['timeEditTuesdayClose',['../class_ui___create_place_widget.html#af888afd3007cc205cac04290c5a329bf',1,'Ui_CreatePlaceWidget']]],
+  ['timeedittuesdayopen_19',['timeEditTuesdayOpen',['../class_ui___create_place_widget.html#a0065d29a158a2c2118fa9f3bc223be20',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditwednesdayclose_20',['timeEditWednesdayClose',['../class_ui___create_place_widget.html#a728a1a59afc9e5c17d62c910b85ddbad',1,'Ui_CreatePlaceWidget']]],
+  ['timeeditwednesdayopen_21',['timeEditWednesdayOpen',['../class_ui___create_place_widget.html#a44a6bd63b03ac9b406b293e71fc91baa',1,'Ui_CreatePlaceWidget']]],
+  ['topsearchlayout_22',['topSearchLayout',['../class_ui___main_window.html#a42b796c0d19db6000ff6bf2f3a8fb446',1,'Ui_MainWindow']]],
+  ['totalplaces_23',['totalPlaces',['../struct_statistics_result.html#ac3d4ae65d067d605ad8406deeb2ded0d',1,'StatisticsResult']]]
+];

@@ -12,13 +12,13 @@
 \DoxyCodeLine{00008\ \textcolor{comment}{//\ Un\ Visitor\ per\ esportare\ Place\ in\ formato\ JSON}}
 \DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_place_export_to_json_visitor_a1dd2b42d0ba7b57197ffd07dbe105640}{PlaceExportToJsonVisitor}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_place_visitor_interface}{PlaceVisitorInterface}}\{}
 \DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00011\ \ \ \ \ QJsonObject\ result;\ \textcolor{comment}{//\ L'oggetto\ JSON\ creato\ per\ il\ Place\ visitato}}
+\DoxyCodeLine{00011\ \ \ \ \ QJsonObject\ \mbox{\hyperlink{class_place_export_to_json_visitor_ae68df8a5211c6d408b85353f806aee49}{result}};\ \textcolor{comment}{//\ L'oggetto\ JSON\ creato\ per\ il\ Place\ visitato}}
 \DoxyCodeLine{00012\ }
 \DoxyCodeLine{00013\ \ \ \ \ \textcolor{comment}{//\ Crea\ array\ JSON\ per\ gli\ orari}}
-\DoxyCodeLine{00014\ \ \ \ \ QJsonArray\ exportWeeklyOpenings(\textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00014\ \ \ \ \ QJsonArray\ \mbox{\hyperlink{class_place_export_to_json_visitor_a4048a6e72596ebde088b4d9b05e12ba0}{exportWeeklyOpenings}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classweekly_openings}{weeklyOpenings}}\&)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00015\ }
 \DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//\ Crea\ oggetto\ JSON\ per\ i\ dati\ base\ di\ Place}}
-\DoxyCodeLine{00017\ \ \ \ \ QJsonObject\ basePlaceToJson(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_place}{Place}}\&\ place,\ \textcolor{keyword}{const}\ QString\&\ type)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00017\ \ \ \ \ QJsonObject\ \mbox{\hyperlink{class_place_export_to_json_visitor_a377e68d748c679ccc22b275504fcdde0}{basePlaceToJson}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_place}{Place}}\&\ place,\ \textcolor{keyword}{const}\ QString\&\ type)\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00018\ }
 \DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ Costruttore\ di\ default}}

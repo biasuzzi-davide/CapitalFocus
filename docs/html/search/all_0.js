@@ -13,13 +13,13 @@ var searchData=
   ['actiontoggledebug_10',['actionToggleDebug',['../class_ui___main_window.html#a94cde3f72e5d6ba01b2570efaa7ffa89',1,'Ui_MainWindow']]],
   ['actionxml_11',['actionXML',['../class_ui___main_window.html#a97e8c64f9f9c0d1a3cbd94abe04fab73',1,'Ui_MainWindow']]],
   ['addplace_12',['addPlace',['../class_place_controller.html#a3caac76937b82478b306ac0cc0729e47',1,'PlaceController::addPlace()'],['../class_place_repository.html#a5f34b8ac863a27f0c88b59631c438d94',1,'PlaceRepository::addPlace()']]],
-  ['altitude_13',['altitude',['../class_create_place_widget.html#ac091889bf35fbfcc528a1034f6c91073',1,'CreatePlaceWidget']]],
+  ['altitude_13',['altitude',['../class_panoramic_points.html#a56c0a2be6a80b9857fa286e304942d7b',1,'PanoramicPoints::altitude'],['../class_create_place_widget.html#ac091889bf35fbfcc528a1034f6c91073',1,'CreatePlaceWidget::altitude()']]],
   ['alwaysclosed_14',['alwaysClosed',['../struct_create_place_widget_1_1_day_hours.html#a4e75dcfe2844b2601c16d1fdefad69b0',1,'CreatePlaceWidget::DayHours']]],
   ['alwaysopen_15',['alwaysOpen',['../structopening_frames.html#a8fc507a56703f1408d1b32e09dd0e55d',1,'openingFrames::alwaysOpen'],['../struct_create_place_widget_1_1_day_hours.html#ac71267528bc1322531892c8b043ac09d',1,'CreatePlaceWidget::DayHours::alwaysOpen']]],
   ['anywidgetisediting_16',['anyWidgetIsEditing',['../class_place_controller.html#ad663ce4cce88753c4efa8ab242c5248e',1,'PlaceController']]],
   ['applicazione_17',['Come eseguire l&apos;applicazione',['../md__r_e_a_d_m_e.html#autotoc_md8',1,'']]],
   ['architettura_20polimorfica_20ed_20estendibile_18',['📐 Architettura polimorfica ed estendibile',['../md__r_e_a_d_m_e.html#autotoc_md5',1,'']]],
-  ['artisans_19',['artisans',['../class_create_place_widget.html#aae214167ca6ca10e84116b4636e2c790',1,'CreatePlaceWidget']]],
+  ['artisans_19',['artisans',['../class_local_market.html#af3018bc392baaa7a6e8a630e281dc968',1,'LocalMarket::artisans'],['../class_create_place_widget.html#aae214167ca6ca10e84116b4636e2c790',1,'CreatePlaceWidget::artisans()']]],
   ['askconfirmation_20',['askConfirmation',['../class_main_window.html#a6d1e7cddbdb70dd17dc296d83fe32085',1,'MainWindow']]],
   ['askopenfile_21',['askOpenFile',['../class_main_window.html#a93cb25c615ab14286864b056f1ab2d14',1,'MainWindow']]],
   ['asksavefile_22',['askSaveFile',['../class_main_window.html#aa0ae5247f414ea62d3bdb04edf2d29fe',1,'MainWindow']]],
@@ -38,5 +38,6 @@ var searchData=
   ['averagewaitingtimelabel_5f2_35',['averageWaitingTimeLabel_2',['../class_ui___create_place_widget.html#ac11f99cc87505b1c70e526d75b1502e5',1,'Ui_CreatePlaceWidget']]],
   ['averagewaitingtimetimeedit_36',['averageWaitingTimeTimeEdit',['../class_ui___create_place_widget.html#a4093b0ada7999d2e39a3bc892837fa0b',1,'Ui_CreatePlaceWidget']]],
   ['averagewaitingtimetimeedit_5f2_37',['averageWaitingTimeTimeEdit_2',['../class_ui___create_place_widget.html#a21a09d5c9794bf195db7775117a04ddc',1,'Ui_CreatePlaceWidget']]],
-  ['avgstayduration_38',['avgStayDuration',['../class_entertainment.html#a56fe4333ea68e5107f8d841cb09a57d0',1,'Entertainment']]]
+  ['avgstayduration_38',['avgStayDuration',['../class_entertainment.html#a56fe4333ea68e5107f8d841cb09a57d0',1,'Entertainment']]],
+  ['avgwaitingtime_39',['avgWaitingTime',['../class_food.html#a4902d83db058f42c1ebf21fe627e2aec',1,'Food']]]
 ];

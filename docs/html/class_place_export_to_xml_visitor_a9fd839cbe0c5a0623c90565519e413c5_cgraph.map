@@ -1,0 +1,9 @@
+<map id="PlaceExportToXmlVisitor::exportShoppingData" name="PlaceExportToXmlVisitor::exportShoppingData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,172,88"/>
+<area shape="rect" id="Node000002" href="$class_shopping.html#a0d4f39dc3bff192fd354180b29a4499b" title=" " alt="" coords="220,5,400,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,46,234,32,235,38,173,52"/>
+<area shape="rect" id="Node000003" href="$class_shopping.html#a21b7b072b5aea019f3901d332b2d645f" title=" " alt="" coords="220,55,401,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,65,204,65,204,70,172,70"/>
+<area shape="rect" id="Node000004" href="$class_shopping.html#acd03a7791869732ff9b062c922c73060" title=" " alt="" coords="241,104,380,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,83,235,97,234,103,171,89"/>
+</map>

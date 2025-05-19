@@ -38,7 +38,7 @@
 \DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ prendi\ citta\ selezionata}}
 \DoxyCodeLine{00035\ \ \ \ \ QString\ \mbox{\hyperlink{class_main_window_a100bb83ff514185d298f6817f680b7e8}{getSelectedCity}}()\ \textcolor{keyword}{const};}
 \DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ setta\ il\ controller}}
-\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_adc1ed341279a8fb00175c7f62e0ca60a}{setController}}(\mbox{\hyperlink{class_place_controller}{PlaceController}}*\ controller);}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_adc1ed341279a8fb00175c7f62e0ca60a}{setController}}(\mbox{\hyperlink{class_place_controller}{PlaceController}}*\ \mbox{\hyperlink{class_main_window_a172b93a11cdbac477b1bbdba1995f8e7}{controller}});}
 \DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ pulisci\ campi\ ricerca}}
 \DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a0de59dff2d11bf6f7df043879173c1a6}{clearSearchFields}}();}
 \DoxyCodeLine{00040\ \ \ \ \ \textcolor{comment}{//\ riempi\ combo\ box\ citta}}
@@ -84,15 +84,15 @@
 \DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a591070a7d3d972e72708ebbd816179e2}{showStatusBarMsg}}(\textcolor{keyword}{const}\ QString\&\ message,\ \textcolor{keywordtype}{int}\ timeoutMs\ =\ 3000);}
 \DoxyCodeLine{00081\ \textcolor{keyword}{private}:}
 \DoxyCodeLine{00082\ \ \ \ \ \textcolor{comment}{//\ stato\ dark\ mode}}
-\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{bool}\ isDarkModeEnabled\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_main_window_aa1d1d6305789456b1cb880167f928a80}{isDarkModeEnabled}}\ =\ \textcolor{keyword}{false};}
 \DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//\ mappa\ widget}}
-\DoxyCodeLine{00085\ \ \ \ \ QMap<QString,\ QWidget*>\ widgetMap;}
+\DoxyCodeLine{00085\ \ \ \ \ QMap<QString,\ QWidget*>\ \mbox{\hyperlink{class_main_window_a62ed4b0e269d4f98c78837c151fd7903}{widgetMap}};}
 \DoxyCodeLine{00086\ \ \ \ \ \textcolor{comment}{//\ widget\ impilato}}
-\DoxyCodeLine{00087\ \ \ \ \ QStackedWidget*\ stackedWidget;}
+\DoxyCodeLine{00087\ \ \ \ \ QStackedWidget*\ \mbox{\hyperlink{class_main_window_aa86720a51d3246a6dc316d51488dcb15}{stackedWidget}};}
 \DoxyCodeLine{00088\ \ \ \ \ \textcolor{comment}{//\ ui\ design}}
-\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_main_window}{Ui::MainWindow}}\ *ui;}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{class_ui_1_1_main_window}{Ui::MainWindow}}\ *\mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}};}
 \DoxyCodeLine{00090\ \ \ \ \ \textcolor{comment}{//\ puntatore\ controller}}
-\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{class_place_controller}{PlaceController}}*\ controller;}
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{class_place_controller}{PlaceController}}*\ \mbox{\hyperlink{class_main_window_a172b93a11cdbac477b1bbdba1995f8e7}{controller}};}
 \DoxyCodeLine{00092\ \textcolor{keyword}{protected}:}
 \DoxyCodeLine{00093\ \ \ \ \ \textcolor{comment}{//\ evento\ chiusura}}
 \DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a05fb9d72c044aa3bb7d187b994704e2f}{closeEvent}}(QCloseEvent*\ event)\ \textcolor{keyword}{override};}

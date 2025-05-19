@@ -24,16 +24,16 @@
 \DoxyCodeLine{00020\ \ \ \ \ Q\_OBJECT}
 \DoxyCodeLine{00021\ }
 \DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}*\ view;\ \textcolor{comment}{//\ Puntatore\ alla\ View}}
-\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_place_repository}{PlaceRepository}}\&\ repository;\ \textcolor{comment}{//\ Riferimento\ al\ Model}}
-\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_place_import_from_xml}{PlaceImportFromXml}}\ xmlImporter;\ \textcolor{comment}{//\ Importatore\ XML}}
-\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_place_import_from_json}{PlaceImportFromJson}}\ jsonImporter;\ \textcolor{comment}{//\ Importatore\ JSON}}
-\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_place}{Place}}*\ currentPlace\ =\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ Il\ posto\ attualmente\ selezionato}}
-\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ unsavedChanges\ =\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Flag\ per\ modifiche\ non\ salvate}}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}*\ \mbox{\hyperlink{class_place_controller_adbd2fd3b47ee04fbd799894af22a7eb1}{view}};\ \textcolor{comment}{//\ Puntatore\ alla\ View}}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_place_repository}{PlaceRepository}}\&\ \mbox{\hyperlink{class_place_controller_a48033f7cf017958cf1325e83c3e6f676}{repository}};\ \textcolor{comment}{//\ Riferimento\ al\ Model}}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_place_import_from_xml}{PlaceImportFromXml}}\ \mbox{\hyperlink{class_place_controller_a081b9bb417b86a07a1125d9e5aa1f7eb}{xmlImporter}};\ \textcolor{comment}{//\ Importatore\ XML}}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_place_import_from_json}{PlaceImportFromJson}}\ \mbox{\hyperlink{class_place_controller_a03483bda1cd0bf9959415fbe4c645ba7}{jsonImporter}};\ \textcolor{comment}{//\ Importatore\ JSON}}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_place}{Place}}*\ \mbox{\hyperlink{class_place_controller_a2e730245e2bbe15fc28cfcecf1c75583}{currentPlace}}\ =\ \textcolor{keyword}{nullptr};\ \textcolor{comment}{//\ Il\ posto\ attualmente\ selezionato}}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_place_controller_a5f8b0457f0a47fc05966184864c082dc}{unsavedChanges}}\ =\ \textcolor{keyword}{false};\ \textcolor{comment}{//\ Flag\ per\ modifiche\ non\ salvate}}
 \DoxyCodeLine{00029\ }
 \DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
 \DoxyCodeLine{00031\ \ \ \ \ \textcolor{comment}{//\ Costruttore}}
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_place_controller_abd3ec6854f0c5e5d57d49715e756f502}{PlaceController}}(\mbox{\hyperlink{class_main_window}{MainWindow}}*\ view,\ \mbox{\hyperlink{class_place_repository}{PlaceRepository}}\&\ repo);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_place_controller_abd3ec6854f0c5e5d57d49715e756f502}{PlaceController}}(\mbox{\hyperlink{class_main_window}{MainWindow}}*\ \mbox{\hyperlink{class_place_controller_adbd2fd3b47ee04fbd799894af22a7eb1}{view}},\ \mbox{\hyperlink{class_place_repository}{PlaceRepository}}\&\ repo);}
 \DoxyCodeLine{00033\ }
 \DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ Metodi\ per\ interagire\ con\ il\ Model}}
 \DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_place_controller_a3caac76937b82478b306ac0cc0729e47}{addPlace}}(\textcolor{keyword}{const}\ std::shared\_ptr<Place>\&\ place);}

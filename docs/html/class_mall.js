@@ -7,5 +7,8 @@ var class_mall =
     [ "getShopCount", "class_mall.html#aa2a5f3860d32f2d7cbc6c1f5225b9677", null ],
     [ "getShoppingSummary", "class_mall.html#ae56b1073ed174f59d067aeefe23251fe", null ],
     [ "hasCinema", "class_mall.html#a31cd34e8ad8a22678e39d4d6d2b64c4e", null ],
-    [ "hasFreeParking", "class_mall.html#ac2137833b0bac11922b00ab4642dca26", null ]
+    [ "hasFreeParking", "class_mall.html#ac2137833b0bac11922b00ab4642dca26", null ],
+    [ "cinema", "class_mall.html#a3e97dc90bce6227b7e029e52c4dbc993", null ],
+    [ "freeParking", "class_mall.html#a4ef8abfd9da22a013430294b9bef7c53", null ],
+    [ "shopCount", "class_mall.html#af87ec5d8364afd65ff9fe8b4816a86ec", null ]
 ];

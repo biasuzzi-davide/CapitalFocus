@@ -14,5 +14,6 @@ var searchData=
   ['disco_11',['Disco',['../class_disco.html',1,'Disco'],['../class_disco.html#a5b23c0422592f330a35df6ed9db63472',1,'Disco::Disco()']]],
   ['disco_2ecpp_12',['Disco.cpp',['../_disco_8cpp.html',1,'']]],
   ['disco_2eh_13',['Disco.h',['../_disco_8h.html',1,'']]],
-  ['dresscode_14',['dressCode',['../class_create_place_widget.html#aec79a2c39a8171c4c022572f1ef53187',1,'CreatePlaceWidget']]]
+  ['doc_14',['doc',['../class_place_export_to_xml_visitor.html#ab170c367b33dfd2d2fafb5eb2c5bac54',1,'PlaceExportToXmlVisitor']]],
+  ['dresscode_15',['dressCode',['../class_disco.html#a27f152cd5af84aee8cb5de9f224c6daa',1,'Disco::dressCode'],['../class_create_place_widget.html#aec79a2c39a8171c4c022572f1ef53187',1,'CreatePlaceWidget::dressCode()']]]
 ];

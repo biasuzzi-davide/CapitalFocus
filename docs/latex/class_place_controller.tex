@@ -21,7 +21,7 @@ Collaboration diagram for Place\+Controller\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=203pt]{class_place_controller__coll__graph}
+\includegraphics[height=550pt]{class_place_controller__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Slots}
@@ -36,7 +36,7 @@ void \mbox{\hyperlink{class_place_controller_a53f9020b8a0d03e31cedec01fc90849d}{
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_place_controller_abd3ec6854f0c5e5d57d49715e756f502}{Place\+Controller}} (\mbox{\hyperlink{class_main_window}{Main\+Window}} \texorpdfstring{$\ast$}{*}view, \mbox{\hyperlink{class_place_repository}{Place\+Repository}} \&repo)
+\mbox{\hyperlink{class_place_controller_abd3ec6854f0c5e5d57d49715e756f502}{Place\+Controller}} (\mbox{\hyperlink{class_main_window}{Main\+Window}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_place_controller_adbd2fd3b47ee04fbd799894af22a7eb1}{view}}, \mbox{\hyperlink{class_place_repository}{Place\+Repository}} \&repo)
 \item 
 void \mbox{\hyperlink{class_place_controller_a3caac76937b82478b306ac0cc0729e47}{add\+Place}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ \&place)
 \item 
@@ -103,6 +103,21 @@ void \mbox{\hyperlink{class_place_controller_ae6e3e283a053e024eaf7c9d3c256f19b}{
 void \mbox{\hyperlink{class_place_controller_afa22be5f0acda607b63532b1df24e127}{reset\+Current\+Place}} ()
 \item 
 const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_place}{Place}} $>$ $>$ \& \mbox{\hyperlink{class_place_controller_aae3ca5bb72d677d2fdf2841b2a7bd43c}{get\+All}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window}{Main\+Window}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_place_controller_adbd2fd3b47ee04fbd799894af22a7eb1}{view}}
+\item 
+\mbox{\hyperlink{class_place_repository}{Place\+Repository}} \& \mbox{\hyperlink{class_place_controller_a48033f7cf017958cf1325e83c3e6f676}{repository}}
+\item 
+\mbox{\hyperlink{class_place_import_from_xml}{Place\+Import\+From\+Xml}} \mbox{\hyperlink{class_place_controller_a081b9bb417b86a07a1125d9e5aa1f7eb}{xml\+Importer}}
+\item 
+\mbox{\hyperlink{class_place_import_from_json}{Place\+Import\+From\+Json}} \mbox{\hyperlink{class_place_controller_a03483bda1cd0bf9959415fbe4c645ba7}{json\+Importer}}
+\item 
+\mbox{\hyperlink{class_place}{Place}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_place_controller_a2e730245e2bbe15fc28cfcecf1c75583}{current\+Place}} = nullptr
+\item 
+bool \mbox{\hyperlink{class_place_controller_a5f8b0457f0a47fc05966184864c082dc}{unsaved\+Changes}} = false
 \end{DoxyCompactItemize}
 
 
@@ -716,6 +731,45 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{class_place_controller_af362a022ee583a8ca5794d91808bb80b_icgraph}
 \end{center}
 \end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_place_controller_a2e730245e2bbe15fc28cfcecf1c75583}\index{PlaceController@{PlaceController}!currentPlace@{currentPlace}}
+\index{currentPlace@{currentPlace}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{currentPlace}{currentPlace}}
+{\footnotesize\ttfamily \label{class_place_controller_a2e730245e2bbe15fc28cfcecf1c75583} 
+\mbox{\hyperlink{class_place}{Place}}\texorpdfstring{$\ast$}{*} Place\+Controller\+::current\+Place = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_place_controller_a03483bda1cd0bf9959415fbe4c645ba7}\index{PlaceController@{PlaceController}!jsonImporter@{jsonImporter}}
+\index{jsonImporter@{jsonImporter}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{jsonImporter}{jsonImporter}}
+{\footnotesize\ttfamily \label{class_place_controller_a03483bda1cd0bf9959415fbe4c645ba7} 
+\mbox{\hyperlink{class_place_import_from_json}{Place\+Import\+From\+Json}} Place\+Controller\+::json\+Importer\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_place_controller_a48033f7cf017958cf1325e83c3e6f676}\index{PlaceController@{PlaceController}!repository@{repository}}
+\index{repository@{repository}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{repository}{repository}}
+{\footnotesize\ttfamily \label{class_place_controller_a48033f7cf017958cf1325e83c3e6f676} 
+\mbox{\hyperlink{class_place_repository}{Place\+Repository}}\& Place\+Controller\+::repository\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_place_controller_a5f8b0457f0a47fc05966184864c082dc}\index{PlaceController@{PlaceController}!unsavedChanges@{unsavedChanges}}
+\index{unsavedChanges@{unsavedChanges}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{unsavedChanges}{unsavedChanges}}
+{\footnotesize\ttfamily \label{class_place_controller_a5f8b0457f0a47fc05966184864c082dc} 
+bool Place\+Controller\+::unsaved\+Changes = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_place_controller_adbd2fd3b47ee04fbd799894af22a7eb1}\index{PlaceController@{PlaceController}!view@{view}}
+\index{view@{view}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{view}{view}}
+{\footnotesize\ttfamily \label{class_place_controller_adbd2fd3b47ee04fbd799894af22a7eb1} 
+\mbox{\hyperlink{class_main_window}{Main\+Window}}\texorpdfstring{$\ast$}{*} Place\+Controller\+::view\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_place_controller_a081b9bb417b86a07a1125d9e5aa1f7eb}\index{PlaceController@{PlaceController}!xmlImporter@{xmlImporter}}
+\index{xmlImporter@{xmlImporter}!PlaceController@{PlaceController}}
+\doxysubsubsection{\texorpdfstring{xmlImporter}{xmlImporter}}
+{\footnotesize\ttfamily \label{class_place_controller_a081b9bb417b86a07a1125d9e5aa1f7eb} 
+\mbox{\hyperlink{class_place_import_from_xml}{Place\+Import\+From\+Xml}} Place\+Controller\+::xml\+Importer\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

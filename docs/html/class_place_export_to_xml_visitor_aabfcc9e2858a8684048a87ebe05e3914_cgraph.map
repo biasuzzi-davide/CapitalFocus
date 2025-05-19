@@ -1,9 +1,37 @@
 <map id="PlaceExportToXmlVisitor::visit" name="PlaceExportToXmlVisitor::visit">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,172,88"/>
-<area shape="rect" id="Node000002" href="$class_restaurant.html#a81c08afa1468bfdd990d3ad0ac1da630" title=" " alt="" coords="220,5,404,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,47,235,32,236,37,173,52"/>
-<area shape="rect" id="Node000003" href="$class_restaurant.html#a84652ef714cbb6759f1b8124590a54c8" title=" " alt="" coords="221,55,402,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,65,206,65,206,70,172,70"/>
-<area shape="rect" id="Node000004" href="$class_restaurant.html#ab56010f914f4e5e2b59472efe185dd22" title=" " alt="" coords="220,104,404,130"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,83,236,98,235,103,171,88"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,460,172,501"/>
+<area shape="rect" id="Node000002" href="$class_place_export_to_xml_visitor.html#a92f0abb375cea7952abf3f9e0d578ac1" title=" " alt="" coords="229,207,395,248"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,458,281,257,285,261,110,462"/>
+<area shape="rect" id="Node000012" href="$class_place_export_to_xml_visitor.html#af58962e3eac070e8073c2148838d573f" title=" " alt="" coords="229,403,395,444"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="169,457,214,446,216,451,171,463"/>
+<area shape="rect" id="Node000016" href="$class_restaurant.html#a81c08afa1468bfdd990d3ad0ac1da630" title=" " alt="" coords="220,468,404,494"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="172,478,204,478,204,484,172,484"/>
+<area shape="rect" id="Node000017" href="$class_restaurant.html#a84652ef714cbb6759f1b8124590a54c8" title=" " alt="" coords="221,517,402,543"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="173,497,236,511,235,516,171,502"/>
+<area shape="rect" id="Node000018" href="$class_restaurant.html#ab56010f914f4e5e2b59472efe185dd22" title=" " alt="" coords="220,567,404,592"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="122,499,168,527,221,553,237,559,235,564,219,558,165,532,119,504"/>
+<area shape="rect" id="Node000003" href="$class_place_export_to_xml_visitor.html#ac9b187e15f5e564e6203b736be69edf0" title=" " alt="" coords="454,26,621,66"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="325,205,376,142,411,107,450,76,457,72,460,76,454,80,415,111,380,146,330,208"/>
+<area shape="rect" id="Node000006" href="$class_place.html#a27ccfedddb14f83bc62b12b79ce6a29f" title=" " alt="" coords="486,91,590,116"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="335,205,386,164,451,125,470,117,472,122,453,130,389,169,338,209"/>
+<area shape="rect" id="Node000007" href="$class_place.html#a95a5121627c6f6a0ab5ecfcfbffe8e4d" title=" " alt="" coords="484,140,592,166"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="367,204,451,174,471,168,473,173,453,179,368,209"/>
+<area shape="rect" id="Node000008" href="$class_place.html#a6baa6314ad59d069f86ffcd81484211b" title=" " alt="" coords="464,189,611,215"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="395,215,449,209,449,215,396,221"/>
+<area shape="rect" id="Node000009" href="$class_place.html#ac92292afedae475500f31361b8163acf" title=" " alt="" coords="480,239,595,264"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="396,234,465,241,464,246,395,239"/>
+<area shape="rect" id="Node000010" href="$class_place.html#a16b0f469896907c173a3a747de31da5f" title=" " alt="" coords="482,288,593,314"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="370,246,453,274,474,281,472,286,451,279,369,251"/>
+<area shape="rect" id="Node000011" href="$class_place.html#af4f1cbcde42f665d72b090e77852f75e" title=" " alt="" coords="478,337,597,363"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="339,246,390,286,453,324,466,329,464,334,451,329,387,290,336,251"/>
+<area shape="rect" id="Node000004" href="$classweekly_openings.html#a295c9add7edbaaead3255be75e605806" title=" " alt="" coords="671,5,869,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="621,33,655,29,656,35,622,39"/>
+<area shape="rect" id="Node000005" href="$classweekly_openings.html#af09d1bf5ea919f7d5cca1e2d2ded54df" title=" " alt="" coords="674,55,866,96"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="622,54,659,59,658,64,621,59"/>
+<area shape="rect" id="Node000013" href="$class_food.html#aef0ab2f24e1084812e3cbe4025a966ea" title=" " alt="" coords="452,387,623,412"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="395,412,436,408,437,413,396,417"/>
+<area shape="rect" id="Node000014" href="$class_food.html#aa5eeb1fecbac1c664c529286261fe6ce" title=" " alt="" coords="468,436,608,462"/>
+<area shape="poly" id="edge13_Node000012_Node000014" title=" " alt="" coords="396,430,452,437,452,442,395,436"/>
+<area shape="rect" id="Node000015" href="$class_food.html#a040929464715c929699fabaa79756e8d" title=" " alt="" coords="464,485,612,511"/>
+<area shape="poly" id="edge14_Node000012_Node000015" title=" " alt="" coords="374,442,405,453,453,472,472,478,471,483,451,477,403,458,372,447"/>
 </map>

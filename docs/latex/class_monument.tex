@@ -27,7 +27,7 @@ Collaboration diagram for Monument\+:
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_monument_a846aae05b37f2dba984c8d388eae05f3}{Monument}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}, double \mbox{\hyperlink{class_culture_ade65998528d27011ecea3af96a61fc17}{student\+Discount}}, bool \mbox{\hyperlink{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}{guided\+Tour}}, const QString \&\mbox{\hyperlink{class_culture_aa3d4aee81aab7aa65d03a998d23d0793}{cultural\+Focus}}, bool is\+Unesco\+Heritage, const QString \&conservation\+Status, bool open\+To\+Public)
+\mbox{\hyperlink{class_monument_a846aae05b37f2dba984c8d388eae05f3}{Monument}} (const QString \&\mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}, const QString \&\mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}, const QString \&\mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}, double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}, const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&\mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}, double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}, double \mbox{\hyperlink{class_culture_ade65998528d27011ecea3af96a61fc17}{student\+Discount}}, bool \mbox{\hyperlink{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}{guided\+Tour}}, const QString \&\mbox{\hyperlink{class_culture_aa3d4aee81aab7aa65d03a998d23d0793}{cultural\+Focus}}, bool \mbox{\hyperlink{class_monument_a68cb8ab155e047568055f6badb3d1575}{is\+Unesco\+Heritage}}, const QString \&\mbox{\hyperlink{class_monument_a9c71c1bc4f5804328f69525f87a1130d}{conservation\+Status}}, bool \mbox{\hyperlink{class_monument_af063359e470ea659b6fccc1f75a109f7}{open\+To\+Public}})
 \item 
 virtual \mbox{\hyperlink{class_monument_aabf6c776aebd0a809050cba56defb75a}{\texorpdfstring{$\sim$}{\string~}\+Monument}} ()=default
 \item 
@@ -74,6 +74,15 @@ QString \mbox{\hyperlink{class_place_a6baa6314ad59d069f86ffcd81484211b}{get\+Des
 double \mbox{\hyperlink{class_place_af4f1cbcde42f665d72b090e77852f75e}{get\+Rating}} () const
 \item 
 const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \& \mbox{\hyperlink{class_place_a16b0f469896907c173a3a747de31da5f}{get\+Open}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_monument_a68cb8ab155e047568055f6badb3d1575}{is\+Unesco\+Heritage}}
+\item 
+QString \mbox{\hyperlink{class_monument_a9c71c1bc4f5804328f69525f87a1130d}{conservation\+Status}}
+\item 
+bool \mbox{\hyperlink{class_monument_af063359e470ea659b6fccc1f75a109f7}{open\+To\+Public}}
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_culture}{Culture}}}
@@ -206,6 +215,27 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{class_monument_a8320f3de77478092e925110692d77069_icgraph}
 \end{center}
 \end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_monument_a9c71c1bc4f5804328f69525f87a1130d}\index{Monument@{Monument}!conservationStatus@{conservationStatus}}
+\index{conservationStatus@{conservationStatus}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{conservationStatus}{conservationStatus}}
+{\footnotesize\ttfamily \label{class_monument_a9c71c1bc4f5804328f69525f87a1130d} 
+QString Monument\+::conservation\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_monument_a68cb8ab155e047568055f6badb3d1575}\index{Monument@{Monument}!isUnescoHeritage@{isUnescoHeritage}}
+\index{isUnescoHeritage@{isUnescoHeritage}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{isUnescoHeritage}{isUnescoHeritage}}
+{\footnotesize\ttfamily \label{class_monument_a68cb8ab155e047568055f6badb3d1575} 
+bool Monument\+::is\+Unesco\+Heritage\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{class_monument_af063359e470ea659b6fccc1f75a109f7}\index{Monument@{Monument}!openToPublic@{openToPublic}}
+\index{openToPublic@{openToPublic}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{openToPublic}{openToPublic}}
+{\footnotesize\ttfamily \label{class_monument_af063359e470ea659b6fccc1f75a109f7} 
+bool Monument\+::open\+To\+Public\hspace{0.3cm}{\ttfamily [private]}}
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

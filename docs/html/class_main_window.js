@@ -24,5 +24,10 @@ var class_main_window =
     [ "showWidgetByName", "class_main_window.html#ad59e2f5d444ceb4d0ae182f696f1e793", null ],
     [ "toggleDarkMode", "class_main_window.html#a4f1e820b66e9d9f1c5ae17a67c3f1939", null ],
     [ "updateDebugActionText", "class_main_window.html#aa9f911bdb2a6697f737980699db70697", null ],
-    [ "updateResults", "class_main_window.html#a0bbd92af40c21f9f29c449da3059e36f", null ]
+    [ "updateResults", "class_main_window.html#a0bbd92af40c21f9f29c449da3059e36f", null ],
+    [ "controller", "class_main_window.html#a172b93a11cdbac477b1bbdba1995f8e7", null ],
+    [ "isDarkModeEnabled", "class_main_window.html#aa1d1d6305789456b1cb880167f928a80", null ],
+    [ "stackedWidget", "class_main_window.html#aa86720a51d3246a6dc316d51488dcb15", null ],
+    [ "ui", "class_main_window.html#a35466a70ed47252a0191168126a352a5", null ],
+    [ "widgetMap", "class_main_window.html#a62ed4b0e269d4f98c78837c151fd7903", null ]
 ];

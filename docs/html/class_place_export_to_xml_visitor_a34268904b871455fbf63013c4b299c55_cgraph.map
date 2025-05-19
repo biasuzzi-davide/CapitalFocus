@@ -1,0 +1,9 @@
+<map id="PlaceExportToXmlVisitor::exportCultureData" name="PlaceExportToXmlVisitor::exportCultureData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,172,88"/>
+<area shape="rect" id="Node000002" href="$class_culture.html#a0dc21918e7f30cf2f9d77799ac06a266" title=" " alt="" coords="228,5,398,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,47,236,32,237,38,172,52"/>
+<area shape="rect" id="Node000003" href="$class_culture.html#ad1ae165297c171c7c39fc8359b9951d8" title=" " alt="" coords="220,55,406,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,65,204,65,204,70,172,70"/>
+<area shape="rect" id="Node000004" href="$class_culture.html#a8254e7d5a2fc57709f20efc0c000e176" title=" " alt="" coords="234,104,392,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="172,83,237,97,236,103,171,88"/>
+</map>

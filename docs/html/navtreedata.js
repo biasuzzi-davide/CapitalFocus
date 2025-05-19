@@ -72,10 +72,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_cafe_8cpp.html",
-"class_monument.html",
-"class_ui___create_place_widget.html#a5a3a946efc8bbb53085229ec05dad342",
-"class_ui__foodwidget.html#aab7eb9ba653385d9268cae11e6bcbeb5",
-"placeexporttoxmlvisitor_8h_source.html"
+"class_main_window.html#a996c5a2b6f77944776856f08ec30858d",
+"class_ui___create_place_widget.html#a15d783430b1f5d52fda7f0fd786bb5d8",
+"class_ui__culturewidget.html#afdfa7bb4253cfe4ce98b099703c02e0b",
+"globals_vars.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
