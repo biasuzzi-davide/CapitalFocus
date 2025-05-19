@@ -85,8 +85,6 @@ FORMS += \
     view/shoppingwidget.ui \
     view/createplacewidget.ui
 
-TRANSLATIONS += \
-    CapitalFocus_en_IT.ts
 CONFIG += sdk_no_version_check
 CONFIG += lrelease
 CONFIG += embed_translations
