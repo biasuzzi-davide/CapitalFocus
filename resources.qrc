@@ -2,5 +2,6 @@
     <qresource prefix="/images">
         <file>images/logo.png</file>
         <file>images/alert_icon.png</file>
+        <file>images/icon.png</file>
     </qresource>
 </RCC>
