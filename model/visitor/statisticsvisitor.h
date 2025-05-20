@@ -24,7 +24,7 @@ public:
     void visit(const Mall& mall) override;
     void visit(const LocalMarket& market) override;
     void visit(const Restaurant& restaurant) override;
-    void visit(const PanoramicPoints& point) override;
+    void visit(const PanoramicPoint& point) override;
     void visit(const Museum& museum) override;
     void visit(const Monument& monument) override;
 

@@ -80,9 +80,6 @@ public:
     void resetCurrentPlace(); // Azzera il Place corrente
     const std::vector<std::shared_ptr<Place>>& getAll() const; // Ritorna tutti i Place dal repository
 
-    //Togliere?
-    //void printAllPlaces() const;
-
 public slots:
     // Slot per azioni attivate dalla View
     void createNewPlace(); // Crea un nuovo Place

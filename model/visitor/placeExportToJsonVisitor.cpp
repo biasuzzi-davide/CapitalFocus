@@ -109,15 +109,15 @@ void PlaceExportToJsonVisitor::visit(const LocalMarket& localMarket){
     result=obj;
 }
 
-void PlaceExportToJsonVisitor::visit(const PanoramicPoints& panoramicPoints){
-    QJsonObject obj=basePlaceToJson(panoramicPoints, "PanoramicPoints");
+void PlaceExportToJsonVisitor::visit(const PanoramicPoint& PanoramicPoint){
+    QJsonObject obj=basePlaceToJson(PanoramicPoint, "PanoramicPoint");
 
-    obj["avgStayDuration"]=panoramicPoints.getAvgStayDuration().toString("HH:mm");
-    obj["minimumAge"]=QString::number(panoramicPoints.getMinAge());
-    obj["restrictedEntry"]=panoramicPoints.getRestrictedEntry();
-    obj["altitude"]= panoramicPoints.getAltitude();
-    obj["hasBinocular"]= panoramicPoints.hasBinoculars();
-    obj["nightLighting"]= panoramicPoints.isNightLit();
+    obj["avgStayDuration"]=PanoramicPoint.getAvgStayDuration().toString("HH:mm");
+    obj["minimumAge"]=QString::number(PanoramicPoint.getMinAge());
+    obj["restrictedEntry"]=PanoramicPoint.getRestrictedEntry();
+    obj["altitude"]= PanoramicPoint.getAltitude();
+    obj["hasBinocular"]= PanoramicPoint.hasBinoculars();
+    obj["nightLighting"]= PanoramicPoint.isNightLit();
 
     result=obj;
 }

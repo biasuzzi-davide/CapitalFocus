@@ -35,7 +35,7 @@ void StatisticsVisitor::visit(const Museum& r) {
 void StatisticsVisitor::visit(const LocalMarket& r) {
     visit(static_cast<const Place&>(r));
 }
-void StatisticsVisitor::visit(const PanoramicPoints& r) {
+void StatisticsVisitor::visit(const PanoramicPoint& r) {
     visit(static_cast<const Place&>(r));
 }
 

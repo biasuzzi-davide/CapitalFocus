@@ -116,8 +116,8 @@ void PlaceExportToXmlVisitor::visit(const Disco& disco) {
     result = e;
 }
 
-void PlaceExportToXmlVisitor::visit(const PanoramicPoints& point) {
-    QDomElement e = basePlaceToXml(point, "PanoramicPoints");
+void PlaceExportToXmlVisitor::visit(const PanoramicPoint& point) {
+    QDomElement e = basePlaceToXml(point, "PanoramicPoint");
     e.appendChild(exportEntertainmentData(point));
     e.setAttribute("altitude", point.getAltitude());
     e.setAttribute("hasBinocular", point.hasBinoculars());

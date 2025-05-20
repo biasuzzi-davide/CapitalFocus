@@ -7,7 +7,7 @@
 #include "model/Mall.h"
 #include "model/Museum.h"
 #include "model/Monument.h"
-#include "model/PanoramicPoints.h"
+#include "model/PanoramicPoint.h"
 #include "model/import_errors.h"
 
 #include <QJsonDocument> // Per QJsonDocument
@@ -148,14 +148,14 @@ std::vector<std::shared_ptr<Place>> PlaceImportFromJson::importFromJson(const QS
             imported.push_back(std::make_shared<Mall>(name, city, description, rating, openings, cost,
                                                       outdoor, foodArea, stands, shopCount, cinema, parking));
         }
-        else if (type == "PanoramicPoints") {
+        else if (type == "PanoramicPoint") {
             QTime avgStay = QTime::fromString(obj["avgStayDuration"].toString(), "HH:mm");
             int minAge = obj["minimumAge"].toInt();
             QString restricted = obj["restrictedEntry"].toString();
             double altitude = obj["altitude"].toDouble();
             bool binocular = obj["hasBinocular"].toBool();
             bool night = obj["nightLighting"].toBool();
-            imported.push_back(std::make_shared<PanoramicPoints>(name, city, description, rating, openings, cost,
+            imported.push_back(std::make_shared<PanoramicPoint>(name, city, description, rating, openings, cost,
                                                                  avgStay, minAge, restricted, altitude, binocular, night));
         }
         else if (type == "Museum") {

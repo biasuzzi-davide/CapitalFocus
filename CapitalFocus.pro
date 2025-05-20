@@ -27,7 +27,7 @@ SOURCES += \
     view/mainwindow.cpp \
     model/Monument.cpp \
     model/Museum.cpp \
-    model/PanoramicPoints.cpp \
+    model/PanoramicPoint.cpp \
     model/Place.cpp \
     model/debugconfig.cpp \
     model/openingFrames.cpp \
@@ -55,7 +55,7 @@ HEADERS += \
     model/Mall.h \
     model/Monument.h \
     model/Museum.h \
-    model/PanoramicPoints.h \
+    model/PanoramicPoint.h \
     model/Place.h \
     model/Restaurant.h \
     model/Shopping.h \

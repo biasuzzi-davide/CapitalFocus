@@ -1,8 +1,8 @@
-#include "PanoramicPoints.h"
+#include "PanoramicPoint.h"
 #include "visitor/placevisitorinterface.h"
 
 // Costruttore
-PanoramicPoints::PanoramicPoints(const QString& name, const QString& city, const QString& description,
+PanoramicPoint::PanoramicPoint(const QString& name, const QString& city, const QString& description,
                                  double rating, const weeklyOpenings& open, double cost,
                                  QTime avgStayDuration, int minimumAge, const QString& restrictedEntry,
                                  double altitude, bool hasBinocular, bool nightLighting)
@@ -11,17 +11,17 @@ PanoramicPoints::PanoramicPoints(const QString& name, const QString& city, const
     altitude(altitude), hasBinocular(hasBinocular), nightLighting(nightLighting) {}
 
 // Dice la categoria
-QString PanoramicPoints::getCategory() const {
+QString PanoramicPoint::getCategory() const {
     return "Panoramic Point";
 }
 
 // Implementazione per il Visitor
-void PanoramicPoints::acceptVisitor(PlaceVisitorInterface& visitor) const{
+void PanoramicPoint::acceptVisitor(PlaceVisitorInterface& visitor) const{
     visitor.visit(*this);
 }
 
 // Riassunto intrattenimento
-QString PanoramicPoints::getEntertainmentSummary() const {
+QString PanoramicPoint::getEntertainmentSummary() const {
     return QString("Altitude: %1 m | %2 | %3")
     .arg(altitude)
     .arg(hasBinocular ? "Binoculars available" : "No binoculars")
@@ -29,14 +29,14 @@ QString PanoramicPoints::getEntertainmentSummary() const {
 }
 
 // Getter
-double PanoramicPoints::getAltitude() const {
+double PanoramicPoint::getAltitude() const {
     return altitude;
 }
 
-bool PanoramicPoints::hasBinoculars() const {
+bool PanoramicPoint::hasBinoculars() const {
     return hasBinocular;
 }
 
-bool PanoramicPoints::isNightLit() const {
+bool PanoramicPoint::isNightLit() const {
     return nightLighting;
 }

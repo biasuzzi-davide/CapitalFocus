@@ -502,7 +502,7 @@ void PlaceController::createNewPlace() {
             break;
         }
 
-        // PanoramicPoints
+        // PanoramicPoint
         case 1: {
             QTime avg = create->averageStay_Panoramic();
             if (!avg.isValid())
@@ -615,8 +615,8 @@ void PlaceController::createNewPlace() {
                 );
             break;
 
-        case 1: // PanoramicPoints
-            newPlace = std::make_shared<PanoramicPoints>(
+        case 1: // PanoramicPoint
+            newPlace = std::make_shared<PanoramicPoint>(
                 name, city, description, rating, openings, cost,
                 create->averageStay_Panoramic(),
                 create->minimumAge_Panoramic(),
@@ -921,8 +921,8 @@ void PlaceController::editCurrentPlace()
         create->setPrive(d->hasPriveAccess());
         create->setDressCode(d->getDressCode());
 
-    } else if (auto* p = dynamic_cast<PanoramicPoints*>(place)) {
-        create->setType("PanoramicPoints");
+    } else if (auto* p = dynamic_cast<PanoramicPoint*>(place)) {
+        create->setType("PanoramicPoint");
         create->setAverageStay_Panoramic(p->getAvgStayDuration());
         create->setMinimumAge_Panoramic(p->getMinAge());
         create->setRestrictedEntry_Panoramic(p->getRestrictedEntry());

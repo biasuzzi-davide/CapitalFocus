@@ -8,7 +8,7 @@
 #include "model/Mall.h"
 #include "model/Museum.h"
 #include "model/Monument.h"
-#include "model/PanoramicPoints.h"
+#include "model/PanoramicPoint.h"
 #include "model/import_errors.h"
 #include "model/debugconfig.h"
 
@@ -146,7 +146,7 @@ std::vector<std::shared_ptr<Place>> PlaceImportFromXml::importFromFile(const QSt
                 genre, prive, dressCode
                 ));
         }
-        else if (type == "PanoramicPoints") {
+        else if (type == "PanoramicPoint") {
             QDomElement ed = el.firstChildElement("entertainmentData");
             QTime avgStay = QTime::fromString(ed.attribute("avgStayDuration"), "HH:mm");
             int minAge = ed.attribute("minimumAge").toInt();
@@ -154,7 +154,7 @@ std::vector<std::shared_ptr<Place>> PlaceImportFromXml::importFromFile(const QSt
             double altitude = el.attribute("altitude").toDouble();
             bool binocular = el.attribute("hasBinocular").toInt();
             bool night = el.attribute("nightLighting").toInt();
-            imported.push_back(std::make_shared<PanoramicPoints>(
+            imported.push_back(std::make_shared<PanoramicPoint>(
                 name, city, desc, rating, open, cost,
                 avgStay, minAge, restrict,
                 altitude, binocular, night

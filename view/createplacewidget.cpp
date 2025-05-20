@@ -68,7 +68,7 @@ void    CreatePlaceWidget::setMusicGenre(const QString &genre) { ui->lineEditMus
 void    CreatePlaceWidget::setPrive(bool prive)              { ui->checkBoxPrive->setChecked(prive); }
 void    CreatePlaceWidget::setDressCode(const QString &code){ ui->lineEditDressCode->setText(code); }
 
-// Getter e Setter specifici per PanoramicPoints
+// Getter e Setter specifici per PanoramicPoint
 double  CreatePlaceWidget::altitude() const        { return ui->spinBoxAltitude->value(); }
 bool    CreatePlaceWidget::binoculars() const      { return ui->checkBoxBinoculars->isChecked(); }
 bool    CreatePlaceWidget::nightLighting() const  { return ui->checkBoxNightLighting->isChecked(); }
@@ -420,7 +420,7 @@ void CreatePlaceWidget::resetFields()
     ui->minimumAgeSpinBox->setValue(0);
     ui->restrictedEntryLineEdit->clear();
 
-    // Campi PanoramicPoints
+    // Campi PanoramicPoint
     ui->spinBoxAltitude->setValue(0.0);
     ui->checkBoxBinoculars->setChecked(false);
     ui->checkBoxNightLighting->setChecked(false);

@@ -6,7 +6,7 @@
 #include "../Mall.h"
 #include "../LocalMarket.h"
 #include "../Restaurant.h"
-#include "../PanoramicPoints.h"
+#include "../PanoramicPoint.h"
 #include "../Museum.h"
 #include "../Monument.h"
 #include "../Place.h"
@@ -23,7 +23,7 @@ public:
     virtual void visit(const Mall& mall) = 0;
     virtual void visit(const LocalMarket& market) = 0;
     virtual void visit(const Restaurant& restaurant) = 0;
-    virtual void visit(const PanoramicPoints& point) = 0;
+    virtual void visit(const PanoramicPoint& point) = 0;
     virtual void visit(const Museum& museum) = 0;
     virtual void visit(const Monument& monument) = 0;
 

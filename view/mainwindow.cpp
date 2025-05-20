@@ -514,7 +514,7 @@ void MainWindow::clearSearchFields() {
     ui->lineEditSearch->clear();
     ui->comboBoxCity->setCurrentIndex(0);
 }
-#include <QSet> //
+#include <QSet>
 
 QWidget* MainWindow::getCurrentPage() const {
     return ui->stackedWidget->currentWidget();
