@@ -1,0 +1,1167 @@
+<!DOCTYPE placesDoc>
+<places>
+    <Cafe city="London" cost="5" description="A charming riverside cafe with artisanal coffee and homemade pastries." famousDrink="Flat White" hasTerrace="1" name="The Thames Grind" rating="4.5999999999999996">
+        <openings>
+            <day name="Monday">
+                <slot from="07:30" to="18:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="07:30" to="18:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="07:30" to="18:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="07:30" to="18:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="07:30" to="19:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:00" to="19:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+        </openings>
+        <foodData avgWaitingTime="00:05" hasTakeAway="1" hasVeganMenu="1"/>
+    </Cafe>
+    <Cafe city="Tokyo" cost="7" description="Modern minimalist cafe in Shibuya, known for its single-origin drip coffee and serene atmosphere." famousDrink="Hario V60 Drip" hasTerrace="0" name="Zen Coffee Bar" rating="4.7999999999999998">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="20:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="20:00"/>
+            </day>
+            <day closed="1" name="Wednesday"/>
+            <day name="Thursday">
+                <slot from="10:00" to="20:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:00" to="21:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:00" to="20:00"/>
+            </day>
+        </openings>
+        <foodData avgWaitingTime="00:07" hasTakeAway="1" hasVeganMenu="0"/>
+    </Cafe>
+    <Cafe city="Buenos Aires" cost="4" description="Traditional Argentine cafe with a historic feel, serving strong coffee and medialunas." famousDrink="Café Cortado" hasTerrace="1" name="Café Tortoni" rating="4.5">
+        <openings>
+            <day name="Monday">
+                <slot from="08:00" to="01:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="08:00" to="01:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="08:00" to="01:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="08:00" to="01:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="08:00" to="02:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="08:00" to="02:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:00" to="01:00"/>
+            </day>
+        </openings>
+        <foodData avgWaitingTime="00:10" hasTakeAway="0" hasVeganMenu="0"/>
+    </Cafe>
+    <Cafe city="Vienna" cost="6" description="Classic Viennese coffee house with chandeliers, marble tables, and a wide selection of cakes." famousDrink="Wiener Melange" hasTerrace="1" name="Café Central" rating="4.7000000000000002">
+        <openings>
+            <day name="Monday">
+                <slot from="07:30" to="22:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="07:30" to="22:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="07:30" to="22:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="07:30" to="22:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="07:30" to="22:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="08:30" to="22:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="08:30" to="22:00"/>
+            </day>
+        </openings>
+        <foodData avgWaitingTime="00:08" hasTakeAway="1" hasVeganMenu="0"/>
+    </Cafe>
+    <Cafe city="Melbourne" cost="5" description="Hipster cafe in Fitzroy known for its excellent brunch and specialty coffee." famousDrink="Magic Coffee" hasTerrace="1" name="Industry Beans" rating="4.5999999999999996">
+        <openings>
+            <day name="Monday">
+                <slot from="07:00" to="16:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="07:00" to="16:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="07:00" to="16:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="07:00" to="16:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="07:00" to="16:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="08:00" to="16:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="08:00" to="16:00"/>
+            </day>
+        </openings>
+        <foodData avgWaitingTime="00:12" hasTakeAway="1" hasVeganMenu="1"/>
+    </Cafe>
+    <Cafe city="Rome" cost="4" description="Rooftop bar with views over the city's rooftops" famousDrink="Aperol Spritz" hasTerrace="1" name="Sunset Bar" rating="4.5">
+        <openings>
+            <day name="Monday">
+                <slot from="08:00" to="23:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="08:00" to="23:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="08:00" to="23:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="08:00" to="23:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="08:00" to="23:59"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="23:59"/>
+            </day>
+            <day closed="1" name="Sunday"/>
+        </openings>
+        <foodData avgWaitingTime="00:05" hasTakeAway="1" hasVeganMenu="1"/>
+    </Cafe>
+    <Cafe city="Paris" cost="5" description="Historic Belle Époque cafe near the Opéra Garnier" famousDrink="Café au lait" hasTerrace="1" name="Café de la Paix" rating="4.5999999999999996">
+        <openings>
+            <day name="Monday">
+                <slot from="07:00" to="22:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="07:00" to="22:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="07:00" to="22:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="07:00" to="22:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="07:00" to="22:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="08:00" to="22:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="08:00" to="20:00"/>
+            </day>
+        </openings>
+        <foodData avgWaitingTime="00:07" hasTakeAway="1" hasVeganMenu="0"/>
+    </Cafe>
+    <Restaurant city="Paris" cost="120" cuisineType="Modern French" description="Elegant Michelin-starred restaurant offering innovative French cuisine with a focus on seasonal ingredients." name="Le Jules Verne" rating="4.7000000000000002" reservation="1" specialDish="Lobster Thermidor Revisited">
+        <openings>
+            <day name="Monday">
+                <slot from="12:00" to="14:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="12:00" to="14:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="12:00" to="14:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="12:00" to="14:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="12:00" to="14:30"/>
+            </day>
+            <day name="Saturday">
+                <slot from="12:00" to="14:30"/>
+            </day>
+            <day closed="1" name="Sunday"/>
+        </openings>
+        <foodData avgWaitingTime="00:15" hasTakeAway="0" hasVeganMenu="1"/>
+    </Restaurant>
+    <Restaurant city="Bangkok" cost="70" cuisineType="Royal Thai" description="Authentic Thai cuisine in a traditional setting, known for its complex curries and fresh seafood." name="Blue Elephant" rating="4.5999999999999996" reservation="1" specialDish="Massaman Curry with Lamb">
+        <openings>
+            <day name="Monday">
+                <slot from="11:30" to="14:30"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="11:30" to="14:30"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="11:30" to="14:30"/>
+            </day>
+            <day name="Thursday">
+                <slot from="11:30" to="14:30"/>
+            </day>
+            <day name="Friday">
+                <slot from="11:30" to="14:30"/>
+            </day>
+            <day name="Saturday">
+                <slot from="11:30" to="14:30"/>
+            </day>
+            <day name="Sunday">
+                <slot from="11:30" to="14:30"/>
+            </day>
+        </openings>
+        <foodData avgWaitingTime="00:20" hasTakeAway="1" hasVeganMenu="1"/>
+    </Restaurant>
+    <Restaurant city="Mexico City" cost="90" cuisineType="Contemporary Mexican" description="World-renowned restaurant offering a modern take on traditional Mexican flavors." name="Pujol" rating="4.9000000000000004" reservation="1" specialDish="Mole Madre, Mole Nuevo">
+        <openings>
+            <day name="Monday">
+                <slot from="13:30" to="21:30"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="13:30" to="21:30"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="13:30" to="21:30"/>
+            </day>
+            <day name="Thursday">
+                <slot from="13:30" to="21:30"/>
+            </day>
+            <day name="Friday">
+                <slot from="13:30" to="21:30"/>
+            </day>
+            <day name="Saturday">
+                <slot from="13:30" to="21:30"/>
+            </day>
+            <day closed="1" name="Sunday"/>
+        </openings>
+        <foodData avgWaitingTime="00:10" hasTakeAway="0" hasVeganMenu="1"/>
+    </Restaurant>
+    <Restaurant city="Lima" cost="100" cuisineType="Peruvian Nikkei" description="Celebrated restaurant blending Peruvian ingredients with Japanese culinary techniques." name="Maido" rating="4.7999999999999998" reservation="1" specialDish="50 Hours Short Rib">
+        <openings>
+            <day name="Monday">
+                <slot from="12:30" to="15:30"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="12:30" to="15:30"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="12:30" to="15:30"/>
+            </day>
+            <day name="Thursday">
+                <slot from="12:30" to="15:30"/>
+            </day>
+            <day name="Friday">
+                <slot from="12:30" to="15:30"/>
+            </day>
+            <day name="Saturday">
+                <slot from="12:30" to="15:30"/>
+            </day>
+            <day closed="1" name="Sunday"/>
+        </openings>
+        <foodData avgWaitingTime="00:15" hasTakeAway="0" hasVeganMenu="0"/>
+    </Restaurant>
+    <Restaurant city="Copenhagen" cost="250" cuisineType="New Nordic" description="Innovative gastronomy and unique fermentations at this world-famous Danish restaurant." name="Noma" rating="4.9000000000000004" reservation="1" specialDish="Seasonal Tasting Menu">
+        <openings>
+            <day closed="1" name="Monday"/>
+            <day name="Tuesday">
+                <slot from="17:00" to="23:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="17:00" to="23:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="12:00" to="16:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="12:00" to="16:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="12:00" to="16:00"/>
+            </day>
+            <day closed="1" name="Sunday"/>
+        </openings>
+        <foodData avgWaitingTime="00:05" hasTakeAway="0" hasVeganMenu="1"/>
+    </Restaurant>
+    <Restaurant city="Rome" cost="150" cuisineType="Italian fine-dining" description="Three Michelin stars with panoramic views of Rome" name="La Pergola" rating="4.7999999999999998" reservation="1" specialDish="Truffle pasta">
+        <openings>
+            <day closed="1" name="Monday"/>
+            <day name="Tuesday">
+                <slot from="19:00" to="23:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="19:00" to="23:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="19:00" to="23:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="19:00" to="23:59"/>
+            </day>
+            <day name="Saturday">
+                <slot from="19:00" to="23:59"/>
+            </day>
+            <day name="Sunday">
+                <slot from="12:00" to="15:00"/>
+            </day>
+        </openings>
+        <foodData avgWaitingTime="00:10" hasTakeAway="0" hasVeganMenu="1"/>
+    </Restaurant>
+    <Disco city="Berlin" cost="20" description="Legendary techno club with a strict door policy and marathon parties." dressCode="Dark / Alternative" hasPrive="0" musicGenre="Techno, House" name="Berghain / Panorama Bar" rating="4.7000000000000002">
+        <openings>
+            <day closed="1" name="Monday"/>
+            <day closed="1" name="Tuesday"/>
+            <day closed="1" name="Wednesday"/>
+            <day name="Thursday">
+                <slot from="23:59" to="08:00"/>
+            </day>
+            <day alwaysOpen="1" name="Friday"/>
+            <day alwaysOpen="1" name="Saturday"/>
+            <day name="Sunday">
+                <slot from="00:00" to="12:00"/>
+            </day>
+        </openings>
+        <entertainmentData avgStayDuration="00:00" minimumAge="21" restrictedEntry="Strict Door Policy"/>
+    </Disco>
+    <Disco city="Amsterdam" cost="25" description="Multi-room venue hosting international DJs and diverse electronic music nights." dressCode="Smart Casual" hasPrive="1" musicGenre="EDM, Trance, House" name="Warehouse Elementenstraat" rating="4.5">
+        <openings>
+            <day closed="1" name="Monday"/>
+            <day closed="1" name="Tuesday"/>
+            <day closed="1" name="Wednesday"/>
+            <day closed="1" name="Thursday"/>
+            <day name="Friday">
+                <slot from="23:00" to="06:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="23:00" to="07:00"/>
+            </day>
+            <day closed="1" name="Sunday"/>
+        </openings>
+        <entertainmentData avgStayDuration="" minimumAge="18" restrictedEntry="Ticket / Guestlist"/>
+    </Disco>
+    <Disco city="Ibiza" cost="70" description="Iconic superclub known for its spectacular productions and world-class DJs." dressCode="Dressy / Clubwear" hasPrive="1" musicGenre="EDM, House, Techno" name="Ushuaïa Ibiza Beach Hotel" rating="4.7999999999999998">
+        <openings>
+            <day name="Monday">
+                <slot from="17:00" to="23:59"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="17:00" to="23:59"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="17:00" to="23:59"/>
+            </day>
+            <day name="Thursday">
+                <slot from="17:00" to="23:59"/>
+            </day>
+            <day name="Friday">
+                <slot from="17:00" to="23:59"/>
+            </day>
+            <day name="Saturday">
+                <slot from="17:00" to="23:59"/>
+            </day>
+            <day name="Sunday">
+                <slot from="17:00" to="23:59"/>
+            </day>
+        </openings>
+        <entertainmentData avgStayDuration="" minimumAge="18" restrictedEntry="Ticket"/>
+    </Disco>
+    <Disco city="London" cost="30" description="Legendary multi-room club in Farringdon, a staple of London's electronic music scene." dressCode="Casual / Trendy" hasPrive="1" musicGenre="Techno, House, Drum &amp; Bass" name="fabric" rating="4.5999999999999996">
+        <openings>
+            <day closed="1" name="Monday"/>
+            <day closed="1" name="Tuesday"/>
+            <day closed="1" name="Wednesday"/>
+            <day closed="1" name="Thursday"/>
+            <day name="Friday">
+                <slot from="23:00" to="07:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="23:00" to="08:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="23:00" to="05:00"/>
+            </day>
+        </openings>
+        <entertainmentData avgStayDuration="" minimumAge="19" restrictedEntry="Ticket / ID Required"/>
+    </Disco>
+    <Disco city="Mykonos" cost="50" description="Famous beach club and open-air disco with a party atmosphere." dressCode="Beach Chic / Glam" hasPrive="1" musicGenre="House, Dance" name="Nammos Village" rating="4.4000000000000004">
+        <openings>
+            <day name="Monday">
+                <slot from="11:00" to="01:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="11:00" to="01:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="11:00" to="01:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="11:00" to="01:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="11:00" to="02:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="11:00" to="02:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="11:00" to="01:00"/>
+            </day>
+        </openings>
+        <entertainmentData avgStayDuration="" minimumAge="18" restrictedEntry="Reservation / Minimum Spend"/>
+    </Disco>
+    <LocalMarket artisans="1" city="Istanbul" cost="0" description="Historic and vibrant covered market with spices, sweets, textiles, and souvenirs." name="Grand Bazaar" period="Open all year round" rating="4.5999999999999996" seasonal="0">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day closed="1" name="Sunday"/>
+        </openings>
+        <shoppingData foodAreaPresent="1" isOutdoor="0" standNumber="4000"/>
+    </LocalMarket>
+    <LocalMarket artisans="1" city="Kyoto" cost="0" description="Lively kitchen market offering fresh produce, seafood, pickles, and local delicacies." name="Nishiki Market" period="Open all year round" rating="4.5" seasonal="0">
+        <openings>
+            <day name="Monday">
+                <slot from="09:30" to="18:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="09:30" to="18:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="09:30" to="18:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="09:30" to="18:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="09:30" to="18:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:30" to="18:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:00" to="17:00"/>
+            </day>
+        </openings>
+        <shoppingData foodAreaPresent="1" isOutdoor="0" standNumber="130"/>
+    </LocalMarket>
+    <LocalMarket artisans="1" city="Seattle" cost="0" description="Historic public market overlooking the Elliott Bay waterfront in Seattle." name="Pike Place Market" period="Open all year round" rating="4.7000000000000002" seasonal="0">
+        <openings>
+            <day name="Monday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+        </openings>
+        <shoppingData foodAreaPresent="1" isOutdoor="0" standNumber="225"/>
+    </LocalMarket>
+    <LocalMarket artisans="0" city="Budapest" cost="0" description="Largest and oldest indoor market in Budapest, offering fresh produce, meats, pastries, and souvenirs." name="Great Market Hall (Nagy Vásárcsarnok)" period="Open all year round" rating="4.5" seasonal="0">
+        <openings>
+            <day name="Monday">
+                <slot from="06:00" to="17:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="06:00" to="18:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="06:00" to="18:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="06:00" to="18:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="06:00" to="18:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="06:00" to="15:00"/>
+            </day>
+            <day closed="1" name="Sunday"/>
+        </openings>
+        <shoppingData foodAreaPresent="1" isOutdoor="0" standNumber="180"/>
+    </LocalMarket>
+    <LocalMarket artisans="1" city="Marrakech" cost="0" description="Famous square and market with snake charmers, food stalls, and crafts." name="Djemaa el-Fna" period="Open all year round" rating="4.5999999999999996" seasonal="0">
+        <openings>
+            <day name="Monday">
+                <slot from="08:00" to="23:59"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="08:00" to="23:59"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="08:00" to="23:59"/>
+            </day>
+            <day name="Thursday">
+                <slot from="08:00" to="23:59"/>
+            </day>
+            <day name="Friday">
+                <slot from="08:00" to="23:59"/>
+            </day>
+            <day name="Saturday">
+                <slot from="08:00" to="23:59"/>
+            </day>
+            <day name="Sunday">
+                <slot from="08:00" to="23:59"/>
+            </day>
+        </openings>
+        <shoppingData foodAreaPresent="1" isOutdoor="1" standNumber="300"/>
+    </LocalMarket>
+    <Mall cinema="1" city="Singapore" cost="0" description="Iconic lifestyle destination with luxury retail, a rooftop infinity pool, and an observation deck." freeParking="0" name="Marina Bay Sands Shoppes" rating="4.7000000000000002" shopCount="270">
+        <openings>
+            <day name="Monday">
+                <slot from="10:30" to="23:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:30" to="23:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:30" to="23:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="10:30" to="23:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:30" to="23:30"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:30" to="23:30"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:30" to="23:00"/>
+            </day>
+        </openings>
+        <shoppingData foodAreaPresent="1" isOutdoor="0" standNumber="60"/>
+    </Mall>
+    <Mall cinema="1" city="Toronto" cost="0" description="Large downtown shopping mall with a distinctive glass galleria and a wide range of retailers." freeParking="0" name="CF Toronto Eaton Centre" rating="4.5" shopCount="230">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="11:00" to="19:00"/>
+            </day>
+        </openings>
+        <shoppingData foodAreaPresent="1" isOutdoor="0" standNumber="50"/>
+    </Mall>
+    <Mall cinema="1" city="Kuala Lumpur" cost="0" description="Impressive mall at the base of the Petronas Towers, featuring luxury brands and entertainment." freeParking="1" name="Suria KLCC" rating="4.5999999999999996" shopCount="360">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+        </openings>
+        <shoppingData foodAreaPresent="1" isOutdoor="0" standNumber="80"/>
+    </Mall>
+    <Mall cinema="1" city="Bangkok" cost="0" description="One of the largest shopping malls in Asia, offering a vast selection of shops, restaurants, and entertainment." freeParking="1" name="Siam Paragon" rating="4.7000000000000002" shopCount="400">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+        </openings>
+        <shoppingData foodAreaPresent="1" isOutdoor="0" standNumber="100"/>
+    </Mall>
+    <Mall cinema="0" city="Milan" cost="0" description="Historic 19th-century glass-covered arcade with luxury boutiques and elegant cafes." freeParking="0" name="Galleria Vittorio Emanuele II" rating="4.7000000000000002" shopCount="50">
+        <openings>
+            <day name="Monday">
+                <slot from="00:00" to="23:59"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="00:00" to="23:59"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="00:00" to="23:59"/>
+            </day>
+            <day name="Thursday">
+                <slot from="00:00" to="23:59"/>
+            </day>
+            <day name="Friday">
+                <slot from="00:00" to="23:59"/>
+            </day>
+            <day name="Saturday">
+                <slot from="00:00" to="23:59"/>
+            </day>
+            <day name="Sunday">
+                <slot from="00:00" to="23:59"/>
+            </day>
+        </openings>
+        <shoppingData foodAreaPresent="1" isOutdoor="0" standNumber="10"/>
+    </Mall>
+    <PanoramicPoint altitude="381" city="New York" cost="44" description="Observation deck on the 86th floor of the iconic Art Deco skyscraper, offering 360-degree views." hasBinocular="1" name="Empire State Building Observatory" nightLighting="1" rating="4.5999999999999996">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:00" to="22:00"/>
+            </day>
+        </openings>
+        <entertainmentData avgStayDuration="" minimumAge="0" restrictedEntry="None"/>
+    </PanoramicPoint>
+    <PanoramicPoint altitude="135" city="London" cost="30" description="Giant Ferris wheel on the South Bank of the River Thames offering stunning city views." hasBinocular="0" name="The London Eye" nightLighting="1" rating="4.5">
+        <openings>
+            <day name="Monday">
+                <slot from="11:00" to="18:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="11:00" to="18:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="11:00" to="18:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="11:00" to="18:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="11:00" to="18:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="20:30"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:00" to="20:30"/>
+            </day>
+        </openings>
+        <entertainmentData avgStayDuration="" minimumAge="0" restrictedEntry="Ticket"/>
+    </PanoramicPoint>
+    <PanoramicPoint altitude="340" city="Chicago" cost="35" description="Observation deck on the 94th floor of the former John Hancock Center, with thrilling TILT experience." hasBinocular="1" name="360 Chicago Observation Deck" nightLighting="1" rating="4.5999999999999996">
+        <openings>
+            <day name="Monday">
+                <slot from="09:00" to="23:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="09:00" to="23:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="09:00" to="23:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="09:00" to="23:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="09:00" to="23:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:00" to="23:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:00" to="23:00"/>
+            </day>
+        </openings>
+        <entertainmentData avgStayDuration="" minimumAge="0" restrictedEntry="Ticket"/>
+    </PanoramicPoint>
+    <PanoramicPoint altitude="634" city="Tokyo" cost="30" description="Broadcasting and observation tower, the tallest structure in Japan, offering panoramic city views." hasBinocular="1" name="Tokyo Skytree" nightLighting="1" rating="4.7000000000000002">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:00" to="21:00"/>
+            </day>
+        </openings>
+        <entertainmentData avgStayDuration="" minimumAge="0" restrictedEntry="Ticket"/>
+    </PanoramicPoint>
+    <PanoramicPoint altitude="210" city="Berlin" cost="23" description="Television tower in central Berlin offering 360° views of the city and a revolving restaurant." hasBinocular="1" name="Berliner Fernsehturm (TV Tower)" nightLighting="1" rating="4.5">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="23:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="23:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:00" to="23:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="10:00" to="23:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:00" to="23:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="23:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:00" to="23:00"/>
+            </day>
+        </openings>
+        <entertainmentData avgStayDuration="" minimumAge="0" restrictedEntry="Ticket"/>
+    </PanoramicPoint>
+    <Museum city="Washington D.C." cost="0" description="Showcases a vast collection of historic aircraft and spacecraft." hasAudioGuide="1" name="National Air and Space Museum" rating="4.7999999999999998">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="17:30"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="17:30"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:00" to="17:30"/>
+            </day>
+            <day name="Thursday">
+                <slot from="10:00" to="17:30"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:00" to="17:30"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="17:30"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:00" to="17:30"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Museum>
+    <Museum city="Cairo" cost="12" description="Home to an extensive collection of ancient Egyptian antiquities." hasAudioGuide="1" name="The Egyptian Museum" rating="4.5999999999999996">
+        <openings>
+            <day name="Monday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="09:00" to="16:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Museum>
+    <Museum city="Madrid" cost="15" description="Features masterpieces by Goya, Velázquez, and El Greco, among others." hasAudioGuide="1" name="Prado Museum" rating="4.7000000000000002">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="20:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="20:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:00" to="20:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="10:00" to="20:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="10:00" to="20:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="20:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:00" to="19:00"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Museum>
+    <Museum city="St. Petersburg" cost="10" description="One of the largest and oldest museums in the world, housing a vast collection of Western European Art." hasAudioGuide="1" name="The State Hermitage Museum" rating="4.9000000000000004">
+        <openings>
+            <day closed="1" name="Monday"/>
+            <day name="Tuesday">
+                <slot from="11:00" to="18:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="11:00" to="20:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="11:00" to="18:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="11:00" to="20:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="11:00" to="20:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="11:00" to="18:00"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Museum>
+    <Museum city="Amsterdam" cost="22" description="Home to masterpieces by Rembrandt, Vermeer, and Hals." hasAudioGuide="1" name="Rijksmuseum" rating="4.7999999999999998">
+        <openings>
+            <day name="Monday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Museum>
+    <Museum city="Florence" cost="20" description="Collection of Renaissance masterpieces." hasAudioGuide="1" name="Uffizi Gallery" rating="4.7999999999999998">
+        <openings>
+            <day closed="1" name="Monday"/>
+            <day name="Tuesday">
+                <slot from="08:15" to="18:50"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="08:15" to="18:50"/>
+            </day>
+            <day name="Thursday">
+                <slot from="08:15" to="18:50"/>
+            </day>
+            <day name="Friday">
+                <slot from="08:15" to="18:50"/>
+            </day>
+            <day name="Saturday">
+                <slot from="08:15" to="18:50"/>
+            </day>
+            <day name="Sunday">
+                <slot from="08:15" to="18:50"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Museum>
+    <Museum city="Paris" cost="17" description="The world's most visited museum, home to the Mona Lisa." hasAudioGuide="1" name="Louvre Museum" rating="4.9000000000000004">
+        <openings>
+            <day name="Monday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+            <day closed="1" name="Tuesday"/>
+            <day name="Wednesday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="09:00" to="21:45"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:00" to="18:00"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Museum>
+    <Monument city="Beijing" conservationStatus="Well-preserved sections" cost="8" description="Iconic series of fortifications built across the historical northern borders of ancient Chinese states." isUnesco="1" name="Great Wall of China (Mutianyu Section)" openToPublic="1" rating="4.7999999999999998">
+        <openings>
+            <day name="Monday">
+                <slot from="07:30" to="17:30"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="07:30" to="17:30"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="07:30" to="17:30"/>
+            </day>
+            <day name="Thursday">
+                <slot from="07:30" to="17:30"/>
+            </day>
+            <day name="Friday">
+                <slot from="07:30" to="17:30"/>
+            </day>
+            <day name="Saturday">
+                <slot from="07:00" to="18:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="07:00" to="18:00"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Monument>
+    <Monument city="Sydney" conservationStatus="Excellent" cost="40" description="Multi-venue performing arts centre with a distinctive sail-shaped design." isUnesco="1" name="Sydney Opera House" openToPublic="1" rating="4.7000000000000002">
+        <openings>
+            <day name="Monday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:00" to="17:00"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Monument>
+    <Monument city="Moscow" conservationStatus="Well-maintained" cost="15" description="Historic fortified complex in the heart of Moscow, serving as the official residence of the President of Russia." isUnesco="1" name="The Moscow Kremlin" openToPublic="1" rating="4.5999999999999996">
+        <openings>
+            <day name="Monday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day closed="1" name="Thursday"/>
+            <day name="Friday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="10:00" to="18:00"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Monument>
+    <Monument city="Agra" conservationStatus="Excellent" cost="14" description="Ivory-white marble mausoleum on the south bank of the Yamuna river, a symbol of eternal love." isUnesco="1" name="Taj Mahal" openToPublic="1" rating="4.9000000000000004">
+        <openings>
+            <day name="Monday">
+                <slot from="06:00" to="18:30"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="06:00" to="18:30"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="06:00" to="18:30"/>
+            </day>
+            <day name="Thursday">
+                <slot from="06:00" to="18:30"/>
+            </day>
+            <day closed="1" name="Friday"/>
+            <day name="Saturday">
+                <slot from="06:00" to="18:30"/>
+            </day>
+            <day name="Sunday">
+                <slot from="06:00" to="18:30"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Monument>
+    <Monument city="Athens" conservationStatus="Ongoing Restoration" cost="20" description="Ancient citadel located on a rocky outcrop above the city of Athens, containing the Parthenon." isUnesco="1" name="Acropolis of Athens" openToPublic="1" rating="4.7999999999999998">
+        <openings>
+            <day name="Monday">
+                <slot from="08:00" to="20:00"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="08:00" to="20:00"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="08:00" to="20:00"/>
+            </day>
+            <day name="Thursday">
+                <slot from="08:00" to="20:00"/>
+            </day>
+            <day name="Friday">
+                <slot from="08:00" to="20:00"/>
+            </day>
+            <day name="Saturday">
+                <slot from="08:00" to="20:00"/>
+            </day>
+            <day name="Sunday">
+                <slot from="08:00" to="20:00"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Monument>
+    <Monument city="Rome" conservationStatus="Restored" cost="18" description="Iconic Roman amphitheater, symbol of Imperial Rome." isUnesco="1" name="Colosseum" openToPublic="1" rating="4.7000000000000002">
+        <openings>
+            <day name="Monday">
+                <slot from="09:00" to="19:15"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="09:00" to="19:15"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="09:00" to="19:15"/>
+            </day>
+            <day name="Thursday">
+                <slot from="09:00" to="19:15"/>
+            </day>
+            <day name="Friday">
+                <slot from="09:00" to="19:15"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:00" to="19:15"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:00" to="19:15"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Monument>
+    <Monument city="Paris" conservationStatus="Maintained" cost="28" description="Wrought-iron lattice tower on the Champ de Mars." isUnesco="1" name="Eiffel Tower" openToPublic="1" rating="4.7999999999999998">
+        <openings>
+            <day name="Monday">
+                <slot from="09:30" to="23:45"/>
+            </day>
+            <day name="Tuesday">
+                <slot from="09:30" to="23:45"/>
+            </day>
+            <day name="Wednesday">
+                <slot from="09:30" to="23:45"/>
+            </day>
+            <day name="Thursday">
+                <slot from="09:30" to="23:45"/>
+            </day>
+            <day name="Friday">
+                <slot from="09:30" to="00:45"/>
+            </day>
+            <day name="Saturday">
+                <slot from="09:30" to="00:45"/>
+            </day>
+            <day name="Sunday">
+                <slot from="09:30" to="23:45"/>
+            </day>
+        </openings>
+        <cultureData culturalFocus="" guidedTour="0" studentDiscount="0"/>
+    </Monument>
+</places>

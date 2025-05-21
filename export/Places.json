@@ -1,0 +1,2349 @@
+[
+    {
+        "avgWaitingTime": "00:05",
+        "city": "London",
+        "cost": 5,
+        "description": "A charming riverside cafe with artisanal coffee and homemade pastries.",
+        "famousDrink": "Flat White",
+        "hasTerrace": true,
+        "name": "The Thames Grind",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "07:30",
+                "to": "19:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "19:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.6,
+        "takeAway": true,
+        "type": "Cafe",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:07",
+        "city": "Tokyo",
+        "cost": 7,
+        "description": "Modern minimalist cafe in Shibuya, known for its single-origin drip coffee and serene atmosphere.",
+        "famousDrink": "Hario V60 Drip",
+        "hasTerrace": false,
+        "name": "Zen Coffee Bar",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "20:00"
+            },
+            {
+                "closed": true,
+                "day": "Wednesday"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "20:00"
+            }
+        ],
+        "rating": 4.8,
+        "takeAway": true,
+        "type": "Cafe",
+        "veganMenu": false
+    },
+    {
+        "avgWaitingTime": "00:10",
+        "city": "Buenos Aires",
+        "cost": 4,
+        "description": "Traditional Argentine cafe with a historic feel, serving strong coffee and medialunas.",
+        "famousDrink": "Café Cortado",
+        "hasTerrace": true,
+        "name": "Café Tortoni",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "08:00",
+                "to": "01:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:00",
+                "to": "01:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:00",
+                "to": "01:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:00",
+                "to": "01:00"
+            },
+            {
+                "day": "Friday",
+                "from": "08:00",
+                "to": "02:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "02:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "01:00"
+            }
+        ],
+        "rating": 4.5,
+        "takeAway": false,
+        "type": "Cafe",
+        "veganMenu": false
+    },
+    {
+        "avgWaitingTime": "00:08",
+        "city": "Vienna",
+        "cost": 6,
+        "description": "Classic Viennese coffee house with chandeliers, marble tables, and a wide selection of cakes.",
+        "famousDrink": "Wiener Melange",
+        "hasTerrace": true,
+        "name": "Café Central",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:30",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:30",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:30",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:30",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "07:30",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:30",
+                "to": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "08:30",
+                "to": "22:00"
+            }
+        ],
+        "rating": 4.7,
+        "takeAway": true,
+        "type": "Cafe",
+        "veganMenu": false
+    },
+    {
+        "avgWaitingTime": "00:12",
+        "city": "Melbourne",
+        "cost": 5,
+        "description": "Hipster cafe in Fitzroy known for its excellent brunch and specialty coffee.",
+        "famousDrink": "Magic Coffee",
+        "hasTerrace": true,
+        "name": "Industry Beans",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:00",
+                "to": "16:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:00",
+                "to": "16:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:00",
+                "to": "16:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:00",
+                "to": "16:00"
+            },
+            {
+                "day": "Friday",
+                "from": "07:00",
+                "to": "16:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "16:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "08:00",
+                "to": "16:00"
+            }
+        ],
+        "rating": 4.6,
+        "takeAway": true,
+        "type": "Cafe",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:05",
+        "city": "Rome",
+        "cost": 4,
+        "description": "Rooftop bar with views over the city's rooftops",
+        "famousDrink": "Aperol Spritz",
+        "hasTerrace": true,
+        "name": "Sunset Bar",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "08:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "08:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "23:59"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.5,
+        "takeAway": true,
+        "type": "Cafe",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:07",
+        "city": "Paris",
+        "cost": 5,
+        "description": "Historic Belle Époque cafe near the Opéra Garnier",
+        "famousDrink": "Café au lait",
+        "hasTerrace": true,
+        "name": "Café de la Paix",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "07:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "08:00",
+                "to": "20:00"
+            }
+        ],
+        "rating": 4.6,
+        "takeAway": true,
+        "type": "Cafe",
+        "veganMenu": false
+    },
+    {
+        "avgWaitingTime": "00:15",
+        "city": "Paris",
+        "cost": 120,
+        "cuisineType": "Modern French",
+        "description": "Elegant Michelin-starred restaurant offering innovative French cuisine with a focus on seasonal ingredients.",
+        "name": "Le Jules Verne",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "12:00",
+                "to": "14:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "12:00",
+                "to": "14:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "12:00",
+                "to": "14:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "12:00",
+                "to": "14:00"
+            },
+            {
+                "day": "Friday",
+                "from": "12:00",
+                "to": "14:30"
+            },
+            {
+                "day": "Saturday",
+                "from": "12:00",
+                "to": "14:30"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.7,
+        "reservation": true,
+        "specialDish": "Lobster Thermidor Revisited",
+        "takeAway": false,
+        "type": "Restaurant",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:20",
+        "city": "Bangkok",
+        "cost": 70,
+        "cuisineType": "Royal Thai",
+        "description": "Authentic Thai cuisine in a traditional setting, known for its complex curries and fresh seafood.",
+        "name": "Blue Elephant",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "11:30",
+                "to": "14:30"
+            },
+            {
+                "day": "Tuesday",
+                "from": "11:30",
+                "to": "14:30"
+            },
+            {
+                "day": "Wednesday",
+                "from": "11:30",
+                "to": "14:30"
+            },
+            {
+                "day": "Thursday",
+                "from": "11:30",
+                "to": "14:30"
+            },
+            {
+                "day": "Friday",
+                "from": "11:30",
+                "to": "14:30"
+            },
+            {
+                "day": "Saturday",
+                "from": "11:30",
+                "to": "14:30"
+            },
+            {
+                "day": "Sunday",
+                "from": "11:30",
+                "to": "14:30"
+            }
+        ],
+        "rating": 4.6,
+        "reservation": true,
+        "specialDish": "Massaman Curry with Lamb",
+        "takeAway": true,
+        "type": "Restaurant",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:10",
+        "city": "Mexico City",
+        "cost": 90,
+        "cuisineType": "Contemporary Mexican",
+        "description": "World-renowned restaurant offering a modern take on traditional Mexican flavors.",
+        "name": "Pujol",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "13:30",
+                "to": "21:30"
+            },
+            {
+                "day": "Tuesday",
+                "from": "13:30",
+                "to": "21:30"
+            },
+            {
+                "day": "Wednesday",
+                "from": "13:30",
+                "to": "21:30"
+            },
+            {
+                "day": "Thursday",
+                "from": "13:30",
+                "to": "21:30"
+            },
+            {
+                "day": "Friday",
+                "from": "13:30",
+                "to": "21:30"
+            },
+            {
+                "day": "Saturday",
+                "from": "13:30",
+                "to": "21:30"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.9,
+        "reservation": true,
+        "specialDish": "Mole Madre, Mole Nuevo",
+        "takeAway": false,
+        "type": "Restaurant",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:15",
+        "city": "Lima",
+        "cost": 100,
+        "cuisineType": "Peruvian Nikkei",
+        "description": "Celebrated restaurant blending Peruvian ingredients with Japanese culinary techniques.",
+        "name": "Maido",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "12:30",
+                "to": "15:30"
+            },
+            {
+                "day": "Tuesday",
+                "from": "12:30",
+                "to": "15:30"
+            },
+            {
+                "day": "Wednesday",
+                "from": "12:30",
+                "to": "15:30"
+            },
+            {
+                "day": "Thursday",
+                "from": "12:30",
+                "to": "15:30"
+            },
+            {
+                "day": "Friday",
+                "from": "12:30",
+                "to": "15:30"
+            },
+            {
+                "day": "Saturday",
+                "from": "12:30",
+                "to": "15:30"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.8,
+        "reservation": true,
+        "specialDish": "50 Hours Short Rib",
+        "takeAway": false,
+        "type": "Restaurant",
+        "veganMenu": false
+    },
+    {
+        "avgWaitingTime": "00:05",
+        "city": "Copenhagen",
+        "cost": 250,
+        "cuisineType": "New Nordic",
+        "description": "Innovative gastronomy and unique fermentations at this world-famous Danish restaurant.",
+        "name": "Noma",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "17:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "17:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "12:00",
+                "to": "16:00"
+            },
+            {
+                "day": "Friday",
+                "from": "12:00",
+                "to": "16:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "12:00",
+                "to": "16:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.9,
+        "reservation": true,
+        "specialDish": "Seasonal Tasting Menu",
+        "takeAway": false,
+        "type": "Restaurant",
+        "veganMenu": true
+    },
+    {
+        "avgWaitingTime": "00:10",
+        "city": "Rome",
+        "cost": 150,
+        "cuisineType": "Italian fine-dining",
+        "description": "Three Michelin stars with panoramic views of Rome",
+        "name": "La Pergola",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "19:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "19:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "19:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Sunday",
+                "from": "12:00",
+                "to": "15:00"
+            }
+        ],
+        "rating": 4.8,
+        "reservation": true,
+        "specialDish": "Truffle pasta",
+        "takeAway": false,
+        "type": "Restaurant",
+        "veganMenu": true
+    },
+    {
+        "avgStayDuration": "00:00",
+        "city": "Berlin",
+        "cost": 20,
+        "description": "Legendary techno club with a strict door policy and marathon parties.",
+        "dressCode": "Dark / Alternative",
+        "hasPrive": false,
+        "minimumAge": "21",
+        "musicGenre": "Techno, House",
+        "name": "Berghain / Panorama Bar",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "closed": true,
+                "day": "Tuesday"
+            },
+            {
+                "closed": true,
+                "day": "Wednesday"
+            },
+            {
+                "day": "Thursday",
+                "from": "23:59",
+                "to": "08:00"
+            },
+            {
+                "alwaysOpen": true,
+                "day": "Friday"
+            },
+            {
+                "alwaysOpen": true,
+                "day": "Saturday"
+            },
+            {
+                "day": "Sunday",
+                "from": "00:00",
+                "to": "12:00"
+            }
+        ],
+        "rating": 4.7,
+        "restrictedEntry": "Strict Door Policy",
+        "type": "Disco"
+    },
+    {
+        "avgStayDuration": "",
+        "city": "Amsterdam",
+        "cost": 25,
+        "description": "Multi-room venue hosting international DJs and diverse electronic music nights.",
+        "dressCode": "Smart Casual",
+        "hasPrive": true,
+        "minimumAge": "18",
+        "musicGenre": "EDM, Trance, House",
+        "name": "Warehouse Elementenstraat",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "closed": true,
+                "day": "Tuesday"
+            },
+            {
+                "closed": true,
+                "day": "Wednesday"
+            },
+            {
+                "closed": true,
+                "day": "Thursday"
+            },
+            {
+                "day": "Friday",
+                "from": "23:00",
+                "to": "06:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "23:00",
+                "to": "07:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "rating": 4.5,
+        "restrictedEntry": "Ticket / Guestlist",
+        "type": "Disco"
+    },
+    {
+        "avgStayDuration": "",
+        "city": "Ibiza",
+        "cost": 70,
+        "description": "Iconic superclub known for its spectacular productions and world-class DJs.",
+        "dressCode": "Dressy / Clubwear",
+        "hasPrive": true,
+        "minimumAge": "18",
+        "musicGenre": "EDM, House, Techno",
+        "name": "Ushuaïa Ibiza Beach Hotel",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "17:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Tuesday",
+                "from": "17:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Wednesday",
+                "from": "17:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Thursday",
+                "from": "17:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Friday",
+                "from": "17:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "17:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Sunday",
+                "from": "17:00",
+                "to": "23:59"
+            }
+        ],
+        "rating": 4.8,
+        "restrictedEntry": "Ticket",
+        "type": "Disco"
+    },
+    {
+        "avgStayDuration": "",
+        "city": "London",
+        "cost": 30,
+        "description": "Legendary multi-room club in Farringdon, a staple of London's electronic music scene.",
+        "dressCode": "Casual / Trendy",
+        "hasPrive": true,
+        "minimumAge": "19",
+        "musicGenre": "Techno, House, Drum & Bass",
+        "name": "fabric",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "closed": true,
+                "day": "Tuesday"
+            },
+            {
+                "closed": true,
+                "day": "Wednesday"
+            },
+            {
+                "closed": true,
+                "day": "Thursday"
+            },
+            {
+                "day": "Friday",
+                "from": "23:00",
+                "to": "07:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "23:00",
+                "to": "08:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "23:00",
+                "to": "05:00"
+            }
+        ],
+        "rating": 4.6,
+        "restrictedEntry": "Ticket / ID Required",
+        "type": "Disco"
+    },
+    {
+        "avgStayDuration": "",
+        "city": "Mykonos",
+        "cost": 50,
+        "description": "Famous beach club and open-air disco with a party atmosphere.",
+        "dressCode": "Beach Chic / Glam",
+        "hasPrive": true,
+        "minimumAge": "18",
+        "musicGenre": "House, Dance",
+        "name": "Nammos Village",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "11:00",
+                "to": "01:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "11:00",
+                "to": "01:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "11:00",
+                "to": "01:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "11:00",
+                "to": "01:00"
+            },
+            {
+                "day": "Friday",
+                "from": "11:00",
+                "to": "02:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "11:00",
+                "to": "02:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "11:00",
+                "to": "01:00"
+            }
+        ],
+        "rating": 4.4,
+        "restrictedEntry": "Reservation / Minimum Spend",
+        "type": "Disco"
+    },
+    {
+        "artisans": true,
+        "city": "Istanbul",
+        "cost": 0,
+        "description": "Historic and vibrant covered market with spices, sweets, textiles, and souvenirs.",
+        "foodArea": true,
+        "name": "Grand Bazaar",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "outdoor": false,
+        "period": "Open all year round",
+        "rating": 4.6,
+        "seasonal": false,
+        "standNumber": 4000,
+        "type": "LocalMarket"
+    },
+    {
+        "artisans": true,
+        "city": "Kyoto",
+        "cost": 0,
+        "description": "Lively kitchen market offering fresh produce, seafood, pickles, and local delicacies.",
+        "foodArea": true,
+        "name": "Nishiki Market",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:30",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "17:00"
+            }
+        ],
+        "outdoor": false,
+        "period": "Open all year round",
+        "rating": 4.5,
+        "seasonal": false,
+        "standNumber": 130,
+        "type": "LocalMarket"
+    },
+    {
+        "artisans": true,
+        "city": "Seattle",
+        "cost": 0,
+        "description": "Historic public market overlooking the Elliott Bay waterfront in Seattle.",
+        "foodArea": true,
+        "name": "Pike Place Market",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "18:00"
+            }
+        ],
+        "outdoor": false,
+        "period": "Open all year round",
+        "rating": 4.7,
+        "seasonal": false,
+        "standNumber": 225,
+        "type": "LocalMarket"
+    },
+    {
+        "artisans": false,
+        "city": "Budapest",
+        "cost": 0,
+        "description": "Largest and oldest indoor market in Budapest, offering fresh produce, meats, pastries, and souvenirs.",
+        "foodArea": true,
+        "name": "Great Market Hall (Nagy Vásárcsarnok)",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "06:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "06:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "06:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "06:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "06:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "06:00",
+                "to": "15:00"
+            },
+            {
+                "closed": true,
+                "day": "Sunday"
+            }
+        ],
+        "outdoor": false,
+        "period": "Open all year round",
+        "rating": 4.5,
+        "seasonal": false,
+        "standNumber": 180,
+        "type": "LocalMarket"
+    },
+    {
+        "artisans": true,
+        "city": "Marrakech",
+        "cost": 0,
+        "description": "Famous square and market with snake charmers, food stalls, and crafts.",
+        "foodArea": true,
+        "name": "Djemaa el-Fna",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "08:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Friday",
+                "from": "08:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Sunday",
+                "from": "08:00",
+                "to": "23:59"
+            }
+        ],
+        "outdoor": true,
+        "period": "Open all year round",
+        "rating": 4.6,
+        "seasonal": false,
+        "standNumber": 300,
+        "type": "LocalMarket"
+    },
+    {
+        "cinema": true,
+        "city": "Singapore",
+        "cost": 0,
+        "description": "Iconic lifestyle destination with luxury retail, a rooftop infinity pool, and an observation deck.",
+        "foodArea": true,
+        "freeParking": false,
+        "name": "Marina Bay Sands Shoppes",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:30",
+                "to": "23:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:30",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:30",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:30",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:30",
+                "to": "23:30"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:30",
+                "to": "23:30"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:30",
+                "to": "23:00"
+            }
+        ],
+        "outdoor": false,
+        "rating": 4.7,
+        "shopCount": 270,
+        "standNumber": 60,
+        "type": "Mall"
+    },
+    {
+        "cinema": true,
+        "city": "Toronto",
+        "cost": 0,
+        "description": "Large downtown shopping mall with a distinctive glass galleria and a wide range of retailers.",
+        "foodArea": true,
+        "freeParking": false,
+        "name": "CF Toronto Eaton Centre",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "11:00",
+                "to": "19:00"
+            }
+        ],
+        "outdoor": false,
+        "rating": 4.5,
+        "shopCount": 230,
+        "standNumber": 50,
+        "type": "Mall"
+    },
+    {
+        "cinema": true,
+        "city": "Kuala Lumpur",
+        "cost": 0,
+        "description": "Impressive mall at the base of the Petronas Towers, featuring luxury brands and entertainment.",
+        "foodArea": true,
+        "freeParking": true,
+        "name": "Suria KLCC",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "22:00"
+            }
+        ],
+        "outdoor": false,
+        "rating": 4.6,
+        "shopCount": 360,
+        "standNumber": 80,
+        "type": "Mall"
+    },
+    {
+        "cinema": true,
+        "city": "Bangkok",
+        "cost": 0,
+        "description": "One of the largest shopping malls in Asia, offering a vast selection of shops, restaurants, and entertainment.",
+        "foodArea": true,
+        "freeParking": true,
+        "name": "Siam Paragon",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "22:00"
+            }
+        ],
+        "outdoor": false,
+        "rating": 4.7,
+        "shopCount": 400,
+        "standNumber": 100,
+        "type": "Mall"
+    },
+    {
+        "cinema": false,
+        "city": "Milan",
+        "cost": 0,
+        "description": "Historic 19th-century glass-covered arcade with luxury boutiques and elegant cafes.",
+        "foodArea": true,
+        "freeParking": false,
+        "name": "Galleria Vittorio Emanuele II",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "00:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Tuesday",
+                "from": "00:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Wednesday",
+                "from": "00:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Thursday",
+                "from": "00:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Friday",
+                "from": "00:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Saturday",
+                "from": "00:00",
+                "to": "23:59"
+            },
+            {
+                "day": "Sunday",
+                "from": "00:00",
+                "to": "23:59"
+            }
+        ],
+        "outdoor": false,
+        "rating": 4.7,
+        "shopCount": 50,
+        "standNumber": 10,
+        "type": "Mall"
+    },
+    {
+        "altitude": 381,
+        "avgStayDuration": "",
+        "city": "New York",
+        "cost": 44,
+        "description": "Observation deck on the 86th floor of the iconic Art Deco skyscraper, offering 360-degree views.",
+        "hasBinocular": true,
+        "minimumAge": "0",
+        "name": "Empire State Building Observatory",
+        "nightLighting": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "22:00"
+            }
+        ],
+        "rating": 4.6,
+        "restrictedEntry": "None",
+        "type": "PanoramicPoint"
+    },
+    {
+        "altitude": 135,
+        "avgStayDuration": "",
+        "city": "London",
+        "cost": 30,
+        "description": "Giant Ferris wheel on the South Bank of the River Thames offering stunning city views.",
+        "hasBinocular": false,
+        "minimumAge": "0",
+        "name": "The London Eye",
+        "nightLighting": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "11:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "11:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "11:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "11:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "11:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "20:30"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "20:30"
+            }
+        ],
+        "rating": 4.5,
+        "restrictedEntry": "Ticket",
+        "type": "PanoramicPoint"
+    },
+    {
+        "altitude": 340,
+        "avgStayDuration": "",
+        "city": "Chicago",
+        "cost": 35,
+        "description": "Observation deck on the 94th floor of the former John Hancock Center, with thrilling TILT experience.",
+        "hasBinocular": true,
+        "minimumAge": "0",
+        "name": "360 Chicago Observation Deck",
+        "nightLighting": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "23:00"
+            }
+        ],
+        "rating": 4.6,
+        "restrictedEntry": "Ticket",
+        "type": "PanoramicPoint"
+    },
+    {
+        "altitude": 634,
+        "avgStayDuration": "",
+        "city": "Tokyo",
+        "cost": 30,
+        "description": "Broadcasting and observation tower, the tallest structure in Japan, offering panoramic city views.",
+        "hasBinocular": true,
+        "minimumAge": "0",
+        "name": "Tokyo Skytree",
+        "nightLighting": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "21:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "21:00"
+            }
+        ],
+        "rating": 4.7,
+        "restrictedEntry": "Ticket",
+        "type": "PanoramicPoint"
+    },
+    {
+        "altitude": 210,
+        "avgStayDuration": "",
+        "city": "Berlin",
+        "cost": 23,
+        "description": "Television tower in central Berlin offering 360° views of the city and a revolving restaurant.",
+        "hasBinocular": true,
+        "minimumAge": "0",
+        "name": "Berliner Fernsehturm (TV Tower)",
+        "nightLighting": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "23:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "23:00"
+            }
+        ],
+        "rating": 4.5,
+        "restrictedEntry": "Ticket",
+        "type": "PanoramicPoint"
+    },
+    {
+        "city": "Washington D.C.",
+        "cost": 0,
+        "culturalFocus": "",
+        "description": "Showcases a vast collection of historic aircraft and spacecraft.",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "National Air and Space Museum",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "17:30"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "17:30"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "17:30"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "17:30"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "17:30"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "17:30"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "17:30"
+            }
+        ],
+        "rating": 4.8,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "Cairo",
+        "cost": 12,
+        "culturalFocus": "",
+        "description": "Home to an extensive collection of ancient Egyptian antiquities.",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "The Egyptian Museum",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "16:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "17:00"
+            }
+        ],
+        "rating": 4.6,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "Madrid",
+        "cost": 15,
+        "culturalFocus": "",
+        "description": "Features masterpieces by Goya, Velázquez, and El Greco, among others.",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "Prado Museum",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "10:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "19:00"
+            }
+        ],
+        "rating": 4.7,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "St. Petersburg",
+        "cost": 10,
+        "culturalFocus": "",
+        "description": "One of the largest and oldest museums in the world, housing a vast collection of Western European Art.",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "The State Hermitage Museum",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "11:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "11:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "11:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "11:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "11:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "11:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.9,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "Amsterdam",
+        "cost": 22,
+        "culturalFocus": "",
+        "description": "Home to masterpieces by Rembrandt, Vermeer, and Hals.",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "Rijksmuseum",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "17:00"
+            }
+        ],
+        "rating": 4.8,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "Florence",
+        "cost": 20,
+        "culturalFocus": "",
+        "description": "Collection of Renaissance masterpieces.",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "Uffizi Gallery",
+        "openings": [
+            {
+                "closed": true,
+                "day": "Monday"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:15",
+                "to": "18:50"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:15",
+                "to": "18:50"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:15",
+                "to": "18:50"
+            },
+            {
+                "day": "Friday",
+                "from": "08:15",
+                "to": "18:50"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:15",
+                "to": "18:50"
+            },
+            {
+                "day": "Sunday",
+                "from": "08:15",
+                "to": "18:50"
+            }
+        ],
+        "rating": 4.8,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "Paris",
+        "cost": 17,
+        "culturalFocus": "",
+        "description": "The world's most visited museum, home to the Mona Lisa.",
+        "guidedTour": false,
+        "hasAudioGuide": true,
+        "name": "Louvre Museum",
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "closed": true,
+                "day": "Tuesday"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "21:45"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.9,
+        "studentDiscount": 0,
+        "type": "Museum"
+    },
+    {
+        "city": "Beijing",
+        "conservationStatus": "Well-preserved sections",
+        "cost": 8,
+        "culturalFocus": "",
+        "description": "Iconic series of fortifications built across the historical northern borders of ancient Chinese states.",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Great Wall of China (Mutianyu Section)",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "07:30",
+                "to": "17:30"
+            },
+            {
+                "day": "Tuesday",
+                "from": "07:30",
+                "to": "17:30"
+            },
+            {
+                "day": "Wednesday",
+                "from": "07:30",
+                "to": "17:30"
+            },
+            {
+                "day": "Thursday",
+                "from": "07:30",
+                "to": "17:30"
+            },
+            {
+                "day": "Friday",
+                "from": "07:30",
+                "to": "17:30"
+            },
+            {
+                "day": "Saturday",
+                "from": "07:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "07:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.8,
+        "studentDiscount": 0,
+        "type": "Monument"
+    },
+    {
+        "city": "Sydney",
+        "conservationStatus": "Excellent",
+        "cost": 40,
+        "culturalFocus": "",
+        "description": "Multi-venue performing arts centre with a distinctive sail-shaped design.",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Sydney Opera House",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "17:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "17:00"
+            }
+        ],
+        "rating": 4.7,
+        "studentDiscount": 0,
+        "type": "Monument"
+    },
+    {
+        "city": "Moscow",
+        "conservationStatus": "Well-maintained",
+        "cost": 15,
+        "culturalFocus": "",
+        "description": "Historic fortified complex in the heart of Moscow, serving as the official residence of the President of Russia.",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "The Moscow Kremlin",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "closed": true,
+                "day": "Thursday"
+            },
+            {
+                "day": "Friday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "10:00",
+                "to": "18:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "10:00",
+                "to": "18:00"
+            }
+        ],
+        "rating": 4.6,
+        "studentDiscount": 0,
+        "type": "Monument"
+    },
+    {
+        "city": "Agra",
+        "conservationStatus": "Excellent",
+        "cost": 14,
+        "culturalFocus": "",
+        "description": "Ivory-white marble mausoleum on the south bank of the Yamuna river, a symbol of eternal love.",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Taj Mahal",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "06:00",
+                "to": "18:30"
+            },
+            {
+                "day": "Tuesday",
+                "from": "06:00",
+                "to": "18:30"
+            },
+            {
+                "day": "Wednesday",
+                "from": "06:00",
+                "to": "18:30"
+            },
+            {
+                "day": "Thursday",
+                "from": "06:00",
+                "to": "18:30"
+            },
+            {
+                "closed": true,
+                "day": "Friday"
+            },
+            {
+                "day": "Saturday",
+                "from": "06:00",
+                "to": "18:30"
+            },
+            {
+                "day": "Sunday",
+                "from": "06:00",
+                "to": "18:30"
+            }
+        ],
+        "rating": 4.9,
+        "studentDiscount": 0,
+        "type": "Monument"
+    },
+    {
+        "city": "Athens",
+        "conservationStatus": "Ongoing Restoration",
+        "cost": 20,
+        "culturalFocus": "",
+        "description": "Ancient citadel located on a rocky outcrop above the city of Athens, containing the Parthenon.",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Acropolis of Athens",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "08:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Tuesday",
+                "from": "08:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Wednesday",
+                "from": "08:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Thursday",
+                "from": "08:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Friday",
+                "from": "08:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Saturday",
+                "from": "08:00",
+                "to": "20:00"
+            },
+            {
+                "day": "Sunday",
+                "from": "08:00",
+                "to": "20:00"
+            }
+        ],
+        "rating": 4.8,
+        "studentDiscount": 0,
+        "type": "Monument"
+    },
+    {
+        "city": "Rome",
+        "conservationStatus": "Restored",
+        "cost": 18,
+        "culturalFocus": "",
+        "description": "Iconic Roman amphitheater, symbol of Imperial Rome.",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Colosseum",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:00",
+                "to": "19:15"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:00",
+                "to": "19:15"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:00",
+                "to": "19:15"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:00",
+                "to": "19:15"
+            },
+            {
+                "day": "Friday",
+                "from": "09:00",
+                "to": "19:15"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:00",
+                "to": "19:15"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:00",
+                "to": "19:15"
+            }
+        ],
+        "rating": 4.7,
+        "studentDiscount": 0,
+        "type": "Monument"
+    },
+    {
+        "city": "Paris",
+        "conservationStatus": "Maintained",
+        "cost": 28,
+        "culturalFocus": "",
+        "description": "Wrought-iron lattice tower on the Champ de Mars.",
+        "guidedTour": false,
+        "isUnesco": true,
+        "name": "Eiffel Tower",
+        "openToPublic": true,
+        "openings": [
+            {
+                "day": "Monday",
+                "from": "09:30",
+                "to": "23:45"
+            },
+            {
+                "day": "Tuesday",
+                "from": "09:30",
+                "to": "23:45"
+            },
+            {
+                "day": "Wednesday",
+                "from": "09:30",
+                "to": "23:45"
+            },
+            {
+                "day": "Thursday",
+                "from": "09:30",
+                "to": "23:45"
+            },
+            {
+                "day": "Friday",
+                "from": "09:30",
+                "to": "00:45"
+            },
+            {
+                "day": "Saturday",
+                "from": "09:30",
+                "to": "00:45"
+            },
+            {
+                "day": "Sunday",
+                "from": "09:30",
+                "to": "23:45"
+            }
+        ],
+        "rating": 4.8,
+        "studentDiscount": 0,
+        "type": "Monument"
+    }
+]

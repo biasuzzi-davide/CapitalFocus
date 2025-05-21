@@ -43,7 +43,7 @@ weeklyOpenings PlaceImportFromJson::parseOpenings(const QJsonArray& array) const
         QTime from = QTime::fromString(fromStr,"HH:mm");
         QTime to   = QTime::fromString(toStr,"HH:mm");
 
-        if (!from.isValid() || !to.isValid() || from >= to)
+        if (!from.isValid() || !to.isValid())
             throw std::invalid_argument("Invalid time frame"); // Lancia eccezione se orari non validi
 
         week.setOpening(day, from, to); // Imposta l'orario per il giorno

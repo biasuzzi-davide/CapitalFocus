@@ -7,8 +7,6 @@
 class Culture : public Place {
 private:
     bool guidedTour; // Tour guidato
-
-protected:
     double studentDiscount; // Sconto studenti
     QString culturalFocus; // Focus culturale
 

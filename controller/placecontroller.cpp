@@ -423,7 +423,6 @@ std::map<QString, std::vector<std::shared_ptr<Place>>> PlaceController::groupedS
     return grouped;
 }
 
-// Funzione di utilità per il debug (non rispetta strettamente MVC, tenere?)
 // Chiede all'utente il nome di una pagina e ci naviga (chiedendo di salvare)
 void PlaceController::promptAndSetWidget() {
     bool ok;
@@ -474,7 +473,7 @@ void PlaceController::createNewPlace() {
             }
 
             if (!h.alwaysClosed && !h.alwaysOpen) {
-                if (!h.open.isValid() || !h.close.isValid() || h.open >= h.close) {
+                if (!h.open.isValid() || !h.close.isValid()) {
                     QString d = weeklyOpenings::weekdayToString(day);
                     throw std::invalid_argument(
                         QString("Invalid opening hours for %1").arg(d).toStdString()

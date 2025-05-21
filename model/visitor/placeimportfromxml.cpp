@@ -50,7 +50,7 @@ weeklyOpenings PlaceImportFromXml::parseOpenings(const QDomElement& parent) cons
         QTime from = QTime::fromString(slot.attribute("from"), "HH:mm");
         QTime to   = QTime::fromString(slot.attribute("to"),   "HH:mm");
 
-        if (!from.isValid() || !to.isValid() || from >= to)
+        if (!from.isValid() || !to.isValid())
             throw std::invalid_argument("Invalid time frame"); // Lancia eccezione se orari non validi
 
         week.setOpening(day, from, to);
