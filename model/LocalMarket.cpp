@@ -21,7 +21,7 @@ LocalMarket::LocalMarket(   const QString& name,
 
 // Riassunto specifico per LocalMarket
 QString LocalMarket::getShoppingSummary() const {
-    return QString("This market is %1, %2, and takes place in %3.")
+    return QString("This market is %1, %2 and takes place in %3.")
     .arg(artisans ? "artisan-friendly" : "not artisan-friendly")
     .arg(seasonal ? "seasonal" : "permanent")
     .arg(period);

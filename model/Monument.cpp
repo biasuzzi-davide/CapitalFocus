@@ -23,7 +23,7 @@ void Monument::acceptVisitor(PlaceVisitorInterface& visitor) const{
 
 // Riassunto culturale
 QString Monument::getCultureSummary() const {
-    return QString("This monument is %1, %2, and currently %3.")
+    return QString("This monument is %1, %2 and currently %3.")
     .arg(isUnescoHeritage ? "a UNESCO heritage site" : "not a UNESCO heritage site")
     .arg(openToPublic ? "open to the public" : "not open to the public")
     .arg(conservationStatus);

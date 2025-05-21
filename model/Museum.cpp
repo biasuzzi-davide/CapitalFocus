@@ -18,10 +18,8 @@ QString Museum::getCategory() const {
 
 // Riassunto culturale
 QString Museum::getCultureSummary() const {
-    return QString("This museum offers %1, with a student discount of %2% and a cultural focus on %3.")
-    .arg(hasAudioGuide ? "an audio guide" : "no audio guide")
-        .arg(QString::number(getStudentDiscount(), 'f', 1))
-        .arg(getCulturalFocus());
+    return QString("This museum offers %1")
+        .arg(hasAudioGuide ? "an audio guide" : "no audio guide");
 }
 
 // Implementazione per il Visitor

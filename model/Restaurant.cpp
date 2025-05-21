@@ -21,7 +21,7 @@ Restaurant::Restaurant( const QString& name,
 
 // Riassunto cibo
 QString Restaurant::getFoodSummary() const {
-    return QString("Cuisine: %1. Reservation %2. Special dish: %3.")
+    return QString("Cuisine: %1 | Reservation %2 | Special dish: %3")
     .arg(cuisineType)
     .arg(reservation ? "available" : "not available")
     .arg(specialDish);
