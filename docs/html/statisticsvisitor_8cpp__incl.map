@@ -20,8 +20,8 @@
 <area shape="poly" id="edge26_Node000003_Node000020" title=" " alt="" coords="477,181,390,222,388,217,474,176"/>
 <area shape="rect" id="Node000021" href="$_restaurant_8h.html" title=" " alt="" coords="575,226,684,252"/>
 <area shape="poly" id="edge28_Node000003_Node000021" title=" " alt="" coords="524,177,596,216,593,221,522,181"/>
-<area shape="rect" id="Node000022" href="$_panoramic_points_8h.html" title=" " alt="" coords="907,226,1050,252"/>
-<area shape="poly" id="edge30_Node000003_Node000022" title=" " alt="" coords="576,175,892,222,891,227,576,181"/>
+<area shape="rect" id="Node000022" href="$_panoramic_point_8h.html" title=" " alt="" coords="908,226,1044,252"/>
+<area shape="poly" id="edge30_Node000003_Node000022" title=" " alt="" coords="576,175,893,223,892,228,576,181"/>
 <area shape="rect" id="Node000023" href="$_museum_8h.html" title=" " alt="" coords="173,226,267,252"/>
 <area shape="poly" id="edge32_Node000003_Node000023" title=" " alt="" coords="454,181,283,225,281,220,453,176"/>
 <area shape="rect" id="Node000025" href="$_monument_8h.html" title=" " alt="" coords="43,226,149,252"/>
@@ -59,7 +59,7 @@
 <area shape="poly" id="edge25_Node000019_Node000006" title=" " alt="" coords="470,324,504,360,500,364,466,328"/>
 <area shape="poly" id="edge27_Node000020_Node000019" title=" " alt="" coords="369,250,428,289,425,293,366,255"/>
 <area shape="poly" id="edge29_Node000021_Node000005" title=" " alt="" coords="630,253,625,285,619,284,625,252"/>
-<area shape="poly" id="edge31_Node000022_Node000017" title=" " alt="" coords="961,255,899,294,896,289,958,250"/>
+<area shape="poly" id="edge31_Node000022_Node000017" title=" " alt="" coords="959,255,898,294,895,289,956,250"/>
 <area shape="rect" id="Node000024" href="$_culture_8h.html" title=" " alt="" coords="183,300,257,326"/>
 <area shape="poly" id="edge33_Node000023_Node000024" title=" " alt="" coords="223,252,223,284,217,284,217,252"/>
 <area shape="poly" id="edge34_Node000024_Node000006" title=" " alt="" coords="258,320,477,371,476,377,257,325"/>

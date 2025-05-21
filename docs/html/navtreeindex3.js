@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"class_ui__culturewidget.html#af8f2ac8722d49f68e28326ed0ca9ebe9":[2,0,35,0],
 "class_ui__culturewidget.html#afdfa7bb4253cfe4ce98b099703c02e0b":[2,0,35,6],
 "class_ui__entertainmentwidget.html":[2,0,36],
 "class_ui__entertainmentwidget.html#a07bcc1e663c32afc365a7f1e571e42a2":[2,0,36,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "functions_~.html":[2,3,0,22],
 "globals.html":[3,1,0],
 "globals_defs.html":[3,1,4],
-"globals_enum.html":[3,1,3],
-"globals_func.html":[3,1,1]
+"globals_enum.html":[3,1,3]
 };

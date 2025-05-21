@@ -1,0 +1,7 @@
+<map id="PanoramicPoint::hasBinoculars" name="PanoramicPoint::hasBinoculars">
+<area shape="rect" id="Node000001" title=" " alt="" coords="225,46,428,72"/>
+<area shape="rect" id="Node000002" href="$class_place_export_to_json_visitor.html#a3cd38f6e314c553d32ca1f9274849104" title=" " alt="" coords="5,5,177,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,46,177,40,178,35,216,41"/>
+<area shape="rect" id="Node000003" href="$class_place_export_to_xml_visitor.html#a9ea310492cdd855f12277a226614a870" title=" " alt="" coords="8,71,174,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="212,77,175,82,174,77,211,72"/>
+</map>

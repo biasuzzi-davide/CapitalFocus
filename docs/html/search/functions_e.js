@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['panoramicpoints_0',['PanoramicPoints',['../class_panoramic_points.html#a5daae0eca809eb75c9104b33f02bb698',1,'PanoramicPoints']]],
+  ['panoramicpoint_0',['PanoramicPoint',['../class_panoramic_point.html#ae4908e946a6ce0dc05f87914ee7822c9',1,'PanoramicPoint']]],
   ['parseopenings_1',['parseOpenings',['../class_place_import_from_json.html#af01234a9c73cb66dd8a9a24b9edfa422',1,'PlaceImportFromJson::parseOpenings()'],['../class_place_import_from_xml.html#a63bce3a140a4a5c6b141fe17c6c5577d',1,'PlaceImportFromXml::parseOpenings()']]],
   ['period_2',['period',['../class_create_place_widget.html#a2ca96ee9b03564c0e604c053ebfc5662',1,'CreatePlaceWidget']]],
   ['place_3',['Place',['../class_place.html#a06c16ea1806695908623c43f803c3a13',1,'Place']]],

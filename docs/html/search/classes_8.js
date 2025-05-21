@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['panoramicpoints_0',['PanoramicPoints',['../class_panoramic_points.html',1,'']]],
+  ['panoramicpoint_0',['PanoramicPoint',['../class_panoramic_point.html',1,'']]],
   ['place_1',['Place',['../class_place.html',1,'']]],
   ['placecontroller_2',['PlaceController',['../class_place_controller.html',1,'']]],
   ['placeexporttojsonvisitor_3',['PlaceExportToJsonVisitor',['../class_place_export_to_json_visitor.html',1,'']]],

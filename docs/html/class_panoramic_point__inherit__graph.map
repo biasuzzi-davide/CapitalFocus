@@ -1,0 +1,7 @@
+<map id="PanoramicPoint" name="PanoramicPoint">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,661,192,910"/>
+<area shape="rect" id="Node000002" href="$class_entertainment.html" title=" " alt="" coords="5,404,192,613"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,628,102,661,96,661,96,628"/>
+<area shape="rect" id="Node000003" href="$class_place.html" title=" " alt="" coords="41,5,157,356"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,371,102,404,96,404,96,371"/>
+</map>

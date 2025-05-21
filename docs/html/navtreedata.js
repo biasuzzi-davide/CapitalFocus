@@ -74,8 +74,8 @@ var NAVTREEINDEX =
 "_cafe_8cpp.html",
 "class_main_window.html#a996c5a2b6f77944776856f08ec30858d",
 "class_ui___create_place_widget.html#a15d783430b1f5d52fda7f0fd786bb5d8",
-"class_ui__culturewidget.html#afdfa7bb4253cfe4ce98b099703c02e0b",
-"globals_vars.html"
+"class_ui__culturewidget.html#af8f2ac8722d49f68e28326ed0ca9ebe9",
+"globals_func.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

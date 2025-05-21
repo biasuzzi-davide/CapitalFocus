@@ -38,7 +38,7 @@ var annotated_dup =
     [ "Monument", "class_monument.html", "class_monument" ],
     [ "Museum", "class_museum.html", "class_museum" ],
     [ "openingFrames", "structopening_frames.html", "structopening_frames" ],
-    [ "PanoramicPoints", "class_panoramic_points.html", "class_panoramic_points" ],
+    [ "PanoramicPoint", "class_panoramic_point.html", "class_panoramic_point" ],
     [ "Place", "class_place.html", "class_place" ],
     [ "PlaceController", "class_place_controller.html", "class_place_controller" ],
     [ "PlaceExportToJsonVisitor", "class_place_export_to_json_visitor.html", "class_place_export_to_json_visitor" ],

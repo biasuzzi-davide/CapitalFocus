@@ -11,7 +11,7 @@ var class_statistics_visitor =
     [ "visit", "class_statistics_visitor.html#ac7e5d165e37f82111fc0f0e1876e42d7", null ],
     [ "visit", "class_statistics_visitor.html#ad145f6bdf3838a7b1ba980240c124ba3", null ],
     [ "visit", "class_statistics_visitor.html#a6b17e96b47c58c6459d7d77ad6d52886", null ],
-    [ "visit", "class_statistics_visitor.html#a8b2f457097e445a0d86677b071d5fd52", null ],
+    [ "visit", "class_statistics_visitor.html#a3414722a73e7dc8796f46f890633c755", null ],
     [ "visit", "class_statistics_visitor.html#aa38eb4a458fec3bb5ba43b29d78f1e26", null ],
     [ "visit", "class_statistics_visitor.html#abd1a150d273ec28dcbba4e97af9a8a6b", null ],
     [ "cityCounts", "class_statistics_visitor.html#a51b4c20fbca244bf72c99699473b3878", null ],

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['panoramicpoints_2ecpp_0',['PanoramicPoints.cpp',['../_panoramic_points_8cpp.html',1,'']]],
-  ['panoramicpoints_2eh_1',['PanoramicPoints.h',['../_panoramic_points_8h.html',1,'']]],
+  ['panoramicpoint_2ecpp_0',['PanoramicPoint.cpp',['../_panoramic_point_8cpp.html',1,'']]],
+  ['panoramicpoint_2eh_1',['PanoramicPoint.h',['../_panoramic_point_8h.html',1,'']]],
   ['place_2ecpp_2',['Place.cpp',['../_place_8cpp.html',1,'']]],
   ['place_2eh_3',['Place.h',['../_place_8h.html',1,'']]],
   ['placecontroller_2ecpp_4',['placecontroller.cpp',['../placecontroller_8cpp.html',1,'']]],

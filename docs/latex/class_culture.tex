@@ -62,29 +62,20 @@ double \mbox{\hyperlink{class_place_af4f1cbcde42f665d72b090e77852f75e}{get\+Rati
 \item 
 const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \& \mbox{\hyperlink{class_place_a16b0f469896907c173a3a747de31da5f}{get\+Open}} () const
 \end{DoxyCompactItemize}
-\doxysubsubsection*{Protected Attributes}
+\doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
-\item 
-double \mbox{\hyperlink{class_culture_ade65998528d27011ecea3af96a61fc17}{student\+Discount}}
 \item 
 bool \mbox{\hyperlink{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}{guided\+Tour}}
 \item 
+double \mbox{\hyperlink{class_culture_ade65998528d27011ecea3af96a61fc17}{student\+Discount}}
+\item 
 QString \mbox{\hyperlink{class_culture_aa3d4aee81aab7aa65d03a998d23d0793}{cultural\+Focus}}
 \end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
 \doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_place}{Place}}}
 \begin{DoxyCompactItemize}
 \item 
-QString \mbox{\hyperlink{class_place_a37c729c743754c7d159dabbb7a34aff8}{name}}
-\item 
-QString \mbox{\hyperlink{class_place_a60824ae7d733445eba14b955e05e58c4}{city}}
-\item 
-QString \mbox{\hyperlink{class_place_ac5fd7413047937b9b599102a7fccbf80}{description}}
-\item 
-double \mbox{\hyperlink{class_place_ac3bd030da2573f10d3fa803724b9b7ce}{rating}}
-\item 
 \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \mbox{\hyperlink{class_place_ad41420a1538aed7c4050378f559b121b}{open}}
-\item 
-double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}
 \end{DoxyCompactItemize}
 
 
@@ -95,16 +86,14 @@ double \mbox{\hyperlink{class_place_a65d0fc186990e05a23c3f7efc99ec516}{cost}}
 {\footnotesize\ttfamily \label{class_culture_ae84116457d2f30fb26a04ec3753fe14b} 
 Culture\+::\+Culture (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{, }\item[{const QString \&}]{city}{, }\item[{const QString \&}]{description}{, }\item[{double}]{rating}{, }\item[{const \mbox{\hyperlink{classweekly_openings}{weekly\+Openings}} \&}]{open}{, }\item[{double}]{cost}{, }\item[{double}]{student\+Discount}{, }\item[{bool}]{guided\+Tour}{, }\item[{const QString \&}]{cultural\+Focus}{}\end{DoxyParamCaption})}
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=273pt]{class_culture_ae84116457d2f30fb26a04ec3753fe14b_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -126,8 +115,7 @@ virtual Culture\+::\texorpdfstring{$\sim$}{\string~}\+Culture (\begin{DoxyParamC
 {\footnotesize\ttfamily \label{class_culture_a0dc21918e7f30cf2f9d77799ac06a266} 
 QString Culture\+::get\+Cultural\+Focus (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -150,8 +138,7 @@ Implemented in \mbox{\hyperlink{class_monument_adc41366da13c1b0612717dc268c1e003
 {\footnotesize\ttfamily \label{class_culture_ad1ae165297c171c7c39fc8359b9951d8} 
 double Culture\+::get\+Student\+Discount (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -164,8 +151,7 @@ Here is the caller graph for this function\+:
 {\footnotesize\ttfamily \label{class_culture_a8254e7d5a2fc57709f20efc0c000e176} 
 bool Culture\+::has\+Guided\+Tour (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
-Here is the caller graph for this function\+:
-\nopagebreak
+Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -179,19 +165,19 @@ Here is the caller graph for this function\+:
 \index{culturalFocus@{culturalFocus}!Culture@{Culture}}
 \doxysubsubsection{\texorpdfstring{culturalFocus}{culturalFocus}}
 {\footnotesize\ttfamily \label{class_culture_aa3d4aee81aab7aa65d03a998d23d0793} 
-QString Culture\+::cultural\+Focus\hspace{0.3cm}{\ttfamily [protected]}}
+QString Culture\+::cultural\+Focus\hspace{0.3cm}{\ttfamily [private]}}
 
 \Hypertarget{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e}\index{Culture@{Culture}!guidedTour@{guidedTour}}
 \index{guidedTour@{guidedTour}!Culture@{Culture}}
 \doxysubsubsection{\texorpdfstring{guidedTour}{guidedTour}}
 {\footnotesize\ttfamily \label{class_culture_adb12739bb1e7a63f61f48eca4b2d2f3e} 
-bool Culture\+::guided\+Tour\hspace{0.3cm}{\ttfamily [protected]}}
+bool Culture\+::guided\+Tour\hspace{0.3cm}{\ttfamily [private]}}
 
 \Hypertarget{class_culture_ade65998528d27011ecea3af96a61fc17}\index{Culture@{Culture}!studentDiscount@{studentDiscount}}
 \index{studentDiscount@{studentDiscount}!Culture@{Culture}}
 \doxysubsubsection{\texorpdfstring{studentDiscount}{studentDiscount}}
 {\footnotesize\ttfamily \label{class_culture_ade65998528d27011ecea3af96a61fc17} 
-double Culture\+::student\+Discount\hspace{0.3cm}{\ttfamily [protected]}}
+double Culture\+::student\+Discount\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

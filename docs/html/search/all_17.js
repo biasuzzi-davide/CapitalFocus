@@ -14,7 +14,7 @@ var searchData=
   ['_7emall_11',['~Mall',['../class_mall.html#ab4a6b4f2696b41d2a83a35b834e23687',1,'Mall']]],
   ['_7emonument_12',['~Monument',['../class_monument.html#aabf6c776aebd0a809050cba56defb75a',1,'Monument']]],
   ['_7emuseum_13',['~Museum',['../class_museum.html#aeafd6c4960e46e904e1aab2d8c5770d0',1,'Museum']]],
-  ['_7epanoramicpoints_14',['~PanoramicPoints',['../class_panoramic_points.html#abe73e04cc3c1a63cba8efea019bdc76e',1,'PanoramicPoints']]],
+  ['_7epanoramicpoint_14',['~PanoramicPoint',['../class_panoramic_point.html#a78396b4ac1f5cff5fa05d0f5d93a6129',1,'PanoramicPoint']]],
   ['_7eplace_15',['~Place',['../class_place.html#a5dedf984133a4a33a95419da61b54157',1,'Place']]],
   ['_7eplacevisitorinterface_16',['~PlaceVisitorInterface',['../class_place_visitor_interface.html#a0ee9393508706e70d211038757e9d239',1,'PlaceVisitorInterface']]],
   ['_7erestaurant_17',['~Restaurant',['../class_restaurant.html#a3b6434337f394c48f131f65cc01d40a7',1,'Restaurant']]],

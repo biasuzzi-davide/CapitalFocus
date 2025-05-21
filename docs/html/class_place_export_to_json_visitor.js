@@ -10,7 +10,7 @@ var class_place_export_to_json_visitor =
     [ "visit", "class_place_export_to_json_visitor.html#afdab6b5c5b8c2ffd219c3d363bd66a8d", null ],
     [ "visit", "class_place_export_to_json_visitor.html#a0b5f35e1f208515e3498b0093cc0e092", null ],
     [ "visit", "class_place_export_to_json_visitor.html#adc8f389a6b43814e70b1daf2b3db400d", null ],
-    [ "visit", "class_place_export_to_json_visitor.html#a67b3000aa8af0733c716157164486b45", null ],
+    [ "visit", "class_place_export_to_json_visitor.html#a3cd38f6e314c553d32ca1f9274849104", null ],
     [ "visit", "class_place_export_to_json_visitor.html#a8e28203a1db31c4e019a0267f7c48c58", null ],
     [ "visit", "class_place_export_to_json_visitor.html#aa53baa6cdeab8f17536c6ea38ad0fb32", null ],
     [ "result", "class_place_export_to_json_visitor.html#ae68df8a5211c6d408b85353f806aee49", null ]

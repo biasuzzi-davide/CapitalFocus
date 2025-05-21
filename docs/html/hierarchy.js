@@ -10,7 +10,7 @@ var hierarchy =
       ] ],
       [ "Entertainment", "class_entertainment.html", [
         [ "Disco", "class_disco.html", null ],
-        [ "PanoramicPoints", "class_panoramic_points.html", null ]
+        [ "PanoramicPoint", "class_panoramic_point.html", null ]
       ] ],
       [ "Food", "class_food.html", [
         [ "Cafe", "class_cafe.html", null ],

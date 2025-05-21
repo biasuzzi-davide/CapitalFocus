@@ -2,7 +2,7 @@ var searchData=
 [
   ['hasartisans_0',['hasArtisans',['../class_local_market.html#a3abf09f20994ff21a5d55404a4747818',1,'LocalMarket']]],
   ['hasaudioguideavailable_1',['hasAudioGuideAvailable',['../class_museum.html#a86b4264e66df17e1c8d2209af76bdfb6',1,'Museum']]],
-  ['hasbinoculars_2',['hasBinoculars',['../class_panoramic_points.html#adbc46b4e7ae6a12544db28bf1163dfad',1,'PanoramicPoints']]],
+  ['hasbinoculars_2',['hasBinoculars',['../class_panoramic_point.html#a762d2c8255d59e92c28c4b14eb118a7f',1,'PanoramicPoint']]],
   ['hascinema_3',['hasCinema',['../class_mall.html#a31cd34e8ad8a22678e39d4d6d2b64c4e',1,'Mall']]],
   ['hasfreeparking_4',['hasFreeParking',['../class_mall.html#ac2137833b0bac11922b00ab4642dca26',1,'Mall']]],
   ['hasguidedtour_5',['hasGuidedTour',['../class_culture.html#a8254e7d5a2fc57709f20efc0c000e176',1,'Culture']]],

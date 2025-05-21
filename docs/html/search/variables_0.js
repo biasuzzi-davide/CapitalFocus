@@ -11,7 +11,7 @@ var searchData=
   ['actionstatistics_8',['actionStatistics',['../class_ui___main_window.html#a1834e283ec64cffabe9cf265e7a9b631',1,'Ui_MainWindow']]],
   ['actiontoggledebug_9',['actionToggleDebug',['../class_ui___main_window.html#a94cde3f72e5d6ba01b2570efaa7ffa89',1,'Ui_MainWindow']]],
   ['actionxml_10',['actionXML',['../class_ui___main_window.html#a97e8c64f9f9c0d1a3cbd94abe04fab73',1,'Ui_MainWindow']]],
-  ['altitude_11',['altitude',['../class_panoramic_points.html#a56c0a2be6a80b9857fa286e304942d7b',1,'PanoramicPoints']]],
+  ['altitude_11',['altitude',['../class_panoramic_point.html#a8a0c28f00d5d454579f95db1b235e8b6',1,'PanoramicPoint']]],
   ['alwaysclosed_12',['alwaysClosed',['../struct_create_place_widget_1_1_day_hours.html#a4e75dcfe2844b2601c16d1fdefad69b0',1,'CreatePlaceWidget::DayHours']]],
   ['alwaysopen_13',['alwaysOpen',['../structopening_frames.html#a8fc507a56703f1408d1b32e09dd0e55d',1,'openingFrames::alwaysOpen'],['../struct_create_place_widget_1_1_day_hours.html#ac71267528bc1322531892c8b043ac09d',1,'CreatePlaceWidget::DayHours::alwaysOpen']]],
   ['artisans_14',['artisans',['../class_local_market.html#af3018bc392baaa7a6e8a630e281dc968',1,'LocalMarket']]],

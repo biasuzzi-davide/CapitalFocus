@@ -8,7 +8,7 @@ var searchData=
   ['isclosed_5',['isClosed',['../classweekly_openings.html#a46f87a654039cfa5c18fd75efb9ed043',1,'weeklyOpenings']]],
   ['isediting_6',['isEditing',['../class_create_place_widget.html#ad04de17a01dccabf6adf89dbe7dff9c3',1,'CreatePlaceWidget']]],
   ['isenabled_7',['isEnabled',['../namespace_debug_config.html#ac1866de56c034219ae9716f41aacf24b',1,'DebugConfig']]],
-  ['isnightlit_8',['isNightLit',['../class_panoramic_points.html#a95a59c6d6d727a85bc69048e2728a9f8',1,'PanoramicPoints']]],
+  ['isnightlit_8',['isNightLit',['../class_panoramic_point.html#a1d01e36d47643a482922575214636cb3',1,'PanoramicPoint']]],
   ['isopenat_9',['isOpenAt',['../classweekly_openings.html#a8fe80780b30f136545486ade9f47cf82',1,'weeklyOpenings']]],
   ['isopentopublic_10',['isOpenToPublic',['../class_monument.html#af15c0990ca89376df3bc8f295c7e048f',1,'Monument']]],
   ['isoutdoor_11',['isOutdoor',['../class_shopping.html#acd03a7791869732ff9b062c922c73060',1,'Shopping']]],

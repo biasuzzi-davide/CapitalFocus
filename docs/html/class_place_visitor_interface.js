@@ -7,7 +7,7 @@ var class_place_visitor_interface =
     [ "visit", "class_place_visitor_interface.html#ad5b06f283d0cc9f02ebe7d56c2aa1508", null ],
     [ "visit", "class_place_visitor_interface.html#afd3c955aa357a38871cd33b9c2539abe", null ],
     [ "visit", "class_place_visitor_interface.html#a629be444354bd7e6d4ecf8d6cf3db0bb", null ],
-    [ "visit", "class_place_visitor_interface.html#ae99d11290e976810c8541e54668b8fc7", null ],
+    [ "visit", "class_place_visitor_interface.html#acd491c1fd6666857503c02c7141a15e6", null ],
     [ "visit", "class_place_visitor_interface.html#a5f201d3b77ae0bb129691e3db2c7a98e", null ],
     [ "visit", "class_place_visitor_interface.html#a026092b80718d4d40c4ce9232e918304", null ]
 ];
